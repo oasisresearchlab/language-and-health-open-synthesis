@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Obsidian
+.obsidian/workspace.json
+.obsidian/graph.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+claim_matching.log
+
+# Data and temporary files
+data/
+*.tmp
+*.bak
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.local

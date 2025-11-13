@@ -1,0 +1,70 @@
+---
+abstract: 'Background: The population of persons seeking medical care is linguistically
+  diverse in the United States. Language barriers can adversely affect a patient''s
+  ability to explain their symptoms. Among hospitalized patients, these barriers may
+  lead to higher readmission rates and longer hospitalizations. Trained interpreters
+  help overcome communication barriers; however, interpreter usage among patients
+  is suboptimal.
+
+  Objective: To investigate differences among patients with limited English proficiency
+  (LEP) in their length of stay (LOS) and 30-day readmission rate associated with
+  their receiving professional interpretation at admission or discharge.
+
+  Design: We analyzed the rates of interpretation at admission and discharge of all
+  LEP patients admitted to a tertiary care hospital over a three-year period. We calculated
+  length of stay in days and as log of LOS. We also examined 30-day readmission. Using
+  multivariable regression models, we explored differences among patients who received
+  interpretation at admission, discharge, or both, controlling for patient characteristics,
+  including age, illness severity, language, and gender.
+
+  Participants: All LEP patients admitted between May 1, 2004 and April 30, 2007.
+
+  Main measures: Length of hospital stay as related to use of professional interpreters;
+  readmission to the hospital within 30 days.
+
+  Key results: Of the 3071 patients included in the study, 39 % received language
+  interpretation on both admission and discharge date. Patients who did not receive
+  professional interpretation at admission or both admission/discharge had an increase
+  in their LOS of between 0.75 and 1.47 days, compared to patients who had an interpreter
+  on both day of admission and discharge (P<0.02). Patients receiving interpretation
+  at admission and/or discharge were less likely than patients receiving no interpretation
+  to be readmitted with 30 days.
+
+  Conclusions: The length of a hospital stay for LEP patients was significantly longer
+  when professional interpreters were not used at admission or both admission/discharge.
+
+  '
+author: Lindholm
+citekey: '@Lindholm_2012_Professional_language'
+has_empirical_findings: true
+intervention: false
+journal: Journal of General Internal Medicine
+keywords: 'low English proficient (LEP), interpreters, length of stay (LOS)
+
+  '
+language: Spanish, Portuguese, etc
+nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
+outcomes: 'Length of hospital stay as related to use of professional interpreters;
+  readmission to the hospital within 30 days.
+
+  '
+pubmed_id: 22528618
+specialty: General Medicine
+study_years: 2004-2007
+title: Professional language interpretation and inpatient length of stay and readmission
+  rates
+year: 2012
+factors:
+- Interpretation services
+- Limited English Proficiency (LEP)
+outcomes_extracted:
+- Hospital stay length
+---
+
+
+## Possible evidence
+
+- 39% of the 3,071 patients received language interpretation on both admission and discharge. #evd-candidate
+- [[EVD - LEP patients who did not receive professional interpretation had increased LOS of between 0.75 and 1.47 days, compared to patients who had an interpreter]]
+- Patients without professional interpretation at admission or both admission/discharge experienced an increase in length of stay between 0.75 and 1.47 days compared to patients with interpreters on both admission and discharge (P<0.02). #evd-candidate
+- [[EVD - Patients receiving interpretation at admission and or discharge were less likely to be readmitted within 30 days compared to patients receiving no interpretation]]

@@ -1,0 +1,12 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - nodeTypeId == "node_huDx8FGfNSGQyongW5rk-"
+    order:
+      - file.name
+      - Source
+      - NodeFormality
+    columnSize:
+      file.name: 654

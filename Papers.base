@@ -1,0 +1,28 @@
+views:
+  - type: table
+    name: All
+    filters:
+      and:
+        - nodeTypeId == "node_Ne237S0BfRPDaeqB_gbuT"
+    order:
+      - file.name
+      - Title
+      - Year
+      - author
+      - has_empirical_findings
+      - outcomes_extracted
+      - factors
+    columnSize:
+      note.Title: 776
+  - type: table
+    name: Interpretation services
+    filters:
+      and:
+        - nodeTypeId == "node_Ne237S0BfRPDaeqB_gbuT"
+        - has_empirical_findings == true
+        - factors.contains("Interpretation services")
+    order:
+      - file.name
+      - outcomes_extracted
+      - factors
+      - has_empirical_findings

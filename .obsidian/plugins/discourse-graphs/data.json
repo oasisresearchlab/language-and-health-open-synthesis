@@ -1,0 +1,116 @@
+{
+  "nodeTypes": [
+    {
+      "id": "node_LsIeSJxI7M9DoE3ISFEmw",
+      "name": "Question",
+      "format": "QUE - {content}",
+      "color": "#99890e",
+      "template": "T - Question",
+      "tag": "que-candidate",
+      "description": "Unknowns that we want to make known, and is addressable by our experiments, prototypes, etc."
+    },
+    {
+      "id": "node_nMxzA_OByPwgPcmb6AN82",
+      "name": "Claim",
+      "format": "CLM - {content}",
+      "color": "#7DA13E",
+      "tag": "clm-candidate",
+      "description": "Atomic, generalized assertions about the world that (propose to) answer research questions",
+      "template": "T - Claim"
+    },
+    {
+      "id": "node_huDx8FGfNSGQyongW5rk-",
+      "name": "Evidence",
+      "format": "EVD - {content}",
+      "color": "#DB134A",
+      "tag": "evd-candidate",
+      "description": "A specific empirical observation from a particular study",
+      "template": "T - Evidence",
+      "keyImage": true
+    },
+    {
+      "id": "node_Ne237S0BfRPDaeqB_gbuT",
+      "name": "Source",
+      "format": "@{content}",
+      "template": "T - Source",
+      "tag": "",
+      "color": "#908484"
+    }
+  ],
+  "relationTypes": [
+    {
+      "id": "relation_BO5BtVVpJGrw70jTCTznm",
+      "label": "supports",
+      "complement": "is supported by",
+      "color": "#099268"
+    },
+    {
+      "id": "relation_QtuzWZj3zndZBKQe7LcFK",
+      "label": "opposes",
+      "complement": "is opposed by",
+      "color": "#e03131"
+    },
+    {
+      "id": "relation_OxKXi9qk9qcigTKK2BGeY",
+      "label": "informs",
+      "complement": "is informed by",
+      "color": "#adb5bd"
+    }
+  ],
+  "discourseRelations": [
+    {
+      "sourceId": "node_huDx8FGfNSGQyongW5rk-",
+      "destinationId": "node_LsIeSJxI7M9DoE3ISFEmw",
+      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY"
+    },
+    {
+      "sourceId": "node_huDx8FGfNSGQyongW5rk-",
+      "destinationId": "node_nMxzA_OByPwgPcmb6AN82",
+      "relationshipTypeId": "relation_BO5BtVVpJGrw70jTCTznm"
+    },
+    {
+      "sourceId": "node_huDx8FGfNSGQyongW5rk-",
+      "destinationId": "node_nMxzA_OByPwgPcmb6AN82",
+      "relationshipTypeId": "relation_QtuzWZj3zndZBKQe7LcFK"
+    },
+    {
+      "sourceId": "node_Ne237S0BfRPDaeqB_gbuT",
+      "destinationId": "node_LsIeSJxI7M9DoE3ISFEmw",
+      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY"
+    },
+    {
+      "sourceId": "node_nMxzA_OByPwgPcmb6AN82",
+      "destinationId": "node_LsIeSJxI7M9DoE3ISFEmw",
+      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY"
+    },
+    {
+      "sourceId": "node_LsIeSJxI7M9DoE3ISFEmw",
+      "destinationId": "node_LsIeSJxI7M9DoE3ISFEmw",
+      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY"
+    },
+    {
+      "sourceId": "node_nMxzA_OByPwgPcmb6AN82",
+      "destinationId": "node_nMxzA_OByPwgPcmb6AN82",
+      "relationshipTypeId": "relation_BO5BtVVpJGrw70jTCTznm"
+    },
+    {
+      "sourceId": "node_nMxzA_OByPwgPcmb6AN82",
+      "destinationId": "node_nMxzA_OByPwgPcmb6AN82",
+      "relationshipTypeId": "relation_QtuzWZj3zndZBKQe7LcFK"
+    },
+    {
+      "sourceId": "node_nMxzA_OByPwgPcmb6AN82",
+      "destinationId": "node_nMxzA_OByPwgPcmb6AN82",
+      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY"
+    },
+    {
+      "sourceId": "node_Ne237S0BfRPDaeqB_gbuT",
+      "destinationId": "node_nMxzA_OByPwgPcmb6AN82",
+      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY"
+    }
+  ],
+  "showIdsInFrontmatter": true,
+  "nodesFolderPath": "Discourse Graph",
+  "canvasFolderPath": "Discourse Canvas",
+  "canvasAttachmentsFolderPath": "attachments"
+}

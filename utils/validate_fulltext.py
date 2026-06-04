@@ -1,22 +1,35 @@
 #!/usr/bin/env python3
 """
-validate_fulltext.py — flag data/fulltext/<citekey>.txt files that are NOT the paper they claim
-to be (wrong-paper or review-substitution from the PMID→PMC fetch).
+validate_fulltext.py — identity gate: flag fetched text/PDFs that are NOT the paper they claim to be.
 
-The source notes' abstracts are trusted (curated). The PMC full text is body-only (no abstract), so
-we use a semantic signal: embed the abstract, embed the body in chunks, and take the best-matching
-chunk's cosine similarity. A correct body elaborates the same study (high similarity); a wrong paper
-or a review that merely cites the paper scores lower.
+WHAT
+    Detects wrong-paper and review-substitution files (a known failure of the PMID->PMC fetch: ~43%
+    of data/fulltext/ is the wrong paper) so extraction grounds only in validated sources. Same logic
+    serves both the .txt corpus and the downloaded PDFs (--pdf).
 
-Calibration (2026-06-03): GOOD 0.78-0.84, BAD/review 0.55-0.69 → default OK threshold 0.74.
+HOW
+    The source note's abstract is trusted (curated CSV); the fetched body is not. Embed the abstract,
+    embed the body in chunks, and take the best-matching chunk's cosine similarity (all-MiniLM-L6-v2).
+    A correct body elaborates the same study (high maxSim); a wrong paper or a review that merely
+    cites it scores lower. Verdict: OK if maxSim >= --ok, BAD if < --bad, else SUSPECT.
 
-Verdicts: OK (>= --ok), SUSPECT (between), BAD (< --bad). SUSPECT/BAD need manual check / re-fetch.
+INPUT   data/fulltext/*.txt (default) or data/pdfs/@*.pdf (--pdf, text via PyMuPDF); matching
+        Discourse Graph/Sources/@<citekey>.md frontmatter (abstract).
+OUTPUT  data/fulltext_validation.tsv (or data/pdf_validation.tsv with --pdf), sorted worst-first
+        (citekey, maxSim, top3, verdict) + a console summary. Read-only over the corpus.
 
-Writes data/fulltext_validation.tsv (sorted worst-first) and prints a summary.
+INVARIANTS / NOTES
+    - Calibration (2026-06-03): GOOD 0.78-0.84, BAD/review 0.55-0.69 -> default --ok 0.74 / --bad 0.66.
+      The threshold is the whole game: thresholds are corpus-calibrated, not universal.
+    - Files < 200 chars, no source note, or abstract < 80 chars are skipped / marked NO-ABSTRACT.
+    - This flags identity, not quality; SUSPECT/BAD need a manual check or refetch_by_title.py.
 
-Usage:
+USAGE
     python3 utils/validate_fulltext.py
+    python3 utils/validate_fulltext.py --pdf
     python3 utils/validate_fulltext.py --ok 0.74 --bad 0.66 --limit 50
+
+Design decisions, limitations, and the "smarter later" roadmap: Pipeline/validate_fulltext.md
 """
 
 import os

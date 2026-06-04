@@ -1,15 +1,35 @@
 #!/usr/bin/env python3
 """
-propose_eps.py — propose candidate EvidencePatterns as a human accept/reject CHECKLIST.
-Governance: this script never writes final EP files. It clusters existing EVD nodes that share a
-factor×outcome facet and come from ≥2 distinct papers, and emits `EP Proposals.md`.
+propose_eps.py — propose candidate EvidencePatterns as a human accept/reject checklist.
 
-Heuristic: group EVDs by (primary languageConcordanceFactor × primary healthOutcome); within each
-group needing ≥2 papers, report embedding coherence and flag EVDs already bundled into an EP.
+WHAT
+    Surfaces cross-paper EvidencePattern (EP) candidates so a human can decide which to author.
+    Governance: it NEVER writes EP node files — the only output is a proposal checklist.
 
-Usage:
+HOW
+    1. Load every EVD (Discourse Graph/Evidence/): its primary languageConcordanceFactor and
+       healthOutcome (the facet), its paper (@citekey parsed from the filename), and Description text.
+    2. From relations.json, mark EVDs already bundled into an EP (EVD—supports→EP edges).
+    3. Group EVDs by (factor × outcome) facet. A group is a candidate EP iff it draws on >= --min-papers
+       distinct papers.
+    4. Per candidate: compute an embedding coherence score (mean cosine of members to their centroid,
+       all-MiniLM-L6-v2 over name + Description) and count members already in an EP.
+    5. Rank by (#papers, coherence) and write the checklist, flagging in-EP members.
+
+INPUT   Discourse Graph/Evidence/*.md (frontmatter + body); relations.json; EvidencePatterns/*.md.
+OUTPUT  EP Proposals.md (vault root) + a console summary. Read-only over the graph.
+
+INVARIANTS / NOTES
+    - Propose-don't-commit: writes only the proposal file; the human authors any accepted EP.
+    - The (factor × outcome) grouping is the precision driver; coherence is a weak secondary signal in
+      this LEP-topical corpus (see the design note for why).
+    - --no-embeddings skips the model (coherence = None) for a fast facet-only pass.
+
+USAGE
     python3 utils/propose_eps.py
     python3 utils/propose_eps.py --min-papers 2 --no-embeddings
+
+Design decisions, limitations, and the "smarter later" roadmap: Pipeline/propose_eps.md
 """
 
 import os
@@ -84,7 +104,6 @@ def main():
         fm, body = split(f)
         iid = fm.get("nodeInstanceId")
         iid_type[iid] = "EVD"
-        paper = (re.search(r"@[A-Za-z][\w\-]+", f.stem) or [None])
         paper = re.search(r"@[A-Za-z][\w\-]+", f.stem)
         evds.append({
             "name": f.stem, "iid": iid,

@@ -1,31 +1,40 @@
 #!/usr/bin/env python3
 """
-Route B: extract figures and tables from non-PMC publisher PDFs via PyMuPDF (fitz).
+extract_pdf_figures_tables.py — Route B: heuristic figures/tables from non-PMC PDFs via PyMuPDF.
 
-For the ~116 downloaded PDFs that have no PMCID (see data/pdfs/_fetch_report.csv:
-rows where pdf_status is downloaded/cached and pmcid is empty), there is no JATS XML
-to pull structured objects from (that is Route A). Instead we recover figures and
-tables heuristically from the PDF itself and write, per paper, under
-data/figures_pdf/<citekey>/:
+WHAT
+    Recovers figures and tables from downloaded publisher PDFs that have no PMCID — i.e. the papers
+    Route A (fetch_figures_tables.py, JATS XML) cannot serve. Lower, variable quality; output is
+    meant for human review, not blind trust.
 
-    table_1.csv   <- a detected table (page.find_tables() -> table.to_pandas())
-    fig_1.png     <- an embedded raster image, filtered by minimum size
-    manifest.json <- source="pdf", citekey, tables[] and figures[] with page/bbox
+HOW
+    1. From data/pdfs/_fetch_report.csv, take citekeys whose PDF was downloaded/cached AND have an
+       empty pmcid (non-PMC).
+    2. Tables: per page, page.find_tables() -> table.to_pandas(); keep only detections with
+       >= MIN_TABLE_ROWS x MIN_TABLE_COLS of real (non-empty) content; write each as CSV.
+    3. Figures: per page, get_images(full=True), dedupe xrefs across the document, keep only images
+       whose on-page placement exceeds MIN_IMG_DIM in both dims and MIN_IMG_AREA (filters logos,
+       banners, rules, glyphs); normalize CMYK/alpha to RGB and save as PNG.
+    4. Caption: nearest text block starting "Fig"/"Figure", preferring one just below the image.
 
-Caveats inherent to PDF parsing:
-  - Vector figures (charts drawn as paths, not raster images) are NOT captured by
-    get_images() and are deferred to v2.
-  - Borderless / merged-cell tables are often missed or mis-segmented.
-Output needs human review; this script logs per-paper and total counts.
+INPUT   data/pdfs/_fetch_report.csv (target selection); data/pdfs/@<citekey>.pdf (PyMuPDF/fitz).
+OUTPUT  data/figures_pdf/<citekey>/ : table_N.csv, fig_N.png, manifest.json
+        (source="pdf", with page + bbox for each object).
 
-Output root is data/figures_pdf/ (separate from Route A's data/figures/ to mark
-provenance). Resume-safe: skips papers whose output dir already exists unless --force.
+INVARIANTS / NOTES
+    - Output root data/figures_pdf/ is kept separate from Route A's data/figures/ to mark provenance.
+    - Vector figures (charts drawn as paths, not raster) are NOT captured by get_images() — deferred.
+    - Borderless / merged-cell tables are often missed or mis-segmented.
+    - Resume-safe: skips papers whose output dir already exists unless --force; on a per-paper
+      extract error it writes a stub manifest so reruns skip rather than retry forever.
 
-Usage:
+USAGE
     python3 utils/extract_pdf_figures_tables.py --dry-run   # list target papers, no writes
     python3 utils/extract_pdf_figures_tables.py --limit 15  # pilot
     python3 utils/extract_pdf_figures_tables.py             # all non-PMC PDFs
     python3 utils/extract_pdf_figures_tables.py --force     # re-extract
+
+Design decisions, limitations, and the "smarter later" roadmap: Pipeline/extract_pdf_figures_tables.md
 """
 
 import argparse

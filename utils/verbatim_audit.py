@@ -1,22 +1,37 @@
 #!/usr/bin/env python3
 """
-verbatim_audit.py — check that every > "..." quote in the discourse-graph nodes actually appears
-in its source PDF, using NFKD + alphanumeric normalization (ignores punctuation/spacing/case).
+verbatim_audit.py — verify every > "..." quote in the discourse graph against its source text.
 
-Coverage tiers (fraction of the normalized quote found in order in the source):
-  OK        >= 0.98   exact / near-exact
-  minor     0.90-0.98 usually one dropped/added word, or a pdftotext artifact (e.g. en-dash)
-  moderate  0.50-0.90 paraphrase — tighten toward verbatim
-  FAIL      < 0.50    likely fabricated or wrong source/page — fix immediately
+WHAT
+    Catches paraphrased, fabricated, or wrong-source quotes by checking each blockquote against the
+    paper it cites. Normalization is NFKD + alphanumeric-only, so punctuation/spacing/case differ
+    freely and only the words have to match.
 
-Source text is read from data/pdfs/@<citekey>.pdf (PyMuPDF). The citekey for each quote is taken
-from the trailing "(Author, year, …)" citation when present, else the node's Source / filename.
+HOW
+    1. Build an author+year → citekey map from ALL source notes (Discourse Graph/Sources/@*.md), not
+       only PDF-backed ones, so a quote can resolve even when no full text is on disk.
+    2. Scan every node body for > "..." quotes; resolve each quote's citekey from a trailing
+       "(Author, year, …)" citation when present, else the node's Source / filename.
+    3. Load that source's text — PDF first (data/pdfs/<citekey>.pdf via PyMuPDF), falling back to
+       extracted full text (data/fulltext/<citekey>.txt) — and normalize + cache it.
+    4. Score coverage = fraction of the normalized quote matched in order, and bin into tiers:
+         OK >= 0.98 · minor 0.90-0.98 · moderate 0.50-0.90 · FAIL < 0.50
+       (plus NO-PDF when no source text exists, NO-SRC when no citekey resolves).
 
-Writes data/verbatim_audit.tsv and prints a summary.
+INPUT   Discourse Graph/**/*.md (quotes + Source); data/pdfs/*.pdf; data/fulltext/*.txt.
+OUTPUT  data/verbatim_audit.tsv + a console summary. Read-only over the graph.
 
-Usage:
+INVARIANTS / NOTES
+    - Read-only: reports only; quote fixes are a human edit.
+    - Known false positive: pdftotext/PyMuPDF renders en-dashes (and similar glyphs) oddly, so genuine
+      verbatim quotes can land in the `minor` tier.
+    - --min lists only quotes below a coverage threshold (default 2.0 ⇒ everything but OK).
+
+USAGE
     python3 utils/verbatim_audit.py
     python3 utils/verbatim_audit.py --min 0.9     # only list quotes below this coverage
+
+Design decisions, limitations, and the "smarter later" roadmap: Pipeline/verbatim_audit.md
 """
 
 import argparse

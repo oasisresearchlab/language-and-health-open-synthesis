@@ -1,26 +1,43 @@
 #!/usr/bin/env python3
 """
-Seed the extraction QUEUE: group empirical papers into provisional EP/CLM buckets so the
-discourse-node extraction can proceed cluster-by-cluster (see Skill.md / plans/extracting-
-discourse-nodes.md).
+cluster_queue.py — seed the extraction QUEUE with provisional factor×outcome buckets.
 
-Hybrid approach:
-  1. MATRIX  — from each source's `factors` + `outcomes_extracted` frontmatter, classify terms
-     into a FACTOR vocab and an OUTCOME vocab, and form factor×outcome cells (the seed buckets).
-     (Note: this corpus stores some outcomes inside `factors`, so we read outcome terms from both.)
-  2. EMBEDDINGS — embed each paper (title+abstract+keywords) with sentence-transformers; for each
-     cell, expand it with untagged-but-similar papers (centroid similarity) and score coherence.
-     Papers with no recognized factor/outcome are KMeans-clustered to surface emergent buckets.
+WHAT
+    Group empirical papers into provisional EP/CLM buckets so discourse-node extraction can
+    proceed cluster-by-cluster (see Skill.md / plans/extracting-discourse-nodes.md). PROPOSE,
+    don't commit — no EP/CLM node files are written.
 
-Output (governance: PROPOSE, don't commit — no EP/CLM files are written):
-  - `Extraction Queue.md`  (vault root, human-reviewable checklist of provisional buckets)
-  - `data/queue.json`      (structured, for downstream scripts)
+HOW
+    Hybrid matrix + embeddings:
+    1. MATRIX — from each source's `factors` + `outcomes_extracted` frontmatter, classify each
+       term against a curated FACTOR vocab and OUTCOME vocab, and form factor×outcome cells (the
+       seed buckets). Because this corpus stores some outcomes inside `factors`, outcome terms are
+       read from BOTH fields.
+    2. EMBEDDINGS — embed each paper (title+abstract+keywords) with sentence-transformers
+       (all-MiniLM-L6-v2). Per cell: score coherence (mean cosine to centroid) and expand it with
+       untagged-but-similar papers above --expand-threshold.
+    3. EMERGENT (opt-in, --emergent-k) — KMeans-cluster papers with no recognised factor/outcome
+       and label clusters by top TF-IDF terms.
 
-Usage:
+INPUT   Discourse Graph/Sources/@*.md (has_empirical_findings + factors/outcomes_extracted/title/
+        abstract/keywords frontmatter).
+OUTPUT  Extraction Queue.md (vault root, human checklist) + data/queue.json (structured).
+
+INVARIANTS / NOTES
+    - Propose-don't-commit: emits a reviewable checklist only; the human promotes buckets to nodes.
+    - MATRIX is the precision driver; embedding coherence and "suggested" papers are weak signals
+      in this uniformly LEP-topical corpus (see the design note).
+    - Emergent KMeans is OFF by default — it has segfaulted under the anaconda MKL/OpenMP duplicate
+      runtime; the KMP_DUPLICATE_LIB_OK / OMP_NUM_THREADS guards above mitigate it.
+    - --no-embeddings runs a fast matrix-only (keyword) pass.
+
+USAGE
     python3 utils/cluster_queue.py                       # full run
     python3 utils/cluster_queue.py --top 15 --min-papers 3
     python3 utils/cluster_queue.py --expand-threshold 0.45
     python3 utils/cluster_queue.py --no-embeddings       # matrix-only (keyword fallback)
+
+Design decisions, limitations, and the "smarter later" roadmap: Pipeline/cluster_queue.md
 """
 
 import os

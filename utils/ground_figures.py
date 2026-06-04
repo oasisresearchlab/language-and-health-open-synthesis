@@ -1,24 +1,41 @@
 #!/usr/bin/env python3
 """
-ground_figures.py — embed grounding figures/tables FIRST in each EVD's Description.
+ground_figures.py — embed the grounding figure/table FIRST in each EVD's Description.
 
-For every EVD that references "(Fig N)" / "(Table N)" and has a source PDF:
-  1. Locate the figure/table in the PDF by caption search ("Figure N." / "Table N.")
-     — two passes: page.search_for() then a get_text() substring fallback (adapted from
-     living-synthesis-remix/misc/scripts/figure_pipeline.py).
-  2. FIGURE: crop the nearest embedded image + caption (vector figures → half-page fallback).
-     TABLE: prefer the precise Route-B bbox (data/figures_pdf/<citekey>/manifest.json) on the
-     caption's page; else crop a region around the caption.
-  3. Save to attachments/<citekey>-fig<N>.png / -table<N>.png and embed it at the TOP of the
-     EVD's ## Description (EVD nodeType has keyImage:true, so the first image becomes the keyImage).
+WHAT
+    For every EVD whose Description references "(Fig N)" / "(Table N)" and has a source PDF, crop
+    the actual figure/table out of the PDF and embed it at the TOP of the Description, so the
+    finding is grounded in the visual evidence.
 
-Idempotent (skips if the embed is already present unless --force). Dry-run by default.
+HOW
+    1. LOCATE by caption search — find the real CAPTION block (one that STARTS with "Figure N" /
+       "Table N"), not an in-text mention like "Table 3 shows…". A verb-exclusion heuristic
+       penalises a following mention-verb or "(" and rewards a title-case caption. Two passes:
+       block scoring, then a search_for() fallback (adapted from
+       living-synthesis-remix/misc/scripts/figure_pipeline.py).
+    2. CROP — FIGURE: the nearest embedded image + caption (vector figures → half-page fallback).
+       TABLE: prefer the precise Route-B bbox (data/figures_pdf/<citekey>/manifest.json) on the
+       caption's page; else crop a generous region around the caption.
+    3. EMBED — save to attachments/<citekey>-fig<N>.png / -table<N>.png and inject it at the top of
+       the EVD ## Description. The EVD nodeType has keyImage:true, so the first image becomes the
+       keyImage.
 
-Usage:
-    python3 utils/ground_figures.py                 # dry-run: report ref→asset matches
-    python3 utils/ground_figures.py --apply         # crop + embed
+INPUT   Discourse Graph/Evidence/EVD - *.md; data/pdfs/<citekey>.pdf;
+        optional data/figures_pdf/<citekey>/manifest.json (Route-B table bboxes).
+OUTPUT  attachments/<citekey>-fig|table<N>.png + edited EVD bodies. Dry-run by default.
+
+INVARIANTS / NOTES
+    - Idempotent: skips an already-present embed unless --force.
+    - Full-text-only papers (no PDF in data/pdfs/) cannot be grounded and are reported as no-pdf.
+    - Route-B manifests are often empty, so location relies on PDF caption search.
+
+USAGE
+    python3 utils/ground_figures.py                  # dry-run: report ref→asset matches
+    python3 utils/ground_figures.py --apply          # crop + embed
     python3 utils/ground_figures.py --apply --force  # re-crop existing
     python3 utils/ground_figures.py --apply @Lindholm_2012_Professional_language
+
+Design decisions, limitations, and the "smarter later" roadmap: Pipeline/ground_figures.md
 """
 
 import argparse

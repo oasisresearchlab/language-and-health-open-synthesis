@@ -1,23 +1,43 @@
 #!/usr/bin/env python3
 """
-sync_relations.py — the hybrid-edges bridge. Read edge-authoring wikilink sections from node
-bodies and materialize them into relations.json (the Discourse Graphs plugin's instance-edge
-store), with the correct schema direction + relation type.
+sync_relations.py — the hybrid-edges bridge: materialise body wikilinks into relations.json.
 
-Authoring conventions (one location per edge — see Skill-references "Edge authoring"):
-  CLM  ## Supporting Evidence    [[EVD]]  -> EVD  —supports→  CLM
-  CLM  ## Contradicting Evidence [[EVD]]  -> EVD  —opposes→   CLM
-  EP   ## Supporting Evidence    [[EVD]]  -> EVD  —supports→  EP
-  EP   ## Contradicting Evidence [[EVD]]  -> EVD  —opposes→   EP
-  CVT  ## Qualifies              [[EVD]]  -> CVT  —qualifies→ EVD
-  QUE  ## Claims addressing this question [[CLM]] -> CLM —informs→ QUE
+WHAT
+    Read edge-authoring wikilink sections from node bodies and materialise them into
+    relations.json (the Discourse Graphs plugin's instance-edge store), with the correct schema
+    direction + relation type. Node bodies are the authoring surface; this script is the bridge.
 
-Additive + idempotent: existing edges are preserved; an edge is added only if no edge with the
-same (source, destination, type) already exists. Default is DRY-RUN; pass --apply to write.
+HOW
+    1. Index every node under Discourse Graph/ by stem → {nodeInstanceId, node-type}.
+    2. For each node body, walk its ## / ### sections; a (node-type, heading) pair matches a
+       SECTION_RULE that fixes the relation, the direction (which endpoint is source), and the
+       EXPECTED linked-node type.
+    3. For each wikilink in a matched section, resolve it, apply the type-guard, orient the edge
+       per the rule's direction, and queue it if absent.
 
-Usage:
+    Authoring conventions (one location per edge — see Skill-references "Edge authoring"):
+      CLM  ## Supporting Evidence    [[EVD]]  -> EVD  —supports→  CLM
+      CLM  ## Contradicting Evidence [[EVD]]  -> EVD  —opposes→   CLM
+      EP   ## Supporting Evidence    [[EVD]]  -> EVD  —supports→  EP
+      EP   ## Contradicting Evidence [[EVD]]  -> EVD  —opposes→   EP
+      CVT  ## Qualifies              [[EVD]]  -> CVT  —qualifies→ EVD
+      QUE  ## Claims addressing this question [[CLM]] -> CLM —informs→ QUE
+
+INPUT   Discourse Graph/**/*.md (nodeInstanceId/nodeTypeId frontmatter + edge-authoring sections).
+OUTPUT  relations.json (only with --apply) + a console diff. Dry-run by default.
+
+INVARIANTS / NOTES
+    - One authoring location per edge: an edge is declared in exactly one node body.
+    - Additive + idempotent: existing edges are preserved; an edge is added only if no edge with
+      the same (source, destination, type) already exists. There is NO prune.
+    - Type-guard: a linked node whose type ≠ the rule's expected type is skipped (e.g. a legacy
+      [[@Source]] link under an Evidence section) and reported as mismatched.
+
+USAGE
     python3 utils/sync_relations.py            # dry-run: report edges that would be added
     python3 utils/sync_relations.py --apply    # write to relations.json
+
+Design decisions, limitations, and the "smarter later" roadmap: Pipeline/sync_relations.md
 """
 
 import argparse

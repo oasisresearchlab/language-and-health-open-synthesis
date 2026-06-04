@@ -1,23 +1,41 @@
 #!/usr/bin/env python3
 """
-Retrieve open-access PDFs for source notes and enrich them with DOIs.
+fetch_pdfs.py — resolve DOIs for source notes and download their open-access PDFs.
 
-For each note in `Discourse Graph/Sources/@*.md` we:
-  1. resolve identifiers (PMID -> PMCID + DOI) via NCBI ID Converter, falling back
-     to OpenAlex for any missing DOI (and capturing an OA PDF candidate),
-  2. write the DOI back into the note's YAML frontmatter, and
-  3. download an OA PDF (first valid wins) from, in order:
-        PMC OA subset -> Unpaywall -> Semantic Scholar -> OpenAlex,
-     saving it to data/pdfs/@<citekey>.pdf.
+WHAT
+    Enriches each source note with a DOI and, where the paper is OA, fetches its PDF into
+    data/pdfs/@<citekey>.pdf — the trusted ground-truth corpus extraction is allowed to read.
 
-Resume-safe: cached identifier map, skip-if-exists for PDFs, idempotent DOI insertion.
+HOW
+    1. Resolve identifiers: PMID -> {PMCID, DOI} via NCBI ID Converter (batched), then OpenAlex
+       (by PMID) fills any missing DOI and captures an OA-PDF candidate URL.
+    2. Write the DOI into the note's YAML frontmatter (after `pubmed_id:`), idempotently.
+    3. Download an OA PDF, first valid wins, trying sources in order:
+       PMC OA subset (via Europe PMC render) -> Unpaywall -> Semantic Scholar -> OpenAlex.
+       Candidate URLs whose host is ncbi.nlm.nih.gov are skipped (bot-blocked); a downloaded
+       file is accepted only if it starts with %PDF and exceeds a small size floor.
 
-Usage:
+INPUT   Discourse Graph/Sources/@*.md (frontmatter w/ citekey + pubmed_id); optional .env
+        (SEMANTIC_SCHOLAR_API_KEY); cached data/pdfs/_idmap.json.
+OUTPUT  data/pdfs/@<citekey>.pdf; updated note frontmatter (doi:); data/pdfs/_idmap.json
+        (identifier cache) and data/pdfs/_fetch_report.csv (per-note outcome).
+
+INVARIANTS / NOTES
+    - Resume-safe: cached idmap (misses recorded so we don't requery), skip-if-exists for PDFs,
+      idempotent DOI insertion. --force re-downloads.
+    - Politeness: NCBI ~3 req/s, Unpaywall/OpenAlex polite delay, S2 with 429 backoff.
+    - --dry-run resolves + reports without any writes; --only-doi writes DOIs but skips PDFs.
+    - PDF validity is checked by magic bytes + min size only — it does NOT verify the PDF is the
+      right paper; that identity gate is validate_fulltext.py --pdf.
+
+USAGE
     python3 utils/fetch_pdfs.py --dry-run        # resolve + report, no writes
     python3 utils/fetch_pdfs.py --limit 20       # pilot on first 20 notes
     python3 utils/fetch_pdfs.py                   # full run
     python3 utils/fetch_pdfs.py --only-doi        # resolve + write DOIs, no PDF downloads
     python3 utils/fetch_pdfs.py --force           # re-download existing PDFs
+
+Design decisions, limitations, and the "smarter later" roadmap: Pipeline/fetch_pdfs.md
 """
 
 import argparse

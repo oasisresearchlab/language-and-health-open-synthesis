@@ -1,13 +1,32 @@
 #!/usr/bin/env python3
 """
-build_dgraph.py — generate a nested discourse-graph index from relations.json (the plugin's
-instance-edge store). Read-only over the vault; writes DGRAPH.md at the vault root.
+build_dgraph.py — generate a nested discourse-graph index (DGRAPH.md) from relations.json.
 
-Nesting: QUE → CLM (informs) → EVD (supports/opposes) → CVT (qualifies),
-plus an EvidencePattern section: EP → EVD (supports) from ≥2 papers.
+WHAT
+    Materialises the plugin's instance-edge store into a single human-readable, nested index of the
+    discourse graph. Read-only over the vault: it derives the view, never mutates nodes or edges.
 
-Usage:
+HOW
+    1. Walk every node note's frontmatter to build instanceId -> {name, type, citekey}, mapping the
+       plugin's hardcoded nodeTypeId values to short tags (QUE/CLM/EVD/CVT/EP/...).
+    2. Load relations.json edges as (source, destination, type) triples.
+    3. For each QUE, nest CLMs that inform it → EVDs that support/oppose each CLM → CVTs that qualify
+       each EVD, resolving every node by its nodeInstanceId.
+    4. Emit a separate EvidencePatterns section: each EP with its supporting EVDs and a distinct-paper
+       count (citekey, falling back to the filename's "@citekey" suffix).
+
+INPUT   Discourse Graph/**/*.md (frontmatter); relations.json.
+OUTPUT  DGRAPH.md (vault root) + a console node/edge summary. Read-only over the graph.
+
+INVARIANTS / NOTES
+    - Read-only: never writes node files or edges; the index is fully regenerable.
+    - The plugin's node-type and relation ids are hardcoded; changing the plugin schema breaks them.
+    - Nodes are joined to edges by nodeInstanceId, not filename — robust to renames.
+
+USAGE
     python3 utils/build_dgraph.py
+
+Design decisions, limitations, and the "smarter later" roadmap: Pipeline/build_dgraph.md
 """
 
 import json

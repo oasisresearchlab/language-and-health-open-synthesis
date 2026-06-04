@@ -1,15 +1,34 @@
 #!/usr/bin/env python3
 """
-count_evds_per_subtask.py — refresh the cross-paper evidence-summary index.
+count_evds_per_subtask.py — refresh the per-(factor→outcome) evidence-summary table + EP strength tags.
 
-For each factor→outcome subtask (from EVD facet fields), count distinct EVDs and papers, and write
-`Evidence Summary.md` — the per-question summary table skeleton (direction / effect size / strength
-are HUMAN-synthesized, left as TODO per governance). Also refreshes each EP's `ep/strength/<N>-papers`
-tag to match the distinct-paper count of its supporting EVDs (from relations.json).
+WHAT
+    Maintains the cross-paper evidence-summary index (Evidence Summary.md) and keeps each
+    EvidencePattern's strength tag honest. The automatic columns are counts only; the interpretive
+    columns are left for a human.
 
-Usage:
+HOW
+    1. Read every EVD's facet fields (primary languageConcordanceFactor × healthOutcome) and its paper
+       (@citekey from the filename); bucket distinct EVDs and papers per (factor → outcome) subtask.
+    2. From relations.json, gather each EP's supporting EVDs and their distinct papers, and rewrite the
+       EP note's `ep/strength/<N>-papers` tag to match (only when an existing tag is present).
+    3. Emit Evidence Summary.md: one row per subtask with #EVDs / #papers filled in, and
+       Direction / Effect size / Strength left as _TODO_ (human-synthesized, propose-don't-commit).
+
+INPUT   Discourse Graph/Evidence/EVD - *.md (facets); EvidencePatterns/*.md; relations.json.
+OUTPUT  Evidence Summary.md (vault root) + in-place EP `ep/strength` tag edits + a console summary.
+
+INVARIANTS / NOTES
+    - Propose-don't-commit: Direction/Effect size/Strength stay TODO; only counts are written.
+    - The only mutation is the numeric `ep/strength/<N>-papers` tag; EPs without one are left for the
+      author to add.
+    - --dry-run reports without writing the summary or touching any EP note.
+
+USAGE
     python3 utils/count_evds_per_subtask.py            # write summary + refresh EP strength tags
     python3 utils/count_evds_per_subtask.py --dry-run  # report only, no file changes
+
+Design decisions, limitations, and the "smarter later" roadmap: Pipeline/count_evds_per_subtask.md
 """
 
 import argparse

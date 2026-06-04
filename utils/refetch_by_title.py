@@ -1,20 +1,43 @@
 #!/usr/bin/env python3
 """
-refetch_by_title.py — remediate wrong identifiers. The source notes' TITLES are trusted, but some
-`pubmed_id`s (and the DOIs/PDFs/full text derived from them) point to the wrong paper. This script
-re-resolves the correct DOI / PMID / PMCID from the title via OpenAlex, flags discrepancies with the
-source note, and (optionally) re-fetches corrected open-access full text by the right PMCID.
+refetch_by_title.py — remediate wrong identifiers by re-resolving them from the trusted title.
 
-By default it targets papers flagged BAD/SUSPECT in data/fulltext_validation.tsv or BAD in
-data/pdf_validation.tsv. Identifier corrections are REPORTED (propose-don't-commit) — source notes
-are not rewritten. Full text IS regenerated (it's derived, gitignored) when --refetch-fulltext and a
-strong title match + PMCID are found.
+WHAT
+    The source notes' TITLES are trusted, but some `pubmed_id`s (and the DOIs/PDFs/full text
+    derived from them) point to the WRONG paper. This script re-resolves the correct
+    DOI / PMID / PMCID from the title via OpenAlex, flags identifier discrepancies against the
+    source note, and (optionally) re-fetches corrected open-access full text by the right PMCID.
 
-Usage:
+HOW
+    1. Pick the target citekeys: papers flagged BAD/SUSPECT in data/fulltext_validation.tsv or
+       BAD in data/pdf_validation.tsv (default), or --all, or an explicit --citekeys list.
+    2. Search OpenAlex by the source note's title; keep the best title-similarity match
+       (SequenceMatcher over NFKD-normalised strings) and require it to clear --min-title-sim.
+    3. Compare the resolved PMID/DOI to the source note's — only call a PMID "DIFFERENT" when
+       OpenAlex actually returns a disagreeing PMID.
+    4. Resolve PMCID: OpenAlex's pmcid is unreliable, so when missing, look it up from the
+       (verified) PMID via the NCBI ID Converter.
+    5. With --refetch-fulltext + a PMCID, pull Europe PMC JATS XML, strip to body text, and
+       overwrite the derived (gitignored) data/fulltext/<citekey>.txt.
+
+INPUT   Discourse Graph/Sources/@*.md (frontmatter title/pubmed_id/doi);
+        data/fulltext_validation.tsv + data/pdf_validation.tsv (target list).
+OUTPUT  data/refetch_report.tsv + a console summary; optionally rewritten data/fulltext/*.txt.
+
+INVARIANTS / NOTES
+    - Propose-don't-commit for identifiers: corrections are REPORTED only; source notes are never
+      rewritten. Only the derived full text is regenerated.
+    - Two distinct failure modes: a WRONG PMID in the source note vs. a correct PMID whose fetched
+      content is the wrong paper — both surface here.
+    - Non-OA papers resolve but have no fetchable full text (unrecoverable → quarantine).
+
+USAGE
     python3 utils/refetch_by_title.py                      # report on flagged papers
     python3 utils/refetch_by_title.py --all                # report on every source note
     python3 utils/refetch_by_title.py --refetch-fulltext   # also re-pull corrected OA full text
     python3 utils/refetch_by_title.py --citekeys @Foo_2020_Bar @Baz_2019_Qux
+
+Design decisions, limitations, and the "smarter later" roadmap: Pipeline/refetch_by_title.md
 """
 
 import argparse

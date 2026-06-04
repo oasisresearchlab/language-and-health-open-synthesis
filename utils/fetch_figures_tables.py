@@ -1,23 +1,39 @@
 #!/usr/bin/env python3
 """
-Extract figures and tables as standalone objects for the open-access (PMC) subset.
+fetch_figures_tables.py — Route A: structured figures/tables for the PMC open-access subset.
 
-For each source note that resolved to a PMCID (see data/pdfs/_idmap.json), we pull the
-JATS full-text XML and the figure-image ZIP from Europe PMC and write, per paper, under
-data/figures/<citekey>/:
+WHAT
+    For papers in the PMC OA subset, extracts figures and tables as standalone objects from the
+    publisher's own structured markup — the high-quality ("ground truth") route, complementing the
+    heuristic PDF route (Route B, extract_pdf_figures_tables.py) for everything else.
 
-    table_1.html / table_1.csv     <- structured table markup (+ CSV when parseable)
-    fig_1.jpg (etc.)               <- actual figure image files
-    manifest.json                  <- labels + captions + file references
+HOW
+    1. From data/pdfs/_idmap.json, take each source note whose PMID resolved to a PMCID.
+    2. Fetch the JATS full-text XML from Europe PMC; parse <table-wrap> (label/caption + serialized
+       HTML table) and <fig> (label/caption + graphic hrefs), namespace-stripped.
+    3. If any figure has graphics, fetch the supplementaryFiles ZIP; match each figure's graphic
+       basename to a file in the ZIP, preferring image formats in IMG_PREF order.
+    4. Write per-paper outputs and a manifest of labels/captions/file references.
 
-Only works for the PMC OA subset; non-PMC papers have no JATS XML (use the PDF-parsing
-route for those). Resume-safe: skips papers whose output dir already exists unless --force.
+INPUT   Discourse Graph/Sources/@*.md (pubmed_id); data/pdfs/_idmap.json (PMID->PMCID);
+        Europe PMC fullTextXML + supplementaryFiles endpoints.
+OUTPUT  data/figures/<citekey>/ : table_N.html (+ table_N.csv when pandas can parse it),
+        fig_N.<ext> (image files), manifest.json.
 
-Usage:
+INVARIANTS / NOTES
+    - PMC OA subset only: non-PMC papers have no JATS XML and are out of scope here (Route B).
+    - Tables are always saved as HTML; CSV is best-effort (skipped if not tabular-parseable).
+    - Figure images come from the supp ZIP; a figure with no matchable graphic gets a manifest
+      entry with image=None rather than being dropped.
+    - Resume-safe: skips papers whose output dir already exists unless --force.
+
+USAGE
     python3 utils/fetch_figures_tables.py --dry-run     # list eligible papers, no writes
     python3 utils/fetch_figures_tables.py --limit 5     # pilot
     python3 utils/fetch_figures_tables.py               # all PMCID papers
     python3 utils/fetch_figures_tables.py --force       # re-extract
+
+Design decisions, limitations, and the "smarter later" roadmap: Pipeline/fetch_figures_tables.md
 """
 
 import argparse

@@ -1,19 +1,37 @@
 #!/usr/bin/env python3
 """
-attachment_audit.py — verify discourse-graph attachment invariants against relations.json
-(the plugin's instance-edge store). Exits 1 if any invariant is violated, so it can gate promotion.
+attachment_audit.py — enforce discourse-graph attachment invariants and gate promotion.
 
-Invariants:
-  I1  CVT —qualifies→ only EVD          (caveats constrain evidence, not claims/questions)
-  I2  every EVD supports ≥1 CLM or EP   (no orphan evidence)
-  I3  every CLM informs ≥1 QUE          (no orphan claim)
-  I4  every CLM has ≥1 supporting EVD   (claim is grounded)
-  I5  every EP has ≥2 EVDs from ≥2 distinct papers
-  I6  every EVD declares a Source
+WHAT
+    Checks that the graph is well-formed — no orphan evidence/claims, caveats land only on evidence,
+    claims are grounded, EvidencePatterns are genuinely cross-paper. Exits 1 on any violation so it
+    can gate the next extraction step in CI / a pipeline.
 
-Usage:
+HOW
+    1. Walk node frontmatter to build instanceId -> {name, type, paper, fm} (type from the plugin's
+       nodeTypeId; paper from the filename's "@citekey" or the Source field).
+    2. Load relations.json edges and check each invariant over them:
+         I1  CVT —qualifies→ only EVD          (caveats constrain evidence, not claims/questions)
+         I2  every EVD supports ≥1 CLM or EP   (no orphan evidence)
+         I3  every CLM informs ≥1 QUE          (no orphan claim)
+         I4  every CLM has ≥1 supporting EVD   (claim is grounded)
+         I5  every EP has ≥2 EVDs from ≥2 distinct papers
+         I6  every EVD declares a Source
+    3. Print the violations grouped by code; exit 1 if any exist.
+
+INPUT   Discourse Graph/**/*.md (frontmatter); relations.json.
+OUTPUT  Console violation report; process exit code (0 clean / 1 violations). Read-only over the graph.
+
+INVARIANTS / NOTES
+    - Read-only: reports + sets the exit code; it never fixes the graph.
+    - Non-zero exit is the gate — wire it before promotion so a broken graph blocks the next step.
+    - --scope <substr> limits the audit to nodes whose name/tags contain the substring (I1 is global).
+
+USAGE
     python3 utils/attachment_audit.py
     python3 utils/attachment_audit.py --scope adherence   # only audit nodes touching that tag/word
+
+Design decisions, limitations, and the "smarter later" roadmap: Pipeline/attachment_audit.md
 """
 
 import argparse

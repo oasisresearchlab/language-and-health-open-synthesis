@@ -57,19 +57,23 @@ identity and refuse rather than fabricate.*
 
 | Script | Role |
 |---|---|
-| `fetch_pdfs.py` | Resolve DOIs (NCBI ID Converter → OpenAlex) + download OA PDFs (Europe PMC → Unpaywall → S2 → OpenAlex); write DOIs to notes |
-| `fetch_figures_tables.py` | Route A — figures/tables for OA papers via Europe PMC JATS XML + supplementary ZIP |
-| `extract_pdf_figures_tables.py` | Route B — figures/tables from PDFs via PyMuPDF |
-| `validate_fulltext.py` | Flag wrong-paper text/PDFs by embedding the abstract vs the body (`--pdf` for PDFs) |
-| `refetch_by_title.py` | Re-resolve correct DOI/PMID/PMCID by title; flag wrong PMIDs; recover OA full text |
-| `cluster_queue.py` | Seed the extraction queue: factor×outcome matrix + embeddings → provisional buckets |
-| `ground_figures.py` | Locate a referenced `(Fig N)`/`(Table N)` in the PDF and embed it first in the EVD |
-| `sync_relations.py` | Materialise body wikilinks into plugin `relations.json` edges (correct schema direction) |
-| `build_dgraph.py` | Generate the nested QUE→CLM→EVD→⚠️CVT index (`DGRAPH.md`) from `relations.json` |
-| `verbatim_audit.py` | Check every `> "…"` quote against the source PDF/full text (NFKD+alnum) |
-| `attachment_audit.py` | Enforce graph invariants (CVT qualifies EVD only; every EVD→CLM/EP; every CLM→QUE; EP ≥2 papers) |
-| `propose_eps.py` | Propose candidate EvidencePatterns as a human accept/reject checklist (never auto-commits) |
-| `count_evds_per_subtask.py` | Refresh the per-question evidence-summary index + EP strength tags |
+| [[fetch_pdfs]] | Resolve DOIs (NCBI ID Converter → OpenAlex) + download OA PDFs (Europe PMC → Unpaywall → S2 → OpenAlex); write DOIs to notes |
+| [[fetch_figures_tables]] | Route A — figures/tables for OA papers via Europe PMC JATS XML + supplementary ZIP |
+| [[extract_pdf_figures_tables]] | Route B — figures/tables from PDFs via PyMuPDF |
+| [[validate_fulltext]] | Flag wrong-paper text/PDFs by embedding the abstract vs the body (`--pdf` for PDFs) |
+| [[refetch_by_title]] | Re-resolve correct DOI/PMID/PMCID by title; flag wrong PMIDs; recover OA full text |
+| [[cluster_queue]] | Seed the extraction queue: factor×outcome matrix + embeddings → provisional buckets |
+| [[ground_figures]] | Locate a referenced `(Fig N)`/`(Table N)` in the PDF and embed it first in the EVD |
+| [[sync_relations]] | Materialise body wikilinks into plugin `relations.json` edges (correct schema direction) |
+| [[build_dgraph]] | Generate the nested QUE→CLM→EVD→⚠️CVT index (`DGRAPH.md`) from `relations.json` |
+| [[verbatim_audit]] | Check every `> "…"` quote against the source PDF/full text (NFKD+alnum) |
+| [[attachment_audit]] | Enforce graph invariants (CVT qualifies EVD only; every EVD→CLM/EP; every CLM→QUE; EP ≥2 papers) |
+| [[propose_eps]] | Propose candidate EvidencePatterns as a human accept/reject checklist (never auto-commits) |
+| [[count_evds_per_subtask]] | Refresh the per-question evidence-summary index + EP strength tags |
+
+**Two-layer docs:** each script's **usage + spec** lives in its module docstring; its **design
+decisions, limitations, and "smarter later" roadmap** live in a per-script note `Pipeline/<script>.md`
+(linked above). Every pipeline script now has both.
 
 Generated artifacts: `DGRAPH.md`, `Extraction Queue.md`, `EP Proposals.md`, `Evidence Summary.md`,
 `relations.json`; trust manifests + reports under `data/` (gitignored).

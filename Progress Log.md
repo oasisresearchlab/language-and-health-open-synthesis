@@ -22,6 +22,13 @@ note ([[YYYY-MM-DD]]). For the atemporal design, see [[Pipeline]] and `plans/`.
   for tables + Description-first embedding). Fixed an in-text-mention bug (caption-block locator with
   verb exclusion). **EVDs grounded 5 → 13** (every PDF-backed paper), visually verified.
 - Wrote [[Pipeline]] + this log; committed on branch `synthesis-pipeline`.
+- **Script documentation:** standardized module docstrings (WHAT/HOW/INPUT/OUTPUT/INVARIANTS/USAGE)
+  and added a per-script design note `Pipeline/<script>.md` for all 13 pipeline scripts (decisions /
+  limitations / future), linked from [[Pipeline]]. Filed GitHub issues
+  [#1](https://github.com/oasisresearchlab/language-and-health-open-synthesis/issues/1) (facet-tagging
+  dependency), [#2](https://github.com/oasisresearchlab/language-and-health-open-synthesis/issues/2)
+  (statement-level EP detection), [#3](https://github.com/oasisresearchlab/language-and-health-open-synthesis/issues/3)
+  (independence-aware counting), cross-linked from [[propose_eps]].
 - **State:** 43 EVD · 29 CLM · 13 CVT · 2 ART · 1 EP · 6 QUE · 140 edges; 156 quotes verbatim-OK.
 
 ## [[2026-06-03]]

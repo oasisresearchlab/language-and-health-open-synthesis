@@ -1,18 +1,18 @@
-# Progress — LEP / language-concordance synthesis pipeline
+# Pipeline overview — LEP / language-concordance synthesis
 
-A reproducible pipeline that turns the LEP corpus (785 source notes) into a **grounded discourse
+The reproducible process that turns the LEP corpus (785 source notes) into a **grounded discourse
 graph** (Questions → Claims → Evidence → Caveats, plus cross-paper EvidencePatterns and Artifacts),
-with data-integrity checks at every step. Methodology adapted from `living-synthesis-remix`; see
-`plans/extracting-discourse-nodes.md` for the design and `CLAUDE.md` + `Skill*.md` for the operating
-rules.
+with data-integrity checks at every step. This file is the **atemporal reference**; for what was done
+when, see [[Progress Log]]. Design rationale: `plans/extracting-discourse-nodes.md` and
+`plans/getting-papers.md`. Operating rules: `CLAUDE.md` + `Skill*.md`.
 
-## The process so far
+## The process
 
 ```mermaid
 flowchart TD
     subgraph ACQUIRE["1 · Acquire"]
         S[785 source notes] --> FP[fetch_pdfs.py<br/>DOIs + OA PDFs]
-        FP --> P[(148 PDFs)]
+        FP --> P[(OA PDFs)]
         P --> FA[fetch_figures_tables.py<br/>Route A · OA-XML]
         P --> FB[extract_pdf_figures_tables.py<br/>Route B · PDF]
         FA --> FT[(figures + tables)]
@@ -21,7 +21,7 @@ flowchart TD
     subgraph VALIDATE["2 · Validate identity — integrity gate"]
         V[validate_fulltext.py · --pdf<br/>abstract↔text embedding check]
         RF[refetch_by_title.py<br/>fix wrong PMIDs · recover OA text]
-        V --> TM[(trust manifests<br/>PDF ~97% · full-text ~57%)]
+        V --> TM[(trust manifests)]
         RF --> TM
     end
     subgraph QUEUE["3 · Queue by evidence pattern"]
@@ -51,7 +51,7 @@ flowchart TD
 ```
 
 **The load-bearing rule:** *ground only in validated sources, and the extractor must verify a paper's
-identity and refuse rather than fabricate.* This was learned the hard way — see "Integrity" below.
+identity and refuse rather than fabricate.*
 
 ## Scripts (`utils/`)
 
@@ -71,35 +71,14 @@ identity and refuse rather than fabricate.* This was learned the hard way — se
 | `propose_eps.py` | Propose candidate EvidencePatterns as a human accept/reject checklist (never auto-commits) |
 | `count_evds_per_subtask.py` | Refresh the per-question evidence-summary index + EP strength tags |
 
-Generated artifacts (gitignored ones under `data/`): `DGRAPH.md`, `Extraction Queue.md`,
-`EP Proposals.md`, `Evidence Summary.md`, `relations.json`, plus trust manifests and reports in `data/`.
+Generated artifacts: `DGRAPH.md`, `Extraction Queue.md`, `EP Proposals.md`, `Evidence Summary.md`,
+`relations.json`; trust manifests + reports under `data/` (gitignored).
 
-## Current graph state
+## Integrity rules
 
-- **43 EVD · 29 CLM · 13 CVT · 2 ART · 1 EP · 6 QUE · 140 edges**, over **785 sources**.
-- **~12 papers extracted end-to-end** (verify-first, verbatim-audited): an adherence cluster
-  (Kahler, Moreno, Ratanawongsa, Zhang, Padilla, Stoneking, Ho, Kristen) and a length-of-stay /
-  interpretation cluster (Lindholm, Lauren, L 2023, Aksharananda).
-- **1 committed EvidencePattern** — *"Language accessibility/concordance, not LEP status itself, is the
-  operative lever for treatment-adherence disparities"* (5 independent papers, Moderate strength).
-- **156 verbatim quotes audited OK**; **13 EVDs grounded with figure/table crops** (every PDF-backed
-  paper). Attachment invariants: only legacy informal-assertion claims remain unwired (see below).
-
-## Integrity (the hard-won lessons)
-
-- The earlier `data/fulltext/` corpus is **~43% wrong-paper / review substitutions**; PDFs are ~97%
-  clean. A first parallel extraction batch trusted the corpus blindly and produced 4/4 bad papers —
-  all rolled back. (See memory `fulltext-corpus-unreliable`.)
-- Fixes now standing: `validate_fulltext.py` triages sources; `refetch_by_title.py` corrects wrong
-  identifiers (e.g. `Maria_2023` PMID 26030609→36030609); and every extracting agent runs an
-  **identity gate** — confirm the source is the right paper or refuse. This caught later false
-  positives (Wallbrecht's "validated" text was a later paper citing it).
-
-## Remaining work / debt
-
-- **7 legacy claims have no evidence** — informal/non-empirical assertions (55% of malpractice,
-  doctor time, "40% trust/adherence", etc.); each needs a real source or retirement.
-- **Full-text-only papers can't be figure-grounded** (no PDF to crop); ~13 such EVDs reference a
-  fig/table but have no source image.
-- Optional: `quote_pipeline.py` (verbatim quote-region screenshots) and `readability_pass.py`.
-- Source acquisition for non-OA papers behind orphan findings (Karliner, Adams, Abedini, Allan).
+- Ground only in **validated** sources; the extractor runs an **identity gate** (confirm the paper or
+  refuse). The earlier `data/fulltext/` corpus is ~43% wrong-paper; PDFs ~97% clean.
+- **Propose, don't commit** for synthesis — EvidencePatterns, merges, and summary cells are AI
+  proposals; the human commits.
+- Edges live in the plugin's `relations.json`; node bodies author them as wikilinks and
+  `sync_relations.py` materialises them. Promotion is gated by the verbatim + attachment audits.

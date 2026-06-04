@@ -8,6 +8,7 @@ keywords: |
 language: all
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 36066429
+doi: 10.1213/ane.0000000000006159
 region: US
 specialty: General Surgery
 title: "Limited English Proficiency and Perioperative Patient-Centered Outcomes: A Systematic Review"
@@ -17,6 +18,7 @@ factors:
   - Limited English Proficiency (LEP)
 outcomes_extracted:
   - Hospital stay length
+nodeInstanceId: 019e8dd8-2726-73d6-8363-7c77a047c006
 ---
 
 

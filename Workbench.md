@@ -16,14 +16,6 @@ Top-level claim: [[CLM - For most large HDNs, the cumulative costs of language d
 - #healthOutcome/diagnosticAccuracy [[CLM - Patients with limited english proficiency receive less accurate diagnoses]]
 
 ### [[QUE - How does language support (language ‘concordance’) affect healthcare outcomes?]]
-- #languageConcordanceFactor/concordanceIntervention/interpretingServices 
-	- [[CLM - Patients with limited english proficiency have shorter hospital stays when interpreting services are used]]
-	- [[CLM - Interpreting services reduce recurrence rates for patients with limited english proficiency]]
-	- [[CLM - Interpreting services increase diagnosis accuracy for patients with limited english proficiency]]
-	- [[CLM - When interpreting is used, patients with limited english proficiency are 40% more likely to adhere to their treatment]]
-	- [[CLM - When interpreting is used, patients with limited english proficiency are 40% more likely to trust their physician]]
-	- [[CLM - When accessing interpreting directly on their own, as opposed to waiting for a caregiver, patients with limited english proficiency demonstrate an increased sense of empowerment]]
-	- [[CLM - When accessing interpreting directly on their own, as opposed to waiting for a caregiver, patients with limited english proficiency have less frequent “no shows”]]
 
 ### [[QUE - How to optimize delivery of language concordance services in healthcare?]]
 - #languageConcordanceFactor/concordanceIntervention/interpretingServices [[CLM - Doctors spend an extra 10 to 30 minutes to initiate every interpreting session when they have to chase down a tablet on wheels, vs. using directly from the mobile phone in their pocket]]

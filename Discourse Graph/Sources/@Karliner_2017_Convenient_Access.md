@@ -21,6 +21,7 @@ number_of_lep: 1963
 outcomes: |
   30-day readmission, length of stay (LOS), estimated hospital expenditures
 pubmed_id: 27579909
+doi: 10.1097/mlr.0000000000000643
 specialty: General Medicine
 study_years: 2007–2010
 title: Convenient Access to Professional Interpreters in the Hospital Decreases Readmission Rates and Estimated Hospital Expenditures for Patients With Limited English Proficiency
@@ -31,6 +32,7 @@ factors:
 outcomes_extracted:
   - Hospital stay length
   - Physician time/effort
+nodeInstanceId: 019e8dd8-2c39-76ca-961c-9d2c40c8cf4a
 ---
 
 

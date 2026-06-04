@@ -4,6 +4,7 @@ year: 2022
 title: COVID-19-Related Care for Hispanic Elderly Adults With Limited English Proficiency
 journal: Annals of Internal Medicine
 pubmed_id: 34698514
+doi: 10.7326/m21-2900
 specialty: Primary Care
 language: Spanish
 number_of_lep: 438
@@ -14,4 +15,5 @@ outcomes: |
 intervention: No
 citekey: "@Himmelstein_2022_COVID-19-Related_Care"
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
+nodeInstanceId: 019e8dd8-2b17-7375-abd5-5c0af30a772b
 ---

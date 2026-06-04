@@ -1,6 +1,6 @@
 views:
   - type: table
-    name: Table
+    name: All
     filters:
       and:
         - nodeTypeId == "node_huDx8FGfNSGQyongW5rk-"
@@ -10,3 +10,14 @@ views:
       - NodeFormality
     columnSize:
       file.name: 654
+  - type: table
+    name: forClaim
+    filters:
+      and:
+        - nodeTypeId == "node_huDx8FGfNSGQyongW5rk-"
+        - relation_BO5BtVVpJGrw70jTCTznm.contains(this.file.name)
+    order:
+      - file.name
+      - EvidenceType
+    columnSize:
+      file.name: 425

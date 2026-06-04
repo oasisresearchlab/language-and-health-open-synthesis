@@ -1,30 +1,26 @@
 ---
-abstract: 'This study discusses observed associations between limited English proficiency,
-  revisits, and readmissions to 2 Toronto hospitals.
-
-  '
+abstract: |
+  This study discusses observed associations between limited English proficiency, revisits, and readmissions to 2 Toronto hospitals.
 author: Rawal
-citekey: '@Rawal_2019_Association_Between'
+citekey: "@Rawal_2019_Association_Between"
 has_empirical_findings: true
 intervention: false
 journal: JAMA
 language: Portuguese, Spanish , Italian, Cantonese, Mandarin, Chinese, Greek, etc
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 2336
-outcomes: 'Revisits and Readmissions After Hospitalization for Patients With Acute
-  and Chronic Conditions
-
-  '
+outcomes: |
+  Revisits and Readmissions After Hospitalization for Patients With Acute and Chronic Conditions
 pubmed_id: 31638666
+doi: 10.1001/jama.2019.13066
 region: Canada
 specialty: Emergency
 study_years: 2008-2016
-title: Association Between Limited English Proficiency and Revisits and Readmissions
-  After Hospitalization for Patients With Acute and Chronic Conditions in Toronto,
-  Ontario, Canada
+title: Association Between Limited English Proficiency and Revisits and Readmissions After Hospitalization for Patients With Acute and Chronic Conditions in Toronto, Ontario, Canada
 year: 2019
 factors:
-- Limited English Proficiency (LEP)
+  - Limited English Proficiency (LEP)
+nodeInstanceId: 019e8dd8-3132-70ff-a58f-cdb299f0ab5d
 ---
 
 

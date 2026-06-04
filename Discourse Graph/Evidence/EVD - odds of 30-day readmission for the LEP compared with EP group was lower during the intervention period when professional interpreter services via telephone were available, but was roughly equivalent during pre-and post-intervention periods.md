@@ -4,11 +4,10 @@ NodeFormality: draft
 NodeType: Evidence
 Source: "[[@Karliner_2017_Convenient_Access]]"
 EvidenceType: Natural experiment
-relation_BO5BtVVpJGrw70jTCTznm:
-  - "[[CLM - Interpreting services reduce recurrence rates for patients with limited english proficiency]]"
 tags:
   - languageConcordanceFactor/concordanceIntervention/interpretingServices
   - healthOutcome/readmissions
+nodeInstanceId: 019e8dd8-2574-7ccd-92e6-8215ec3a9cb5
 ---
 ## Description
 > [!Screenshots of key figure/table and/or direct quotes from source that substantiate the evidence statement (e.g., reports of statistical tests, or key quotes from participants), with page numbers.]

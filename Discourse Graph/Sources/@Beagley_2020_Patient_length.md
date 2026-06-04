@@ -11,6 +11,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Patient length of stay, patient readmission rates and the provision of professional interpreting services
 pubmed_id: 32227535
+doi: 10.1111/hsc.12989
 region: Australia
 specialty: General Medicine
 title: Patient length of stay, patient readmission rates and the provision of professional interpreting services in healthcare in Australia
@@ -19,6 +20,7 @@ factors:
   - Limited English Proficiency (LEP)
 outcomes_extracted:
   - Hospital stay length
+nodeInstanceId: 019e8dd8-26ec-766a-8163-fb8dc02cf732
 ---
 
 

@@ -1,53 +1,29 @@
 ---
-abstract: 'Our objective was to describe when Hmong- and Spanish-speaking limited
-  English proficient (LEP) patients perceive an interpreter was needed and how they ^evd-3
-  perceive the decision to utilize an interpreter is made in a health care encounter.
-  We interviewed a total of 20 LEP patients. We used a number of strategies to recruit
-  LEP patients including posting language-appropriate flyers at clinics, sending letters ^evd-6
-  to LEP patients and asking our participants to refer their family and friends to
-  participate in our study. Tape-recorded interviews were transcribed, translated,
-  and systematically coded using directed content analysis. Patients identified two
-  factors that influenced LEP Hmong-and Spanish-speaking patients'' perception of
-  when interpreters were needed are as follows: (1) their self-identified level of
-  English proficiency and (2) the anticipated complexity of the health care communication.
-  They described three factors that they perceived influenced the decision to utilize
-  interpreters: (1) their self-identified level of English proficiency, (2) access
-  to interpreters; and (3) health system automation of interpreter use. The findings
-  show that patients consider a wide variety of factors when determining if an interpreter
-  is necessary and how the decision to utilize interpreters is made. Given that health
-  care decision making is complex, healthcare systems need to do more to help educate
-  LEP patients of the importance of utilizing interpreters in all healthcare encounters.
-  Additionally, future research should to explore how patients conceptualize the need
-  for and utilization of interpreters in order to provide LEP patients with linguistically
-  appropriate care in ways that are sensitive to their perceptions and needs.
-
-  '
+abstract: |
+  Our objective was to describe when Hmong- and Spanish-speaking limited English proficient (LEP) patients perceive an interpreter was needed and how they ^evd-3 perceive the decision to utilize an interpreter is made in a health care encounter. We interviewed a total of 20 LEP patients. We used a number of strategies to recruit LEP patients including posting language-appropriate flyers at clinics, sending letters ^evd-6 to LEP patients and asking our participants to refer their family and friends to participate in our study. Tape-recorded interviews were transcribed, translated, and systematically coded using directed content analysis. Patients identified two factors that influenced LEP Hmong-and Spanish-speaking patients' perception of when interpreters were needed are as follows: (1) their self-identified level of English proficiency and (2) the anticipated complexity of the health care communication. They described three factors that they perceived influenced the decision to utilize interpreters: (1) their self-identified level of English proficiency, (2) access to interpreters; and (3) health system automation of interpreter use. The findings show that patients consider a wide variety of factors when determining if an interpreter is necessary and how the decision to utilize interpreters is made. Given that health care decision making is complex, healthcare systems need to do more to help educate LEP patients of the importance of utilizing interpreters in all healthcare encounters. Additionally, future research should to explore how patients conceptualize the need for and utilization of interpreters in order to provide LEP patients with linguistically appropriate care in ways that are sensitive to their perceptions and needs.
 author: Schwei
-citekey: '@Schwei_2018_Limited_English'
+citekey: "@Schwei_2018_Limited_English"
 has_empirical_findings: true
 intervention: false
 journal: Health Communication
-keywords: 'Communication, Cross Cultural, Interpreter, Limited English Proficiency,
-  Patient Preference, Qualitative Research, Utilization
-
-  '
+keywords: |
+  Communication, Cross Cultural, Interpreter, Limited English Proficiency, Patient Preference, Qualitative Research, Utilization
 language: Spanish, Hmong
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 20
-outcomes: '(1) their self-identified level of English proficiency, (2) access to interpreters;
-  and (3) health system automation of interpreter use
-
-  '
+outcomes: |
+  (1) their self-identified level of English proficiency, (2) access to interpreters; and (3) health system automation of interpreter use
 pubmed_id: 28929813
+doi: 10.1080/10410236.2017.1372047
 region: United States
 specialty: General Medicine
 study_years: 2013
-title: Limited English Proficient Patients’ Perceptions of When Interpreters Are Needed
-  and How the Decision to Utilize Interpreters Is Made
+title: Limited English Proficient Patients’ Perceptions of When Interpreters Are Needed and How the Decision to Utilize Interpreters Is Made
 year: 2018
 factors:
-- Interpretation services
-- Limited English Proficiency (LEP)
+  - Interpretation services
+  - Limited English Proficiency (LEP)
+nodeInstanceId: 019e8dd8-3229-7282-93ab-288c1ad1ea34
 ---
 
 

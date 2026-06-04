@@ -4,8 +4,7 @@ NodeFormality: draft
 NodeType: Evidence
 Source: "[[@Abedini_2022_End-of-life_healthcare]]"
 EvidenceType:
-relation_BO5BtVVpJGrw70jTCTznm:
-  - "[[CLM - Patients with limited english proficiency have higher likelihood of recurrences.md]]"
+nodeInstanceId: 019e8dd8-25b4-79ff-a44c-2daa08345a58
 ---
 ## Description
 > [!Screenshots of key figure/table and/or direct quotes from source that substantiate the evidence statement (e.g., reports of statistical tests, or key quotes from participants), with page numbers.]

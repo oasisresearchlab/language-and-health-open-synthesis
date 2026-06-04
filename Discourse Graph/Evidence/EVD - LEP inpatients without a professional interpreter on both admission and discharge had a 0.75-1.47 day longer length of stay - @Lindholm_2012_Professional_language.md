@@ -1,0 +1,52 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+nodeInstanceId: 019e8fd6-5831-7f8a-92ad-74eba94e3b7f
+Source: "[[@Lindholm_2012_Professional_language]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/concordanceIntervention/interpretingServices
+  - healthOutcome/lengthOfStay
+  - epistemic/effect-size
+languageConcordanceFactor:
+  - Interpretation services
+healthOutcome:
+  - Hospital stay length
+deliveryContext:
+  - Inpatient
+---
+## Description
+
+
+> ![[Lindholm_2012_Professional_language-table4.png]]
+>
+In multivariable regression models controlling for patient characteristics, LEP inpatients who did not receive professional interpretation at admission, or at neither admission nor discharge, had a longer length of stay than patients with an interpreter on both admission and discharge (the reference category). The increase ranged between 0.75 and 1.47 days (Table 4). Patients with no interpreter on either day had an adjusted LOS coefficient of 1.49 days (SE 0.46, P<0.01), and patients with an interpreter at discharge but not admission had a coefficient of 0.76 days (SE 0.32, P=0.02), while having an interpreter at admission but not discharge was not significant (0.25, SE 0.25, P=0.33). Interpretation at admission appears to have the greatest effect on LOS.
+
+> "Patients who did not receive professional interpretation at admission or both admission/discharge had an increase in their LOS of between 0.75 and 1.47 days, compared to patients who had an interpreter on both day of admission and discharge (P<0.02)." (Lindholm, 2012, p. 1294)
+>
+> "Patients who did not have an interpreter present on both admission and discharge were in the hospital about 1.5 days longer than patients who had interpreters on both days (β=1.49, SE=0.46). In addition, patients who had interpreter present on discharge but not admission days had longer LOS (β=0.87, SE=0.36)." (Lindholm, 2012, p. 1296)
+
+## Methods Context
+
+### What?
+
+> [!info] The observable: inpatient length of stay (LOS) in days, modeled as a regression coefficient (days added relative to the both-days-interpreted reference) for each pattern of interpreter presence.
+>
+> "Using date of admission and discharge we calculated length of stay (LOS) in days for all patients." (Lindholm, 2012, p. 1295)
+
+### How?
+
+> [!info] Multivariable regression models controlling for age, gender, language, primary diagnosis, and illness severity, using a four-level categorical interpretation indicator (0=no interpreter on admission or discharge; 1=admission only; 2=discharge only; 3=both, the reference). Quadratic functions were fit for non-linear age and severity effects; repeat stays handled with a random-effects (mixed-model) regression in SPSS.
+>
+> "To examine patterns of interpretation and patients' length of hospital stay, we used multivariable models that controlled for patient characteristics, including age, gender, language, primary diagnosis, and illness severity." (Lindholm, 2012, p. 1295)
+
+### Who?
+
+> [!info] 3071 LEP patient admissions (aged ≥18) who both spoke a language other than English and requested an interpreter, admitted to a tertiary care, university hospital (UMass Memorial) between 1 May 2004 and 30 April 2007, with LOS between 1 and 85 days; 90% spoke one of five languages (Spanish, Portuguese, Vietnamese, Albanian, Russian).
+>
+> "The study population includes 3071 admissions with a LOS between 1 and 85 days." (Lindholm, 2012, p. 1295)
+
+## Other Notes
+
+Single-institution retrospective analysis; no English-speaking comparison group, so the contrast is within the LEP population by interpreter-access pattern.

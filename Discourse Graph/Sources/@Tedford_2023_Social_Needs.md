@@ -1,58 +1,32 @@
 ---
-abstract: 'Objective: To determine the prevalence of unmet social needs (USN) in a
-  pediatric emergency department (PED) patient population and examine disparities
-  in USN by self-selected language and patient demographics.
-
-  Methods: We surveyed a convenience sample of English- and Spanish-speaking caregivers
-  of patients <18-years-old presenting to a free-standing children''s hospital in
-  Salt Lake City, Utah. In the caregiver''s self-selected language, the pediatric
-  version of the Screener for Intensifying Community Referrals for Health (p-SINCERE)
-  assessed patient demographics and 10 areas of social needs. The primary outcome
-  was presence of USN. Descriptive statistics compared 1) self-selected languages
-  and 2) absence versus presence of USN. Patient and caregiver-level risk factors
-  associated with USN were identified using multivariable logistic regression.
-
-  Results: Of the 10,156 patients seen in our PED from 04/01/2021 to 08/03/2021, there
-  were 9922 eligible, 5357 approached, and 3987 enrolled caregivers. Of the 3987 caregivers
-  enrolled, self-selected language was English for 3662 (91.8%) and Spanish for 325
-  (8.2%). There were 1680 enrolled caregivers with ≥1 USN, representing 39.7% of English-speaking
-  and 70.2% of Spanish-speaking caregivers (P < .001). The odds of having ≥1 USN was
-  more than 2 times higher in Spanish-speakers than in English-speakers after adjustment.
-
-  Conclusions: USN are common for families presenting for care to a PED, especially
-  among Spanish-speaking caregivers. Furthermore, this study demonstrates disparities
-  in limited English proficiency, race and ethnicity, and child insurance status.
-  These findings support the practicality of utilizing the PED as an access point
-  to initiate social need screening and referrals to address social determinants of
-  health and health disparities.
-
-  '
+abstract: |
+  Objective: To determine the prevalence of unmet social needs (USN) in a pediatric emergency department (PED) patient population and examine disparities in USN by self-selected language and patient demographics.
+  Methods: We surveyed a convenience sample of English- and Spanish-speaking caregivers of patients <18-years-old presenting to a free-standing children's hospital in Salt Lake City, Utah. In the caregiver's self-selected language, the pediatric version of the Screener for Intensifying Community Referrals for Health (p-SINCERE) assessed patient demographics and 10 areas of social needs. The primary outcome was presence of USN. Descriptive statistics compared 1) self-selected languages and 2) absence versus presence of USN. Patient and caregiver-level risk factors associated with USN were identified using multivariable logistic regression.
+  Results: Of the 10,156 patients seen in our PED from 04/01/2021 to 08/03/2021, there were 9922 eligible, 5357 approached, and 3987 enrolled caregivers. Of the 3987 caregivers enrolled, self-selected language was English for 3662 (91.8%) and Spanish for 325 (8.2%). There were 1680 enrolled caregivers with ≥1 USN, representing 39.7% of English-speaking and 70.2% of Spanish-speaking caregivers (P < .001). The odds of having ≥1 USN was more than 2 times higher in Spanish-speakers than in English-speakers after adjustment.
+  Conclusions: USN are common for families presenting for care to a PED, especially among Spanish-speaking caregivers. Furthermore, this study demonstrates disparities in limited English proficiency, race and ethnicity, and child insurance status. These findings support the practicality of utilizing the PED as an access point to initiate social need screening and referrals to address social determinants of health and health disparities.
 author: Tedford
-citekey: '@Tedford_2023_Social_Needs'
+citekey: "@Tedford_2023_Social_Needs"
 has_empirical_findings: true
 journal: Academic Pediatrics
-keywords: 'health disparities; language differences; pediatric emergency medicine;
-  social determinants of health; social needs.
-
-  '
+keywords: |
+  health disparities; language differences; pediatric emergency medicine; social determinants of health; social needs.
 language: spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 3987
-outcomes: 'disparities in limited English proficiency, race and ethnicity, and child
-  insurance status
-
-  '
+outcomes: |
+  disparities in limited English proficiency, race and ethnicity, and child insurance status
 pubmed_id: 35537675
+doi: 10.1016/j.acap.2022.05.002
 region: Utah
 specialty: pediatrics
 study_years: 2021
-title: 'Social Needs Screening During Pediatric Emergency Department Visits: Disparities
-  in Unmet Social Needs'
+title: "Social Needs Screening During Pediatric Emergency Department Visits: Disparities in Unmet Social Needs"
 year: 2023
 factors:
-- Limited English Proficiency (LEP)
+  - Limited English Proficiency (LEP)
 outcomes_extracted:
-- Physician time/effort
+  - Physician time/effort
+nodeInstanceId: 019e8dd8-3388-7310-a96e-8692c81ad248
 ---
 
 

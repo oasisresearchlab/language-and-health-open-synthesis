@@ -1,56 +1,31 @@
 ---
-abstract: 'Objective: The purpose of this study was to understand the limited English
-  proficiency patient experience with health care services in an urban setting in
-  the United States.
-
-  Methods: Through a narrative analysis approach, 71 individuals who spoke either
-  Spanish, Russian, Cantonese, Mandarin, or Korean shared their experiences through
-  semi-structured interviews between 2016 and 2018. Analyses used monolingual and
-  multilingual open coding approaches to generate themes.
-
-  Results: Six themes illustrated patient experiences and identified sources of structural
-  inequities perpetuating language barriers at the point of care. An important thread
-  throughout all interviews was the sense that the language barrier with clinicians
-  posed a threat to their safety when receiving healthcare, citing an acute awareness
-  of additional risk for harm they might experience. Participants also consistently
-  identified factors they felt would improve their sense of security that were specific
-  to clinician interactions. Differences in experiences were specific to culture and
-  heritage.
-
-  Conclusions: The findings highlight the ongoing challenges spoken language barriers
-  pose across multiple points of care in the United States'' health care system.
-
-  Innovation: The multi-language nature of this study and its methodological insights
-  are innovative as most studies have focused on clinicians or patient experiences
-  in a single language.
-
-  '
+abstract: |
+  Objective: The purpose of this study was to understand the limited English proficiency patient experience with health care services in an urban setting in the United States.
+  Methods: Through a narrative analysis approach, 71 individuals who spoke either Spanish, Russian, Cantonese, Mandarin, or Korean shared their experiences through semi-structured interviews between 2016 and 2018. Analyses used monolingual and multilingual open coding approaches to generate themes.
+  Results: Six themes illustrated patient experiences and identified sources of structural inequities perpetuating language barriers at the point of care. An important thread throughout all interviews was the sense that the language barrier with clinicians posed a threat to their safety when receiving healthcare, citing an acute awareness of additional risk for harm they might experience. Participants also consistently identified factors they felt would improve their sense of security that were specific to clinician interactions. Differences in experiences were specific to culture and heritage.
+  Conclusions: The findings highlight the ongoing challenges spoken language barriers pose across multiple points of care in the United States' health care system.
+  Innovation: The multi-language nature of this study and its methodological insights are innovative as most studies have focused on clinicians or patient experiences in a single language.
 author: Allison Squires
-citekey: '@Allison_2023_multi-language_qualitative'
+citekey: "@Allison_2023_multi-language_qualitative"
 has_empirical_findings: true
 journal: PEC Innovation
-keywords: 'Health equity; Home health services; Hospital; Immigrant; Limited English
-  proficiency; Primary care.
-
-  '
+keywords: |
+  Health equity; Home health services; Hospital; Immigrant; Limited English proficiency; Primary care.
 language: Spanish, Russian, Mandarin, Cantonese, Korean
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 71
-outcomes: '6 major themes: feelings of loneliness, greater risk, reliance on family
-  to bridge language gaps, a reduction of inequity with physicians speaking their
-  language, perceived respectful interactions, and the quality of the relaitonship
-  with physicians.
-
-  '
+outcomes: |
+  6 major themes: feelings of loneliness, greater risk, reliance on family to bridge language gaps, a reduction of inequity with physicians speaking their language, perceived respectful interactions, and the quality of the relaitonship with physicians.
 pdf_url: https://www-sciencedirect-com.ezp-prod1.hul.harvard.edu/science/article/pii/S2772628223000572?via%3Dihub
 pubmed_id: 37384163
+doi: 10.1016/j.pecinn.2023.100177
 region: Northeast Coast U.S.
 study_years: 2016-2018
-title: A multi-language qualitative study of limited English proficiency patient experiences
-  in the United States
+title: A multi-language qualitative study of limited English proficiency patient experiences in the United States
 year: 2023
 factors:
-- Limited English Proficiency (LEP)
+  - Limited English Proficiency (LEP)
+nodeInstanceId: 019e8dd8-2654-72c1-aab1-5580bb5a62a6
 ---
 
 

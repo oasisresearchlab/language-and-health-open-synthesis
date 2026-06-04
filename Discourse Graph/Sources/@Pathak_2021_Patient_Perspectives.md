@@ -1,58 +1,30 @@
 ---
-abstract: 'Background: The use of professional interpretation is associated with improvements
-  in overall healthcare of patients with limited English proficiency (LEP). For these
-  patients, it is important to understand whether quality of professional interpretation
-  in-person is preserved using remote interpretation modalities (video-conferencing,
-  telephone).
-
-  Objective: To compare patient perceptions of professional interpretation quality
-  delivered in-person, via video-conferencing, or via telephone during in-person primary
-  care clinical visits.
-
-  Design: Secondary analysis of a telephone survey conducted within 1 week after a
-  primary care visit PARTICIPANTS: The 326 Chinese and Latino survey participants
-  with LEP who reported using a professional interpreter-in-person, video medical
-  conferencing (VMI), or telephone-during their visit MAIN MEASURES: Six items about
-  the quality of interpretation: five detailed items scored as a scale, and a sixth
-  overall quality item (range 1 = poor to 5 = excellent) KEY RESULTS: While there
-  was a range for all modalities, most patients reported "very good" or "excellent"
-  quality on both the scale and the overall single quality measure. In adjusted analysis,
-  patients rated VMI quality the highest, followed by in-person and then telephone
-  on both the 5-item scale (adjusted means: VMI 3.91, in-person 3.86, telephone 3.73)
-  and the overall single quality item (adjusted means: VMI 3.94, in-person 3.85, telephone
-  3.83); however, no two-way comparisons were statistically significant (p values
-  ranged 0.15-0.95).
-
-  Conclusions: Our results highlight that, overall, the interpretation experience
-  among patients who used any type of professional interpretation was positive, and
-  that the quality found with in-person interpretation is preserved for remote modalities.
-  Health systems should consider a multimodality approach to interpreter service provision
-  including options for accessing professional interpreters via all three modalities
-  based on communication and access needs.
-
-  '
+abstract: |
+  Background: The use of professional interpretation is associated with improvements in overall healthcare of patients with limited English proficiency (LEP). For these patients, it is important to understand whether quality of professional interpretation in-person is preserved using remote interpretation modalities (video-conferencing, telephone).
+  Objective: To compare patient perceptions of professional interpretation quality delivered in-person, via video-conferencing, or via telephone during in-person primary care clinical visits.
+  Design: Secondary analysis of a telephone survey conducted within 1 week after a primary care visit PARTICIPANTS: The 326 Chinese and Latino survey participants with LEP who reported using a professional interpreter-in-person, video medical conferencing (VMI), or telephone-during their visit MAIN MEASURES: Six items about the quality of interpretation: five detailed items scored as a scale, and a sixth overall quality item (range 1 = poor to 5 = excellent) KEY RESULTS: While there was a range for all modalities, most patients reported "very good" or "excellent" quality on both the scale and the overall single quality measure. In adjusted analysis, patients rated VMI quality the highest, followed by in-person and then telephone on both the 5-item scale (adjusted means: VMI 3.91, in-person 3.86, telephone 3.73) and the overall single quality item (adjusted means: VMI 3.94, in-person 3.85, telephone 3.83); however, no two-way comparisons were statistically significant (p values ranged 0.15-0.95).
+  Conclusions: Our results highlight that, overall, the interpretation experience among patients who used any type of professional interpretation was positive, and that the quality found with in-person interpretation is preserved for remote modalities. Health systems should consider a multimodality approach to interpreter service provision including options for accessing professional interpreters via all three modalities based on communication and access needs.
 author: Pathak
-citekey: '@Pathak_2021_Patient_Perspectives'
+citekey: "@Pathak_2021_Patient_Perspectives"
 has_empirical_findings: true
 intervention: false
 journal: Journal of General Internal Medicine
 language: Cantonese, Mandarin, Spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 326
-outcomes: 'quality of interpretation: five detailed items scored as a scale, and a
-  sixth overall quality item (range 1 = poor to 5 = excellent)
-
-  '
+outcomes: |
+  quality of interpretation: five detailed items scored as a scale, and a sixth overall quality item (range 1 = poor to 5 = excellent)
 pubmed_id: 33515189
+doi: 10.1007/s11606-020-06491-w
 region: California
 specialty: Primary Care
 study_years: 2014-2017
-title: 'Patient Perspectives on the Quality of Professional Interpretation: Results
-  from LASI Study'
+title: "Patient Perspectives on the Quality of Professional Interpretation: Results from LASI Study"
 year: 2021
 factors:
-- Interpretation services
-- Limited English Proficiency (LEP)
+  - Interpretation services
+  - Limited English Proficiency (LEP)
+nodeInstanceId: 019e8dd8-309b-7c16-93ce-fff97a7eb8ad
 ---
 
 

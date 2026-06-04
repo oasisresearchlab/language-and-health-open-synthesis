@@ -1,0 +1,50 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+nodeInstanceId: 019e8fae-a0b2-7c00-b14b-1b10a7340c5e
+Source: "[[@Stoneking_2016_Does_Spanish]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/concordanceIntervention/bilingualProvider
+  - healthOutcome/satisfaction
+  - epistemic/effect-size
+languageConcordanceFactor:
+  - Limited English Proficiency (LEP)
+  - Bilingual provider
+healthOutcome:
+  - Patient satisfaction
+deliveryContext:
+  - Emergency
+---
+## Description
+
+Among the same 55 Spanish-speaking LEP ED patients, patient satisfaction with the ED visit was rated "very good" in 40% of encounters with South Campus (SC) residents (curriculum-trained) versus 25% of encounters with University Campus (UC) residents (overall 35%). Patients also rated the residents' Spanish-speaking ability as "very good" more often for SC residents — 17% versus 5% for UC (overall 13%). The direction favors the curriculum on both subjective measures, though no statistical testing was performed.
+
+> "Patients rated resident physician Spanish as very good in 13% of all encounters, with 17% for SC versus 5% for UC. Patient satisfaction with their ED visit was rated as very good in 40% of encounters with SC and 25% of encounters with UC resident physicians." (Stoneking, 2016)
+
+## Methods Context
+
+### What?
+
+> [!info] The observables: (1) patient-rated satisfaction with the ED visit and (2) patient-rated resident Spanish-speaking ability, each dichotomized at the "very good" rating. Satisfaction was collected on a follow-up phone call ~1 week later; perceived Spanish ability was collected on the real-time visit survey.
+>
+> "Follow-up phone calls were performed to assess patient satisfaction and adherence to discharge instructions ~1 week later." (Stoneking, 2016)
+>
+> "Our survey also collected data on patient perception of resident physician Spanish-speaking ability." (Stoneking, 2016)
+
+### How?
+
+> [!info] Cross-sectional convenience sample contrasting the curriculum-exposed SC program against the non-exposed UC program via day-of-week scheduling. Real-time Spanish surveys administered after discharge/transfer, plus a follow-up phone call by a Spanish- and English-proficient resident or medical student. Results reported as percentages with 95% CIs (Jeffreys method); no formal statistical testing.
+>
+> "For these two after-visit questions, a resident physician or medical student, all proficient in Spanish and English, called the patient at the listed home phone number." (Stoneking, 2016)
+
+### Who?
+
+> [!info] 55 patients who self-identified as primarily Spanish-speaking at registration in an urban academic ED (~45,000 visits/year) in Tucson, Arizona, treated by emergency medicine residents from the SC (n=35) and UC (n=20) programs.
+>
+> "patients who self-identified as primarily Spanish-speaking in our electronic health record during registration were asked to complete a real-time survey regarding their visit" (Stoneking, 2016)
+
+## Other Notes
+
+The authors had anticipated a larger satisfaction difference given the added cultural competency training, but did not separately measure cultural awareness/competency.

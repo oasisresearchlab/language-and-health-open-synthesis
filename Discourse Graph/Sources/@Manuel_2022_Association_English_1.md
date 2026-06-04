@@ -1,29 +1,26 @@
 ---
-abstract: 'This cohort study examines patient outcomes following total joint arthroplasty
-  to evaluate their association with limited English proficiency.
-
-  '
+abstract: |
+  This cohort study examines patient outcomes following total joint arthroplasty to evaluate their association with limited English proficiency.
 author: Manuel
-citekey: '@Manuel_2022_Association_English_1'
+citekey: "@Manuel_2022_Association_English_1"
 has_empirical_findings: true
 intervention: false
 journal: JAMA Network
 language: Spanish, Chinese
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 378
-outcomes: 'LOS, total hospitalization cost, discharge disposition, and rate of 30-day
-  hospital readmission.
-
-  '
+outcomes: |
+  LOS, total hospitalization cost, discharge disposition, and rate of 30-day hospital readmission.
 pubmed_id: 35267037
+doi: 10.1001/jamanetworkopen.2022.1842
 region: San Francisco
 specialty: Orthopedics
 study_years: 2015-2019
-title: Association of English Language Proficiency With Hospitalization Cost, Length
-  of Stay, Disposition Location, and Readmission Following Total Joint Arthroplasty
+title: Association of English Language Proficiency With Hospitalization Cost, Length of Stay, Disposition Location, and Readmission Following Total Joint Arthroplasty
 year: 2022
 factors:
-- Limited English Proficiency (LEP)
+  - Limited English Proficiency (LEP)
+nodeInstanceId: 019e8dd8-2e74-71b9-804b-febada2102d0
 ---
 
 

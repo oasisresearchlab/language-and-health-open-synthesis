@@ -5,6 +5,9 @@
     "tags": "tags",
     "Authors": "multitext",
     "Year": "number",
-    "author": "multitext"
+    "author": "multitext",
+    "healthOutcome": "multitext",
+    "deliveryContext": "multitext",
+    "languageConcordanceFactor": "multitext"
   }
 }

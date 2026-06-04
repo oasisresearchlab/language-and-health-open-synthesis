@@ -1,43 +1,28 @@
 ---
-abstract: 'US hospitals have developed a variety of strategies to meet federal requirements
-  and provide culturally and linguistically appropriate health care for people who
-  report limited English proficiency. A key strategy is the use of healthcare interpreters
-  who may be physically present in the room or in the room via telephone or video
-  conference. This paper analyzes the contingent and unstable combinations of heterogeneous
-  human and nonhuman elements that form and disperse during visits to the hospital
-  when healthcare interpreters are used. It draws its analysis from 9 months of fieldwork
-  in 2012 that included following 69 adult immigrant and refugee patients in one hospital
-  in Maine and observing encounters with interpreters and clinic staff. It introduces
-  the concept of interpreter assemblage to make sense of the transnational mixes of
-  people, technologies, and ideas that bring multilingual hospital care to life and
-  give it a character of its own.
-
-  '
+abstract: |
+  US hospitals have developed a variety of strategies to meet federal requirements and provide culturally and linguistically appropriate health care for people who report limited English proficiency. A key strategy is the use of healthcare interpreters who may be physically present in the room or in the room via telephone or video conference. This paper analyzes the contingent and unstable combinations of heterogeneous human and nonhuman elements that form and disperse during visits to the hospital when healthcare interpreters are used. It draws its analysis from 9 months of fieldwork in 2012 that included following 69 adult immigrant and refugee patients in one hospital in Maine and observing encounters with interpreters and clinic staff. It introduces the concept of interpreter assemblage to make sense of the transnational mixes of people, technologies, and ideas that bring multilingual hospital care to life and give it a character of its own.
 author: Bell
-citekey: '@Bell_2019_Interpreter_assemblages'
+citekey: "@Bell_2019_Interpreter_assemblages"
 has_empirical_findings: true
 intervention: false
 journal: Social Science & Medicine
-keywords: 'Assemblage; Ethnography; Global health; Hospitals; Immigrant; Interpreter;
-  Refugee; US.
-
-  '
+keywords: |
+  Assemblage; Ethnography; Global health; Hospitals; Immigrant; Interpreter; Refugee; US.
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 69?
-outcomes: 'contingent and unstable combinations of heterogeneous human and nonhuman
-  elements that form and disperse during visits to the hospital when healthcare interpreters
-  are used
-
-  '
+outcomes: |
+  contingent and unstable combinations of heterogeneous human and nonhuman elements that form and disperse during visits to the hospital when healthcare interpreters are used
 pubmed_id: 30831557
+doi: 10.1016/j.socscimed.2019.02.031
 region: Maine
 specialty: General Medicine – Inpatient
 study_years: 2010-2012
-title: 'Interpreter assemblages: Caring for immigrant and refugee patients in US hospitals'
+title: "Interpreter assemblages: Caring for immigrant and refugee patients in US hospitals"
 year: 2019
 factors:
-- Interpretation services
-- Limited English Proficiency (LEP)
+  - Interpretation services
+  - Limited English Proficiency (LEP)
+nodeInstanceId: 019e8dd8-26f0-7c85-8471-d820361087fc
 ---
 
 

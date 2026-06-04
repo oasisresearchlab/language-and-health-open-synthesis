@@ -1,14 +1,23 @@
 ---
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
-relation_QtuzWZj3zndZBKQe7LcFK:
-  - "[[EVD - There was no significant association between access to professional interpreter services via telephone and length of stay for LEP patients.md]]"
-relation_BO5BtVVpJGrw70jTCTznm:
-  - "[[EVD - LEP patients who did not receive professional interpretation had increased LOS of between 0.75 and 1.47 days, compared to patients who had an interpreter.md]]"
 tags:
   - "#healthOutcome/lengthOfStay"
   - "#languageConcordanceFactor/concordanceIntervention/interpretingServices"
+nodeInstanceId: 019e8dd8-257e-7be6-a9ae-7604df6b2ae9
 ---
+## Supporting Evidence
 
+> [!info] EVDs that support this claim (→ EVD—supports→CLM edges by sync_relations.py). Migrated to grounded evidence; see also the (redundant) grounded claim [[CLM - Professional interpretation at admission and discharge shortens length of stay for LEP inpatients]] — candidate for merge.
+
+- [[EVD - LEP inpatients without a professional interpreter on both admission and discharge had a 0.75-1.47 day longer length of stay - @Lindholm_2012_Professional_language]]
+- [[EVD - Adjusted mean length of stay was 5.06 days with no interpreter vs 2.57 days with interpreters on both admission and discharge - @Lindholm_2012_Professional_language]]
+- [[EVD - Only 39% of LEP inpatients received professional interpretation on both admission and discharge while 13.8% received none on either day - @Lindholm_2012_Professional_language]]
+
+## Contradicting Evidence
+
+> [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
+
+- [[EVD - There was no significant association between access to professional interpreter services via telephone and length of stay for LEP patients]]
 
 ## Potentially Relevant Papers
 

@@ -1,6 +1,13 @@
 ---
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
+nodeInstanceId: 019e8dd8-255d-7944-9c0d-74c224bd7298
 ---
+## Supporting Evidence
+
+> [!info] EVDs that support this claim (→ EVD—supports→CLM edges by sync_relations.py).
+
+- [[EVD - The 119 estimated averted readmissions for LEP patients was associated with estimated monthly hospital expenditure savings of 161,404.]]
+
 
 
 ## Potentially Relevant Papers

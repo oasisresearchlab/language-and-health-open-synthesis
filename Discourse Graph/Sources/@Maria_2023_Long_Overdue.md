@@ -1,61 +1,32 @@
 ---
-abstract: 'Background: Patients with language barriers suffer significant health disparities,
-  including adverse events and poor health outcomes. While remote language services
-  can help improve language access, these modalities remain persistently underused.
-  The objective of this study was to understand clinician experiences and challenges
-  using dual-handset interpreter telephones and to inform recommendations for future
-  language access interventions.
-
-  Methods: We conducted four focus groups with nurses (N=14) and resident physicians
-  (N=20) to understand attitudes toward dual-handset interpreter telephones in the
-  hospital, including general impressions, effects on communication, situations in
-  which they did and did not use them, and impact on clinical care. Three researchers
-  independently coded all transcripts using a constant comparative approach, meeting
-  repeatedly to discuss coding and to reconcile differences to reach consensus.
-
-  Results: We identified five salient themes, including increased language access
-  (improved convenience, flexibility, and versatility of phones over in-person or
-  ad hoc interpreters); effects on interpersonal processes of care (improved ability
-  to communicate directly with patients); effects on clinical processes of care (improvements
-  in critical patient care functions, including pain and medication management); impact
-  on time (needing extra time for interpreted encounters and perceived delays impacting
-  future use); and patients for whom, and circumstances in which, the dual-handset
-  interpreter telephone is inadequate (e.g., complex discussions, hands-on instruction,
-  or multiple speakers are present).
-
-  Conclusions: Our findings indicate that clinicians value dual-handset interpretation
-  in bridging communication barriers and highlight recommendations to guide future
-  implementation interventions to increase the uptake of remote language services
-  in hospital settings.
-
-  '
+abstract: |
+  Background: Patients with language barriers suffer significant health disparities, including adverse events and poor health outcomes. While remote language services can help improve language access, these modalities remain persistently underused. The objective of this study was to understand clinician experiences and challenges using dual-handset interpreter telephones and to inform recommendations for future language access interventions.
+  Methods: We conducted four focus groups with nurses (N=14) and resident physicians (N=20) to understand attitudes toward dual-handset interpreter telephones in the hospital, including general impressions, effects on communication, situations in which they did and did not use them, and impact on clinical care. Three researchers independently coded all transcripts using a constant comparative approach, meeting repeatedly to discuss coding and to reconcile differences to reach consensus.
+  Results: We identified five salient themes, including increased language access (improved convenience, flexibility, and versatility of phones over in-person or ad hoc interpreters); effects on interpersonal processes of care (improved ability to communicate directly with patients); effects on clinical processes of care (improvements in critical patient care functions, including pain and medication management); impact on time (needing extra time for interpreted encounters and perceived delays impacting future use); and patients for whom, and circumstances in which, the dual-handset interpreter telephone is inadequate (e.g., complex discussions, hands-on instruction, or multiple speakers are present).
+  Conclusions: Our findings indicate that clinicians value dual-handset interpretation in bridging communication barriers and highlight recommendations to guide future implementation interventions to increase the uptake of remote language services in hospital settings.
 author: Maria E Garcia
-citekey: '@Maria_2023_Long_Overdue'
+citekey: "@Maria_2023_Long_Overdue"
 has_empirical_findings: true
 journal: Journal of Surgical Research
-keywords: 'hospital settings; interpreters; language barriers; limited English proficiency;
-  remote interpretation.
-
-  '
+keywords: |
+  hospital settings; interpreters; language barriers; limited English proficiency; remote interpretation.
 language: more then 100 languages
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
-outcomes: 'dual-handset interpretation in bridging communication barriers and highlight
-  recommendations to guide future implementation interventions to increase the uptake
-  of remote language services in hospital settings
-
-  '
+outcomes: |
+  dual-handset interpretation in bridging communication barriers and highlight recommendations to guide future implementation interventions to increase the uptake of remote language services in hospital settings
 pubmed_id: 36876231
+doi: 10.1089/heq.2022.0023
 region: US
 specialty: general
 study_years: 2012-2018
-title: '"Long Overdue": Nurse and Resident Physician Perspectives on Implementation
-  of Dual-Handset Interpreter Phones in the Inpatient Setting'
+title: '"Long Overdue": Nurse and Resident Physician Perspectives on Implementation of Dual-Handset Interpreter Phones in the Inpatient Setting'
 year: 2023
 factors:
-- Interpretation services
-- Limited English Proficiency (LEP)
+  - Interpretation services
+  - Limited English Proficiency (LEP)
 outcomes_extracted:
-- Physician time/effort
+  - Physician time/effort
+nodeInstanceId: 019e8dd8-2e93-7d3e-91e8-c2046fa4d7c3
 ---
 
 

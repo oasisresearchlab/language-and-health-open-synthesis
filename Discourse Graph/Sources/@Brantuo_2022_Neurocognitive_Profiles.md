@@ -1,40 +1,27 @@
 ---
-abstract: 'Objective: The objective of the present study was to examine the neurocognitive
-  profiles associated with limited English proficiency (LEP).
-
-  Method: A brief neuropsychological battery including measures with high (HVM) and
-  low verbal mediation (LVM) was administered to 80 university students: 40 native
-  speakers of English (NSEs) and 40 with LEP.
-
-  Results: Consistent with previous research, individuals with LEP performed more
-  poorly on HVM measures and equivalent to NSEs on LVM measures-with some notable
-  exceptions.
-
-  Conclusions: Low scores on HVM tests should not be interpreted as evidence of acquired
-  cognitive impairment in individuals with LEP, because these measures may systematically
-  underestimate cognitive ability in this population. These findings have important
-  clinical and educational implications.
-
-  '
+abstract: |
+  Objective: The objective of the present study was to examine the neurocognitive profiles associated with limited English proficiency (LEP).
+  Method: A brief neuropsychological battery including measures with high (HVM) and low verbal mediation (LVM) was administered to 80 university students: 40 native speakers of English (NSEs) and 40 with LEP.
+  Results: Consistent with previous research, individuals with LEP performed more poorly on HVM measures and equivalent to NSEs on LVM measures-with some notable exceptions.
+  Conclusions: Low scores on HVM tests should not be interpreted as evidence of acquired cognitive impairment in individuals with LEP, because these measures may systematically underestimate cognitive ability in this population. These findings have important clinical and educational implications.
 author: Brantuo
-citekey: '@Brantuo_2022_Neurocognitive_Profiles'
+citekey: "@Brantuo_2022_Neurocognitive_Profiles"
 has_empirical_findings: true
 journal: clinical neuropsychology
-keywords: 'Cross-cultural neuropsychology; High verbal mediation; Limited English
-  proficiency.
-
-  '
+keywords: |
+  Cross-cultural neuropsychology; High verbal mediation; Limited English proficiency.
 language: all
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 40
 pubmed_id: 35694764
+doi: 10.1093/arclin/acac019
 region: US
 specialty: neurosurgery
-title: Neurocognitive Profiles Associated With Limited English Proficiency in Cognitively
-  Intact Adults
+title: Neurocognitive Profiles Associated With Limited English Proficiency in Cognitively Intact Adults
 year: 2022
 factors:
-- Limited English Proficiency (LEP)
+  - Limited English Proficiency (LEP)
+nodeInstanceId: 019e8dd8-275d-7400-8237-56afc5c9b93e
 ---
 
 

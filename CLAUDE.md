@@ -1,0 +1,71 @@
+# CLAUDE.md — language-and-health-open-synthesis
+
+Operating rules for extracting a grounded **discourse graph** from the LEP / language-concordance
+corpus. Methodology ported & adapted from `living-synthesis-remix` (per-paper extraction) and
+`jay-living-synthesis-jc-port/Skill-synthesis.md` (cross-paper synthesis). Plan of record:
+`plans/extracting-discourse-nodes.md`.
+
+## Lodestar question
+
+`[[QUE - How does language support (language ‘concordance’) affect healthcare outcomes?]]`
+
+Sub-questions (in `Discourse Graph/Questions/`): effects of concordance on quality/cost; effects of
+**discordance**; distribution of discordance need; how to optimize delivery of concordance services.
+
+## Node types (use the plugin's real ids)
+
+| Type | id | folder |
+|---|---|---|
+| Question (QUE) | `node_LsIeSJxI7M9DoE3ISFEmw` | `Discourse Graph/Questions/` |
+| Claim (CLM) | `node_nMxzA_OByPwgPcmb6AN82` | `Discourse Graph/Claims/` |
+| Evidence (EVD) | `node_huDx8FGfNSGQyongW5rk-` (keyImage) | `Discourse Graph/Evidence/` |
+| Source (SRC) | `node_Ne237S0BfRPDaeqB_gbuT` | `Discourse Graph/Sources/` |
+| EvidencePattern (EP) | `node_r2JRW9jgphgmMpz5mN7eG` | `Discourse Graph/EvidencePatterns/` |
+| Pattern (PTN) | `node_vUzzS2ZuolcZzErZfyC72` | `Discourse Graph/Patterns/` |
+| Artifact (ART) | `node_OULGh2SuqxP1oES9p2k_9` (keyImage) | `Discourse Graph/Artifacts/` |
+| Caveat (CVT) | `node_Q4sxSAHaUscV3smL5OBnB` | `Discourse Graph/Caveats/` |
+
+## Edge schema (relations.json is the source of truth)
+
+- `EVD —supports/opposes→ CLM` and `EVD —supports/opposes→ EP` (`relation_BO5Bt…` / `relation_Qtuz…`)
+- `CVT —qualifies→ EVD` (`rel_o0a9NeAmWnhFBaVLNiJ1g`)
+- `{SRC, CLM, EVD} —informs→ QUE`; `CLM —supports/opposes/informs→ CLM` (`relation_OxKXi9…` for informs)
+
+Edges are **authored as wikilinks** in node bodies (see Skill-references "Edge authoring") and
+**materialized into `relations.json`** by `utils/sync_relations.py`. A generated nested index
+(`build_dgraph.py`) and Bases provide review/navigation.
+
+## Tags & fields
+
+Every QUE/CLM/EVD/EP carries domain-facet tags + **exactly one** `epistemic/*` tag
+(`mechanism` | `effect-size` | `measurement`). Domain facets (also mirrored as YAML list fields on
+EVD/CLM/EP for `.base` filtering): `languageConcordanceFactor/*`, `healthOutcome/*`,
+`deliveryContext/*`. Vocabulary seeds in `Variables.md`; extend as extraction surfaces new values.
+
+## Governance — propose, don't commit
+
+AI **extracts** EVD/CLM/CVT and **proposes** EPs, provisional→real upgrades, cluster/subtask merges,
+and evidence-summary cell values. The **human commits** (accept/reject per item). Never auto-fill
+the evidence-summary table or auto-write final EPs/merges. See Skill-synthesis.
+
+## Pipeline order (after authoring node files)
+
+```
+python3 utils/quote_pipeline.py             # verbatim quote-region crops
+python3 utils/ground_figures.py             # embed extracted figure/table FIRST per EVD
+python3 utils/sync_relations.py             # wikilinks → relations.json edges
+python3 utils/build_dgraph.py               # nested QUE→CLM→EVD(→CVT) index
+python3 utils/verbatim_audit.py             # quote ↔ PDF fidelity
+python3 utils/attachment_audit.py           # graph invariants
+python3 utils/readability_pass.py           # mechanical formatting
+```
+
+## Conventions
+
+- AI-authored nodes: set `nodeTypeId` + generate `nodeInstanceId` (UUIDv7:
+  `python3 -c "import uuid; print(uuid.uuid7())"`) in frontmatter. `showIdsInFrontmatter:false` only
+  hides them in the UI.
+- Verbatim quotes for every substantive statement; atomicity (one finding/claim/limitation per node).
+- NodeFormality starts `draft`; promote after audits pass.
+- Reference files, don't restate them: `Skill.md` (workflow), `Skill-references.md` (rules/naming/tags),
+  `Skill-templates.md` (templates), `Skill-synthesis.md` (cross-paper).

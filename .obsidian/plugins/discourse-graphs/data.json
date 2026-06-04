@@ -7,7 +7,9 @@
       "color": "#99890e",
       "template": "T - Question",
       "tag": "que-candidate",
-      "description": "Unknowns that we want to make known, and is addressable by our experiments, prototypes, etc."
+      "description": "Unknowns that we want to make known, and is addressable by our experiments, prototypes, etc.",
+      "created": 1780496213330,
+      "modified": 1780496213330
     },
     {
       "id": "node_nMxzA_OByPwgPcmb6AN82",
@@ -16,7 +18,9 @@
       "color": "#7DA13E",
       "tag": "clm-candidate",
       "description": "Atomic, generalized assertions about the world that (propose to) answer research questions",
-      "template": "T - Claim"
+      "template": "T - Claim",
+      "created": 1780496213330,
+      "modified": 1780496213330
     },
     {
       "id": "node_huDx8FGfNSGQyongW5rk-",
@@ -26,7 +30,9 @@
       "tag": "evd-candidate",
       "description": "A specific empirical observation from a particular study",
       "template": "T - Evidence",
-      "keyImage": true
+      "keyImage": true,
+      "created": 1780496213330,
+      "modified": 1780496213330
     },
     {
       "id": "node_Ne237S0BfRPDaeqB_gbuT",
@@ -34,7 +40,59 @@
       "format": "@{content}",
       "template": "T - Source",
       "tag": "",
-      "color": "#908484"
+      "color": "#908484",
+      "created": 1780496213330,
+      "modified": 1780499446557,
+      "description": "Some published research source, like a book, conference paper, or journal article"
+    },
+    {
+      "id": "node_r2JRW9jgphgmMpz5mN7eG",
+      "name": "EvidencePattern",
+      "format": "EP - {content}",
+      "template": "T - EvidencePattern",
+      "tag": "",
+      "color": "#89b1c2",
+      "created": 1780498790233,
+      "modified": 1780512875573,
+      "folderPath": "Discourse Graph/EvidencePatterns",
+      "description": "Cross-paper empirical regularities bundling 2+ EVDs"
+    },
+    {
+      "id": "node_vUzzS2ZuolcZzErZfyC72",
+      "name": "Pattern",
+      "format": "PTN - {content}",
+      "template": "T - Pattern",
+      "tag": "",
+      "color": "#808080",
+      "created": 1780498820375,
+      "modified": 1780512870697,
+      "description": "Conceptual classes such as theoretical objects, heuristics, design patterns, and system/methodological approaches, that are abstracted from a *specific* implementation. They are what make specific systems \\\"work\\\" or not, matched to a model of the problem.",
+      "folderPath": "Discourse Graph/Patterns"
+    },
+    {
+      "id": "node_OULGh2SuqxP1oES9p2k_9",
+      "name": "Artifact",
+      "format": "ART - {content}",
+      "template": "T - Artifact",
+      "tag": "art-candidate",
+      "color": "#ce5555",
+      "created": 1780499036499,
+      "modified": 1780512861656,
+      "description": "Specific concrete systems (prototypes, standards, etc.) that instantiate one or more conceptual patterns or methods",
+      "keyImage": true,
+      "folderPath": "Discourse Graph/Artifacts"
+    },
+    {
+      "id": "node_Q4sxSAHaUscV3smL5OBnB",
+      "name": "Caveat",
+      "format": "CVT - {content}",
+      "template": "T - Caveat",
+      "tag": "",
+      "color": "#808080",
+      "created": 1780512719528,
+      "modified": 1780513230864,
+      "description": "Methodological limitations on EVDs",
+      "folderPath": "Discourse Graph/Caveats"
     }
   ],
   "relationTypes": [
@@ -42,75 +100,148 @@
       "id": "relation_BO5BtVVpJGrw70jTCTznm",
       "label": "supports",
       "complement": "is supported by",
-      "color": "#099268"
+      "color": "#099268",
+      "created": 1780496213330,
+      "modified": 1780496213330
     },
     {
       "id": "relation_QtuzWZj3zndZBKQe7LcFK",
       "label": "opposes",
       "complement": "is opposed by",
-      "color": "#e03131"
+      "color": "#e03131",
+      "created": 1780496213330,
+      "modified": 1780496213330
     },
     {
       "id": "relation_OxKXi9qk9qcigTKK2BGeY",
       "label": "informs",
       "complement": "is informed by",
-      "color": "#adb5bd"
+      "color": "#adb5bd",
+      "created": 1780496213330,
+      "modified": 1780496213330
+    },
+    {
+      "id": "rel_o0a9NeAmWnhFBaVLNiJ1g",
+      "label": "qualifies",
+      "complement": "is qualified by",
+      "color": "black",
+      "created": 1780512887580,
+      "modified": 1780512892902
     }
   ],
   "discourseRelations": [
     {
       "sourceId": "node_huDx8FGfNSGQyongW5rk-",
       "destinationId": "node_LsIeSJxI7M9DoE3ISFEmw",
-      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY"
+      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY",
+      "created": 1780496213330,
+      "modified": 1780496213330,
+      "id": "rel3_mi1Ip-fVXzul_F9I2_nWq"
     },
     {
       "sourceId": "node_huDx8FGfNSGQyongW5rk-",
       "destinationId": "node_nMxzA_OByPwgPcmb6AN82",
-      "relationshipTypeId": "relation_BO5BtVVpJGrw70jTCTznm"
+      "relationshipTypeId": "relation_BO5BtVVpJGrw70jTCTznm",
+      "created": 1780496213330,
+      "modified": 1780496213330,
+      "id": "rel3_c_i-7ML1H6gcXfT4DQrQR"
     },
     {
       "sourceId": "node_huDx8FGfNSGQyongW5rk-",
       "destinationId": "node_nMxzA_OByPwgPcmb6AN82",
-      "relationshipTypeId": "relation_QtuzWZj3zndZBKQe7LcFK"
+      "relationshipTypeId": "relation_QtuzWZj3zndZBKQe7LcFK",
+      "created": 1780496213330,
+      "modified": 1780496213330,
+      "id": "rel3_o73FZFyNrdTNxUel7J4eF"
     },
     {
       "sourceId": "node_Ne237S0BfRPDaeqB_gbuT",
       "destinationId": "node_LsIeSJxI7M9DoE3ISFEmw",
-      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY"
+      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY",
+      "created": 1780496213330,
+      "modified": 1780496213330,
+      "id": "rel3_CCqXCUoylLmJ6K9JLTa7P"
     },
     {
       "sourceId": "node_nMxzA_OByPwgPcmb6AN82",
       "destinationId": "node_LsIeSJxI7M9DoE3ISFEmw",
-      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY"
+      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY",
+      "created": 1780496213330,
+      "modified": 1780496213330,
+      "id": "rel3_keqEfg7PgoE-R24vSs1Bc"
     },
     {
       "sourceId": "node_LsIeSJxI7M9DoE3ISFEmw",
       "destinationId": "node_LsIeSJxI7M9DoE3ISFEmw",
-      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY"
+      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY",
+      "created": 1780496213330,
+      "modified": 1780496213330,
+      "id": "rel3_r_o7_EDZWXQfllulqTZwZ"
     },
     {
       "sourceId": "node_nMxzA_OByPwgPcmb6AN82",
       "destinationId": "node_nMxzA_OByPwgPcmb6AN82",
-      "relationshipTypeId": "relation_BO5BtVVpJGrw70jTCTznm"
+      "relationshipTypeId": "relation_BO5BtVVpJGrw70jTCTznm",
+      "created": 1780496213330,
+      "modified": 1780496213330,
+      "id": "rel3_clv9UPxTjibvNCG3eGkm1"
     },
     {
       "sourceId": "node_nMxzA_OByPwgPcmb6AN82",
       "destinationId": "node_nMxzA_OByPwgPcmb6AN82",
-      "relationshipTypeId": "relation_QtuzWZj3zndZBKQe7LcFK"
+      "relationshipTypeId": "relation_QtuzWZj3zndZBKQe7LcFK",
+      "created": 1780496213330,
+      "modified": 1780496213330,
+      "id": "rel3_NaCSyw2cnE3ytq8Ra-4qm"
     },
     {
       "sourceId": "node_nMxzA_OByPwgPcmb6AN82",
       "destinationId": "node_nMxzA_OByPwgPcmb6AN82",
-      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY"
+      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY",
+      "created": 1780496213330,
+      "modified": 1780496213330,
+      "id": "rel3_r8g6nUHvwX6suGbHZlcps"
     },
     {
       "sourceId": "node_Ne237S0BfRPDaeqB_gbuT",
       "destinationId": "node_nMxzA_OByPwgPcmb6AN82",
-      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY"
+      "relationshipTypeId": "relation_OxKXi9qk9qcigTKK2BGeY",
+      "created": 1780496213330,
+      "modified": 1780496213330,
+      "id": "rel3_ezaQb55Gfk6pM8dON3w16"
+    },
+    {
+      "id": "rel3_mxRgxSbjVucBx0rPIcwjZ",
+      "sourceId": "node_Q4sxSAHaUscV3smL5OBnB",
+      "destinationId": "node_huDx8FGfNSGQyongW5rk-",
+      "relationshipTypeId": "rel_o0a9NeAmWnhFBaVLNiJ1g",
+      "created": 1780512897947,
+      "modified": 1780512907827
+    },
+    {
+      "id": "rel3_fb9qjmVUxl2nzrl5qakZm",
+      "sourceId": "node_huDx8FGfNSGQyongW5rk-",
+      "destinationId": "node_r2JRW9jgphgmMpz5mN7eG",
+      "relationshipTypeId": "relation_BO5BtVVpJGrw70jTCTznm",
+      "created": 1780512908901,
+      "modified": 1780512919207
+    },
+    {
+      "id": "rel3_3aGH3WB8ylJ3y9rVOGb8c",
+      "sourceId": "node_huDx8FGfNSGQyongW5rk-",
+      "destinationId": "node_r2JRW9jgphgmMpz5mN7eG",
+      "relationshipTypeId": "relation_QtuzWZj3zndZBKQe7LcFK",
+      "created": 1780512920424,
+      "modified": 1780512927274
     }
   ],
-  "showIdsInFrontmatter": true,
+  "showIdsInFrontmatter": false,
   "nodesFolderPath": "Discourse Graph",
   "canvasFolderPath": "Discourse Canvas",
-  "canvasAttachmentsFolderPath": "attachments"
+  "canvasAttachmentsFolderPath": "attachments",
+  "nodeTagHotkey": "\\",
+  "spacePassword": "3979f051-e66d-4920-b12e-6c0e9cd29d9a",
+  "accountLocalId": "languageandhealthopensynthesisKZ15CA",
+  "syncModeEnabled": false,
+  "spaceNames": {}
 }

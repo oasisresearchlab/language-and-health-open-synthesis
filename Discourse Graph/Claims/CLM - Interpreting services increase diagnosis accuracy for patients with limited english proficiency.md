@@ -3,8 +3,7 @@ nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
 tags:
   - languageConcordanceFactor/concordanceIntervention/interpretingServices
   - healthOutcome/diagnosticAccuracy
-relation_OxKXi9qk9qcigTKK2BGeY:
-  - "[[CLM - Patients with limited english proficiency receive less accurate diagnoses.md]]"
+nodeInstanceId: 019e8dd8-2562-7700-b3c6-da4f9298f928
 ---
 
 

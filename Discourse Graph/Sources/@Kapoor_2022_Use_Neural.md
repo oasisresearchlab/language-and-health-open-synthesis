@@ -1,21 +1,20 @@
 ---
-abstract: 'This cohort study investigates the use of neural machine translation software
-  to assess postoperative pain and nausea among patients with limited English proficiency.
-
-  '
+abstract: |
+  This cohort study investigates the use of neural machine translation software to assess postoperative pain and nausea among patients with limited English proficiency.
 author: Kapoor
-citekey: '@Kapoor_2022_Use_Neural'
+citekey: "@Kapoor_2022_Use_Neural"
 has_empirical_findings: true
 journal: JAMA
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 35258580
+doi: 10.1001/jamanetworkopen.2022.1485
 region: Canada
 study_years: 2011-2016
-title: Use of Neural Machine Translation Software for Patients With Limited English
-  Proficiency to Assess Postoperative Pain and Nausea
+title: Use of Neural Machine Translation Software for Patients With Limited English Proficiency to Assess Postoperative Pain and Nausea
 year: 2022
 factors:
-- Limited English Proficiency (LEP)
+  - Limited English Proficiency (LEP)
+nodeInstanceId: 019e8dd8-2c16-7197-87d1-2f10ccdd41d5
 ---
 
 

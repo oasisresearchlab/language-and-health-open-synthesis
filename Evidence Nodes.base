@@ -1,0 +1,13 @@
+views:
+  - type: table
+    name: Evidence Nodes
+    filters:
+      and:
+        - nodeTypeId == "node_huDx8FGfNSGQyongW5rk-"
+    order:
+      - file.name
+      - deliveryContext
+      - languageConcordanceFactor
+      - healthOutcome
+      - NodeFormality
+      - tags

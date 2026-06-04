@@ -1,0 +1,54 @@
+---
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+NodeFormality: draft
+NodeType: Evidence
+Source: "[[@Aksharananda_2023_Pain_Assessment]]"
+EvidenceType:
+nodeInstanceId: 019e902d-7ebb-7134-9b1d-09401cff199d
+languageConcordanceFactor:
+  - Limited English Proficiency (LEP)
+healthOutcome:
+  - Numeric pain assessment
+deliveryContext:
+  - Inpatient
+tags:
+  - languageConcordanceFactor/discordance
+  - healthOutcome/painAssessment
+  - deliveryContext/inpatient
+  - epistemic/effect-size
+---
+## Description
+
+In a multivariable logistic regression restricted to nurse-performed self-report pain tools, patients with limited English proficiency (LEP) had the lowest adjusted odds of receiving a numeric (Numeric Rating Scale) pain assessment versus another self-report tool, compared with English-speaking patients (OR 0.61, 95% CI 0.58–0.65). This was the largest reduction in odds of any subgroup examined, exceeding even the Asian-patient effect (OR 0.74) (Table 3).
+
+> [!info]
+> "Using multivariable logistic regression to model the relationship between race/ethnicity, LEP status, and the type of self-report tool used, compared to white patients, we found that nurses were less likely to measure pain using numeric rating tools for Asian patients (OR 0.74, 95% CI 0.70–0.78). [...] Patients with LEP were less likely to receive a numeric assessment compared to English speaking patients (OR 0.61, 95% CI 0.58–0.65). (Table 3)" (Aksharananda, 2023)
+
+## Methods Context
+
+> [!info] Methods details (with associated screenshots/quotes + page numbers) that contextualize how the evidence was produced that help us to understand/evaluate/use it.
+
+### What?
+
+The observable was the type of self-report pain assessment tool a nurse documented for a given assessment — specifically whether it was a Numeric Rating Scale versus a Verbal Descriptor Scale / FACES pain scale — recorded in the EHR flowsheet along with a pain value.
+
+> [!info]
+> "We also examined documentation restricted to nurse performed “self-report tools” comparing numeric rating to verbal descriptor/FACES pain scale. Within the cohort of self-report only, using a multivariate logistic regression, we examined the odds of a patient receiving a numeric pain assessment versus another pain assessment tool." (Aksharananda, 2023)
+
+### How?
+
+A retrospective cohort design using Epic EHR (Clarity) data. The odds were estimated with multivariable logistic regression adjusting for race/ethnicity, LEP status, age, comorbidity index, cancer-pain diagnosis, opioids on admission, length of stay, comfort care, and study year, with cluster-robust variance to account for multiple assessments per patient.
+
+> [!info]
+> "Multivariable logistic regression included race/ethnicity, LEP status, age, comorbidity index, cancer pain diagnosis, opioids on admission, length of stay, comfort care, and study year (as a proxy for temporal changes in prescribing). [...] Cluster-robust variance estimates were used to account for clustering at the patient level using medical record numbers." (Aksharananda, 2023)
+
+### Who?
+
+Adult (age ≥18) general medicine inpatients at UCSF Helen Diller Medical Center, an urban academic center, discharged January 2013–September 2021, excluding ICU stays. The self-report-restricted regression cohort comprised 50,865 patient hospitalizations and 1,722,304 patient-level pain assessment values; LEP was defined as a non-English primary language plus a reported need for an interpreter.
+
+> [!info]
+> "This restricted dataset comprised of 50,865 patient hospitalizations with 1,722,304 patient-level pain assessment values." (Aksharananda, 2023)
+>
+> "Limited English proficiency (LEP) status was defined as having a self-identified primary language other than English and intake assessment by the patient reporting that they require an interpreter." (Aksharananda, 2023)
+
+## Other Notes

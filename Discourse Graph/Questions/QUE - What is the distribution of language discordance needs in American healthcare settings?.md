@@ -4,7 +4,5 @@ NodeFormality: draft
 NodeType: Question
 tags:
   - languageConcordanceFactor/discordance
-relation_OxKXi9qk9qcigTKK2BGeY:
-  - "[[@Ai-Vi_2023_Language_Accommodations.md]]"
-  - "[[@Aksharananda_2023_Pain_Assessment.md]]"
+nodeInstanceId: 019e8dd8-260b-70fd-919f-c17668fb09e9
 ---

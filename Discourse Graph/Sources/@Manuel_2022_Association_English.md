@@ -1,23 +1,21 @@
 ---
-abstract: 'This cohort study examines patient outcomes following total joint arthroplasty
-  to evaluate their association with limited English proficiency.
-
-  '
+abstract: |
+  This cohort study examines patient outcomes following total joint arthroplasty to evaluate their association with limited English proficiency.
 author: Manuel
-citekey: '@Manuel_2022_Association_English'
+citekey: "@Manuel_2022_Association_English"
 has_empirical_findings: true
 journal: JAMA
-keywords: 'none
-
-  '
+keywords: |
+  none
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 35267037
+doi: 10.1001/jamanetworkopen.2022.1842
 specialty: orthopedic
-title: Association of English Language Proficiency With Hospitalization Cost, Length
-  of Stay, Disposition Location, and Rea
+title: Association of English Language Proficiency With Hospitalization Cost, Length of Stay, Disposition Location, and Rea
 year: 2022
 factors:
-- Limited English Proficiency (LEP)
+  - Limited English Proficiency (LEP)
+nodeInstanceId: 019e8dd8-2e69-7085-8b5e-2582088aa3bb
 ---
 
 

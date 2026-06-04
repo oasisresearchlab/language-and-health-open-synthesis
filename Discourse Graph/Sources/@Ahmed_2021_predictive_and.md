@@ -11,6 +11,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   total interpreting cost,  quality of the interpreting service, and the utilization of full-time interpreters
 pubmed_id: 33629192
+doi: 10.1007/s10729-020-09536-y
 region: United States
 specialty: General Medicine
 title: A predictive and prescriptive analytical framework for scheduling language medical interpreters
@@ -20,8 +21,7 @@ factors:
   - Limited English Proficiency (LEP)
 outcomes_extracted:
   - Physician time/effort
-relation_OxKXi9qk9qcigTKK2BGeY:
-  - "[[QUE - How to optimize delivery of language concordance services in healthcare?]]"
+nodeInstanceId: 019e8dd8-25cd-7b73-9f42-91a004ef9c66
 ---
 
 

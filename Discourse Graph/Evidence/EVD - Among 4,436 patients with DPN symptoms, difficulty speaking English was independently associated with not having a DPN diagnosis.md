@@ -3,6 +3,7 @@ nodeTypeId: node_huDx8FGfNSGQyongW5rk-
 NodeFormality: draft
 NodeType: Evidence
 Source: "[[@Adams_2016_Communication_Barriers]]"
+nodeInstanceId: 019e8dd8-259c-7611-9236-c31d612ca249
 ---
 ## Description
 > [!Screenshots of key figure/table and/or direct quotes from source that substantiate the evidence statement (e.g., reports of statistical tests, or key quotes from participants), with page numbers.]

@@ -1,59 +1,31 @@
 ---
-abstract: 'Introduction: Pain management is critical for optimal recovery after trauma.
-  Previous work at our institution revealed differences in pain assessment by patient
-  language, which may impact management. This study aimed to understand differences
-  in discharge opioid prescribing for trauma patients with limited English proficiency
-  (LEP).
-
-  Methods: We conducted a cross-sectional study of adult trauma patients discharged
-  to the community from a diverse, urban level 1 trauma center in 2018. Opioid prescriptions
-  were obtained from discharge pharmacy records and converted to standard oral morphine
-  equivalents (OMEs). Multivariable logistic and quantile regression was used to examine
-  the relationship between LEP, opioid prescriptions, and OMEs at discharge, controlling
-  for demographic and clinical characteristics.
-
-  Results: Of 1,419 patients included in this study, 83% were English proficient (EP)
-  and 17% were LEP. At discharge, 56% of EP patients received an opioid prescription,
-  compared with 41% of LEP patients. In multivariable models, EP patients were 1.63
-  times more likely to receive any opioid prescription (95% CI, 1.17-2.25; p = 0.003).
-  Mean OME was 147 for EP and 94 for LEP patients. In multivariable models, the difference
-  between EP and LEP patients was 40 OMEs (95% CI, 21.10-84.22; p = 0.004). In adjusted
-  quantile regression models, differences in total OMEs increased with the amount
-  of OMEs prescribed. There was no difference in OMEs at the 20th and 40th percentile
-  of total OMEs, but LEP patients received 26 fewer OMEs on average at the 60th percentile
-  (95% CI, -3.23 to 54.90; p = 0.081) and 45 fewer OMEs at the 80th percentile (95%
-  CI, 5.48-84.48; p = 0.026).
-
-  Conclusion: Limited English proficiency patients with traumatic injuries were less
-  likely to receive any opioid prescription and were prescribed lower quantities of
-  opiates, which could contribute to suboptimal pain management and recovery. Addressing
-  these disparities is an important focus for future quality improvement efforts.
-
-  '
+abstract: |
+  Introduction: Pain management is critical for optimal recovery after trauma. Previous work at our institution revealed differences in pain assessment by patient language, which may impact management. This study aimed to understand differences in discharge opioid prescribing for trauma patients with limited English proficiency (LEP).
+  Methods: We conducted a cross-sectional study of adult trauma patients discharged to the community from a diverse, urban level 1 trauma center in 2018. Opioid prescriptions were obtained from discharge pharmacy records and converted to standard oral morphine equivalents (OMEs). Multivariable logistic and quantile regression was used to examine the relationship between LEP, opioid prescriptions, and OMEs at discharge, controlling for demographic and clinical characteristics.
+  Results: Of 1,419 patients included in this study, 83% were English proficient (EP) and 17% were LEP. At discharge, 56% of EP patients received an opioid prescription, compared with 41% of LEP patients. In multivariable models, EP patients were 1.63 times more likely to receive any opioid prescription (95% CI, 1.17-2.25; p = 0.003). Mean OME was 147 for EP and 94 for LEP patients. In multivariable models, the difference between EP and LEP patients was 40 OMEs (95% CI, 21.10-84.22; p = 0.004). In adjusted quantile regression models, differences in total OMEs increased with the amount of OMEs prescribed. There was no difference in OMEs at the 20th and 40th percentile of total OMEs, but LEP patients received 26 fewer OMEs on average at the 60th percentile (95% CI, -3.23 to 54.90; p = 0.081) and 45 fewer OMEs at the 80th percentile (95% CI, 5.48-84.48; p = 0.026).
+  Conclusion: Limited English proficiency patients with traumatic injuries were less likely to receive any opioid prescription and were prescribed lower quantities of opiates, which could contribute to suboptimal pain management and recovery. Addressing these disparities is an important focus for future quality improvement efforts.
 author: Schwartz
-citekey: '@Schwartz_2021_Inequity_discharge'
+citekey: "@Schwartz_2021_Inequity_discharge"
 has_empirical_findings: true
-intervention: Opioid prescriptions were obtained from discharge pharmacy records and
-  converted to standard oral morphine equivalents
+intervention: Opioid prescriptions were obtained from discharge pharmacy records and converted to standard oral morphine equivalents
 journal: Journal of Trauma and Acute Care Surgery
-keywords: 'Care Management, level IV.
-
-  '
+keywords: |
+  Care Management, level IV.
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 241
-outcomes: 'suboptimal pain management and recovery
-
-  '
+outcomes: |
+  suboptimal pain management and recovery
 pubmed_id: 34039923
+doi: 10.1097/ta.0000000000003294
 specialty: Trauma
 study_years: 2018
-title: Inequity in discharge pain management for trauma patients with limited English
-  proficiency
+title: Inequity in discharge pain management for trauma patients with limited English proficiency
 year: 2021
 factors:
-- Limited English Proficiency (LEP)
+  - Limited English Proficiency (LEP)
 outcomes_extracted:
-- Physician time/effort
+  - Physician time/effort
+nodeInstanceId: 019e8dd8-3219-71b5-9f1e-55fb554b63c0
 ---
 
 

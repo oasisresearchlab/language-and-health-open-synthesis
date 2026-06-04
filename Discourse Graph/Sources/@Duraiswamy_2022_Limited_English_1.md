@@ -1,55 +1,32 @@
 ---
-abstract: 'Purpose: Limited English proficiency (LEP) is common among hospitalized
-  patients and may impact clinical care and outcomes. This study aimed to examine
-  the relationship between LEP and clinical oncological outcomes for patients with
-  head and neck cancer (HNC).
-
-  Materials and methods: A single center retrospective review was conducted including
-  adult patients with squamous cell carcinoma of the head and neck who received treatment
-  with curative intent between January 1, 2014 and July 1, 2019. Clinical data collected
-  included patient demographics and clinical variables. Univariate and multivariate
-  analysis was performed to determine whether there was an association between LEP
-  and demographic and clinical factors.
-
-  Results: There were 477 patients included in the study; 426 (81%) were English proficient
-  (EP) while 51 (10.7%) were LEP. The LEP patients were diagnosed with cancer at a
-  later overall stage (p = 0.03) and less frequently treated with surgery alone compared
-  to English speaking patients (p < 0.001). After adjusting for overall stage and
-  primary site, LEP patients were significantly more likely to receive primary surgical
-  management compared to primary non-surgical management [OR = 2.29 95% CI (0.93,
-  5.58), p = 0.008]. There was also a significant association between LEP and primary
-  site of tumor (p < 0.01). Kaplan-Meyer curves for overall survival and disease specific
-  survival showed no significant differences between the two cohorts (p = 0.8063 and
-  p = 0.4986, respectively).
-
-  Conclusions: LEP may impact access to care resulting in more advanced overall tumor
-  stage at presentation and treatment with primary surgery compared to non-surgical
-  management after adjusting for tumor stage and primary site. Interventions to provide
-  better access to care, awareness of HNC in the LEP populations, and earlier detection
-  may improve outcomes for LEP patients.
-
-  '
+abstract: |
+  Purpose: Limited English proficiency (LEP) is common among hospitalized patients and may impact clinical care and outcomes. This study aimed to examine the relationship between LEP and clinical oncological outcomes for patients with head and neck cancer (HNC).
+  Materials and methods: A single center retrospective review was conducted including adult patients with squamous cell carcinoma of the head and neck who received treatment with curative intent between January 1, 2014 and July 1, 2019. Clinical data collected included patient demographics and clinical variables. Univariate and multivariate analysis was performed to determine whether there was an association between LEP and demographic and clinical factors.
+  Results: There were 477 patients included in the study; 426 (81%) were English proficient (EP) while 51 (10.7%) were LEP. The LEP patients were diagnosed with cancer at a later overall stage (p = 0.03) and less frequently treated with surgery alone compared to English speaking patients (p < 0.001). After adjusting for overall stage and primary site, LEP patients were significantly more likely to receive primary surgical management compared to primary non-surgical management [OR = 2.29 95% CI (0.93, 5.58), p = 0.008]. There was also a significant association between LEP and primary site of tumor (p < 0.01). Kaplan-Meyer curves for overall survival and disease specific survival showed no significant differences between the two cohorts (p = 0.8063 and p = 0.4986, respectively).
+  Conclusions: LEP may impact access to care resulting in more advanced overall tumor stage at presentation and treatment with primary surgery compared to non-surgical management after adjusting for tumor stage and primary site. Interventions to provide better access to care, awareness of HNC in the LEP populations, and earlier detection may improve outcomes for LEP patients.
 author: Duraiswamy
-citekey: '@Duraiswamy_2022_Limited_English_1'
+citekey: "@Duraiswamy_2022_Limited_English_1"
 has_empirical_findings: true
 intervention: false
 journal: American Journal of Otolaryngology
-keywords: 'Head and neck cancer; LEP; cancer outcomes.
-
-  '
+keywords: |
+  Head and neck cancer; LEP; cancer outcomes.
 language: Spanish, Mandarin, Vietnamese, Farsi, Greek, Haitian Creole
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 51
-outcomes: "LEP patients were significantly more likely to receive primary surgical\
-  \ management compared to primary non-surgical management \n; survival\n"
+outcomes: |
+  LEP patients were significantly more likely to receive primary surgical management compared to primary non-surgical management 
+  ; survival
 pubmed_id: 35427938
+doi: 10.1016/j.amjoto.2022.103470
 region: Boston
 specialty: Oncology
 study_years: 2014-2019
 title: Limited English proficiency and head and neck cancer outcomes
 year: 2022
 factors:
-- Limited English Proficiency (LEP)
+  - Limited English Proficiency (LEP)
+nodeInstanceId: 019e8dd8-2948-7e7f-8bfd-aa5d62d14763
 ---
 
 

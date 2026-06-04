@@ -1,61 +1,33 @@
 ---
-abstract: 'Objective: Provide a detailed understanding of the information workflow
-  processes related to translating health promotion materials for limited English
-  proficiency individuals in order to inform the design of context-driven machine
-  translation (MT) tools for public health (PH).
-
-  Materials and methods: We applied a cognitive work analysis framework to investigate
-  the translation information workflow processes of two large health departments in
-  Washington State. Researchers conducted interviews, performed a task analysis, and
-  validated results with PH professionals to model translation workflow and identify
-  functional requirements for a translation system for PH.
-
-  Results: The study resulted in a detailed description of work related to translation
-  of PH materials, an information workflow diagram, and a description of attitudes
-  towards MT technology. We identified a number of themes that hold design implications
-  for incorporating MT in PH translation practice. A PH translation tool prototype
-  was designed based on these findings.
-
-  Discussion: This study underscores the importance of understanding the work context
-  and information workflow for which systems will be designed. Based on themes and
-  translation information workflow processes, we identified key design guidelines
-  for incorporating MT into PH translation work. Primary amongst these is that MT
-  should be followed by human review for translations to be of high quality and for
-  the technology to be adopted into practice.
-
-  Conclusion: The time and costs of creating multilingual health promotion materials
-  are barriers to translation. PH personnel were interested in MT''s potential to
-  improve access to low-cost translated PH materials, but expressed concerns about
-  ensuring quality. We outline design considerations and a potential machine translation
-  tool to best fit MT systems into PH practice.
-
-  '
+abstract: |
+  Objective: Provide a detailed understanding of the information workflow processes related to translating health promotion materials for limited English proficiency individuals in order to inform the design of context-driven machine translation (MT) tools for public health (PH).
+  Materials and methods: We applied a cognitive work analysis framework to investigate the translation information workflow processes of two large health departments in Washington State. Researchers conducted interviews, performed a task analysis, and validated results with PH professionals to model translation workflow and identify functional requirements for a translation system for PH.
+  Results: The study resulted in a detailed description of work related to translation of PH materials, an information workflow diagram, and a description of attitudes towards MT technology. We identified a number of themes that hold design implications for incorporating MT in PH translation practice. A PH translation tool prototype was designed based on these findings.
+  Discussion: This study underscores the importance of understanding the work context and information workflow for which systems will be designed. Based on themes and translation information workflow processes, we identified key design guidelines for incorporating MT into PH translation work. Primary amongst these is that MT should be followed by human review for translations to be of high quality and for the technology to be adopted into practice.
+  Conclusion: The time and costs of creating multilingual health promotion materials are barriers to translation. PH personnel were interested in MT's potential to improve access to low-cost translated PH materials, but expressed concerns about ensuring quality. We outline design considerations and a potential machine translation tool to best fit MT systems into PH practice.
 author: Turner
-citekey: '@Turner_2015_Modeling_workflow'
+citekey: "@Turner_2015_Modeling_workflow"
 has_empirical_findings: true
 intervention: false
 journal: Journal of Biomedical Informatics
-keywords: 'Human centered design; Natural language processing; Public health informatics;
-  Public health practice; Workflow.
-
-  '
+keywords: |
+  Human centered design; Natural language processing; Public health informatics; Public health practice; Workflow.
 language: Spanish, Chinese, Vietnamese, Korean, Russian
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
-outcomes: 'translation workflow and identify functional requirements for a translation
-  system for PH.
-
-  '
+outcomes: |
+  translation workflow and identify functional requirements for a translation system for PH.
 pubmed_id: 25445922
+doi: 10.1016/j.jbi.2014.10.005
 region: Washington
 specialty: Public Health
-title: Modeling workflow to design machine translation applications for public health
-  practice
+title: Modeling workflow to design machine translation applications for public health practice
 year: 2015
 factors:
-- Limited English Proficiency (LEP)
+  - Limited English Proficiency (LEP)
 outcomes_extracted:
-- Hospital stay length
-- Physician time/effort
+  - Hospital stay length
+  - Physician time/effort
+nodeInstanceId: 019e8dd8-33e3-7f19-ac09-cb69938add0e
 ---
 
 

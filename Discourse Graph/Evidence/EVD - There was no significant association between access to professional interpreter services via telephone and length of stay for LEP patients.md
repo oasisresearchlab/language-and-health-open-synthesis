@@ -2,13 +2,12 @@
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
 NodeFormality: draft
 NodeType: Evidence
-Source:
+Source: "[[@Karliner_2017_Convenient_Access]]"
 EvidenceType:
-relation_QtuzWZj3zndZBKQe7LcFK:
-  - "[[CLM - Patients with limited english proficiency have shorter hospital stays when interpreting services are used.md]]"
 tags:
   - healthOutcome/lengthOfStay
   - languageConcordanceFactor/concordanceIntervention/interpretingServices
+nodeInstanceId: 019e8dd8-2589-7323-9fa5-c9c5ed7db579
 ---
 ## Description
 > [!Screenshots of key figure/table and/or direct quotes from source that substantiate the evidence statement (e.g., reports of statistical tests, or key quotes from participants), with page numbers.]

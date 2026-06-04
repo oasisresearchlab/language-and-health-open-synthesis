@@ -1,58 +1,31 @@
 ---
-abstract: 'Introduction: Disparities following traumatic injury by race/ethnicity
-  and insurance status are well-documented. However, the relationship between limited
-  English proficiency (LEP) and outcomes after trauma is poorly understood. This study
-  describes the association between LEP and morbidity and mortality after traumatic
-  injury.
-
-  Methods: A retrospective cohort study was conducted of adult trauma patients admitted
-  to a level 1 trauma center from 2012 to 2018. Morbidity (length of stay [LOS], intensive
-  care unit admission, intensive care unit LOS, discharge destination) and in-hospital
-  mortality for LEP and English proficient (EP) patients were compared using univariate
-  and multivariable logistic and generalized linear models controlling for patient
-  demographics (age, sex, race/ethnicity, insurance) and clinical characteristics
-  (mechanism, activation level, Glasgow Coma Scale, Injury Severity Score, traumatic
-  brain injury).
-
-  Results: Of the 13,104 patients, 16% were LEP patients. LEP languages included Chinese
-  (44%) and Spanish (38%), and 18% categorized as "Other," including 33 languages.
-  In multivariable models, LEP was statistically significantly associated with increased
-  hospital LOS (P = 0.003) and increased discharge to home with home health services
-  (P = 0.042) or to skilled nursing facility/rehabilitation (P = 0.006). Mortality
-  rate was 7% for LEP versus 4% for EP patients (P < 0.0001). In multivariable analysis,
-  speaking an LEP language other than Chinese or Spanish was statistically significantly
-  associated with increased mortality compared to EP (P = 0.006).
-
-  Conclusions: Following traumatic injury, LEP patients experience increased hospital
-  LOS and are more frequently discharged to home with home health services or to skilled
-  nursing facilities/rehabilitation. LEP patients speaking languages other than Chinese
-  or Spanish experience increased mortality compared to EP patients.
-
-  '
+abstract: |
+  Introduction: Disparities following traumatic injury by race/ethnicity and insurance status are well-documented. However, the relationship between limited English proficiency (LEP) and outcomes after trauma is poorly understood. This study describes the association between LEP and morbidity and mortality after traumatic injury.
+  Methods: A retrospective cohort study was conducted of adult trauma patients admitted to a level 1 trauma center from 2012 to 2018. Morbidity (length of stay [LOS], intensive care unit admission, intensive care unit LOS, discharge destination) and in-hospital mortality for LEP and English proficient (EP) patients were compared using univariate and multivariable logistic and generalized linear models controlling for patient demographics (age, sex, race/ethnicity, insurance) and clinical characteristics (mechanism, activation level, Glasgow Coma Scale, Injury Severity Score, traumatic brain injury).
+  Results: Of the 13,104 patients, 16% were LEP patients. LEP languages included Chinese (44%) and Spanish (38%), and 18% categorized as "Other," including 33 languages. In multivariable models, LEP was statistically significantly associated with increased hospital LOS (P = 0.003) and increased discharge to home with home health services (P = 0.042) or to skilled nursing facility/rehabilitation (P = 0.006). Mortality rate was 7% for LEP versus 4% for EP patients (P < 0.0001). In multivariable analysis, speaking an LEP language other than Chinese or Spanish was statistically significantly associated with increased mortality compared to EP (P = 0.006).
+  Conclusions: Following traumatic injury, LEP patients experience increased hospital LOS and are more frequently discharged to home with home health services or to skilled nursing facilities/rehabilitation. LEP patients speaking languages other than Chinese or Spanish experience increased mortality compared to EP patients.
 author: Maria R H Castro
-citekey: '@Maria_2023_Association_Limited'
+citekey: "@Maria_2023_Association_Limited"
 has_empirical_findings: true
-keywords: 'Healthcare disparities; Language; Limited English proficiency; Morbidity;
-  Mortality; Trauma.
-
-  '
+keywords: |
+  Healthcare disparities; Language; Limited English proficiency; Morbidity; Mortality; Trauma.
 language: Chinese, Spanish & other
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 1703
-outcomes: 'LEP patients experience increased hospital LOS
-
-  '
-pubmed_id: 26030609
+outcomes: |
+  LEP patients experience increased hospital LOS
+pubmed_id: 36030609
+doi: 10.1016/j.jss.2022.07.044
 region: US
 specialty: Trauma
 study_years: 2012-2018
-title: The Association of Limited English Proficiency With Morbidity and Mortality
-  After Trauma
+title: The Association of Limited English Proficiency With Morbidity and Mortality After Trauma
 year: 2023
 factors:
-- Limited English Proficiency (LEP)
+  - Limited English Proficiency (LEP)
 outcomes_extracted:
-- Hospital stay length
+  - Hospital stay length
+nodeInstanceId: 019e8dd8-2e8e-7f01-a308-bb43852e3b77
 ---
 
 

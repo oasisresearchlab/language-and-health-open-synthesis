@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   lack of valid and translated PROMs, lack of multi-lingual electronic medical record integration, and insufficient time and resources to accommodate patients with LEP
 pubmed_id: 35339269
+doi: 10.1016/j.amjsurg.2022.03.005
 region: Boston
 specialty: General Surgery
 study_years: 2019-2021
@@ -24,6 +25,7 @@ factors:
   - Limited English Proficiency (LEP)
 outcomes_extracted:
   - Physician time/effort
+nodeInstanceId: 019e8dd8-2637-7a13-8d1c-0d8036def0f7
 ---
 
 

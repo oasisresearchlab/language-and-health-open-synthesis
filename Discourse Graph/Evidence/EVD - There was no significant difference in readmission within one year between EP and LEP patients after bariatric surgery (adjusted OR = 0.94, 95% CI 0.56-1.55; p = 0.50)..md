@@ -3,8 +3,7 @@ nodeTypeId: node_huDx8FGfNSGQyongW5rk-
 NodeFormality: draft
 NodeType: Evidence
 Source: "[[@Allan_2022_impact_English]]"
-relation_QtuzWZj3zndZBKQe7LcFK:
-  - "[[CLM - Interpreting services reduce recurrence rates for patients with limited english proficiency]]"
+nodeInstanceId: 019e8dd8-355c-748b-8a47-a46b439b0914
 ---
 ## Description
 > [!Screenshots of key figure/table and/or direct quotes from source that substantiate the evidence statement (e.g., reports of statistical tests, or key quotes from participants), with page numbers.]

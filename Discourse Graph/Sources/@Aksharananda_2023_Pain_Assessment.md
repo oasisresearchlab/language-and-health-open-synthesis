@@ -14,6 +14,7 @@ outcomes: |
   patients with LEP were less likely to receive a numeric pain rating. Across all pain assessment types, patients with LEP received fewer opioids than English speaking patients in unadjusted and adjusted analyses.
 pdf_url: https://www.sciencedirect.com/science/article/pii/S1524904223000802?via%3Dihub
 pubmed_id: 37147211
+doi: 10.1016/j.pmn.2023.03.012
 region: California
 specialty: General Medicine, Nursing
 study_years: 2013-2021
@@ -21,8 +22,7 @@ title: Pain Assessment Disparities by Race, Ethnicity, and Language in Adult Hos
 year: 2023
 factors:
   - Limited English Proficiency (LEP)
-relation_OxKXi9qk9qcigTKK2BGeY:
-  - "[[QUE - What is the distribution of language discordance needs in American healthcare settings?.md]]"
+nodeInstanceId: 019e8dd8-2606-7512-8ef9-e366f8851094
 ---
 
 

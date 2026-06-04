@@ -5,8 +5,53 @@ nodeTypeId: node_LsIeSJxI7M9DoE3ISFEmw
 tags:
   - healthOutcome
   - languageConcordanceFactor/concordanceIntervention
+nodeInstanceId: 019e8dd8-2579-7386-a2ef-2cdac939646f
 ---
+## Claims addressing this question
 
+> [!info] CLMs addressing this lodestar question (→ CLM—informs→QUE edges by sync_relations.py). Migrated from the narrative below; supporting EVDs are wired on each CLM.
+
+- [[CLM - Interpreting services reduce recurrence rates for patients with limited english proficiency]]
+- [[CLM - Patients with limited english proficiency have shorter hospital stays when interpreting services are used]]
+- [[CLM - Patients with limited english proficiency have higher likelihood of recurrences]]
+- [[CLM - Interpreting services increase diagnosis accuracy for patients with limited english proficiency]]
+- [[CLM - Patients with limited english proficiency receive less accurate diagnoses]]
+- [[CLM - When interpreting is used, patients with limited english proficiency are 40% more likely to adhere to their treatment]]
+- [[CLM - When interpreting is used, patients with limited english proficiency are 40% more likely to trust their physician]]
+- [[CLM - When accessing interpreting directly on their own, as opposed to waiting for a caregiver, patients with limited english proficiency demonstrate an increased sense of empowerment]]
+- [[CLM - When accessing interpreting directly on their own, as opposed to waiting for a caregiver, patients with limited english proficiency have less frequent “no shows”]]
+- [[CLM - 55% of malpractice cases come from miscommunication between patients and caregivers]]
+- [[CLM - For most large HDNs, the cumulative costs of language discordance adds up to 10s of millions of dollars of wasted provider time a year]]
+- [[CLM - Doctors spend an extra 10 to 30 minutes to initiate every interpreting session when they have to chase down a tablet on wheels, vs. using directly from the mobile phone in their pocket]]
+- [[CLM - Professional interpretation at admission and discharge shortens length of stay for LEP inpatients]]
+- [[CLM - Professional interpretation at admission or discharge lowers 30-day readmission for LEP inpatients]]
+- [[CLM - Integrating early-warning-score monitoring and interpreters into the rapid response system reduces post-activation mortality for patients with limited english proficiency]]
+- [[CLM - Certified dual-role nurse interpreters improve the hospital experience of Spanish-speaking LEP patients by brokering communication]]
+- [[CLM - Hospitalized patients with limited English proficiency receive less numeric pain assessment and fewer opioids than English-speaking patients]]
+
+## Effects of interpretation services
+#languageConcordanceFactor/concordanceIntervention/interpretingServices 
+
+### [[CLM - Interpreting services reduce recurrence rates for patients with limited english proficiency]]
+
+There is fairly **consistent** empirical support for this at present.
+
+For example, [[@Karliner_2017_Convenient_Access]] found that [[EVD - odds of 30-day readmission for the LEP compared with EP group was lower during the intervention period when professional interpreter services via telephone were available, but was roughly equivalent during pre-and post-intervention periods]]
+
+Similarly, [[@Lindholm_2012_Professional_language]] found that [[EVD - Patients receiving interpretation at admission and or discharge were less likely to be readmitted within 30 days compared to patients receiving no interpretation]]
+### [[CLM - Patients with limited english proficiency have shorter hospital stays when interpreting services are used]]
+
+There is **mixed support** for this at present.
+
+On the one hand, [[@Lindholm_2012_Professional_language]] found that [[EVD - LEP patients who did not receive professional interpretation had increased LOS of between 0.75 and 1.47 days, compared to patients who had an interpreter]]
+
+On the other hand, [[@Karliner_2017_Convenient_Access]] found that [[EVD - There was no significant association between access to professional interpreter services via telephone and length of stay for LEP patients]]
+
+### [[CLM - Interpreting services increase diagnosis accuracy for patients with limited english proficiency]]
+### [[CLM - When interpreting is used, patients with limited english proficiency are 40% more likely to adhere to their treatment]]
+### [[CLM - When interpreting is used, patients with limited english proficiency are 40% more likely to trust their physician]]
+### [[CLM - When accessing interpreting directly on their own, as opposed to waiting for a caregiver, patients with limited english proficiency demonstrate an increased sense of empowerment]]
+### [[CLM - When accessing interpreting directly on their own, as opposed to waiting for a caregiver, patients with limited english proficiency have less frequent “no shows”]]
 ## Potentially Relevant Papers
 
 - [[@Hsueh_2021_Patient-Provider_Language]] (relevance: 0.620)

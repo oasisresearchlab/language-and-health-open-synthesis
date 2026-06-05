@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="fig7-title">
+  <title id="fig7-title">Annual cost of preservation, by tier</title>
+
+  <defs>
+    <style>
+      .ink   { fill: #111; }
+      .line  { stroke: #111; fill: none; stroke-width: 1; }
+      .thin  { stroke: #111; fill: none; stroke-width: 0.75; }
+      .vthin { stroke: #111; fill: none; stroke-width: 0.5; stroke-opacity: 0.35; }
+      .mute  { fill: #666; }
+      .rust  { fill: #B44620; }
+      .rust-stroke { stroke: #B44620; fill: none; stroke-width: 1.2; }
+      .lbl   { font-family: 'EB Garamond', 'Garamond', 'Georgia', serif; }
+      .sub   { font-family: 'Source Sans 3', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif; }
+      .mono  { font-family: 'JetBrains Mono', 'IBM Plex Mono', Menlo, Consolas, monospace; }
+    </style>
+  </defs>
+
+  <rect width="900" height="480" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="30" y="50" class="sub mute" font-size="10.5" letter-spacing="0.18em">FIG. 7  ·  ECONOMICS</text>
+  <text x="30" y="80" class="lbl ink" font-size="22" font-style="italic">Annual cost of preservation, by tier.</text>
+
+  <!-- X-axis — log scale from $10 (x=220) to $1M (x=840), 124 px per decade -->
+  <!-- Separate "≈ $0" zone at x=180 -->
+
+  <!-- Axis tick marks -->
+  <g class="thin">
+    <line x1="220" y1="130" x2="220" y2="135"/>
+    <line x1="344" y1="130" x2="344" y2="135"/>
+    <line x1="468" y1="130" x2="468" y2="135"/>
+    <line x1="592" y1="130" x2="592" y2="135"/>
+    <line x1="716" y1="130" x2="716" y2="135"/>
+    <line x1="840" y1="130" x2="840" y2="135"/>
+  </g>
+
+  <!-- Axis labels -->
+  <g class="sub mute" font-size="10" text-anchor="middle">
+    <text x="180" y="125">≈ $0</text>
+    <text x="220" y="125">$10</text>
+    <text x="344" y="125">$100</text>
+    <text x="468" y="125">$1k</text>
+    <text x="592" y="125">$10k</text>
+    <text x="716" y="125">$100k</text>
+    <text x="840" y="125">$1M</text>
+  </g>
+
+  <!-- Axis baseline -->
+  <line x1="170" y1="130" x2="850" y2="130" stroke="#111" stroke-opacity="0.5" stroke-width="0.6"/>
+
+  <!-- Vertical gridlines (very faint) -->
+  <g class="vthin">
+    <line x1="220" y1="140" x2="220" y2="400"/>
+    <line x1="344" y1="140" x2="344" y2="400"/>
+    <line x1="468" y1="140" x2="468" y2="400"/>
+    <line x1="592" y1="140" x2="592" y2="400"/>
+    <line x1="716" y1="140" x2="716" y2="400"/>
+    <line x1="840" y1="140" x2="840" y2="400"/>
+  </g>
+
+  <!-- small caps header for log-scale note -->
+  <text x="30" y="125" class="sub mute" font-size="9.5" letter-spacing="0.12em">LOG SCALE  ·  USD/YR</text>
+
+  <!-- =============== TIER 0 =============== -->
+  <g>
+    <text x="30" y="175" class="sub mute" font-size="11" letter-spacing="0.15em">TIER 0</text>
+    <text x="30" y="192" class="lbl ink" font-size="15" font-style="italic">Local</text>
+
+    <!-- near-zero marker -->
+    <circle cx="180" cy="180" r="5" class="ink"/>
+    <text x="195" y="184" class="sub ink" font-size="11" font-style="italic">near-zero</text>
+  </g>
+
+  <!-- =============== TIER 1 hosted =============== -->
+  <g>
+    <text x="30" y="230" class="sub mute" font-size="11" letter-spacing="0.15em">TIER 1</text>
+    <text x="30" y="247" class="lbl ink" font-size="15" font-style="italic">Hosted</text>
+    <text x="30" y="265" class="sub mute" font-size="10.5" font-style="italic">turnkey</text>
+
+    <!-- bar: $4k to $12k -->
+    <rect x="542.6" y="240" width="59.2" height="8" class="ink"/>
+    <text x="605" y="247" class="sub ink" font-size="10.5">$4k – 12k</text>
+  </g>
+
+  <!-- =============== TIER 1 self-hosted =============== -->
+  <g>
+    <text x="30" y="293" class="sub mute" font-size="10.5" font-style="italic">self-hosted</text>
+
+    <!-- bar: $100k to $260k -->
+    <rect x="716" y="287" width="51.5" height="8" class="ink"/>
+    <text x="772" y="294" class="sub ink" font-size="10.5">$100k – 260k</text>
+  </g>
+
+  <!-- =============== TIER 2 =============== -->
+  <g>
+    <text x="30" y="330" class="sub mute" font-size="11" letter-spacing="0.15em">TIER 2</text>
+    <text x="30" y="347" class="lbl ink" font-size="15" font-style="italic">Coordinated</text>
+
+    <!-- bar: $550 to $25k -->
+    <rect x="435.8" y="340" width="205.6" height="8" class="ink"/>
+    <text x="645" y="347" class="sub ink" font-size="10.5">$550 – 25k+</text>
+  </g>
+
+  <!-- =============== TIER 3 =============== -->
+  <g>
+    <text x="30" y="388" class="sub mute" font-size="11" letter-spacing="0.15em">TIER 3</text>
+    <text x="30" y="405" class="lbl ink" font-size="15" font-style="italic">Protocol-level</text>
+
+    <!-- standalone bar: $42 to $360 -->
+    <rect x="297.3" y="398" width="115.7" height="8" class="ink"/>
+    <text x="417" y="405" class="sub ink" font-size="10.5">$42 – 360 standalone</text>
+
+    <!-- marginal on existing infrastructure: ≈ $0 — rust marker with connection line -->
+    <circle cx="180" cy="402" r="5" class="rust"/>
+    <line x1="188" y1="402" x2="294" y2="402" class="rust-stroke" stroke-dasharray="3 3" stroke-width="0.8"/>
+    <text x="195" y="420" class="sub rust" font-size="10" font-style="italic">≈ $0 on existing infrastructure</text>
+  </g>
+
+</svg>

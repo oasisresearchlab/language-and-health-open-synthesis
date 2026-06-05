@@ -70,6 +70,8 @@ identity and refuse rather than fabricate.*
 | [[attachment_audit]] | Enforce graph invariants (CVT qualifies EVD only; every EVD→CLM/EP; every CLM→QUE; EP ≥2 papers) |
 | [[propose_eps]] | Propose candidate EvidencePatterns as a human accept/reject checklist (never auto-commits) |
 | [[count_evds_per_subtask]] | Refresh the per-question evidence-summary index + EP strength tags |
+| [[export_rdf]] | Transform the graph into the jring-o/rdf content-addressed schema for the vendored Next.js renderer (`site/`) — one-way generated view |
+| [[build_site]] | v0 zero-dependency static-HTML view (superseded by the RDF renderer) |
 
 **Two-layer docs:** each script's **usage + spec** lives in its module docstring; its **design
 decisions, limitations, and "smarter later" roadmap** live in a per-script note `Pipeline/<script>.md`
@@ -77,6 +79,13 @@ decisions, limitations, and "smarter later" roadmap** live in a per-script note 
 
 Generated artifacts: `DGRAPH.md`, `Extraction Queue.md`, `EP Proposals.md`, `Evidence Summary.md`,
 `relations.json`; trust manifests + reports under `data/` (gitignored).
+
+## Site view
+
+A browsable web view of the graph, rendered by a Next.js app (`site/`, vendored from
+[jring-o/rdf](https://github.com/jring-o/rdf) and extended for our types). `export_rdf.py` generates
+the content-addressed `graph/` (gitignored) the app consumes. Full design: `plans/site-view.md`.
+Run: `python3 utils/export_rdf.py && (cd site && node scripts/build-graph-data.mjs && npx next dev -p 3000)`.
 
 ## Integrity rules
 

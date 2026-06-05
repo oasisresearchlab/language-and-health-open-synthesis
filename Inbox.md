@@ -1,0 +1,1 @@
+- 5/28/26 - Language barriers, mobility, and health equity: clinical risks, economic burden, and policy options for universal language access | International Journal for Equity in Health | Springer Nature Link [https://link.springer.com/article/10.1186/s12939-026-02895-y](https://link.springer.com/article/10.1186/s12939-026-02895-y)

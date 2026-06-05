@@ -1,0 +1,252 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="fig21-title">
+  <title id="fig21-title">Three architectural properties of long-horizon data survival</title>
+
+  <defs>
+    <style>
+      .ink   { fill: #111; }
+      .line  { stroke: #111; fill: none; stroke-width: 1; }
+      .thin  { stroke: #111; fill: none; stroke-width: 0.75; }
+      .dash  { stroke: #111; fill: none; stroke-width: 0.75; stroke-dasharray: 3 3; }
+      .gray  { fill: #aaa; }
+      .gray-stroke { stroke: #aaa; fill: none; stroke-width: 0.75; }
+      .rust  { fill: #B44620; }
+      .rust-stroke { stroke: #B44620; fill: none; }
+      .mute  { fill: #666; }
+      .vmute { fill: #888; }
+      .lbl   { font-family: 'EB Garamond', 'Garamond', 'Georgia', serif; }
+      .sub   { font-family: 'Source Sans 3', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif; }
+      .mono  { font-family: 'JetBrains Mono', 'IBM Plex Mono', Menlo, Consolas, monospace; }
+    </style>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L8,4 L0,8 z" fill="#111"/>
+    </marker>
+    <marker id="arrow-r" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L8,4 L0,8 z" fill="#B44620"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="540" fill="#ffffff"/>
+
+  <!-- ============================================================= -->
+  <!--   COLUMN I — FAILURE DOMAINS                                   -->
+  <!--   center x = 150                                               -->
+  <!-- ============================================================= -->
+  <g>
+    <!-- Title -->
+    <text x="150" y="40" text-anchor="middle" class="lbl ink" font-size="18" font-style="italic">i. Failure domains</text>
+
+    <!-- Scenario A: Shared domain (vulnerable) -->
+    <text x="150" y="78" text-anchor="middle" class="sub mute" font-size="10" letter-spacing="0.18em">SHARED DOMAIN</text>
+
+    <g transform="translate(150,140)">
+      <!-- event arrow -->
+      <line x1="-45" y1="-35" x2="-20" y2="-12" class="rust-stroke" stroke-width="1" marker-end="url(#arrow-r)"/>
+      <text x="-50" y="-36" text-anchor="end" class="sub rust" font-size="9.5" font-style="italic">event</text>
+      <!-- one bounding box with 4 copies -->
+      <rect x="-40" y="-22" width="80" height="54" class="line"/>
+      <!-- copies (all destroyed) -->
+      <g>
+        <circle cx="-22" cy="-6" r="3.5" class="gray"/>
+        <circle cx="22" cy="-6" r="3.5" class="gray"/>
+        <circle cx="-22" cy="16" r="3.5" class="gray"/>
+        <circle cx="22" cy="16" r="3.5" class="gray"/>
+        <g class="rust-stroke" stroke-width="1.3">
+          <line x1="-26" y1="-10" x2="-18" y2="-2"/><line x1="-18" y1="-10" x2="-26" y2="-2"/>
+          <line x1="18" y1="-10" x2="26" y2="-2"/><line x1="26" y1="-10" x2="18" y2="-2"/>
+          <line x1="-26" y1="12" x2="-18" y2="20"/><line x1="-18" y1="12" x2="-26" y2="20"/>
+          <line x1="18" y1="12" x2="26" y2="20"/><line x1="26" y1="12" x2="18" y2="20"/>
+        </g>
+      </g>
+    </g>
+    <text x="150" y="200" text-anchor="middle" class="sub rust" font-size="11" font-style="italic">4 of 4 lost</text>
+
+    <!-- Divider -->
+    <line x1="60" y1="225" x2="240" y2="225" stroke="#ddd" stroke-width="0.75"/>
+
+    <!-- Scenario B: Independent domains (resilient) -->
+    <text x="150" y="248" text-anchor="middle" class="sub ink" font-size="10" letter-spacing="0.18em">INDEPENDENT DOMAINS</text>
+
+    <g transform="translate(150,305)">
+      <!-- event arrow hits one box -->
+      <line x1="-40" y1="-40" x2="-17" y2="-16" class="rust-stroke" stroke-width="1" marker-end="url(#arrow-r)"/>
+      <text x="-45" y="-41" text-anchor="end" class="sub rust" font-size="9.5" font-style="italic">event</text>
+
+      <!-- 4 boxes in row -->
+      <g>
+        <rect x="-42" y="-16" width="22" height="22" class="line"/>
+        <circle cx="-31" cy="-5" r="3" class="ink"/>
+        <!-- X'd one -->
+        <g class="rust-stroke" stroke-width="1.3">
+          <line x1="-35" y1="-9" x2="-27" y2="-1"/>
+          <line x1="-27" y1="-9" x2="-35" y2="-1"/>
+        </g>
+        <circle cx="-31" cy="-5" r="3" class="gray"/>
+
+        <rect x="-14" y="-16" width="22" height="22" class="line"/>
+        <circle cx="-3" cy="-5" r="3" class="ink"/>
+
+        <rect x="14" y="-16" width="22" height="22" class="line"/>
+        <circle cx="25" cy="-5" r="3" class="ink"/>
+
+        <rect x="42" y="-16" width="22" height="22" class="line"/>
+        <circle cx="53" cy="-5" r="3" class="ink"/>
+      </g>
+    </g>
+    <text x="150" y="355" text-anchor="middle" class="sub ink" font-size="11" font-style="italic">3 of 4 survive</text>
+
+    <!-- Caption -->
+    <line x1="30" y1="395" x2="60" y2="395" stroke="#111" stroke-width="0.6"/>
+    <text x="30" y="418" class="sub ink" font-size="11.5">A failure domain is whatever a single event can</text>
+    <text x="30" y="434" class="sub ink" font-size="11.5">reach — a server, an organization, a funding</text>
+    <text x="30" y="450" class="sub ink" font-size="11.5">source, a jurisdiction. Copies inside the same</text>
+    <text x="30" y="466" class="sub ink" font-size="11.5">domain share its fate; copies spread across</text>
+    <text x="30" y="482" class="sub ink" font-size="11.5">independent domains do not.</text>
+  </g>
+
+  <!-- ============================================================= -->
+  <!--   COLUMN II — VERIFIABLE INTEGRITY                             -->
+  <!--   center x = 450                                               -->
+  <!-- ============================================================= -->
+  <g>
+    <text x="450" y="40" text-anchor="middle" class="lbl ink" font-size="18" font-style="italic">ii. Verifiable integrity</text>
+
+    <!-- Scenario A: Procedural trust (vulnerable) -->
+    <text x="450" y="78" text-anchor="middle" class="sub mute" font-size="10" letter-spacing="0.18em">ASSERTED BY HOLDER</text>
+
+    <g transform="translate(450,140)">
+      <!-- source -->
+      <rect x="-100" y="-15" width="42" height="30" class="line"/>
+      <text x="-79" y="4" text-anchor="middle" class="sub ink" font-size="9.5">source</text>
+
+      <!-- arrow with "bytes" -->
+      <line x1="-56" y1="0" x2="58" y2="0" class="thin" marker-end="url(#arrow)"/>
+      <text x="0" y="-7" text-anchor="middle" class="sub mute" font-size="9" font-style="italic">bytes</text>
+      <text x="0" y="14" text-anchor="middle" class="sub mute" font-size="9" font-style="italic">"trust me"</text>
+
+      <!-- recipient with ? -->
+      <rect x="60" y="-15" width="42" height="30" class="line"/>
+      <text x="81" y="5" text-anchor="middle" class="sub ink" font-size="12">?</text>
+    </g>
+    <text x="450" y="200" text-anchor="middle" class="sub rust" font-size="11" font-style="italic">depends on the holder</text>
+
+    <line x1="360" y1="225" x2="540" y2="225" stroke="#ddd" stroke-width="0.75"/>
+
+    <!-- Scenario B: Cryptographic (resilient) -->
+    <text x="450" y="248" text-anchor="middle" class="sub ink" font-size="10" letter-spacing="0.18em">BOUND TO CONTENTS</text>
+
+    <g transform="translate(450,300)">
+      <!-- data block with hash -->
+      <rect x="-28" y="-14" width="56" height="28" class="line"/>
+      <text x="0" y="4" text-anchor="middle" class="sub ink" font-size="9.5">bytes</text>
+      <line x1="0" y1="15" x2="0" y2="28" class="thin"/>
+      <text x="0" y="42" text-anchor="middle" class="mono ink" font-size="9">sha256: 0xa3f8…91c4</text>
+
+      <!-- three peers verifying -->
+      <g>
+        <!-- peer left -->
+        <line x1="-30" y1="-6" x2="-75" y2="-22" class="dash" marker-end="url(#arrow)"/>
+        <circle cx="-85" cy="-26" r="11" fill="#fff" class="line"/>
+        <text x="-85" y="-22" text-anchor="middle" class="sub ink" font-size="10">✓</text>
+
+        <!-- peer right -->
+        <line x1="30" y1="-6" x2="75" y2="-22" class="dash" marker-end="url(#arrow)"/>
+        <circle cx="85" cy="-26" r="11" fill="#fff" class="line"/>
+        <text x="85" y="-22" text-anchor="middle" class="sub ink" font-size="10">✓</text>
+
+        <!-- peer far-left below -->
+        <line x1="-25" y1="10" x2="-65" y2="32" class="dash" marker-end="url(#arrow)"/>
+        <circle cx="-75" cy="38" r="11" fill="#fff" class="line"/>
+        <text x="-75" y="42" text-anchor="middle" class="sub ink" font-size="10">✓</text>
+      </g>
+    </g>
+    <text x="450" y="360" text-anchor="middle" class="sub ink" font-size="11" font-style="italic">any peer re-computes the hash</text>
+
+    <!-- Caption -->
+    <line x1="330" y1="395" x2="360" y2="395" stroke="#111" stroke-width="0.6"/>
+    <text x="330" y="418" class="sub ink" font-size="11.5">When a dataset's identity is the hash of its</text>
+    <text x="330" y="434" class="sub ink" font-size="11.5">bytes, any recipient can confirm the data</text>
+    <text x="330" y="450" class="sub ink" font-size="11.5">matches what was published — without</text>
+    <text x="330" y="466" class="sub ink" font-size="11.5">trusting the source or any intermediary.</text>
+    <text x="330" y="482" class="sub ink" font-size="11.5">The signature travels with the object.</text>
+  </g>
+
+  <!-- ============================================================= -->
+  <!--   COLUMN III — ORGANIZATIONAL INDEPENDENCE                     -->
+  <!--   center x = 750                                               -->
+  <!-- ============================================================= -->
+  <g>
+    <text x="750" y="40" text-anchor="middle" class="lbl ink" font-size="18" font-style="italic">iii. Organizational independence</text>
+
+    <!-- Scenario A: Central — hub fails -->
+    <text x="750" y="78" text-anchor="middle" class="sub mute" font-size="10" letter-spacing="0.18em">DEPENDENT ON ONE ORGANIZATION</text>
+
+    <g transform="translate(750,140)">
+      <!-- spokes, dashed/dead -->
+      <g class="gray-stroke" stroke-dasharray="2 2.5">
+        <line x1="0" y1="0" x2="-55" y2="-20"/>
+        <line x1="0" y1="0" x2="55" y2="-20"/>
+        <line x1="0" y1="0" x2="-60" y2="12"/>
+        <line x1="0" y1="0" x2="60" y2="12"/>
+        <line x1="0" y1="0" x2="-30" y2="28"/>
+        <line x1="0" y1="0" x2="30" y2="28"/>
+      </g>
+      <!-- peripheral data nodes, gray/stranded -->
+      <g class="gray-stroke" stroke-width="0.9">
+        <circle cx="-55" cy="-20" r="3.5" fill="#fff"/>
+        <circle cx="55" cy="-20" r="3.5" fill="#fff"/>
+        <circle cx="-60" cy="12" r="3.5" fill="#fff"/>
+        <circle cx="60" cy="12" r="3.5" fill="#fff"/>
+        <circle cx="-30" cy="28" r="3.5" fill="#fff"/>
+        <circle cx="30" cy="28" r="3.5" fill="#fff"/>
+      </g>
+      <!-- hub labeled org, X'd -->
+      <rect x="-18" y="-10" width="36" height="20" fill="#fff" class="line"/>
+      <text x="0" y="4" text-anchor="middle" class="sub ink" font-size="9">org</text>
+      <g class="rust-stroke" stroke-width="1.6">
+        <line x1="-20" y1="-12" x2="20" y2="12"/>
+        <line x1="20" y1="-12" x2="-20" y2="12"/>
+      </g>
+    </g>
+    <text x="750" y="200" text-anchor="middle" class="sub rust" font-size="11" font-style="italic">org fails — all copies stranded</text>
+
+    <line x1="660" y1="225" x2="840" y2="225" stroke="#ddd" stroke-width="0.75"/>
+
+    <!-- Scenario B: Protocol — mesh persists -->
+    <text x="750" y="248" text-anchor="middle" class="sub ink" font-size="10" letter-spacing="0.18em">DISTRIBUTED AS BYPRODUCT OF USE</text>
+
+    <g transform="translate(750,305)">
+      <!-- mesh edges -->
+      <g class="thin">
+        <line x1="-60" y1="-20" x2="-22" y2="-30"/>
+        <line x1="-22" y1="-30" x2="22" y2="-26"/>
+        <line x1="22" y1="-26" x2="60" y2="-15"/>
+        <line x1="60" y1="-15" x2="50" y2="20"/>
+        <line x1="50" y1="20" x2="5" y2="28"/>
+        <line x1="5" y1="28" x2="-45" y2="22"/>
+        <line x1="-45" y1="22" x2="-60" y2="-20"/>
+        <line x1="-60" y1="-20" x2="22" y2="-26"/>
+        <line x1="-22" y1="-30" x2="50" y2="20"/>
+        <line x1="-45" y1="22" x2="22" y2="-26"/>
+      </g>
+      <!-- nodes all alive -->
+      <g class="ink">
+        <circle cx="-60" cy="-20" r="3.5"/>
+        <circle cx="-22" cy="-30" r="3.5"/>
+        <circle cx="22" cy="-26" r="3.5"/>
+        <circle cx="60" cy="-15" r="3.5"/>
+        <circle cx="50" cy="20" r="3.5"/>
+        <circle cx="5" cy="28" r="3.5"/>
+        <circle cx="-45" cy="22" r="3.5"/>
+      </g>
+    </g>
+    <text x="750" y="360" text-anchor="middle" class="sub ink" font-size="11" font-style="italic">every participant holds a copy</text>
+
+    <!-- Caption -->
+    <line x1="630" y1="395" x2="660" y2="395" stroke="#111" stroke-width="0.6"/>
+    <text x="630" y="418" class="sub ink" font-size="11.5">A system that depends on an organization's</text>
+    <text x="630" y="434" class="sub ink" font-size="11.5">continued commitment inherits its failure</text>
+    <text x="630" y="450" class="sub ink" font-size="11.5">modes. Protocols that produce copies as a</text>
+    <text x="630" y="466" class="sub ink" font-size="11.5">byproduct of use — Git clone, BitTorrent —</text>
+    <text x="630" y="482" class="sub ink" font-size="11.5">distribute redundancy no keeper maintains.</text>
+  </g>
+</svg>

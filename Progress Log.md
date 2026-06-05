@@ -5,6 +5,20 @@ note ([[YYYY-MM-DD]]). For the atemporal design, see [[Pipeline]] and `plans/`.
 
 ---
 
+## [[2026-06-05]]
+
+**Static site view of the discourse graph.**
+
+- Built a zero-dep static generator (`build_site.py`) as v0, then pivoted to **adapting the
+  [jring-o/rdf](https://github.com/jring-o/rdf) Next.js renderer** (plan: `plans/site-view.md`).
+- `export_rdf.py` transforms vault + `relations.json` → the content-addressed `graph/<type>/<ID>.md`
+  schema (hybrid mapping: EvidencePattern/Artifact as extended `P`/`A` types, Caveat folded into
+  evidence). Vendored `site/` and extended its renderer for the 2 new types + `usesArtifact` (13 files,
+  `tsc` clean); installed deps; **running locally on :3000** (97 nodes).
+- **Figures wired** — 13 evidence nodes render their grounding crops inline. Decision: vault +
+  `relations.json` stay canonical; the RDF graph is a one-way generated view.
+- Cleanup: moved 8 legacy scripts → `utils/deprecated/` with a provenance README.
+
 ## [[2026-06-04]]
 
 **Length-of-stay / interpretation cluster + legacy migration + figure grounding.**

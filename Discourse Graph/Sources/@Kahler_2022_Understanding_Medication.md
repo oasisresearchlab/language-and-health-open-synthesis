@@ -37,4 +37,4 @@ nodeInstanceId: 019e8dd8-2c04-7f1b-8e8e-9a75c7b07904
 
 - The Nepali-speaking patients were the most adherent group overall, with the highest Adherence Ratio. #evd-candidate
 - The results showed high variability in medication adherence across different outcomes and medications. #evd-candidate
-- Note: The abstract provides limited specific numerical results, so the extracted empirical findings are somewhat limited. A full review of the complete research paper would likely yield more detailed empirical results. #evd-candidate
+- Note: The abstract provides limited specific numerical results, so the extracted empirical findings are somewhat limited. A full review of the complete research paper would likely yield more detailed empirical results. 

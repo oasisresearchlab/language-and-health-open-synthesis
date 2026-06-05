@@ -36,3 +36,7 @@ data/
 # Environment
 .env
 .env.local
+
+# RDF-schema view (generated from the vault by utils/export_rdf.py)
+/graph/
+/site/public/attachments/

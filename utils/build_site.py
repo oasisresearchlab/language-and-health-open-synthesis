@@ -1,0 +1,304 @@
+#!/usr/bin/env python3
+"""
+build_site.py — generate a minimal static HTML view of the discourse graph.
+
+WHAT
+    Render the discourse graph (QUE/CLM/EVD/CVT/EP/ART + cited sources) as a browsable static site:
+    a landing page (stats + nested QUE→CLM→EVD→⚠️CVT tree + EvidencePatterns) and one detail page per
+    node showing its body plus outbound/inbound edges. Patterned loosely on rdf.scios.tech.
+
+HOW
+    1. Load every node under Discourse Graph/ → {nodeInstanceId, type, stem, title, facets, body}.
+    2. Load relations.json edges; index outbound/inbound per node.
+    3. Render each node body to HTML (markdown lib) after rewriting Obsidian wikilinks → internal
+       links and ![[img]] embeds → <img>. Pages are named <nodeInstanceId>.html.
+    4. Emit site/index.html, site/<iid>.html, site/assets/style.css, and copy referenced attachments.
+    Source pages are generated only for sources actually linked from a graph node.
+
+INPUT   Discourse Graph/**/*.md (frontmatter + bodies); relations.json; attachments/*.png.
+OUTPUT  site/ (gitignored) — open site/index.html in a browser. Read-only over the vault.
+
+USAGE
+    python3 utils/build_site.py    # writes ./site/, then open site/index.html
+
+Design decisions, limitations, and the "smarter later" roadmap: Pipeline/build_site.md
+"""
+
+import html
+import json
+import re
+import shutil
+from pathlib import Path
+
+import markdown
+import yaml
+
+ROOT = Path(__file__).parent.parent
+DG = ROOT / "Discourse Graph"
+SITE = ROOT / "site"
+ATTACH = ROOT / "attachments"
+
+TYPE = {
+    "node_LsIeSJxI7M9DoE3ISFEmw": ("QUE", "Question", "#99890e"),
+    "node_nMxzA_OByPwgPcmb6AN82": ("CLM", "Claim", "#5b8a2b"),
+    "node_huDx8FGfNSGQyongW5rk-": ("EVD", "Evidence", "#DB134A"),
+    "node_Ne237S0BfRPDaeqB_gbuT": ("SRC", "Source", "#6b7280"),
+    "node_r2JRW9jgphgmMpz5mN7eG": ("EP", "EvidencePattern", "#3b82a6"),
+    "node_vUzzS2ZuolcZzErZfyC72": ("PTN", "Pattern", "#808080"),
+    "node_OULGh2SuqxP1oES9p2k_9": ("ART", "Artifact", "#ce5555"),
+    "node_Q4sxSAHaUscV3smL5OBnB": ("CVT", "Caveat", "#b8860b"),
+}
+REL = {
+    "relation_BO5BtVVpJGrw70jTCTznm": "supports",
+    "relation_QtuzWZj3zndZBKQe7LcFK": "opposes",
+    "relation_OxKXi9qk9qcigTKK2BGeY": "informs",
+    "rel_o0a9NeAmWnhFBaVLNiJ1g": "qualifies",
+}
+PREFIX_RE = re.compile(r"^(QUE|CLM|EVD|EP|CVT|ART|PTN) - ")
+
+
+def split_fm(path: Path):
+    c = path.read_text(encoding="utf-8", errors="ignore")
+    m = re.match(r"^---\s*\n(.*?)\n---\s*\n?(.*)$", c, re.DOTALL)
+    if not m:
+        return {}, c
+    try:
+        return yaml.safe_load(m.group(1)) or {}, m.group(2)
+    except yaml.YAMLError:
+        return {}, m.group(2)
+
+
+def load_nodes():
+    nodes = {}          # iid -> node
+    stem2iid = {}       # filename stem -> iid (for wikilink resolution)
+    for f in DG.rglob("*.md"):
+        fm, body = split_fm(f)
+        iid = fm.get("nodeInstanceId")
+        t = TYPE.get(fm.get("nodeTypeId"))
+        if not iid or not t:
+            continue
+        code, label, color = t
+        title = PREFIX_RE.sub("", f.stem).lstrip("@")
+        facets = []
+        for k in ("languageConcordanceFactor", "healthOutcome", "deliveryContext"):
+            v = fm.get(k)
+            if v:
+                facets += v if isinstance(v, list) else [v]
+        nodes[iid] = {"iid": iid, "code": code, "label": label, "color": color, "stem": f.stem,
+                      "title": title, "facets": facets, "body": body, "fm": fm}
+        stem2iid[f.stem] = iid
+    return nodes, stem2iid
+
+
+def render_body(body: str, stem2iid: dict, linked_sources: set) -> str:
+    # image embeds ![[x.png]] -> markdown image; non-image embeds (.base etc.) dropped
+    def emb(m):
+        tgt = m.group(1).split("|")[0].split("#")[0].strip()
+        if re.search(r"\.(png|jpg|jpeg|gif)$", tgt, re.I):
+            return f"![]({'attachments/' + tgt})"
+        return ""
+    body = re.sub(r"!\[\[([^\]]+?)\]\]", emb, body)
+
+    # wikilinks [[Target|Display]] -> internal link if resolvable
+    def link(m):
+        raw = m.group(1)
+        tgt = raw.split("|")[0].split("#")[0].strip()
+        disp = html.escape(raw.split("|")[-1].split("#")[0].strip())
+        iid = stem2iid.get(tgt)
+        if iid:
+            if tgt.startswith("@"):
+                linked_sources.add(iid)
+            return f'<a href="{iid}.html">{disp}</a>'
+        return f'<span class="deadlink">{disp}</span>'
+    body = re.sub(r"\[\[([^\]]+?)\]\]", link, body)
+
+    # strip Obsidian callout markers, keep the blockquote
+    body = re.sub(r"\[!\w[^\]]*\]\s*", "", body)
+    body = re.sub(r"<!--.*?-->", "", body, flags=re.DOTALL)
+    return markdown.markdown(body, extensions=["tables", "fenced_code", "sane_lists"])
+
+
+PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title><link rel="stylesheet" href="assets/style.css"></head>
+<body><header><a class="home" href="index.html">⌖ Language &amp; Health · discourse graph</a></header>
+<main>{main}</main>
+<footer>Static prototype generated by <code>utils/build_site.py</code>.</footer></body></html>"""
+
+
+def badge(n):
+    return f'<a class="badge" style="--c:{n["color"]}" href="{n["iid"]}.html">{n["code"]}</a>'
+
+
+def main():
+    nodes, stem2iid = load_nodes()
+    rels = list(json.loads((ROOT / "relations.json").read_text())["relations"].values())
+    out = {iid: [] for iid in nodes}   # outbound (this is source)
+    inn = {iid: [] for iid in nodes}   # inbound (this is dest)
+    for e in rels:
+        s, d, r = e["source"], e["destination"], REL.get(e["type"], e["type"])
+        if s in nodes and d in nodes:
+            out[s].append((r, d))
+            inn[d].append((r, s))
+
+    SITE.mkdir(exist_ok=True)
+    (SITE / "assets").mkdir(exist_ok=True)
+    (SITE / "assets" / "style.css").write_text(CSS, encoding="utf-8")
+    if ATTACH.exists():
+        (SITE / "attachments").mkdir(exist_ok=True)
+        for img in ATTACH.glob("*.png"):
+            shutil.copy(img, SITE / "attachments" / img.name)
+
+    linked_sources = set()
+
+    def nlink(iid):
+        n = nodes[iid]
+        return f'<a class="nlink" style="--c:{n["color"]}" href="{iid}.html"><span class="tag">{n["code"]}</span> {html.escape(n["title"])}</a>'
+
+    # ---- per-node detail pages (graph nodes first; sources after, once linked set is known) ----
+    def write_node(n):
+        conns = ""
+        groups = []
+        ob = out.get(n["iid"], [])
+        ib = inn.get(n["iid"], [])
+        if ob:
+            groups.append("<h3>Outbound</h3><ul>" + "".join(
+                f'<li>— <em>{r}</em> → {nlink(d)}</li>' for r, d in ob) + "</ul>")
+        if ib:
+            groups.append("<h3>Inbound (backlinks)</h3><ul>" + "".join(
+                f'<li>{nlink(s)} <em>{r}</em> → here</li>' for r, s in ib) + "</ul>")
+        if groups:
+            conns = '<section class="conns"><h2>Connections</h2>' + "".join(groups) + "</section>"
+        facets = "".join(f'<span class="facet">{html.escape(x)}</span>' for x in n["facets"])
+        head = (f'<div class="nodehead"><span class="badge big" style="--c:{n["color"]}">{n["label"]}</span>'
+                f'<h1>{html.escape(n["title"])}</h1>{facets}</div>')
+        bodyhtml = render_body(n["body"], stem2iid, linked_sources)
+        page = PAGE.format(title=f'{n["code"]} · {html.escape(n["title"])[:60]}',
+                           main=head + f'<article>{bodyhtml}</article>' + conns)
+        (SITE / f'{n["iid"]}.html').write_text(page, encoding="utf-8")
+
+    graph_nodes = [n for n in nodes.values() if n["code"] != "SRC"]
+    for n in graph_nodes:
+        write_node(n)
+    for iid in list(linked_sources):
+        write_node(nodes[iid])
+
+    # ---- landing page ----
+    counts = {}
+    for n in graph_nodes:
+        counts[n["code"]] = counts.get(n["code"], 0) + 1
+    stat_cells = "".join(
+        f'<div class="stat" style="--c:{TYPE_BY_CODE[c][2]}"><b>{counts.get(c,0)}</b><span>{TYPE_BY_CODE[c][1]}s</span></div>'
+        for c in ["QUE", "CLM", "EVD", "CVT", "EP", "ART"])
+    stat_cells += f'<div class="stat" style="--c:#444"><b>{len(rels)}</b><span>Edges</span></div>'
+
+    # nested browse: QUE -> CLM (informs in) -> EVD (supports in) -> CVT (qualifies in)
+    def kids(iid, rel, code):
+        return sorted([s for r, s in inn.get(iid, []) if r == rel and nodes[s]["code"] == code],
+                      key=lambda i: nodes[i]["title"])
+    browse = []
+    for q in sorted([i for i, n in nodes.items() if n["code"] == "QUE"], key=lambda i: nodes[i]["title"]):
+        clms = kids(q, "informs", "CLM")
+        sub = ""
+        for c in clms:
+            evds = kids(c, "supports", "EVD")
+            ev = ""
+            for ev_iid in evds:
+                cvts = kids(ev_iid, "qualifies", "CVT")
+                cv = "".join(f'<li class="cvt">⚠ {nlink(v)}</li>' for v in cvts)
+                ev += f'<li>{nlink(ev_iid)}{("<ul>"+cv+"</ul>") if cv else ""}</li>'
+            sub += f'<li>{nlink(c)}{("<ul>"+ev+"</ul>") if ev else ""}</li>'
+        browse.append(f'<details open><summary>{nlink(q)}</summary><ul>{sub or "<li><em>no claims linked</em></li>"}</ul></details>')
+
+    eps = [i for i, n in nodes.items() if n["code"] == "EP"]
+    ep_html = ""
+    for ep in eps:
+        evds = sorted([s for r, s in inn.get(ep, []) if r in ("supports", "opposes")], key=lambda i: nodes[i]["title"])
+        papers = len({re.search(r'@[\w-]+', nodes[e]["stem"]).group(0) for e in evds if re.search(r'@[\w-]+', nodes[e]["stem"])})
+        ep_html += (f'<div class="epcard">{nlink(ep)}<small>{len(evds)} EVDs · {papers} papers</small>'
+                    f'<ul>{"".join(f"<li>{nlink(e)}</li>" for e in evds)}</ul></div>')
+
+    # all-nodes index with a client-side type/text filter
+    allrows = "".join(
+        f'<a class="row" data-type="{n["code"]}" data-t="{html.escape(n["title"]).lower()}" '
+        f'style="--c:{n["color"]}" href="{n["iid"]}.html"><span class="tag">{n["code"]}</span>{html.escape(n["title"])}</a>'
+        for n in sorted(graph_nodes, key=lambda n: (n["code"], n["title"])))
+
+    main = f"""
+<section class="hero"><h1>Language &amp; health discourse graph</h1>
+<p>A grounded synthesis of how language concordance affects healthcare outcomes —
+Questions → Claims → Evidence → ⚠ Caveats, with cross-paper EvidencePatterns. Static prototype.</p>
+<div class="stats">{stat_cells}</div></section>
+
+<section><h2>Browse by question</h2><div class="browse">{''.join(browse)}</div></section>
+
+<section><h2>Evidence patterns</h2><div class="eps">{ep_html or '<em>none yet</em>'}</div></section>
+
+<section><h2>All nodes</h2>
+<div class="filter">
+  <input id="q" placeholder="filter…" oninput="flt()">
+  <span id="chips">{''.join(f'<button class="chip on" data-c="{c}" onclick="tog(this)" style="--c:{TYPE_BY_CODE[c][2]}">{c}</button>' for c in ['QUE','CLM','EVD','CVT','EP','ART'])}</span>
+</div>
+<div id="list">{allrows}</div></section>
+<script>{JS}</script>"""
+    (SITE / "index.html").write_text(PAGE.format(title="Language & health discourse graph", main=main), encoding="utf-8")
+
+    print(f"Wrote {len(graph_nodes)} node pages + {len(linked_sources)} source pages + index.")
+    print(f"Open: {SITE / 'index.html'}")
+
+
+TYPE_BY_CODE = {code: (code, label, color) for (code, label, color) in TYPE.values()}
+
+CSS = """
+:root{--bg:#fbfaf7;--fg:#1c1b19;--mut:#6b6862;--line:#e7e3da}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);
+font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+header{position:sticky;top:0;background:rgba(251,250,247,.9);backdrop-filter:blur(6px);
+border-bottom:1px solid var(--line);padding:.7rem 1.2rem}
+header .home{color:var(--fg);text-decoration:none;font-weight:600;letter-spacing:.2px}
+main{max-width:860px;margin:0 auto;padding:1.5rem 1.2rem 4rem}
+footer{max-width:860px;margin:0 auto;padding:2rem 1.2rem;color:var(--mut);font-size:.85rem;border-top:1px solid var(--line)}
+h1{font-size:1.7rem;line-height:1.2;margin:.2rem 0}h2{font-size:1.15rem;margin:2rem 0 .8rem;
+border-bottom:1px solid var(--line);padding-bottom:.3rem}h3{font-size:.95rem;color:var(--mut);margin:1rem 0 .3rem}
+.hero p{color:var(--mut);max-width:60ch}
+.stats{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+.stat{flex:1;min-width:90px;border:1px solid var(--line);border-top:3px solid var(--c);border-radius:8px;
+padding:.6rem .8rem;background:#fff}.stat b{display:block;font-size:1.5rem}.stat span{color:var(--mut);font-size:.8rem}
+.badge{display:inline-block;color:#fff;background:var(--c);border-radius:5px;padding:.05rem .4rem;
+font-size:.72rem;font-weight:700;letter-spacing:.4px;text-decoration:none}.badge.big{font-size:.8rem;padding:.15rem .5rem}
+.nodehead{margin-bottom:1rem}.facet{display:inline-block;background:#f0ede4;border:1px solid var(--line);
+color:var(--mut);border-radius:12px;padding:.05rem .55rem;font-size:.75rem;margin:.15rem .2rem 0 0}
+.nlink{text-decoration:none;color:var(--fg);border-bottom:1px solid transparent}.nlink:hover{border-color:var(--c)}
+.nlink .tag,.row .tag{display:inline-block;background:var(--c);color:#fff;border-radius:4px;font-size:.62rem;
+font-weight:700;padding:0 .3rem;margin-right:.35rem;vertical-align:middle}
+article{font-size:.96rem}article blockquote{border-left:3px solid var(--line);margin:.6rem 0;padding:.1rem .9rem;
+color:#403d38;background:#fff}article img{max-width:100%;border:1px solid var(--line);border-radius:6px;margin:.4rem 0}
+article table{border-collapse:collapse;font-size:.85rem}article td,article th{border:1px solid var(--line);padding:.2rem .5rem}
+article a{color:#1e6fb8;text-decoration:none}article a:hover{text-decoration:underline}
+.deadlink{color:var(--mut)}
+.conns{margin-top:2rem;background:#fff;border:1px solid var(--line);border-radius:8px;padding:.5rem 1rem}
+.conns ul{margin:.2rem 0 .8rem;padding-left:1rem;list-style:none}.conns li{margin:.2rem 0}.conns em{color:var(--mut);font-style:normal}
+.browse details{margin:.3rem 0}.browse summary{cursor:pointer;font-weight:600;padding:.2rem 0}
+.browse ul{list-style:none;margin:.2rem 0 .2rem;padding-left:1.1rem;border-left:1px solid var(--line)}
+.browse li{margin:.25rem 0}.browse li.cvt{color:#8a6d1f}
+.eps{display:grid;gap:.8rem}.epcard{border:1px solid var(--line);border-left:3px solid #3b82a6;border-radius:8px;padding:.6rem .9rem;background:#fff}
+.epcard small{color:var(--mut);margin-left:.5rem}.epcard ul{margin:.4rem 0 0;padding-left:1rem;list-style:none}
+.filter{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin-bottom:.6rem}
+.filter input{flex:1;min-width:160px;padding:.4rem .6rem;border:1px solid var(--line);border-radius:6px;background:#fff}
+.chip{border:1px solid var(--c);color:var(--c);background:#fff;border-radius:14px;padding:.1rem .6rem;font-size:.72rem;font-weight:700;cursor:pointer}
+.chip.on{background:var(--c);color:#fff}
+#list{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
+.row{display:block;padding:.4rem .7rem;border-bottom:1px solid var(--line);text-decoration:none;color:var(--fg);font-size:.9rem;border-left:3px solid var(--c)}
+.row:last-child{border-bottom:none}.row:hover{background:#faf8f3}
+"""
+
+JS = """
+const on=new Set(['QUE','CLM','EVD','CVT','EP','ART']);
+function tog(b){const c=b.dataset.c;if(on.has(c)){on.delete(c);b.classList.remove('on')}else{on.add(c);b.classList.add('on')}flt()}
+function flt(){const q=document.getElementById('q').value.toLowerCase();
+document.querySelectorAll('#list .row').forEach(r=>{
+r.style.display=(on.has(r.dataset.type)&&r.dataset.t.includes(q))?'':'none'})}
+"""
+
+if __name__ == "__main__":
+    main()

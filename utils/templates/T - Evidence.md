@@ -1,5 +1,6 @@
 ---
 NodeFormality: draft
+curationStatus: Initial AI draft
 NodeType: Evidence
 Source:
 EvidenceType:

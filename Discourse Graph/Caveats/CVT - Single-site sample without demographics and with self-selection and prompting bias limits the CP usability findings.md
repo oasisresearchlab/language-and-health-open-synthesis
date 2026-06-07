@@ -2,6 +2,7 @@
 NodeFormality: draft
 NodeType: Caveat
 nodeTypeId: node_Q4sxSAHaUscV3smL5OBnB
+curationStatus: Initial AI draft
 nodeInstanceId: 019e8fc1-3070-7218-bba1-ccc5935b8b72
 type: author-stated
 severity: moderate

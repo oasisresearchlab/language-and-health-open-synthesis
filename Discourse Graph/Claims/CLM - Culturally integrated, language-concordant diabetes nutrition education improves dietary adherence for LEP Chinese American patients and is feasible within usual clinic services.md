@@ -3,6 +3,7 @@ NodeFormality: draft
 TruthValue: 0.5
 NodeType: Claim
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
+curationStatus: Initial AI draft
 nodeInstanceId: 019e8fae-b822-7e3d-9740-7b0a722ffe8c
 tags:
   - languageConcordanceFactor/concordanceIntervention/culturallyTailoredEducation

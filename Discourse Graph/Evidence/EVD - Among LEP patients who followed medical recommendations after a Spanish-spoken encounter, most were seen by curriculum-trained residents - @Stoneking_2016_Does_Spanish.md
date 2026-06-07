@@ -2,6 +2,7 @@
 NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
 nodeInstanceId: 019e8fae-a12a-73ce-b9a3-404f86aa94eb
 Source: "[[@Stoneking_2016_Does_Spanish]]"
 EvidenceType:

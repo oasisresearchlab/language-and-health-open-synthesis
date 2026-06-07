@@ -7,7 +7,7 @@ import { Separator } from "@/components/ui/separator";
 export const metadata = {
   title: "Graph topology",
   description:
-    "The whole discourse graph rendered as a force-directed view. Each node is one assertion, observation, question, source, or method.",
+    "The whole discourse graph rendered as a force-directed view. Each node is one question, claim, observation, caveat, or source.",
 };
 
 export default async function GraphTopologyPage() {

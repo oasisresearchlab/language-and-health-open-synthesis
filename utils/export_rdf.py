@@ -198,8 +198,13 @@ def main():
                     cav.append(f'- **{nodes[cvt]["title"]}** {section_body(lim.group(1) if lim else cb, set())[:400]}')
                 body += "\n\n## Caveats\n\n" + "\n".join(cav)
 
-        fm_out = {"id": tid, "type": n["rtype"], "title": n["title"], "status": "merged",
-                  "created": CREATED}
+        # curation status — the human-AI curation axis (Initial AI draft → In expert review →
+        # Expert-verified), authored on the canonical synthesis nodes. Sources are bibliographic
+        # records, not on this axis, so they carry no status.
+        fm_out = {"id": tid, "type": n["rtype"], "title": n["title"]}
+        if n["code"] != "SRC":
+            fm_out["status"] = str(n["fm"].get("curationStatus", "Initial AI draft")).strip()
+        fm_out["created"] = CREATED
         if edges:
             fm_out["edges"] = edges
         text = ("---\n" + yaml.safe_dump(fm_out, sort_keys=False, allow_unicode=True, width=999)

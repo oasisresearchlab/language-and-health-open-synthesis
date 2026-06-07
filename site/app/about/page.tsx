@@ -7,7 +7,7 @@ import { Separator } from "@/components/ui/separator";
 export const metadata = {
   title: "What is a discourse graph?",
   description:
-    "How to read this site. The graph is canonical; every claim, evidence item, question, method, and source is addressable. The paper is one rendered view over it.",
+    "How to read this site. The graph is canonical; every question, claim, evidence item, caveat, and source is addressable. Narratives are rendered views over it.",
 };
 
 export default function AboutPage() {
@@ -18,7 +18,7 @@ export default function AboutPage() {
           About
         </p>
         <h1 className="font-heading text-4xl font-semibold leading-[1.1] tracking-tight">
-          What is a discourse graph, and why is the paper rendered as one?
+          What is a discourse graph, and why is this synthesis rendered as one?
         </h1>
       </div>
 
@@ -27,9 +27,9 @@ export default function AboutPage() {
           A <strong>discourse graph</strong> is an alternative form of
           scientific communication. Instead of a single linear document, the
           argument is composed of typed nodes — Questions, Claims,
-          Evidence, Methods, Sources — connected by typed edges:{" "}
+          Evidence, Sources — connected by typed edges:{" "}
           <em>addresses</em>, <em>supports</em>, <em>opposes</em>,{" "}
-          <em>derived from</em>, <em>uses method</em>. Every node is
+          <em>derived from</em>, <em>qualifies</em>. Every node is
           self-contained, addressable, and individually contributable.
         </p>
         <p>
@@ -43,19 +43,31 @@ export default function AboutPage() {
           </a>
           , and refined inside Roam Research, Protocol Labs, and adjacent
           research communities. The Q/C/E/S core schema is small enough to
-          remember; this project adds <strong>Method (M)</strong> as a fifth
-          type for analytical instruments — taxonomies, formulas, frameworks
-          — that Claims invoke but that are not Claims themselves.
+          remember; this synthesis extends it with a few types specific to
+          evidence work: <strong>Caveat</strong> (a limitation that qualifies a
+          piece of Evidence), <strong>Evidence Pattern</strong> (a regularity
+          supported by evidence across two or more independent papers), and{" "}
+          <strong>Artifact</strong> (a concrete intervention or system — a
+          tablet-on-wheels interpreting cart, a bilingual-provider program —
+          that the evidence is about).
         </p>
 
-        <h2 className="font-heading">What discourse graphs change</h2>
+        <h2 className="font-heading">How this synthesis is built</h2>
         <p>
-          The Resilient Data Futures whitepaper was written paper-first and
-          then decomposed into a graph. That origin is unusual — discourse
-          graphs are normally built incrementally, by contributors adding
-          Questions, Claims, Evidence, and counter-evidence over time. We
-          decomposed an existing paper to bootstrap the graph with real
-          content, and to demonstrate what becomes possible once it exists.
+          This graph is extracted from the published literature on language
+          access in healthcare, working from a curated corpus of research
+          papers. An AI-assisted pipeline reads each paper and drafts the
+          nodes — the Questions it asks, the Claims it makes, the Evidence
+          behind them, and the Caveats that bound them — every quote grounded
+          verbatim against the source. Domain experts then review and commit:
+          the AI <em>proposes</em>, the human <em>verifies</em>. Every node
+          therefore carries a <strong>curation status</strong> —{" "}
+          <em>Initial AI draft</em>, <em>In expert review</em>, or{" "}
+          <em>Expert-verified</em> — and you can filter the{" "}
+          <Link href="/graph">topology</Link> by it to separate what an expert
+          has checked from what is still a first draft. Nothing here is a
+          finished review; it is a living evidence base that gets stronger as
+          claims accumulate supporting and opposing evidence over time.
         </p>
         <p>
           <strong>Contributions become atomic.</strong>{" "}
@@ -76,11 +88,11 @@ export default function AboutPage() {
           related work, framing, discussion — so the people who hold one
           sharp contribution often can&apos;t be authors on their own
           terms. The data curator who tracked down a hard-to-find Source,
-          the methodologist who formalized a single instrument, the
+          the clinician who can name the caveat that bounds a finding, the
           practitioner with one decisive field observation: each typically
           has to partner with a generalist who will wrap the piece in
           apparatus, or watch the contribution go uncredited. The graph
-          removes the apparatus requirement. A Method, an Evidence, a
+          removes the apparatus requirement. A Caveat, an Evidence item, a
           Source, a single Claim is itself a complete, citable, credited
           contribution. Authorship stops being gated on the ability to
           produce a whole paper, and the population of people who can
@@ -88,8 +100,8 @@ export default function AboutPage() {
         </p>
         <p>
           <strong>Credit becomes granular.</strong>{" "}
-          Each node has its own ID and its own PID — citable independently. A Method, a Source,
-          an Evidence, a Claim can be cited (and tracked) on its own merit.
+          Each node has its own ID and its own PID — citable independently. A Caveat, a Source,
+          an Evidence item, a Claim can be cited (and tracked) on its own merit.
           The contributor who proposed C-0017 gets credit when C-0017 is
           invoked, even when the paper that introduced it isn&apos;t.
           Funders, hiring committees, and citation indexes can resolve
@@ -137,8 +149,8 @@ export default function AboutPage() {
           another view can be composed whenever it is useful.
         </p>
         <p>
-          The original whitepaper, this site, and each composed narrative
-          all derive from the same node files in <code>graph/</code>.
+          This site and each composed narrative all derive from the same node
+          files in <code>graph/</code>.
         </p>
 
         <h2 className="font-heading">How to read it</h2>
@@ -151,11 +163,10 @@ export default function AboutPage() {
           </li>
           <li>
             <strong>As narratives</strong>:{" "}
-            <Link href="/narratives">/narratives</Link> renders the original
-            whitepaper that seeded the graph, section by section, with each
-            citation linked to its Source node. A toggle at the top swaps to
-            other narratives composed directly from the graph for different
-            audiences and framings.
+            <Link href="/narratives">/narratives</Link> renders linear readings
+            composed directly from the graph, with each citation linked to its
+            Source node. A toggle at the top swaps between narratives written
+            for different audiences and framings.
           </li>
           <li>
             <strong>By node</strong>: every node sits at{" "}
@@ -173,7 +184,7 @@ export default function AboutPage() {
           adds a counterclaim, counter-evidence, or a new question. The full
           contribution model lives in{" "}
           <a
-            href="https://github.com/jring-o/rdf/blob/main/CONTRIBUTING.md"
+            href="https://github.com/oasisresearchlab/language-and-health-open-synthesis/blob/main/CONTRIBUTING.md"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -202,8 +213,8 @@ export default function AboutPage() {
             >
               Discourse graphs and the future of science
             </a>{" "}
-            — Protocol Labs' framing of the form's research-infrastructure
-            implications.
+            — Protocol Labs&apos; framing of the form&apos;s
+            research-infrastructure implications.
           </li>
           <li>
             <a

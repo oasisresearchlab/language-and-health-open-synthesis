@@ -1,5 +1,6 @@
 ---
 nodeTypeId: node_LsIeSJxI7M9DoE3ISFEmw
+curationStatus: Initial AI draft
 NodeFormality: draft
 NodeType: Question
 tags:

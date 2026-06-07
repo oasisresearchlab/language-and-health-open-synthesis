@@ -12,7 +12,7 @@ import { Separator } from "@/components/ui/separator";
 export const metadata = {
   title: "Narratives",
   description:
-    "Read the original whitepaper that seeded this discourse graph, or one of the narratives composed from it.",
+    "Linear readings composed from the discourse graph — each a dated view anchored at a question, claim, or piece of evidence.",
 };
 
 export default async function NarrativesPage() {
@@ -22,14 +22,29 @@ export default async function NarrativesPage() {
     loadGraph(),
   ]);
 
-  if (!paper.raw) {
+  if (!paper.raw && narratives.length === 0) {
     return (
       <div className="mx-auto max-w-3xl px-6 py-24">
         <h1 className="font-heading text-2xl font-semibold">
-          Whitepaper not found
+          No narratives yet
         </h1>
         <p className="mt-2 text-muted-foreground">
-          Expected <code>paper/whitepaper-v3.md</code> at the repository root.
+          Narratives are linear readings composed from the graph. None have
+          been published yet — you can{" "}
+          <Link
+            href="/narratives/generate"
+            className="text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary"
+          >
+            generate one on demand
+          </Link>{" "}
+          anchored at any node, or start from the{" "}
+          <Link
+            href="/graph"
+            className="text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary"
+          >
+            graph topology
+          </Link>
+          .
         </p>
       </div>
     );
@@ -70,28 +85,22 @@ export default async function NarrativesPage() {
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
       <header className="space-y-4 max-w-3xl">
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-          Narratives · original whitepaper
+          Narratives
         </p>
         <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-          Resilient Data Futures
+          Language Access in Healthcare
         </h1>
         <div className="space-y-3 text-muted-foreground">
           <p>
-            This is the original whitepaper that seeded the graph. The first
-            pass of {graph.nodes.size} nodes was decomposed from these
-            sections — every Claim, Evidence, and Source carries a{" "}
-            <code className="font-mono text-sm">source_section:</code> field
-            pointing back here.
+            Narratives are linear readings composed from the graph of{" "}
+            {graph.nodes.size} nodes — each anchored at a question, claim, or
+            piece of evidence and assembled by traversing its neighborhood.
           </p>
           <p>
-            That paper-first origin is unusual. Discourse graphs are normally
-            built incrementally: contributors add Questions, Claims, Evidence,
-            and counter-evidence over time, and the graph emerges. From any
-            such graph, narratives are composed by anchoring at a node and
-            traversing its neighborhood — each one a dated view of the
-            argument at the moment it was rendered, regenerable as the graph
-            accumulates new evidence. The composed narratives below are
-            early demonstrations of that direction, or you can{" "}
+            Each is a dated view of the argument at the moment it was rendered,
+            regenerable as the graph accumulates new supporting and opposing
+            evidence. The composed narratives below are early demonstrations of
+            that direction, or you can{" "}
             <Link
               href="/narratives/generate"
               className="text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary"

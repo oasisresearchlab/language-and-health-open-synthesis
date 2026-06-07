@@ -3,6 +3,7 @@ NodeFormality: draft
 TruthValue: 0.5
 NodeType: Claim
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
+curationStatus: Initial AI draft
 nodeInstanceId: 019e8f5a-abe7-73e3-b1f7-908229a4a0eb
 tags:
   - languageConcordanceFactor/concordanceIntervention

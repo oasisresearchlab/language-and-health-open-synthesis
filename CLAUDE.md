@@ -67,5 +67,8 @@ python3 utils/readability_pass.py           # mechanical formatting
   hides them in the UI.
 - Verbatim quotes for every substantive statement; atomicity (one finding/claim/limitation per node).
 - NodeFormality starts `draft`; promote after audits pass.
+- `curationStatus` (human-AI review axis, distinct from NodeFormality) on every synthesis node:
+  `Initial AI draft` → `In expert review` → `Expert-verified`. AI always starts at `Initial AI draft`;
+  only the human advances it. `export_rdf.py` maps it to the site's `status` (topology filter + node badge).
 - Reference files, don't restate them: `Skill.md` (workflow), `Skill-references.md` (rules/naming/tags),
   `Skill-templates.md` (templates), `Skill-synthesis.md` (cross-paper).

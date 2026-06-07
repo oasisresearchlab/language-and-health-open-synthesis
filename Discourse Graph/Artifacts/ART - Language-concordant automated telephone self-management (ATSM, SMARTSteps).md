@@ -2,6 +2,7 @@
 NodeFormality: draft
 NodeType: Artifact
 nodeTypeId: node_OULGh2SuqxP1oES9p2k_9
+curationStatus: Initial AI draft
 nodeInstanceId: 019e8f14-f03f-776f-9da1-63f7eeede17b
 tags:
   - languageConcordanceFactor/concordanceIntervention

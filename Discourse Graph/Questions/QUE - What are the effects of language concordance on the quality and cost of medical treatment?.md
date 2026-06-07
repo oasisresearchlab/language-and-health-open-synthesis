@@ -2,6 +2,7 @@
 NodeFormality: draft
 NodeType: Question
 nodeTypeId: node_LsIeSJxI7M9DoE3ISFEmw
+curationStatus: Initial AI draft
 nodeInstanceId: 019e8dd8-2591-77af-af52-d91448732a04
 ---
 

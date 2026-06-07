@@ -5,7 +5,8 @@ import type { GraphNode, NodeIssue } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 const REPO =
-  process.env.NEXT_PUBLIC_GITHUB_REPO ?? "jring-o/rdf";
+  process.env.NEXT_PUBLIC_GITHUB_REPO ??
+  "oasisresearchlab/language-and-health-open-synthesis";
 
 export function GithubIssueButton({
   node,

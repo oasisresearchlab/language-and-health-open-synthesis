@@ -2,6 +2,7 @@
 NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
 nodeInstanceId: 019e8fae-b7ab-791c-8ae7-943eb9e5539d
 Source: "[[@Ho_2020_Pilot_Cluster]]"
 EvidenceType:

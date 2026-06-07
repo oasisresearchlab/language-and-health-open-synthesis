@@ -37,6 +37,7 @@ data/
 .env
 .env.local
 
-# RDF-schema view (generated from the vault by utils/export_rdf.py)
-/graph/
-/site/public/attachments/
+# RDF-schema view (generated from the vault by utils/export_rdf.py).
+# NOTE: committed as build artifacts so the Vercel/Node build can render the
+# site without running the Python exporter. Regenerate + commit after edits:
+#   python3 utils/export_rdf.py

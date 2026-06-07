@@ -2,6 +2,7 @@
 NodeFormality: draft
 NodeType: Question
 nodeTypeId: node_LsIeSJxI7M9DoE3ISFEmw
+curationStatus: Initial AI draft
 tags:
   - languageConcordanceFactor/discordance
 nodeInstanceId: 019e8dd8-3560-7dff-9648-0f03643a6222

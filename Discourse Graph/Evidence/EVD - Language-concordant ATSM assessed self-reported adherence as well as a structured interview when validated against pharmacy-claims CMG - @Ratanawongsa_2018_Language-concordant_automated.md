@@ -2,6 +2,7 @@
 NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
 nodeInstanceId: 019e8f14-f038-70dc-bee8-1876f720f11d
 Source: "[[@Ratanawongsa_2018_Language-concordant_automated]]"
 EvidenceType:

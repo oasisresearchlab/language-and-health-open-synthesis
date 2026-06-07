@@ -1,6 +1,7 @@
 import Link from "next/link";
 
-const REPO_URL = "https://github.com/jring-o/rdf";
+const REPO_URL =
+  "https://github.com/oasisresearchlab/language-and-health-open-synthesis";
 
 function GithubIcon({ className }: { className?: string }) {
   return (
@@ -25,12 +26,13 @@ export function SiteFooter() {
       <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-10 text-sm text-muted-foreground sm:flex-row sm:items-start sm:justify-between sm:px-6">
         <div className="space-y-2 max-w-md">
           <p className="font-heading text-base font-semibold text-foreground">
-            Resilient Data Futures
+            Language Access in Healthcare
           </p>
           <p>
-            A discourse graph rendering of the SciOS{" "}
-            <em>Resilient Data Futures</em> whitepaper. Every claim, evidence
-            item, question, method, and source is its own addressable node.
+            An open, AI-assisted, expert-curated synthesis of the evidence on
+            language concordance and health outcomes, published as a discourse
+            graph. Every question, claim, evidence item, caveat, and source is
+            its own addressable node.
           </p>
         </div>
         <div className="flex flex-col gap-1 sm:items-end">
@@ -62,7 +64,7 @@ export function SiteFooter() {
             Source on GitHub
           </a>
           <p className="mt-2 text-xs">
-            Content: CC BY 4.0 · Code: MIT · SciOS Working Group
+            Content: CC BY 4.0 · Code: MIT · OASIS Research Lab
           </p>
         </div>
       </div>

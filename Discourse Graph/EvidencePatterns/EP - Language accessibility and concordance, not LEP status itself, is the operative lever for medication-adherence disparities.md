@@ -3,6 +3,7 @@ NodeFormality: draft
 TruthValue: 0.5
 NodeType: EvidencePattern
 nodeTypeId: node_r2JRW9jgphgmMpz5mN7eG
+curationStatus: Initial AI draft
 nodeInstanceId: 019e8f14-f04a-7ab3-9ef1-b249d98ca2e9
 tags:
   - languageConcordanceFactor/concordanceIntervention

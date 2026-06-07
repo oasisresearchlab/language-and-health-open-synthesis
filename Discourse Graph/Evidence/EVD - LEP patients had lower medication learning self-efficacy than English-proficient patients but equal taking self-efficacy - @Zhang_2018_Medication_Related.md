@@ -2,6 +2,7 @@
 NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
 nodeInstanceId: 019e8f5a-abda-7458-bd7a-9bec8f9ba5f4
 Source: "[[@Zhang_2018_Medication_Related]]"
 EvidenceType:

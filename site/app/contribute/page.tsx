@@ -6,7 +6,7 @@ import { ContributeClient } from "./contribute-client";
 export const metadata = {
   title: "Contribute a node",
   description:
-    "Assemble a draft graph node — Question, Claim, Evidence, Method, or Source — and submit it as a pull request. No CLI required.",
+    "Assemble a draft graph node — Question, Claim, Evidence, Caveat, or Source — and submit it as a pull request. No CLI required.",
 };
 
 export default async function ContributePage() {

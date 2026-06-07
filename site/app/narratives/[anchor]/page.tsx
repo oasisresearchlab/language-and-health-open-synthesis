@@ -269,9 +269,9 @@ export default async function NarrativePage({
         />
         {!paper.raw ? null : (
           <p className="text-xs text-muted-foreground">
-            Looking for the source paper this graph was decomposed from?{" "}
+            Want the bigger picture?{" "}
             <Link href="/narratives" className="text-primary underline">
-              Read the original whitepaper.
+              Back to all narratives.
             </Link>
           </p>
         )}

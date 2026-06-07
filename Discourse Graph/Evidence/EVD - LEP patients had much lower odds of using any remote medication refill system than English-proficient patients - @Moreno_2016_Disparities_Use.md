@@ -2,6 +2,7 @@
 NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
 nodeInstanceId: 019e8f14-f029-7827-940b-8e853a766809
 Source: "[[@Moreno_2016_Disparities_Use]]"
 EvidenceType:

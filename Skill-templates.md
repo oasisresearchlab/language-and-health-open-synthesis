@@ -8,7 +8,8 @@ parent_skill: extract-discourse-nodes
 
 Canonical insert-templates: `utils/templates/T - *.md` (used by the Discourse Graphs plugin on node
 creation). This file documents how to fill each and the grounding/audit rules. Frontmatter ids:
-`nodeTypeId` (CLAUDE.md table) + `nodeInstanceId` (UUIDv7).
+`nodeTypeId` (CLAUDE.md table) + `nodeInstanceId` (UUIDv7). Every synthesis template also seeds
+`curationStatus: Initial AI draft` (human-AI review axis — only the human advances it; see Skill-references).
 
 ## EVD — Evidence (`T - Evidence`)
 

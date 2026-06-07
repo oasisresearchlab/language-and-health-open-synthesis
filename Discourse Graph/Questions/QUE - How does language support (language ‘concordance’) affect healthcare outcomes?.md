@@ -2,6 +2,7 @@
 NodeFormality: draft
 NodeType: Question
 nodeTypeId: node_LsIeSJxI7M9DoE3ISFEmw
+curationStatus: Initial AI draft
 tags:
   - healthOutcome
   - languageConcordanceFactor/concordanceIntervention

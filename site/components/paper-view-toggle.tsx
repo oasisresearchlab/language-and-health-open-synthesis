@@ -29,8 +29,8 @@ export function PaperViewToggle({
           href="/narratives"
           active={active.kind === "whitepaper"}
           icon={<FileText className="h-3.5 w-3.5 shrink-0" />}
-          label="Original whitepaper"
-          sublabel="Source · paper-shaped"
+          label="Overview"
+          sublabel="Composed from the graph"
         />
         {narratives.map((n) => (
           <ToggleChip

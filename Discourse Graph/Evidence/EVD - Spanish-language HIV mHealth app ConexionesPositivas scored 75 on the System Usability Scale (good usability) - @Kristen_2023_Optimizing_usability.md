@@ -2,6 +2,7 @@
 NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
 nodeInstanceId: 019e8fc1-2f98-70f4-a466-e880ce86ea99
 Source: "[[@Kristen_2023_Optimizing_usability]]"
 EvidenceType:

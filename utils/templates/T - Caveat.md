@@ -1,5 +1,6 @@
 ---
 NodeFormality: draft
+curationStatus: Initial AI draft
 NodeType: Caveat
 type:        # author-stated | inferred
 severity:    # low | moderate | high

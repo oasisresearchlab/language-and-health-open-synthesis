@@ -2,6 +2,7 @@
 NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
 nodeInstanceId: 019e8f0e-2312-78f4-b9ca-0af016af0281
 Source: "[[@Kahler_2022_Understanding_Medication]]"
 EvidenceType:

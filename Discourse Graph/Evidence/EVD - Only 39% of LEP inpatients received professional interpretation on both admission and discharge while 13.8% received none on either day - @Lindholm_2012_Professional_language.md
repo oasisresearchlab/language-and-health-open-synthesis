@@ -2,6 +2,7 @@
 NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
 nodeInstanceId: 019e8fd6-5978-7b8d-a8e6-3d564b94d2e3
 Source: "[[@Lindholm_2012_Professional_language]]"
 EvidenceType:

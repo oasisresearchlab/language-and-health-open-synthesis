@@ -40,43 +40,49 @@ export default async function HomePage() {
       <section className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)] lg:gap-12 lg:items-start">
         <div className="space-y-6">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-            A SciOS whitepaper
+            An open evidence synthesis
           </p>
           <h1 className="font-heading text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
-            Resilient Data Futures
+            Language Access in Healthcare
           </h1>
           <p className="text-lg leading-relaxed text-muted-foreground">
-            The SciOS <em>Resilient Data Futures</em> whitepaper argues that
-            research data loss is architectural rather than operational — and
-            that the accumulated loss carries roughly{" "}
-            <strong className="text-foreground">$1.1 billion per year</strong>{" "}
-            in latent liability at a representative R1. The same architecture
-            that hedges that liability also produces the infrastructure
-            AI-ready data requires.
+            <strong className="text-foreground">Language concordance</strong> —
+            matching patients with providers or interpreters who share their
+            language — is linked to better treatment adherence, shorter
+            hospital stays, and fewer harmful miscommunications. Yet the
+            evidence is scattered across many studies, with unsettled
+            definitions and effects that depend heavily on context. This is an
+            open synthesis of that literature: every question, claim, piece of
+            evidence, and caveat is extracted as an addressable node —
+            AI-assisted and expert-curated — so you can trace what holds, for
+            whom, and under what conditions.
           </p>
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <LinkButton href="/narratives" size="lg">
-              Read the paper
+            <LinkButton href="/graph" size="lg">
+              Explore the graph
               <ArrowRight className="ml-1.5 h-4 w-4" />
+            </LinkButton>
+            <LinkButton href="/nodes" size="lg" variant="outline">
+              Browse the evidence
             </LinkButton>
           </div>
         </div>
 
         <div className="space-y-6">
           <Stat
-            value="73–93%"
-            label="of published research can't produce its data on request"
-            nodeId="C-0002"
+            value="40%"
+            label="more likely to adhere to treatment when professional interpreting is used"
+            nodeId="C-0011"
           />
           <Stat
-            value="$1.1B / yr"
-            label="latent liability at a representative R1 ($200M annual research)"
-            nodeId="C-0005"
+            value="2.57 vs 5.06 days"
+            label="adjusted length of stay for LEP inpatients with interpreters at admission and discharge vs. neither"
+            nodeId="E-0038"
           />
           <Stat
-            value="191"
-            label="research data repositories closed since 2012"
-            nodeId="E-0006"
+            value="55%"
+            label="of malpractice cases stem from patient–caregiver miscommunication"
+            nodeId="C-0001"
           />
         </div>
       </section>
@@ -93,11 +99,12 @@ export default async function HomePage() {
             We publish the argument as a discourse graph
           </h2>
           <p className="text-lg leading-relaxed text-muted-foreground">
-            Every claim, evidence item, question, method, and source is its
+            Every question, claim, evidence item, caveat, and source is its
             own addressable node. You cite a claim by ID, contradict it with
-            a counter-claim, or support it with a single new piece of
-            evidence — without writing a paper around it. Narratives composed
-            from the graph regenerate as new nodes accumulate.
+            a counter-claim, qualify a finding with a caveat, or support it
+            with a single new piece of evidence — without writing a paper
+            around it. As studies accumulate, claims gather supporting and
+            opposing evidence in place.
           </p>
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <LinkButton href="/about" size="lg">
@@ -159,24 +166,26 @@ export default async function HomePage() {
           <p className="text-base leading-relaxed text-muted-foreground">
             A discourse graph isn&apos;t read like a paper. There&apos;s no
             fixed reading order — readers choose where to enter and what to
-            follow. See the structure at a glance, read the argument end-to-end, or open a single node
-            and follow its edges from there. Each path covers the same
-            set of claims, evidence, questions, methods, and
-            sources. Over time, as the graph grows, the seams between papers begin to dissolve: a Claim, an
-            Evidence item, a Method belongs to the graph of human discourse — becomes a part of whatever uses it — not to any single
-            publication that happened to introduce it. 
+            follow. See the structure at a glance, follow a question down to
+            its evidence, or open a single node and follow its edges from
+            there. Each path covers the same set of questions, claims,
+            evidence, caveats, and sources. Over time, as the graph grows, the
+            seams between papers begin to dissolve: a Claim, an Evidence item,
+            a Caveat belongs to the graph of human discourse — becomes a part
+            of whatever uses it — not to any single publication that happened
+            to introduce it.
           </p>
         </div>
         <div className="grid gap-4 sm:grid-cols-3">
           <ProjectionLink
             href="/graph"
             title="Topology"
-            body="The whole graph at a glance — every node coloured by type, every edge by relation. Filter by type, section, or status; click any node to surface its bundle. The fastest way to see how the argument actually connects."
+            body="The whole graph at a glance — every node coloured by type, every edge by relation. Filter by type or curation status to separate expert-verified findings from initial AI drafts; click any node to surface its bundle. The fastest way to see how the evidence actually connects."
           />
           <ProjectionLink
             href="/narratives"
             title="Narratives"
-            body="The original whitepaper plus narratives composed from the graph — each a dated view of a specific bundle around a claim, a question, some evidence, generated by traversing the graph directly. Or generate your own from any anchor on demand."
+            body="Linear readings composed from the graph — each a dated view of a specific bundle around a question, a claim, some evidence, generated by traversing the graph directly. Or generate your own from any anchor on demand."
           />
           <ProjectionLink
             href="/nodes"

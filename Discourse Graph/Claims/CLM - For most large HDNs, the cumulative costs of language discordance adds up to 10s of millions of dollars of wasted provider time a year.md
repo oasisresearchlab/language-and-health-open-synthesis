@@ -1,5 +1,6 @@
 ---
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
+curationStatus: Initial AI draft
 nodeInstanceId: 019e8dd8-255d-7944-9c0d-74c224bd7298
 ---
 ## Supporting Evidence

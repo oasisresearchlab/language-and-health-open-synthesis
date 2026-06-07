@@ -1,31 +1,10 @@
 import Link from "next/link";
+import { Languages } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { SearchTrigger } from "@/components/search-trigger";
 
-const REPO_URL = "https://github.com/jring-o/rdf";
-
-function SciOSMark({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="52 3 34 34"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-      className={className}
-    >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M77.8534 29.7571C75.5597 31.594 72.6869 32.6231 69.7071 32.6753C66.7274 32.7275 63.8178 31.7997 61.4566 30.0443C59.0953 28.2889 57.4227 25.8104 56.7137 23.0159C56.0047 20.2215 56.3014 17.2773 57.5551 14.6672C58.8088 12.0571 60.9448 9.93625 63.6123 8.65316C66.2798 7.37007 69.32 7.00105 72.2335 7.60673C75.147 8.21241 77.7604 9.75677 79.6443 11.9861C81.5283 14.2153 82.5707 16.997 82.6004 19.8739C82.6089 20.6944 83.3048 21.353 84.1548 21.3449C85.0048 21.3367 85.687 20.6649 85.6785 19.8443C85.6419 16.293 84.3551 12.8594 82.0296 10.1075C79.704 7.35566 76.478 5.44929 72.8815 4.70164C69.2851 3.95398 65.5322 4.4095 62.2394 5.99335C58.9467 7.57721 56.3099 10.1952 54.7624 13.4172C53.2149 16.6391 52.8486 20.2734 53.7238 23.7229C54.599 27.1724 56.6636 30.2319 59.5784 32.3988C62.4932 34.5656 66.0847 35.7109 69.763 35.6465C73.4413 35.5821 76.9874 34.3117 79.8188 32.0442C80.4731 31.5203 80.5635 30.5835 80.0207 29.952C79.478 29.3204 78.5077 29.2331 77.8534 29.7571Z"
-        fill="#3A5837"
-      />
-      <path
-        d="M84.7178 25.4942C84.7178 27.04 83.4198 28.2932 81.8185 28.2932C80.2173 28.2932 78.9192 27.04 78.9192 25.4942C78.9192 23.9484 80.2173 22.6953 81.8185 22.6953C83.4198 22.6953 84.7178 23.9484 84.7178 25.4942Z"
-        fill="#3A5837"
-      />
-    </svg>
-  );
-}
+const REPO_URL =
+  "https://github.com/oasisresearchlab/language-and-health-open-synthesis";
 
 function GithubIcon({ className }: { className?: string }) {
   return (
@@ -60,8 +39,8 @@ export function SiteHeader() {
           href="/"
           className="flex items-center gap-2 font-heading text-base font-semibold tracking-tight"
         >
-          <SciOSMark className="h-5 w-5" />
-          <span>Resilient Data Futures</span>
+          <Languages className="h-5 w-5 text-primary" />
+          <span>Language Access in Healthcare</span>
         </Link>
         <nav className="hidden items-center gap-5 text-sm font-sans text-muted-foreground md:flex">
           {NAV.map((item) => (

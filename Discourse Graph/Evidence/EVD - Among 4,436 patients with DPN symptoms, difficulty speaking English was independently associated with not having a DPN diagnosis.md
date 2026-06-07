@@ -1,5 +1,6 @@
 ---
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
 NodeFormality: draft
 NodeType: Evidence
 Source: "[[@Adams_2016_Communication_Barriers]]"

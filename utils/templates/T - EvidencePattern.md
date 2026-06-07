@@ -1,5 +1,6 @@
 ---
 NodeFormality: draft
+curationStatus: Initial AI draft
 TruthValue: 0.5
 NodeType: EvidencePattern
 tags:

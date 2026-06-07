@@ -1,5 +1,6 @@
 ---
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
+curationStatus: Initial AI draft
 tags:
   - languageConcordanceFactor/concordanceIntervention/interpretingServices
   - "#healthOutcome/readmissions"

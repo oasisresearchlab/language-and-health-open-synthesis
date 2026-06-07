@@ -2,6 +2,7 @@
 NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
 nodeInstanceId: 019e8fd6-3db2-79b4-9750-60cc3cf49d55
 Source: "[[@L_2023_Dual-role_nurse]]"
 EvidenceType:

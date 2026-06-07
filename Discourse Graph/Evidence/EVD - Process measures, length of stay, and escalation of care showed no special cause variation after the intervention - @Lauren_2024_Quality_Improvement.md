@@ -1,5 +1,6 @@
 ---
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
 NodeFormality: draft
 NodeType: Evidence
 Source: "[[@Lauren_2024_Quality_Improvement]]"

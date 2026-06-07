@@ -26,27 +26,31 @@ const mono = JetBrains_Mono({
   display: "swap",
 });
 
+const SITE_NAME = "Language Access in Healthcare";
+const SITE_DESCRIPTION =
+  "An open, AI-assisted evidence synthesis of how language concordance — matching patients with providers or interpreters who share their language — affects healthcare outcomes. Every question, claim, evidence item, caveat, and source is its own addressable node.";
+// TODO: set to the production deploy origin once chosen (affects absolute OpenGraph URLs only).
+const SITE_URL =
+  "https://oasisresearchlab.github.io/language-and-health-open-synthesis";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://rdf.scios.tech"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Resilient Data Futures — Discourse Graph",
-    template: "%s · Resilient Data Futures",
+    default: `${SITE_NAME} — Discourse Graph`,
+    template: `%s · ${SITE_NAME}`,
   },
-  description:
-    "A living, content-addressed, contributable form of the SciOS Resilient Data Futures whitepaper. Every claim, evidence item, question, method, and source is its own addressable node.",
+  description: SITE_DESCRIPTION,
   openGraph: {
     type: "website",
-    siteName: "Resilient Data Futures",
-    url: "https://rdf.scios.tech",
-    title: "Resilient Data Futures — Discourse Graph",
-    description:
-      "A living, content-addressed, contributable form of the SciOS Resilient Data Futures whitepaper. Every claim, evidence item, question, method, and source is its own addressable node.",
+    siteName: SITE_NAME,
+    url: SITE_URL,
+    title: `${SITE_NAME} — Discourse Graph`,
+    description: SITE_DESCRIPTION,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Resilient Data Futures — Discourse Graph",
-    description:
-      "A living, content-addressed, contributable form of the SciOS Resilient Data Futures whitepaper.",
+    title: `${SITE_NAME} — Discourse Graph`,
+    description: SITE_DESCRIPTION,
   },
 };
 

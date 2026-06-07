@@ -31,8 +31,13 @@ parent_skill: extract-discourse-nodes
 7. **One `epistemic/*` tag** per QUE/CLM/EVD/EP: `mechanism` | `effect-size` | `measurement`
    (~~`design-principle` dropped~~).
 8. **Propose, don't commit** — EPs, upgrades, merges, and summary-cell values are AI proposals; human commits.
-9. **NodeFormality** starts `draft`; promote after audits pass.
-10. **Provenance** — every generated artifact carries frontmatter + links back to its prompt; log to History.
+9. **NodeFormality** starts `draft`; promote after audits pass. **NodeFormality is fidelity** (does
+   the node meet the authoring/audit bar); **`curationStatus` is human-AI review state** — a separate axis.
+10. **`curationStatus`** on every synthesis node (QUE/CLM/EVD/EP/ART/CVT): `Initial AI draft` →
+    `In expert review` → `Expert-verified`. AI authors start every node at `Initial AI draft`; only the
+    **human** advances it (governance: propose, don't commit). Sources are bibliographic, not on this axis.
+    `export_rdf.py` maps this to the renderer's `status` field (topology filter + node-page badge).
+11. **Provenance** — every generated artifact carries frontmatter + links back to its prompt; log to History.
 
 ## Tag facets (domain) + mirrored YAML fields
 

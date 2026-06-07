@@ -1,5 +1,6 @@
 ---
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
 NodeFormality: draft
 NodeType: Evidence
 Source: "[[@Aksharananda_2023_Pain_Assessment]]"

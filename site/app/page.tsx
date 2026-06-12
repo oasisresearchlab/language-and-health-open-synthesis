@@ -27,6 +27,7 @@ export default async function HomePage() {
     id: n.id,
     type: n.type,
     title: n.title,
+    shortLabel: n.shortLabel,
   }));
   const previewEdges = Array.from(graph.nodes.values()).flatMap((n) =>
     n.outgoing

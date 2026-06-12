@@ -202,6 +202,9 @@ def main():
         # Expert-verified), authored on the canonical synthesis nodes. Sources are bibliographic
         # records, not on this axis, so they carry no status.
         fm_out = {"id": tid, "type": n["rtype"], "title": n["title"]}
+        short = str(n["fm"].get("shortLabel", "")).strip()
+        if short:
+            fm_out["shortLabel"] = short
         if n["code"] != "SRC":
             fm_out["status"] = str(n["fm"].get("curationStatus", "Initial AI draft")).strip()
         fm_out["created"] = CREATED

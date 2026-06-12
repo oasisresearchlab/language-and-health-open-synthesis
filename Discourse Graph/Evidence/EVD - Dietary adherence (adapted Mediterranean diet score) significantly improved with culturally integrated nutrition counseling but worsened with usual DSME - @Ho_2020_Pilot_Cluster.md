@@ -1,4 +1,5 @@
 ---
+shortLabel: "Cultural ed ↑ diet score"
 NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-

@@ -1,4 +1,5 @@
 ---
+shortLabel: "ConexionesPositivas app"
 NodeFormality: draft
 NodeType: Artifact
 nodeTypeId: node_OULGh2SuqxP1oES9p2k_9

@@ -1,4 +1,5 @@
 ---
+shortLabel: "Moreno 2016"
 abstract: |
   Background: Health systems are increasingly implementing remote telephone and Internet refill systems to enhance patient access to medication refills. Remote refill systems may provide an effective approach for improving medication non-adherence, but more research is needed among patients with limited English proficiency with poor access to remote refill systems.
   Objective: To compare the use of remote medication refill systems among limited-English-proficiency (LEP) and English-proficient (EP) patients with chronic conditions.

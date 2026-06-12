@@ -1,4 +1,5 @@
 ---
+shortLabel: "Miscommunication → malpractice"
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
 curationStatus: Initial AI draft
 nodeInstanceId: 019e8dd8-2557-7665-9170-0e071a5d71db

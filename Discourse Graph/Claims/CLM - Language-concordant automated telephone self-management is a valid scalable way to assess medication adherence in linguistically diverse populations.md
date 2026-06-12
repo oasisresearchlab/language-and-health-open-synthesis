@@ -1,4 +1,5 @@
 ---
+shortLabel: "ATSM valid adherence measure"
 NodeFormality: draft
 TruthValue: 0.5
 NodeType: Claim

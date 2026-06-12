@@ -1,4 +1,5 @@
 ---
+shortLabel: "Karliner 2017"
 abstract: |-
   Background: Twenty-five million people in the United States have limited English proficiency (LEP); this growing and aging population experiences worse outcomes when hospitalized. Federal requirements that hospitals provide language access services are very challenging to implement in the fast-paced, 24-hour hospital environment.
   Objective: To determine if increasing access to professional interpreters improves hospital outcomes for older patients with LEP.

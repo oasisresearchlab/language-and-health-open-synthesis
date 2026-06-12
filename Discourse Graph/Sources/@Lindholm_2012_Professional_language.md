@@ -1,4 +1,5 @@
 ---
+shortLabel: "Lindholm 2012"
 abstract: |
   Background: The population of persons seeking medical care is linguistically diverse in the United States. Language barriers can adversely affect a patient's ability to explain their symptoms. Among hospitalized patients, these barriers may lead to higher readmission rates and longer hospitalizations. Trained interpreters help overcome communication barriers; however, interpreter usage among patients is suboptimal.
   Objective: To investigate differences among patients with limited English proficiency (LEP) in their length of stay (LOS) and 30-day readmission rate associated with their receiving professional interpretation at admission or discharge.

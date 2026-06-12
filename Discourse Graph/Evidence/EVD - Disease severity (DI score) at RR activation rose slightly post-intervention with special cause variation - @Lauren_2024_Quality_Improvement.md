@@ -1,4 +1,5 @@
 ---
+shortLabel: "Severity rose post-intervention"
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
 curationStatus: Initial AI draft
 NodeFormality: draft

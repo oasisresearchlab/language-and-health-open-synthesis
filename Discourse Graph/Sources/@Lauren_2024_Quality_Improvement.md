@@ -1,4 +1,5 @@
 ---
+shortLabel: "Lauren 2024"
 abstract: |
   Background: Recognition of clinically deteriorating hospitalized patients with activation of rapid response (RR) systems can prevent patient harm. Patients with limited English proficiency (LEP), however, experience less benefit from RR systems than do their English-speaking counterparts.
   Objective: To improve outcomes among hospitalized LEP patients experiencing clinical deteriorations.

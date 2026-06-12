@@ -24,6 +24,8 @@ export interface GraphViewNode {
   id: string;
   type: NodeType;
   title: string;
+  /** Generated short label drawn on the node; falls back to the id. */
+  shortLabel?: string;
   isAnchor?: boolean;
   status?: string;
   sections?: string[];
@@ -39,6 +41,7 @@ interface RFGNode extends NodeObject {
   id: string;
   type: NodeType;
   title: string;
+  shortLabel?: string;
   isAnchor: boolean;
 }
 
@@ -187,6 +190,7 @@ export function GraphView({
       id: n.id,
       type: n.type,
       title: n.title,
+      shortLabel: n.shortLabel,
       isAnchor: !!n.isAnchor || n.id === anchorId,
     }));
     const rfgLinks: RFGLink[] = edges.map((e) => ({
@@ -236,7 +240,7 @@ export function GraphView({
         ctx.font = `${fontSize}px JetBrains Mono, ui-monospace, monospace`;
         ctx.textAlign = "center";
         ctx.textBaseline = "top";
-        const text = node.id;
+        const text = node.shortLabel ? `${node.id}  ${node.shortLabel}` : node.id;
         const padX = 2 / globalScale;
         const padY = 1 / globalScale;
         const metrics = ctx.measureText(text);
@@ -288,6 +292,7 @@ export function GraphView({
             graphData={data}
             backgroundColor="rgba(0,0,0,0)"
             nodeRelSize={5}
+            nodeLabel={nodeTooltip}
             nodeCanvasObject={drawNode}
             nodePointerAreaPaint={nodePointerArea}
             linkColor={linkColor}
@@ -554,6 +559,30 @@ function EdgeGroup<T extends { edge: EdgeType }>({
 function edgeColorVar(edge: EdgeType): string {
   // Used for the small heading colour swatches in the detail panel
   return EDGE_COLORS_LIGHT[edge];
+}
+
+function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+/**
+ * Hover tooltip for a node: the stable id plus the full (untruncated) title.
+ * The on-canvas label only shows the generated short label, so this is where
+ * the complete claim/evidence text is revealed. react-force-graph injects the
+ * returned string as tooltip innerHTML, hence the escaping.
+ */
+function nodeTooltip(node: RFGNode): string {
+  return (
+    `<div style="max-width:24rem;font-family:ui-sans-serif,system-ui,sans-serif;` +
+    `font-size:12px;line-height:1.35;white-space:normal">` +
+    `<span style="font-family:ui-monospace,monospace;opacity:0.65">${escapeHtml(node.id)}</span>` +
+    `<div>${escapeHtml(node.title)}</div>` +
+    `</div>`
+  );
 }
 
 function groupBy<T, K>(items: T[], key: (t: T) => K): Map<K, T[]> {

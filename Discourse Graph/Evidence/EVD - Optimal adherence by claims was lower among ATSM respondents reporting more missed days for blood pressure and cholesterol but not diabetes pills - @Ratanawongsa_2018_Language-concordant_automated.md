@@ -1,4 +1,5 @@
 ---
+shortLabel: "Missed days ↓ claims adherence"
 NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-

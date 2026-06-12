@@ -1,4 +1,5 @@
 ---
+shortLabel: "Interpretation ↓ length of stay"
 NodeFormality: draft
 TruthValue: 0.5
 NodeType: Claim

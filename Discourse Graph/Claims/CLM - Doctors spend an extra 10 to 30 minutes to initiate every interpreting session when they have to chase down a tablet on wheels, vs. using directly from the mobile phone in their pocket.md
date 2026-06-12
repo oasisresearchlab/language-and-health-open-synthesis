@@ -1,4 +1,5 @@
 ---
+shortLabel: "Tablet hunt wastes MD time"
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
 curationStatus: Initial AI draft
 nodeInstanceId: 019e8dd8-255b-7034-8d64-48bdff6893ca

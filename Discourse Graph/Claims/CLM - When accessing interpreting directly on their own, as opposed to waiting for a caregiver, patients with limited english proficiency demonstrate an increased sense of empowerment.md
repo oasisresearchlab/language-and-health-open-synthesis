@@ -1,4 +1,5 @@
 ---
+shortLabel: "Self-access ↑ empowerment"
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
 curationStatus: Initial AI draft
 nodeInstanceId: 019e8dd8-25ba-73b6-9c6e-6601c00176bc

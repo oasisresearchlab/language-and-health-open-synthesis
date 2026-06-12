@@ -1,4 +1,5 @@
 ---
+shortLabel: "Concordance equalizes adherence"
 NodeFormality: draft
 TruthValue: 0.5
 NodeType: Claim

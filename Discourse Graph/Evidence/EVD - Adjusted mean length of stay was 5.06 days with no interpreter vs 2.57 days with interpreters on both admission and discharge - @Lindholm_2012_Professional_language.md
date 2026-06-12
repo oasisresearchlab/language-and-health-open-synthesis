@@ -1,4 +1,5 @@
 ---
+shortLabel: "LOS 5.06 vs 2.57 days"
 NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-

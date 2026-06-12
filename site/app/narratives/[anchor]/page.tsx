@@ -54,6 +54,7 @@ function sidecarToSummaryData(
       id: n.id,
       type: n.type as NodeType,
       title: n.title,
+      shortLabel: n.shortLabel,
       isAnchor: n.isAnchor,
     })),
     edges: sidecar.edges,

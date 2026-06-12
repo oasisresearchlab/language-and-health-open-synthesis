@@ -1,4 +1,5 @@
 ---
+shortLabel: "Process measures unchanged"
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
 curationStatus: Initial AI draft
 NodeFormality: draft

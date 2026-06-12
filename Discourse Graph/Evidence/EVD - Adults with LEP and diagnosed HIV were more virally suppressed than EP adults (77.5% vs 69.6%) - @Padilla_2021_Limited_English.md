@@ -1,4 +1,5 @@
 ---
+shortLabel: "LEP ↑ viral suppression"
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
 curationStatus: Initial AI draft
 NodeFormality: draft

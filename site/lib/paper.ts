@@ -46,6 +46,7 @@ export interface NarrativeBundleSidecarNode {
   id: string;
   type: string;
   title: string;
+  shortLabel?: string;
   isAnchor: boolean;
   depth: number;
 }

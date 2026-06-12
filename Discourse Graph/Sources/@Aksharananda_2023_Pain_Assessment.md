@@ -1,4 +1,5 @@
 ---
+shortLabel: "Aksharananda 2023"
 abstract: |-
   Aim: Nurses assess patients' pain using several validated tools. It is not known what disparities exist in pain assessment for medicine inpatients. Our purpose was to measure differences in pain assessment across patient characteristics, including race, ethnicity, and language status.
   Methods: Retrospective cohort study of adult general medicine inpatients from 2013 to 2021. The primary exposures were race/ethnicity and limited English proficiency (LEP) status. The primary outcomes were 1) the type and odds of which pain assessment tool nursing used and 2) the relationship between pain assessments and daily opioid administration.

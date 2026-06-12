@@ -1,4 +1,5 @@
 ---
+shortLabel: "Fewer missed days, non-English"
 NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-

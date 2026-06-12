@@ -1,4 +1,5 @@
 ---
+shortLabel: "Relief once interpreted"
 NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-

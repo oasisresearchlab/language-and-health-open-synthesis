@@ -1,4 +1,5 @@
 ---
+shortLabel: "Interpreting ↑ dx accuracy"
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
 curationStatus: Initial AI draft
 tags:

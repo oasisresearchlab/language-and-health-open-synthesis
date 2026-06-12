@@ -1,4 +1,5 @@
 ---
+shortLabel: "Stoneking 2016"
 abstract: |
   Background: After emergency department (ED) discharge, Spanish-speaking patients with limited English proficiency are less likely than English-proficient patients to be adherent to medical recommendations and are more likely to be dissatisfied with their visit.
   Objectives: To determine if integrating a longitudinal medical Spanish and cultural competency curriculum into emergency medicine residency didactics improves patient satisfaction and adherence to medical recommendations in Spanish-speaking patients with limited English proficiency.

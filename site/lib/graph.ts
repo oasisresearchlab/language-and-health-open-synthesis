@@ -71,6 +71,7 @@ async function readNodeFile(filePath: string): Promise<GraphNode | null> {
     id: String(fm.id),
     type: fm.type,
     title: toStringMaybe(fm.title) ?? String(fm.id),
+    shortLabel: toStringMaybe(fm.shortLabel) || undefined,
     status: toStringMaybe(fm.status),
     source_section: sourceSectionStr || undefined,
     sections,

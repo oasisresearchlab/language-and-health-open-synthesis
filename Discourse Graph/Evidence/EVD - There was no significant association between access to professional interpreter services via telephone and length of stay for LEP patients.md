@@ -1,4 +1,5 @@
 ---
+shortLabel: "Interpreter: no LOS effect"
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
 curationStatus: Initial AI draft
 NodeFormality: draft

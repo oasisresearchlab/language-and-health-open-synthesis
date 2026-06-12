@@ -1,4 +1,5 @@
 ---
+shortLabel: "Interpreting ↓ length of stay"
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
 curationStatus: Initial AI draft
 tags:

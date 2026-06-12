@@ -1,4 +1,5 @@
 ---
+shortLabel: "Concordance, not LEP, is lever"
 NodeFormality: draft
 TruthValue: 0.5
 NodeType: EvidencePattern

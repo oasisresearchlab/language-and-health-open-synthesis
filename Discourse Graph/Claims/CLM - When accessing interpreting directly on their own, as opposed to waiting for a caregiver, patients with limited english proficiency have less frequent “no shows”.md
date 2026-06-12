@@ -1,4 +1,5 @@
 ---
+shortLabel: "Self-access ↓ no-shows"
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
 curationStatus: Initial AI draft
 nodeInstanceId: 019e8dd8-25bc-7b03-a792-e7f8b07b7dfa

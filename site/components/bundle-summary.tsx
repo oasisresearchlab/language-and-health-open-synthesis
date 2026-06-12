@@ -14,6 +14,7 @@ export interface BundleSummaryNode {
   id: string;
   type: NodeType;
   title: string;
+  shortLabel?: string;
   isAnchor: boolean;
 }
 
@@ -67,6 +68,7 @@ export const BundleSummary = React.memo(function BundleSummary({
         id: n.id,
         type: n.type,
         title: n.title,
+        shortLabel: n.shortLabel,
         isAnchor: n.isAnchor,
       })),
     [data.nodes],

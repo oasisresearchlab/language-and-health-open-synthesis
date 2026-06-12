@@ -5,6 +5,7 @@ export interface BundleNode {
   id: string;
   type: GraphNode["type"];
   title: string;
+  shortLabel?: string;
   isAnchor: boolean;
   /**
    * Distance from the anchor along the bundle expansion. Meaningful for the
@@ -80,6 +81,7 @@ function closeBundle(
       id: n.id,
       type: n.type,
       title: n.title,
+      shortLabel: n.shortLabel,
       isAnchor: id === anchorId,
       depth: id === anchorId ? 0 : depthHint(id),
     });

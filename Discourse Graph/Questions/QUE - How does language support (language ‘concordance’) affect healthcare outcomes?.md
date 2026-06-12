@@ -1,4 +1,5 @@
 ---
+shortLabel: "Concordance → outcomes?"
 NodeFormality: draft
 NodeType: Question
 nodeTypeId: node_LsIeSJxI7M9DoE3ISFEmw

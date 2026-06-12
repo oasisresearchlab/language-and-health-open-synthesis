@@ -1,4 +1,5 @@
 ---
+shortLabel: "Trained MDs rated higher"
 NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-

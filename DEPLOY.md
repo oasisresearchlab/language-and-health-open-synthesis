@@ -14,11 +14,18 @@ Therefore `graph/` and `site/public/attachments/` are **committed build
 artifacts**. After any extraction/editing run, regenerate and commit them:
 
 ```bash
+python3 utils/gen_short_labels.py  # propose `shortLabel:` for any new nodes (needs OPENROUTER_API_KEY;
+                                   #   sources are derived offline. Review the vault diff before export.)
 python3 utils/export_rdf.py     # Discourse Graph/ → graph/  (+ copies figure images)
-git add graph site/public/attachments
+git add graph site/public/attachments "Discourse Graph"
 git commit -m "Regenerate graph export"
 git push                        # Vercel rebuilds automatically
 ```
+
+The graph/topology views draw each node's id plus its `shortLabel` (a generated
+2–5 word gist) and reveal the full title on hover. `shortLabel` lives in the
+canonical vault frontmatter — AI proposes it via `gen_short_labels.py`; edit any
+label in the node file before committing.
 
 The build itself then runs `pnpm build`, which regenerates
 `site/lib/graph-data.generated.json` and the pagefind search index (both

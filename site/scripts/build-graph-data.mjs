@@ -88,6 +88,7 @@ async function readNodeFile(filePath) {
     id: String(fm.id),
     type: fm.type,
     title: toStringMaybe(fm.title) ?? String(fm.id),
+    shortLabel: toStringMaybe(fm.shortLabel) || undefined,
     status: toStringMaybe(fm.status),
     source_section: sourceSectionStr || undefined,
     sections,

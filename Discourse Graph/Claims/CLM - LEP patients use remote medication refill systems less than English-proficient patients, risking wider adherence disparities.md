@@ -1,4 +1,5 @@
 ---
+shortLabel: "LEP underuse remote refills"
 NodeFormality: draft
 TruthValue: 0.5
 NodeType: Claim

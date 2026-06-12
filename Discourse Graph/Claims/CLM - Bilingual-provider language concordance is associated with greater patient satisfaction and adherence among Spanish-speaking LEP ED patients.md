@@ -1,4 +1,5 @@
 ---
+shortLabel: "Concordance ↑ satisfaction"
 NodeFormality: draft
 TruthValue: 0.5
 NodeType: Claim

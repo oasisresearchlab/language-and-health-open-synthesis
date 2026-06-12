@@ -1,4 +1,5 @@
 ---
+shortLabel: "LEP ≠ worse adherence"
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
 curationStatus: Initial AI draft
 NodeFormality: draft

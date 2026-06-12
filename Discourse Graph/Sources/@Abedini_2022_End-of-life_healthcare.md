@@ -1,4 +1,5 @@
 ---
+shortLabel: "Abedini 2022"
 abstract: |-
   Background: Little is known about end-of-life healthcare utilization and palliative care use among older adults with serious illness and limited English proficiency (LEP).
   Methods: We conducted a retrospective analysis of seriously-ill older adults (65+) with and without LEP, from a large health system, who died between 2010 and 2018. Primary outcomes were measures of healthcare utilization in the last 30 and 180 days of life: hospitalization, emergency department (ED) visits, intensive care unit (ICU) admission, and 30-day readmission. Secondary outcomes were palliative care consultation and advance care planning documents. We used multivariate analyses adjusted for sociodemographic factors including race and ethnicity.

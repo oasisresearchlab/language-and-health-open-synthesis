@@ -1,4 +1,5 @@
 ---
+shortLabel: "RRS mortality 7.4→6.1%"
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
 curationStatus: Initial AI draft
 NodeFormality: draft

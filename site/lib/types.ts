@@ -70,6 +70,8 @@ export interface NodeFrontmatter {
   id: string;
   type: NodeType;
   title: string;
+  /** Generated 2–5 word semantic label shown on the node in graph views. */
+  shortLabel?: string;
   status?: string;
   source_section?: string;
   created?: string;
@@ -90,6 +92,8 @@ export interface GraphNode {
   id: string;
   type: NodeType;
   title: string;
+  /** Generated 2–5 word semantic label shown on the node in graph views. */
+  shortLabel?: string;
   status?: string;
   source_section?: string;
   sections: string[];

@@ -1,4 +1,5 @@
 ---
+shortLabel: "Averted readmits save $161k/mo"
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
 curationStatus: Initial AI draft
 NodeFormality: draft

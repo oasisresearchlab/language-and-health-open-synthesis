@@ -1,4 +1,5 @@
 ---
+shortLabel: "Cultural nutrition ed ↑ diet"
 NodeFormality: draft
 TruthValue: 0.5
 NodeType: Claim

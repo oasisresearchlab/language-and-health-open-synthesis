@@ -1,4 +1,5 @@
 ---
+shortLabel: "LEP → more recurrences"
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
 curationStatus: Initial AI draft
 NodeFormality: draft

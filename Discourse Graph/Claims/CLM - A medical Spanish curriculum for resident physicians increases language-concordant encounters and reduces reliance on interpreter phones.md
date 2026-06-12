@@ -1,4 +1,5 @@
 ---
+shortLabel: "Spanish curriculum ↑ concordance"
 NodeFormality: draft
 TruthValue: 0.5
 NodeType: Claim

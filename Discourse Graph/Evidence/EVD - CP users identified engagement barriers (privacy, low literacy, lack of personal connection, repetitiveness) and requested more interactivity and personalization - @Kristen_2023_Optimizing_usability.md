@@ -1,4 +1,5 @@
 ---
+shortLabel: "Users named app barriers"
 NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-

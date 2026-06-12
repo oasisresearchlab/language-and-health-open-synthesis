@@ -1,4 +1,5 @@
 ---
+shortLabel: "English barrier → missed DPN dx"
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
 curationStatus: Initial AI draft
 NodeFormality: draft

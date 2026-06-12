@@ -1,4 +1,5 @@
 ---
+shortLabel: "L 2023"
 abstract: |
   Aim: As the United States population is ever changing and is growing in diverse population patterns, the health care system is called to initiate responsive health care practices that are based on the public's changing and diverse cultural patterns. This study sought to explore the perceptions of certified medical interpreter dual-role nurses and their experiences with Spanish-speaking patients from admission ^evd-6 to discharge in hospital stays.
   Design: A qualitative descriptive case study was applied in this study.

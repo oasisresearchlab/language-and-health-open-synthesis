@@ -1,4 +1,5 @@
 ---
+shortLabel: "Allan 2022"
 abstract: |
   Background: Several studies demonstrated language that discordant care between may lead to mixed outcomes and increased use of hospital-resources. In the setting of bariatric surgery, which relies heavily on intensive pre-operative and ^Allan-2022-impact-En-L4 post-operative counseling, we hypothesized that patients with LEP would have less favorable outcomes compared to English-proficient (EP) patients.
   Methods: All patients 18 years and older, who underwent laparoscopic sleeve gastrectomy (SG) or laparoscopic gastric bypass (LGBP) from January 2013 to December 2017 were included. Language proficiency was determined by chart review for the use of an interpreter at least once during the study period. Outcomes of interest at 30-days and 1 year included: emergency department (ED) visits, readmission, length of stay (LOS), chief-complaint on readmission, and post-operative complications. Additionally, comorbidity remission and weight loss at one year was recorded.

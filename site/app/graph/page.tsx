@@ -16,6 +16,7 @@ export default async function GraphTopologyPage() {
     id: n.id,
     type: n.type,
     title: n.title,
+    shortLabel: n.shortLabel,
     status: n.status,
     sections: n.sections,
   }));

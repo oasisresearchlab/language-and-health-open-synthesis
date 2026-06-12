@@ -1,4 +1,5 @@
 ---
+shortLabel: "Kristen 2023"
 abstract: |
   Objective: Latinx people comprise 30% of all new human immunodeficiency virus (HIV) infections in the United States and face many challenges to accessing and engaging with HIV care. To bridge these gaps in care, a Spanish-language mobile health (mHealth) intervention known as ConexionesPositivas (CP) was adapted from an established English-language platform called PositiveLinks (PL) to help improve engagement in care and reduce viral nonsuppression among its users. We aimed to determine how CP can address the challenges that Latinx people with HIV (PWH) in the United States face.
   Materials and methods: We conducted a post-implementation study of the CP mHealth platform, guided by principles of user-centered design. We enrolled 20 Spanish-speaking CP users in the study, who completed the previously validated System Usability Scale (SUS) and semistructured interviews. Interviews were transcribed and translated for analysis. We performed thematic coding of interview transcripts in Dedoose.

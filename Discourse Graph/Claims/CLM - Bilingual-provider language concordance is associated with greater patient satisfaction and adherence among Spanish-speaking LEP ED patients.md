@@ -5,6 +5,9 @@ TruthValue: 0.5
 NodeType: Claim
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
 curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+extraction_prompt_version: v1
+extracted_at: 2026-06-04T00:02:09-04:00
 nodeInstanceId: 019e8fae-a276-71c6-8389-fe46f020bea5
 tags:
   - languageConcordanceFactor/concordanceIntervention/bilingualProvider

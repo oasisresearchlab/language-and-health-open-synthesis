@@ -4,6 +4,9 @@ NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
 curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+extraction_prompt_version: v1
+extracted_at: 2026-06-04T00:02:09-04:00
 nodeInstanceId: 019e8fae-a0b2-7c00-b14b-1b10a7340c5e
 Source: "[[@Stoneking_2016_Does_Spanish]]"
 EvidenceType:

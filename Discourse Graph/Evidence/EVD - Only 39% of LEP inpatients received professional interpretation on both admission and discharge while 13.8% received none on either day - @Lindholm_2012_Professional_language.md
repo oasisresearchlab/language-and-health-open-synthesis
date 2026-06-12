@@ -4,6 +4,9 @@ NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
 curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+extraction_prompt_version: v1
+extracted_at: 2026-06-04T00:02:09-04:00
 nodeInstanceId: 019e8fd6-5978-7b8d-a8e6-3d564b94d2e3
 Source: "[[@Lindholm_2012_Professional_language]]"
 EvidenceType:

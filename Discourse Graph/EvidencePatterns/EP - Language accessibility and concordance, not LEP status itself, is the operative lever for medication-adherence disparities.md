@@ -5,6 +5,9 @@ TruthValue: 0.5
 NodeType: EvidencePattern
 nodeTypeId: node_r2JRW9jgphgmMpz5mN7eG
 curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+extraction_prompt_version: v1
+extracted_at: 2026-06-04T00:02:09-04:00
 nodeInstanceId: 019e8f14-f04a-7ab3-9ef1-b249d98ca2e9
 tags:
   - languageConcordanceFactor/concordanceIntervention

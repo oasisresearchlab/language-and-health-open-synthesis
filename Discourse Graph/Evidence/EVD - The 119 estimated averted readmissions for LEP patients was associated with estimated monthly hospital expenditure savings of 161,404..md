@@ -2,6 +2,9 @@
 shortLabel: "Averted readmits save $161k/mo"
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
 curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+extraction_prompt_version: v1
+extracted_at: 2025-11-13T10:53:49-05:00
 NodeFormality: draft
 NodeType: Evidence
 Source: "[[@Karliner_2017_Convenient_Access]]"

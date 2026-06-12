@@ -4,6 +4,9 @@ NodeFormality: draft
 NodeType: Artifact
 nodeTypeId: node_OULGh2SuqxP1oES9p2k_9
 curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+extraction_prompt_version: v1
+extracted_at: 2026-06-04T00:02:09-04:00
 nodeInstanceId: 019e8fc1-2f5a-7dd2-9020-6185f61f9fba
 tags:
   - languageConcordanceFactor/concordanceIntervention/languageConcordantMHealth

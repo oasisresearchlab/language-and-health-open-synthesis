@@ -4,6 +4,9 @@ NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
 curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+extraction_prompt_version: v1
+extracted_at: 2026-06-04T00:02:09-04:00
 nodeInstanceId: 019e8fd6-3e2b-78f8-81ed-948eee3e77c2
 Source: "[[@L_2023_Dual-role_nurse]]"
 EvidenceType:

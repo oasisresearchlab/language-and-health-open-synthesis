@@ -4,6 +4,9 @@ NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
 curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+extraction_prompt_version: v1
+extracted_at: 2026-06-04T00:02:09-04:00
 nodeInstanceId: 019e8f14-f029-7827-940b-8e853a766809
 Source: "[[@Moreno_2016_Disparities_Use]]"
 EvidenceType:

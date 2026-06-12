@@ -4,6 +4,9 @@ NodeFormality: draft
 NodeType: Evidence
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
 curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+extraction_prompt_version: v1
+extracted_at: 2026-06-04T00:02:09-04:00
 nodeInstanceId: 019e8f5a-abda-7458-bd7a-9bec8f9ba5f4
 Source: "[[@Zhang_2018_Medication_Related]]"
 EvidenceType:

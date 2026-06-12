@@ -2,6 +2,9 @@
 shortLabel: "LEP ≠ worse adherence"
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
 curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+extraction_prompt_version: v1
+extracted_at: 2026-06-04T00:02:09-04:00
 NodeFormality: draft
 NodeType: Claim
 TruthValue: 0.5

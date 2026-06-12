@@ -2,6 +2,9 @@
 shortLabel: "Discordance wastes millions"
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
 curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+extraction_prompt_version: v1
+extracted_at: 2025-11-13T10:53:49-05:00
 nodeInstanceId: 019e8dd8-255d-7944-9c0d-74c224bd7298
 ---
 ## Supporting Evidence

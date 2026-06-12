@@ -3,6 +3,9 @@ NodeFormality: draft
 NodeType: Caveat
 nodeTypeId: node_Q4sxSAHaUscV3smL5OBnB
 curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+extraction_prompt_version: v1
+extracted_at: 2026-06-04T00:02:09-04:00
 nodeInstanceId: 019e902d-7ebb-7134-9b1d-09401cff199e
 type: author-stated
 severity: moderate

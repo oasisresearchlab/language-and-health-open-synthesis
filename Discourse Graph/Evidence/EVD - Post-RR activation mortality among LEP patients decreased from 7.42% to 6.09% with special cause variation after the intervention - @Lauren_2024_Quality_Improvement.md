@@ -2,6 +2,9 @@
 shortLabel: "RRS mortality 7.4→6.1%"
 nodeTypeId: node_huDx8FGfNSGQyongW5rk-
 curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+extraction_prompt_version: v1
+extracted_at: 2026-06-04T00:02:09-04:00
 NodeFormality: draft
 NodeType: Evidence
 Source: "[[@Lauren_2024_Quality_Improvement]]"

@@ -4,6 +4,9 @@ NodeFormality: draft
 NodeType: Question
 nodeTypeId: node_LsIeSJxI7M9DoE3ISFEmw
 curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+extraction_prompt_version: v1
+extracted_at: 2026-06-04T00:02:09-04:00
 nodeInstanceId: 019e8f0e-230a-7ef9-ad83-22c258edb668
 tags:
   - languageConcordanceFactor/concordanceIntervention

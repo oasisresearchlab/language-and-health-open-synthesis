@@ -2,6 +2,9 @@
 shortLabel: "Self-access ↓ no-shows"
 nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
 curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+extraction_prompt_version: v1
+extracted_at: 2025-11-13T10:53:49-05:00
 nodeInstanceId: 019e8dd8-25bc-7b03-a792-e7f8b07b7dfa
 ---
 

@@ -14,6 +14,7 @@ number_of_lep: 179
 outcomes: |
   English language proficiency has been reported to correlate with disparities in health outcomes. Therefore, it is important to identify and describe the association of language barriers with perioperative care and surgical outcomes to inform efforts aimed at reducing health care disparities.
 pubmed_id: 37432686
+has_pdf: true
 doi: 10.1001/jamanetworkopen.2023.22743
 specialty: general
 study_years: 2022

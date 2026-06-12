@@ -17,6 +17,7 @@ number_of_lep: 9
 outcomes: |
   patient-physician communication processes in breast cancer care
 pubmed_id: 24496377
+has_pdf: true
 doi: 10.5455/jbh.20120403024919
 region: Washington DC
 specialty: Oncology

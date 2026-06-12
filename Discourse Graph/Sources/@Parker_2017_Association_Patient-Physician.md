@@ -31,6 +31,7 @@ number_of_lep: 1,605
 outcomes: |
   Glycemic control (HbA1c < 8%), poor glycemic control (HbA1c > 9%), LDL control (LDL < 100 mg/dL), and systolic blood pressure control (sBP < 140 mmHg).
 pubmed_id: 28114680
+has_pdf: true
 doi: 10.1001/jamainternmed.2016.8648
 region: California
 specialty: Endocrinology, General Medicine

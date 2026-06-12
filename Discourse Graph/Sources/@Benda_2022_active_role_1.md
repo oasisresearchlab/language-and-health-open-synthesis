@@ -18,6 +18,7 @@ number_of_lep: 9
 outcomes: |
   communicative tasks included: establishing, maintaining, updating, and repairing understanding and rapport
 pubmed_id: 34052053
+has_pdf: false
 doi: 10.1016/j.pec.2021.05.029
 specialty: Emergency
 title: The active role of interpreters in medical discourse - An observational study in emergency medicine

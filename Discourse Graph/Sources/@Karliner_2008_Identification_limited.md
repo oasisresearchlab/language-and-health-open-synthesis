@@ -20,6 +20,7 @@ outcomes: |
   self-reported ability to communicate effectively
 pdf_url: https://escholarship.org/uc/item/84d8b2mt
 pubmed_id: 18618200
+has_pdf: true
 doi: 10.1007/s11606-008-0693-y
 region: California
 specialty: General Medicine- Clinical

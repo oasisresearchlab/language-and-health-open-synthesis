@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   PCPs' interpretations of pain communication with Hmong patients were characterized by three themes: (a) the providers experienced pain communication problems related to language, (b) the providers perceived the Hmong to have different beliefs about pain, and (c) the providers used different strategies to improve communication.
 pubmed_id: 32942963
+has_pdf: true
 doi: 10.1177/1043659620959437
 specialty: Primary Care
 title: "\"There Are so Many Nuances . . . \": Health Care Providers' Perspectives of Pain Communication With Hmong Patients in Primary Care Settings"

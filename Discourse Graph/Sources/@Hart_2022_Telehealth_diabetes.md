@@ -15,6 +15,7 @@ number_of_lep: 90
 outcomes: |
   impact of telehealth
 pubmed_id: 35382984
+has_pdf: true
 doi: 10.1016/j.japh.2022.03.009
 specialty: Endocrinology & Primary Health
 study_years: 2019-2020

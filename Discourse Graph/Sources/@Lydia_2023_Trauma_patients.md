@@ -14,6 +14,7 @@ language: All
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 917
 pubmed_id: 36302697
+has_pdf: true
 doi: 10.1016/j.amjsurg.2022.10.043
 region: MA, NJ
 specialty: trauma

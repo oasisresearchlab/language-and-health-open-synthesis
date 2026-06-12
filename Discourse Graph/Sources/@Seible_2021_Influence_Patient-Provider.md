@@ -15,6 +15,7 @@ number_of_lep: 83
 outcomes: |
   patient-reported satisfaction with both provider communication and overall care.
 pubmed_id: 34058256
+has_pdf: true
 doi: 10.1016/j.ijrobp.2021.05.122
 region: California
 specialty: Oncology

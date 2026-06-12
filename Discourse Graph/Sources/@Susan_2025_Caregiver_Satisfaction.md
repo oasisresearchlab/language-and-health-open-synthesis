@@ -17,6 +17,7 @@ outcomes: |
   24 LEP and 74 EP caregivers completed the survey questions. The LEP group had lower household income and education levels and higher incidence of public insurance. FS-ICU scores for both LEP and EP caregivers suggested high satisfaction, without significant difference between the groups. However, qualitative analysis revealed dissatisfaction for LEP caregivers related to information, inclusion, and language barriers. EP caregivers had more positive references to information and emotional connection but indicated dissatisfaction around consistency and responsiveness. 18% of LEP caregivers reported regularly attending rounds, versus 67% of the EP group (p value < .001). 39% of LEP versus 52% of EP caregivers reported multiple daily updates, although the difference was not statistically significant. 29% of LEP respondents reported nonfluent MD/NPs using an interpreter never, rarely, or some of the time.
 pdf_url: https://pubmed.ncbi.nlm.nih.gov/38809467/
 pubmed_id: 38809467
+has_pdf: false
 doi: 10.1007/s40615-024-02029-6
 specialty: Pediatrics
 study_years: 2022

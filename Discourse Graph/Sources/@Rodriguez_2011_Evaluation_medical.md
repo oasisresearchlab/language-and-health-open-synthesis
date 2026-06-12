@@ -14,6 +14,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   preparedness to care for LEP patients
 pubmed_id: 21631943
+has_pdf: true
 doi: 10.1186/1472-6920-11-26
 region: northeastern US
 specialty: Medical student, Provider Education

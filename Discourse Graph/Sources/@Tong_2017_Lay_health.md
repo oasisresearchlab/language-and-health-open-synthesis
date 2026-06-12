@@ -17,6 +17,7 @@ number_of_lep: 329
 outcomes: |
   change in self-reported ever and up-to-date CRC screening after 6 months
 pubmed_id: 27564924
+has_pdf: false
 doi: 10.1002/cncr.30265
 region: California
 specialty: Oncology

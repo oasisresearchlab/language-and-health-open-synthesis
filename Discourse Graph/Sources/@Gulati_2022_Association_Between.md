@@ -13,6 +13,7 @@ number_of_lep: 1736
 outcomes: |
   healthcare access and utilization
 pubmed_id: 34097162
+has_pdf: true
 doi: 10.1007/s10903-021-01224-5
 region: California
 specialty: Primary Care

@@ -18,6 +18,7 @@ number_of_lep: 3369
 outcomes: |
   demographic, dietary, and health-related data as well as a medical examination component in which physiological measurements are taken.
 pubmed_id: 34905003
+has_pdf: true
 doi: 10.1001/jamanetworkopen.2021.38780
 region: National
 specialty: Cardiology

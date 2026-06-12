@@ -17,6 +17,7 @@ number_of_lep: 135
 outcomes: |
   parathyroidectomy
 pubmed_id: 35717203
+has_pdf: true
 doi: 10.1016/j.amjsurg.2022.06.001
 specialty: Endocrinology
 study_years: 2010-2018

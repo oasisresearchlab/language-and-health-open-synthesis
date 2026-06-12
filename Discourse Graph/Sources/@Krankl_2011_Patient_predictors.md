@@ -15,6 +15,7 @@ number_of_lep: 38
 outcomes: |
   understanding of the purpose, risks, benefits, alternatives, and nature of colposcopy
 pubmed_id: 20833068
+has_pdf: true
 doi: 10.1016/j.whi.2010.07.009
 region: Boston
 specialty: Gynaecology

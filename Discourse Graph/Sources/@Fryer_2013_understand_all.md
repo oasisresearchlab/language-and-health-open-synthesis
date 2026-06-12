@@ -17,6 +17,7 @@ keywords: |
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 13
 pubmed_id: 23971946
+has_pdf: true
 doi: 10.1080/13557858.2013.828830
 specialty: neurology
 title: "I understand all the major things': how older people with limited English proficiency decide their need for a professional interpreter during health care after stroke"

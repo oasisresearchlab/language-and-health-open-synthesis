@@ -18,6 +18,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Relationships were tested using multivariable logistic regression models controlling for healthcare access and demographic factors, including limited English proficiency (LEP). The combined effects of having both LHL and LEP were specifically examined. LHL was measured by 2-items on perceived ease-of-use of written medical materials. All study variables were self-reported.
 pubmed_id: 25564140
+has_pdf: true
 doi: 10.1136/bmjopen-2014-006104
 region: California
 specialty: Oncology, General Medicine

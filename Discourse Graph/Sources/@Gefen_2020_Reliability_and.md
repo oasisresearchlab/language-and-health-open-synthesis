@@ -16,6 +16,7 @@ number_of_lep: 30
 outcomes: |
   PMP and PM-PT intra and interrater reliability were good to excellent
 pubmed_id: 32924663
+has_pdf: true
 doi: 10.1080/17483107.2020.1819449
 region: Israel
 specialty: pediatrics

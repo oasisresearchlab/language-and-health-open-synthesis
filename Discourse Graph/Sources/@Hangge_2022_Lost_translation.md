@@ -9,6 +9,7 @@ keywords: |
   none
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 35945066
+has_pdf: true
 doi: 10.1016/j.amjsurg.2022.07.029
 region: US
 title: "Lost in translation: Limited English proficiency should not equate to limited surgical access"

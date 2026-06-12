@@ -19,6 +19,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   barriers and facilitators to preventive cancer screening
 pubmed_id: 27499725
+has_pdf: true
 doi: 10.1558/cam.v11i3.24051
 region: Wisconsin
 specialty: Oncology, Primary Care

@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   participants' satisfaction with and expectations for pediatric primary care
 pubmed_id: 22350630
+has_pdf: true
 doi: 10.1007/s10995-012-0951-9
 region: Detroit
 specialty: Pediatrics

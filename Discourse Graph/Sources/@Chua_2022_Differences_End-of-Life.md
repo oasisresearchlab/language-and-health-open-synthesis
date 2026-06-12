@@ -14,6 +14,7 @@ number_of_lep: 89
 outcomes: |
   place of death & hospital & ICU length of stay and time to initial palliative care consultation
 pubmed_id: 35575745
+has_pdf: true
 doi: 10.1089/jpm.2021.0541
 region: Boston
 specialty: Palliative care

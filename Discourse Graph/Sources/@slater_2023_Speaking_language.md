@@ -9,6 +9,7 @@ keywords: |
   none
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 35537853
+has_pdf: false
 doi: 10.1002/jhm.12836
 region: US
 title: "Speaking the language of identification: Building equity through communication with limited English proficiency populations"

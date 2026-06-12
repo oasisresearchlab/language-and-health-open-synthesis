@@ -24,6 +24,7 @@ outcomes: |
   Learners engaged the sensorimotor areas more substantially as they developed skill on the FLS suturing task.
 pdf_url: https://www.spiedigitallibrary.org/journals/neurophotonics/volume-10/issue-02/023521/Changes-in-functional-neuroimaging-measures-as-novices-gain-proficiency-on/10.1117/1.NPh.10.2.023521.full?SSO=1
 pubmed_id: 37152356
+has_pdf: true
 doi: 10.1117/1.NPh.10.2.023521
 specialty: nurology
 study_years: 999

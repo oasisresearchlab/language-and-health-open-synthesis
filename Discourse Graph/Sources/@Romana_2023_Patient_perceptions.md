@@ -20,6 +20,7 @@ outcomes: |
   improvement in understanding and comfort of dental care
 pdf_url: https://bmcmededuc.biomedcentral.com/articles/10.1186/s12909-023-04519-3
 pubmed_id: 37626348
+has_pdf: true
 doi: 10.1186/s12909-023-04519-3
 specialty: Dental
 study_years: 2022

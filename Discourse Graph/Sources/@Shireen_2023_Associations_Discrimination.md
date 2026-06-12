@@ -13,6 +13,7 @@ outcomes: |
   Individuals with multiple psychosocial strssors (LEP included) has the highest prevalence of depression
 pdf_url: https://link-springer-com.ezp-prod1.hul.harvard.edu/article/10.1007/s10903-023-01467-4#Tab2
 pubmed_id: 36940078
+has_pdf: true
 doi: 10.1007/s10903-023-01467-4
 region: San Francisco Bay/greater Chicago areas
 specialty: Mental Health

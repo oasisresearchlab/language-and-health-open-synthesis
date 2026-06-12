@@ -17,6 +17,7 @@ outcomes: |
   Of 786 reviewed charts, 401 limited English proficiency patients and 294 controls matched by gender, race, and ethnicity were included. Among limited English proficiency patients, the majority identified as Hispanic (84.8% vs 36%, P<.01) and showed higher 72-hour unplanned revisit rates (2.8% vs 0.7%, P = .05). Interpreter documentation for limited English proficiency patients was only 49.6%, with in-person modality prevailing (45.8%). Trained interpreters were underutilized (13% in-person vs 7.7% video, P<.0001). Only 78% (P<.01) of patients with limited English proficiency received discharge instructions in their preferred language.
 pdf_url: https://pubmed.ncbi.nlm.nih.gov/39831870/
 pubmed_id: 39831870
+has_pdf: true
 doi: 10.1016/j.jen.2024.12.012
 specialty: Emergency medicine
 study_years: Jan-April 2019

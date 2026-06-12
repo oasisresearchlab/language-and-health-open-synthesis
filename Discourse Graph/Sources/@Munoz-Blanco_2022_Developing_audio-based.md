@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   improve communication and transition processes for families
 pubmed_id: 34674921
+has_pdf: true
 doi: 10.1016/j.pec.2021.10.005
 region: Maryland
 specialty: Pediatrics

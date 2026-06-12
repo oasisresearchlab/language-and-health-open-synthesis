@@ -8,6 +8,7 @@ intervention: commentaries/ perspectives
 journal: Journal of Law, Medicine & Ethics
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 23289703
+has_pdf: true
 doi: 10.1111/j.1748-720x.2012.00729.x
 specialty: General Medicine
 title: "Medication information for patients with limited English proficiency: lessons from the European Union"

@@ -19,6 +19,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   outpatient visit rates
 pubmed_id: 35349026
+has_pdf: true
 doi: 10.1007/s11606-022-07477-6
 specialty: General Medicine
 study_years: 2013-2018

@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   translation policy
 pubmed_id: 31562199
+has_pdf: true
 doi: 10.1542/hpeds.2019-0055
 specialty: Pediatrics
 study_years: 2017

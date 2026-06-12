@@ -11,6 +11,7 @@ language: spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pdf_url: https://onlinelibrary.wiley.com/doi/epdf/10.1002/msc.1724
 pubmed_id: 36536487
+has_pdf: true
 doi: 10.1002/msc.1724
 specialty: orthopedic
 study_years: 2013-2021

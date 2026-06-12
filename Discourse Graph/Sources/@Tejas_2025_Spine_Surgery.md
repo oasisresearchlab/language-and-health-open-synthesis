@@ -18,6 +18,7 @@ outcomes: |
   A total of 214 NES and 9217 English speakers (ES) were reviewed. The final matched cohort resulted in 158 NES and 313 ES with no differences in demographic data. NES patients had significantly more postoperative visits (2.19 vs 1.73; P < 0.001) and increased readmission rates (0.96% vs 4.43%; P = 0.033). On multivariable analysis, NES were predictive of readmission (OR = 4.22; P = 0.039).
 pdf_url: https://pubmed.ncbi.nlm.nih.gov/40084713/
 pubmed_id: 40084713
+has_pdf: true
 doi: 10.1097/bsd.0000000000001803
 region: USA
 specialty: Orthopedics

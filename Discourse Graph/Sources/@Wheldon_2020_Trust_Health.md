@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Trust in health/medical information from doctors, family/friends, government health agencies, charitable organizations  and religious organizations/leaders were examined on 4-point scales ("not at all" to "a lot").
 pubmed_id: 33416706
+has_pdf: true
 doi: 10.1353/hpu.2020.0106
 region: United States
 specialty: General Medicine

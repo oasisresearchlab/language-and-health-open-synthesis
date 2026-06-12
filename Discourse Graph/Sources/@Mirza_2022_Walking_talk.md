@@ -17,6 +17,7 @@ number_of_lep: 28
 outcomes: |
   challenges and joys of working across language barriers.
 pubmed_id: 32478575
+has_pdf: true
 doi: 10.1080/09638288.2020.1767219
 region: Chicago
 specialty: Rehabilitation

@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   accessing and engaging with PHN and SNHV services.
 pubmed_id: 34811798
+has_pdf: true
 doi: 10.1111/phn.13015
 specialty: Public Health
 study_years: 2000-2020

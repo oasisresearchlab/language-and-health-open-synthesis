@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   current practices, facilitating factors, and challenges in working with LEP clients
 pubmed_id: 25445982
+has_pdf: true
 doi: 10.1177/1524839914560404
 specialty: General Medicine
 study_years: 2010-1011

@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   rates of appendiceal perforation and advanced radiologic imaging
 pubmed_id: 24565425
+has_pdf: true
 doi: 10.1016/j.jpeds.2014.01.006
 specialty: Pediatrics, Emergency
 study_years: 2009-2010

@@ -11,6 +11,7 @@ keywords: |
 language: Spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 26896341
+has_pdf: true
 doi: 10.1177/0009922816629760
 region: Michigan, Maryland
 specialty: General Medicine

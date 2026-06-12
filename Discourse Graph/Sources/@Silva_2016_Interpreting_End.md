@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   delivery of palliative care services
 pubmed_id: 26549596
+has_pdf: true
 doi: 10.1016/j.jpainsymman.2015.10.011
 specialty: Palliative care
 title: "Interpreting at the End of Life: A Systematic Review of the Impact of Interpreters on the Delivery of Palliative Care Services to Cancer Patients With Limited English Proficiency"

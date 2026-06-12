@@ -4,6 +4,7 @@ year: 2024
 title: "Disparities in Primary Care No-Shows for Patients with Limited English Proficiency at a Safety-Net Hospital: Retrospective Cohort Analysis"
 journal: Journal of General Internal Medicine
 pubmed_id: 38030822
+has_pdf: true
 doi: 10.1007/s11606-023-08534-4
 specialty: Internal Medicine
 number_of_lep: 4,264

@@ -18,6 +18,7 @@ number_of_lep: 328
 outcomes: |
   self-reported use of 1) Internet refills, 2) telephone refills, and 3) any remote refill system
 pubmed_id: 26311200
+has_pdf: true
 doi: 10.1007/s11606-015-3500-6
 specialty: Pharmaceuticals
 study_years: 2013-2014

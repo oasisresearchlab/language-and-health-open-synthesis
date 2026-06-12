@@ -20,6 +20,7 @@ outcomes: |
   Limited English proficiency is associated with longer duration of infertility before initiating care as well as poorer IUI outcomes, including lower cumulative pregnancy rate. Patients with LEP spent significantly longer trying to conceive, on average 2.5 years longer, before seeking infertility care
 pdf_url: https://www-sciencedirect-com.ezp-prod1.hul.harvard.edu/science/article/pii/S0015028223005253?via%3Dihub
 pubmed_id: 37225071
+has_pdf: true
 doi: 10.1016/j.fertnstert.2023.05.154
 region: New York
 specialty: Endocrinology; Reproductive Endocrinology; Reproductive Health

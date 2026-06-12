@@ -17,6 +17,7 @@ number_of_lep: 80
 outcomes: |
   screening knowledge, self-efficacy, and intent at baseline and immediately after decision aid viewing
 pubmed_id: 22691191
+has_pdf: true
 doi: 10.1186/1472-6947-12-53
 region: North Carolina
 specialty: Oncology, General Medicine

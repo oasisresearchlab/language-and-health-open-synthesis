@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   translation approach
 pubmed_id: 34936237
+has_pdf: true
 doi: 10.1002/eahr.500115
 specialty: Primary Care
 title: "Research Documents for Populations with Limited English Proficiency: Translation Approaches Matter"

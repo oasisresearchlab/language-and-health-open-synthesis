@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   feasibility and efficacy of leveraging medical student volunteers
 pubmed_id: 27687285
+has_pdf: true
 doi: 10.1186/s12909-016-0760-8
 region: New York
 specialty: Medical student, Provider Education

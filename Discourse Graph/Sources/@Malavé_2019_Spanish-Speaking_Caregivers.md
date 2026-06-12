@@ -14,6 +14,7 @@ number_of_lep: 128
 outcomes: |
   (1) need for improved accessibility to medication, primary care, and insurance; (2) communication barriers, such as timeliness, availability of interpreters, and need for resources in their preferred language; and (3) uncertainty about the child's diagnosis and acuity.
 pubmed_id: 30725382
+has_pdf: true
 doi: 10.1007/s40615-019-00564-1
 specialty: Emergency, Pediatrics
 study_years: 2015-2016

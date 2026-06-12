@@ -16,6 +16,7 @@ number_of_lep: 570
 outcomes: |
   use of healthcare interpreter
 pubmed_id: 29747659
+has_pdf: true
 doi: 10.1186/s12913-018-3135-5
 region: Australia
 specialty: General Medicine

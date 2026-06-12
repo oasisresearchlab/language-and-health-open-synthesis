@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   content and processes of five triadic clinical communication encounters
 pubmed_id: 25914219
+has_pdf: true
 doi: 10.1002/nur.21660
 specialty: Primary Care
 title: A conversation analysis of verbal interactions and social processes in interpreter-mediated primary care encounters

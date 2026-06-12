@@ -11,6 +11,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Patient length of stay, patient readmission rates and the provision of professional interpreting services
 pubmed_id: 32227535
+has_pdf: true
 doi: 10.1111/hsc.12989
 region: Australia
 specialty: General Medicine

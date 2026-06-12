@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   communication and collaboration between GCs and HIs
 pubmed_id: 35416393
+has_pdf: true
 doi: 10.1002/jgc4.1572
 region: US
 specialty: General Medicine

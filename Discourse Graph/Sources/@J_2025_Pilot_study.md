@@ -17,6 +17,7 @@ outcomes: |
   Interpreter use was documented for 62.2 ​% of patients and 30 ​% received language concordant documentation. Interpreter service utilization and language concordant documentation were not significantly associated with LOS, ED visits, hospital readmissions, or surgeon follow-up.
 pdf_url: https://pubmed.ncbi.nlm.nih.gov/40554129/
 pubmed_id: 40554129
+has_pdf: true
 doi: 10.1016/j.amjsurg.2025.116473
 region: 2021-2024
 specialty: Surgery

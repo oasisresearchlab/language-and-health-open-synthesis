@@ -16,6 +16,7 @@ number_of_lep: 8953
 outcomes: |
   anguage-appropriate and culturally competent healthcare for Asian Americans with LEP
 pubmed_id: 35297497
+has_pdf: true
 doi: 10.1007/s40615-022-01285-8
 region: FL
 specialty: oncology

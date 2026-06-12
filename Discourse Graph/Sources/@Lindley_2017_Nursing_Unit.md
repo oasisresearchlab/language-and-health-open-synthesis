@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Language Services, Nursing unit enviornment, Hospice enviornment
 pubmed_id: 27059050
+has_pdf: true
 doi: 10.1007/s40615-016-0224-1
 region: National
 specialty: Nursing, Pediatrics

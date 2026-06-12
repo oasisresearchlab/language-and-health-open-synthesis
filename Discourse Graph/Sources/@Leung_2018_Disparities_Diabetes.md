@@ -18,6 +18,7 @@ number_of_lep: 1,053
 outcomes: |
   glycemic control
 pubmed_id: 27767205
+has_pdf: true
 doi: 10.1111/1475-6773.12590
 region: California
 specialty: Endocrinology

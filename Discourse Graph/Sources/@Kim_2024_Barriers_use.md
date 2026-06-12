@@ -17,6 +17,7 @@ outcomes: |
   various levels
 pdf_url: https://journals.sagepub.com/doi/pdf/10.1177/13634615241227337
 pubmed_id: 38298011
+has_pdf: true
 doi: 10.1177/13634615241227337
 region: USA
 specialty: Psychiatry; Psychology; Psychotherapy; Mental Health

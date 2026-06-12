@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Medical Spanish educational efforts
 pubmed_id: 31701080
+has_pdf: true
 doi: 10.1089/heq.2019.0028
 region: United States
 specialty: General Medicine

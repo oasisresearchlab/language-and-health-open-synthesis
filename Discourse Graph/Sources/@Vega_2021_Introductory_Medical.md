@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Comfort in Obtaining a History and Physical in Spanish,Evaluating Deeper Understanding of Latinx Cultures and Specific Public Health Issues , Evaluating Compatibility with an 18-Month Pre-Clinical UME Curriculum
 pubmed_id: 34457907
+has_pdf: true
 doi: 10.1007/s40670-020-01195-6
 region: Oregon
 specialty: Medical student, Provider Education

@@ -17,6 +17,7 @@ number_of_lep: 20
 outcomes: |
   awareness, impact, and implications of threshold language policies
 pubmed_id: 24295426
+has_pdf: true
 doi: 10.1186/1752-4458-7-27
 region: California
 specialty: Psychiatry/mental health

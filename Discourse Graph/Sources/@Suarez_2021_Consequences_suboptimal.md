@@ -17,6 +17,7 @@ number_of_lep: 99?
 outcomes: |
   consequences of suboptimal communication:
 pubmed_id: 33221592
+has_pdf: true
 doi: 10.1016/j.jcrc.2020.10.012
 region: Minnesota
 specialty: Intensive Care

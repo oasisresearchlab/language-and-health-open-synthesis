@@ -14,6 +14,7 @@ number_of_lep: 11419
 outcomes: |
   access to obstetric care
 pubmed_id: 33015520
+has_pdf: true
 doi: 10.1089/heq.2020.0016
 specialty: Obgyn
 title: "Lost in Translation: The Role of Interpreters on Labor and Delivery"

@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   knowledge, confidence, practice, and attitudes to engage in interprofessional collaboration
 pubmed_id: 32693645
+has_pdf: true
 doi: 10.1080/13561820.2020.1786360
 specialty: General Medicine
 title: "Developing interprofessional collaboration between clinicians, interpreters, and translators in healthcare settings: outcomes from face-to-face training"

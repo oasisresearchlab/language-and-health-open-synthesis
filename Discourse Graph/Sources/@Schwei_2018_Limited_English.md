@@ -14,6 +14,7 @@ number_of_lep: 20
 outcomes: |
   (1) their self-identified level of English proficiency, (2) access to interpreters; and (3) health system automation of interpreter use
 pubmed_id: 28929813
+has_pdf: true
 doi: 10.1080/10410236.2017.1372047
 region: United States
 specialty: General Medicine

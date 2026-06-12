@@ -17,6 +17,7 @@ number_of_lep: 1744
 outcomes: |
   Pulmonary function testing (quality measure) and multiple exacerbation visits (morbidity measure), odds of admission to intensive care (morbidity measure) , Recommended follow-up after exacerbation (quality measure)
 pubmed_id: 29738270
+has_pdf: true
 doi: 10.1080/02770903.2018.1474364
 region: Ohio
 specialty: Pediatrics

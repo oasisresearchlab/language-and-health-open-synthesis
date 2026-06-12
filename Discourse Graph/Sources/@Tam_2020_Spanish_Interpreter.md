@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   perspectives on roles of the interpreter and provider, modality preferences, and barriers to accessing services
 pubmed_id: 31445969
+has_pdf: true
 doi: 10.1016/j.acap.2019.08.012
 region: California
 specialty: Pediatrics

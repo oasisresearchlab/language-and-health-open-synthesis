@@ -14,6 +14,7 @@ outcomes: |
   there is a lack of data for language interventions in the ICU. This gap in knowledge highlights the requirement for a needs analysis and educational/process intervention studies in the critical care setting.
 pdf_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10995741/
 pubmed_id: 38586717
+has_pdf: true
 doi: 10.7759/cureus.55646
 specialty: Intensive Care Medicine
 title: "Addressing Language Barriers in the Intensive Care Unit: A Case-Based Reflection and Brief Appraisal of the Literature"

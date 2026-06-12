@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   quality of Patient-clinician communication (PCC)
 pubmed_id: 30146407
+has_pdf: true
 doi: 10.1016/j.pec.2018.08.021
 specialty: Primary Care, General Medicine
 title: "Communicating with diverse patients: How patient and clinician factors affect disparities"

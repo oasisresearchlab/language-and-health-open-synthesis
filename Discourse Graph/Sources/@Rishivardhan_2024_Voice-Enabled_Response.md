@@ -12,6 +12,7 @@ outcomes: |
   VERAA transcribes and maps voice responses in multiple languages to structured survey answers with high accuracy. The proposed technology can be integrated with a low-cost, edge-computing device that can communicate with EHRs and wearable sensors, enabling data collection in diverse outpatient setting
 pdf_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11141834/
 pubmed_id: 38827075
+has_pdf: true
 title: "Voice-Enabled Response Analysis Agent (VERAA): Leveraging Large Language Models to Map Voice Responses in SDoH Survey"
 year: 2024
 factors:

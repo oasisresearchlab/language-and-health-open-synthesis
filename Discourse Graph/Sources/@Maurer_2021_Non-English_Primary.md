@@ -16,6 +16,7 @@ number_of_lep: 592
 outcomes: |
   surgical admission type - urgent/emergent (referred to as "emergency") versus elective
 pubmed_id: 34474213
+has_pdf: true
 doi: 10.1016/j.jss.2021.07.042
 region: New Jersey
 specialty: Emergency

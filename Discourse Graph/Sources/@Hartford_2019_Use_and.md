@@ -17,6 +17,7 @@ number_of_lep: 5670
 outcomes: |
   Interpreter use
 pubmed_id: 31394260
+has_pdf: true
 doi: 10.1016/j.acap.2019.07.006
 region: Seattle
 specialty: Emergency

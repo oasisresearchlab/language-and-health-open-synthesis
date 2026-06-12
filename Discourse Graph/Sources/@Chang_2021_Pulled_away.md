@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   assessment for the benefit of patients &  nurse workload
 pubmed_id: 31046427
+has_pdf: true
 doi: 10.1080/13557858.2019.1613518
 region: Australia
 specialty: Emergency

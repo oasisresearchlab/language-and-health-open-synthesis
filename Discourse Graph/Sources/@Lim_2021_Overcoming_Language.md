@@ -14,6 +14,7 @@ number_of_lep: 4
 outcomes: |
   independent dressing skills
 pubmed_id: 33068219
+has_pdf: true
 doi: 10.1007/s10803-020-04754-3
 specialty: Pediatrics
 title: Overcoming Language Barriers between Interventionists and Immigrant Parents of Children with Autism Spectrum Disorder

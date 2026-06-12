@@ -13,6 +13,7 @@ number_of_lep: 69?
 outcomes: |
   contingent and unstable combinations of heterogeneous human and nonhuman elements that form and disperse during visits to the hospital when healthcare interpreters are used
 pubmed_id: 30831557
+has_pdf: true
 doi: 10.1016/j.socscimed.2019.02.031
 region: Maine
 specialty: General Medicine – Inpatient

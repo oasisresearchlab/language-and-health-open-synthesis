@@ -15,6 +15,7 @@ number_of_lep: 68
 outcomes: |
   safe discharge, family centeredness, and family engagement
 pubmed_id: 33531376
+has_pdf: true
 doi: 10.1542/hpeds.2020-000745
 region: Ohio
 specialty: Pediatrics

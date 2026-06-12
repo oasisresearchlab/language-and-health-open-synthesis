@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   The role of dual-role nurses enables brokering between the healthcare system and serves as a tool to bridge health disparities based on linguistic inequities existing in healthcare.
 pubmed_id: 36879294
+has_pdf: true
 doi: 10.1002/nop2.1656
 region: United States Southwest borderland county hospital
 specialty: general

@@ -10,6 +10,7 @@ keywords: |
 language: spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 35398368
+has_pdf: true
 doi: 10.1016/j.ypmed.2022.107042
 region: GA
 specialty: oncology

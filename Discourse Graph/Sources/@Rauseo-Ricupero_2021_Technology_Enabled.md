@@ -18,6 +18,7 @@ number_of_lep: 50
 outcomes: |
   acceptability and efficacy  of care model
 pubmed_id: 33296869
+has_pdf: true
 doi: 10.2196/23771
 region: Boston
 specialty: Psychiatry/mental health

@@ -13,6 +13,7 @@ number_of_lep: 219
 outcomes: |
   poor mental health outcomes
 pubmed_id: 35201638
+has_pdf: true
 doi: 10.1002/jts.22813
 region: US
 specialty: trauma

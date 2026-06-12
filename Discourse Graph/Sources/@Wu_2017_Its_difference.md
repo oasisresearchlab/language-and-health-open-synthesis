@@ -15,6 +15,7 @@ journal: PLOS One
 language: Spanish, Cantonese, Mandarin, Italian, Vietnamese, etc
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 28982158
+has_pdf: true
 doi: 10.1371/journal.pone.0185659
 region: Canada
 specialty: General Medicine

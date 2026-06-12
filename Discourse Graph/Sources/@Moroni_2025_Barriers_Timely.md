@@ -18,6 +18,7 @@ outcomes: |
   Lack of culturally congruent health care systems, health care providers, and knowledge of ADRD resulted in delays in obtaining a timely ADRD diagnosis among older Latinos with LEP.
 pdf_url: https://journals.sagepub.com/doi/10.1177/10436596241268456
 pubmed_id: 39177241
+has_pdf: true
 doi: 10.1177/10436596241268456
 specialty: Geriatrician, Neurology
 title: "Barriers to Timely Dementia Diagnosis in Older Latinos With Limited English Proficiency: An Integrative Review"

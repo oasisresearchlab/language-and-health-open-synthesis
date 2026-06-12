@@ -13,6 +13,7 @@ journal: Annals of Surgery
 language: All
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 3722 6825
+has_pdf: false
 region: Michigan, Maryland, New Jersey
 specialty: Surgery
 study_years: 2016-2018

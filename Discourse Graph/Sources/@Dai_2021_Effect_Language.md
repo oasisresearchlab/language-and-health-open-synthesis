@@ -17,6 +17,7 @@ number_of_lep: 51
 outcomes: |
   Surgery-related complications and healthcare contacts
 pubmed_id: 33319598
+has_pdf: true
 doi: 10.1177/0003489420980176
 region: Maryland
 specialty: Pediatrics

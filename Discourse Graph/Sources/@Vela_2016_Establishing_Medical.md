@@ -11,6 +11,7 @@ keywords: |
 language: Spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 27294744
+has_pdf: true
 doi: 10.1007/s40615-015-0165-0
 region: United States
 specialty: Medical student, Provider Education

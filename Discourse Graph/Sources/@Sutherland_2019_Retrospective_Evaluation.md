@@ -16,6 +16,7 @@ number_of_lep: 1,140
 outcomes: |
   predictive of time to examination (TTE) from the set
 pubmed_id: 30057245
+has_pdf: true
 doi: 10.1016/j.jacr.2018.05.026
 specialty: Neurology, Radiology
 study_years: 2012-2016

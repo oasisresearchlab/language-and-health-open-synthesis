@@ -15,6 +15,7 @@ number_of_lep: 100
 outcomes: |
   demographic data, pain scores, interventions, medications, transport times, and scene times
 pubmed_id: 26341804
+has_pdf: true
 doi: 10.1016/j.ajem.2015.08.007
 region: New Mexico
 specialty: Emergency

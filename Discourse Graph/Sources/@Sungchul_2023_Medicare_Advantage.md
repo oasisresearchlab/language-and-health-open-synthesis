@@ -16,6 +16,7 @@ outcomes: |
   MA enrollment was higher among immigrants than US-born residents, but the highest enrollment was found among LEP immigrants. Notably, MA enrollment was higher among LEP immigrants with better self-reported health status
 pdf_url: https://www.ajmc.com/view/medicare-advantage-enrollment-by-immigration-and-english-proficiency-status
 pubmed_id: 37729534
+has_pdf: true
 doi: 10.37765/ajmc.2023.89432
 region: USA
 study_years: 2008-2019

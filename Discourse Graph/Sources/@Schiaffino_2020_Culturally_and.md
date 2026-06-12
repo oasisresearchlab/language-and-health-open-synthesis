@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   length of stay
 pubmed_id: 32989360
+has_pdf: true
 doi: 10.18865/ed.30.4.603
 region: United States
 specialty: General Medicine – Inpatient

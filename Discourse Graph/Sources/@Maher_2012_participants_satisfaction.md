@@ -11,6 +11,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   use of interpreter/doulas; cost
 pubmed_id: 23253574
+has_pdf: true
 region: Indianapolis
 specialty: Obgyn
 title: participants' satisfaction with and expectations for pediatric primary care

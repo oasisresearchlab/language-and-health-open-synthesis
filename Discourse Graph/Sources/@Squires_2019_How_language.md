@@ -19,6 +19,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Conditions that Contribute to Higher Workloads and Longer Working Days when managing language barriers in home health care; Willingness of home health care professionals to address language barriers; and Barriers  contributing to home health care provider workload when managing language barriers.
 pubmed_id: 31479983
+has_pdf: true
 doi: 10.1016/j.ijnurstu.2019.103394
 region: New York
 specialty: Home Health Care

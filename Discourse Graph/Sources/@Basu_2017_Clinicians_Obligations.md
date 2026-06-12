@@ -10,6 +10,7 @@ language: Haitian Creole
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 1
 pubmed_id: 28323605
+has_pdf: true
 doi: 10.1001/journalofethics.2017.19.3.ecas2-1703
 region: United States
 specialty: General Medicine

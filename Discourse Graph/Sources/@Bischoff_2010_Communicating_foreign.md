@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Adequacy of attitudes and practices related to interpreter use.
 pubmed_id: 20074097
+has_pdf: true
 doi: 10.1111/j.1708-8305.2009.00314.x
 region: Switzerland
 specialty: Interpreter Services, General Medicine

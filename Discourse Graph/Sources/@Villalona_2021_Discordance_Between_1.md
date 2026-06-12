@@ -11,6 +11,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   satisfaction with care, perceptions of medical staff concern, awareness, and comprehension of medical care
 pubmed_id: 34931564
+has_pdf: false
 doi: 10.1177/15404153211067685
 region: Florida
 specialty: Emergency

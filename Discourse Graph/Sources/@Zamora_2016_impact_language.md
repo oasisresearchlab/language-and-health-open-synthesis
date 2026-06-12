@@ -16,6 +16,7 @@ number_of_lep: 56
 outcomes: |
   knowledge of clinical trial status
 pubmed_id: 27442596
+has_pdf: false
 doi: 10.1002/pbc.26150
 specialty: Pediatrics, Oncology
 title: The impact of language barriers and immigration status on the care experience for Spanish-speaking caregivers of patients with pediatric cancer

@@ -18,6 +18,7 @@ number_of_lep: 560
 outcomes: |
   emergent/urgent admission and annual hospital procedure volume
 pubmed_id: 35559808
+has_pdf: true
 doi: 10.1016/j.jcpo.2021.100306
 region: New Jersey
 specialty: Neurology

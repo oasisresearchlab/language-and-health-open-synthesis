@@ -13,6 +13,7 @@ number_of_lep: 9
 outcomes: |
   rates of cancer screening
 pubmed_id: 32052262
+has_pdf: true
 doi: 10.1007/s13187-020-01706-4
 region: Midwest USA
 specialty: Oncology

@@ -17,6 +17,7 @@ number_of_lep: 25
 outcomes: |
   log-in, team coordination with multiple users, and equipment availability,audio and video quality, communication, safety, and Wi-Fi access.
 pubmed_id: 35438641
+has_pdf: true
 doi: 10.2196/34354
 region: Boston
 specialty: General Medicine – Inpatient

@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   engagement by participants with English-language labels and their reliance on asking for help from pharmacy staff, friends, or family to understand the information.
 pubmed_id: 30934609
+has_pdf: true
 doi: 10.3390/pharmacy7010032
 region: London
 specialty: Pharmaceuticals

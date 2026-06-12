@@ -13,6 +13,7 @@ number_of_lep: 155
 outcomes: |
   pain experience directly from hospitalized children rather than relying on parental proxies, and work toward identifying additional interventions to reduce pain inequity in hospitalized children with LEP.
 pubmed_id: 35499380
+has_pdf: true
 doi: 10.1542/hpeds.2022-006661
 region: US
 specialty: pediatrics

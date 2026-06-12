@@ -9,6 +9,7 @@ keywords: |
   none
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 34798005
+has_pdf: true
 region: MA
 specialty: General Surgery
 title: Improving healthcare access for patients with limited English proficiency

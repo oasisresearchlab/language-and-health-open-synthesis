@@ -27,6 +27,7 @@ year: 2022
 outcomes_extracted:
   - Physician time/effort
 nodeInstanceId: 019e8dd8-2a64-73d2-ae33-201ab20e4f23
+has_pdf: true
 ---
 
 

@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Frequency, Importance, Amenability to Intervention, and Detectability. A “5 Whys” approach was used to examine underlying causes of these failure modes and generate potential interventions
 pubmed_id: 22852193
+has_pdf: true
 doi: 10.1016/s1553-7250(12)38043-4
 region: United States
 specialty: General Medicine

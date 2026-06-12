@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   accuracy and patient satisfaction
 pubmed_id: 22920821
+has_pdf: true
 doi: 10.1177/193229681200600426
 region: California
 specialty: General Medicine, Primary Care

@@ -14,6 +14,7 @@ number_of_lep: 8,063
 outcomes: |
   rates of telehealth use, impact of telehealth use on health care access and use
 pubmed_id: 33646862
+has_pdf: true
 doi: 10.1377/hlthaff.2020.00823
 region: California
 specialty: General Medicine-Clinical

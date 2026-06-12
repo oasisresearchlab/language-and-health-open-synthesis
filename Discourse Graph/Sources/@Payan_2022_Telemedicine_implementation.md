@@ -14,6 +14,7 @@ number_of_lep: 9
 outcomes: |
   Satisfaction with telemedicine
 pubmed_id: 35169769
+has_pdf: true
 doi: 10.1016/j.ssmqr.2022.100054
 region: Northern California
 specialty: Primary Care

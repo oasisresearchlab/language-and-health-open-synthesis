@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   ability to communicate effectively  and form therapeutic relationships with LEP patients versus English-proficient patients.
 pubmed_id: 31971001
+has_pdf: false
 doi: 10.1177/0009922819900950
 specialty: Pediatrics, Obgyn
 title: "Moving From Knowledge to Action: Improving Safety and Quality of Care for Patients With Limited English Proficiency"

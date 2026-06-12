@@ -4,6 +4,7 @@ year: 2020
 title: "Spanish proficiency and interpreter use among emergency providers: A survey study"
 journal: The American Journal of Emergency Medicine
 pubmed_id: 32404249
+has_pdf: true
 doi: 10.1016/j.ajem.2020.04.078
 specialty: Emergency
 intervention: No

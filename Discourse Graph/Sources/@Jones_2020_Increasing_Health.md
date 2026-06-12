@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   thoughts on if had valuable learning objectives,  use of time, useful handouts ,would be applied to their medical practice.
 pubmed_id: 33204841
+has_pdf: true
 doi: 10.15766/mep_2374-8265.11017
 region: California
 specialty: General Medicine

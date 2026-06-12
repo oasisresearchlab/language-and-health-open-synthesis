@@ -4,6 +4,7 @@ year: 2018
 title: Improving Communication With Patients With Limited English Proficiency
 journal: JAMA Internal Medicine
 pubmed_id: 29554183
+has_pdf: true
 doi: 10.1001/jamainternmed.2018.0373
 specialty: Emergency
 language: Spanish

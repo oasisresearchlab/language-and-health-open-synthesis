@@ -17,6 +17,7 @@ number_of_lep: 354
 outcomes: |
   Time from in-person interpreter request to arrival
 pubmed_id: 28676091
+has_pdf: true
 doi: 10.1186/s12913-017-2425-7
 region: Minnesota
 specialty: General Medicine

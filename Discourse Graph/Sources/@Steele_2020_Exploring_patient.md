@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   patient perspective on the type of interpreter
 pubmed_id: 32554678
+has_pdf: false
 doi: 10.3399/bjgp20x711557
 specialty: Primary Care
 title: Exploring patient preference regarding interpreter use in primary care

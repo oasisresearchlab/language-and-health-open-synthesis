@@ -23,6 +23,7 @@ outcomes: |
   Language interpreters, when used in clinical settings to provide translation and transcreation services, are highly effective; however, the current utilisation of language translators in anaesthetic settings is minimal or incorrect.
 pdf_url: https://journals.sagepub.com/doi/10.1177/17504589251316744
 pubmed_id: 39949150
+has_pdf: true
 doi: 10.1177/17504589251316744
 region: Canada
 specialty: anaesthesia

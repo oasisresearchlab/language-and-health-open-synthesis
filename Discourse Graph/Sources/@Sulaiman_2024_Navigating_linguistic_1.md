@@ -13,6 +13,7 @@ outcomes: |
   Collaborative resource pooling among stakeholders, including medical schools, public health departments, and community organizations, coupled with federal and state funding, can increase medical Spanish course accessibility for interested students.
 pdf_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11188791/
 pubmed_id: 38910800
+has_pdf: false
 doi: 10.1080/08998280.2024.2334633
 region: USA
 title: "Navigating linguistic barriers: a case for and against medical Spanish certification for medical students in border states"

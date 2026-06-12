@@ -11,6 +11,7 @@ language: spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 4940
 pubmed_id: 34931564
+has_pdf: true
 doi: 10.1177/15404153211067685
 region: Florida
 specialty: emergency medicine

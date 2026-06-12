@@ -15,6 +15,7 @@ number_of_lep: 105
 outcomes: |
   percentage of HPI items obtained
 pubmed_id: 30429924
+has_pdf: true
 doi: 10.5811/westjem.2018.8.39146
 specialty: Emergency
 study_years: 2017

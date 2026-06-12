@@ -27,6 +27,7 @@ number_of_lep: 185
 outcomes: |
   Quality of pain treatment was measured by patient report of 1) overall level of pain control during hospitalization; 2) timeliness of pain treatment; and 3) perceived provider helpfulness to treat pain
 pubmed_id: 22782281
+has_pdf: true
 doi: 10.1007/s11606-012-2154-x
 region: United States
 specialty: Gynaecology, Obgyn

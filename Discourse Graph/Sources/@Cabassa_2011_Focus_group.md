@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   awareness and knowledge about specific health issues
 pubmed_id: 21807951
+has_pdf: true
 doi: 10.1177/1524839911399430
 region: California
 specialty: Psychiatry/mental health

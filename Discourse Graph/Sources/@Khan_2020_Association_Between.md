@@ -18,6 +18,7 @@ number_of_lep: 147
 outcomes: |
   adverse events; preventable adverse events.
 pubmed_id: 33074313
+has_pdf: true
 doi: 10.1001/jamapediatrics.2020.3215
 region: North America
 specialty: Pediatrics

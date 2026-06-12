@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   barriers to communication, formal tools for communication, gestures and charades, reliance on family, creating a better call light system, and acceptability of Eloquence?
 pubmed_id: 28393085
+has_pdf: true
 doi: 10.1177/2333393616637764
 region: Midwest USA
 specialty: Nursing, General Medicine

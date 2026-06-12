@@ -15,6 +15,7 @@ outcomes: |
   Patients with LEP presenting for cataract surgery had a higher rate of DR and associated complications compared to patients with English proficiency.
 pdf_url: https://tvst.arvojournals.org/article.aspx?articleid=2792900
 pubmed_id: 37796496
+has_pdf: true
 doi: 10.1167/tvst.12.10.4
 region: Colorado
 specialty: Surgery

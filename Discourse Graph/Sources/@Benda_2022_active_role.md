@@ -16,6 +16,7 @@ number_of_lep: 9
 outcomes: |
   Professional interpreters play an important role
 pubmed_id: 34052053
+has_pdf: true
 doi: 10.1016/j.pec.2021.05.029
 region: NY
 specialty: emergency medicine

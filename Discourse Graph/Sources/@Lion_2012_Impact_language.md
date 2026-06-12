@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   comfort using Spanish in various clinical scenarios
 pubmed_id: 22689864
+has_pdf: true
 doi: 10.1542/peds.2011-2794
 specialty: General Medicine- Clinical
 title: Impact of language proficiency testing on provider use of Spanish for clinical care

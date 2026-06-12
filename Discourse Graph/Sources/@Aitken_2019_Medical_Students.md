@@ -8,6 +8,7 @@ journal: AMA Journal of Ethics
 language: Spanish & other
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 30893036
+has_pdf: true
 doi: 10.1001/amajethics.2019.232
 specialty: Medical student, Provider Education
 title: Medical Students as Certified Interpreters

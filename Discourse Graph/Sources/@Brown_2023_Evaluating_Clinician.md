@@ -15,6 +15,7 @@ language: french
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 20
 pubmed_id: 36735323
+has_pdf: true
 doi: 10.2196/41861
 region: France
 specialty: internal medicine

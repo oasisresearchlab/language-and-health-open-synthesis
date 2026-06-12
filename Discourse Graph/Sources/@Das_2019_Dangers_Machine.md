@@ -4,6 +4,7 @@ year: 2019
 title: "Dangers of Machine Translation: The Need for Professionally Translated Anticipatory Guidance Resources for Limited English Proficiency Caregivers"
 journal: Clinical Pediatrics
 pubmed_id: 30392383
+has_pdf: true
 doi: 10.1177/0009922818809494
 specialty: General Medicine
 language: Spanish & other

@@ -15,6 +15,7 @@ number_of_lep: 16
 outcomes: |
   pain level
 pubmed_id: 32756906
+has_pdf: true
 doi: 10.7547/18-003
 specialty: Podiatry
 title: Use of Interpreter Services Among Farsi-Speaking Podiatric Patients and Adherence to the Pain Management Plan

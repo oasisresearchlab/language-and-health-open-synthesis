@@ -16,6 +16,7 @@ number_of_lep: 405
 outcomes: |
   disparities exist within microsurgical breast reconstruction and underscore the importance of effective, language-conscious communication between surgeon and patient
 pubmed_id: 36809784
+has_pdf: false
 doi: 10.1055/a-2040-1750
 region: regional
 specialty: plastics

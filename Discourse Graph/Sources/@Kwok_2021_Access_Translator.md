@@ -14,6 +14,7 @@ number_of_lep: 477
 outcomes: |
   use of healthcare staff as ad hoc interpreters
 pubmed_id: 33547156
+has_pdf: true
 doi: 10.1136/bmjoq-2020-001062
 region: Canada
 specialty: Emergency

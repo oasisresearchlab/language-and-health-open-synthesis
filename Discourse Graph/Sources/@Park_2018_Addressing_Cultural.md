@@ -12,6 +12,7 @@ language: Spanish, Hmong
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 20
 pubmed_id: 28791616
+has_pdf: true
 doi: 10.1007/s40615-017-0396-3
 region: Midwest
 specialty: General Medicine

@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   peri-operative admission are associated with shorter length of stay in adjusted analysis
 pubmed_id: 34688989
+has_pdf: true
 doi: 10.1016/j.jss.2021.09.006
 region: Boston
 specialty: General Surgery

@@ -17,6 +17,7 @@ outcomes: |
   Although quality of diabetes care declined in 2020, CHCs were able to maintain quality equally for adult LEP and non-LEP patients with diabetes amid a major economic and public health shock that disproportionately impacted low-income populations.
 pdf_url: https://journals.sagepub.com/doi/10.1177/21501319241229018?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed
 pubmed_id: 38323398
+has_pdf: true
 doi: 10.1177/21501319241229018
 region: California
 study_years: 2019-2020

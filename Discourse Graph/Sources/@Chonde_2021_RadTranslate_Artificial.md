@@ -17,6 +17,7 @@ number_of_lep: 1267
 outcomes: |
   Imaging appointment duration
 pubmed_id: 33609456
+has_pdf: true
 doi: 10.1016/j.jacr.2021.01.013
 region: Massachusetts
 specialty: Radiology

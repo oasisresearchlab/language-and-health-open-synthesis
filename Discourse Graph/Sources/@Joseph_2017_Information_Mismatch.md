@@ -14,6 +14,7 @@ number_of_lep: 60
 outcomes: |
   GC-patient communication, effectiveness from the patient perspective
 pubmed_id: 28289853
+has_pdf: true
 doi: 10.1007/s10897-017-0089-4
 region: California
 specialty: Oncology

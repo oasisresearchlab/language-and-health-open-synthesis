@@ -16,6 +16,7 @@ number_of_lep: 77?
 outcomes: |
   enrollment status into the DIAMOND program
 pubmed_id: 26933447
+has_pdf: true
 doi: 10.1186/s13033-016-0044-z
 region: Midwestern US
 specialty: Psychiatry/mental health

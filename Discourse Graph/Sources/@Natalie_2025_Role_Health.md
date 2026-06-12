@@ -21,6 +21,7 @@ outcomes: |
   Analyses of 631 patient records revealed that the odds of falling were almost 3 times greater in people with limited English proficiency than in English speakers (odds ratio [OR], 2.92; 95% confidence interval [CI], 1.09-6.85). People with limited English proficiency who reported poorer health literacy had 4 times higher odds of falling (OR, 3.90; 95% CI, 1.13-13.44) than English speakers who reported adequate health literacy. People with limited English proficiency who reported adequate health literacy had the same risk of falling as English speakers (OR, 0.98; 95% CI, 0.16-6.12), suggesting the protective role of health literacy for people with limited English proficiency.
 pdf_url: https://pubmed.ncbi.nlm.nih.gov/39218243/
 pubmed_id: 39218243
+has_pdf: true
 doi: 10.1016/j.apmr.2024.08.011
 specialty: speech-language pathology
 study_years: October 1, 2022 to February 28, 2023

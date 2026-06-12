@@ -14,6 +14,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   medication-related self-efficacy
 pubmed_id: 30122683
+has_pdf: true
 doi: 10.1353/hpu.2018.0079
 specialty: General Medicine
 title: Medication Related Self- efficacy among Linguistically Diverse Patients with Chronic Illnesses

@@ -17,6 +17,7 @@ number_of_lep: 24666
 outcomes: |
   imited English proficiency; miscellaneous; post operative complications; post tonsillectomy bleeding; resource utilization; telemedicine; tonsillectomy
 pubmed_id: 34872388
+has_pdf: true
 doi: 10.1177/00034894211061996
 region: MA
 specialty: emergency medicine

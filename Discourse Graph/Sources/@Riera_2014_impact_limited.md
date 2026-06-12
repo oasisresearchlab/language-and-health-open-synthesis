@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   rates of asthma action plan use
 pubmed_id: 24147607
+has_pdf: true
 doi: 10.3109/02770903.2013.858266
 specialty: Pulmonology
 title: The impact of limited English proficiency on asthma action plan use

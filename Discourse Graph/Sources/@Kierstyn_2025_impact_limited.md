@@ -20,6 +20,7 @@ outcomes: |
   Our qualitative assessment demonstrated limited information on whether LEP impacted survival, complications and discharge disposition. We found no significant association between LEP and readmission or length of stay.
 pdf_url: https://onlinelibrary.wiley.com/doi/10.1111/jep.14112
 pubmed_id: 39073186
+has_pdf: true
 doi: 10.1111/jep.14112
 region: USA
 specialty: Oncology

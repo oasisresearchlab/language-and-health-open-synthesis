@@ -10,6 +10,7 @@ keywords: |
 language: spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 34524126
+has_pdf: false
 doi: 10.1097/acm.0000000000004417
 specialty: General
 title: Developing a Medical Spanish Curriculum to Decrease Barriers for Limited English Proficiency Patients

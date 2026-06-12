@@ -18,6 +18,7 @@ number_of_lep: 695
 outcomes: |
   highest rating on many individual aspects of care, including whether providers explained things intelligibly , listened carefully , knew their medical child's history , provided understandable information , spent sufficient time with them , allowed them to discuss their questions , or had enough input in their children's' care
 pubmed_id: 33586795
+has_pdf: false
 doi: 10.1002/lary.29387
 specialty: Otolaryngology, Pediatrics
 study_years: 2017-2019

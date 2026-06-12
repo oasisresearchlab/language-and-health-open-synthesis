@@ -13,6 +13,7 @@ number_of_lep: 763
 outcomes: |
   current self-rated health (SRH)
 pubmed_id: 22488117
+has_pdf: true
 region: United States
 specialty: General Medicine
 study_years: 2003-2004

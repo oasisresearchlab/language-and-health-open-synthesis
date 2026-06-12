@@ -10,6 +10,7 @@ language: Arabic
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 37,500
 pubmed_id: 36628037
+has_pdf: true
 region: california
 specialty: emergency department
 study_years: 2015-2021

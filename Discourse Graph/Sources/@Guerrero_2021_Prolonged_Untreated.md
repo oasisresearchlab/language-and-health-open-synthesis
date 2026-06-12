@@ -13,6 +13,7 @@ number_of_lep: 1
 outcomes: |
   development, diagnosis, and treatment of VWGS
 pubmed_id: 33221188
+has_pdf: true
 doi: 10.1016/j.jadohealth.2020.10.016
 specialty: Endocrinology
 title: "Prolonged Untreated Disease and Limited English Proficiency: A Case of Van Wyk-Grumbach Syndrome"

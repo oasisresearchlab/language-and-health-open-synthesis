@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   (1) the effect of patient language and mental health diagnosis on pain and (2) the interaction between language and mental health diagnosis on pain.
 pubmed_id: 34824021
+has_pdf: true
 doi: 10.1016/j.pmn.2021.10.005
 specialty: Psychiatry/mental health
 title: Do Limited English Proficiency and Language Moderate the Relationship Between Mental Health and Pain?

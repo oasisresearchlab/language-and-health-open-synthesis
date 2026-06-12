@@ -14,6 +14,7 @@ language: All
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 211
 pubmed_id: 36508051
+has_pdf: true
 doi: 10.1007/s00467-022-05821-w
 region: Minesota
 specialty: internal medincine

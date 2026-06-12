@@ -10,6 +10,7 @@ keywords: |
 language: All
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 36383271
+has_pdf: true
 doi: 10.1007/s10620-022-07737-9
 region: MA
 specialty: gastroenterology

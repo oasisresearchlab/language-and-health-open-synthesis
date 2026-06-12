@@ -12,6 +12,7 @@ outcomes: |
   the overall results on healthcare access and outcomes showed that LEP populations experience disparities in access and outcomes across both ambulatory and acute care, as well as in specific condition outcomes and general physical and mental health outcomes
 pdf_url: https://www.mdpi.com/2227-9032/12/3/364
 pubmed_id: 38338249
+has_pdf: true
 doi: 10.3390/healthcare12030364
 region: USA
 study_years: 2001-2023

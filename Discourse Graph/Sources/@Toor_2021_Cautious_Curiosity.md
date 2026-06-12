@@ -8,6 +8,7 @@ intervention: Art of Medicine
 journal: AMA Journal of Ethics
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 33818382
+has_pdf: true
 doi: 10.1001/amajethics.2021.281
 title: Cautious Curiosity
 year: 2021

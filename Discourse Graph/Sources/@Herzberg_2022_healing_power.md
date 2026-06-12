@@ -4,6 +4,7 @@ year: 2022
 title: "The healing power of language: caring for patients with limited english proficiency and COVID-19"
 journal: Pediatric Research
 pubmed_id: 33790416
+has_pdf: true
 doi: 10.1038/s41390-021-01487-6
 specialty: Infectious Disease
 language: Spanish

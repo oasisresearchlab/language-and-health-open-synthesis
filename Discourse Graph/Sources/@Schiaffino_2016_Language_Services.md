@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   language services, its ownership type, and its latitude and longitude, need for language services within each resulting service area
 pubmed_id: 27503963
+has_pdf: true
 doi: 10.1377/hlthaff.2015.0955
 region: America
 specialty: General Medicine

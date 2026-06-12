@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   prevalence of brokering, kinds of tasks, emotional and academic impact, and desired support
 pubmed_id: 27866391
+has_pdf: true
 doi: 10.1111/josh.12456
 specialty: General Medicine
 title: "Adolescent Healthcare Brokering: Prevalence, Experience, Impact, and Opportunities"

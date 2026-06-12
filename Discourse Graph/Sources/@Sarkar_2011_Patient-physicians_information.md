@@ -16,6 +16,7 @@ number_of_lep: 179
 outcomes: |
   (1) cardiac functional status, (2) barriers to self-management, (3) cardiac diagnoses, and (4) treatment
 pubmed_id: 21035298
+has_pdf: true
 doi: 10.1016/j.pec.2010.09.017
 region: Alameda County
 specialty: Cardiology

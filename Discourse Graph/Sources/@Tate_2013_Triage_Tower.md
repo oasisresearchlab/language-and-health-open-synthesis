@@ -9,6 +9,7 @@ journal: Pediatric Emergency Care
 language: Amharic
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 24300472
+has_pdf: true
 doi: 10.1097/pec.0000000000000034
 specialty: Pediatrics
 title: "Triage in the Tower of Babel: interpreter services for children in the prehospital setting"

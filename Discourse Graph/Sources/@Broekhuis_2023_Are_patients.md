@@ -17,6 +17,7 @@ number_of_lep: 1104
 outcomes: |
   independent barrier to appropriate surgical management of PHPT
 pubmed_id: 35717203..
+has_pdf: false
 doi: 10.1016/j.amjsurg.2022.06.001
 region: US
 specialty: General Surgery

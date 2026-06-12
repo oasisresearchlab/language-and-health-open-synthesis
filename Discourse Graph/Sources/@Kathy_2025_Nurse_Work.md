@@ -14,6 +14,7 @@ outcomes: |
   Despite being younger on average (63.4 vs 64 years old, p < 0.001), patients with LEP were more likely to be readmitted (4.5% vs 3.9%, p < 0.001) and had more comorbidities as evidenced by 45.8% of patients with LEP having a Charlson Comorbidity Index of 2, as compared to 44.4% of patients without LEP (p < 0.001). Patients with LEP were also less likely to be White (39.7% vs 72.9%, p < 0.001) and more likely to be insured by Medicaid (8.9% vs 5.5%) or uninsured (7.5% vs 2%, p < 0.001) as compared to patients without LEP. Relative to patients without LEP, patients with LEP patients were more likely to receive care in hospitals with poor nurse work environments (25% vs 18.4%, p < 0.001), within larger teaching institutions (27.8% vs 24.4%, p < 0.001), and without high technology capabilities (39.9% vs. 37.9%, p < 0.001) (Table 2). Importantly, the effect sizes of these differences between patients with and without LEP were small, other than the effect sizes for differences among race and ethnicity (Tables 1 and 2).
 pdf_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12049171/
 pubmed_id: 40126025
+has_pdf: true
 doi: 10.1002/nur.22462
 region: New Jersey
 specialty: Nursing

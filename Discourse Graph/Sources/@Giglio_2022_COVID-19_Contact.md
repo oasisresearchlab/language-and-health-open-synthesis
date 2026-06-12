@@ -13,6 +13,7 @@ number_of_lep: 231
 outcomes: |
   obtaining supplies for quarantine
 pubmed_id: 35557552
+has_pdf: true
 doi: 10.1089/heq.2021.0148
 region: Pennsylvania
 specialty: Infectious Disease

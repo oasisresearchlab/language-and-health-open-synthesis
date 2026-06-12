@@ -14,6 +14,7 @@ number_of_lep: 66
 outcomes: |
   satisfaction survey scores
 pubmed_id: 34047402
+has_pdf: true
 doi: 10.1111/pde.14635
 region: Massachusetts
 specialty: Pediatrics, Dermatology

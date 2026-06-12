@@ -17,6 +17,7 @@ number_of_lep: 1878
 outcomes: |
   Differences in pain assessment and NRS scores
 pubmed_id: 35605569
+has_pdf: false
 doi: 10.1016/j.jss.2022.04.034
 region: US
 specialty: Trauma

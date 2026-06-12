@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   utilization of breast and cervical cancer screening, language access in healthcare
 pubmed_id: 20352398
+has_pdf: true
 doi: 10.1007/s13187-010-0074-1
 region: California
 specialty: Oncology, Primary Care

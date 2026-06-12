@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   language service
 pubmed_id: 25337600
+has_pdf: true
 doi: 10.15171/ijhpm.2014.95
 region: National
 specialty: General Medicine

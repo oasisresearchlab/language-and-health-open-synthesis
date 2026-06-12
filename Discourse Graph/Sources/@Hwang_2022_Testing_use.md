@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   communication between healthcare staff and older CALD people with LEP
 pubmed_id: 34704379
+has_pdf: true
 doi: 10.1002/nop2.1099
 region: Australia
 specialty: Primary Care

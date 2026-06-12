@@ -16,6 +16,7 @@ outcomes: |
   telemedicine not optimized for LEP patients,
 pdf_url: https://link-springer-com.ezp-prod1.hul.harvard.edu/content/pdf/10.1007/s11606-023-08304-2.pdf
 pubmed_id: 37653210
+has_pdf: true
 doi: 10.1007/s11606-023-08304-2
 region: California
 study_years: 2020-2021

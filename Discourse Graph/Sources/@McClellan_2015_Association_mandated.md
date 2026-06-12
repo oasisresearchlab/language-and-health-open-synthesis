@@ -14,6 +14,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   language access programming and quality of psychiatric care received
 pubmed_id: 25220026
+has_pdf: true
 doi: 10.1176/appi.ps.201300522
 region: California
 specialty: Psychiatry/mental health

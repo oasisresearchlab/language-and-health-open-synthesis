@@ -15,6 +15,7 @@ outcomes: |
   employment characteristics, timeliness and utilization of workers' compensation (WC) insurance benefits, cost and occupational health outcomes
 pdf_url: https://onlinelibrary.wiley.com/doi/10.1002/ajim.20740
 pubmed_id: 19722197
+has_pdf: true
 doi: 10.1002/ajim.20740
 region: Washington
 specialty: Orthopedics

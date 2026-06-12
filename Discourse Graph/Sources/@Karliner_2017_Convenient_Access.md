@@ -22,6 +22,7 @@ number_of_lep: 1963
 outcomes: |
   30-day readmission, length of stay (LOS), estimated hospital expenditures
 pubmed_id: 27579909
+has_pdf: true
 doi: 10.1097/mlr.0000000000000643
 specialty: General Medicine
 study_years: 2007–2010

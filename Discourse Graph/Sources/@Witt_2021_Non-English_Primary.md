@@ -17,6 +17,7 @@ number_of_lep: 554
 outcomes: |
   The primary outcomes were total, preoperative, and postoperative LOS. Secondary outcomes were complications, mortality, and discharge disposition.
 pubmed_id: 34461280
+has_pdf: true
 doi: 10.1016/j.wneu.2021.08.087
 region: New Jersey
 specialty: Neurology

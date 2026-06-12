@@ -15,6 +15,7 @@ number_of_lep: 540
 outcomes: |
   percentage of patients with translated discharge instructions
 pubmed_id: 34654727
+has_pdf: true
 doi: 10.1542/hpeds.2021-005981
 region: Ohio
 specialty: Pediatrics

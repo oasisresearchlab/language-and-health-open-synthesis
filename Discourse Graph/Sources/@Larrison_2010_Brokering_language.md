@@ -8,6 +8,7 @@ intervention: commentaries/ perspectives
 journal: Social Work in Public Health
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 20446183
+has_pdf: true
 doi: 10.1080/19371910903241009
 specialty: Interpreter Services
 title: "Brokering language and culture: can ad hoc interpreters fill the language service gap at community health centers?"

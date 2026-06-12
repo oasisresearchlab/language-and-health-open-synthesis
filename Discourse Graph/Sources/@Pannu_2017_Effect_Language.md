@@ -10,6 +10,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   length of stay (LOS)
 pubmed_id: 28550705
+has_pdf: true
 doi: 10.12927/hcq.2017.25140
 specialty: General Medicine –Inpatient
 title: The Effect of Language on Hospital Inpatient Length of Stay

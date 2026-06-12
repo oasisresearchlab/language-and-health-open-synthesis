@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   quality of communication
 pubmed_id: 25418242
+has_pdf: true
 doi: 10.1353/hpu.2014.0160
 specialty: General Medicine
 study_years: 2012

@@ -14,6 +14,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   barriers and drivers that impact communication with LEP patients and their families during hospitalization.
 pubmed_id: 31339836
+has_pdf: true
 doi: 10.12788/jhm.3240
 region: Ohio
 specialty: Pediatrics

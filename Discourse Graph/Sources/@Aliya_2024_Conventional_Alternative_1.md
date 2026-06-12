@@ -13,6 +13,7 @@ outcomes: |
   Evidence presented in this study demonstrates that Asians did not utilize CAM treatments more than conventional treatments for problems related to their emotions, nerves, or mental health. Regardless of the nature of the mental health treatments, Asians with LEP still had a lower utilization rate than those with excellent English proficiency. Speaking English “well” but not “very well” is not good enough for Asians to access and utilize the mental health care they need.
 pdf_url: https://link-springer-com.ezp-prod1.hul.harvard.edu/article/10.1007/s10903-023-01538-6
 pubmed_id: 37676448
+has_pdf: false
 doi: 10.1007/s10903-023-01538-6
 region: US
 specialty: Mental Health

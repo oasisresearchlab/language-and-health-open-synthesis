@@ -16,6 +16,7 @@ number_of_lep: 185
 outcomes: |
   demographic profiles and use of interpreters
 pubmed_id: 32259354
+has_pdf: true
 doi: 10.1111/jpc.14880
 region: Canada
 specialty: Emergency, General Medicine

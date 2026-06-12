@@ -14,6 +14,7 @@ keywords: |
   Cross sectional review; Language barriers; Limited English proficiency; Policy change.
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 25816944
+has_pdf: true
 doi: 10.1016/j.ijnurstu.2015.03.001
 specialty: General Medicine
 title: "Changes in research on language barriers in health care since 2003: A cross-sectional review study"

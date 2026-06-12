@@ -13,6 +13,7 @@ outcomes: |
   genetic counselors with limited Spanish proficiency are able to detect errors in interpretation that are clinically significan
 pdf_url: https://onlinelibrary-wiley-com.ezp-prod1.hul.harvard.edu/doi/10.1002/jgc4.1673
 pubmed_id: 36748185
+has_pdf: true
 doi: 10.1002/jgc4.1673
 study_years: 2021
 title: The utility of limited Spanish proficiency in interpreted genetic counseling sessions

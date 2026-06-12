@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   trial enrolment
 pubmed_id: 29083094
+has_pdf: true
 doi: 10.1111/ajco.12818
 region: Australia
 specialty: Oncology

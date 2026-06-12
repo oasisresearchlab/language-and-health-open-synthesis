@@ -15,6 +15,7 @@ number_of_lep: 46
 outcomes: |
   number of ED visits within 72 hours of the index visit
 pubmed_id: 26569079
+has_pdf: true
 doi: 10.1097/pec.0000000000000592
 region: Philadelphia, Boston, Canada?
 specialty: Emergency

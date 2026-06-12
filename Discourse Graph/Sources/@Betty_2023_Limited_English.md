@@ -8,6 +8,7 @@ keywords: |
 language: all
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 36066429
+has_pdf: true
 doi: 10.1213/ane.0000000000006159
 region: US
 specialty: General Surgery

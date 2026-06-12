@@ -19,6 +19,7 @@ number_of_lep: 84
 outcomes: |
   ranking pain scales
 pubmed_id: 32933877
+has_pdf: false
 doi: 10.1016/j.pmn.2020.08.001
 region: United States
 specialty: General Medicine

@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Anxiety, knowledge, and patient satisfaction
 pubmed_id: 24882604
+has_pdf: true
 doi: 10.1016/j.jclinane.2013.12.008
 region: Massachusetts
 specialty: Anesthesiology

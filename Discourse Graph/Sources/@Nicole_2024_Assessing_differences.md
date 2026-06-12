@@ -15,6 +15,7 @@ outcomes: |
   no significant difference in opioid administration based on EP for patients receiving EOL care on a general medicine service after adjustment for additional demographic and clinical characteristics
 pdf_url: https://shmpublications-onlinelibrary-wiley-com.ezp-prod1.hul.harvard.edu/doi/10.1002/jhm.13325
 pubmed_id: 38544317
+has_pdf: true
 doi: 10.1002/jhm.13325
 region: San Francisco, California
 study_years: 2013-2021

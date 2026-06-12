@@ -10,6 +10,7 @@ keywords: |
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pdf_url: https://www-tandfonline-com.ezp-prod1.hul.harvard.edu/doi/pdf/10.1080/15265161.2023.2224263?needAccess=true
 pubmed_id: 37379053
+has_pdf: true
 doi: 10.1080/15265161.2023.2224263
 title: A Public Health Ethics Framework for Populations with Limited English Proficiency
 year: 2023

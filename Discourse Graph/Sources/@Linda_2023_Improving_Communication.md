@@ -13,6 +13,7 @@ outcomes: |
   COVID interfered with data collection; too many confounding factors
 pdf_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10732587/
 pubmed_id: 37677773
+has_pdf: true
 doi: 10.1188/23.cjon.359-363
 region: Northeast US
 specialty: Oncology

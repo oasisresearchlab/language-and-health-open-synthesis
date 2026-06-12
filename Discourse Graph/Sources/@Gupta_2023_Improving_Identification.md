@@ -15,6 +15,7 @@ number_of_lep: US
 outcomes: |
   Using improvement methods, a multidisciplinary team increased the identification of patients and caregivers with LEP in an ED. Integration of this information into the EHR allowed for the targeted prompting of providers to use interpreter services and to correctly document their use.
 pubmed_id: 36794433
+has_pdf: true
 doi: 10.1542/peds.2022-057330
 region: Pensylvania
 specialty: pediatic

@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   feasibility
 pubmed_id: 27227135
+has_pdf: true
 doi: 10.2196/publichealth.4779
 region: National
 specialty: General Medicine

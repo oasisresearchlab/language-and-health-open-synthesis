@@ -8,6 +8,7 @@ intervention: Perspectives
 journal: Academic Medicine
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 21248607
+has_pdf: true
 doi: 10.1097/acm.0b013e318208289a
 specialty: Research
 title: "Perspective: The case for research justice: inclusion of patients with limited English proficiency in clinical research"

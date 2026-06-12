@@ -15,6 +15,7 @@ language: Chinese
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 36
 pubmed_id: 21460258
+has_pdf: true
 doi: 10.1177/1524839911399427
 region: Seattle
 specialty: Emergency

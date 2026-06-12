@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   improve patient safety, outcomes, and quality of care.
 pubmed_id: 35671014
+has_pdf: false
 doi: 10.1097/aco.0000000000001131
 region: US
 specialty: Obgyn

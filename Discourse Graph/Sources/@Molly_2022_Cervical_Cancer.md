@@ -9,6 +9,7 @@ keywords: |
   Cervical cancer; Primary care; Refugee health; Screening.
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 35233682
+has_pdf: true
 doi: 10.1007/s10903-022-01345-5
 specialty: General Surgery
 title: Cervical Cancer Screening by Refugee Category in a Refugee Health Primary Care Clinic in Calgary, Canada, 2011-2016

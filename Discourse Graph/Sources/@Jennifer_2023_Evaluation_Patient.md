@@ -15,6 +15,7 @@ keywords: |
 language: 2019-2020
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 36252680
+has_pdf: true
 doi: 10.1016/j.nwh.2022.09.002
 specialty: gynelocology
 title: Evaluation of Patient Access to Spanish-Language-Concordant Care on a Postpartum Unit

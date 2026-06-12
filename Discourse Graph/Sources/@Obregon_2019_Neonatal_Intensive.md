@@ -14,6 +14,7 @@ number_of_lep: 90
 outcomes: |
   emotional and technical discharge preparedness
 pubmed_id: 30341402
+has_pdf: true
 doi: 10.1038/s41372-018-0255-z
 specialty: Intensive Care, Neonatology
 title: Neonatal Intensive Care Unit discharge preparedness among families with limited english proficiency

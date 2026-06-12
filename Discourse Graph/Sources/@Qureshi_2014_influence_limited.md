@@ -18,6 +18,7 @@ number_of_lep: 20
 outcomes: |
   disease control and survival
 pubmed_id: 25190640
+has_pdf: true
 doi: 10.1016/j.pec.2014.07.031
 specialty: Oncology
 study_years: 2004-2010

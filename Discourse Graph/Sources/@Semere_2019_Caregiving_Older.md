@@ -20,6 +20,7 @@ number_of_lep: 214
 outcomes: |
   experience of caregiver after hospital discharge
 pubmed_id: 31236893
+has_pdf: true
 doi: 10.1007/s11606-019-05119-y
 specialty: Geriatrics
 study_years: 2012-2013

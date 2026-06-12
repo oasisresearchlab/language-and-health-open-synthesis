@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   reduce health inequities
 pubmed_id: 35907847
+has_pdf: true
 doi: 10.1186/s12913-022-08371-x
 region: Pittsburgh
 specialty: General Surgery

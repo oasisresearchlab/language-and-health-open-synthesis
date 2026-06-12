@@ -16,6 +16,7 @@ number_of_lep: ~14% of 48,968
 outcomes: |
   prescription understanding
 pubmed_id: 21491287
+has_pdf: true
 doi: 10.1080/13557858.2010.543950
 region: California
 specialty: Pharmaceuticals

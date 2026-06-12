@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   health literacy
 pubmed_id: 31294282
+has_pdf: true
 doi: 10.3928/24748307-20180405-01
 region: United States
 specialty: General Medicine

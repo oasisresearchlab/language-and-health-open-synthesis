@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   linguistic and cultural challenges
 pubmed_id: 31230623
+has_pdf: true
 doi: 10.1016/j.pcl.2019.03.006
 specialty: General Medicine
 title: "Communication with Diverse Patients: Addressing Culture and Language"

@@ -17,6 +17,7 @@ number_of_lep: 67
 outcomes: |
   pain communication
 pubmed_id: 31675068
+has_pdf: true
 doi: 10.1093/pm/pnz268
 region: Midwestern State
 specialty: Primary Care

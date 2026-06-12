@@ -14,6 +14,7 @@ number_of_lep: 21
 outcomes: |
   social isolation
 pubmed_id: 33409888
+has_pdf: true
 doi: 10.1007/s11606-020-06383-z
 region: California
 specialty: General Medicine – Inpatient

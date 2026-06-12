@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   rate of hospital admission via the ED
 pubmed_id: 35318761
+has_pdf: false
 doi: 10.1111/hsc.13794
 region: Australia
 specialty: Emergency

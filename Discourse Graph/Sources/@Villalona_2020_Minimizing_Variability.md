@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   average visual analog scale (VAS) scores
 pubmed_id: 31220928
+has_pdf: true
 doi: 10.1177/1540415319856329
 region: Florida
 specialty: Emergency

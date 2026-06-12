@@ -16,6 +16,7 @@ number_of_lep: 1825
 outcomes: |
   LEP women are associated with a lower probability of having a screening mammogram
 pubmed_id: 36635166
+has_pdf: true
 doi: 10.1016/j.clbc.2022.11.008
 region: US
 specialty: oncology

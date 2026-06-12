@@ -15,6 +15,7 @@ outcomes: |
   and LEP may further delay early recognition of disease.
 pdf_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10733606/pdf/cureus-0015-00000049140.pdf
 pubmed_id: 38130536
+has_pdf: true
 doi: 10.7759/cureus.49140
 specialty: Pediatrics, Pediatric Surgery, Oncology
 title: "Ewing's Sarcoma of the Hand: An Unusual Presentation in a Young Hispanic Male"

@@ -18,6 +18,7 @@ outcomes: |
   LEP not associated with ED visits or telemedicine
 pdf_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10713935/pdf/11606_2023_Article_8353.pdf
 pubmed_id: 37592119
+has_pdf: true
 doi: 10.1007/s11606-023-08353-7
 specialty: Internal Medicine
 study_years: 2020-2021

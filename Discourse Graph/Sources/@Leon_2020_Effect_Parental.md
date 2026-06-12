@@ -14,6 +14,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   assess anger, anxiety, depression, and peer relationships.
 pubmed_id: 32097322
+has_pdf: true
 doi: 10.1097/prs.0000000000006577
 region: California
 specialty: Pediatrics

@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   equity in care
 pubmed_id: 35499380
+has_pdf: false
 doi: 10.1542/hpeds.2022-006661
 specialty: Pediatrics
 title: "Hospitalized Children With Limited English Proficiency: The Strive to Improve Analgesia"

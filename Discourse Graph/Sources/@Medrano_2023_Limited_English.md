@@ -13,6 +13,7 @@ number_of_lep: 4.7 million
 outcomes: |
   aid the exploration of associations between LEP, interpretation modalities, language-concordant communication, and cardiovascular care
 pubmed_id: 36822259
+has_pdf: true
 doi: 10.1016/j.amjmed.2023.01.028
 region: regional
 specialty: cardiology

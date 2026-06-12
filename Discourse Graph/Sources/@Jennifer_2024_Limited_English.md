@@ -18,6 +18,7 @@ outcomes: |
   Our results highlight that limited English proficiency is a significant barrier to CRC screening, but stool-based testing may narrow the gap
 pdf_url: https://www-sciencedirect-com.ezp-prod1.hul.harvard.edu/science/article/pii/S2211335524000536?via%3Dihub
 pubmed_id: 38357223
+has_pdf: true
 specialty: oncology
 study_years: 2019, 2021
 title: Limited English proficiency and reported receipt of colorectal cancer screening among adults 45-75 in 2019 and 2021

@@ -4,6 +4,7 @@ year: 2019
 title: "Inpatient Language Barriers: An Old Problem in Need of Novel Solutions"
 journal: Journal of Hospital Medicine
 pubmed_id: 31577222
+has_pdf: true
 doi: 10.12788/jhm.3260
 outcomes: |
   systems for accessing interpretation and communication involving an interpreter.

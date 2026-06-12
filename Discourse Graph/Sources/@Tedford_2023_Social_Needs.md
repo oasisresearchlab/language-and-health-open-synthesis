@@ -16,6 +16,7 @@ number_of_lep: 3987
 outcomes: |
   disparities in limited English proficiency, race and ethnicity, and child insurance status
 pubmed_id: 35537675
+has_pdf: true
 doi: 10.1016/j.acap.2022.05.002
 region: Utah
 specialty: pediatrics

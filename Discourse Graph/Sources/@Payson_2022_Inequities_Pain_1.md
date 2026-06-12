@@ -15,6 +15,7 @@ number_of_lep: 56
 outcomes: |
   difference in worst pain scores
 pubmed_id: 35499379
+has_pdf: false
 doi: 10.1542/hpeds.2021-006445
 region: Florida
 specialty: Pediatrics

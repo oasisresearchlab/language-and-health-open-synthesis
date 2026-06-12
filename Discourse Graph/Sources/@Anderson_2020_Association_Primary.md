@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   proportion of patients who were hospitalized from the ED for each ACSC
 pubmed_id: 31821245
+has_pdf: true
 doi: 10.1097/mlr.0000000000001245
 region: New Jersey
 specialty: Emergency

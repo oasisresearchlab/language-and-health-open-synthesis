@@ -14,6 +14,7 @@ number_of_lep: 55
 outcomes: |
   interpreter utilization
 pubmed_id: 33837473
+has_pdf: true
 doi: 10.1007/s10903-021-01195-7
 specialty: Primary Care
 title: Do Standardized Scripts Improve Interpreter Use by Spanish-Speaking Patients?

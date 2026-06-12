@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   accuracy of translation and phrases, possible technological learning curves, risk of mistranslation in high-risk conversation and inability to check accuracy of translation
 pubmed_id: 32558965
+has_pdf: true
 doi: 10.1111/jocn.15390
 region: Australia
 specialty: General Medicine

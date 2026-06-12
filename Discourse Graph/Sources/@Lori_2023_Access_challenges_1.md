@@ -15,6 +15,7 @@ outcomes: |
   Spanish speaking callers had more difficulty obtaining appointment information & scheduling appointments from clinics
 pdf_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10986294/
 pubmed_id: 38756676
+has_pdf: false
 doi: 10.1093/haschl/qxad033
 region: California
 study_years: 2023

@@ -14,6 +14,7 @@ number_of_lep: 2829
 outcomes: |
   access to health insurance
 pubmed_id: 33376934
+has_pdf: true
 doi: 10.1089/heq.2020.0057
 region: National
 specialty: Primary Care

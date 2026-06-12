@@ -14,6 +14,7 @@ number_of_lep: 26
 outcomes: |
   sociodemographic, cultural, migration, linguistic and cultural beliefs questions, need and use of interpretation services, and satisfaction with care
 pubmed_id: 29423339
+has_pdf: false
 doi: 10.4172/2161-0711.1000503
 region: New York
 specialty: Oncology

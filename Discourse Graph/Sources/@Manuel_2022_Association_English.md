@@ -9,6 +9,7 @@ keywords: |
   none
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 35267037
+has_pdf: true
 doi: 10.1001/jamanetworkopen.2022.1842
 specialty: orthopedic
 title: Association of English Language Proficiency With Hospitalization Cost, Length of Stay, Disposition Location, and Rea

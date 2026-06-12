@@ -11,6 +11,7 @@ keywords: |
 language: Spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 25201742
+has_pdf: true
 doi: 10.1370/afm.1661
 region: Chicago
 specialty: General Medicine- Clinical

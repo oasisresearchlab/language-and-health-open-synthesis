@@ -16,6 +16,7 @@ number_of_lep: 948
 outcomes: |
   measure language screening, determine the rate of language interpretation, and estimate the number of LEP families.
 pubmed_id: 24435596
+has_pdf: true
 doi: 10.1542/hpeds.2013-0040
 specialty: Pediatrics
 study_years: 2009

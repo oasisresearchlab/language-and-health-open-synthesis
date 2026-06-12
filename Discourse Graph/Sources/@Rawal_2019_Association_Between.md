@@ -12,6 +12,7 @@ number_of_lep: 2336
 outcomes: |
   Revisits and Readmissions After Hospitalization for Patients With Acute and Chronic Conditions
 pubmed_id: 31638666
+has_pdf: true
 doi: 10.1001/jama.2019.13066
 region: Canada
 specialty: Emergency

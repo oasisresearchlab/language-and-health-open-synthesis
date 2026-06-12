@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   improve care for LEP Heart Failure patients
 pubmed_id: 35370123
+has_pdf: false
 doi: 10.1016/j.jchf.2022.02.011
 specialty: Cardiology
 title: "Challenges Facing Heart Failure Patients With Limited English Proficiency: A Qualitative Analysis Leveraging Interpreters' Perspectives"

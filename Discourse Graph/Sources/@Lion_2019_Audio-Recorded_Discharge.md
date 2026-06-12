@@ -17,6 +17,7 @@ number_of_lep: 31
 outcomes: |
   assess card use and satisfaction, comfort with home care, and discharge instruction recall
 pubmed_id: 30126714
+has_pdf: false
 doi: 10.1016/j.jcjq.2018.06.001
 region: Seattle
 specialty: Pediatrics

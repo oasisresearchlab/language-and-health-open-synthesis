@@ -20,6 +20,7 @@ outcomes: |
   SPs. An
 pdf_url: https://journals.lww.com/neponline/fulltext/2023/09000/using_virtual_remote_interpretation_in_simulation.13.aspx
 pubmed_id: 37594428
+has_pdf: true
 doi: 10.1097/01.nep.0000000000001179
 specialty: Nursing
 title: Using Virtual Remote Interpretation in Simulation for Clients With Limited English Proficiency

@@ -11,6 +11,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   mental health service use
 pubmed_id: 21144636
+has_pdf: true
 doi: 10.1016/j.socscimed.2010.10.027
 region: California
 specialty: Psychiatry/mental health

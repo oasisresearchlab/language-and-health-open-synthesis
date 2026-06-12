@@ -15,6 +15,7 @@ number_of_lep: 1703
 outcomes: |
   LEP patients experience increased hospital LOS
 pubmed_id: 36030609
+has_pdf: false
 doi: 10.1016/j.jss.2022.07.044
 region: US
 specialty: Trauma

@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   opinions of the role, factors that impact decisions to use medical interpreters and perceived utility of using medical interpreters when conducting EOL and GOC conversations with LEP patients and their families.
 pubmed_id: 34000817
+has_pdf: true
 doi: 10.1177/10499091211015916
 region: New York
 specialty: Primary Care

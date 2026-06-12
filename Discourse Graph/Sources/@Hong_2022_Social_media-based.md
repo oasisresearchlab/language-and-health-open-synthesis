@@ -16,6 +16,7 @@ number_of_lep: 100
 outcomes: |
   perceived risks of HBV infection
 pubmed_id: 35140979..
+has_pdf: true
 doi: 10.1177/20552076221076257
 region: Washington
 specialty: emergency medicine

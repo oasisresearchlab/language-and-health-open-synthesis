@@ -17,6 +17,7 @@ number_of_lep: 779
 outcomes: |
   Medication Dosing Error
 pubmed_id: 28477800
+has_pdf: true
 doi: 10.1016/j.acap.2016.10.001
 region: New York, California, Georgia
 specialty: General Medicine

@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   clinic characteristics, interpreter modalities used, and interpreter training
 pubmed_id: 35112044
+has_pdf: true
 doi: 10.1089/heq.2021.0103
 region: US
 specialty: Primary Care

@@ -20,6 +20,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Length of hospital stay as related to use of professional interpreters; readmission to the hospital within 30 days.
 pubmed_id: 22528618
+has_pdf: true
 doi: 10.1007/s11606-012-2041-5
 specialty: General Medicine
 study_years: 2004-2007

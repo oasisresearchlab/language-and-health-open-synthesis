@@ -19,6 +19,7 @@ number_of_lep: 1,716
 outcomes: |
   inpatient mortality
 pubmed_id: 31891556
+has_pdf: true
 doi: 10.12788/jhm.3334
 region: California
 specialty: Emergency

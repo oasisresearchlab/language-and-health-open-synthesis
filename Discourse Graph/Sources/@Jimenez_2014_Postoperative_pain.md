@@ -17,6 +17,7 @@ number_of_lep: 237
 outcomes: |
   Mean number of daily pain assessments and mean daily pain scores
 pubmed_id: 24435597
+has_pdf: true
 doi: 10.1542/hpeds.2013-0031
 region: Seattle
 specialty: Pediatrics

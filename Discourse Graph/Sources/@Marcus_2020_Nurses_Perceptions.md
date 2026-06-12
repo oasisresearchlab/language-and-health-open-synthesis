@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   perceptions of the technology used in language interpretation
 pubmed_id: 32858699
+has_pdf: true
 doi: 10.1097/01.naj.0000697652.73975.37
 specialty: General Medicine
 title: Nurses' Perceptions of Technology Used in Language Interpretation for Patients with Limited English Proficiency

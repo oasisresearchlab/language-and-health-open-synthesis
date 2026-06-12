@@ -14,6 +14,7 @@ number_of_lep: 22
 outcomes: |
   level of awareness of how to access interpreters and  awareness of DHB interpreter policy
 pubmed_id: 21963923
+has_pdf: true
 region: New Zealand
 specialty: General Medicine- Clinical
 title: "Communication difficulties with limited English proficiency patients: clinician perceptions of clinical risk and patterns of use of interpreters"

@@ -14,6 +14,7 @@ language: All
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 5400
 pubmed_id: 36792931
+has_pdf: true
 doi: 10.1002/pon.6110
 region: NY
 specialty: oncology

@@ -18,6 +18,7 @@ outcomes: |
   LEP patients who arereferred to otolaryngology by their PCP experienceextended TTTA relative to their non‐LEP counterparts in both referral to appointment duration and appointment to attendance duration.
 pdf_url: https://aao-hnsfjournals-onlinelibrary-wiley-com.ezp-prod1.hul.harvard.edu/doi/epdf/10.1002/ohn.363
 pubmed_id: 37194741
+has_pdf: true
 doi: 10.1002/ohn.363
 region: Boston
 specialty: Otolaryngology, Surgery

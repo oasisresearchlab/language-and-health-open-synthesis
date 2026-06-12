@@ -4,6 +4,7 @@ year: 2020
 title: English proficiency and clinical outcomes in primary percutaneous coronary intervention
 journal: European Heart Journal - Quality of Care and Clinical Outcomes
 pubmed_id: 32022866
+has_pdf: false
 doi: 10.1093/ehjqcco/qcaa010
 keywords: |
   percutaneous coronary interventiontreatment outcome

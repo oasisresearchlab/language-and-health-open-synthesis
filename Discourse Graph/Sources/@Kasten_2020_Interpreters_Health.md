@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   use of health care interpreters
 pubmed_id: 31935351
+has_pdf: true
 doi: 10.1016/j.amjmed.2019.12.008
 specialty: Primary Care, General Medicine
 title: "Interpreters in Health Care: A Concise Review for Clinicians"

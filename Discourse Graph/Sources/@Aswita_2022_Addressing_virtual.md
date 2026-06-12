@@ -9,6 +9,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   literacy gap
 pubmed_id: 35049259
+has_pdf: true
 doi: 10.37765/ajmc.2022.88814
 region: MA
 specialty: internal medicine

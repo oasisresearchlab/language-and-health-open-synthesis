@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   facilitate patient-provider communications
 pubmed_id: 36563970
+has_pdf: true
 doi: 10.1016/j.ypmed.2022.107394
 region: US
 specialty: cardiology

@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   objective structured clinical exams (OSCEs)
 pubmed_id: 33768150
+has_pdf: true
 doi: 10.15766/mep_2374-8265.11118
 region: Michigan
 specialty: Pediatrics

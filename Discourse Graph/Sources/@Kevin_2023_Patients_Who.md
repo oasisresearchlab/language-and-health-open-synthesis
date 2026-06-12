@@ -16,6 +16,7 @@ outcomes: |
   Patients who have LEP, compared to English proficient patients, were less likely to undergo revision surgeries at the same institution up to 2 years after hip and knee arthroplasty.
 pdf_url: https://www.sciencedirect.com/science/article/pii/S0883540323001328?via%3Dihub
 pubmed_id: 36805120
+has_pdf: true
 doi: 10.1016/j.arth.2023.02.024
 specialty: Orthopedic Surgery
 study_years: 2013-2021

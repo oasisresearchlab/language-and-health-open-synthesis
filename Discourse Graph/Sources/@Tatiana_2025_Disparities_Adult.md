@@ -19,6 +19,7 @@ outcomes: |
   In outcomes‐focused studies, patients with LEP presented with a higher burden of oncologic disease, more severe hearing loss, and disparities in treatment access/implementation.
 pdf_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11903906/
 pubmed_id: 39508183
+has_pdf: true
 doi: 10.1002/lary.31871
 region: USA
 specialty: Otolaryngology

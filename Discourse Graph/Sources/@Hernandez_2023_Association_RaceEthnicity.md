@@ -16,6 +16,7 @@ number_of_lep: 15,556
 outcomes: |
   increase in substance use testing over time
 pubmed_id: 35797754
+has_pdf: true
 doi: 10.1016/j.jss.2022.04.056
 region: US
 specialty: trauma

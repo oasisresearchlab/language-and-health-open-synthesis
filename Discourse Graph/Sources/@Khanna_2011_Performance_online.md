@@ -18,6 +18,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   fluency (grammatical correctness), adequacy (information preservation), meaning (connotation maintenance), and severity (perceived dangerousness of an error if present)
 pubmed_id: 22034196
+has_pdf: true
 doi: 10.1002/jhm.898
 specialty: Patient Education
 title: Performance of an online translation tool when applied to patient educational material

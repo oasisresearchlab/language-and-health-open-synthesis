@@ -16,6 +16,7 @@ outcomes: |
   Longer duration of time spent with an interpreter was associated with better clinician-patient communication for patients with LEP
 pdf_url: https://journals.sagepub.com/doi/epub/10.1177/21501319241264168
 pubmed_id: 38912573
+has_pdf: false
 doi: 10.1177/21501319241264168
 region: California
 study_years: 2022-2023

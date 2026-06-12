@@ -15,6 +15,7 @@ number_of_lep: 542
 outcomes: |
   poor lipid control and poor SBP control
 pubmed_id: 30222919
+has_pdf: true
 region: Northern California
 specialty: Endocrinology & Primary Health
 study_years: 2013-2015

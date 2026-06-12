@@ -13,6 +13,7 @@ number_of_lep: 4,246
 outcomes: |
   significantly higher costs for patients with LEP experiencing a critical illness
 pubmed_id: 37186248
+has_pdf: true
 doi: 10.1371/journal.pone.0279126
 region: Rochester
 study_years: 1/1/2008-12/31/2017

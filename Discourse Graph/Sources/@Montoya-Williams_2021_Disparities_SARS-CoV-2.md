@@ -4,6 +4,7 @@ year: 2021
 title: Disparities in SARS-CoV-2 positivity among pregnant patients with limited English proficiency
 journal: Journal of Perinatology
 pubmed_id: 34497337
+has_pdf: true
 doi: 10.1038/s41372-021-01148-w
 specialty: Perinatology
 number_of_lep: 291

@@ -18,6 +18,7 @@ number_of_lep: 249
 outcomes: |
   communication and interpretation quality, frequency of lapses in interpreter use, and ability to name the child's diagnosis
 pubmed_id: 26501862
+has_pdf: true
 doi: 10.1001/jamapediatrics.2015.2630
 region: Seattle
 specialty: Emergency

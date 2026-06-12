@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   up-to-date status cancer screening
 pubmed_id: 35297497
+has_pdf: false
 doi: 10.1007/s40615-022-01285-8
 region: US
 specialty: Oncology

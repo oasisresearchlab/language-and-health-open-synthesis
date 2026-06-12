@@ -12,6 +12,7 @@ number_of_lep: 250
 outcomes: |
   levels of confidence, sense of seld-efficacy
 pubmed_id: 24158381
+has_pdf: true
 doi: 10.1007/s10903-013-9935-0
 specialty: Emergency
 title: Emergency communications within the limited English proficient Chinese community

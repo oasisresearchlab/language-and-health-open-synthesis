@@ -15,6 +15,7 @@ number_of_lep: 72?
 outcomes: |
   (1) dose and side effects discussed, (2) opioid risks and safety measures covered, and (3) LEP specific communication practices.
 pubmed_id: 33454071
+has_pdf: true
 doi: 10.1016/j.cptl.2020.09.006
 region: United States
 specialty: Pharmaceuticals

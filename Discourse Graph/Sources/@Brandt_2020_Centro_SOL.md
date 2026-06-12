@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   identifying Challenges to providing consultation services
 pubmed_id: 33416731
+has_pdf: true
 doi: 10.1353/hpu.2020.0111
 region: Maryland
 specialty: General Medicine

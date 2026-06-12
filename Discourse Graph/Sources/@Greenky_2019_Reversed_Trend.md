@@ -15,6 +15,7 @@ number_of_lep: 16052
 outcomes: |
   triage acuity, ED length of stay (LOS), readmission to the ED within seven days, and hospital disposition
 pubmed_id: 30984426
+has_pdf: true
 doi: 10.1155/2019/4832045
 region: Atlanta
 specialty: Pediatrics, Emergency

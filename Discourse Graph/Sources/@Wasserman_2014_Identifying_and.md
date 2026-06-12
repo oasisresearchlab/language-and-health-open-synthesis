@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   medical errors
 pubmed_id: 24629098
+has_pdf: true
 doi: 10.1111/jhq.12065
 specialty: General Medicine
 title: "Identifying and preventing medical errors in patients with limited English proficiency: key findings and tools for the field"

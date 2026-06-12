@@ -4,6 +4,7 @@ year: 2015
 title: "Heartache and bellyache: limited English proficiency perpetuating recurrent thromboembolic events"
 journal: American Journal of Medicine
 pubmed_id: 25261011
+has_pdf: true
 doi: 10.1016/j.amjmed.2014.09.009
 specialty: General Medicine
 intervention: case report

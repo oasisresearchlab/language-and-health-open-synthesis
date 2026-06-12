@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   frequency of and comfort level with respondent's own non-English language (NEL) use in the ED, and the preferred and most frequently used modalities of language assistance.
 pubmed_id: 31898078
+has_pdf: true
 doi: 10.1007/s10903-019-00964-9
 specialty: Emergency
 title: "Language Assistance for the Care of Limited English Proficiency (LEP) Patients in the Emergency Department: A Survey of Providers and Staff"

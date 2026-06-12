@@ -16,6 +16,7 @@ number_of_lep: 57
 outcomes: |
   provision of bystander cardiopulmonary resuscitation (CPR) and delays in telephone-assisted CPR
 pubmed_id: 21388734
+has_pdf: true
 doi: 10.1016/j.resuscitation.2011.02.006
 specialty: cardiology, emergency
 title: "Bystander CPR in out-of-hospital cardiac arrest: the role of limited English proficiency"

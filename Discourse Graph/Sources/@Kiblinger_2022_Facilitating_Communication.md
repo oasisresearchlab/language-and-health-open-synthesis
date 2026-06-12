@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   nurse satisfaction and streamline the interpretation process
 pubmed_id: 35228341
+has_pdf: true
 doi: 10.1891/jdnp-2021-0045
 specialty: Pediatrics
 title: "Facilitating Communication in a Pediatric Surgery Center: Implementation of an Interactive Communication Board"

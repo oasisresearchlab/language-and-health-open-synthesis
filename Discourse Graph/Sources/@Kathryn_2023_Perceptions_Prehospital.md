@@ -16,6 +16,7 @@ language: All
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pdf_url: file:///Users/nayelimagana/Downloads/stadeli_2023_oi_221508_1674184353.9695.pdf
 pubmed_id: 36705920
+has_pdf: true
 doi: 10.1001/jamanetworkopen.2022.53364
 region: US
 specialty: all

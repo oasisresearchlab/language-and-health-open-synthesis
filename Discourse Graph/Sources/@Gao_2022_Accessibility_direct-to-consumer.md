@@ -4,6 +4,7 @@ year: 2022
 title: Accessibility of direct-to-consumer teledermatology to underserved populations
 journal: Journal of the American Academy of Dermatology
 pubmed_id: 34757145
+has_pdf: false
 keywords: |
   DTC; LEP; digital literacy; direct-to-consumer; health equity; language disparity; LEP; teledermatology; telemedicine; underserved.
 specialty: Dermatology

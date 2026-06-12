@@ -15,6 +15,7 @@ number_of_lep: 1566
 outcomes: |
   (1) reach of a care transitions outreach program phone call (automated call within three days after discharge or a subsequent manual phone call) and (2) Post discharge issues reported on the phone calls.
 pubmed_id: 34627715
+has_pdf: true
 doi: 10.1016/j.jcjq.2021.08.013
 specialty: General Medicine – Inpatient
 study_years: 2018-2019

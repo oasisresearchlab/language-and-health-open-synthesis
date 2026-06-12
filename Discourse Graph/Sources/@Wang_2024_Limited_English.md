@@ -17,6 +17,7 @@ outcomes: |
   LEP status was not associated with worse postoperative outcomes or follow-up length in patients undergoing breast reduction mammoplasty. This may be due to interpreter use and effective patient education.
 pdf_url: https://www.journalofsurgicalresearch.com/article/S0022-4804(24)00064-7/abstract
 pubmed_id: 38364696
+has_pdf: true
 doi: 10.1016/j.jss.2024.01.041
 specialty: Surgery; Plastic Surgery
 study_years: 2015-2019

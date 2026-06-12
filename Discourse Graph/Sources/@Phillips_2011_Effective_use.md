@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   aggregate change in skills comprising global IIRS, PPI and IS scores, change in skill scores for this class.
 pubmed_id: 21518071
+has_pdf: true
 doi: 10.1111/j.1745-7599.2011.00612.x
 specialty: Family Medicine
 title: "Effective use of interpreters by family nurse practitioner students: is didactic curriculum enough?"

@@ -16,6 +16,7 @@ number_of_lep: 671
 outcomes: |
   emergency department (ED) visits, readmission, length of stay (LOS), chief-complaint on readmission, and post-operative complications
 pubmed_id: 35229210
+has_pdf: false
 doi: 10.1007/s00464-022-09148-3
 specialty: Gastroenterology
 study_years: 2013-2017

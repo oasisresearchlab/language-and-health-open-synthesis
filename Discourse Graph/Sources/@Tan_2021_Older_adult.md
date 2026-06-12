@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   comprehensibility, availability, readability and consistency
 pubmed_id: 35479844
+has_pdf: true
 doi: 10.1016/j.rcsop.2021.100087
 region: Singapore
 specialty: Primary Care

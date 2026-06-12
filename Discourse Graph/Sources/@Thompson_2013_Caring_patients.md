@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   training and experience with interpreters and self-efficacy in (1) determining when an interpreter is needed and (2) using a professional interpreter
 pubmed_id: 23969358
+has_pdf: true
 doi: 10.1097/acm.0b013e3182a3479d
 region: midwestern, southern, and mid-Atlantic locations
 specialty: Provider Education

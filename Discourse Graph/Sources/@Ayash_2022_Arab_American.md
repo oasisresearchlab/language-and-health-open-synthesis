@@ -14,6 +14,7 @@ number_of_lep: 162
 outcomes: |
   HPVV awareness uptake
 pubmed_id: 35672534
+has_pdf: true
 doi: 10.1007/s10900-022-01103-6
 region: New York
 specialty: Infectious Disease

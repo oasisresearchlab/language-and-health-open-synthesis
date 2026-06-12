@@ -19,6 +19,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   three measures of patient-provider communication, testing for differences in both means (intercepts) and trends (slopes) before and after 2010 and differences in differences by English proficiency.
 pubmed_id: 30511285
+has_pdf: true
 doi: 10.1007/s11606-018-4757-3
 region: United States
 specialty: General Medicine

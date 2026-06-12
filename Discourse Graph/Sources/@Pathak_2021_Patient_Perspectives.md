@@ -15,6 +15,7 @@ number_of_lep: 326
 outcomes: |
   quality of interpretation: five detailed items scored as a scale, and a sixth overall quality item (range 1 = poor to 5 = excellent)
 pubmed_id: 33515189
+has_pdf: true
 doi: 10.1007/s11606-020-06491-w
 region: California
 specialty: Primary Care

@@ -20,6 +20,7 @@ number_of_lep: 2906
 outcomes: |
   dichotomous indicator of elevated BP on physical examination
 pubmed_id: 28160188
+has_pdf: true
 doi: 10.1007/s11606-017-3999-9
 region: National
 specialty: Cardiology, General Medicine

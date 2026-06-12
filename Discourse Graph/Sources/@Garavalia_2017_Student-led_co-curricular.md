@@ -12,6 +12,7 @@ keywords: |
 language: Spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 29233438
+has_pdf: true
 doi: 10.1016/j.cptl.2017.03.022
 region: California
 specialty: Medical student, Provider Education

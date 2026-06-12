@@ -19,6 +19,7 @@ number_of_lep: 41,876
 outcomes: |
   improve continuity of care
 pubmed_id: 35091918
+has_pdf: true
 doi: 10.1007/s11606-021-07216-3
 region: US
 specialty: internal medicine

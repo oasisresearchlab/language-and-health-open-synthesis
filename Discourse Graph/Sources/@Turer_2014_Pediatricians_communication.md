@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   weight-management communication
 pubmed_id: 25311599
+has_pdf: true
 doi: 10.1542/peds.2014-1282
 specialty: Pediatrics
 study_years: 2012

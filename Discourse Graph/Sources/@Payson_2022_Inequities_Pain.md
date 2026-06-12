@@ -14,6 +14,7 @@ language: all
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 155
 pubmed_id: 35499379
+has_pdf: true
 doi: 10.1542/hpeds.2021-006445
 region: US
 specialty: pediatrics

@@ -11,6 +11,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   clinical documentation of DPN
 pubmed_id: 27116591
+has_pdf: true
 doi: 10.1080/10810730.2015.1103335
 region: Northern California
 specialty: General Medicine, Neurology

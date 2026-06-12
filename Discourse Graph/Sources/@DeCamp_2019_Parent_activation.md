@@ -18,6 +18,7 @@ number_of_lep: 214
 outcomes: |
   assessing knowledge, skills, and confidence in pediatric primary care and P-PAM cultural and linguistic appropriateness
 pubmed_id: 31288957
+has_pdf: true
 doi: 10.1016/j.pec.2019.07.004
 specialty: Pediatrics
 study_years: 2015

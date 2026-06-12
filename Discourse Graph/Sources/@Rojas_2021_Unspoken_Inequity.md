@@ -4,6 +4,7 @@ year: 2021
 title: "An Unspoken Inequity: Communication With Patients and Families With Limited English Proficiency"
 journal: Hospital Pediatrics
 pubmed_id: 34583320
+has_pdf: true
 doi: 10.1542/hpeds.2021-005940
 keywords: |
   interpreters, LEP, physician-patient relations

@@ -17,6 +17,7 @@ number_of_lep: 250
 outcomes: |
   validity of pictograms
 pubmed_id: 34412906
+has_pdf: true
 doi: 10.1016/j.pec.2021.07.015
 region: Singapore
 specialty: Pharmaceuticals

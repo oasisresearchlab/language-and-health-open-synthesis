@@ -17,6 +17,7 @@ number_of_lep: 152
 outcomes: |
   information/education, partnership with clinicians, and access/coordination of care
 pubmed_id: 25201156
+has_pdf: true
 doi: 10.1016/j.acap.2014.06.019
 region: National
 specialty: Pediatrics, Emergency

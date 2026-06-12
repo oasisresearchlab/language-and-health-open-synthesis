@@ -10,6 +10,7 @@ language: Arab, Assyrian, Bosnian, Hindi and Urdu
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pdf_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3355515/
 pubmed_id: 20711057
+has_pdf: true
 doi: 10.1097/wad.0b013e3181f14ad5
 region: Chicago
 specialty: psychiatry/mental health

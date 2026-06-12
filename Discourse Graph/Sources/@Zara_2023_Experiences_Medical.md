@@ -10,6 +10,7 @@ keywords: |
 language: All
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 36516127
+has_pdf: true
 doi: 10.1089/jpm.2022.0320
 region: MA
 specialty: internal medicine

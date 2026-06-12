@@ -21,6 +21,7 @@ number_of_lep: 5241
 outcomes: |
   Rates of diagnostic studies, admission, and return visits for those originally discharged from the ED.
 pubmed_id: 30187374
+has_pdf: true
 doi: 10.1007/s11606-018-4493-8
 region: Boston
 specialty: Emergency

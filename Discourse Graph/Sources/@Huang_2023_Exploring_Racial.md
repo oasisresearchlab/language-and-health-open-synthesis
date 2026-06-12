@@ -11,6 +11,7 @@ language: mandarin
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 48
 pubmed_id: 34392497
+has_pdf: true
 doi: 10.1007/s13187-021-02079-y
 region: DC
 specialty: oncology

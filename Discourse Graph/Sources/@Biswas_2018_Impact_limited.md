@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   prolonged symptom-to-door time & 30-day mortality
 pubmed_id: 29623980
+has_pdf: true
 doi: 10.1111/imj.13751
 region: Australia
 specialty: Cardiology

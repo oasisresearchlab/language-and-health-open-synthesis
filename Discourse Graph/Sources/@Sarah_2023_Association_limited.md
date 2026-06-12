@@ -14,6 +14,7 @@ outcomes: |
   Limited English proficiency is notassociated with a higher incidence of irregular departures or returnvisits within 72 h or 7 days from the ED for adult or pediatric patientsin a network of EDs in the Upper Midwest. We did find an increasedproportion of admissions upon return visits among patients with lim-ited English proficiency.
 pdf_url: https://onlinelibrary-wiley-com.ezp-prod1.hul.harvard.edu/doi/epdf/10.1111/acem.14757
 pubmed_id: 37282847
+has_pdf: false
 doi: 10.1111/acem.14757
 region: upper midwest
 specialty: Emergency Medicine

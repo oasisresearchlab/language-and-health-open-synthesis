@@ -11,6 +11,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Access and privacy in telehealth visits
 pubmed_id: 35049259
+has_pdf: false
 doi: 10.37765/ajmc.2022.88814
 region: Boston
 specialty: Primary Care

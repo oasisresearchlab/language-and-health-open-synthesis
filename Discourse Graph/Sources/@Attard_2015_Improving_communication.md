@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   effective communication
 pubmed_id: 24216076
+has_pdf: true
 doi: 10.1071/py13095
 specialty: General Medicine, Primary Care
 title: Improving communication between health-care professionals and patients with limited English proficiency in the general practice setting

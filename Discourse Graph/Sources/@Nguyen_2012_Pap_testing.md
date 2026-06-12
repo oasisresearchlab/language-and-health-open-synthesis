@@ -14,6 +14,7 @@ number_of_lep: 162
 outcomes: |
   knowledge and experience with HPV, HPV vaccine, cervical cancer and Pap testing, and attitudes toward HPV vaccine
 pubmed_id: 22447177
+has_pdf: true
 doi: 10.1007/s10903-012-9607-5
 region: northeastern United States
 specialty: Vaccination

@@ -12,6 +12,7 @@ outcomes: |
   systematic review determined that LEP status is a risk factor for poorer care and outcomes. Surgical providers should use a PMI, especially when obtaining consent, assessing pain, and providing discharge instructions. Hospital administration should also make readily available interpretive devices perioperatively and include PMI use as a metric of staff performance so that quality care is not compromised in the interest of efficiency.
 pdf_url: https://journals.lww.com/anesthesia-analgesia/fulltext/2023/06000/limited_english_proficiency_and_perioperative.13.aspx
 pubmed_id: 36066429
+has_pdf: false
 doi: 10.1213/ane.0000000000006159
 region: American urban academic hospitals
 specialty: Surgery

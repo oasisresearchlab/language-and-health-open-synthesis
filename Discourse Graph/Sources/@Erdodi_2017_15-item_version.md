@@ -12,6 +12,7 @@ keywords: |
   Boston Naming Test; bilingualism; cross-cultural competence; limited English proficiency; neuropsychological testing.
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 27556291
+has_pdf: true
 doi: 10.1080/13854046.2016.1224392
 region: Boston
 specialty: Medical Definitions

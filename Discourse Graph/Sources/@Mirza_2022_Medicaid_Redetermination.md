@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Medicaid redetermination experiences
 pubmed_id: 33755840
+has_pdf: true
 doi: 10.1007/s10903-021-01178-8
 region: Illinois
 specialty: Primary Care

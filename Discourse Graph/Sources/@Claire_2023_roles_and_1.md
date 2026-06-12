@@ -15,6 +15,7 @@ outcomes: |
   3 overarching themes were generated: the roles of medical interpreters in the care of palliative care patients with LEP, the experiences of medical interpreters in caring for palliative care patients, and recommendations from interpreters to improve communication with palliative care patients with LEP.
 pdf_url: https://www.cambridge.org/core/journals/palliative-and-supportive-care/article/roles-and-experiences-of-medical-interpreters-in-palliative-care-a-narrative-review/B4F084769CDF942C133DB91C853FD600
 pubmed_id: 37855105
+has_pdf: true
 doi: 10.1017/s1478951523001505
 specialty: Palliative Care
 study_years: 2023

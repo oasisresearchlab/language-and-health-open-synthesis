@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   communication practices were identified that contributed to inaccuracies in medical interpretation
 pubmed_id: 26796067
+has_pdf: true
 doi: 10.1016/j.pec.2015.10.032
 region: South Carolina, Oklahoma
 specialty: Pediatrics, Primary Care

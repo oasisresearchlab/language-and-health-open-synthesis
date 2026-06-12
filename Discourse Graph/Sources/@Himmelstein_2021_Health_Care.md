@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   outpatient and emergency department visits,inpatient days, and received prescription medications
 pubmed_id: 34228521
+has_pdf: true
 doi: 10.1377/hlthaff.2020.02510
 region: National
 specialty: Primary Care

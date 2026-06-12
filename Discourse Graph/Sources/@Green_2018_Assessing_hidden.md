@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   instrument's construct validity
 pubmed_id: 30117468
+has_pdf: true
 doi: 10.4103/1357-6283.239042
 region: Boston
 specialty: General Medicine

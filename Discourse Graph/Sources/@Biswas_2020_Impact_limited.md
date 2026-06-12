@@ -15,6 +15,7 @@ number_of_lep: 430
 outcomes: |
   patients' preferred spoken language, socioeconomic status, and ambulance utilization data
 pubmed_id: 31782766
+has_pdf: true
 doi: 10.1093/ehjqcco/qcz061
 region: National
 specialty: Cardiology

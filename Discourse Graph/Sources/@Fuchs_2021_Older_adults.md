@@ -4,6 +4,7 @@ year: 2021
 title: Older adults with limited English proficiency need equitable COVID-19 vaccine access
 journal: Journal of the American Geriatrics Society
 pubmed_id: 33555042
+has_pdf: true
 doi: 10.1111/jgs.17069
 specialty: Geriatrics
 study_years: 2019

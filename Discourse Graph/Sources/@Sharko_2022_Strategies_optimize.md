@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   comprehension of numerical medication instructions
 pubmed_id: 35123834
+has_pdf: true
 doi: 10.1016/j.pec.2022.01.018
 specialty: Primary Care
 study_years: 2021

@@ -19,6 +19,7 @@ number_of_lep: 156
 outcomes: |
   LEP is an independent risk factor for extended LOS
 pubmed_id: 35857019
+has_pdf: true
 doi: 10.1227/neu.0000000000002080
 region: CA
 specialty: neurosurgery

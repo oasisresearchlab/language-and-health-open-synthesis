@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   preventive aspects of stroke care such as stroke symptom awareness, anticoagulation maintenance, and knowledge of warfarin indication
 pubmed_id: 35185760
+has_pdf: true
 doi: 10.3389/fneur.2022.790553
 specialty: General Medicine
 title: "The Relationship Between Limited English Proficiency and Outcomes in Stroke Prevention, Management, and Rehabilitation: A Systematic Review"

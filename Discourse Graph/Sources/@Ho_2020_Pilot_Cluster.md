@@ -15,6 +15,7 @@ number_of_lep: 18
 outcomes: |
   dietary self-efficacy, diabetes distress, diet satisfaction, and dietary adherence; weight and glycemic control.
 pubmed_id: 33111026
+has_pdf: true
 doi: 10.1089/heq.2020.0002
 region: California
 specialty: Endocrinology

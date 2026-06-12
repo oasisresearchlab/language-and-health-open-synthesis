@@ -14,6 +14,7 @@ outcomes: |
   The majority of included interventions that studied satisfaction as an outcome measure showed improvement, while the other outcomes were not improved or worsened.
 pdf_url: https://doi.org/10.1007/s40615-024-02003-2
 pubmed_id: 38639867
+has_pdf: true
 doi: 10.1007/s40615-024-02003-2
 region: USA
 study_years: 2024-2025

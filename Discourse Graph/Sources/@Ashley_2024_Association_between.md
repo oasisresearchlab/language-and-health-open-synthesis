@@ -19,6 +19,7 @@ outcomes: |
   . First, regardless of English proficiency status, patient knowledge of the assigned cause of their kidney failure is poor. Second, overall communication among dialysis team members and patients with ESKD is suboptimal, and patient perception of communication quality trends toward poorer quality among LEP patients.
 pdf_url: https://journals.lww.com/kidney360/fulltext/2024/04000/association_between_english_proficiency_and_kidney.13.aspx
 pubmed_id: 38356152
+has_pdf: true
 doi: 10.34067/kid.0000000000000398
 region: USA
 specialty: Dialysis

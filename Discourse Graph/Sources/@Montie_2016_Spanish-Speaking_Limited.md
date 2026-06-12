@@ -17,6 +17,7 @@ number_of_lep: 10
 outcomes: |
   call light system
 pubmed_id: 27257219
+has_pdf: true
 doi: 10.1177/1540415316645919
 specialty: General Medicine
 title: Spanish-Speaking Limited English Proficiency Patients and Call Light Use

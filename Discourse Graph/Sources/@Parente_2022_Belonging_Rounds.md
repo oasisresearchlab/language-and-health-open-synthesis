@@ -4,6 +4,7 @@ year: 2022
 title: "Belonging on Rounds: Translating Research Into Inclusive Practices for Families With Limited English Proficiency to Promote Safety, Equity, and Quality"
 journal: Hospital Pediatrics
 pubmed_id: 35411380
+has_pdf: true
 doi: 10.1542/hpeds.2022-006581
 keywords: |
   equity, interpreters, LEP, participation in ward rounds, translating, language barriers

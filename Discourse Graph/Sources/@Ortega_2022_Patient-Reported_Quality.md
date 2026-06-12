@@ -20,6 +20,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   communication
 pubmed_id: 35340494
+has_pdf: true
 doi: 10.7759/cureus.22222
 region: Chicago
 specialty: General Medicine-Clinical

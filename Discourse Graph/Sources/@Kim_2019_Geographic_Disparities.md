@@ -12,6 +12,7 @@ number_of_lep: 49923?
 outcomes: |
   odds of being uninsured
 pubmed_id: 30826942
+has_pdf: true
 doi: 10.1007/s10823-019-09366-8
 region: United States
 specialty: Geriatrics

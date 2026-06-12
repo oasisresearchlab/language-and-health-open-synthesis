@@ -18,6 +18,7 @@ number_of_lep: 97
 outcomes: |
   convergent validity & rates of optimal adherence
 pubmed_id: 29625571
+has_pdf: true
 doi: 10.1186/s12913-018-3071-4
 region: California
 specialty: Pharmaceuticals

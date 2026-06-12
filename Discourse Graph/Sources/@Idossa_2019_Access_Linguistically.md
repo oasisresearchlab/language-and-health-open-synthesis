@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   (1) language service and resource needs among patients with LEP; (2) how TCs identify language needs; (3) language access services currently provided by TCs; (4) TC barriers to meeting language needs; and (5) TC language support needs from the NMDP.
 pubmed_id: 30094780
+has_pdf: true
 doi: 10.1007/s13187-018-1407-8
 region: National
 specialty: Oncology

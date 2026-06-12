@@ -21,6 +21,7 @@ outcomes: |
   Data for 4666 participants with DM were analyzed. Antihyperglycemic medications were similarly used by LEP and English-speaking people with DM, except for insulin, which was less frequently used by LEP people. Despite similar medications, LEP people using biguanides and TZDs were less likely to reach glycemic target levels (adjusted odds ratios ranging 1.7 to 3.3) compared to English-speaking people with DM.
 pdf_url: https://pubmed.ncbi.nlm.nih.gov/39875767/
 pubmed_id: 39875767
+has_pdf: true
 doi: 10.1007/s11606-025-09385-x
 specialty: Internal Medicine
 study_years: 2003-2018

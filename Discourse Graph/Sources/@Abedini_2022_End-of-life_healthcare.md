@@ -17,6 +17,7 @@ number_of_lep: 1363
 outcomes: |
   hospitalization, emergency department (ED) visits, intensive care unit (ICU) admission, and 30-day readmission; palliative care consultation and advance care planning documents
 pubmed_id: 35670104
+has_pdf: false
 doi: 10.1111/jgs.17913
 region: US
 specialty: Geriatrics

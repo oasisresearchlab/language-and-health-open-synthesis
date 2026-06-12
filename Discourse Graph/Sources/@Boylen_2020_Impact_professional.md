@@ -19,6 +19,7 @@ number_of_lep: 1753
 outcomes: |
   length of stay in hospital, unplanned readmission rates to hospital, non-attendance at hospital clinic appointments and ambulatory care, child and/or parent satisfaction with care in hospital, adherence to treatment, medication errors, and other adverse events relating to patient safety.
 pubmed_id: 32813387
+has_pdf: true
 doi: 10.11124/jbisrir-d-19-00300
 region: United States
 specialty: Pediatrics

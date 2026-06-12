@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   use of MIs
 pubmed_id: 31976363
+has_pdf: true
 doi: 10.15766/mep_2374-8265.10853
 region: Georgia
 specialty: Emergency

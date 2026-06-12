@@ -10,6 +10,7 @@ intervention: systematic review
 journal: Psychiatric Services
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 20675834
+has_pdf: true
 doi: 10.1176/ps.2010.61.8.765
 specialty: Psychiatry/mental health
 title: "Impact of patient language proficiency and interpreter service use on the quality of psychiatric care: a systematic review"

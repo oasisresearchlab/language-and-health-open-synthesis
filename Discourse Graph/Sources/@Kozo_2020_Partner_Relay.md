@@ -11,6 +11,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   (1) community engagement during planning, design, and implementation of communication plans to create buy-in and a sense of ownership; (2) dissemination of translated messages; and (3) communication through culturally appropriate and trusted channels, including individuals, community groups, and organizations.
 pubmed_id: 32078420
+has_pdf: true
 doi: 10.1089/hs.2019.0144
 region: California
 specialty: Emergency

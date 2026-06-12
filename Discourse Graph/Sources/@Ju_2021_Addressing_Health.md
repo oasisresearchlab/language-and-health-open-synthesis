@@ -18,6 +18,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   medical adherence, pain management, medical understanding, patient satisfaction, and mental health
 pubmed_id: 33468599
+has_pdf: true
 doi: 10.1542/peds.2020-032383
 specialty: Pediatrics
 title: "Addressing Health Inequities for Limited English Proficiency Patients: Interpreter Use and Beyond"

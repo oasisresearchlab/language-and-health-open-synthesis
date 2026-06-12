@@ -23,6 +23,7 @@ outcomes: |
   medication regimens and differences in procedural care based on language preference.
 pdf_url: https://pubmed.ncbi.nlm.nih.gov/40516666/
 pubmed_id: 40516666
+has_pdf: true
 doi: 10.1016/j.cpcardiol.2025.103107
 region: USA
 specialty: Cardiovascular

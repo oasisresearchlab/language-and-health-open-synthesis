@@ -14,6 +14,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   fter multiple interventions, specifically noted after intervention period #2, improvement of official interpreter service use and documentation were identified in all inpatient units.
 pubmed_id: 36584115
+has_pdf: true
 doi: 10.1097/jhq.0000000000000366
 specialty: all
 study_years: April and August 2020

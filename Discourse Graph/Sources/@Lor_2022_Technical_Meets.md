@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   (a) match between interpreter’s and patient’s gender, (b) culturally taboo topics in communicating about reproductive body parts and sexual health or activity, and (c) culture and generational language differences between Hmong interpreters and Hmong patients.
 pubmed_id: 34404302
+has_pdf: true
 doi: 10.1177/10436596211039553
 specialty: Primary Care
 study_years: 2005 & 2007

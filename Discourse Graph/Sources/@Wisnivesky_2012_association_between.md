@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   asthma control, likelihood of inpatient visits, quality of life
 pubmed_id: 22920072
+has_pdf: true
 doi: 10.1016/j.anai.2012.06.016
 region: New York, Chicago
 specialty: pulmonology, primary care

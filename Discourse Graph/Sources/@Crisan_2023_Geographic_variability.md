@@ -16,6 +16,7 @@ number_of_lep: 89
 outcomes: |
   Neuropsych Tests
 pubmed_id: 3724c6143
+has_pdf: true
 region: Romania and Canada
 study_years: 2021
 title: "Geographic variability in limited English proficiency: A cross-cultural study of cognitive profiles"

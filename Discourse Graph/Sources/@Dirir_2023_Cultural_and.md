@@ -16,6 +16,7 @@ number_of_lep: 4652
 outcomes: |
   Cultural and linguistic adaptation of STB training is a feasible, cost-effective, and effective method for disseminating life-saving information and trauma education to immigrant populations who have LEP.
 pubmed_id: 36894880
+has_pdf: true
 doi: 10.1177/00031348231162708
 region: Clarkston, GA
 study_years: 2010-2015

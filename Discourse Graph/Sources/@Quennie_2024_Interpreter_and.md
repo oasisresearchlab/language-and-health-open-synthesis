@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: N/A
 pdf_url: https://bmcmededuc.biomedcentral.com/articles/10.1186/s12909-024-05173-z
 pubmed_id: 38395858
+has_pdf: true
 doi: 10.1186/s12909-024-05173-z
 region: USA
 title: Interpreter and limited-English proficiency patient training helps develop medical and physician assistant students' cross-cultural communication skills

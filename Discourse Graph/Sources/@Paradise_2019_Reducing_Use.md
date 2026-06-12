@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   use of patients’ family members and friends as interpreters during clinical encounters
 pubmed_id: 30975471
+has_pdf: true
 doi: 10.1016/j.jcjq.2019.01.004
 region: Massachusetts
 specialty: General Medicine

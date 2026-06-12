@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   baseline use of interpreter services, use of F2F interpreters,
 pubmed_id: 34583318
+has_pdf: true
 doi: 10.1542/hpeds.2020-003889
 region: Ohio?
 specialty: Pediatrics

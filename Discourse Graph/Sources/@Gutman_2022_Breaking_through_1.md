@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   medical errors, adverse effects, and patient harm
 pubmed_id: 35072163
+has_pdf: false
 specialty: Emergency
 title: "Breaking through barriers: the need for effective research to promote language-concordant communication as a facilitator of equitable emergency care"
 year: 2022

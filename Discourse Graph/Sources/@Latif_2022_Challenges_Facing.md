@@ -14,6 +14,7 @@ keywords: |
 language: 9 languages
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 35370123
+has_pdf: true
 doi: 10.1016/j.jchf.2022.02.011
 region: MA
 specialty: cardiology

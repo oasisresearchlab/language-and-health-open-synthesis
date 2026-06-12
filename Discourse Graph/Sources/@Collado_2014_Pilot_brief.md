@@ -14,6 +14,7 @@ number_of_lep: 10
 outcomes: |
   depressive symptomatology and for the proposed BATD mechanisms: activity engagement and environmental reward
 pubmed_id: 24411118
+has_pdf: true
 doi: 10.1016/j.beth.2013.10.001
 region: Maryland
 specialty: Psychiatry/mental health

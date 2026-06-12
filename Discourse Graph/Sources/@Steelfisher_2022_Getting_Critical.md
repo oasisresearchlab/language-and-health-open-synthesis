@@ -14,6 +14,7 @@ number_of_lep: 764
 outcomes: |
   social networking
 pubmed_id: 35771967…
+has_pdf: true
 doi: 10.1089/hs.2021.0218
 region: US
 specialty: General Surgery

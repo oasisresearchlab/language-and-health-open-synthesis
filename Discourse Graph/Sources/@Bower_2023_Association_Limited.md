@@ -14,6 +14,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   higher proportions of patients with LEP were admitted to the hospital at the time of the return ED visit.
 pubmed_id: 37282847
+has_pdf: true
 doi: 10.1111/acem.14757
 region: upper midwest
 study_years: 2018-2021

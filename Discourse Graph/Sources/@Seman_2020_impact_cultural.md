@@ -16,6 +16,7 @@ number_of_lep: 542
 outcomes: |
   risk of rehospitalization and emergency department (ED) visitation after discharge
 pubmed_id: 31332442
+has_pdf: true
 doi: 10.1093/ehjqcco/qcz034
 region: Australia
 specialty: Cardiology

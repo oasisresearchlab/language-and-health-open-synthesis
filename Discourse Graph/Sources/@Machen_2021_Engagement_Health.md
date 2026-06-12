@@ -18,6 +18,7 @@ number_of_lep: 53
 outcomes: |
   use of educational materials, completion of a health coaching action plan, and degree of participation with automated telephone self-management support
 pubmed_id: 33973868
+has_pdf: true
 doi: 10.2196/24520
 region: California
 specialty: Primary Care

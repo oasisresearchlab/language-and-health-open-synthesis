@@ -16,6 +16,7 @@ number_of_lep: 739
 outcomes: |
   patients with PDAC, LEP predicted worse survival
 pubmed_id: 34258672
+has_pdf: false
 doi: 10.1007/s11605-021-05081-3
 region: US
 specialty: oncology

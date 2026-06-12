@@ -13,6 +13,7 @@ number_of_lep: 100
 outcomes: |
   Language barriers in patients with limited English proficiency (LEP) frequently results in higher healthcare expenditures and potentially poorer patient-centred outcomes
 pubmed_id: 36657957
+has_pdf: true
 doi: 10.1136/bmjoq-2022-002053
 region: Canada
 specialty: emergency department

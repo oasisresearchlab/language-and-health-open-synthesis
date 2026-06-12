@@ -15,6 +15,7 @@ number_of_lep: 249
 outcomes: |
   professional interpretation (in-person, telephone, or video interpreter) or communicating without professional interpretation (ad hoc interpreter, English, or Spanish by an uncertified speaker).
 pubmed_id: 33468598
+has_pdf: true
 doi: 10.1542/peds.2019-3312
 region: Seattle
 specialty: Pediatrics, Emergency

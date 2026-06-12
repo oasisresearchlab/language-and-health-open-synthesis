@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   1) explore topics discussed in opioid medication consults, (2) assess if students inform patients about dependency and overdose risks associated with opioid use and the manner in which those risks were introduced and discussed, and (3) assess LEP specific communication practices.
 pubmed_id: 32334757
+has_pdf: true
 doi: 10.1016/j.cptl.2019.12.024
 specialty: Pharmaceuticals
 title: Pharmacy Student Opioid Consultations with Standardized Limited English Proficiency Patients

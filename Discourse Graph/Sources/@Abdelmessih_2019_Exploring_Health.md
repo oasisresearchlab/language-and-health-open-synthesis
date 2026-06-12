@@ -13,6 +13,7 @@ number_of_lep: 15
 outcomes: |
   participants’ health care challenges and needs
 pubmed_id: 31717927
+has_pdf: true
 doi: 10.3390/pharmacy7040151
 region: Australia
 specialty: Cardiology

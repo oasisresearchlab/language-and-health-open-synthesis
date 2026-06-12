@@ -17,6 +17,7 @@ number_of_lep: 14,053
 outcomes: |
   rate of return visits resulting in admission
 pubmed_id: 23603647
+has_pdf: true
 doi: 10.1097/pec.0b013e31828e62f4
 specialty: Emergency
 title: "Unscheduled return visits to the emergency department: the impact of language"

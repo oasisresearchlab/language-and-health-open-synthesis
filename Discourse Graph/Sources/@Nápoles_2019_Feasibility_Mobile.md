@@ -18,6 +18,7 @@ number_of_lep: 23
 outcomes: |
   feasibility, acceptability, and preliminary efficacy of a culturally and linguistically suitable SCPP called the Nuevo Amanecer (New Dawn) Survivorship Care Planning Program for Spanish-speaking breast cancer patients in public hospital settings, approaching the end of active treatment.
 pubmed_id: 31290395
+has_pdf: true
 doi: 10.2196/13543
 region: California
 specialty: Oncology

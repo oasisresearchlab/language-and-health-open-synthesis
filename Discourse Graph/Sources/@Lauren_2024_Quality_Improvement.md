@@ -20,6 +20,7 @@ outcomes: |
   In response to data from our hospital showing worsened outcomes among patients with LEP who experienced RR system activation, we undertook modifications to the workflow of the RR system to prioritize the monitoring and evaluation of this at-risk population aimed at prompt clinical recognition, assessment, and improved access to interpreters. We showed that the interventions were feasible to implement and found promising impacts of the interventions on mortality rates following a RR system activation.
 pdf_url: https://link-springer-com.ezp-prod1.hul.harvard.edu/article/10.1007/s11606-024-08678-x
 pubmed_id: 38381243
+has_pdf: true
 doi: 10.1007/s11606-024-08678-x
 specialty: General Medicine
 study_years: 2021-2023

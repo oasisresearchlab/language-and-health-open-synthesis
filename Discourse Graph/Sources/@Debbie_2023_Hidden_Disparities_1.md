@@ -20,6 +20,7 @@ outcomes: |
   ential access to language-based resources
 pdf_url: https://jnccn.org/view/journals/jnccn/21/9/article-p951.xml?ArticleBodyColorStyles=inline%20pdf
 pubmed_id: 37673110
+has_pdf: false
 doi: 10.6004/jnccn.2023.7037
 region: 12 US States
 specialty: Oncology

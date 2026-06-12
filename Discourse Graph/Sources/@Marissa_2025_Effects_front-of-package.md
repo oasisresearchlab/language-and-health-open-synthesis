@@ -21,6 +21,7 @@ outcomes: |
   Text high-in labels (49% correct) led to higher correct identification of the least healthy foods compared to the numerical labels (44%, p<.001) though the icon high-in labels did not (47%, p=.07). Neither the text high-in labels (46% correct) nor the icon high-in labels (46%) led to better identification of the healthiest food compared to the numerical labels (45%, all p>=.71). Neither type of high-in label led to more correct identification of foods high in nutrients of concern or higher selection of the healthiest food for purchase compared to the numerical labels (all p>=.09). English proficiency moderated the impact of label type on correct identification of the least healthy food (p-interaction=.003) such that the benefit of high-in labels was only present for participants with high English proficiency.
 pdf_url: https://pubmed.ncbi.nlm.nih.gov/40385392/
 pubmed_id: 40385392
+has_pdf: true
 doi: 10.1101/2025.05.09.25327177
 region: USA
 specialty: Nutrition

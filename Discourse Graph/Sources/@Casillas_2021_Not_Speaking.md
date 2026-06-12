@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   portal use
 pubmed_id: 34803059
+has_pdf: true
 doi: 10.1353/hpu.2021.0182
 region: California
 specialty: Primary Care

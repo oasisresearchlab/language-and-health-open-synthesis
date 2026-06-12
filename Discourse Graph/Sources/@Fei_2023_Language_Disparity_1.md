@@ -15,6 +15,7 @@ outcomes: |
   LEP have shorter operative times and fewer post-oeprative and follow-up visits
 pdf_url: https://www-thieme-connect-de.ezp-prod1.hul.harvard.edu/products/ejournals/pdf/10.1055/a-2040-1750.pdf
 pubmed_id: 36809784
+has_pdf: false
 doi: 10.1055/a-2040-1750
 region: New York
 specialty: Microsurgery

@@ -16,6 +16,7 @@ outcomes: |
   Improvement in comfortability to use Madarin to convey medical terminology & COVID-19 vaccination safety
 pdf_url: https://mededpublish.org/articles/13-14/v3
 pubmed_id: 37736237
+has_pdf: true
 doi: 10.12688/mep.19207.3
 region: Michigan
 study_years: 2021

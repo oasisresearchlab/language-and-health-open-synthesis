@@ -15,6 +15,7 @@ number_of_lep: 100?
 outcomes: |
   completeness of discharge guidance (number of elements provided among number of applicable elements)
 pubmed_id: 31182648
+has_pdf: true
 doi: 10.1542/hpeds.2018-0250
 region: California?
 specialty: General Medicine-Inpatient

@@ -17,6 +17,7 @@ number_of_lep: 85
 outcomes: |
   interpreter scores
 pubmed_id: 31726990
+has_pdf: true
 doi: 10.1186/s12874-019-0854-1
 region: Australia
 specialty: General Medicine-Clinical

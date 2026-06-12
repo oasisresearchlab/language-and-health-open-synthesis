@@ -15,6 +15,7 @@ number_of_lep: 9513
 outcomes: |
   material need, employment, medical-legal assistance, health insurance, public benefits, health literacy, transportation, medical care, utilities, housing quality, food security, and housing insecurity
 pubmed_id: 34353369
+has_pdf: true
 doi: 10.1186/s13104-021-05720-7
 region: New York
 specialty: General Medicine

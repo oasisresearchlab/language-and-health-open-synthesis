@@ -17,6 +17,7 @@ number_of_lep: 325
 outcomes: |
   presence of USN
 pubmed_id: 35537675
+has_pdf: false
 doi: 10.1016/j.acap.2022.05.002
 region: Utah
 specialty: Pediatrics

@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   blood work and surveys pre and post intervention
 pubmed_id: 34895775
+has_pdf: true
 doi: 10.1016/j.pec.2021.11.024
 specialty: Endocrinology, Primary Care
 study_years: 2015-2017

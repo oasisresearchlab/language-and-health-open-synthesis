@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   dual-handset interpretation in bridging communication barriers and highlight recommendations to guide future implementation interventions to increase the uptake of remote language services in hospital settings
 pubmed_id: 36876231
+has_pdf: true
 doi: 10.1089/heq.2022.0023
 region: US
 specialty: general

@@ -17,6 +17,7 @@ outcomes: |
   LEP can impede the delivery of safe and effective care and lead to gaps in service provision, including improper or incomplete diagnosis, lower levels of satisfaction with care, and poor understanding of discharge advice and medications; worse access to interpreters and health care
 pdf_url: https://www.sciencedirect.com/science/article/pii/S0891524523003711?via%3Dihub
 pubmed_id: 38429024
+has_pdf: true
 doi: 10.1016/j.pedhc.2023.12.009
 region: Western Australia
 specialty: Pediatrics

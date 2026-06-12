@@ -15,6 +15,7 @@ keywords: |
   bilingual nurses; communication; language barriers; language concordant care; limited English proficiency; nursing; translation; translators.
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 27601267
+has_pdf: true
 doi: 10.1111/jan.13143
 region: UK
 specialty: General Medicine

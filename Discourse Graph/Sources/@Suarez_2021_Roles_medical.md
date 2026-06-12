@@ -18,6 +18,7 @@ number_of_lep: 99?
 outcomes: |
   advantages and disadvantages of different interpretation modalities on the professional interpreter's role in the ICU.
 pubmed_id: 33168459
+has_pdf: true
 doi: 10.1016/j.pec.2020.10.018
 region: Minnesota
 specialty: Intensive Care

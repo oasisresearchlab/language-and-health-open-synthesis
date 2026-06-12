@@ -12,6 +12,7 @@ number_of_lep: 458
 outcomes: |
   use of interpreters and therapeutic alliance
 pubmed_id: 26349073
+has_pdf: false
 doi: 10.1037/ser0000051
 specialty: General Medicine
 title: Effects of language concordance and interpreter use on therapeutic alliance in Spanish-speaking integrated behavioral health care patients

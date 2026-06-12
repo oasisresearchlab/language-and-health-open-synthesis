@@ -15,6 +15,7 @@ language: all
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 477
 pubmed_id: 35427938
+has_pdf: true
 doi: 10.1016/j.amjoto.2022.103470
 region: MA
 specialty: otolaryngol

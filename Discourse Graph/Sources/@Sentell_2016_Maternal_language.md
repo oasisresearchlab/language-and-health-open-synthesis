@@ -14,6 +14,7 @@ number_of_lep: 1,149
 outcomes: |
   birth outcomes
 pubmed_id: 26361937
+has_pdf: true
 doi: 10.1080/03630242.2015.1088114
 region: Hawaii
 specialty: Gynaecology, Obgyn

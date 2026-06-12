@@ -19,6 +19,7 @@ outcomes: |
   Twenty-nine providers participated in interviews (16 otologists, 13 audiologists). The most reported non-English language was Spanish, followed by Chinese languages. Four thematic domains were derived: barriers to care, cochlear implant (CI) candidacy evaluation, counseling, and ideal resources. Major barriers were patient desire (97%; n = 28), and lack of validated tests (72%; n = 21). Methods of CI evaluation included improvising on validated speech perception testing (59%; n = 17) and use of non-speech evaluation (52%; n = 15). One-quarter forgoes speech testing in non-Spanish-speaking patients (24%; n = 7). Suggestions to improve management include in-person interpreters (62%; n = 18) and testing battery in all languages (31%; n = 9). National survey results (n = 87 providers) demonstrated that respondents were significantly less confident in the methods of speech perception testing and in counseling on surgical hearing rehabilitation in LEP.
 pdf_url: https://pubmed.ncbi.nlm.nih.gov/39724293/
 pubmed_id: 39724293
+has_pdf: true
 doi: 10.1002/ohn.1089
 specialty: Otolaryngology-Head and Neck Surgery
 title: Clinician Perspectives on the Management of Hearing Loss in Patients With Limited English Proficiency

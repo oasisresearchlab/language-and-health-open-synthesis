@@ -14,6 +14,7 @@ language: all
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 40
 pubmed_id: 35694764
+has_pdf: true
 doi: 10.1093/arclin/acac019
 region: US
 specialty: neurosurgery

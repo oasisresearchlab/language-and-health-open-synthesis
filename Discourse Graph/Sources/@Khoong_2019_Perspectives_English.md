@@ -18,6 +18,7 @@ number_of_lep: 16
 outcomes: |
   patient perspectives on how clinicians use EHRs during clinic visits
 pubmed_id: 31120020
+has_pdf: true
 doi: 10.2196/13131
 specialty: General Medicine
 study_years: 2017-2108

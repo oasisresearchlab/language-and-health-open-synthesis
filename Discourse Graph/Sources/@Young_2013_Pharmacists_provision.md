@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   relationships between pharmacy environmental factors, pharmacists’ cognition and pharmacists’ communication with SSPs
 pubmed_id: 22554399
+has_pdf: true
 doi: 10.1016/j.sapharm.2012.02.003
 region: Wisconsin
 specialty: Pharmaceuticals

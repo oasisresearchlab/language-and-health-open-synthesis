@@ -4,6 +4,7 @@ year: 2021
 title: Presentation and Treatment of Head and Neck Keratinocyte Carcinomas in Patients Requiring Medical Interpreter Services
 journal: Dermatologic Surgery
 pubmed_id: 34699445
+has_pdf: true
 doi: 10.1097/dss.0000000000003206
 specialty: Oncology
 language: Spanish, Portuguese, and Albanian

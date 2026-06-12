@@ -18,6 +18,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Differences in care outcomes and safety risks
 pubmed_id: 32163844
+has_pdf: false
 doi: 10.1016/j.pedn.2020.02.033
 specialty: Pediatrics
 study_years: 1994-2018

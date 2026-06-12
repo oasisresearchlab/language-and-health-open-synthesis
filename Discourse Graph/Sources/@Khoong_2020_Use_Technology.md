@@ -18,6 +18,7 @@ number_of_lep: 344
 outcomes: |
   use of email, SMS text message, or phone apps to communicate with clinicians;  use of Web-based health videos or online health support groups.
 pubmed_id: 32250280
+has_pdf: true
 doi: 10.2196/16951
 region: California
 specialty: General Medicine-Clinical

@@ -16,6 +16,7 @@ outcomes: |
   his SR demonstrated consistent increased odds of missed AMI/ACS diagnosis among black patients presenting to the ED compared with white patients in most studies. We did not identify consistent associations in the same direction for other factors or for cerebrovascular/neurological diagnoses.
 pdf_url: https://qualitysafety.bmj.com/content/32/11/676.long
 pubmed_id: 36972982
+has_pdf: true
 doi: 10.1136/bmjqs-2022-015038
 region: USA majority (1 multicountry study)
 specialty: Emergency Medicine

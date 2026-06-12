@@ -19,6 +19,7 @@ number_of_lep: 55
 outcomes: |
   patient satisfaction and adherence to medical recommendations
 pubmed_id: 27540318
+has_pdf: true
 doi: 10.2147/amep.s110177
 region: Arizona
 specialty: Emergency

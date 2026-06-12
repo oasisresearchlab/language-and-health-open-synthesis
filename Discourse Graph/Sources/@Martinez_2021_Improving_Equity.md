@@ -14,6 +14,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   AIUD and RV rates
 pubmed_id: 34934875
+has_pdf: true
 doi: 10.1097/pq9.0000000000000486
 region: Virginia?
 specialty: Emergency

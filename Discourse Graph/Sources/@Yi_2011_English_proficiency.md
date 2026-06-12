@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   quality of life
 pubmed_id: 21227634
+has_pdf: true
 doi: 10.1016/j.jpainsymman.2010.09.014
 region: Texas
 specialty: Oncology

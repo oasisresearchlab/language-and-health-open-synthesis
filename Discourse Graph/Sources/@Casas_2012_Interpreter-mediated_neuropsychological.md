@@ -12,6 +12,7 @@ number_of_lep: 40
 outcomes: |
   neuropsychological test scores.
 pubmed_id: 22185676
+has_pdf: true
 doi: 10.1080/13854046.2011.640641
 specialty: Psychiatry/mental health
 title: Interpreter-mediated neuropsychological testing of monolingual Spanish speakers

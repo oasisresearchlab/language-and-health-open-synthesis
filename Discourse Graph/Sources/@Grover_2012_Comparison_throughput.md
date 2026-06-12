@@ -14,6 +14,7 @@ number_of_lep: 1,201
 outcomes: |
   total throughput time
 pubmed_id: 21947693
+has_pdf: true
 doi: 10.1007/s10903-011-9532-z
 specialty: Emergency
 title: Comparison of throughput times for limited English proficiency patient visits in the emergency department between different interpreter modalities

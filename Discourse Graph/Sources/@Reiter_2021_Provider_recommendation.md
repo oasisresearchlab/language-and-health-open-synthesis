@@ -14,6 +14,7 @@ number_of_lep: 16335
 outcomes: |
   recommendation for HPV vaccination
 pubmed_id: 33326347
+has_pdf: true
 doi: 10.1080/21645515.2020.1846399
 region: National
 specialty: Primary Care

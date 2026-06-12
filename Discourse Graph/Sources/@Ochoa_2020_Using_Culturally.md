@@ -14,6 +14,7 @@ number_of_lep: 300
 outcomes: |
   knowledge, attitude towards pap test, behavioral intentions, behavior
 pubmed_id: 31020621
+has_pdf: true
 doi: 10.1007/s13187-019-01521-6
 region: California
 specialty: Oncology

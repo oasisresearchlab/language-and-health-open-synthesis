@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Number of home health care referrals and LOS.
 pubmed_id: 21536949
+has_pdf: true
 doi: 10.1001/archpediatrics.2011.61
 region: Midwest
 specialty: Pediatrics

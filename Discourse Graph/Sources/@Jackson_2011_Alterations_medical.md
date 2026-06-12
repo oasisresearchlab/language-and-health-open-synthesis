@@ -20,6 +20,7 @@ number_of_lep: 38
 outcomes: |
   alteration rates
 pubmed_id: 20922496
+has_pdf: true
 doi: 10.1007/s11606-010-1519-2
 region: Pacific Northwest
 specialty: Primary Care

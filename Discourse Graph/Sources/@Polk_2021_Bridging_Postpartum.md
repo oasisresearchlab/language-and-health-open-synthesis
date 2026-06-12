@@ -14,6 +14,7 @@ number_of_lep: 79?
 outcomes: |
   postpartum visit attendance rate
 pubmed_id: 34671758
+has_pdf: true
 doi: 10.1089/whr.2020.0123
 region: Maryland
 specialty: Obgyn

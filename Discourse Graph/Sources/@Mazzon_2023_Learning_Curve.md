@@ -16,6 +16,7 @@ number_of_lep: 111
 outcomes: |
   A surgeon learning ECIRS with vacuum assistance can obtain proficiency in 17-50 cases. The number of procedures required for excellence remains unclear. Exclusion of more complex cases might positively affect the training, reducing unnecessary complications.
 pubmed_id: 36809750
+has_pdf: true
 doi: 10.1159/000528785
 region: europe
 specialty: urology

@@ -25,6 +25,7 @@ number_of_lep: 234
 outcomes: |
   Patient reported use of interpreters during hospitalization
 pubmed_id: 21336672
+has_pdf: true
 doi: 10.1007/s11606-010-1619-z
 region: San Francisco
 specialty: General Medicine

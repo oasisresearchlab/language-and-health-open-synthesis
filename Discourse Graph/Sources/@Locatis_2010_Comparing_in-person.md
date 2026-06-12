@@ -20,6 +20,7 @@ number_of_lep: 241
 outcomes: |
   quality of clinical encounters
 pubmed_id: 20107916
+has_pdf: true
 doi: 10.1007/s11606-009-1236-x
 region: South Carolina
 specialty: Interpreter Services

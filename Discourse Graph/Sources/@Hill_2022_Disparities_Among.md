@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   CRC screening completion
 pubmed_id: 33991265
+has_pdf: true
 doi: 10.1007/s10903-021-01214-7
 region: US
 specialty: Oncology

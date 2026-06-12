@@ -14,6 +14,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   clinical outcomes between professional interpreters and ad hoc interpreters reported positive benefits in all domains when patients used professional interpreters compared to ad hoc interpreters
 pubmed_id: 37101862
+has_pdf: false
 doi: 10.1016/j.asmr.2023.01.015
 region: U.S. Census Bureau
 specialty: orthopedic

@@ -17,6 +17,7 @@ number_of_lep: 50
 outcomes: |
   provider and interpreter preferences during clinical encounters
 pubmed_id: 25292169
+has_pdf: true
 doi: 10.1177/2150131914552846
 region: Midwest US
 specialty: Primary Care

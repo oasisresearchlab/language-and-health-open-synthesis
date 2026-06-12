@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   language was used as inclusion or exclusion criteria for study participation & whether the study explored outcomes by language.
 pubmed_id: 35652977
+has_pdf: false
 doi: 10.1007/s10903-022-01368-y
 region: US
 specialty: Neurology

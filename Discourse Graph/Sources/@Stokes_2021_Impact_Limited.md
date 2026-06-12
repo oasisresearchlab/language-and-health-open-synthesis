@@ -17,6 +17,7 @@ number_of_lep: 140
 outcomes: |
   The primary outcome was appendiceal perforation. Secondary outcomes included prior pediatrician or emergency department (ED) visits without definitive management, duration of symptoms, length of stay (LOS), initial operative or non-operative management, time from presentation to operation and return to the ED within 30 d.
 pubmed_id: 34171564
+has_pdf: true
 doi: 10.1016/j.jss.2021.05.024
 region: US
 specialty: Pediatrics

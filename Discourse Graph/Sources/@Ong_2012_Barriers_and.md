@@ -14,6 +14,7 @@ number_of_lep: 36
 outcomes: |
   intentions to use 9-1-1 in a Chinese speaking community and the barriers and facilitators to accessing EMS
 pubmed_id: 21286812
+has_pdf: true
 doi: 10.1007/s10903-011-9449-6
 region: Seattle/ King County
 specialty: Emergency

@@ -16,6 +16,7 @@ number_of_lep: 51
 outcomes: |
   trend of poorer survival rates for LEP, but not statistically significant
 pubmed_id: 38813793
+has_pdf: true
 doi: 10.1111/ajco.14076
 specialty: Oncology
 title: Addressing disparities in health outcomes for patients with advanced pancreatic cancer and limited English proficiency

@@ -18,6 +18,7 @@ outcomes: |
   LEP patients were significantly more likely to receive primary surgical management compared to primary non-surgical management 
   ; survival
 pubmed_id: 35427938
+has_pdf: false
 doi: 10.1016/j.amjoto.2022.103470
 region: Boston
 specialty: Oncology

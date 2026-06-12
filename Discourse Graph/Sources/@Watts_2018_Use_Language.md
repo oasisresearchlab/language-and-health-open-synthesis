@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   use of language services
 pubmed_id: 30189703
+has_pdf: true
 specialty: Pediatrics, Primary Care
 title: Use of Language Services for Telephone Advice by Limited English Proficiency Families in a Pediatric Primary Care Setting
 year: 2018

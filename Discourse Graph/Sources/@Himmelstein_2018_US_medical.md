@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   survey on curricula offered by US medical schools regarding working with interpreters and/or patients with LEP
 pubmed_id: 30319306
+has_pdf: true
 doi: 10.2147/amep.s176028
 region: United States
 specialty: Medical student, Provider Education

@@ -16,6 +16,7 @@ language: Spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 17
 pubmed_id: 33991058
+has_pdf: true
 doi: 10.1111/wvn.12505
 specialty: Endocrinology
 title: Feasibility and Acceptability of a Language Concordant Health Coaching Intervention Delivered by Nurses for Latinx With Type 2 Diabetes

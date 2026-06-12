@@ -16,6 +16,7 @@ number_of_lep: 241
 outcomes: |
   suboptimal pain management and recovery
 pubmed_id: 34039923
+has_pdf: true
 doi: 10.1097/ta.0000000000003294
 specialty: Trauma
 study_years: 2018

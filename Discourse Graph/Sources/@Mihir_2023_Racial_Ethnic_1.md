@@ -13,6 +13,7 @@ outcomes: |
   Patients with LEP received significantly fewer opioids in general, when treated for the most frequent conditions and when treated for conditions typically associated with pain such as abdominal pain, acute back pain, and pancreatitis. A
 pdf_url: https://onlinelibrary-wiley-com.ezp-prod1.hul.harvard.edu/doi/10.1155/2023/1658413
 pubmed_id: 37780096
+has_pdf: false
 doi: 10.1155/2023/1658413
 region: California
 specialty: Internal Medicine

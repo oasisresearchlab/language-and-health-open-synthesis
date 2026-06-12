@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   barriers to medical interpretation and experiences in the clinical setting
 pubmed_id: 26726861
+has_pdf: true
 specialty: General Medicine
 title: Patient Perspectives on the Need for and Barriers to Professional Medical Interpretation
 year: 2016

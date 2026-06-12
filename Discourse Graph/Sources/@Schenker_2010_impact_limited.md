@@ -16,6 +16,7 @@ number_of_lep: 522
 outcomes: |
   Quality of clinical interactions was based on 5 questions drawn from validated scales on communication, 2 on trust, and 3 on discrimination
 pubmed_id: 20223615
+has_pdf: true
 doi: 10.1016/j.pec.2010.02.005
 region: Northern California
 specialty: Endocrinology & Primary Health

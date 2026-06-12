@@ -18,6 +18,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   accuracy of self-assessment of non-English language proficiency
 pubmed_id: 24556893
+has_pdf: true
 doi: 10.1097/mlr.0000000000000102
 region: California, Massachusetts
 specialty: Primary Care

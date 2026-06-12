@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   asthma knowledge score
 pubmed_id: 27780380
+has_pdf: true
 doi: 10.1080/02770903.2016.1251597
 region: United States
 specialty: Pulmonology

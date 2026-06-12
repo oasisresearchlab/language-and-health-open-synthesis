@@ -10,6 +10,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   clinicians' perceptions and use of interpreter services
 pubmed_id: 23054539
+has_pdf: true
 doi: 10.1007/s10903-012-9722-3
 region: California
 specialty: General Medicine

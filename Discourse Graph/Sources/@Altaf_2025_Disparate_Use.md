@@ -14,6 +14,7 @@ outcomes: |
   LEP status was associated with greater receipt of laboratory tests (OR = 1.46, p < 0.05) but less CT/MRI in the ambulatory setting (0.86, p < 0.05), patterns that persisted in analyses stratified by insurance status. Factoring in patient-provider communication attenuated but did not eliminate these disparities, with attenuation most notable in rates of CT/MRI. We found fewer testing disparities for patients with LEP in the ED than in ambulatory settings.
 pdf_url: https://pubmed.ncbi.nlm.nih.gov/39810913/
 pubmed_id: 39810913
+has_pdf: true
 doi: 10.1212/CPJ.0000000000200417
 specialty: Neurology
 study_years: 2003-2018

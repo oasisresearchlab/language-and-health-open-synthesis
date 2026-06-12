@@ -14,6 +14,7 @@ number_of_lep: 71
 outcomes: |
   (1) what information was most important in deciding where to deliver and why; and (2) who participated in the decision-making and why.
 pubmed_id: 29018590
+has_pdf: true
 region: Hawaii
 specialty: Obgyn
 study_years: 2013-2015

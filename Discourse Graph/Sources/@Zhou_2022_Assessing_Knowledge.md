@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   knowledge of IBH  and external behavioral healthcare
 pubmed_id: 35059949
+has_pdf: true
 doi: 10.1007/s10903-021-01319-z
 specialty: Primary Care
 title: Assessing Knowledge and Experience of Integrated Behavioral Health among Patients with Limited English Proficiency at a Diverse, Urban Federally Qualified Health Center

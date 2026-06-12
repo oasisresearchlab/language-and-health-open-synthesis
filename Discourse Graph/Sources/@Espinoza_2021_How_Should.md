@@ -8,6 +8,7 @@ intervention: Case and Commentary
 journal: AMA Journal of Ethics
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 33635190
+has_pdf: true
 doi: 10.1001/amajethics.2021.109
 specialty: General Medicine
 title: How Should Clinicians Respond to Language Barriers That Exacerbate Health Inequity?

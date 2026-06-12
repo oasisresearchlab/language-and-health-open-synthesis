@@ -14,6 +14,7 @@ number_of_lep: 184
 outcomes: |
   length of stay (LOS)
 pubmed_id: 31994413
+has_pdf: true
 doi: 10.1177/0009922820902439
 specialty: Pediatrics, Urgent Care
 study_years: 2016

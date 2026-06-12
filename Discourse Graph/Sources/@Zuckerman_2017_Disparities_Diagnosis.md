@@ -15,6 +15,7 @@ number_of_lep: 94
 outcomes: |
   barriers to ASD diagnosis, current service use, and unmet therapy need
 pubmed_id: 28557734
+has_pdf: true
 doi: 10.1542/peds.2016-3010
 region: California, Colorado, Oregon
 specialty: Pediatrics

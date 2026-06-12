@@ -18,6 +18,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Desire to Communicate; Desire to Connect; Desire to Provide Care; and Desire to Provide Cultural Respect and Understanding.
 pubmed_id: 27571582
+has_pdf: false
 doi: 10.1111/jocn.13567
 region: Western USA
 specialty: Nursing, General Medicine

@@ -16,6 +16,7 @@ outcomes: |
   Examples where 95% confidence intervals of odds ratios of liver cancer were elevated included having poor English-speaking proficiency
 pdf_url: https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-023-16809-y
 pubmed_id: 37814225
+has_pdf: true
 doi: 10.1186/s12889-023-16809-y
 region: Australia (New South Wales)
 specialty: Oncology

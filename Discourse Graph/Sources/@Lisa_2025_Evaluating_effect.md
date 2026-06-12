@@ -17,6 +17,7 @@ outcomes: |
   Currently ongoing
 pdf_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12175361/
 pubmed_id: 40528191
+has_pdf: true
 doi: 10.1186/s13063-025-08852-4
 region: Australia
 specialty: General practice

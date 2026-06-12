@@ -16,6 +16,7 @@ keywords: |
   access; children with special health care needs; disabled children; health care disparities; health services accessibility; health services research; language; limited English proficiency; minority health; quality of health care.
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 24602575
+has_pdf: true
 doi: 10.1016/j.acap.2013.10.003
 specialty: Pediatrics
 title: "Parental limited English proficiency and health outcomes for children with special health care needs: a systematic review"

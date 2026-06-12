@@ -13,6 +13,7 @@ keywords: |
 language: Spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 31161138
+has_pdf: true
 doi: 10.15766/mep_2374-8265.10826
 region: Connecticut
 specialty: General Medicine

@@ -14,6 +14,7 @@ language: spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 42
 pubmed_id: 36400063
+has_pdf: true
 doi: 10.1080/21548331.2022.2150416
 region: NC
 specialty: emergency department

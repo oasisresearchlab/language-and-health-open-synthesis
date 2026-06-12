@@ -17,6 +17,7 @@ number_of_lep: 47
 outcomes: |
   discharge education
 pubmed_id: 30048713
+has_pdf: true
 doi: 10.1016/j.acap.2018.07.004
 region: Seattle?
 specialty: Pediatrics, Emergency

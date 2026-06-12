@@ -34,6 +34,7 @@ outcomes: |
   no detected difference in advanced diagnostic imagining acquisition for both ED and LEP patients.
 pdf_url: https://www-sciencedirect-com.ezp-prod1.hul.harvard.edu/science/article/pii/S0736467923003177?via%3Dihub
 pubmed_id: 37635035
+has_pdf: true
 doi: 10.1016/j.jemermed.2023.05.020
 specialty: Emergency Medicine
 study_years: 2015-2016

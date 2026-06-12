@@ -18,6 +18,7 @@ outcomes: |
   6 major themes: feelings of loneliness, greater risk, reliance on family to bridge language gaps, a reduction of inequity with physicians speaking their language, perceived respectful interactions, and the quality of the relaitonship with physicians.
 pdf_url: https://www-sciencedirect-com.ezp-prod1.hul.harvard.edu/science/article/pii/S2772628223000572?via%3Dihub
 pubmed_id: 37384163
+has_pdf: true
 doi: 10.1016/j.pecinn.2023.100177
 region: Northeast Coast U.S.
 study_years: 2016-2018

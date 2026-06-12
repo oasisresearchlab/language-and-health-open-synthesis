@@ -14,6 +14,7 @@ outcomes: |
   e discovered Chinese elders were likely to believe that the LTSS services could, if managed properly, meet their needs, while the Spanish speakers were more skeptical.
 pdf_url: https://pubmed.ncbi.nlm.nih.gov/38801256/
 pubmed_id: 38801256
+has_pdf: true
 doi: 10.1080/08959420.2024.2347807
 title: Use of Long-Term Care Services by Older Persons with Limited English Proficiency
 year: 2025

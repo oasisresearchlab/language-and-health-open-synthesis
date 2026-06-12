@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   language proficiency
 pubmed_id: 33158441
+has_pdf: true
 doi: 10.1186/s12909-020-02323-x
 region: Boston
 specialty: General Medicine

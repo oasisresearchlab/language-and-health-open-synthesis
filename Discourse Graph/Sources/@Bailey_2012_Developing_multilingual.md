@@ -14,6 +14,7 @@ number_of_lep: 200
 outcomes: |
   accuracy of ConcordantRx instructions.
 pubmed_id: 22643463
+has_pdf: true
 doi: 10.1353/hpu.2012.0000
 region: Chicago & San Francisco
 specialty: pharmaceuticals

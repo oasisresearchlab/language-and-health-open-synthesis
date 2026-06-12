@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   communication with and understanding
 pubmed_id: 33295185
+has_pdf: true
 doi: 10.1177/1049909120979982
 specialty: Palliative care
 title: The Premise and Development of CHECK IN-Check-In for Exchange of Clinical and Key Information to Enhance Palliative Care Discussions for Patients With Limited English Proficiency

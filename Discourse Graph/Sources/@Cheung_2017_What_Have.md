@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   psychiatric consultation rates
 pubmed_id: 28413091
+has_pdf: true
 doi: 10.1016/j.psym.2017.02.006
 region: New York
 specialty: Psychiatry/mental health

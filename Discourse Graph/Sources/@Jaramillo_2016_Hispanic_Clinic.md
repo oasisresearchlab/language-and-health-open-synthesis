@@ -17,6 +17,7 @@ number_of_lep: 99
 outcomes: |
   communication, trust, perceived discrimination and patient-provider language concordance.
 pubmed_id: 26474548
+has_pdf: true
 doi: 10.1016/j.jpedsurg.2015.08.065
 region: Northern California
 specialty: Pediatrics

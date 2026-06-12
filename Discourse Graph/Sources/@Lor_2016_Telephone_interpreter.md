@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   (1) pharmacy: communication from student pharmacist the interpreter to patient and (2) patient: communication from patient to interpreter to student pharmacist.
 pubmed_id: 26311231
+has_pdf: true
 doi: 10.1111/ijpp.12206
 region: Midwestern US
 specialty: General Medicine

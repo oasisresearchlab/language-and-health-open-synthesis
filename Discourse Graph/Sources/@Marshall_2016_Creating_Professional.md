@@ -11,6 +11,7 @@ intervention: restructuring the Diversity Services Department, redefining priori
 journal: The Joint Commission Journal on Quality and Patient Safety
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 27712605
+has_pdf: true
 doi: 10.1016/s1553-7250(16)42063-5
 region: Los Angeles?
 specialty: Emergency, General Medicine

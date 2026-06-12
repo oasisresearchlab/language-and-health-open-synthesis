@@ -12,6 +12,7 @@ number_of_lep: 30
 outcomes: |
   pain and nausea
 pubmed_id: 35258580
+has_pdf: false
 doi: 10.1001/jamanetworkopen.2022.1485
 region: Texas
 specialty: Neurology

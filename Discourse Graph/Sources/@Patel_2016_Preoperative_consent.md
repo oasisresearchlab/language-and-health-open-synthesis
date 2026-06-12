@@ -17,6 +17,7 @@ number_of_lep: 86?
 outcomes: |
   preoperative informed consent process
 pubmed_id: 26541685
+has_pdf: true
 doi: 10.1016/j.jss.2015.09.033
 specialty: General Medicine
 study_years: 2013-2014

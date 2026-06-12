@@ -18,6 +18,7 @@ outcomes: |
   Lack of documentation of prexxisting conditions and events leading to emergency for limited profiency in German,
 pdf_url: https://bmcpediatr.biomedcentral.com/articles/10.1186/s12887-023-04121-y
 pubmed_id: 37344777
+has_pdf: true
 doi: 10.1186/s12887-023-04121-y
 region: Germany
 specialty: Pediatrics

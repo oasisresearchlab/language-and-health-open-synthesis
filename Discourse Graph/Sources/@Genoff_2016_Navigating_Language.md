@@ -16,6 +16,7 @@ keywords: |
   communication barriers; language; limited English proficiency; patient navigators.
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 26786875
+has_pdf: true
 doi: 10.1007/s11606-015-3572-3
 specialty: Primary Care, Oncology
 title: "Navigating Language Barriers: A Systematic Review of Patient Navigators' Impact on Cancer Screening for Limited English Proficient Patients"

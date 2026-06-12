@@ -17,6 +17,7 @@ outcomes: |
   Individuals with LEP experienced higher odds of a 72-hr ED revisit (aOR 1.12, 95% CI 1.04-1.21, p < .001) and lower odds of AMA departure (aOR 0.67, 95% CI, 0.61-0.74, p < .001). An interaction was found between LEP status and the nurse work environment: individuals with LEP experienced lower odds of a 72-hr ED revisit in better vs. poor nurse work environments, compared those without LEP.
 pdf_url: https://www.nursingoutlook.org/article/S0029-6554(24)00211-2/fulltext
 pubmed_id: 39612563
+has_pdf: true
 doi: 10.1016/j.outlook.2024.102318
 region: New jersey
 specialty: Emergency Medicine

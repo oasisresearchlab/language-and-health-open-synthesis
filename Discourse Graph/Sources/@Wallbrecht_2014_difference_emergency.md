@@ -15,6 +15,7 @@ number_of_lep: 124
 outcomes: |
   length of stay
 pubmed_id: 24389777
+has_pdf: true
 doi: 10.1097/smj.0000000000000037
 specialty: Emergency
 study_years: 2011

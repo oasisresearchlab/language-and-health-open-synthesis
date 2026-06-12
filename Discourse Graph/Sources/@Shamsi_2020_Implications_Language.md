@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   healthcare access, patient satisfaction, and communication.
 pubmed_id: 32411417
+has_pdf: true
 doi: 10.5001/omj.2020.40
 region: United States, Saudi Arabia, Switzerland, Canada, Germany, England, Norway, South Africa
 specialty: General Medicine

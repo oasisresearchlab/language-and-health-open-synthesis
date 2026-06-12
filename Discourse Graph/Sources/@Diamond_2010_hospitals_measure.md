@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Degree of meeting each of the 4 language-related CLAS standards.
 pubmed_id: 21063229
+has_pdf: true
 doi: 10.1097/mlr.0b013e3181f380bc
 region: United States
 specialty: General Medicine

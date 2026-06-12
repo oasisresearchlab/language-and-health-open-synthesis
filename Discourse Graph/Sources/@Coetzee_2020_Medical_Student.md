@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   confidence in ability to work with interpreters
 pubmed_id: 32440571
+has_pdf: true
 doi: 10.1177/2382120520918862
 region: Minnesota
 specialty: Medical student, Provider Education

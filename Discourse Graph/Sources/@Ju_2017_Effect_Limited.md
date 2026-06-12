@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   7- and 30-day readmission
 pubmed_id: 27923838
+has_pdf: true
 doi: 10.1542/hpeds.2016-0069
 specialty: Pediatrics
 study_years: 2008-2014

@@ -23,6 +23,7 @@ year: 2023
 factors:
   - Limited English Proficiency (LEP)
 nodeInstanceId: 019e8dd8-2bc7-7b18-a381-ce2c69edb02f
+has_pdf: true
 ---
 
 

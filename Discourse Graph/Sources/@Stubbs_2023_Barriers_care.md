@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   The lack of awareness of these differences in disease patterns, treatment needs, and outcomes between pediatric versus adult onset disease, can lead to inappropriate under treatment and a missed opportunity to limit the severity of extracutaneous morbidity, resulting in higher disease burden and poorer outcome in juvenile LS patients.
 pubmed_id: 37098622
+has_pdf: true
 doi: 10.1186/s12969-023-00819-6
 region: Tennesse
 specialty: rheumatologist

@@ -19,6 +19,7 @@ number_of_lep: 83,577?
 outcomes: |
   4-item scale ranging from 0 to 100 measuring how positively patients view their health care providers' communication
 pubmed_id: 33559065
+has_pdf: true
 doi: 10.1007/s11606-020-06391-z
 region: United States
 specialty: Primary Care

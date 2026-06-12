@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 24
 pdf_url: https://pubmed.ncbi.nlm.nih.gov/38809467/
 pubmed_id: 38809467
+has_pdf: true
 doi: 10.1007/s40615-024-02029-6
 specialty: Pediatric ICU
 title: "Caregiver Satisfaction with Medical Providers' Communication: Comparison Between Spanish-Speaking Caregivers with Limited English Proficiency (LEP) and Caregivers Who Are English-Proficient (EP)"

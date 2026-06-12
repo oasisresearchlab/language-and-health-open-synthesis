@@ -11,6 +11,7 @@ journal: Current Opinion in Pediatrics
 language: Spanish & other
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 27496057
+has_pdf: true
 doi: 10.1097/mop.0000000000000404
 specialty: Pediatrics
 title: "Lost in translation: impact of language barriers on children's healthcare"

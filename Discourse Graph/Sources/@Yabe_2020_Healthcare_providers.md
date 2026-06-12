@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   preference uses for critical care and non critical care, preference in-person interpreting for critical care to obtain effective communication, translation accuracy, and better treatment.
 pubmed_id: 31791822
+has_pdf: true
 doi: 10.1016/j.dhjo.2019.100870
 specialty: General Medicine
 title: "Healthcare providers' and deaf patients' interpreting preferences for critical care and non-critical care: Video remote interpreting"

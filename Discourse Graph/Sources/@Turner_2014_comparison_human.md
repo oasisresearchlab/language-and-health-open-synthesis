@@ -20,6 +20,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   (1) Estimated times for various HT tasks; (2) observed postediting times for MT documents; (3) actual costs for HT; and (4) comparison of quality ratings for HT and MT.
 pubmed_id: 24084391
+has_pdf: true
 doi: 10.1097/phh.0b013e3182a95c87
 region: Washington
 specialty: Public Health

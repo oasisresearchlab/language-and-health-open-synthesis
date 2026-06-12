@@ -20,6 +20,7 @@ number_of_lep: 22427
 outcomes: |
   ongoing research on the quality and clinical outcomes associated with telemedicine visit types is imperative for drawing conclusions about the appropriateness of each visit type for addressing the care needs of patients with LEP.
 pubmed_id: 363572
+has_pdf: true
 region: northern california
 specialty: internal medicine
 study_years: 2020

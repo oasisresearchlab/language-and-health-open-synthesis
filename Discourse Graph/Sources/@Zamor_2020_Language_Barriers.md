@@ -17,6 +17,7 @@ number_of_lep: 439
 outcomes: |
   frequencies of chest x-ray and bronchodilator orders,  diagnostic testing, medication orders, and disposition.
 pubmed_id: 31981655
+has_pdf: true
 doi: 10.1016/j.acap.2020.01.006
 region: Midwest
 specialty: Pediatrics, Emergency

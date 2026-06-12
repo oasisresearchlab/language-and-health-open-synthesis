@@ -16,6 +16,7 @@ outcomes: |
   Among noninstitutionalized beneficiaries (n = 20 715), 4.8% had limited English speaking proficiency, 7.0% had limited English reading proficiency, and 67.7% had used at least 1 CMS resource. After regression adjustment, beneficiaries with limited English reading proficiency were 16.3 percentage points less likely to have used a CMS resource compared to beneficiaries who reported English reading proficiency (p < .001). Limited English speaking proficiency was not associated with CMS resource use.
 pdf_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11771191/
 pubmed_id: 39872412
+has_pdf: true
 doi: 10.1093/geroni/igae105
 specialty: CMS
 study_years: 2016-2018

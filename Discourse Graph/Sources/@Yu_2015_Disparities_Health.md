@@ -17,6 +17,7 @@ number_of_lep: 1,896
 outcomes: |
   effects of primary household language on the attainment of the 6 health care quality indicators for CSHCN
 pubmed_id: 27621998
+has_pdf: true
 doi: 10.21106/ijma.51
 region: National
 specialty: Pediatrics

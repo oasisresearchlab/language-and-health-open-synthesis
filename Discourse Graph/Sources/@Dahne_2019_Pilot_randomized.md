@@ -18,6 +18,7 @@ number_of_lep: 42
 outcomes: |
   feasibility; Depressive symptoms
 pubmed_id: 30870770
+has_pdf: true
 doi: 10.1016/j.jad.2019.03.009
 region: National
 specialty: Psychiatry/mental health

@@ -14,6 +14,7 @@ number_of_lep: 25
 outcomes: |
   cultural understanding and the therapeutic alliance
 pubmed_id: 32988324
+has_pdf: true
 doi: 10.1176/appi.ps.202000085
 region: New York
 specialty: Psychiatry/mental health

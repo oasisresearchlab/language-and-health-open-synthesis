@@ -17,6 +17,7 @@ number_of_lep: 220
 outcomes: |
   how these women currently use short message service (SMS) technology and/or access e-mail, the costs they incur for these services, and their preferences for and receptiveness to receiving appointment reminders through a variety of modalities including text, e-mail, phone, or direct mail.
 pubmed_id: 27509170
+has_pdf: true
 doi: 10.1111/jmwh.12494
 specialty: Gynaecology, Obgyn
 title: "Language-Appropriate Appointment Reminders: Assessing the Communication Preferences of Women With Limited English Proficiency"

@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   cultural awareness
 pubmed_id: 32945787
+has_pdf: true
 doi: 10.1188/20.cjon.530-537
 specialty: Oncology
 title: "Cultural Awareness: Ensuring High-Quality Care for Limited English Proficient Patients"

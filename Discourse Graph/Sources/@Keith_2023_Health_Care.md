@@ -12,6 +12,7 @@ outcomes: |
   Review suggests the following to improve equoty among immigrant children health: understand your local immigration population, promote health insurance access, ensure language access, add programs to support, engage in political advocacy
 pdf_url: https://www-clinicalkey-com.ezp-prod1.hul.harvard.edu/#!/content/playContent/1-s2.0-S0031395523000585?returnurl=null&referrer=null
 pubmed_id: 37422315
+has_pdf: true
 doi: 10.1016/j.pcl.2023.03.011
 specialty: Pediatrics
 title: "Health Care for Children in Immigrant Families: Key Considerations and Addressing Barriers"

@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   translation workflow and identify functional requirements for a translation system for PH.
 pubmed_id: 25445922
+has_pdf: true
 doi: 10.1016/j.jbi.2014.10.005
 region: Washington
 specialty: Public Health

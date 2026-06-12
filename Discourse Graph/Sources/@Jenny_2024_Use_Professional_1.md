@@ -12,6 +12,7 @@ outcomes: |
   The findings of this cohort study indicate limited recorded interpreter usage for patients with LEP, suggesting the potential underutilization of available services.
 pdf_url: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2814572
 pubmed_id: 38319663
+has_pdf: false
 doi: 10.1001/jamanetworkopen.2023.55014
 region: urban academic center
 specialty: Surgery

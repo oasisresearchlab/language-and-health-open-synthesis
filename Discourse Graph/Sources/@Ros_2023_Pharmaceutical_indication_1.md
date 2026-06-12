@@ -20,6 +20,7 @@ outcomes: |
   There is a correlation between health literacy and pictogram comprehension. While there is no clear comphrension differentiation between adequete and low, these levels of literacy can impact one's ability to understand the pictures.
 pdf_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10623492/
 pubmed_id: 37927939
+has_pdf: false
 doi: 10.4102/hsag.v28i0.2192
 region: rural South Africa
 specialty: Pharmaceutical

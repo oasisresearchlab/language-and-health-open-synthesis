@@ -10,6 +10,7 @@ language: alll
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 209
 pubmed_id: 35693366
+has_pdf: true
 doi: 10.7759/cureus.24839
 region: NY
 specialty: otolaryngology

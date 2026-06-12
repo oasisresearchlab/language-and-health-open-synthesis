@@ -17,6 +17,7 @@ number_of_lep: 42
 outcomes: |
   feasibility and cultural acceptability
 pubmed_id: 24204069
+has_pdf: true
 doi: 10.3122/jabfm.2013.06.130005
 region: Michigan
 specialty: Obgyn, Family Medicine

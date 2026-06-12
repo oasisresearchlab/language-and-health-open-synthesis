@@ -20,6 +20,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   readmission to the hospital from home health care.
 pubmed_id: 34710627
+has_pdf: true
 doi: 10.1016/j.ijnurstu.2021.104093
 region: New York
 specialty: Home Health Care

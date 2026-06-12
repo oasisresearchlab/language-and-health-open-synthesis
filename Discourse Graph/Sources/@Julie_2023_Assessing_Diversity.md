@@ -15,6 +15,7 @@ outcomes: |
   Languages other than English and Spanish served as barriers to enrollment both due to patient choice and due to a hindrance to workflow.
 pdf_url: https://www.sciencedirect.com/science/article/pii/S0149291823002205?via%3Dihub
 pubmed_id: 37429778
+has_pdf: true
 doi: 10.1016/j.clinthera.2023.06.014
 region: San Diego
 specialty: Neonatal ICU

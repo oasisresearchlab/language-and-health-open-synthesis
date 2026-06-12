@@ -12,6 +12,7 @@ number_of_lep: 5854
 outcomes: |
   receipt of vaccinations
 pubmed_id: 21991435
+has_pdf: true
 doi: 10.4061/2011/298787
 region: United States
 specialty: Vaccination

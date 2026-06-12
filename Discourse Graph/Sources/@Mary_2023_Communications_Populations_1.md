@@ -11,6 +11,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Future studies should (1) examine other language groups, in addition to Spanish; (2) examine other outbreak types beyond just COVID-19; (3) use study designs with quantitative methods and random, representative samples where possible; (4) go beyond documenting information availability and also examine which information is used or preferred by populations with LEP; (5) examine more nuanced barriers to communication beyond language translation, including cultural relevance and social context; and (6) report findings according to individual languages or level of English proficiency rather than reporting only about larger groups that include people with LEP.
 pubmed_id: 37889614
+has_pdf: false
 doi: 10.1089/hs.2023.0050
 study_years: 2009-2023
 title: "Communications for US Populations With Limited English Proficiency During Infectious Disease Outbreaks: A Scoping Review"

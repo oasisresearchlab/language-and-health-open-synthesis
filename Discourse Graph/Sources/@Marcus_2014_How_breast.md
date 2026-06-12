@@ -13,6 +13,7 @@ number_of_lep: 180
 outcomes: |
   use of different communication practices
 pubmed_id: 23324987
+has_pdf: true
 doi: 10.1007/s10903-012-9771-7
 region: Connecticut
 specialty: Gynaecology, Radiology

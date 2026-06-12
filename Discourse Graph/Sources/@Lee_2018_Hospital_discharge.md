@@ -18,6 +18,7 @@ number_of_lep: 189
 outcomes: |
   Pre-post discharge preparedness
 pubmed_id: 28774652
+has_pdf: true
 doi: 10.1016/j.pec.2017.07.026
 specialty: General Medicine – Inpatient
 study_years: 2012-2013

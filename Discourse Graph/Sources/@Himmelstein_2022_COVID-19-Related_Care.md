@@ -4,6 +4,7 @@ year: 2022
 title: COVID-19-Related Care for Hispanic Elderly Adults With Limited English Proficiency
 journal: Annals of Internal Medicine
 pubmed_id: 34698514
+has_pdf: true
 doi: 10.7326/m21-2900
 specialty: Primary Care
 language: Spanish

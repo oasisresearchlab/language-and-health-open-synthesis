@@ -11,6 +11,7 @@ keywords: |
   none
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 35912708
+has_pdf: true
 doi: 10.1002/jhm.12925
 region: MA
 specialty: internal medicine

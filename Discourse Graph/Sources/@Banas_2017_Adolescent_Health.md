@@ -9,6 +9,7 @@ keywords: |
   Adolescent; Community health; Healthcare; Immigrant; Interpreting; Limited English proficiency; School health.
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 28144769
+has_pdf: true
 doi: 10.1007/s10900-016-0312-5
 specialty: General Medicine
 title: The Adolescent Health Care Broker-Adolescents Interpreting for Family Members and Themselves in Health Care

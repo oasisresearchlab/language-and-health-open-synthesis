@@ -13,6 +13,7 @@ number_of_lep: 590
 outcomes: |
   LAS allowed for better patient-provider communication and appropriate pain management
 pubmed_id: 36983663
+has_pdf: true
 doi: 10.3390/jpm13030481
 specialty: oncology
 study_years: March 2016 and August 2021.

@@ -13,6 +13,7 @@ outcomes: |
   EP patients had increasedrates of 30‐day DVT and 30‐day VTE
 pdf_url: https://onlinelibrary-wiley-com.ezp-prod1.hul.harvard.edu/doi/epdf/10.1002/msc.1724
 pubmed_id: 36536487
+has_pdf: false
 doi: 10.1002/msc.1724
 region: '"diverse urban center"'
 specialty: Orthopedic Surgery

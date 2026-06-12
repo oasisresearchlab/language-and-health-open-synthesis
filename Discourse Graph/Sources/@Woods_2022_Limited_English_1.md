@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   mortality, length of stay (LOS), readmissions/revisits, and complications
 pubmed_id: 35112283
+has_pdf: true
 doi: 10.1007/s11606-021-07348-6
 specialty: General Medicine-Clinical
 study_years: 2020

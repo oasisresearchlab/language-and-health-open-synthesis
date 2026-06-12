@@ -15,6 +15,7 @@ language: Spanish & other
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 2679
 pubmed_id: 29256085
+has_pdf: true
 doi: 10.1007/s11606-017-4242-4
 specialty: psychiatry/mental health
 study_years: 2000-2017

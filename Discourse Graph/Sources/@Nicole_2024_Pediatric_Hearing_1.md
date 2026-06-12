@@ -15,6 +15,7 @@ outcomes: |
   LEP wear hearing aids for shorter times than EP counterparts regardless of severity of hearing loss
 pdf_url: https://web-p-ebscohost-com.ezp-prod1.hul.harvard.edu/ehost/pdfviewer/pdfviewer?vid=0&sid=860fdc15-dc66-45f0-8a22-5879cdccd90c%40redis
 pubmed_id: 38466937
+has_pdf: false
 doi: 10.1044/2023_aja-23-00043
 region: Tennessee
 specialty: Pediatrics, Audiology, Pedaitric Audiology

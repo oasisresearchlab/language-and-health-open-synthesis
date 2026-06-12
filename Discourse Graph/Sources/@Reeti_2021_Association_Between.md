@@ -13,6 +13,7 @@ number_of_lep: 1600
 outcomes: |
   LEP were less likely to have access to preventative care, they were also less likely to delay necessary care
 pubmed_id: 34097162
+has_pdf: false
 doi: 10.1007/s10903-021-01224-5
 region: California
 specialty: general

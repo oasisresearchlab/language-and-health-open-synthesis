@@ -10,6 +10,7 @@ keywords: |
 language: German, enlgush and French
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 36397065
+has_pdf: true
 doi: 10.1186/s12913-022-08771-z
 region: switzerland
 specialty: emergency department

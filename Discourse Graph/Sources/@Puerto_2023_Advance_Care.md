@@ -13,6 +13,7 @@ number_of_lep: 29
 outcomes: |
   ACP translations are confusing; (2). ACP understanding is affected by country of origin; (3). ACP understanding is affected by local healthcare provider culture and practice; and (4)
 pubmed_id: 36794526
+has_pdf: true
 doi: 10.1177/07334648231156864
 region: US
 specialty: internal medicine

@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   health outcomes
 pubmed_id: 25044779
+has_pdf: true
 region: National
 specialty: Primary Care
 title: Primary care for limited English-speaking patients and parents

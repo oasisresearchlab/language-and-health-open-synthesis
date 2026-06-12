@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   1) Communication, language barriers, and health literacy, (2) Relationships with health care professionals, (3) Discrimination and intersection with other dimensions of identity, and (4) Cultural safety.
 pubmed_id: 30203377
+has_pdf: true
 doi: 10.1007/s10903-018-0816-4
 region: United States, Australia, UK, Ireland, Canada
 specialty: General Medicine

@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   program's effectiveness and overall impact on interpretation skills and humanistic traits
 pubmed_id: 29914460
+has_pdf: true
 doi: 10.1186/s12909-018-1254-7
 region: Pennsylvania
 specialty: Medical student, Provider Education

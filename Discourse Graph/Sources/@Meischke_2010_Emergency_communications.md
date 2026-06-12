@@ -16,6 +16,7 @@ number_of_lep: 86
 outcomes: |
   communication behaviors and care delivery outcomes
 pubmed_id: 20095823
+has_pdf: true
 doi: 10.3109/10903120903524948
 region: Pacific Northwest
 specialty: Emergency

@@ -16,6 +16,7 @@ number_of_lep: 623?
 outcomes: |
   levels of awareness regarding HPV and the HPV vaccine.
 pubmed_id: 33639647
+has_pdf: true
 doi: 10.31557/apjcp.2021.22.2.349
 region: United States
 specialty: Infectious Disease

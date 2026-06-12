@@ -19,6 +19,7 @@ outcomes: |
   LEP families are at risk for more negative treatment experiences than EP families.
 pdf_url: https://pubmed.ncbi.nlm.nih.gov/38388287/
 pubmed_id: 38388287
+has_pdf: true
 doi: 10.1016/j.jpedsurg.2024.01.021
 region: USA
 specialty: Pediatrics; Oncology; Pediatric Oncology

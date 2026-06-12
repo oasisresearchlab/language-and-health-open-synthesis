@@ -10,6 +10,7 @@ keywords: |
   none
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 35671014
+has_pdf: true
 doi: 10.1097/aco.0000000000001131
 region: US
 specialty: anesthesiology

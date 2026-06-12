@@ -13,6 +13,7 @@ keywords: |
 language: all
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 35871710
+has_pdf: true
 doi: 10.1542/peds.2021-055570
 region: DC
 specialty: pediatrics

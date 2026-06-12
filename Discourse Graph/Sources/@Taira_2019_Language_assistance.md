@@ -15,6 +15,7 @@ number_of_lep: 134
 outcomes: |
   The rate of documented language assistance &  the rate at which LEP patients received language concordant patient education materials and discharge instructions.
 pubmed_id: 30670017
+has_pdf: true
 doi: 10.1186/s12913-018-3823-1
 region: California
 specialty: Emergency

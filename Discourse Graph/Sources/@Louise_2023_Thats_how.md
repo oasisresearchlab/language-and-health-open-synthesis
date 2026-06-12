@@ -21,6 +21,7 @@ outcomes: |
   interpretation.
 pdf_url: https://bmjopen.bmj.com/content/bmjopen/13/11/e074824.full.pdf
 pubmed_id: 37996230
+has_pdf: true
 doi: 10.1136/bmjopen-2023-074824
 region: U.K
 study_years: 2021

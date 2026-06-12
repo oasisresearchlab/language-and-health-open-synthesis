@@ -16,6 +16,7 @@ number_of_lep: 126
 outcomes: |
   respiratory motion and overall image quality when requiring a translator
 pubmed_id: 32047995
+has_pdf: true
 doi: 10.1007/s00261-020-02433-6
 specialty: Neurology
 title: Retrospective analysis of the effect of limited english proficiency on abdominal MRI image quality

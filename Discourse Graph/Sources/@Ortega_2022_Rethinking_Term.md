@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   language-appropriate healthcare
 pubmed_id: 34328602
+has_pdf: true
 doi: 10.1007/s10903-021-01257-w
 specialty: General Medicine
 title: Rethinking the Term "Limited English Proficiency" to Improve Language-Appropriate Healthcare for All

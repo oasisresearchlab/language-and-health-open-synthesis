@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   number of pharmacies that could and did provide multilingual labels (MLs) and/or offer medication information verbally in the patient’s preferred language
 pubmed_id: 21272528
+has_pdf: false
 doi: 10.1016/j.sapharm.2010.08.001
 region: California
 specialty: pharmaceuticals

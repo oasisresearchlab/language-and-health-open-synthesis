@@ -14,6 +14,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   hemoglobin A1c checks,  glucose check, feet checks
 pubmed_id: 21749022
+has_pdf: true
 region: California
 specialty: Endocrinology & Primary Health
 study_years: 2007

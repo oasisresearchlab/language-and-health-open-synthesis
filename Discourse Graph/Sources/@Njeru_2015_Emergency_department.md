@@ -16,6 +16,7 @@ number_of_lep: 1,892
 outcomes: |
   Emergency department and inpatient health care utilization
 pubmed_id: 26022227
+has_pdf: true
 doi: 10.1186/s12913-015-0874-4
 region: Minnesota
 specialty: Emergency

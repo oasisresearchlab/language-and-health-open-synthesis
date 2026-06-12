@@ -4,6 +4,7 @@ year: 2024
 title: Use of Professional Interpreters for Patients With Limited English Proficiency Undergoing Surgery
 journal: JAMA Network Open
 pubmed_id: 38319663
+has_pdf: true
 doi: 10.1001/jamanetworkopen.2023.55014
 specialty: Surgery
 language: Mandarin, Cantonese, Toishanese, Spanish, 13 others

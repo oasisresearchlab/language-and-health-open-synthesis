@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   integration of medical interpreters into the PC team.
 pubmed_id: 35319273
+has_pdf: true
 doi: 10.1089/jpm.2022.0091
 specialty: Palliative care
 title: Top Ten Tips Palliative Care Clinicians Should Know About Working with Medical Interpreters

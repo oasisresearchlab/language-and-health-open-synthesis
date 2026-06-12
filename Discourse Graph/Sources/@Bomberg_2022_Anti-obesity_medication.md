@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   AOM prescription incidence rates
 pubmed_id: 35432917
+has_pdf: true
 doi: 10.1177/20420188221090009
 region: Minnesota
 specialty: Pediatrics

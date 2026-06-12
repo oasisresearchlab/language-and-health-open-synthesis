@@ -14,6 +14,7 @@ language: spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 2,700
 pubmed_id: 36634612
+has_pdf: true
 doi: 10.6004/jnccn.2022.7068
 region: Washington
 specialty: oncology

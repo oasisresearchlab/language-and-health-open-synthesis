@@ -17,6 +17,7 @@ outcomes: |
   no significant difference in decisional conflict between English- and Spanish-speaking individuals. This suggests that language discordance alone may not be the primary factor contributing to decisional conflict. Interpreters will not address the holistic issue faced by many LEP patients
 pdf_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11060785/
 pubmed_id: 38694176
+has_pdf: true
 doi: 10.17161/kjm.vol17.21375
 region: Kansas City
 title: "Prenatal Decision-Making in Patients with Limited English Proficiency: What Factors are Involved?"

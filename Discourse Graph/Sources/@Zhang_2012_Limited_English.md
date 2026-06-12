@@ -14,6 +14,7 @@ number_of_lep: 1930?
 outcomes: |
   psychological distress
 pubmed_id: 22717362
+has_pdf: true
 doi: 10.1016/j.socscimed.2012.05.012
 region: National
 specialty: Psychiatry/mental health

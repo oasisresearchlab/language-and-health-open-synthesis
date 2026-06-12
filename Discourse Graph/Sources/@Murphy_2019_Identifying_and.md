@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   engagement in language screening, interpreter in-person or virtual preference, patient experiment, responses to protocol, satisfaction of support
 pubmed_id: 30511122
+has_pdf: true
 doi: 10.1007/s40615-018-00549-6
 specialty: Primary Care
 title: "Identifying and Addressing Language Needs in Primary Care: a Pilot Implementation Study"

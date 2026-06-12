@@ -11,6 +11,7 @@ keywords: |
 language: Asian Languages
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 20675345
+has_pdf: true
 doi: 10.1177/1077558710375432
 specialty: General Medicine
 title: "Improving communication between patients and providers using health information technology and other quality improvement strategies: focus on Asian Americans"

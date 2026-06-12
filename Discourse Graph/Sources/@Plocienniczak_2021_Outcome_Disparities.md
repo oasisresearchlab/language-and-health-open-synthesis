@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   risk for developing PTH
 pubmed_id: 34872388
+has_pdf: false
 doi: 10.1177/00034894211061996
 region: Boston
 specialty: ENT

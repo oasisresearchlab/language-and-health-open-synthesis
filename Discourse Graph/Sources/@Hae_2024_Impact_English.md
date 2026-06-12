@@ -14,6 +14,7 @@ outcomes: |
   higher levels of social support and acculturation are associated with higher levels of English proficiency
 pdf_url: https://link-springer-com.ezp-prod1.hul.harvard.edu/content/pdf/10.1007/s10903-023-01530-0.pdf
 pubmed_id: 37550523
+has_pdf: true
 doi: 10.1007/s10903-023-01530-0
 region: Alabama, Georgia
 study_years: 2020

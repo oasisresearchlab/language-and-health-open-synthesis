@@ -17,6 +17,7 @@ number_of_lep: 10
 outcomes: |
   FCR encounter length
 pubmed_id: 33434699
+has_pdf: true
 doi: 10.1016/j.acap.2020.12.010
 region: California
 specialty: General Medicine – Inpatient

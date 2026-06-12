@@ -19,6 +19,7 @@ outcomes: |
   positive impacts include encouraging self-monitoring of medication adherence, mood and stress, connection to professional care, and development of a support system for PWH. Participants seek further information, interactive features, and more personalization of the application
 pdf_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10508965/
 pubmed_id: 37732327
+has_pdf: false
 doi: 10.1093/jamiaopen/ooad083
 region: Southern USA
 study_years: 2020

@@ -18,6 +18,7 @@ outcomes: |
   hospitalization rates, as indicated by the number of hospitalization events and the total number of hospitalized days, between thegroups. IN patients had a higher proportion of no-show appointments and a higher percentage of undetectable immunosuppression trough levels compared with the ES patients
 pdf_url: https://link-springer-com.ezp-prod1.hul.harvard.edu/content/pdf/10.1007/s00467-022-05821-w.pdf
 pubmed_id: 36508051
+has_pdf: false
 doi: 10.1007/s00467-022-05821-w
 region: USA
 specialty: Pediatric Nephrology

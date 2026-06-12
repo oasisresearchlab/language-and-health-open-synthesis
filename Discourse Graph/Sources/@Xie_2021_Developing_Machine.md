@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   probabilistic prediction of the accessibility of official health advice among vulnerable people including migrants and foreigners living in China.
 pubmed_id: 34925484
+has_pdf: true
 doi: 10.1155/2021/1916690
 region: China
 specialty: Infectious Disease

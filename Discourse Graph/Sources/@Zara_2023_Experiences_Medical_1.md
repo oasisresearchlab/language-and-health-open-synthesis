@@ -13,6 +13,7 @@ outcomes: |
   4 Themes: Lack of verbatim interpretation for palliative care, poor patient understanding of treatment goals, late implementation of care, fears and misconceptions of palliative care
 pdf_url: https://www-liebertpub-com.ezp-prod1.hul.harvard.edu/doi/10.1089/jpm.2022.0320?url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub++0pubmed
 pubmed_id: 36516127
+has_pdf: true
 doi: 10.1089/jpm.2022.0320
 specialty: Palliative Care
 title: "Experiences of Medical Interpreters During Palliative Care Encounters With Limited English Proficiency Patients: A Qualitative Study"

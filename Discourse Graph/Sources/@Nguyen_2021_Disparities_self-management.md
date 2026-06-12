@@ -13,6 +13,7 @@ number_of_lep: 1232
 outcomes: |
   odds of SMP receipt, confidence in heart disease management
 pubmed_id: 34136340
+has_pdf: true
 doi: 10.1016/j.pmedr.2021.101407
 region: California
 specialty: Cardiology

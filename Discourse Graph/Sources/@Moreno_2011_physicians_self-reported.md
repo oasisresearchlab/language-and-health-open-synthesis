@@ -20,6 +20,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Self-reported language fluency in Spanish and Asian languages. Physician practice ZIP code corresponding to: (1) high concentration of people with LEP and (2) high concentration of linguistically isolated households.
 pubmed_id: 21120633
+has_pdf: true
 doi: 10.1007/s11606-010-1584-6
 region: California
 specialty: General Medicine

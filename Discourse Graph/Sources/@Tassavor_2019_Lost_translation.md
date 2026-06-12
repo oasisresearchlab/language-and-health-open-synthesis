@@ -4,6 +4,7 @@ year: 2019
 title: "Lost in translation: Caring for limited English proficiency patients"
 journal: Journal of the American Academy of Dermatology
 pubmed_id: 29307644
+has_pdf: true
 doi: 10.1016/j.jaad.2017.12.072
 keywords: |
   dermatology; ethics; LEP; patient rights

@@ -14,6 +14,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   clinical trial engagement and patient portal message rates with primary language group.
 pubmed_id: 33844591
+has_pdf: true
 region: California
 specialty: Oncology
 study_years: 2019-2018

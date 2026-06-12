@@ -4,6 +4,7 @@ year: 2021
 title: Developing a Medical Spanish Curriculum to Decrease Barriers for Limited English Proficiency Patients
 journal: Journal of Association of American Medical Colleges
 pubmed_id: 34524126
+has_pdf: true
 doi: 10.1097/acm.0000000000004417
 intervention: commentaries/ perspectives
 citekey: "@Kloosterman_2021_Developing_Medical"

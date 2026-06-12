@@ -18,6 +18,7 @@ number_of_lep: 44
 outcomes: |
   number of days of nonadherence with their medication regimen as determined by days adherent to medication divided by days prescribed medication.
 pubmed_id: 35106121
+has_pdf: true
 doi: 10.17161/kjm.vol15.15912
 region: Kansas
 specialty: Primary Care

@@ -8,6 +8,7 @@ intervention: case report
 journal: AMA Journal of Ethics
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 28323607
+has_pdf: true
 doi: 10.1001/journalofethics.2017.19.3.medu1-1703
 specialty: General Medicine
 title: 'Language-Based Inequity in Health Care: Who Is the "Poor Historian"?'

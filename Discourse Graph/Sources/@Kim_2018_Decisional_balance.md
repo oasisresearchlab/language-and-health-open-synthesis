@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Pap test use
 pubmed_id: 29353633
+has_pdf: true
 doi: 10.1016/j.ejon.2017.12.001
 region: northeastern US
 specialty: Gynaecology, Oncology

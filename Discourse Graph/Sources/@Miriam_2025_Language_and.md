@@ -15,6 +15,7 @@ outcomes: |
   Hispanics disproportionately encounter barriers to kidney transplant, including greater disease burden when referred to transplantation, lower likelihood of receiving a transplant, and lower likelihood of receiving a LDKT compared with their white counterparts [14–17,19]. These outcomes are likely exacerbated by language barriers, and lack of Medicare coverage leading up to the need for kidney transplant
 pdf_url: https://journals.lww.com/co-transplantation/pages/articleviewer.aspx?year=2025&issue=02000&article=00009&type=Fulltext
 pubmed_id: 39611430
+has_pdf: true
 doi: 10.1097/mot.0000000000001189
 region: USA
 specialty: Transplantation

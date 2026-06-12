@@ -11,6 +11,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   treatment adherence, surgical delays, length of hospital stays and readmissions.
 pubmed_id: 28114669
+has_pdf: true
 doi: 10.1001/jamainternmed.2016.8661
 specialty: Endocrinology, General Medicine, Primary Care
 title: "Diabetes Care in Latinos With Limited English Proficiency: What Do Language Concordant Clinicians Add?"

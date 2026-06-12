@@ -4,6 +4,7 @@ year: 2019
 title: "Interpreter Provision and Hospital-Associated Outcomes Within the Limited English Proficiency Population: Analysis of Administrative Data"
 journal: Journal of General Internal Medicine
 pubmed_id: 30729417
+has_pdf: true
 doi: 10.1007/s11606-019-04852-8
 specialty: General Medicine- Inpatient
 language: Arabic, Vietnamese, Greek, Mandarin, Cantonese

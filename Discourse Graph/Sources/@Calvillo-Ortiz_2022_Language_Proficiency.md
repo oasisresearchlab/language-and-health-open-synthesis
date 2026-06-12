@@ -16,6 +16,7 @@ number_of_lep: 71
 outcomes: |
   survival rates
 pubmed_id: 34258672
+has_pdf: true
 doi: 10.1007/s11605-021-05081-3
 specialty: Oncology
 title: "Language Proficiency and Survival in Pancreatic Cancer: a Propensity Score-Matched Analysis"

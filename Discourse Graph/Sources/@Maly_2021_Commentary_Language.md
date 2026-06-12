@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   access and quality of care
 pubmed_id: 34272775
+has_pdf: true
 doi: 10.1111/pde.14696
 region: California
 specialty: Pediatrics, Dermatology

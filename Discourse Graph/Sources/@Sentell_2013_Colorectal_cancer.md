@@ -12,6 +12,7 @@ number_of_lep: 539
 outcomes: |
   meeting current U.S. Preventive Service Task Force colorectal cancer (CRC) screening guidelines
 pubmed_id: 24093359
+has_pdf: true
 doi: 10.1080/10810730.2013.825669
 region: California
 specialty: Oncology, General Medicine

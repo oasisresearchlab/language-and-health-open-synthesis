@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   asthma caregiver quality of life (QoL), skills retention and healthcare utilization after an asthma education fair (AEF)
 pubmed_id: 25019349
+has_pdf: true
 doi: 10.3109/02770903.2014.944982
 specialty: Pulmonology
 title: Findings from a community-based asthma education fair for Latino caregivers

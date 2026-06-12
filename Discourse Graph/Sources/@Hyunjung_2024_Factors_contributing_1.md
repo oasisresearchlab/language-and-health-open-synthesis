@@ -15,6 +15,7 @@ outcomes: |
   More research is also needed on associations between race and ethnicity,immigration status, and cancer screening disparities at rural and ur-ban CHCs using individual‐level data, given the increased contribu-tion of race and ethnicity and English language proficiency to thesedisparities at the CHC‐level during the pandemic
 pdf_url: https://acsjournals-onlinelibrary-wiley-com.ezp-prod1.hul.harvard.edu/doi/epdf/10.1002/cncr.35265
 pubmed_id: 38523461
+has_pdf: false
 doi: 10.1002/cncr.35265
 region: USA
 specialty: Oncology

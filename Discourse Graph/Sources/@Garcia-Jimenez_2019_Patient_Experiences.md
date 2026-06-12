@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   patient experiences with telephone interpreter services
 pubmed_id: 31447453
+has_pdf: true
 doi: 10.1353/nib.2019.0027
 specialty: Primary Care, General Medicine
 title: "Patient Experiences with the Use of Telephone Interpreter Services: An Exploratory, Qualitative Study of Spanish-Speaking Patients at an Urban Community Health Center"

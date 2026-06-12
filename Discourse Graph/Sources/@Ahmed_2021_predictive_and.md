@@ -11,6 +11,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   total interpreting cost,  quality of the interpreting service, and the utilization of full-time interpreters
 pubmed_id: 33629192
+has_pdf: true
 doi: 10.1007/s10729-020-09536-y
 region: United States
 specialty: General Medicine

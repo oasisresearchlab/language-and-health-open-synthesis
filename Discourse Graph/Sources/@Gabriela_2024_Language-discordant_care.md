@@ -17,6 +17,7 @@ outcomes: |
   Spanish speaking parents less likely to ask questions/raise concerns, there is a high need for educational resources in Spanish; parents & providers prefer in-person interpreters but there is limited availability
 pdf_url: https://thejns-org.ezp-prod1.hul.harvard.edu/pediatrics/view/journals/j-neurosurg-pediatr/33/6/article-p619.xml
 pubmed_id: 38518279
+has_pdf: true
 doi: 10.3171/2024.1.peds23435
 region: Northern California
 specialty: Neurosurgery, Pediatrics; Pediatric Neurosurgery

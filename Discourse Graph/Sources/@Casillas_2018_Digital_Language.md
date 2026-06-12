@@ -18,6 +18,7 @@ number_of_lep: 328
 outcomes: |
   Medication adherence
 pubmed_id: 29600351
+has_pdf: true
 doi: 10.1007/s40615-018-0487-9
 specialty: General Medicine
 study_years: 2013-2014

@@ -9,6 +9,7 @@ keywords: |
   Diversity; cultural competence; healthcare policy; language access; limited English proficiency; occupational therapy.
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 29461136
+has_pdf: true
 doi: 10.1080/07380577.2018.1434722
 specialty: Occupational Therapy
 title: "Working With Clients With Limited English Proficiency: Mapping Language Access in Occupational Therapy"

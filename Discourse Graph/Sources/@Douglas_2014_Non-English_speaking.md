@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   increased risk of death; ICU length of stay
 pubmed_id: 24852085
+has_pdf: true
 doi: 10.1016/j.jcrc.2014.03.037
 region: Australia
 specialty: Intensive Care

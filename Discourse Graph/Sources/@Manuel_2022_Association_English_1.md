@@ -12,6 +12,7 @@ number_of_lep: 378
 outcomes: |
   LOS, total hospitalization cost, discharge disposition, and rate of 30-day hospital readmission.
 pubmed_id: 35267037
+has_pdf: false
 doi: 10.1001/jamanetworkopen.2022.1842
 region: San Francisco
 specialty: Orthopedics

@@ -4,6 +4,7 @@ year: 2012
 title: The effect of limited English proficiency on falls risk and falls prevention after stroke
 journal: Age Ageing
 pubmed_id: 21948856
+has_pdf: true
 doi: 10.1093/ageing/afr127
 specialty: Neurology
 language: Croatian, Greek, Hakka, Italian, Macedonian, Mandarin, Russian, Spanish, Vietnamese

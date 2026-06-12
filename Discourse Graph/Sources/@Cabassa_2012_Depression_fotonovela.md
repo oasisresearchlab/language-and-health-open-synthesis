@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   barriers to depression care
 pubmed_id: 21051325
+has_pdf: true
 doi: 10.1177/1524839910367578
 specialty: Psychiatry/mental health
 title: "Depression fotonovela: development of a depression literacy tool for Latinos with limited English proficiency"

@@ -15,6 +15,7 @@ outcomes: |
   patients with LEP were less likely to receive a numeric pain rating. Across all pain assessment types, patients with LEP received fewer opioids than English speaking patients in unadjusted and adjusted analyses.
 pdf_url: https://www.sciencedirect.com/science/article/pii/S1524904223000802?via%3Dihub
 pubmed_id: 37147211
+has_pdf: true
 doi: 10.1016/j.pmn.2023.03.012
 region: California
 specialty: General Medicine, Nursing

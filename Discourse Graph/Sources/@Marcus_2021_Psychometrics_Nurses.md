@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Internal consistency reliability using Cronbach's alpha and construct validity using factor analysis tests
 pubmed_id: 34038682
+has_pdf: true
 doi: 10.3928/00220124-20210414-09
 specialty: General Medicine
 title: Psychometrics of Nurses' Perceptions of Technology Effectiveness Scale

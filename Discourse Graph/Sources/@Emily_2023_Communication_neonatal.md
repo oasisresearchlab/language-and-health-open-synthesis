@@ -17,6 +17,7 @@ outcomes: |
   nurse-to-patient information exchnage is common regarldess of preferred language; language difference hindered their ability to ask questions and learn about their baby, LEP had difficulty with obtaining info remotely
 pdf_url: https://bmcpediatr.biomedcentral.com/articles/10.1186/s12887-023-04301-w
 pubmed_id: 37736718
+has_pdf: true
 doi: 10.1186/s12887-023-04301-w
 region: San Diego
 specialty: Neonatal ICU

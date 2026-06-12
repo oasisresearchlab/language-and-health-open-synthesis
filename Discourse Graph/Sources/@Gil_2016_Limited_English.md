@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   level of satisfaction and experiences of parents and health care providers who used the LEP Patient Family Advocate while receiving or providing care.
 pubmed_id: 26589355
+has_pdf: true
 doi: 10.1177/1043454215611082
 region: Minnesota
 specialty: Pediatrics, Oncology

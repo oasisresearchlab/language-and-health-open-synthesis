@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   linguistic isolation (LI)
 pubmed_id: 29373728
+has_pdf: true
 doi: 10.1093/geronb/gbx178
 region: United States
 specialty: Gerontology

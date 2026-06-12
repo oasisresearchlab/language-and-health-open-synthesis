@@ -14,6 +14,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Use of inpatient interpreters
 pubmed_id: 22372255
+has_pdf: true
 doi: 10.1016/s1553-7250(12)38011-2
 region: San Francisco
 specialty: General Medicine

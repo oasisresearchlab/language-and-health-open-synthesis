@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   vocabulary, grammar, comprehension, and self-confidence of musculoskeletal and dermatologic medical Spanish topics
 pubmed_id: 33473381
+has_pdf: true
 doi: 10.15766/mep_2374-8265.11071
 region: Illinois
 specialty: Medical student, Provider Education

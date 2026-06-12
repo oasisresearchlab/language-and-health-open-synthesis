@@ -17,6 +17,7 @@ number_of_lep: 1,589
 outcomes: |
   Quality of reproductive health services
 pubmed_id: 22080701
+has_pdf: true
 doi: 10.1353/hpu.2011.0120
 specialty: General Medicine
 study_years: 2005

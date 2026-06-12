@@ -11,6 +11,7 @@ language: spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 156
 pubmed_id: 36720766
+has_pdf: true
 doi: 10.1007/s11606-022-07995-3
 region: Colorado
 specialty: geneal

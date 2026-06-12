@@ -17,6 +17,7 @@ number_of_lep: 70
 outcomes: |
   communication between SSP-LEP and their healthcare providers
 pubmed_id: 34595676
+has_pdf: true
 doi: 10.1007/s40615-021-01161-x
 region: NC
 specialty: pediatrics

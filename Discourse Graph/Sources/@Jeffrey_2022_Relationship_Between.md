@@ -16,6 +16,7 @@ number_of_lep: 891
 outcomes: |
   worse outcomes for LEP patients
 pubmed_id: 35185760
+has_pdf: true
 doi: 10.3389/fneur.2022.790553
 region: Chicago
 specialty: emergency medicine

@@ -18,6 +18,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   System-level interventions, such as expanding access to health insurance coverage, providing language services, improving provider training in cultural competence, and increasing diversity in the medical workforce may minimize barriers and improve equity in access to care.
 pubmed_id: 35882706
+has_pdf: true
 doi: 10.1007/s11606-022-07690-3
 region: GA
 specialty: internal medicine

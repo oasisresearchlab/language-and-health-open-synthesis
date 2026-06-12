@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   affect on over-the-phone interpreting (OPI),  impact on utilization of language services, efficiency, and costs, as well as implementation challenges.
 pubmed_id: 31133535
+has_pdf: true
 doi: 10.1016/j.jcjq.2019.04.001
 region: California
 specialty: Pediatrics

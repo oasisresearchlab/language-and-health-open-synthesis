@@ -13,6 +13,7 @@ number_of_lep: 1486
 outcomes: |
   hemoglobin, LDL-C and blood pressure
 pubmed_id: 28229264
+has_pdf: true
 doi: 10.1007/s10900-017-0323-x
 region: Minnesota
 specialty: Primary Care

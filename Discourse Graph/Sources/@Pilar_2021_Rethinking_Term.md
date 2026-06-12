@@ -10,6 +10,7 @@ keywords: |
 language: all
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 34328602
+has_pdf: true
 doi: 10.1007/s10903-021-01257-w
 region: US
 specialty: general

@@ -15,6 +15,7 @@ number_of_lep: 51
 outcomes: |
   psychometric properties and the factorial equivalence of a Spanish translation of the parent report version of the Diabetes Self-Management Profile (DSMP-Parent-Sp)
 pubmed_id: 19808916
+has_pdf: true
 doi: 10.2337/dc09-0845
 region: Florida
 specialty: Endocrinology & Primary Health, Psychiatry

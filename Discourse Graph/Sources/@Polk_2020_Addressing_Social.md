@@ -17,6 +17,7 @@ number_of_lep: 2481
 outcomes: |
   association between language and successful resource connections.
 pubmed_id: 32200111
+has_pdf: true
 doi: 10.1016/j.acap.2020.03.004
 region: Northeast, Mid-Atlantic
 specialty: Primary Care

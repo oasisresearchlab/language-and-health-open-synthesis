@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   availability and travel time to services
 pubmed_id: 26259055
+has_pdf: true
 doi: 10.1097/phm.0000000000000362
 region: Seattle
 specialty: Neurology

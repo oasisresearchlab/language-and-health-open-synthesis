@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   experience as interpreter
 pubmed_id: 27271065
+has_pdf: true
 doi: 10.1007/s40615-015-0134-7
 region: Illinois
 specialty: Medical student, Provider Education

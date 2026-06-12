@@ -12,6 +12,7 @@ language: Chinese
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 25
 pubmed_id: 29197036
+has_pdf: true
 doi: 10.1007/s12687-017-0350-4
 region: California
 specialty: Genetics, Oncology

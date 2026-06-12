@@ -16,6 +16,7 @@ number_of_lep: 1125
 outcomes: |
   Patients with non-English preferred languages were 2.6 times more likely to experience extended TTTA
 pubmed_id: 37194741
+has_pdf: false
 doi: 10.1002/ohn.363
 region: Botson, MA
 specialty: ENT

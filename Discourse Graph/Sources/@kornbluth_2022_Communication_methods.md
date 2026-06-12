@@ -17,6 +17,7 @@ number_of_lep: 1029
 outcomes: |
   patients with LEP to 'get by' with limited English when communicating with ancillary staff, in turn increasing burden on the physician visit
 pubmed_id: 34023171
+has_pdf: false
 region: California
 specialty: general
 title: "Communication methods between outpatients with limited-English proficiency and ancillary staff: LASI study results"
@@ -30,7 +31,7 @@ nodeInstanceId: 019e8dd8-3545-73fb-8fb8-2becf955ab56
 
 ## Possible evidence
 
-- Professional interpreter use with ancillary staff was less than 4%. #evd-candidate
+- [[EVD - Professional interpreter use with ancillary staff was less than 4%.]]
 - Among patients who did not use their preferred language with bilingual staff, approximately one-third reported using English to communicate. #evd-candidate
 - Over 80% of patients with limited English proficiency spoke English 'not well' or 'not at all'. #evd-candidate
 - Ancillary staff perceived basic English as sufficient for most patient communication. #evd-candidate

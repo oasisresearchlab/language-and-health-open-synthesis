@@ -15,6 +15,7 @@ language: spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 2500
 pubmed_id: 36279324
+has_pdf: true
 doi: 10.1097/ta.0000000000003815
 region: CA
 specialty: trauma

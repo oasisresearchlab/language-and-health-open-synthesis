@@ -14,6 +14,7 @@ number_of_lep: 36?
 outcomes: |
   availability of interpreter services, their experience of communication with the family, perception of family preparation for transition from the NICU to home, and suggestions for improving this transition.
 pubmed_id: 20490681
+has_pdf: true
 doi: 10.1007/s10903-010-9355-3
 region: mid-Atlantic United States
 specialty: NICU

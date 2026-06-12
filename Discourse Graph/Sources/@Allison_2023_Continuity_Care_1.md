@@ -18,6 +18,7 @@ outcomes: |
   egarding hospital readmission from home health care, continuity of care is of greater importance than language concordance for home health visits. Patient-centered care metrics, along with the financial burden on the health care system, would benefit in shifting focus to maximizing continuity of care after hospitalization—particularly in populations where social determinants of health, such as language barriers, cannot be addressed directly.
 pdf_url: https://journals.lww.com/lww-medicalcare/fulltext/2023/09000/continuity_of_care_versus_language_concordance_as.5.aspx
 pubmed_id: 37561604
+has_pdf: true
 doi: 10.1097/MLR.0000000000001884
 region: single US city
 study_years: 2010-2015

@@ -14,6 +14,7 @@ language: all
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 17
 pubmed_id: 35652977
+has_pdf: true
 doi: 10.1007/s10903-022-01368-y
 region: NY
 specialty: emergency medicine

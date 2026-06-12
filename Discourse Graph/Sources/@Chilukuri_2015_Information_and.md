@@ -18,6 +18,7 @@ number_of_lep: 60
 outcomes: |
   use of ICT
 pubmed_id: 26142162
+has_pdf: true
 doi: 10.2196/jmir.3916
 region: Maryland
 specialty: Obgyn

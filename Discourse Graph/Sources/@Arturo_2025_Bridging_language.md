@@ -17,6 +17,7 @@ outcomes: |
   Telehealth was not available at all in more than half of the individual completed calls in each of the MSAs (see Figure S1). Our findings suggest that the absence of telehealth for primary-care appointments is more common in each geographic region relative to the presence of telehealth. Of the 326 completed individual calls, 144 reported that telehealth was available. Of the 144 completed individual calls, 22 of these calls reported that telehealth was available for first-time primary-care visits. Among the 22 individual completed calls that offered telehealth for first-time primary-care appointments, 3 offered a phone call-only option, 9 used a video-only option, and 10 offered both phone call and video options.
 pdf_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11848714/
 pubmed_id: 39996102
+has_pdf: true
 doi: 10.1093/haschl/qxaf025
 region: Los Angeles, Houston, and New York Metropolitan
 specialty: CMS

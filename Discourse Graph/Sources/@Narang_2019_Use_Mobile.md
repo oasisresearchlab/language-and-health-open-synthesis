@@ -19,6 +19,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Mean call frequency to OPI services and self-reported provider satisfaction descriptives
 pubmed_id: 31095059
+has_pdf: true
 doi: 10.1097/mlr.0000000000001035
 region: New York
 specialty: Oncology

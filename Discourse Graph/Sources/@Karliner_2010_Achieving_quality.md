@@ -13,6 +13,7 @@ outcomes: |
   Interpretation volume,  Cancelled requests for an interpreter,  Average wait time for an interpreter
 pdf_url: https://journals.sagepub.com/doi/10.1177/1062860609351237
 pubmed_id: 19955512
+has_pdf: true
 doi: 10.1177/1062860609351237
 region: California
 specialty: General Medicine

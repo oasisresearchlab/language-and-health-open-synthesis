@@ -14,6 +14,7 @@ number_of_lep: 539
 outcomes: |
   consultation type, presenting problems, and recommendations
 pubmed_id: 26338958
+has_pdf: true
 doi: 10.1093/jpepsy/jsv079
 specialty: Pediatrics, Primary Care
 study_years: 2008-2013

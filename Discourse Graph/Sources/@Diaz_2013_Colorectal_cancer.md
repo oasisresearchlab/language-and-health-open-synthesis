@@ -12,6 +12,7 @@ number_of_lep: 2,362
 outcomes: |
   receipt of CRC screening tests defined as reporting fecal occult blood testing (FOBT) within the past year, and/or sigmoidoscopy within the past 5 years, and/or colonoscopy within the past 10 years
 pubmed_id: 22752660
+has_pdf: true
 doi: 10.1007/s10903-012-9667-6
 region: National
 specialty: General Medicine, Oncology

@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Fluency, Adequacy, Meaning, and Severity
 pubmed_id: 30291084
+has_pdf: true
 doi: 10.2196/diabetes.7446
 region: National
 specialty: Endocrinology

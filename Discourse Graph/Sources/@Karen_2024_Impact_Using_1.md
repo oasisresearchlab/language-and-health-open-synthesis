@@ -16,6 +16,7 @@ outcomes: |
   improved documentation of language-concordant informed consent in surgery, both in terms of providing written materials in the patient's preferred language and in the documentation of interpreter use, and allowed for the identification of areas to target for practice improvement with interpreter use.
 pdf_url: https://www.sciencedirect.com/science/article/pii/S1553725024000758?via%3Dihub
 pubmed_id: 38565472
+has_pdf: false
 doi: 10.1016/j.jcjq.2024.03.005
 region: urban
 study_years: 2023

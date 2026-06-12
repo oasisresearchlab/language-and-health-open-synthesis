@@ -17,6 +17,7 @@ outcomes: |
   confidence
 pdf_url: https://www.annalsofoncology.org/article/S0923-7534(19)38245-6/fulltext
 pubmed_id: 19622593
+has_pdf: true
 doi: 10.1093/annonc/mdp289
 region: New York
 specialty: Oncology

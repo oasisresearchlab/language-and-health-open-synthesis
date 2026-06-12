@@ -14,6 +14,7 @@ number_of_lep: 30
 outcomes: |
   feasibility of culturally and linguistically adapted audio computer-assisted self-interviewing (ACASI) with color-labeled response categories and helper assistance (ACASI-H)
 pubmed_id: 28431187
+has_pdf: true
 doi: 10.1002/nur.21796
 region: Wisconsin
 specialty: General Medicine

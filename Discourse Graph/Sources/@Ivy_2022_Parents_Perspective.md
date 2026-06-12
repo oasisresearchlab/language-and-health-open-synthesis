@@ -15,6 +15,7 @@ language: spnaish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 23
 pubmed_id: 34273559
+has_pdf: true
 doi: 10.1016/j.acap.2021.07.011
 region: US
 specialty: pediatrics

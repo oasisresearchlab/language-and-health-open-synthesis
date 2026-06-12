@@ -19,6 +19,7 @@ outcomes: |
   high-risk surgeries.
 pdf_url: https://wmjonline.org/wp-content/uploads/2023/122/3/178.pdf
 pubmed_id: 37494647
+has_pdf: true
 region: Midwest
 specialty: Oncology(ish) (sample pool was for cancer screenings)
 title: "How Patients With Limited English Proficiency Make Health Care Decisions: Hmong Patients' Perspectives"

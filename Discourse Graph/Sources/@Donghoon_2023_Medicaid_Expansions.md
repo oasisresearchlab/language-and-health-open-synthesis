@@ -15,6 +15,7 @@ outcomes: |
   ACA Medicaid expansion did not increase the availability of language services and Medicaid acceptance in SAT facilities
 pdf_url: https://journals.lww.com/lww-medicalcare/fulltext/2023/12000/medicaid_expansions_and_access_to_substance_abuse.7.aspx
 pubmed_id: 37782461
+has_pdf: true
 doi: 10.1097/mlr.0000000000001928
 region: USA
 study_years: 2010-2019

@@ -14,6 +14,7 @@ number_of_lep: 545762
 outcomes: |
   Rates of Inpatient Mortality and adverse events
 pubmed_id: 25514153
+has_pdf: true
 doi: 10.3390/ijerph111213017
 region: California
 specialty: General Medicine

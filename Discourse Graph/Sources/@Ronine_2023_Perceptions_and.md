@@ -13,6 +13,7 @@ language: spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 16
 pubmed_id: 36457015
+has_pdf: true
 doi: 10.1186/s12913-022-08839-w
 region: OH
 specialty: emergency department

@@ -16,4 +16,5 @@ specialty: geneal
 title: Older adults in the USA with limited English proficiency have high rates of intensive end-of-life care and low rates of palliative care and advance care planning
 year: 2023
 nodeInstanceId: 019e8dd8-34f3-7bef-ae89-3ef8612d3e16
+has_pdf: true
 ---

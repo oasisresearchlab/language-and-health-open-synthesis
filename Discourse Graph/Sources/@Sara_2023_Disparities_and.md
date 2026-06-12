@@ -11,6 +11,7 @@ outcomes: |
   LEP had lower pain relives used & lower health status than EP patients
 pdf_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10374957/
 pubmed_id: 37520307
+has_pdf: true
 doi: 10.1016/j.ssmph.2023.101466
 region: USA
 study_years: 2015-2019 (data set from these years; retrospective study)

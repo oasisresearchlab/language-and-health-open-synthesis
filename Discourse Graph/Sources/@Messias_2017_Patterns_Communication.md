@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   access and utilization of technology for health information
 pubmed_id: 30283834
+has_pdf: true
 doi: 10.1089/heq.2016.0013
 region: South Carolina
 specialty: General Medicine

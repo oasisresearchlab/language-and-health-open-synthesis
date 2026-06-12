@@ -9,6 +9,7 @@ keywords: |
   Health Care Providers, Hospital Costs, Costs and Spending, Access to Care, Health Disparities, Cost Reduction, Cost Sharing, Language Barriers, Quality of Care, Hopsitals
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 21976337
+has_pdf: true
 doi: 10.1377/hlthaff.2011.0667
 specialty: Interpreter Services
 title: Shared networks of interpreter services, at relatively low cost, can help providers serve patients with limited english skills

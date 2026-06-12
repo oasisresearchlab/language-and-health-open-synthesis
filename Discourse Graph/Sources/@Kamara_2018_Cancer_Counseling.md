@@ -9,6 +9,7 @@ keywords: |
   Cancer genetic counseling; Health communication; Health disparities; Health literacy; Language access; Limited-English proficiency; Low-income; Medical interpreter; Shared decision-making.
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 28791541
+has_pdf: true
 doi: 10.1007/s10897-017-0132-5
 title: "Cancer Counseling of Low-Income Limited English Proficient Latina Women Using Medical Interpreters: Implications for Shared Decision-Making"
 year: 2018

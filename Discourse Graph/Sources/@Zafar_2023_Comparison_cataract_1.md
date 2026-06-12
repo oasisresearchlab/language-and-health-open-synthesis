@@ -16,6 +16,7 @@ outcomes: |
   Limited English proficient (LEP) patients have worse health outcomes and worse access to healthcare when compared with their English-speaking counterparts.
 pdf_url: https://journals.lww.com/jcrs/fulltext/2023/06000/comparison_of_cataract_surgery_outcomes_in_english.10.aspx
 pubmed_id: 36779806
+has_pdf: false
 doi: 10.1097/j.jcrs.0000000000001164
 region: Colorado
 specialty: Surgery

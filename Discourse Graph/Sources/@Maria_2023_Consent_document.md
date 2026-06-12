@@ -11,6 +11,7 @@ outcomes: |
   barriers for LEP to participate in cancer studies via issues with consent process
 pdf_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11046417/
 pubmed_id: 37532930
+has_pdf: true
 doi: 10.1038/s41586-023-06382-0
 region: USA
 specialty: Oncology

@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   audit of interpreter use
 pubmed_id: 30249270
+has_pdf: true
 doi: 10.1186/s12939-018-0865-2
 region: Australia
 specialty: General Medicine

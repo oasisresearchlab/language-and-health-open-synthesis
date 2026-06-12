@@ -20,6 +20,7 @@ number_of_lep: 19
 outcomes: |
   (1) The novelty of breast density contributed to notification-induced confusion; (2) women misinterpreted key messages in the notification; (3) varied actions were taken to seek further information; and (4) women held unrealized expectations and preferences for follow-up.
 pubmed_id: 30350031
+has_pdf: true
 doi: 10.1007/s11606-018-4709-y
 region: Massachusetts
 specialty: Gynaecology, Oncology

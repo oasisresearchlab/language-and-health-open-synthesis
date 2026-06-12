@@ -17,6 +17,7 @@ number_of_lep: 183
 outcomes: |
   Knowledge assessment focused on four different sections; drug name, dose, frequency and indication
 pubmed_id: 23191984
+has_pdf: true
 doi: 10.1186/1756-0500-5-658
 region: Sri Lanka
 specialty: Pharmaceuticals

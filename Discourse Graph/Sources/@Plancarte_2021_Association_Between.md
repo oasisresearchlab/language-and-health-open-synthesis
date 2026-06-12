@@ -14,6 +14,7 @@ number_of_lep: 56
 outcomes: |
   time to first analgesia;  time to first opioid, proportion with any analgesia and opioid analgesia, and number of pain assessments.
 pubmed_id: 34654728
+has_pdf: true
 doi: 10.1542/hpeds.2020-005766
 specialty: Pediatrics
 study_years: 2016-2019

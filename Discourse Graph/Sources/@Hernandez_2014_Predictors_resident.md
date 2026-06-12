@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   self-efficacy, satisfaction and frustration in the care
 pubmed_id: 24602581
+has_pdf: true
 doi: 10.1016/j.acap.2013.12.002
 specialty: Pediatrics
 title: "Predictors of resident satisfaction in caring for limited English proficient families: a multisite study"

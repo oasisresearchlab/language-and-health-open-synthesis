@@ -11,6 +11,7 @@ number_of_lep: 438
 outcomes: |
   retention
 pubmed_id: 35308972
+has_pdf: true
 region: New York, New Jersey, Pennsylvania, and Connecticut
 specialty: General Medicine
 study_years: 2014-2019

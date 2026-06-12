@@ -14,6 +14,7 @@ outcomes: |
   This study found that LEP Filipino patients in Hawaiʻi have been underserved; need more interpreters and improvement in informing
 pdf_url: https://www.mdpi.com/1660-4601/20/21/7012
 pubmed_id: 37947568
+has_pdf: false
 doi: 10.3390/ijerph20217012
 region: Hawaii
 study_years: 2022

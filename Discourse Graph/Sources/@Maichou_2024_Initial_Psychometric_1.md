@@ -17,6 +17,7 @@ outcomes: |
   Among the community participants, 8 of the 15 pictograms were matched with the intended phrase almost perfectly, and 3 were matched by a substantial majority. There were no differences in matching by patient gender and language proficiency.
 pdf_url: https://www.sciencedirect.com/science/article/abs/pii/S1524904224000079?via%3Dihub
 pubmed_id: 38431504
+has_pdf: false
 doi: 10.1016/j.pmn.2024.01.005
 title: Initial Psychometric Testing of a Pain Quality Pictogram Tool Among Hmong Limited English Proficient and Bilingual Community Members and Healthcare Practitioners
 year: 2024

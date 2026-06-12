@@ -14,6 +14,7 @@ number_of_lep: 2,943
 outcomes: |
   risk-adjusted odds of all-cause admission and risk-adjusted odds of all-cause unplanned ED revisit within 72 hours
 pubmed_id: 27033142
+has_pdf: true
 doi: 10.1016/j.annemergmed.2016.02.042
 region: New York
 specialty: Emergency

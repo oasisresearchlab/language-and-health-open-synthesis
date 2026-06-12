@@ -11,6 +11,7 @@ number_of_lep: 50
 outcomes: |
   challenges with interpretation services, dependence on family members, and fear that the assessment itself may worsen confusion
 pubmed_id: 34038248
+has_pdf: true
 doi: 10.3928/00989134-20210309-05
 region: Canada
 specialty: Internal Medicine

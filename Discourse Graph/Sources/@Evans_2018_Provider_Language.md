@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   language ability & willingness to deliver clinical care without professional interpretation in standardized clinical scenarios.
 pubmed_id: 29778122
+has_pdf: true
 doi: 10.1016/j.jnma.2017.06.002
 region: Northwest
 specialty: Pediatrics

@@ -17,6 +17,7 @@ number_of_lep: 545
 outcomes: |
   length of stay for peri-operative admissions
 pubmed_id: 34688989
+has_pdf: false
 doi: 10.1016/j.jss.2021.09.006
 region: Boston
 specialty: Surgery

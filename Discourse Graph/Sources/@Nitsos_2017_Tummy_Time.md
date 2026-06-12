@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   knowledge of Tummy Time
 pubmed_id: 28888509
+has_pdf: true
 doi: 10.1016/j.pedn.2017.04.004
 region: South Carolina
 specialty: Pediatrics

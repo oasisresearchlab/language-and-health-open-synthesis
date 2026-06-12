@@ -19,6 +19,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   1) clinician communication is modified and less frequent; 2) clinician ability to assess patient and family understanding is impaired; 3) relationship building is impaired; 4) patient and family understanding of decision-making concepts (e.g., palliative care) is impaired; 5) treatment limitations are often perceived to be unacceptable due to faith-based and cultural beliefs; and 6) patient and family decision-making styles are different.
 pubmed_id: 31389838
+has_pdf: true
 doi: 10.1097/ccm.0000000000003920
 region: Minnesota
 specialty: Intensive Care

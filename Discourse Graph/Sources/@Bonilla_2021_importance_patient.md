@@ -17,6 +17,7 @@ number_of_lep: 304
 outcomes: |
   difficulty engaging with physicians, quality of care and indormation, emotional and physical well-being
 pubmed_id: 33563263
+has_pdf: true
 doi: 10.1186/s12905-021-01200-z
 region: California
 specialty: Oncology

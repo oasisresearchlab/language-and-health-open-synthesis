@@ -17,6 +17,7 @@ number_of_lep: 614?
 outcomes: |
   percentage of FCR encounters with LEP patients with an interpreter present
 pubmed_id: 30018123
+has_pdf: true
 doi: 10.1542/hpeds.2017-0208
 region: Boston
 specialty: Pediatrics

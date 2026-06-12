@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Interpreters showed significant increases in postintervention confidence in PC communication compared with pre-intervention
 pubmed_id: 33621594
+has_pdf: true
 doi: 10.1016/j.jpainsymman.2021.02.027
 region: Boston
 specialty: Palliative care

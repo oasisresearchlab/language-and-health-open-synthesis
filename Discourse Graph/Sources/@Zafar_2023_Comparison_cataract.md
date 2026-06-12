@@ -16,6 +16,7 @@ language: All
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 868
 pubmed_id: 36779806
+has_pdf: true
 doi: 10.1097/j.jcrs.0000000000001164
 region: Colorado
 specialty: optometry

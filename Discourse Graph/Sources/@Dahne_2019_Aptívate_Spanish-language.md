@@ -14,6 +14,7 @@ number_of_lep: 40
 outcomes: |
   feasibility and efficacy
 pubmed_id: 30431309
+has_pdf: true
 doi: 10.1037/ser0000304
 specialty: Primary Care
 title: "¡Aptívate!: A Spanish-language behavioral activation mobile application for delivery via primary care"

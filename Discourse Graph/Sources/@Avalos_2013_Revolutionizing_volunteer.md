@@ -19,6 +19,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   10-point Likert scale for survey questions of knowledge, skills, and confidence, written and oral assessments of interpreter skills, and qualitative evidence of newfound knowledge in written reflections
 pubmed_id: 23739810
+has_pdf: true
 doi: 10.1007/s11606-013-2502-5
 region: California
 specialty: Interpreter education

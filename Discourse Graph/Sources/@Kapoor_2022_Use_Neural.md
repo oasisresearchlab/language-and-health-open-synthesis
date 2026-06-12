@@ -7,6 +7,7 @@ has_empirical_findings: true
 journal: JAMA
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 35258580
+has_pdf: true
 doi: 10.1001/jamanetworkopen.2022.1485
 region: Canada
 study_years: 2011-2016

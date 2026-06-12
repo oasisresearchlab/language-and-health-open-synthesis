@@ -17,6 +17,7 @@ outcomes: |
   Delivery and timing of surgical treatment was the most frequently reported metric; 75% of studies demonstrated a statistically significant delay in time to surgery or decreased likelihood for NEPLS to receive surgical treatment. Length of stay was reported in 3 studies; all demonstrated that NEPLS had longer length of stay.
 pdf_url: https://www-sciencedirect-com.ezp-prod1.hul.harvard.edu/science/article/pii/S1878875024002638?via%3Dihub
 pubmed_id: 38387790
+has_pdf: false
 doi: 10.1016/j.wneu.2024.02.068
 region: USA
 specialty: Neurosurgery; Pediatric Neurosurgery

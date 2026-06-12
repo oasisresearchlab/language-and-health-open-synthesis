@@ -18,6 +18,7 @@ number_of_lep: 50
 outcomes: |
   education about ROP and experiences obtaining outpatient eye care
 pubmed_id: 29621506
+has_pdf: true
 doi: 10.1016/j.ajo.2018.03.039
 region: California
 specialty: Intensive Care, Neonatology

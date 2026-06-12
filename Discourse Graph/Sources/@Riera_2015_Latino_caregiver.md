@@ -11,6 +11,7 @@ keywords: |
 language: Spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 25185159
+has_pdf: true
 doi: 10.1177/1049732314549474
 specialty: Pulmonology
 title: Latino caregiver experiences with asthma health communication

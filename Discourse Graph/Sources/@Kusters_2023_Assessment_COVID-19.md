@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   multimodal emergency communication
 pubmed_id: 34965822
+has_pdf: true
 doi: 10.1080/10410236.2021.2017109
 region: Texas
 specialty: General Surgery

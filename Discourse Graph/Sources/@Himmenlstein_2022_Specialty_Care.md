@@ -21,6 +21,7 @@ number_of_lep: 149,611
 outcomes: |
   remove language barriers to physician services in order to ensure access to the full spectrum of outpatient specialty care for people with LEP.
 pubmed_id: 35349026
+has_pdf: true
 doi: 10.1007/s11606-022-07477-6
 region: US
 specialty: General Surgery

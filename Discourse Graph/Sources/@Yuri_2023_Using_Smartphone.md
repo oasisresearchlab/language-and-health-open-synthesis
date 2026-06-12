@@ -17,6 +17,7 @@ outcomes: |
   there were three factors that led to the decrease in the number of attendees: irregular work shifts, poor motivation, and an insufficient level of English needed for medical English communication
 pdf_url: https://www.dovepress.com/getfile.php?fileID=87816
 pubmed_id: 36880091
+has_pdf: true
 doi: 10.2147/AMEP.S394625
 region: Japam
 study_years: 2022

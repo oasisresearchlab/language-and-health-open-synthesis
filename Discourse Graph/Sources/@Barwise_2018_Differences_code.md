@@ -17,6 +17,7 @@ number_of_lep: 779
 outcomes: |
   The primary outcomes of the study were characteristics of decision-making for life support, code status, and aggressiveness of treatment23 and included: code status on ICU admission, code status on ICU discharge, change in code status during ICU stay, use of life support (invasive mechanical ventilation, noninvasive mechanical ventilation, dialysis, vasopressors, CPR), presence of advance directives, and implementation of a standardized institutional comfort measures only order set. Secondary outcomes included use of restraints, documentation of a family conference, the presence of symptoms23 (delirium, pain, and agitation), ICU and hospital length of stay and mortality, and hospital discharge location.
 pubmed_id: 30100192
+has_pdf: true
 doi: 10.1016/j.mayocp.2018.04.021
 region: Minnesota
 specialty: Palliative care

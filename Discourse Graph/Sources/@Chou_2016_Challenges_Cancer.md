@@ -17,6 +17,7 @@ number_of_lep: 16
 outcomes: |
   feasibility, utility, and relevancy of the intervention handbook
 pubmed_id: 27981169
+has_pdf: true
 doi: 10.4103/2347-5625.189815
 region: California
 specialty: Oncology

@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   language service provision.
 pubmed_id: 34320830
+has_pdf: true
 doi: 10.1176/appi.ps.202100093
 region: National
 specialty: Psychiatry/mental health

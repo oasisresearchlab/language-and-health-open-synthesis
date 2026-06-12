@@ -19,6 +19,7 @@ number_of_lep: 1417328
 outcomes: |
   admission rate
 pubmed_id: 33528781
+has_pdf: true
 region: California
 specialty: Emergency
 study_years: 2017

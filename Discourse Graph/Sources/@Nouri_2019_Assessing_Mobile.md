@@ -18,6 +18,7 @@ number_of_lep: 13
 outcomes: |
   extensiveness of participant feedback on existing and novel text messaging content
 pubmed_id: 31469083
+has_pdf: true
 doi: 10.2196/14250
 region: California
 specialty: Primary Care

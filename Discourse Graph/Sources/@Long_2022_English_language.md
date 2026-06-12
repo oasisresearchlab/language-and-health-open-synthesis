@@ -10,6 +10,7 @@ keywords: |
 language: all
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 35318761
+has_pdf: true
 doi: 10.1111/hsc.13794
 region: US
 specialty: emergency medicine

@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   LEP experience
 pubmed_id: 34328601
+has_pdf: true
 doi: 10.1007/s10903-021-01251-2
 region: Houston
 specialty: Primary Care

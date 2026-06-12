@@ -12,6 +12,7 @@ outcomes: |
   A strong body of research has demonstrated that patients with LEP experience worse hospital outcomes, including more readmissions, adverse events, longer lengths of stay, mortality, and decreased patient satisfaction compared to their English-proficient counterparts, especially when interpreter services or bilingual care providers are not used properly.
 pdf_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11047028/
 pubmed_id: 38661875
+has_pdf: true
 doi: 10.1353/hpu.2024.a919823
 region: in and out of United States (?)
 specialty: Nursing

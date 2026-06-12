@@ -17,6 +17,7 @@ number_of_lep: 671
 outcomes: |
   no differences in outcomes
 pubmed_id: 35229210
+has_pdf: true
 doi: 10.1007/s00464-022-09148-3
 region: MA
 specialty: internal medicine

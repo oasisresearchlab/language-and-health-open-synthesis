@@ -14,6 +14,7 @@ keywords: |
 language: Spanish, Korean, Cantonese, Mandarin, Tagalog, Vietnamese, Samoan, Tonga, Hmong, Marshallese
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 29256089
+has_pdf: true
 doi: 10.1007/s11606-017-4237-1
 region: North America
 specialty: Endocrinology

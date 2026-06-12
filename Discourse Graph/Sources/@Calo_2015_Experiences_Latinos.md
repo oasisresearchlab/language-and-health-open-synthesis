@@ -17,6 +17,7 @@ number_of_lep: 20
 outcomes: |
   experiences with, and expectations for, interactions with patient registration systems and front office staff.
 pubmed_id: 26700176
+has_pdf: true
 doi: 10.1186/s12913-015-1235-z
 region: North Carolina
 specialty: General Medicine-Clinical

@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   perspectives on the role of interpreters in providing care to LEP patients during CGC
 pubmed_id: 30230379
+has_pdf: true
 doi: 10.1080/10410236.2018.1514684
 region: California
 specialty: Oncology, General Medicine

@@ -14,6 +14,7 @@ number_of_lep: 458
 outcomes: |
   need for interpreter, Patterns of Interpreting Provision, Distribution of Numbers of Occasions of Interpreting for Admissions?
 pubmed_id: 29144184
+has_pdf: true
 doi: 10.1177/0046958017739981
 region: Australia
 specialty: General Medicine- Inpatient, Emergency

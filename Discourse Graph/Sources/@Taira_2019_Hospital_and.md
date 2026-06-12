@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Inter-rater reliability
 pubmed_id: 30910471
+has_pdf: true
 doi: 10.1016/j.jcjq.2019.02.005
 region: United States,Canada, Europe
 specialty: General Medicine

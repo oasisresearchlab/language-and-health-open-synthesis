@@ -14,6 +14,7 @@ number_of_lep: 1,618
 outcomes: |
   odds for no usual place for care, no regular check-up, unmet needs for medical care, and communication problems in healthcare settings
 pubmed_id: 29797103
+has_pdf: true
 doi: 10.1007/s10903-018-0763-0
 region: United States
 specialty: General Medicine

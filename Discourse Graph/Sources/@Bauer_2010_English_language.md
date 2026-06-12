@@ -17,6 +17,7 @@ number_of_lep: 465
 outcomes: |
   access to care, barriers to care, quality of care
 pubmed_id: 21063226
+has_pdf: true
 doi: 10.1097/mlr.0b013e3181f80749
 region: United States
 specialty: Psychiatry/mental health

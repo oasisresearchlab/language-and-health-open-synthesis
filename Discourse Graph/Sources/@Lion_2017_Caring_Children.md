@@ -4,6 +4,7 @@ year: 2017
 title: "Caring for Children and Families With Limited English Proficiency: Current Challenges and an Agenda for the Future"
 journal: Hospital Pediatrics
 pubmed_id: 27979993
+has_pdf: true
 doi: 10.1542/hpeds.2016-0186
 keywords: |
   Administration/Practice Management, Interpersonal & Communication Skills

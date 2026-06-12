@@ -14,6 +14,7 @@ number_of_lep: 75?
 outcomes: |
   document English proficiency, general health
 pubmed_id: 34120973
+has_pdf: true
 doi: 10.1353/hpu.2021.0101
 region: Arkansas, Oklahoma
 specialty: General Medicine

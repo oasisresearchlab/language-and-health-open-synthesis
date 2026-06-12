@@ -18,6 +18,7 @@ number_of_lep: 1201
 outcomes: |
   The primary outcome was a blinded determination of concordance between the caregivers' description of their child's diagnosis with the physician's stated discharge diagnosis. Secondary outcomes were qualitative measures of effectiveness of communication and satisfaction.
 pubmed_id: 20176670
+has_pdf: true
 doi: 10.1542/peds.2009-0769
 specialty: Interpreter Services, Emergency
 title: "Interpreters: telephonic, in-person interpretation and bilingual providers"

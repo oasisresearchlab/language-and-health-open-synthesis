@@ -12,6 +12,7 @@ number_of_lep: 609
 outcomes: |
   self-reported AVS use and usefulness
 pubmed_id: 33059522
+has_pdf: true
 doi: 10.1080/10810730.2020.1833385
 region: United States
 specialty: Primary Care

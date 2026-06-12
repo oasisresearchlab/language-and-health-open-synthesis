@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   communication & language barriers?
 pubmed_id: 29193568
+has_pdf: true
 doi: 10.1111/jocn.14204
 region: England
 specialty: Nursing

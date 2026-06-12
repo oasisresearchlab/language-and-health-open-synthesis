@@ -15,6 +15,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   length of stay, cost of interpreter services, use of interpreter services
 pubmed_id: 32542897
+has_pdf: true
 doi: 10.1002/hpja.373
 region: Australia
 specialty: General Medicine – Inpatient

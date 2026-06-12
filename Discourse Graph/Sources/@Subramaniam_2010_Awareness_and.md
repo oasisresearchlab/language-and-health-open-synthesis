@@ -17,6 +17,7 @@ number_of_lep: 50
 outcomes: |
   EMS awareness and perceived barriers to EMS utilization
 pubmed_id: 20809691
+has_pdf: true
 doi: 10.3109/10903127.2010.497894
 specialty: Emergency, Pediatrics
 study_years: 2008

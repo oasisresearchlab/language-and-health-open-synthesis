@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   experiences interpreting end of life discussions, including questions about values, professional and emotional challenges interpreting these conversations, and how those challenges might impact accuracy.
 pubmed_id: 33563501
+has_pdf: true
 doi: 10.1016/j.pec.2021.01.018
 region: Wisconsin
 specialty: Palliative care

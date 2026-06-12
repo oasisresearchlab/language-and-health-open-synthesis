@@ -17,6 +17,7 @@ number_of_lep: 282
 outcomes: |
   quality benchmarks and outcome of acute ischemic stroke
 pubmed_id: 33008325
+has_pdf: true
 doi: 10.1186/s12883-020-01940-9
 region: California
 specialty: Neurology

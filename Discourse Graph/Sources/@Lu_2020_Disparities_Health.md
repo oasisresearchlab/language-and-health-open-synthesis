@@ -20,6 +20,7 @@ number_of_lep: 16484
 outcomes: |
   changes in insurance coverage and access to health care
 pubmed_id: 31898137
+has_pdf: true
 doi: 10.1007/s11606-019-05609-z
 region: United States
 specialty: Primary Care

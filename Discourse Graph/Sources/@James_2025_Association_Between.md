@@ -1,6 +1,7 @@
 ---
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 nodeInstanceId: 019e8dd8-2b81-7a11-a8b6-267d597e4901
+has_pdf: false
 ---
 
 ---

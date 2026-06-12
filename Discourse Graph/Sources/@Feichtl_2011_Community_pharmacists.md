@@ -18,6 +18,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Use, availability, and characterization of written translation and verbal interpretation LASs, along with perceived barriers for LASs
 pubmed_id: 21555288
+has_pdf: true
 doi: 10.1331/japha.2011.10063
 region: United States
 specialty: Pharmaceuticals

@@ -18,6 +18,7 @@ number_of_lep: 12
 outcomes: |
   comfort level during EOL interpretation; perception of interpreter role; communication practices perceived as barriers to effective communication; communication practices felt to facilitate effective communication; concrete recommendations how to best use medical interpreters; and training received/perceived training needs.
 pubmed_id: 31669199
+has_pdf: true
 doi: 10.1016/j.jpainsymman.2019.10.019
 region: New York
 specialty: Palliative care

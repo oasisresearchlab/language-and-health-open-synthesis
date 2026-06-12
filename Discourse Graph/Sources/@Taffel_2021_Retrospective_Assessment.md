@@ -17,6 +17,7 @@ number_of_lep: 79
 outcomes: |
   respiratory motion and image quality on turbo spin-echo T2-weighted images (T2WI) and postcontrast T1-weighted images (T1WI) using 1 to 5 Likert scales
 pubmed_id: 34419478
+has_pdf: true
 doi: 10.1016/j.jacr.2021.07.020
 region: Virginia?
 specialty: Radiology

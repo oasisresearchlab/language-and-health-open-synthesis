@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   ART adherence
 pubmed_id: 33107766
+has_pdf: true
 doi: 10.1080/09540121.2020.1838428
 region: United States
 specialty: Infectious Disease

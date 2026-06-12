@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   patient satisfaction and understanding of discharge diagnosis.
 pubmed_id: 34803064
+has_pdf: true
 doi: 10.1353/hpu.2021.0187
 specialty: Emergency
 title: Assessment of Interpretation Modality and Patient Comprehension in Spanish-speaking Limited English Proficiency (LEP) Patients Presenting to the Emergency Department

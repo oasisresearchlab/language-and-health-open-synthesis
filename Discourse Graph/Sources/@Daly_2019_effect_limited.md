@@ -17,6 +17,7 @@ number_of_lep: 47
 outcomes: |
   Length of stay, number of consultant reviews and discharge diagnosis
 pubmed_id: 31282178
+has_pdf: true
 doi: 10.1177/1039856219859280
 region: Australia
 specialty: Psychiatry/mental health

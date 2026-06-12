@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   health research information-seeking behavior;  health research knowledge, willingness to participate in health research, and health empowerment.
 pubmed_id: 30772115
+has_pdf: true
 doi: 10.1016/j.pec.2019.02.013
 region: California?
 specialty: Oncology

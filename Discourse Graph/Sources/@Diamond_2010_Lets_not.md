@@ -11,6 +11,7 @@ keywords: |
 language: Spanish & other
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 20352518
+has_pdf: true
 doi: 10.1007/s11606-009-1201-8
 specialty: Provider Education
 title: "Let's not contribute to disparities: the best methods for teaching clinicians how to overcome language barriers to health care"

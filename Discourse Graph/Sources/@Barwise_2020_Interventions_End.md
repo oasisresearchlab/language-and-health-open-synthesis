@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   actual rates of ACP, Advance Directives (AD), or other documentation including surrogate decision-making preferences, attitude, and comfort with ACP as well as decisions about hospice and quality of life.
 pubmed_id: 31749066
+has_pdf: true
 doi: 10.1007/s10903-019-00947-w
 region: Australia
 specialty: Palliative care

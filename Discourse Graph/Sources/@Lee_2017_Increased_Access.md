@@ -21,6 +21,7 @@ number_of_lep: 152
 outcomes: |
   (1) reasons for and (2) risks of the procedure and (3) having had all questions answered.
 pubmed_id: 28185201
+has_pdf: true
 doi: 10.1007/s11606-017-3983-4
 specialty: Cardiology, General, Orthopedic
 study_years: 2012-2013

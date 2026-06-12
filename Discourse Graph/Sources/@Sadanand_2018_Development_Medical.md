@@ -14,6 +14,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   rate self-efficacy in medical Spanish comprehension and vocabulary.
 pubmed_id: 32818189
+has_pdf: true
 doi: 10.22454/primer.2018.738688
 region: Virginia
 specialty: Medical student, Provider Education

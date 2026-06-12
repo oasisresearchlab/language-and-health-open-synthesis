@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   clinical training experiences with LEP patients
 pubmed_id: 27166864
+has_pdf: true
 doi: 10.1097/acm.0000000000001211
 region: Boston
 specialty: Medical student, Provider Education

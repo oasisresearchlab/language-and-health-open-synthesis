@@ -15,6 +15,7 @@ number_of_lep: 294
 outcomes: |
   hypertension, diabetes, and renal impairment
 pubmed_id: 27617562
+has_pdf: true
 doi: 10.1097/jcn.0000000000000342
 region: Australia, New Zealand
 specialty: Cardiology

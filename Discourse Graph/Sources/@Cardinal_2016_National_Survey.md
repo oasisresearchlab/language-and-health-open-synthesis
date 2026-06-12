@@ -13,6 +13,7 @@ keywords: |
   Disparity; Diversity; Equity; Language; Safety.
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 26453990
+has_pdf: true
 doi: 10.1016/j.amjmed.2015.09.007
 region: United States
 specialty: Medical student, Provider Education

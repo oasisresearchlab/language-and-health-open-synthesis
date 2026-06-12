@@ -9,6 +9,7 @@ keywords: |
   none
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 34757145
+has_pdf: true
 region: MA
 specialty: General Surgery
 title: Accessibility of direct-to-consumer teledermatology to underserved populations

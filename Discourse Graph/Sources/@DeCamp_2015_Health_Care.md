@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Hospital changes in response to recommendations, Dissemination products, Board member satisfaction
 pubmed_id: 26639378
+has_pdf: true
 specialty: General Medicine
 study_years: 2011-2012
 title: "Health Care Engagement of Limited English Proficient Latino Families: Lessons Learned from Advisory Board Development"

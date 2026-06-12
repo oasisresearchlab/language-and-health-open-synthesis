@@ -10,6 +10,7 @@ keywords: |
   Equity; Limited English Proficient; Patient Safety; Quality.
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 24639984
+has_pdf: true
 doi: 10.15171/ijhpm.2014.21
 specialty: General Medicine
 title: 'Creating a safe, high-quality healthcare system for all: meeting the needs of limited English proficient populations; Comment on "Patient safety and healthcare quality: the case for language access"'

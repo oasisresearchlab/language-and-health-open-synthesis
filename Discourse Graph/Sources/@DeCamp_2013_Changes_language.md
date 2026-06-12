@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   use of ≥1 of the following methods of communication with LEP patients: bilingual family member, bilingual staff, bilingual physician (self or other), professional interpreter, telephone interpreter, and written materials in the primary language
 pubmed_id: 23837185
+has_pdf: true
 doi: 10.1542/peds.2012-2909
 region: United States
 specialty: Pediatrics

@@ -15,6 +15,7 @@ number_of_lep: 241
 outcomes: |
   percent time in therapeutic range (TTR for INR between 2.0 and 3.0) and time in danger range (TDR for INR <1.8 or >3.5) using the standard Rosendaal interpolation method
 pubmed_id: 23832325
+has_pdf: true
 doi: 10.1161/jaha.113.000170
 region: Boston
 specialty: General Medicine-Clinical

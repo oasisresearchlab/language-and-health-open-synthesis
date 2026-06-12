@@ -8,6 +8,7 @@ intervention: false
 journal: North Carolina Medical Journal
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 30877160
+has_pdf: false
 doi: 10.18043/ncm.80.2.104
 region: North Carolina
 specialty: General Medicine

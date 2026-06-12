@@ -17,6 +17,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Glycemic Control
 pubmed_id: 20878497
+has_pdf: true
 doi: 10.1007/s11606-010-1507-6
 region: Northern California
 specialty: Endocrinology & Primary Health

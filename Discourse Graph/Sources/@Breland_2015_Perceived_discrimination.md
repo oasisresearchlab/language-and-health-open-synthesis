@@ -15,6 +15,7 @@ number_of_lep: 62
 outcomes: |
   perceived discrimination
 pubmed_id: 25871985
+has_pdf: true
 doi: 10.14423/smj.0000000000000259
 region: South Carolina
 specialty: General Medicine

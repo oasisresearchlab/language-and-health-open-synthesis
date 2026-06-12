@@ -15,6 +15,7 @@ number_of_lep: 27
 outcomes: |
   measure acceptability, interviews were conducted with participants using a structured format
 pubmed_id: 37342039
+has_pdf: true
 doi: 10.1001/jamanetworkopen.2023.19277
 region: Colorado
 study_years: December 2017 to July 2018

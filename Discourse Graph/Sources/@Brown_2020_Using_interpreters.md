@@ -11,6 +11,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   patient communication & care
 pubmed_id: 32452961
+has_pdf: true
 doi: 10.1097/01.jaa.0000662392.70933.c5
 region: United States
 specialty: General Medicine

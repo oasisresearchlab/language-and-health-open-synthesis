@@ -17,6 +17,7 @@ number_of_lep: 53?
 outcomes: |
   documented financial burden, health insurance, hospital stay length, survival, risk of death
 pubmed_id: 34109732
+has_pdf: true
 doi: 10.1002/pbc.29174
 specialty: Hematology, Oncology
 title: "Parental limited English proficiency in pediatric stem cell transplantation: Clinical impact and health care utilization"

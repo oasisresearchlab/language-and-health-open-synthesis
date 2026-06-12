@@ -11,6 +11,7 @@ keywords: |
 language: Spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 33127616
+has_pdf: true
 doi: 10.1136/medhum-2019-011669
 region: New Jersey
 specialty: Emergency

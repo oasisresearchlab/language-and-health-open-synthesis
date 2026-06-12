@@ -14,6 +14,7 @@ number_of_lep: 18
 outcomes: |
   what happens when bilingual health care workers and cleaners haphazardly take on the additional role of interpreter.
 pubmed_id: 32615915
+has_pdf: true
 doi: 10.1177/1363461520933768
 region: South Africa
 specialty: Psychiatry/mental health

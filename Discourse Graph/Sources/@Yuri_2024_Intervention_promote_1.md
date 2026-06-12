@@ -18,6 +18,7 @@ outcomes: |
   he post-intervention quantitative assessment yielded high participant satisfaction, with all reporting positive changes in their oral health knowledge and willingness to use preventive dental care.
 pdf_url: https://bmcoralhealth.biomedcentral.com/articles/10.1186/s12903-024-04113-z
 pubmed_id: 38481227
+has_pdf: true
 doi: 10.1186/s12903-024-04113-z
 region: Los Angeles, California
 specialty: Dental

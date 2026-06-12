@@ -14,6 +14,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   patient and provider satisfaction
 pubmed_id: 20678825
+has_pdf: true
 doi: 10.1016/j.annemergmed.2010.05.032
 region: New Jersey
 specialty: Emergency

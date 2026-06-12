@@ -17,6 +17,7 @@ number_of_lep: 300
 outcomes: |
   developmental surveillance at 100% of WCVs and screened with a standardized developmental screening tool
 pubmed_id: 26724180
+has_pdf: true
 doi: 10.1016/j.acap.2015.12.007
 specialty: Pediatrics
 study_years: 2006-2010

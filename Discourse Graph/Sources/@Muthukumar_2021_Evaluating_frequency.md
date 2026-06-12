@@ -14,6 +14,7 @@ number_of_lep: 390
 outcomes: |
   clinical trial language requirement
 pubmed_id: 34520467
+has_pdf: true
 doi: 10.1371/journal.pmed.1003758
 region: United States
 specialty: General Medicine-Clinical

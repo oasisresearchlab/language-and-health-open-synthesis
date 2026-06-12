@@ -4,6 +4,7 @@ year: 2013
 title: A call to improve the health and healthcare of Latino children
 journal: Journal of Pediatrics
 pubmed_id: 24160652
+has_pdf: true
 doi: 10.1016/j.jpeds.2013.07.033
 keywords: |
   LEP; Limited English proficiency.

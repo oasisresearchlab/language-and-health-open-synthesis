@@ -10,6 +10,7 @@ keywords: |
   health literacy; language interpreters; patient-physician communication.
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 29311179
+has_pdf: true
 doi: 10.1370/afm.2154
 region: United States
 specialty: General Medicine-Outpatient

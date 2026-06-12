@@ -14,6 +14,7 @@ number_of_lep: 667
 outcomes: |
   intentions to call 9-1-1 and their awareness of and training in bystander CPR
 pubmed_id: 21748487
+has_pdf: true
 doi: 10.1007/s10900-011-9433-z
 region: Washington
 specialty: Cardiology, Emergency

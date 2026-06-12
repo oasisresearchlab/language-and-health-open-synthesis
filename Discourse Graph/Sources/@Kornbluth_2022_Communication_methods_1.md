@@ -16,6 +16,7 @@ number_of_lep: 1029
 outcomes: |
   communication with ancillary staff
 pubmed_id: 34023171
+has_pdf: true
 region: California
 specialty: Primary Care
 study_years: 2014 & 2016–2018

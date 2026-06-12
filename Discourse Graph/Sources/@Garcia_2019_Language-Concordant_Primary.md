@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   access to language-concordant PCPs
 pubmed_id: 31312781
+has_pdf: true
 doi: 10.1089/heq.2019.0035
 region: California
 specialty: Primary Care

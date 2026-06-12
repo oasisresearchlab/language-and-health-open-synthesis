@@ -17,6 +17,7 @@ number_of_lep: 587
 outcomes: |
   computer-aided nurse telephone triage calls
 pubmed_id: 29121920
+has_pdf: true
 doi: 10.1186/s12913-017-2651-z
 region: Midwest USA
 specialty: General Medicine

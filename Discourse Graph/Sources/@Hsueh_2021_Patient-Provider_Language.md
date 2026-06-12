@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   association of language concordance with patient behaviors, provider behaviors, interpersonal processes of care, and clinical outcomes
 pubmed_id: 31291823
+has_pdf: true
 doi: 10.1177/1077558719860708
 region: United States
 specialty: General Medicine

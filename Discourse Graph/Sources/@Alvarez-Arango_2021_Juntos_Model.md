@@ -14,6 +14,7 @@ number_of_lep: 386
 outcomes: |
   (1) promote language-congruent care with cultural and literacy level sensitivity; (2) identify barriers to safe discharge, with attention to issues of public health concern (e.g., crowded housing or work conditions, access to food); and (3) advocate and facilitate referral to appropriate resources needed to support the patients and their communities
 pubmed_id: 35018315
+has_pdf: true
 doi: 10.1089/heq.2020.0124
 region: Maryland
 specialty: Infectious Disease

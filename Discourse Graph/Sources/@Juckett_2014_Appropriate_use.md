@@ -8,6 +8,7 @@ intervention: commentaries
 journal: American Family Physician
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 25369625
+has_pdf: true
 specialty: General Medicine
 title: Appropriate use of medical interpreters
 year: 2014

@@ -15,6 +15,7 @@ outcomes: |
   we found that targeted audiovisual education could help mitigate patient reluctance to undergo screening
 pdf_url: https://bmjopenquality.bmj.com/content/12/4/e002391.long
 pubmed_id: 37797960
+has_pdf: false
 doi: 10.1136/bmjoq-2023-002391
 region: Minnesota
 specialty: Internal Medicine; Oncology

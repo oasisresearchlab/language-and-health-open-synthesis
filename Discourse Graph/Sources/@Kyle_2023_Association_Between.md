@@ -10,6 +10,7 @@ keywords: |
 language: All
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 36776520
+has_pdf: true
 doi: 10.1177/15563316221104765
 region: NY
 specialty: orthopedic

@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   need for language assistance
 pubmed_id: 33387259
+has_pdf: true
 doi: 10.1007/s10903-020-01127-x
 specialty: Emergency
 title: An Implementation Science Approach Improves Language Access in the Emergency Department

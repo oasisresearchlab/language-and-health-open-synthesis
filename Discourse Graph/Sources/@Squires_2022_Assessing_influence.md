@@ -17,6 +17,7 @@ language: English, Spanish, Russian, Chinese, or Korean
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 87561
 pubmed_id: 3410627
+has_pdf: true
 doi: 10.1055/s-2007-1025008
 region: NY
 specialty: emergency medicine

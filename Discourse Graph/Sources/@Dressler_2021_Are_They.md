@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   language barriers
 pubmed_id: 32828932
+has_pdf: true
 doi: 10.1016/j.jpainsymman.2020.08.019
 region: Australia?
 specialty: Palliative care

@@ -15,6 +15,7 @@ language: spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 number_of_lep: 439
 pubmed_id: 36689885
+has_pdf: true
 doi: 10.1016/j.pec.2023.107644
 region: Chicago
 specialty: internal medicine

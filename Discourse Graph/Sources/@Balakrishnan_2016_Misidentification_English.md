@@ -14,6 +14,7 @@ number_of_lep: 55
 outcomes: |
   Satisfaction and Door-to-Room Time
 pubmed_id: 25750135
+has_pdf: true
 doi: 10.1007/s10903-015-0174-4
 specialty: Emergency
 study_years: 2011-2013

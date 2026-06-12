@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   pain presence and severity
 pubmed_id: 35260338
+has_pdf: true
 doi: 10.1016/j.pmn.2022.01.007
 specialty: Primary Care
 title: "Patient Race, Ethnicity, Language, and Pain Severity in Primary Care: A Retrospective Electronic Health Record Study"

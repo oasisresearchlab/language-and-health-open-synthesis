@@ -14,6 +14,7 @@ number_of_lep: 5
 outcomes: |
   miscommunication and other difficulties associated with the language barrier; the language barrier between clinicians and patients and a need for language services; participants’ views on interpreting; the role of age, culture and gender; and the use of trained and untrained interpreters and using staff as interpreters.
 pubmed_id: 31931680
+has_pdf: true
 doi: 10.1080/16549716.2019.1684072
 region: South Africa
 specialty: Psychiatry/mental health

@@ -10,6 +10,7 @@ keywords: |
 language: spanish
 nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 pubmed_id: 36546398
+has_pdf: true
 doi: 10.1002/pbc.30101
 region: MA
 specialty: pediatrics

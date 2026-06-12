@@ -16,6 +16,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   stress reactivity and coping (primary), perceived stress and burnout, and work-related stress
 pubmed_id: 27196822
+has_pdf: true
 doi: 10.1002/pon.4137
 region: Boston
 specialty: Oncology

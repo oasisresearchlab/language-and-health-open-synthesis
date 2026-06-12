@@ -10,6 +10,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   availability, staff awareness, and staff use of linguistic resources and services
 pubmed_id: 22201202
+has_pdf: true
 doi: 10.1097/00115514-201111000-00009
 region: Florida's Palm Beach, St. Lucie, and Martin counties
 specialty: General Medicine

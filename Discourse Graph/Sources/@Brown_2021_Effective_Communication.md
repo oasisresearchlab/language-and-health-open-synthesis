@@ -12,6 +12,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   clinically significant errors and  the quality of care.
 pubmed_id: 33516421
+has_pdf: true
 doi: 10.1016/j.pop.2020.09.004
 region: North Carolina?
 specialty: Primary Care

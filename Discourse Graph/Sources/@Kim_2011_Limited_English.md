@@ -13,6 +13,7 @@ nodeTypeId: node_Ne237S0BfRPDaeqB_gbuT
 outcomes: |
   Psychiatric disorders, Self-rated mental health, Use of mental health services
 pubmed_id: 20537658
+has_pdf: true
 doi: 10.1016/j.jpsychires.2010.04.031
 region: United States
 specialty: psychiatry/mental health

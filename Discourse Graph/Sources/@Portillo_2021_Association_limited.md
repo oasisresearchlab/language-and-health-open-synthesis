@@ -17,6 +17,7 @@ number_of_lep: 12986
 outcomes: |
   (1) ED revisits resulting in repeat discharge and (2) ED revisits resulting in hospitalization (3) medical team recognition and documentation of language barrier, (4) documentation of professional interpreter use during index visit, and (5) provision of discharge instructions in preferred language.
 pubmed_id: 34431157
+has_pdf: true
 doi: 10.1111/acem.14359
 region: Boston
 specialty: Emergency

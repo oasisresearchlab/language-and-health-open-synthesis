@@ -12,6 +12,7 @@ outcomes: |
   While hospitals have these resources available, accomodating these resources can pose issues in small patient populations as they are used less frequently. The written material is often not translated.
 pdf_url: https://link-springer-com.ezp-prod1.hul.harvard.edu/content/pdf/10.1007/s10903-022-01416-7.pdf
 pubmed_id: 36251203
+has_pdf: true
 doi: 10.1007/s10903-022-01416-7
 region: Washington State
 title: Language Accommodations for Limited English Proficient Patients in Rural Health Care

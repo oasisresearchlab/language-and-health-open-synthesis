@@ -1,3 +1,21 @@
+## Step 0 — Local inbox match (run first)
+
+Before any online fetch, fill missing PDFs from the hand-collected batch in `data/pdfs/inbox/`
+with `utils/match_inbox_pdfs.py` (see `Skill-inbox-match.md`). It matches each inbox PDF to a source
+note (by filename PMID, then by embedded DOI / fuzzy title + author + year), copies confirmed matches
+to `data/pdfs/@<citekey>.pdf`, authors draft stubs for genuinely new papers, and reconciles a
+`has_pdf:` flag across all notes. **Report-only by default; writes only under `--apply`.**
+
+```
+python3 utils/match_inbox_pdfs.py                # dry-run: review data/pdfs/inbox/_match_report.csv
+python3 utils/match_inbox_pdfs.py --apply        # ingest matches, author new-paper stubs
+```
+
+`fetch_pdfs.py` (below) then only chases whatever the inbox could not fill — use the `Missing PDF`
+view in `Papers.base` (notes with `has_pdf == false`) to scope that online run.
+
+---
+
 # Getting papers: OA PDF retrieval + DOI enrichment
 
 ## Goal

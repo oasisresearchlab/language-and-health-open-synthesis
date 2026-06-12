@@ -9,11 +9,23 @@ views:
       - Title
       - Year
       - author
+      - has_pdf
       - has_empirical_findings
       - outcomes_extracted
       - factors
     columnSize:
       note.Title: 776
+  - type: table
+    name: Missing PDF
+    filters:
+      and:
+        - nodeTypeId == "node_Ne237S0BfRPDaeqB_gbuT"
+        - has_pdf == false
+    order:
+      - file.name
+      - Title
+      - Year
+      - author
   - type: table
     name: Interpretation services
     filters:

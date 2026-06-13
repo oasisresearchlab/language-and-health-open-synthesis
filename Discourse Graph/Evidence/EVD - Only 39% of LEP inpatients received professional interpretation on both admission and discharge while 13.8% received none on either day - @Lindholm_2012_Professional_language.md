@@ -17,7 +17,7 @@ tags:
 languageConcordanceFactor:
   - Interpretation services
 healthOutcome:
-  - Interpreter utilization
+  - Service utilization
 deliveryContext:
   - Inpatient
 ---

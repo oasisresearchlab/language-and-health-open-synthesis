@@ -14,7 +14,7 @@ languageConcordanceFactor:
   - Interpretation services
 healthOutcome:
   - Hospital stay length
-  - Provider time and effort
+  - Physician time/effort
 deliveryContext:
   - Emergency Department
 ---

@@ -13,7 +13,7 @@ tags:
 languageConcordanceFactor:
   - Limited English Proficiency (LEP)
 healthOutcome:
-  - Provider time and effort
+  - Physician time/effort
 deliveryContext:
   - Outpatient
 ---

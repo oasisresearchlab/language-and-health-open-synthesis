@@ -8,12 +8,12 @@ Source: "[[@Jennifer_2023_Evaluation_Patient]]"
 EvidenceType:
 tags:
   - languageConcordanceFactor/concordanceIntervention/interpretingServices
-  - healthOutcome/concordanceServiceUse
+  - healthOutcome/serviceUtilization
   - epistemic/mechanism
 languageConcordanceFactor:
   - Interpretation services
 healthOutcome:
-  - Language-concordant service use
+  - Service utilization
 deliveryContext:
   - Inpatient
 ---

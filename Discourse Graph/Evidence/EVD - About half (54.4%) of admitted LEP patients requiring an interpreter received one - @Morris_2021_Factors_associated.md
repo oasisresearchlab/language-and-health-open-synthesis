@@ -8,13 +8,13 @@ Source: "[[@Morris_2021_Factors_associated]]"
 EvidenceType:
 tags:
   - languageConcordanceFactor/concordanceIntervention/interpretingServices
-  - healthOutcome/serviceUtilisation
+  - healthOutcome/serviceUtilization
   - epistemic/measurement
 languageConcordanceFactor:
   - Interpretation services
   - Limited English Proficiency (LEP)
 healthOutcome:
-  - Use of interpreter services
+  - Service utilization
 deliveryContext:
   - Inpatient
 ---

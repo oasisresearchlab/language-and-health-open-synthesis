@@ -30,7 +30,13 @@ deliveryContext:
 
 ## Contradicting Evidence
 
-> [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
+> [!info] EVDs that oppose this claim (→ EVD—opposes→CLM). Interventions that increased professional interpreter provision/access showed no significant length-of-stay effect after adjustment.
+
+- [[EVD - Bedside interpreter telephone access had no significant effect on length of stay - @Karliner_2017_Convenient_Access]]
+- [[EVD - No significant difference in length of stay between LEP patients who did and did not receive an interpreter after casemix adjustment - @Morris_2021_Factors_associated]]
+- [[EVD - The interpreter-use QI bundle did not significantly change balancing measures of ED length of stay (186 min) or VRI encounter time (16.5 min) - @Martinez_2021_Improving_Equity]]
+- [[EVD - Documented interpreter use was not significantly associated with LOS, ED revisits, readmission, or surgical follow-up after cholecystectomy - @J_2025_Pilot_study]]
+- [[EVD - Process measures, length of stay, and escalation of care showed no special cause variation after the intervention - @Lauren_2024_Quality_Improvement]]
 
 ## Other Notes
 

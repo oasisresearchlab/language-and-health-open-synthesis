@@ -14,7 +14,7 @@ languageConcordanceFactor:
   - Interpretation services
   - Limited English Proficiency (LEP)
 healthOutcome:
-  - Interpreter utilization
+  - Service utilization
 deliveryContext:
   - Emergency Department
 ---

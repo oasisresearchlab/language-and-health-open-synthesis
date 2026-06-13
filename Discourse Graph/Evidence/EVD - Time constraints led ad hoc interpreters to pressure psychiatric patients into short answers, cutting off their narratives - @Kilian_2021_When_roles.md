@@ -13,7 +13,7 @@ tags:
 languageConcordanceFactor:
   - Interpretation services
 healthOutcome:
-  - Provider time and effort
+  - Physician time/effort
 deliveryContext:
   - Inpatient
   - Psychiatry

@@ -8,13 +8,13 @@ Source: "[[@Seible_2021_Influence_Patient-Provider]]"
 EvidenceType:
 tags:
   - languageConcordanceFactor/concordanceIntervention/bilingualProvider
-  - healthOutcome/communicationContent
+  - healthOutcome/communicationQuality
   - epistemic/mechanism
 languageConcordanceFactor:
   - Bilingual provider
   - Language concordance
 healthOutcome:
-  - Communication content
+  - Communication quality
 deliveryContext:
   - Outpatient
   - Oncology

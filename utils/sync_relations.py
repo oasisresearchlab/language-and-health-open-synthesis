@@ -76,6 +76,8 @@ SECTION_RULES = {
     ("EP", "contradicting evidence"): ("opposes", "in", "EVD"),
     ("CVT", "qualifies"): ("qualifies", "out", "EVD"),
     ("QUE", "claims addressing this question"): ("informs", "in", "CLM"),
+    ("CLM", "opposing claims"): ("opposes", "out", "CLM"),
+    ("CLM", "related claims"): ("informs", "out", "CLM"),
 }
 
 WIKILINK = re.compile(r"\[\[([^\]\|#]+)")

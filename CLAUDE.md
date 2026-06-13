@@ -20,14 +20,13 @@ Sub-questions (in `Discourse Graph/Questions/`): effects of concordance on quali
 | Claim (CLM) | `node_nMxzA_OByPwgPcmb6AN82` | `Discourse Graph/Claims/` |
 | Evidence (EVD) | `node_huDx8FGfNSGQyongW5rk-` (keyImage) | `Discourse Graph/Evidence/` |
 | Source (SRC) | `node_Ne237S0BfRPDaeqB_gbuT` | `Discourse Graph/Sources/` |
-| EvidencePattern (EP) | `node_r2JRW9jgphgmMpz5mN7eG` | `Discourse Graph/EvidencePatterns/` |
 | Pattern (PTN) | `node_vUzzS2ZuolcZzErZfyC72` | `Discourse Graph/Patterns/` |
 | Artifact (ART) | `node_OULGh2SuqxP1oES9p2k_9` (keyImage) | `Discourse Graph/Artifacts/` |
 | Caveat (CVT) | `node_Q4sxSAHaUscV3smL5OBnB` | `Discourse Graph/Caveats/` |
 
 ## Edge schema (relations.json is the source of truth)
 
-- `EVD —supports/opposes→ CLM` and `EVD —supports/opposes→ EP` (`relation_BO5Bt…` / `relation_Qtuz…`)
+- `EVD —supports/opposes→ CLM` (`relation_BO5Bt…` / `relation_Qtuz…`)
 - `CVT —qualifies→ EVD` (`rel_o0a9NeAmWnhFBaVLNiJ1g`)
 - `{SRC, CLM, EVD} —informs→ QUE`; `CLM —supports/opposes/informs→ CLM` (`relation_OxKXi9…` for informs)
 
@@ -37,9 +36,9 @@ Edges are **authored as wikilinks** in node bodies (see Skill-references "Edge a
 
 ## Tags & fields
 
-Every QUE/CLM/EVD/EP carries domain-facet tags + **exactly one** `epistemic/*` tag
+Every QUE/CLM/EVD carries domain-facet tags + **exactly one** `epistemic/*` tag
 (`mechanism` | `effect-size` | `measurement`). Domain facets (also mirrored as YAML list fields on
-EVD/CLM/EP for `.base` filtering): `languageConcordanceFactor/*`, `healthOutcome/*`,
+EVD/CLM for `.base` filtering): `languageConcordanceFactor/*`, `healthOutcome/*`,
 `deliveryContext/*`. Vocabulary seeds in `Variables.md`; extend as extraction surfaces new values.
 
 ## Governance — propose, don't commit

@@ -43,7 +43,6 @@ TYPE = {
     "node_nMxzA_OByPwgPcmb6AN82": ("CLM", "Claim", "#5b8a2b"),
     "node_huDx8FGfNSGQyongW5rk-": ("EVD", "Evidence", "#DB134A"),
     "node_Ne237S0BfRPDaeqB_gbuT": ("SRC", "Source", "#6b7280"),
-    "node_r2JRW9jgphgmMpz5mN7eG": ("EP", "EvidencePattern", "#3b82a6"),
     "node_vUzzS2ZuolcZzErZfyC72": ("PTN", "Pattern", "#808080"),
     "node_OULGh2SuqxP1oES9p2k_9": ("ART", "Artifact", "#ce5555"),
     "node_Q4sxSAHaUscV3smL5OBnB": ("CVT", "Caveat", "#b8860b"),

@@ -13,7 +13,6 @@ parent_skill: extract-discourse-nodes
 | QUE | `QUE - <question>.md` |
 | CLM | `CLM - <claim>.md` |
 | EVD | `EVD - <finding> - @<citekey>.md` (citekey in name) |
-| EP | `EP - <pattern>.md` |
 | CVT | `CVT - <limitation>.md` |
 | ART | `ART - <system>.md` |
 | PTN | `PTN - <concept>.md` |
@@ -28,12 +27,12 @@ parent_skill: extract-discourse-nodes
 4. **CLMs transcend papers** — multiple papers can support one CLM.
 5. **Caveats qualify EVDs, not CLMs** — `CVT —qualifies→ EVD` only. Mark `type: author-stated|inferred`.
 6. **EPs need ≥2 independent papers**; single-paper regularities stay CLMs.
-7. **One `epistemic/*` tag** per QUE/CLM/EVD/EP: `mechanism` | `effect-size` | `measurement`
+7. **One `epistemic/*` tag** per QUE/CLM/EVD: `mechanism` | `effect-size` | `measurement`
    (~~`design-principle` dropped~~).
 8. **Propose, don't commit** — EPs, upgrades, merges, and summary-cell values are AI proposals; human commits.
 9. **NodeFormality** starts `draft`; promote after audits pass. **NodeFormality is fidelity** (does
    the node meet the authoring/audit bar); **`curationStatus` is human-AI review state** — a separate axis.
-10. **`curationStatus`** on every synthesis node (QUE/CLM/EVD/EP/ART/CVT): `Initial AI draft` →
+10. **`curationStatus`** on every synthesis node (QUE/CLM/EVD/ART/CVT): `Initial AI draft` →
     `In expert review` → `Expert-verified`. AI authors start every node at `Initial AI draft`; only the
     **human** advances it (governance: propose, don't commit). Sources are bibliographic, not on this axis.
     `export_rdf.py` maps this to the renderer's `status` field (topology filter + node-page badge).
@@ -41,7 +40,7 @@ parent_skill: extract-discourse-nodes
 
 ## Tag facets (domain) + mirrored YAML fields
 
-Faceted hierarchical tags **and** matching YAML list fields (same names) on EVD/CLM/EP — fields let
+Faceted hierarchical tags **and** matching YAML list fields (same names) on EVD/CLM — fields let
 `.base` views filter without tag parsing. Seed from `Variables.md`; extend as needed.
 
 - `languageConcordanceFactor/...` — `/discordance`, `/concordanceIntervention/interpretingServices`,
@@ -50,8 +49,6 @@ Faceted hierarchical tags **and** matching YAML list fields (same names) on EVD/
   `/trust`, `/empowerment`, `/providerTimeEffort`, `/malpractice`, …
 - `deliveryContext/...` — care setting: `/ed`, `/inpatient`, `/primaryCare`, `/telehealth`, … (bootstrap
   from sources' `specialty`/`region`)
-
-EP also carries `ep/scope/cross-paper` and `ep/strength/<N>-papers`.
 
 ## Methods Context (EVD) — inverted What/How/Who
 
@@ -67,7 +64,6 @@ Each block: one-line structured summary + verbatim quote + auto quote-crop scree
 | Edge (schema: source→dest) | Authored on | Section |
 |---|---|---|
 | EVD —supports/opposes→ CLM | CLM | `## Supporting Evidence` / `## Contradicting Evidence` |
-| EVD —supports/opposes→ EP | EP | `## Supporting Evidence` (+ Contradicting) |
 | CVT —qualifies→ EVD | CVT | `## Qualifies` |
 | CLM —informs→ QUE | QUE | `## Claims addressing this question` (nested) |
 | SRC/EVD —informs→ QUE | derived by sync (transitive) | — |

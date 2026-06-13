@@ -61,7 +61,6 @@ TYPE = {
     "node_nMxzA_OByPwgPcmb6AN82": "CLM",
     "node_huDx8FGfNSGQyongW5rk-": "EVD",
     "node_Ne237S0BfRPDaeqB_gbuT": "SRC",
-    "node_r2JRW9jgphgmMpz5mN7eG": "EP",
     "node_Q4sxSAHaUscV3smL5OBnB": "CVT",
 }
 

@@ -1,7 +1,12 @@
 import Link from "next/link";
 
 import { loadGraph } from "@/lib/graph";
-import { NODE_TYPES, NODE_TYPE_LABEL, type NodeType } from "@/lib/types";
+import {
+  NODE_TYPES,
+  NODE_TYPE_LABEL,
+  NODE_TYPE_DEFINITION,
+  type NodeType,
+} from "@/lib/types";
 import { NodeBadge } from "@/components/node-badge";
 import { Separator } from "@/components/ui/separator";
 
@@ -16,7 +21,6 @@ const SECTION_ID: Record<NodeType, string> = {
   evidence: "evidence",
   method: "methods",
   source: "sources",
-  evidencepattern: "evidence-patterns",
   artifact: "artifacts",
 };
 
@@ -65,6 +69,11 @@ export default async function NodesIndexPage() {
                 · {graph.byType[t].length}
               </span>
             </h2>
+            {NODE_TYPE_DEFINITION[t] ? (
+              <p className="mb-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                {NODE_TYPE_DEFINITION[t]}
+              </p>
+            ) : null}
             <ul className="grid gap-1 sm:grid-cols-2 lg:grid-cols-3">
               {graph.byType[t].map((n) => (
                 <li key={n.id} className="min-w-0">

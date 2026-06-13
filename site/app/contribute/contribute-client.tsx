@@ -105,14 +105,6 @@ const EDGE_FIELDS_BY_TYPE: Record<NodeType, EdgeFieldDef[]> = {
     },
   ],
   source: [],
-  evidencepattern: [
-    {
-      edge: "supports",
-      label: "supports",
-      hint: "Claim(s) this Evidence Pattern corroborates",
-      targetType: "claim",
-    },
-  ],
   artifact: [],
 };
 
@@ -578,8 +570,6 @@ function prefixForType(t: NodeType): string {
       return "M";
     case "source":
       return "S";
-    case "evidencepattern":
-      return "P";
     case "artifact":
       return "A";
   }

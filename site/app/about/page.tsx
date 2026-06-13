@@ -3,6 +3,17 @@ import { ArrowRight } from "lucide-react";
 
 import { LinkButton } from "@/components/link-button";
 import { Separator } from "@/components/ui/separator";
+import { NodeBadge } from "@/components/node-badge";
+import { NODE_TYPE_DEFINITION, NODE_TYPE_LABEL } from "@/lib/types";
+
+const GLOSSARY: { type: Parameters<typeof NodeBadge>[0]["type"]; def: string }[] =
+  [
+    { type: "question", def: NODE_TYPE_DEFINITION.question! },
+    { type: "claim", def: NODE_TYPE_DEFINITION.claim! },
+    { type: "evidence", def: NODE_TYPE_DEFINITION.evidence! },
+    { type: "source", def: NODE_TYPE_DEFINITION.source! },
+    { type: "artifact", def: NODE_TYPE_DEFINITION.artifact! },
+  ];
 
 export const metadata = {
   title: "What is a discourse graph?",
@@ -45,12 +56,29 @@ export default function AboutPage() {
           research communities. The Q/C/E/S core schema is small enough to
           remember; this synthesis extends it with a few types specific to
           evidence work: <strong>Caveat</strong> (a limitation that qualifies a
-          piece of Evidence), <strong>Evidence Pattern</strong> (a regularity
-          supported by evidence across two or more independent papers), and{" "}
-          <strong>Artifact</strong> (a concrete intervention or system — a
-          tablet-on-wheels interpreting cart, a bilingual-provider program —
-          that the evidence is about).
+          piece of Evidence) and <strong>Artifact</strong> (a concrete
+          intervention or system — a tablet-on-wheels interpreting cart, a
+          bilingual-provider program — that the evidence is about).
         </p>
+
+        <dl className="grid gap-x-6 gap-y-3 rounded-lg border border-border bg-card/50 p-5 sm:grid-cols-[auto_1fr]">
+          {GLOSSARY.map(({ type, def }) => (
+            <div
+              key={type}
+              className="contents sm:grid sm:grid-cols-subgrid sm:col-span-2"
+            >
+              <dt className="flex items-start">
+                <NodeBadge type={type} size="sm" />
+              </dt>
+              <dd className="text-sm leading-relaxed text-muted-foreground">
+                <span className="font-medium text-foreground">
+                  {NODE_TYPE_LABEL[type]}.
+                </span>{" "}
+                {def}
+              </dd>
+            </div>
+          ))}
+        </dl>
 
         <h2 className="font-heading">How this synthesis is built</h2>
         <p>

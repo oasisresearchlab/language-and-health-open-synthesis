@@ -4,7 +4,6 @@ export type NodeType =
   | "evidence"
   | "method"
   | "source"
-  | "evidencepattern"
   | "artifact";
 
 export type EdgeType =
@@ -22,7 +21,6 @@ export const NODE_TYPES: NodeType[] = [
   "evidence",
   "method",
   "source",
-  "evidencepattern",
   "artifact",
 ];
 
@@ -42,8 +40,20 @@ export const NODE_TYPE_LABEL: Record<NodeType, string> = {
   evidence: "Evidence",
   method: "Method",
   source: "Source",
-  evidencepattern: "Evidence Pattern",
   artifact: "Artifact",
+};
+
+// Definitions drawn from the Obsidian Discourse Graph schema (node-type `description`s).
+export const NODE_TYPE_DEFINITION: Partial<Record<NodeType, string>> = {
+  question:
+    "An unknown we want to make known — addressable by studies, experiments, or prototypes.",
+  claim:
+    "An atomic, generalized assertion about the world that (proposes to) answer a research question.",
+  evidence: "A specific empirical observation from a particular study.",
+  source:
+    "A published research source — a journal article, conference paper, or book.",
+  artifact:
+    "A concrete system (prototype, standard, intervention) that instantiates a pattern or method.",
 };
 
 export const EDGE_LABEL: Record<EdgeType, string> = {

@@ -55,7 +55,6 @@
   --color-node-evidence: var(--node-evidence);
   --color-node-source: var(--node-source);
   --color-node-method: var(--node-method);
-  --color-node-evidencepattern: var(--node-evidencepattern);
   --color-node-artifact: var(--node-artifact);
 
   --radius-sm: calc(var(--radius) * 0.6);
@@ -93,7 +92,6 @@
   --node-evidence: #15803d;
   --node-method: #7c3aed;
   --node-source: #57534e;
-  --node-evidencepattern: #3b82a6;
   --node-artifact: #ce5555;
 
   --edge-supports: #15803d;
@@ -147,7 +145,6 @@
   --node-evidence: #4ade80;
   --node-method: #c084fc;
   --node-source: #a8a29e;
-  --node-evidencepattern: #5ba3c7;
   --node-artifact: #e07a7a;
 
   --edge-supports: #4ade80;

@@ -37,12 +37,6 @@ Frontmatter: facets + one `epistemic/*`, optional `TruthValue`.
 - **## Claims addressing this question** — nested `[[CLM]]` → `[[EVD]]` (→ CLM→QUE informs).
 - Quote rule: any QUE quote must be the paper's question/aim/objective — never methods or results.
 
-## EP — EvidencePattern (`T - EvidencePattern`)  → see Skill-synthesis
-
-Four sections (Pattern statement / What is being claimed / Supporting Evidence / Connected nodes),
-`ep/scope/cross-paper` + `ep/strength/<N>-papers`, ≥2 independent papers. Supporting-Evidence
-wikilinks → `EVD —supports→ EP` edges.
-
 ## CVT — Caveat (`T - Caveat`)
 
 Frontmatter: `type: author-stated|inferred`, `severity: low|moderate|high`.

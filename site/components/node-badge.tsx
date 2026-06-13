@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import type { NodeType } from "@/lib/types";
-import { NODE_TYPE_LABEL } from "@/lib/types";
+import { NODE_TYPE_LABEL, NODE_TYPE_DEFINITION } from "@/lib/types";
 
 const STYLES: Record<NodeType, string> = {
   question:
@@ -13,8 +13,6 @@ const STYLES: Record<NodeType, string> = {
     "bg-[color:var(--node-method)]/10 text-[color:var(--node-method)] border-[color:var(--node-method)]/30",
   source:
     "bg-[color:var(--node-source)]/10 text-[color:var(--node-source)] border-[color:var(--node-source)]/30",
-  evidencepattern:
-    "bg-[color:var(--node-evidencepattern)]/10 text-[color:var(--node-evidencepattern)] border-[color:var(--node-evidencepattern)]/30",
   artifact:
     "bg-[color:var(--node-artifact)]/10 text-[color:var(--node-artifact)] border-[color:var(--node-artifact)]/30",
 };
@@ -30,8 +28,10 @@ export function NodeBadge({
 }) {
   return (
     <span
+      title={NODE_TYPE_DEFINITION[type]}
       className={cn(
         "inline-flex items-center rounded-full border font-sans uppercase tracking-wider",
+        NODE_TYPE_DEFINITION[type] ? "cursor-help" : undefined,
         size === "sm"
           ? "px-1.5 py-0.5 text-[10px]"
           : "px-2 py-0.5 text-[11px]",

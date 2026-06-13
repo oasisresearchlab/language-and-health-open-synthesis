@@ -26,7 +26,6 @@ const TYPE_DIRS: Record<NodeType, string> = {
   evidence: "evidence",
   method: "methods",
   source: "sources",
-  evidencepattern: "evidencepatterns",
   artifact: "artifacts",
 };
 
@@ -223,8 +222,6 @@ export function nodeTypeFromId(id: string): NodeType | null {
       return "method";
     case "S":
       return "source";
-    case "P":
-      return "evidencepattern";
     case "A":
       return "artifact";
     default:

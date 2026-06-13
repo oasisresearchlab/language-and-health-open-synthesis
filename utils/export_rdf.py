@@ -10,13 +10,13 @@ WHAT
 
 MAPPING (hybrid — see Pipeline/export_rdf.md)
     QUE→question (Q)  CLM→claim (C)  EVD→evidence (E)  SRC→source (S)
-    EP→evidencepattern (P, extended type)   ART→artifact (A, extended type)
+    ART→artifact (A, extended type)
     CVT→folded into the qualified Evidence node's body as a "Caveats" section (no node).
-    Edges: informs(CLM→QUE)→addresses · supports/opposes(EVD→CLM/EP, CLM→CLM)→same ·
+    Edges: informs(CLM→QUE)→addresses · supports/opposes(EVD→CLM, CLM→CLM)→same ·
            EVD Source field→derivedFrom · body [[ART]] mention→usesArtifact · qualifies→folded.
 
 INPUT   Discourse Graph/**/*.md, relations.json.
-OUTPUT  graph/{questions,claims,evidence,sources,evidencepatterns,artifacts}/<ID>.md
+OUTPUT  graph/{questions,claims,evidence,sources,artifacts}/<ID>.md
         (regenerated each run; safe to delete).
 
 USAGE
@@ -44,7 +44,6 @@ TMAP = {
     "node_nMxzA_OByPwgPcmb6AN82": ("CLM", "claim", "C", "claims"),
     "node_huDx8FGfNSGQyongW5rk-": ("EVD", "evidence", "E", "evidence"),
     "node_Ne237S0BfRPDaeqB_gbuT": ("SRC", "source", "S", "sources"),
-    "node_r2JRW9jgphgmMpz5mN7eG": ("EP", "evidencepattern", "P", "evidencepatterns"),
     "node_OULGh2SuqxP1oES9p2k_9": ("ART", "artifact", "A", "artifacts"),
     "node_Q4sxSAHaUscV3smL5OBnB": ("CVT", "caveat", "V", None),  # folded, not emitted
 }
@@ -156,7 +155,7 @@ def main():
             ref_src.add(stem2iid[n["src_citekey"]])
 
     # 4. assign their-IDs (stable: sorted by nodeInstanceId within type)
-    emit = [n for n in nodes.values() if n["code"] in ("QUE", "CLM", "EVD", "EP", "ART")]
+    emit = [n for n in nodes.values() if n["code"] in ("QUE", "CLM", "EVD", "ART")]
     emit += [nodes[i] for i in ref_src]
     their_id = {}
     counters = {}

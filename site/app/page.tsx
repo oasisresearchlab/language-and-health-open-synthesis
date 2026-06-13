@@ -14,7 +14,6 @@ const TYPE_ANCHOR: Record<NodeType, string> = {
   evidence: "evidence",
   method: "methods",
   source: "sources",
-  evidencepattern: "evidence-patterns",
   artifact: "artifacts",
 };
 

@@ -19,7 +19,6 @@ const NODE_SWATCH: Record<NodeType, string> = {
   evidence: "#15803d",
   method: "#7c3aed",
   source: "#57534e",
-  evidencepattern: "#3b82a6",
   artifact: "#ce5555",
 };
 

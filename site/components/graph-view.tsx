@@ -79,7 +79,6 @@ const NODE_COLORS_LIGHT: Record<NodeType, string> = {
   evidence: "#15803d",
   method: "#7c3aed",
   source: "#57534e",
-  evidencepattern: "#3b82a6",
   artifact: "#ce5555",
 };
 
@@ -89,7 +88,6 @@ const NODE_COLORS_DARK: Record<NodeType, string> = {
   evidence: "#4ade80",
   method: "#c084fc",
   source: "#a8a29e",
-  evidencepattern: "#5ba3c7",
   artifact: "#e07a7a",
 };
 

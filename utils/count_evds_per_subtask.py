@@ -40,7 +40,6 @@ from pathlib import Path
 import yaml
 
 REL_SUPPORTS = "relation_BO5BtVVpJGrw70jTCTznm"
-EP_TYPE = "node_r2JRW9jgphgmMpz5mN7eG"
 EVD_TYPE = "node_huDx8FGfNSGQyongW5rk-"
 
 

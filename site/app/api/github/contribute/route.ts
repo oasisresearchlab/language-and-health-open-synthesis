@@ -314,7 +314,6 @@ const NODE_TYPE_DIR: Record<NodeType, string> = {
   evidence: "evidence",
   method: "methods",
   source: "sources",
-  evidencepattern: "evidencepatterns",
   artifact: "artifacts",
 };
 
@@ -324,7 +323,6 @@ const NODE_TYPE_PREFIX: Record<NodeType, string> = {
   evidence: "E",
   method: "M",
   source: "S",
-  evidencepattern: "P",
   artifact: "A",
 };
 
@@ -334,7 +332,6 @@ const ID_PREFIX_TO_TYPE: Record<string, NodeType> = {
   E: "evidence",
   M: "method",
   S: "source",
-  P: "evidencepattern",
   A: "artifact",
 };
 
@@ -358,9 +355,6 @@ const ALLOWED_EDGES_BY_TYPE: Record<NodeType, Partial<Record<EdgeType, NodeType>
     informs: "claim",
   },
   source: {},
-  evidencepattern: {
-    supports: "claim",
-  },
   artifact: {},
 };
 

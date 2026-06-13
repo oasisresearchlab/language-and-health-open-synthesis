@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Allan_2022_impact_English-table2.png]]
+>
 Despite more frequent ED visits by EP patients, there was no significant difference in hospital readmission within one year of bariatric surgery between LEP and EP patients (adjusted OR = 0.94, 95% CI 0.56–1.55; p = 0.50). At 30 days, readmission was likewise not different (EP 5% vs LEP 4%, p = 0.7; adjusted OR 1.01, 95% CI 0.58–1.71; p > 0.90) (Table 2).
 
 > "However, despite more frequent ED visits by EP patients, there was no significant difference in readmission within one year; adjusted OR = 0.94 (95% CI 0.56–1.55; p = 0.50)." (Stolarski, 2022, p. 7387)

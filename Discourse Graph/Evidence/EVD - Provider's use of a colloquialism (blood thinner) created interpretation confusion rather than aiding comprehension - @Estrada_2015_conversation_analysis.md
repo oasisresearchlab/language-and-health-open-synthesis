@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Estrada_2015_conversation_analysis-table3.png]]
+>
 In the "Colloquialisms as Signaling Potential for Trouble" exemplar (Table 3), the nurse practitioner used the colloquial term "blood thinner" instead of the technical term "anticoagulant." Contrary to the plain-language recommendation that colloquialisms aid comprehension, the colloquial term created interpretation trouble: the interpreter struggled to render it in Spanish (hesitations, long silences, "sorry I'm gonna look up one word"), whereas the technical term would have had a direct Spanish cognate (anticoagulante). Distracted by accuracy, the interpreter also missed that the patient had already supplied an adequate rendering ("mas ralo," more thin).
 
 > "Interestingly, the trouble spots shown in Table 3 revealed how this approach actually created more confusion. In this instance, the nurse practitioner used the colloquial term, 'blood thinner' (ﬁrst part line 1), to signify the technical term 'anticoagulant.'" (Estrada, 2015, p. 283)

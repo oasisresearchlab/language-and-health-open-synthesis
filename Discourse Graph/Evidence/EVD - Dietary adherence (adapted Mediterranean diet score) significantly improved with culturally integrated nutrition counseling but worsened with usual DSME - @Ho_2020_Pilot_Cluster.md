@@ -23,6 +23,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Ho_2020_Pilot_Cluster-table3.png]]
+>
 In this pilot cluster RCT of Cantonese-speaking Chinese American (CA) diabetes patients (n=18 baseline; 15 at follow-up), dietary adherence measured by an adapted Mediterranean diet score (16 items, range 0–80) improved among participants who received the integrative nutritional counseling curriculum (DSME+INC) but worsened among participants who received usual diabetes self-management education (DSME). At baseline the scores were similar (control 54.3, INC 55.6), but at 6 months the control group declined by 5.5 points while the INC group rose by 4.3 points, a significant group–time interaction (z=4.26, p<0.001) (Table 3). This was the study's only significant behavioral outcome.
 
 > "Food frequency, as measured by the adapted Mediterranean Diet score, improved among participants in DSME+INC, but worsened for DSME participants (significant group–time interaction z=4.26, p<0.001)." (Ho, 2020)

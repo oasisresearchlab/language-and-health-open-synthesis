@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Davis_2019_Translating_Discharge-table3.png]]
+>
 To produce written discharge instructions, hospitals frequently fall back on interpreters (trained for verbal communication) acting as translators (84% reported using trained staff or contract interpreters "sometimes" or "frequently"; Table 3), even though interpreters and translators have different training and certification. Both survey responses and written policies restrict this practice to short, simple, or individualized documents and prohibit interpreters from translating complex materials — a staffing/quality mechanism that shapes which discharge content can be made concordant.
 
 > "As noted above, some institutional protocols allowed interpreters (who specialize in facilitating verbal communication between 2 individuals who do not speak the same language) to serve as translators or sight translators of written materials, although interpreters and translators generally have different training and certification. Many constraints for sight translation also applied for interpreters providing written translations. Several institutions permitted interpreters to prepare written translations of only short, individualized documents and prohibited interpreters from translating more-complex materials." (Davis, 2019, p. 6)

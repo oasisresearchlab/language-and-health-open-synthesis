@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Jennifer_2023_Evaluation_Patient-table3.png]]
+>
 From EHR interpreter-services logs, the wait time for an in-person interpreter to arrive on the postpartum unit after a clinician request had a median of 17 minutes and ranged widely from 0 to 75 minutes (interquartile range 22) (Table 3). The authors characterize these waits as prolonged and unpredictable.
 
 > "Wait times for interpreters varied widely and ranged from 0 to 75 minutes, with a median wait time of 17 minutes." (Jensen, 2023, p. 434)

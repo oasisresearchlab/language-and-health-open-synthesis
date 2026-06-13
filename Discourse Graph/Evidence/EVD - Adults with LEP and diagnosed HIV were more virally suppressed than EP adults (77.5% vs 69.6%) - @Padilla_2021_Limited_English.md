@@ -22,6 +22,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Padilla_2021_Limited_English-table1.png]]
+>
 In this nationally representative survey of US adults with diagnosed HIV, a higher percentage of adults with limited English proficiency (LEP) than adults with English proficiency (EP) were virally suppressed (77.5% vs. 69.6%), a statistically significant difference (Table 1). This "seeming paradox" occurred despite adults with LEP having fewer socioeconomic resources, and is the paper's central clinical finding.
 
 > "Higher percentages of adults with LEP, compared with adults with EP, received care at RWHAP-funded facilities (79.0% vs. 67.0%), were satisfied with their HIV care (83.7% vs. 80.3%), were prescribed ART (89.7% vs. 83.5%), were virally suppressed (77.5% vs. 69.6%), and received STD testing (49.9% vs. 33.4%)." (Padilla, 2021)

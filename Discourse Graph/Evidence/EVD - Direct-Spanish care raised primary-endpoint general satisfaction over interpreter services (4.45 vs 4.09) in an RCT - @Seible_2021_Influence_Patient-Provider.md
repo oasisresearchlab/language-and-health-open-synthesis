@@ -21,6 +21,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Seible_2021_Influence_Patient-Provider-fig2.png]]
+>
 In this randomized trial of Spanish-speaking cancer patients with LEP, the prespecified primary endpoint — the composite general-satisfaction score from the PSQ survey immediately after the initial consultation — was significantly higher for patients cared for directly in Spanish than for those cared for via professional interpreter services (mean composite scores 4.45 vs 4.09; P = .007) (Fig. 2A). Patients in the direct-Spanish arm also more frequently gave top ratings (5 of 5) for general satisfaction (63% vs 25%; P = .001) (Fig. 2B).
 
 > "The primary endpoint of the composite general satisfaction score from the survey conducted immediately after the initial consultation was higher for the direct-Spanish arm compared with the interpretive services arm (mean composite scores of 4.45 vs 4.09, respectively; P = .007) (Fig. 2A)." (Seible, 2021, p. 859)

@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Marshall_2016_Creating_Professional-table3.png]]
+>
 Inpatient patient-satisfaction ratings improved after the career-ladder intervention. The proportion of "excellent" ratings for the survey item "nurses' instructions for explanations of tests or treatments in words the patient/family can understand" increased by more than seven percentage points for the combined 2013–2014 postintervention period compared with the combined 2010–2011 preintervention period (Table 3).
 
 > "The inpatient 'excellent' satisfaction ratings for 'nurses' instructions for explanations of tests or treatments in words the patient/family can understand' increased by more than seven percentage points for the combined 2013–2014 postintervention ratings as compared to the combined 2010–2011 preintervention ratings (Table 3, page 472)." (Marshall, 2016, p. 470)

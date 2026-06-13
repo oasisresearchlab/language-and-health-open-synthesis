@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Davis_2019_Translating_Discharge-table3.png]]
+>
 The dominant reported strategy for providing translated discharge instructions was streamlining the translation of standardized documents — building libraries of pretranslated care instructions and incorporating translated standardized templates into the EHR (pretranslated materials were the most-used mechanism, 87%; Table 3). However, both survey respondents and policies noted these standardized assets are typically available only in Spanish or other locally common languages and cannot be personalized to an individual patient, so they leave speakers of less-common languages and patients needing tailored instructions with unequal access — a mechanism limiting how far this strategy extends concordance.
 
 > "Most strategies involved streamlining processes for translating standardized documents. Some respondents cited progress in developing libraries of translated standardized documents (eg, care instructions)... Other respondents described incorporating translated standardized templates into the EHR. Often, however, translated standardized documents are only available in Spanish or other common languages." (Davis, 2019, p. 5)

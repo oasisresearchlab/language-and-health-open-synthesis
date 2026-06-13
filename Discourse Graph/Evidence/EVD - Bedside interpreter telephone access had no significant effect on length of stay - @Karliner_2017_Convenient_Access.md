@@ -19,6 +19,10 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Karliner_2017_Convenient_Access-table3.png]]
+> ![[Karliner_2017_Convenient_Access-table4.png]]
+>
 The bedside interpreter telephone intervention had no significant impact on length of stay (LOS) for LEP patients. Unadjusted median LOS was essentially unchanged across the three study periods and did not differ between LEP and EP groups (e.g., LEP intervention median 3.86 days vs EP 3.81; Table 3). In adjusted analyses the period-by-language interaction for LOS was not significant (P=0.818), and the LEP-vs-EP factor-change estimate during intervention was 1.01 (95% CI 0.92–1.10) (Table 4).
 
 > "There was no signiﬁcant impact of the bedside intervention on LOS. The unadjusted median LOS did not differ between LEP and EP groups over the 3 study time periods (Table 3). In adjusted analyses, the effect of intervention intensity on LOS was not signiﬁcantly modiﬁed by patient language (P = 0.818 for test of interaction) (Table 4)." (Karliner, 2017, p. 203)

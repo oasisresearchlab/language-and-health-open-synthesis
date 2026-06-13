@@ -2,8 +2,9 @@
 shortLabel: "Concordance, not LEP, is lever"
 NodeFormality: draft
 TruthValue: 0.5
-NodeType: EvidencePattern
-nodeTypeId: node_r2JRW9jgphgmMpz5mN7eG
+certainty:        # High|Moderate|Low|Very Low — expert-authored, leave blank
+NodeType: Claim
+nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
 curationStatus: Initial AI draft
 extraction_model: claude-opus-4-8
 extraction_prompt_version: v1
@@ -13,8 +14,6 @@ tags:
   - languageConcordanceFactor/concordanceIntervention
   - healthOutcome/adherence
   - epistemic/mechanism
-  - ep/scope/cross-paper
-  - ep/strength/5-papers
 languageConcordanceFactor:
   - Language concordance
 healthOutcome:

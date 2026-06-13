@@ -53,6 +53,15 @@ crop-from-bbox logic as an explicit-region mode. Highlight-on-load is realistic 
   capture normalized `{page, x, y, w, h}` as a *proposed region*. On accept, the maintainer re-runs the
   crop for that region (human gives coordinates, pipeline regenerates the asset). Three grounding
   verdicts: **✓ correct / ✗ should be none / ✎ here's the right region**.
+- **Crop adjustment is a first-class reviewer action (not just a correctness verdict).** Auto-grounded
+  figure/table screenshots are produced by `ground_figures.py` as **generous caption-region crops**
+  (especially for the many publisher PDFs whose tables are borderless/text-rendered, where Route-B
+  structured extraction returns nothing and we fall back to cropping around the "Table N" caption).
+  These crops are frequently a bit too loose/tight or include neighboring text — so reviewers need a
+  lightweight **re-crop / drag-to-adjust** on the embedded image (tighten bounds, nudge the region),
+  feeding the same `{page, bbox}` → re-crop path. Treat adjusting the crop as the common case, not the
+  exception. (Source of the looseness: `extract_pdf_figures_tables.py` Route-B table recovery is weak
+  on these PDFs — see the grounding-coverage note in `plans/getting-papers.md`.)
 
 ## Per-node accuracy checklist (clinician tier, ordered cheap→deep)
 

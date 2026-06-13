@@ -19,6 +19,10 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Aparna_2025_Clinician_Perspectives-table3.png]]
+> ![[Aparna_2025_Clinician_Perspectives-fig3.png]]
+>
 In the national survey (n = 87), audiologists rated their confidence in the methods used to test speech discrimination abilities and reported significantly lower confidence for non-English, non-Spanish speakers than for Spanish speakers (3.65 vs 2.35 on a 1–5 scale, P < .01) (Table 3). The same pattern held for otologists counseling patients on surgical hearing rehabilitation options (3.8 vs 3.23, P < .01) (Figure 3). Confidence falls as patient language moves further from the languages for which validated test materials and clinician proficiency exist.
 
 > "Audiologists reported signiﬁcantly lower levels of conﬁdence in the methods used to test speech discrimination abilities of of non‐English, non‐Spanish speakers when compared to Spanish speakers (3.65 vs 2.35, P < .01) (Table 3). A similar trend was observed for otologists counseling patients on surgical hearing rehabilitation options (3.8 vs 3.23, P < .01) (Figure 3)." (Govindan, 2025, p. 1236)

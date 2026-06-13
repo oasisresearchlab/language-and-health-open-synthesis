@@ -19,6 +19,10 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Martinez_2021_Improving_Equity-fig5.png]]
+> ![[Martinez_2021_Improving_Equity-table1.png]]
+>
 Despite the significant improvement in appropriate interpreter use and documentation, the 48-hour ED return-visit (RV) rate for LEP patients showed no special-cause variation from its baseline of 3.1% across the postintervention period, and the LEP-vs-EP RV gap remained significant (P < 0.001) both before and after all interventions (Fig. 5, Table 1). The authors conclude that improving professional interpreter use by itself had no significant effect on the return-visit rate.
 
 > "During the postintervention period (6/1/2018-10/31/2020), no special cause variation was noted from the baseline 48-hour emergency department RV rates for LEP patients (3.1%) or English proficient patients (2.6%)." (Martinez, 2021, p. 1)

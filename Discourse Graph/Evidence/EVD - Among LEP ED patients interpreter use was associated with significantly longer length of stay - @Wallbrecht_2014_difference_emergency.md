@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Wallbrecht_2014_difference_emergency-table2.png]]
+>
 In a subgroup analysis of the 122 LEP patients with interpreter-use documentation, those for whom an interpreter was called had a significantly longer arrival-to-discharge/admission LOS than those for whom no interpreter was called: 949 ± 636 vs 711 ± 602 minutes, a difference of 237 minutes (95% CI 13–461), the only significant variable (Table 2; Fig.). The interpreter and no-interpreter groups did not differ significantly on age, sex, mode of arrival, acuity, admission rate, or insurance, and the earlier LOS components (arrival-to-provider, provider-to-discharge) were not individually significant.
 
 > "Comparing the interpreter and the no interpreter groups, there was a signiﬁcantly increased LOS of 237 minutes from time of arrival to time of discharge or admission request." (Wallbrecht, 2014, p. 3)

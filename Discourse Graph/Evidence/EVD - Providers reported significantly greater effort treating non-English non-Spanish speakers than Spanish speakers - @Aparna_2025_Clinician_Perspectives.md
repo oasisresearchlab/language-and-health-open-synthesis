@@ -19,6 +19,10 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Aparna_2025_Clinician_Perspectives-fig4.png]]
+> ![[Aparna_2025_Clinician_Perspectives-table4.png]]
+>
 In the national survey (n = 87), providers rated the amount of effort required across clinical tasks on a −2 (a lot less effort) to +2 (a lot more effort) scale, and all provider types reported significantly greater effort treating non-English, non-Spanish speakers than Spanish speakers (P < .01) (Figure 4, Table 4). For example, audiologists rated explaining hearing-test results as 0.96 for Spanish speakers versus 1.52 for non-English/non-Spanish speakers, and otologists rated discussing ear surgery as 1.43 versus 1.77 across the same comparison (Table 4).
 
 > "All providers reported a signiﬁcantly greater amount of effort required to treat non‐English, non‐Spanish speakers compared to Spanish speakers (Figure 4, Table 4)." (Govindan, 2025, p. 1236)

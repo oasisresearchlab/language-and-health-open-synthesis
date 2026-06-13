@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Estrada_2015_conversation_analysis-table2.png]]
+>
 In the "Making Assumptions" exemplar (Table 2), the interpreter inferred — without asking the patient to clarify — that the "they" the patient referenced included or was the interpreter, when the patient was actually describing his brother acting as an informal interpreter. Because the trouble spot was never directly repaired, both the interpreter and the nurse practitioner missed the patient's point that he was conforming to the expectation that patients be engaged participants in their care. This illustrates how an interpreter's institutional assumption can produce a misinterpretation that goes uncorrected.
 
 > "Thus, the actual trouble spot of this interpretation occurred in line 5 after the one-second pause, when the interpreter initiated a self-repair that infers that 'they' of the patient's utterance in line 3 included or was the interpreter, as she did not ask the patient to clarify the identify of 'they.' Thus both interpreter and nurse practitioner missed the patient's attempt to underscore how he was conforming to the expectation that patients should be engaged participants in the health care interaction in order to optimize health outcomes" (Estrada, 2015, p. 282)

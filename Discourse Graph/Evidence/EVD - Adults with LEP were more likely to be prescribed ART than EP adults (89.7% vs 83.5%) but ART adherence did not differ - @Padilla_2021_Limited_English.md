@@ -22,6 +22,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Padilla_2021_Limited_English-table1.png]]
+>
 A higher percentage of adults with LEP than adults with EP were prescribed antiretroviral therapy (ART) (89.7% vs. 83.5%), a statistically significant difference (Table 1). However, there was no statistically significant difference in self-reported ART adherence between the LEP and EP groups. Thus LEP was associated with greater ART prescribing but not with measurably worse adherence in this sample.
 
 > "Higher percentages of adults with LEP, compared with adults with EP, received care at RWHAP-funded facilities (79.0% vs. 67.0%), were satisfied with their HIV care (83.7% vs. 80.3%), were prescribed ART (89.7% vs. 83.5%), were virally suppressed (77.5% vs. 69.6%), and received STD testing (49.9% vs. 33.4%). We found no statistically significant differences in ART adherence (Table 1)." (Padilla, 2021)

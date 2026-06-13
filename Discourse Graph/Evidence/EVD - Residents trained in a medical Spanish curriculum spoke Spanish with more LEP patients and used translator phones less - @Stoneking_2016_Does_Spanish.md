@@ -24,6 +24,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Stoneking_2016_Does_Spanish-table1.png]]
+>
 In a cross-sectional convenience sample of 55 Spanish-speaking LEP patients in an academic ED, residents from the South Campus (SC) program — which integrates a longitudinal medical Spanish and cultural competency curriculum into didactics — spoke Spanish directly with 66% (23/35) of their patients, versus 45% (9/20) for University Campus (UC) residents without the curriculum. Correspondingly, SC residents fell back on translator phones in only 6% (2/35) of encounters versus 30% (6/20) for UC residents (Table 1). Overall, residents spoke Spanish 58% (32/55) of the time and used translator phones in 15% (8/55). This is consistent with the hypothesis that the curriculum increases the number of language-concordant encounters and reduces reliance on phone interpreting.
 
 > "Overall, resident physicians spoke Spanish 58% (32/55 patients; 95% confidence interval 45.0–70.5) of the time and used translator phones in 15% (8/55; 95% confidence interval 7.1–25.6) of the encounters." (Stoneking, 2016)

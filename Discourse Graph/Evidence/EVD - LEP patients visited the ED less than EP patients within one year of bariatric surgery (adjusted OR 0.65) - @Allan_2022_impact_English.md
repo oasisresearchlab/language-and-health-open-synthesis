@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Allan_2022_impact_English-table2.png]]
+>
 Contrary to the authors' hypothesis, within one year of the index bariatric procedure fewer LEP patients presented to the emergency department (ED) than EP patients (14% vs 23%; p < 0.001) (Table 2). After multivariable logistic regression for potential confounders this difference persisted, with an adjusted OR of 0.65 (95% CI 0.43–0.95; p = 0.029) — i.e., LEP patients had lower odds of an ED visit. By contrast, there was no significant difference in ED presentation within 30 days (EP 10% vs LEP 7%; p = 0.07).
 
 > "When we analyzed the data at one year from the index bariatric procedure, we found that fewer LEP patients present to the ED within one year as compared to EP patients; 14% vs. 23%; p < 0.001). After multivariable regression for potential confounders this significant difference in ED visits persisted; adjusted OR = 0.65 (95% CI 0.43–0.95; p = 0.029)." (Stolarski, 2022, p. 7387)

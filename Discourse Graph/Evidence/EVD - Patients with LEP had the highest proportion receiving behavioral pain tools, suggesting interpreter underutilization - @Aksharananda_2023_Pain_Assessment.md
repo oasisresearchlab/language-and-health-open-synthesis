@@ -24,6 +24,9 @@ tags:
 ---
 ## Description
 
+
+> ![[Aksharananda_2023_Pain_Assessment-table2.png]]
+>
 Patients receiving the FACES pain scale and the Checklist of Nonverbal Pain Indicators (behavioral tools, used when a patient cannot self-report) had the highest proportion of limited English proficiency among all assessment-tool groups. The authors interpret this elevated reliance on behavioral tools for patients with LEP as probable underutilization of interpreters by nurses — supported by institutional data showing video interpreters were used for fewer than 30% of hospital days for LEP patients during a 2018 sample period — offering a mechanism for the numeric-rating disparity (Table 2).
 
 > [!info]

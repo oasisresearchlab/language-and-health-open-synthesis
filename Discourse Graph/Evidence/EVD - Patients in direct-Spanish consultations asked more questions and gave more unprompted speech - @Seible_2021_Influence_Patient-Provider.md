@@ -21,6 +21,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Seible_2021_Influence_Patient-Provider-table3.png]]
+>
 Coded consultation transcripts showed patients in the direct-Spanish arm were more verbally engaged than those in the interpreter-services arm: they asked more questions overall (mean 11 vs 4.4; P = .007/.01), including more open-ended (4.5 vs 1.9; P = .012/.01) and closed-ended questions (5.3 vs 2.5; P = .048), produced more unprompted speech (11 vs 3.1; P < .001), and more history-telling (12 vs 3.6; P < .001) (Table 3). This points to a mechanism by which concordance increases patient participation in the encounter.
 
 > "Patients in the direct-Spanish arm asked more questions during the initial consultation (mean of 11 questions vs 4.4 questions; P = .007), including both open-ended questions (4.5 questions vs 1.9 questions; P = .012) and closed-ended questions (5.3 questions vs 2.5 questions; P = .048)." (Seible, 2021, p. 858)

@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Jennifer_2023_Evaluation_Patient-table3.png]]
+>
 In a chart review of 50 Spanish-preferring postpartum birthing parent–newborn couplets, access to a clinician certified in medical Spanish or to an interpreter was offered to both members of the couplet at only 12 of 50 (24%) admissions and at only 7 of 50 (14%) daily maternal/newborn rounds; a substantial share of couplets never had concordant access during rounds across their stay (birthing parent 38%, newborn 36%) (Table 3). The authors read this as systematic underuse of interpretation services relative to national standards.
 
 > "Access to a clinician certiﬁed in medical Spanish or an interpreter was offered to 12 of 50 (24%) couplets upon admission to the unit and to 7 of 50 (14%) of couplets for daily maternal and newborn medical rounds." (Jensen, 2023, p. 429)

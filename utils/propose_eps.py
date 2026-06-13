@@ -2,6 +2,11 @@
 """
 propose_eps.py — propose candidate EvidencePatterns as a human accept/reject checklist.
 
+PAUSED / DEPRECATED (2026-06): the EvidencePattern node type is retired. Body-of-evidence appraisal
+now lives on the CLM (`certainty` + `## Evidence appraisal`, GRADE-style) and is an expert-authored
+task — not AI-drafted. Do not run this to mint EP nodes. Kept for reference only.
+See CLAUDE.md governance + memory `synthesis-grade-appraisal-on-clm-not-ep`.
+
 WHAT
     Surfaces cross-paper EvidencePattern (EP) candidates so a human can decide which to author.
     Governance: it NEVER writes EP node files — the only output is a proposal checklist.

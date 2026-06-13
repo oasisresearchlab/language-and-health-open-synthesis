@@ -24,6 +24,10 @@ tags:
 ---
 ## Description
 
+
+> ![[Aksharananda_2023_Pain_Assessment-table4.png]]
+> ![[Aksharananda_2023_Pain_Assessment-table3.png]]
+>
 Examining the second primary outcome — average daily opioid administration (morphine milligram equivalents, MME) by pain assessment category — English-speaking patients received substantially more daily opioids than patients with LEP within every pain-assessment category. Restricting to nurse self-report assessments only, patients with LEP (along with Asian and Native Hawaiian/Other Pacific Islander patients) received the fewest MMEs across pain assessment categories (Table 4; Supplemental Table 3).
 
 > [!info]

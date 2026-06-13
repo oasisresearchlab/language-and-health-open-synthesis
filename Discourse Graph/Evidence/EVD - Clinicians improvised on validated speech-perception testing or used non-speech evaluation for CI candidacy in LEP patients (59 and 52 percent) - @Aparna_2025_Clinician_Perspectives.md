@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Aparna_2025_Clinician_Perspectives-fig2.png]]
+>
 In the interviews (n = 29), providers reported two non-exclusive workarounds for cochlear-implant candidacy evaluation in LEP patients: improvising on a validated speech-perception testing battery (59%; n = 17) and relying on non-speech perceptive evaluation (52%; n = 15) (Figure 2A). Improvisation included live interpretation of an English test battery (38%; n = 11) and use of validated English pediatric word lists in adult LEP patients (24%; n = 7), and one-quarter (24%; n = 7) reported family reports influencing their disability assessments. These adaptations substitute for validated language-matched testing and can compromise the validity of the assessment.
 
 > "Providers reported employing 2 nonexclusive approaches: improvisation on validated speech perception testing battery (59%; n = 17) and reliance on nonspeech perceptive evaluation (52%; n = 15) (Figure 2A)." (Govindan, 2025, p. 1234)

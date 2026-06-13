@@ -24,6 +24,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Kristen_2023_Optimizing_usability-table2.png]]
+>
 In thematic coding of interviews with the 20 CP users, "strengths of CP" was one of four theme categories, mentioned 125 times across participants. The most frequently mentioned strengths were access to information/education (19.2%), privacy (15%), and connection to professional care (12.7%). Of 51 mentions of a perceived positive impact of the app, 47.1% expressed a positive impact on medication adherence, 41.1% on mood/stress, and 11.8% on client-provider communication. This is a self-reported perceived-impact finding (acceptability/perceived benefit from a self-monitoring app), not a measured change in actual adherence; the interview guide specifically prompted participants about CP's impact on medication adherence and mood/stress, and no participant reported a negative impact (others reported neutral effects).
 
 > "CP's strengths (Table 2) were mentioned 125 times by the 20 participants. Of these strengths, access to information/education (19.2%), privacy (15%), and connection to professional care (12.7%) were the most frequently mentioned." (Kristen, 2023)

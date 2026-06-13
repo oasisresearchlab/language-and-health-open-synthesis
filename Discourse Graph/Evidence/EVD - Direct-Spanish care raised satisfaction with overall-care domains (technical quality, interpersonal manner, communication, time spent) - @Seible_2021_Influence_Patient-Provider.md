@@ -21,6 +21,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Seible_2021_Influence_Patient-Provider-fig2.png]]
+>
 Beyond the primary endpoint, several secondary overall-care satisfaction domains measured immediately after the initial consultation were significantly higher in the direct-Spanish arm than the interpreter-services arm: technical quality (4.41 vs 4.06; P = .005), interpersonal manner (4.37 vs 3.88; P = .004), communication (4.50 vs 4.25; P = .018), and patient perception of time spent (4.30 vs 3.92; P = .028) (Fig. 2A).
 
 > "From surveys with the initial consultation, several secondary endpoints were also higher in the direct-Spanish arm, including patient satisfaction with technical quality (4.41 vs 4.06; P = .005), interpersonal manner (4.37 vs 3.88; P = .004), communication (4.50 vs 4.25; P = .018), and patient perception of time spent (4.30 vs 3.92; P = .028) (Fig. 2A)." (Seible, 2021, p. 859)

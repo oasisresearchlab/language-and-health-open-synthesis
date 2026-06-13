@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Benda_2022_active_role-table6.png]]
+>
 Comparing transcripts of in-person versus telephone-based interpreting in the ED, telephone-based interpreters faced distinctive challenges in completing common-ground tasks: difficulty hearing, information lost in interpretation, and inability to use or access visual cues and locally situated context (e.g., a local clinic name lost in interpretation, or not seeing that an answer was being looked up on a phone). In one repair scenario no party noticed the trouble, so the lost information was never recovered. This identifies a mechanism by which the *medium* of professional interpretation moderates the quality of language-discordant communication.
 
 > "Telephone-based interpreters faced challenges in facilitating communicative tasks based on thematic comparisons with in-person interpreters, including issues hearing and lost information due to the lack of visual cues." (Benda, 2022, p. 62)

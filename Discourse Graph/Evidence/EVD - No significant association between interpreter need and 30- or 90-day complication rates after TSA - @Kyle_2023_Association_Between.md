@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Kyle_2023_Association_Between-table4.png]]
+>
 In the matched TSA cohort, short-term complication rates were statistically similar between the interpreter and non-interpreter cohorts. The interpreter cohort had numerically more complications at both 30 days (4 [9.8%] vs 1 [2.4%], P = .36) and 90 days (6 [14.6%] vs 2 [4.9%], P = .26), but neither difference reached statistical significance (Table 4).
 
 > "Analysis of 30-day complication rates demonstrated a trend toward a higher frequency of complications in the interpreter cohort, with 1 complication in the non-interpreter cohort and 4 complications in the interpreter cohort, though this failed to reach statistical significance (P = .36)." (Kunze, 2023, p. 88)

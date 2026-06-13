@@ -19,6 +19,10 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Davis_2019_Translating_Discharge-table3.png]]
+> ![[Davis_2019_Translating_Discharge-table4.png]]
+>
 The most commonly cited barrier to providing translated inpatient discharge instructions was "operational complexity" (69%, 20 of 29; Table 3), which respondents described concretely as a timing mismatch: discharge instructions are finalized at the last minute while professional translation takes hours to days, so clinical staff discharge patients before the written translation is ready (Table 4). This is a workflow mechanism by which the time/effort cost of translation causes either delayed discharge or patients leaving without language-concordant written instructions.
 
 > "When asked 'What obstacles does your children's hospital face in providing discharge translation services in the inpatient setting?' the most commonly cited barrier was 'operational complexity' (69%; Table 3)." (Davis, 2019, p. 5)

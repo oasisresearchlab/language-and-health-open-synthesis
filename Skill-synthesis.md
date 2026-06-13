@@ -6,6 +6,13 @@ parent_skill: extract-discourse-nodes
 
 # Skill — Cross-paper synthesis
 
+> **⚠️ SUPERSEDED (2026-06): the `## EvidencePattern (EP)` section below is retired.** Do not author EP
+> nodes. The body-of-evidence judgment EP was meant to capture now lives **on the CLM** as a `certainty`
+> field + `## Evidence appraisal` section (GRADE-style), and is an **expert/clinician task — AI does NOT
+> draft it**. Reify a node only for split sub-bodies of one claim. `propose_eps.py` is paused. The rest
+> of this doc (evidence-summary index, Bases) still applies, reading over **CLMs** instead of EPs.
+> Detail: memory `synthesis-grade-appraisal-on-clm-not-ep`.
+
 The per-paper graph (QUE/CLM/EVD/CVT) is paper-internal. The synthesis layer is **cross-paper**:
 regularities that no single paper makes alone but emerge when ≥2 independent EVDs converge.
 

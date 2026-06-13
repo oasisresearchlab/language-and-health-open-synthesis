@@ -20,6 +20,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Greenky_2019_Reversed_Trend-table2.png]]
+>
 The adjusted odds of hospital admission or transfer to another facility were 6.0% higher for interpreter-requested (LEP) patients than for no-interpreter patients (adjusted OR 1.06, 95% CI: 1.01–1.11; p=0.014), corresponding to a small effect (ES < 0.2) the authors judged not clinically meaningful (Table 2). This is a reversed trend relative to a 2004 study at the same hospital (CHOA Egleston), where LEP patients had higher admission rates.
 
 > "Adjusted odds of hospital admission or transfer to another facility in interpreter requested patients were 6.0% higher than the adjusted odds in no interpreter requested patients (aOR: 1.06, 95% CI: 1.01, 1.11). This difference also corresponded to a small effect (ES < 0.2)." (Greenky, 2019, p. 4)

@@ -20,6 +20,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Morris_2021_Factors_associated-table1.png]]
+>
 Across 79 hospital stays by admitted patients who required an interpreter, more than half received one at least once during admission — 54.4% (n = 43) (Table 1). The authors note this utilisation rate exceeds rates reported by other recent Australian studies (e.g. 37.2% and 17.1%), and was observed in a district with a long-running clinical-audit improvement program.
 
 > "On these 79 hospital stays, more than half of patients received an interpreter at least once (n = 43, 54.4%)." (Morris, 2021, p. 427)

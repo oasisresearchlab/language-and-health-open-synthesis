@@ -19,6 +19,10 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Karliner_2017_Convenient_Access-table3.png]]
+> ![[Karliner_2017_Convenient_Access-table4.png]]
+>
 Providing a dual-handset interpreter telephone at every LEP bedside was associated with a significant reduction in 30-day readmissions for the LEP group during the 8-month intervention period. Observed LEP readmission fell from 17.8% preintervention to 13.4% during the intervention, while English-proficient (EP) readmission rose from 16.7% to 19.7% over the same window (Table 3). In adjusted analyses the period-by-language interaction was significant (P=0.040), and the LEP-vs-EP adjusted odds ratio for readmission was 0.64 (95% CI 0.43–0.95) during the intervention versus roughly equivalent pre (1.07) and post (1.09) periods (Table 4). The improvement was not maintained postintervention once the telephones became less accessible.
 
 > "In adjusted analyses, the effect of the intervention on readmission rates was signiﬁcantly modiﬁed by patient language group; that is, the effect of the study periods on readmission rates signiﬁcantly differed across the 2 language groups (P = 0.040 for test of interaction). The odds of readmission for the LEP compared with EP group was lower during the intervention period; while it was roughly equivalent during both the preintervention and postintervention periods (Table 4)." (Karliner, 2017, p. 203)

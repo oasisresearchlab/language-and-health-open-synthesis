@@ -20,6 +20,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Martinez_2021_Improving_Equity-table1.png]]
+>
 The QI bundle to increase interpreter use and documentation was tracked against two balancing measures — ED length of stay (LOS) and video-remote-interpreter (VRI) encounter time for the overall LEP ED population — to check that adding interpreter steps did not worsen throughput. Neither balancing measure changed significantly: ED LEP LOS averaged 186.1 minutes and VRI encounter time averaged 16.5 minutes cumulatively (Table 1).
 
 > "Balancing measures for all ED LEP patients saw no significant changes where ED LOS and VRI encounter time averaged 186.1 and 16.5 minutes, respectively (Table 1)." (Martinez, 2021, p. 5)

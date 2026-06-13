@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Estrada_2015_conversation_analysis-table6.png]]
+>
 The "Attaining Intersubjectivity" exemplar (Table 6) presented a positive case in which the interpreter, nurse practitioner, and a Salvadoran patient collaboratively co-constructed mutual understanding of osteopenia/osteoporosis — at one point the patient herself contributed "vitamina D" to the definition before the interpreter could relay it, and the NP closed with a summation signaling attainment of intersubjectivity. This demonstrates that language-discordant parties can successfully participate in triadic communication without sacrificing ease or accuracy when all three act as co-contributors.
 
 > "At line 16, the patient, indicating understanding of the subject matter and demonstrating her ability to be an active and contributing participant to crafting the deﬁnition of 'osteoporosis,' added 'vitamina D' to the list of issues that might lead to softening of the bones, prior to interpretation on the part of the interpreter." (Estrada, 2015, p. 287)

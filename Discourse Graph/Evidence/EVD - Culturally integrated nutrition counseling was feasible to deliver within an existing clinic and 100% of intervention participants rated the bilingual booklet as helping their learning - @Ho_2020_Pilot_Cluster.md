@@ -23,6 +23,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Ho_2020_Pilot_Cluster-table2.png]]
+>
 Delivering integrative nutritional counseling (INC) as part of existing diabetes self-management education (DSME) at a community clinic was feasible, with low added provider burden. The three educators (two RNs plus a licensed acupuncturist) spent a total of 2 hours on preparation and coordination and did not perceive it as burdensome. Acceptability was high: 100% of the INC (intervention) group reported that the bilingual English/Chinese color booklet "helped my learning a lot," compared with 67% of control participants who received photocopied ADA recommendations (Table 2).
 
 > "The three educators' preparation and coordination for the intervention (total 2 h) was not perceived as burdensome and they reported that the process was reasonable to deliver as a team." (Ho, 2020)

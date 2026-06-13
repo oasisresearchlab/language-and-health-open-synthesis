@@ -24,6 +24,9 @@ tags:
 ---
 ## Description
 
+
+> ![[Aksharananda_2023_Pain_Assessment-table3.png]]
+>
 In a multivariable logistic regression restricted to nurse-performed self-report pain tools, patients with limited English proficiency (LEP) had the lowest adjusted odds of receiving a numeric (Numeric Rating Scale) pain assessment versus another self-report tool, compared with English-speaking patients (OR 0.61, 95% CI 0.58–0.65). This was the largest reduction in odds of any subgroup examined, exceeding even the Asian-patient effect (OR 0.74) (Table 3).
 
 > [!info]

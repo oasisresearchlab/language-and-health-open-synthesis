@@ -84,13 +84,19 @@ def clean_citekey(citekey: str) -> str:
     return citekey.replace('"', "").strip()
 
 
-def load_targets(report_path: Path) -> List[str]:
-    """Citekeys for non-PMC papers with a downloaded/cached PDF."""
+def load_targets(pdf_dir: Path, figures_a_dir: Path) -> List[str]:
+    """Citekeys with a PDF on disk that lack Route-A (PMC JATS) structured figures.
+
+    Scans the actual PDF directory (the source of truth) rather than _fetch_report.csv, so
+    inbox-ingested PDFs — which match_inbox_pdfs.py copies into data/pdfs/ but never writes to the
+    fetch report — are included. Papers that already have a higher-fidelity Route-A dir are skipped.
+    """
     targets = []
-    with report_path.open(encoding="utf-8") as fh:
-        for row in csv.DictReader(fh):
-            if row["pdf_status"].strip() in ("downloaded", "cached") and not row["pmcid"].strip():
-                targets.append(clean_citekey(row["citekey"]))
+    for p in sorted(pdf_dir.glob("@*.pdf")):
+        ck = p.stem
+        if (figures_a_dir / ck).is_dir():   # Route A already produced structured assets
+            continue
+        targets.append(ck)
     return targets
 
 
@@ -267,10 +273,9 @@ def main():
 
     root_dir = Path(__file__).parent.parent
     pdf_dir = root_dir / "data" / "pdfs"
-    report_path = pdf_dir / "_fetch_report.csv"
     out_root = root_dir / "data" / "figures_pdf"
 
-    targets = load_targets(report_path)
+    targets = load_targets(pdf_dir, root_dir / "data" / "figures")
     if args.limit:
         targets = targets[: args.limit]
     print(f"Target non-PMC PDFs: {len(targets)}")

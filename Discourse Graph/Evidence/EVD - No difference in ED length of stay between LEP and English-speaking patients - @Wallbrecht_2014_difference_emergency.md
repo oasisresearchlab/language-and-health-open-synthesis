@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Wallbrecht_2014_difference_emergency-table1.png]]
+>
 In a prospective cohort study of an adult level I trauma academic ED, there were no significant differences in mean emergency-department length of stay (LOS) between patients with limited English proficiency (LEP, n=124) and English-speaking (ES, n=121) patients at any transition point: arrival-to-provider (359 ± 343 vs 363 ± 374 min), provider-to-discharge/admit (558 ± 586 vs 551 ± 509 min), and arrival-to-discharge/admit (837 ± 629 vs 840 ± 605 min), all NS (Table 1). The two groups were comparable on age, sex, mode of arrival, acuity, admission rate, and pediatric proportion.
 
 > "There were no differences in mean LOS from time of arrival to time seen by a provider when comparing ES patients to patients with LEP, or time of arrival to discharge or admission request. This was independent of use of an interpreter (58% of non-ES patients used an interpreter; Table 1, Fig.)." (Wallbrecht, 2014, p. 3)

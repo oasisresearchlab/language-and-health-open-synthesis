@@ -20,6 +20,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Greenky_2019_Reversed_Trend-table2.png]]
+>
 In this large pediatric ED cohort, the model-adjusted difference in ED length of stay (LOS) between patients who requested an interpreter (treated as LEP) and those who did not was only 0.77% — about 1.2 minutes (2.59 vs 2.61 adjusted hours) — a small effect (ES < 0.2) that the authors deemed not clinically significant (Table 2). Notably the direction was reversed from prior literature: LEP/interpreter-requested patients spent slightly *less* time in the ED than English-speaking patients.
 
 > "For ED LOS, a model-adjusted difference of 0.77% (1.2 minutes, 2.59 hours versus 2.61) was found between interpreter groups." (Greenky, 2019, p. 4)

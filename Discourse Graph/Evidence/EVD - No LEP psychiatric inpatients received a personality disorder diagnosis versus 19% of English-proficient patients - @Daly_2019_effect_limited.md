@@ -22,6 +22,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Daly_2019_effect_limited-table1.png]]
+>
 Discharge diagnoses differed significantly between groups (p=0.018): none of the 47 LEP patients received a primary discharge diagnosis of personality disorder, versus 9 of 47 (19%) English-proficient patients, with adjusted standardised residuals (±3.2) flagging the personality-disorder cell as the driver (Table 1). The authors raise a language barrier during assessment as one candidate explanation for the absent diagnoses.
 
 > "The ASRs indicate a greater proportion of EP (9 patients) were diagnosed with personality disorders when compared to LEP, of whom none received such a diagnosis (p<0.05)." (Daly, 2019, p. 466)

@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Aparna_2025_Clinician_Perspectives-fig2.png]]
+>
 When asked about "ideal" resources for managing LEP patients (n = 29), clinicians cited resources for interpretation most frequently (72%; n = 21), with over half (62%; n = 18) describing a specific need for in-person interpreters; a smaller proportion preferred video interpreters over phone translation (20%; n = 6) and some requested interpreters with specialty-specific training (14%; n = 4) (Figure 2D). Clinicians frame in-person and specialty-trained interpreters as the most-wanted intervention to improve communication and the accuracy of information conveyed.
 
 > "Resources for interpretation were raised most frequently (72%; n = 21) with over half (62%; n = 18) describing the need for in‐person interpreters (eg, “Ideally, all interpreters would be in person”)." (Govindan, 2025, p. 1235)

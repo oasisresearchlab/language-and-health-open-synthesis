@@ -24,6 +24,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Stoneking_2016_Does_Spanish-table2.png]]
+>
 Of the 32 encounters in which a resident spoke Spanish directly with the LEP patient, 13 patients followed medical recommendations (filling a prescription or following up with their primary care physician); 8 were admitted/transferred and 11 were lost to follow-up. Of those 13 who followed recommendations, 10 (77%) were encounters with South Campus (SC, curriculum-trained) residents and 3 (23%) were with University Campus (UC) residents (Table 2). The authors themselves caution that with only 13 comparable patients this is far too small to be statistically meaningful, but the direction favors the Spanish-curriculum program.
 
 > "Of the 32 total patient encounters in which the resident physicians spoke Spanish directly with the patient, 13 patients followed medical recommendations (either filling a prescription or following-up with their primary care physician), eight patients were admitted or transferred to another facility, and eleven patients were lost to follow-up (unable to be reached or declined to speak with our team)." (Stoneking, 2016)

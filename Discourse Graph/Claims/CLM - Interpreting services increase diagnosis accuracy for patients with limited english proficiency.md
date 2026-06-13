@@ -47,3 +47,16 @@ nodeInstanceId: 019e8dd8-2562-7700-b3c6-da4f9298f928
 - [[@Debbie_2023_Hidden_Disparities_1#^Debbie-2023-Hidden-D-L6]] (confidence: 0.90)
   > Multivariable logistic regression showed significantly lower odds of being provided next steps for Spanish-speaking callers (OR 0.04, 95% CI 0.02-0.06) compared to English-speaking callers.
   > *The evidence suggests Spanish-speaking callers were significantly less likely to receive next steps compared to English-speaking callers, which implies communication barriers persist even with interpreting services, thus contradicting the claim of more accurate diagnoses*
+
+## Supporting Evidence
+
+> [!info] EVDs that support this claim (→ EVD—supports→CLM edges by sync_relations.py).
+
+- [[EVD - Interpretation resources were the most frequently cited ideal resource with in-person interpreters preferred (72 and 62 percent) - @Aparna_2025_Clinician_Perspectives]]
+
+## Contradicting Evidence
+
+> [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
+
+- [[EVD - Ad hoc interpreters acted as gatekeepers, answering on patients' behalf and controlling what reached the clinician - @Kilian_2021_When_roles]]
+- [[EVD - In cultural-broker role, ad hoc interpreters' own interpretations took precedence, risking dilution of the patient's explanatory model - @Kilian_2021_When_roles]]

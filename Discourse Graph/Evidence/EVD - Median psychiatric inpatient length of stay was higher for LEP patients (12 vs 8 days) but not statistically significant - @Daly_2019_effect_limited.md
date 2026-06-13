@@ -22,6 +22,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Daly_2019_effect_limited-table1.png]]
+>
 Across three adult psychiatric inpatient units, the median length of stay was higher for patients with limited English proficiency (LEP) than for English-proficient (EP) patients — 12 vs 8 days — but the difference was not statistically significant (p=0.155) (Table 1).
 
 > "Though the median length of stay appeared higher in the LEP group (12 vs 8 days), this was not statistically significant." (Daly, 2019, p. 466)

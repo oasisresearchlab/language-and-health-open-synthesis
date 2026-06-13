@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Kyle_2023_Association_Between-table2.png]]
+>
 In a matched retrospective cohort of total shoulder arthroplasty (TSA) patients, mean hospital length of stay (LOS) was longer in the cohort that required a language interpreter than in the non-interpreter cohort (2.8 ± 2.4 vs 1.8 ± 1.0 days, P = .048). On multivariate linear regression controlling for age, BMI, sex, smoking, opioid use, race, insurance, procedure, and diagnosis, interpreter use was the strongest predictor of LOS, with an effect estimate of an additional 0.88 days per patient (β = 0.88, 95% CI 0.28–1.81, P = .008) (Table 2).
 
 > "Patients in the interpreter cohort had significantly longer hospital LOS on average compared with those in the non-interpreter cohort (2.8 ± 2.4 vs 1.8 ± 1.0 days, P = .048)." (Kunze, 2023, p. 87)

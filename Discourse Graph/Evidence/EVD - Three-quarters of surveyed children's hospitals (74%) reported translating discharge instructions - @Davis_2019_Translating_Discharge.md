@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Davis_2019_Translating_Discharge-table2.png]]
+>
 In a survey of 31 children's hospital language-services contacts, all respondents reported translating a subset of hospital documents (e.g., patient-rights handouts at 100%, consent documents at 97%), but only three-quarters (74%, 23 of 31) reported translating discharge instructions (Table 2). Written discharge instructions thus lag behind legal/consent documents in being made language-concordant, even though they are the materials patients take home.
 
 > "All respondents reported that their institution translates handouts pertaining to patient rights, nearly all reported translating consent documents (97%), and three-quarters (74%) reported translating hospital discharge instructions (Table 2)." (Davis, 2019, p. 4)

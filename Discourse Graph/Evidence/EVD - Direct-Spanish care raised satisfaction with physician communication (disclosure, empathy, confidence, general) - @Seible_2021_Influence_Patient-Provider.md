@@ -22,6 +22,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Seible_2021_Influence_Patient-Provider-fig3.png]]
+>
 On the physician-communication satisfaction survey (ISQ) administered immediately after the initial consultation, the direct-Spanish arm scored significantly higher than the interpreter-services arm in all domains: perceived opportunity to disclose concerns (4.91 vs 4.62; P = .001), physician empathy (4.94 vs 4.59; P < .001), confidence in physician abilities (4.84 vs 4.51; P = .001), and general satisfaction with the physician (4.88 vs 4.59; P < .001) (Fig. 3A).
 
 > "Similarly, when considering patients' perception of their physician, the direct-Spanish arm had higher scores in all domains, including patient perception of opportunity to disclose concerns (4.91 vs 4.62; P = .001), physician empathy (4.94 vs 4.59; P <.001), conﬁdence in physician abilities (4.84 vs 4.51; P = .001), and general satisfaction with their physician (4.88 vs 4.59; P < .001) (Fig. 3A)." (Seible, 2021, p. 859)

@@ -5,9 +5,56 @@
 
 | Subtask (factor → outcome) | #EVDs | #papers | Direction | Effect size | Strength |
 | --- | ---: | ---: | --- | --- | --- |
+| Interpretation services → Hospital stay length | 10 | 9 | _TODO_ | _TODO_ | _TODO_ |
 | Limited English Proficiency (LEP) → Treatment adherence | 10 | 6 | _TODO_ | _TODO_ | _TODO_ |
+| Limited English Proficiency (LEP) → Physician time/effort | 5 | 5 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Service utilization | 7 | 5 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Physician time/effort | 4 | 3 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Communication quality | 8 | 3 | _TODO_ | _TODO_ | _TODO_ |
+| Limited English Proficiency (LEP) → Hospital stay length | 3 | 3 | _TODO_ | _TODO_ | _TODO_ |
 | Language concordance → Treatment adherence | 5 | 3 | _TODO_ | _TODO_ | _TODO_ |
-| Limited English Proficiency (LEP) → Physician time/effort | 2 | 2 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Readmissions | 2 | 2 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Diagnostic accuracy | 3 | 2 | _TODO_ | _TODO_ | _TODO_ |
+| Limited English Proficiency (LEP) → Emergency department utilization | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Translation coverage | 3 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Interpreter timeliness / access | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Limited English Proficiency (LEP) → Diagnostic accuracy | 3 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Limited English Proficiency (LEP) → Opioid administration | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Language concordance → Engagement | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Limited English Proficiency (LEP) → Communication quality | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Bilingual provider → Patient satisfaction | 4 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Interpreter competence / certification | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Limited English Proficiency (LEP) → Numeric pain assessment | 2 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Cost of care | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Limited English Proficiency (LEP) → Physician trust | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
 | Limited English Proficiency (LEP) → Patient satisfaction | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Bilingual provider → Patient engagement | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Quality of care | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Patient empowerment | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Appropriate interpreter use and documentation | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Translated documents → Service utilization | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Limited English Proficiency (LEP) → Disease severity at activation | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
 | Limited English Proficiency (LEP) → Viral suppression | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Care coordination | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Language discordance → Treatment adherence | 2 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Emergency department return visits | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Limited English Proficiency (LEP) → Length of stay | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Limited English Proficiency (LEP) → In-hospital mortality | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Bilingual provider → Communication quality | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Readmissions / recurrence | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Limited English Proficiency (LEP) → Diagnosis accuracy | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Translated documents → Hospital stay length | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Hospital expenditures | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Bilingual provider → Physician time/effort | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Machine translation → Translation coverage | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Patient satisfaction | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Limited English Proficiency (LEP) → Sense of empowerment | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Service delays / language-service complaints | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Language concordance → Acceptability | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Discharge disposition | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Access to care | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Hospital admission/transfer | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Interpretation services → Postoperative complications | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
 | Limited English Proficiency (LEP) → Access to support services | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Language concordance → Usability | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |
+| Limited English Proficiency (LEP) → Readmissions | 1 | 1 | _TODO_ | _TODO_ | _TODO_ |

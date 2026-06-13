@@ -25,10 +25,14 @@ deliveryContext:
 > [!info] EVDs that support this claim (→ EVD—supports→CLM edges by sync_relations.py).
 
 - [[EVD - LEP inpatients with no interpreter on admission or discharge had a higher 30-day readmission rate (24.3% vs 14.9%) - @Lindholm_2012_Professional_language]]
+- [[EVD - Bedside interpreter telephone access lowered LEP 30-day readmission during intervention (OR 0.64) - @Karliner_2017_Convenient_Access]]
+- [[EVD - odds of 30-day readmission for the LEP compared with EP group was lower during the intervention period when professional interpreter services via telephone were available, but was roughly equivalent during pre-and post-intervention periods]]
 
 ## Contradicting Evidence
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
+- [[EVD - Adjusted odds of 7-day ED readmission were only 3% higher and non-significant for interpreter-requested pediatric patients - @Greenky_2019_Reversed_Trend]]
+- [[EVD - Improving interpreter use and documentation did not reduce the 48-hour ED return-visit rate for LEP patients (3.1%) - @Martinez_2021_Improving_Equity]]
 
 ## Other Notes
 

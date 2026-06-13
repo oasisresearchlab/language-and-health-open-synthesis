@@ -26,3 +26,16 @@ Limited English proficiency (LEP) is not necessarily associated with worse treat
 ## Supporting Evidence
 
 - [[EVD - Adults with LEP were more likely to be prescribed ART than EP adults (89.7% vs 83.5%) but ART adherence did not differ - @Padilla_2021_Limited_English]]
+
+## Contradicting Evidence
+
+> [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
+
+- [[EVD - LEP children wore hearing aids far less per day than English-proficient peers (1.30 vs 5.19 hr) - @Nicole_2024_Pediatric_Hearing]]
+- [[EVD - Nearly half of LEP children wore hearing aids 15 min or less per day versus 10 percent of English-proficient children - @Nicole_2024_Pediatric_Hearing]]
+
+## Opposing Claims
+
+> [!info] CLMs this claim opposes (→ CLM—opposes→CLM by sync_relations.py).
+
+- [[CLM - Language discordance is associated with reduced treatment adherence]]

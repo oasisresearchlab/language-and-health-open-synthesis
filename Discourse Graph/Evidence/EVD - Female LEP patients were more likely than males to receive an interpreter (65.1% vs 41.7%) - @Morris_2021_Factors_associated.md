@@ -20,6 +20,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Morris_2021_Factors_associated-table1.png]]
+>
 Among admitted LEP patients who required an interpreter, sex was the only socio-demographic or clinical characteristic associated with receiving one: females were more likely to receive an interpreter than males (65.1%, n = 28, vs 41.7%, n = 15; P = .04) (Table 1). Age group, preferred language, hospital, DRG partition and comorbidity level were not significantly associated with interpreter receipt.
 
 > "Females were more likely to receive an interpreter (n = 28, 65.1%) than males (n = 15, 41.7%) (P = .04) (Table 1). No age group or preferred language was associated with greater interpreter service usage." (Morris, 2021, p. 427)

@@ -21,6 +21,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Marshall_2016_Creating_Professional-table4.png]]
+>
 After implementing a four-level professional career ladder for interpreter (Language and Culture Specialist) staff, the Diversity Services Department recorded large pre-post reductions in logged complaints: a 75% reduction in calls for service delays, a 100% reduction in encounter-quality complaints, and an 85% reduction in "unable to provide service" complaints. The supporting table reports daily complaint counts falling from 8 to 2 (service delays ≥30 minutes), 1 to 0 (encounter quality), and 6 to 1 (unable to provide service) (Table 4).
 
 > "Postintervention of the professional ladder, there was a 75% reduction in calls for service delays, a 100% reduction in encounter quality complaints, and an 85% reduction in 'unable to provide service' (Table 4, page 472)." (Marshall, 2016, pp. 470–471)

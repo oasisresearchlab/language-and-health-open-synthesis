@@ -22,6 +22,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Padilla_2021_Limited_English-table1.png]]
+>
 A higher percentage of adults with LEP than adults with EP received care at Ryan White HIV/AIDS Program (RWHAP)-funded facilities (79.0% vs. 67.0%) (Table 1). The authors offer this differential attendance as the leading mechanistic explanation for the better clinical outcomes seen among adults with LEP, because RWHAP-funded facilities are far more likely to provide support services — including interpreter and social services — to marginalized populations.
 
 > "Higher percentages of adults with LEP, compared with adults with EP, received care at RWHAP-funded facilities (79.0% vs. 67.0%)" (Padilla, 2021)

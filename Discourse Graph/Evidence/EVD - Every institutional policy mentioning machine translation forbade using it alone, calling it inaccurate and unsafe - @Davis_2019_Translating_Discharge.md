@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Davis_2019_Translating_Discharge-table3.png]]
+>
 Across the 22 institutional policies analyzed, every policy that mentioned machine translation or translation software (5 of 22) forbade its use alone, characterizing such tools as inaccurate, unreliable, and unsafe. Consistent with this, only 2 of 31 surveyed hospitals (7%) reported "sometimes" or "frequently" using medical translation software for discharge instructions (Table 3), and respondents agreed machine translation should not be used alone. This documents a near-uniform policy stance against standalone machine translation of discharge instructions.
 
 > "Every policy that mentioned machine translation or translation software (n = 5 out of 22) forbade its use alone. Typically, these policies explained that such translation mechanisms were 'inaccurate,' 'unreliable,' and 'unsafe.'" (Davis, 2019, p. 6)

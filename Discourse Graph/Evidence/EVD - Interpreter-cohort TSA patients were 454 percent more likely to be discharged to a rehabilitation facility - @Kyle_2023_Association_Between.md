@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Kyle_2023_Association_Between-table3.png]]
+>
 In the matched TSA cohort, a greater proportion of interpreter-requiring patients were discharged to an acute or subacute rehabilitation facility rather than home, compared with non-interpreter patients (n = 8 [19.5%] vs n = 2 [4.9%], P = .033). On multivariate logistic regression, interpreter use was the strongest predictor of discharge disposition: patients who required an interpreter were 454% more likely (odds ratio 4.54, 95% CI 2.13–8.61, P = .037) to be discharged to a subacute or acute rehabilitation facility (Table 3).
 
 > "Comparison of study cohorts revealed that the need of a language interpreter was associated with discharge disposition; a greater proportion of patients in the interpreter cohort were discharged to an acute or subacute rehabilitation facility compared with patients in the non-interpreter cohort (n = 8 [19.5%] vs n = 2 [4.9%], P = .033)." (Kunze, 2023, p. 88)

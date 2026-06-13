@@ -22,6 +22,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[J_2025_Pilot_study-table5.png]]
+>
 In LEP cholecystectomy patients, documented interpreter use was not significantly associated with any of the four 30-day postoperative outcomes examined: length of stay (LOS 59.17 vs 44.9 hours, p=0.4114), ED revisits (9.1% vs 6.9%, p=0.558), readmission (4.2% vs 4.6%, p=0.885), or surgical follow-up (51.0% vs 51.7%, p=0.921) (Table 5). These are null/non-significant associations in a study the authors describe as likely underpowered for these infrequent clinical outcomes.
 
 > "Interpreter service utilization and language concordant documentation were not significantly associated with LOS, ED visits, hospital readmissions, or surgeon follow-up." (Rosenthal, 2025, p. 1)

@@ -21,6 +21,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Nicole_2024_Pediatric_Hearing-fig1.png]]
+>
 In a retrospective chart review of young children fit with hearing aids, daily hearing aid wear time (data-logged in hours) was much shorter for children from families with limited English proficiency (LEP) than for children from English-proficient (EP) families: mean 1.30 hr/day (SD = 1.93) for the LEP group versus 5.19 hr/day (SD = 3.98) for the EP group. In a linear mixed-effects model, the main effect of Group was statistically significant, F(1, 90.3) = 26.41, p < .0001, and degree of hearing loss did not explain the difference (Fig. 1).
 
 > "Analysis of the parsimonious model revealed statistically significant main effects of Group, F(1, 90.3) = 26.41, p < .0001, and Age, F(1, 109.2) = 10.80, p < .01. The Age x Group interaction was not statistically significant." (Brigham, 2024, p. 324)

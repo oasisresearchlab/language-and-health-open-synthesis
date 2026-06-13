@@ -21,6 +21,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Seible_2021_Influence_Patient-Provider-table3.png]]
+>
 Coded transcripts of the initial consultation showed that, relative to interpreter-based encounters, direct-Spanish encounters had significantly more physician speech devoted to patient history verification (mean utterances 13 vs 8.9; P = .01) and to partnering activities (16 vs 5; P < .001) (Table 3). Relationship-building speech trended higher but did not reach significance (9 vs 5; P = .07); history solicitation, procedural speech, and patient education did not differ. This identifies a mechanism — language concordance changes the content of the clinical conversation.
 
 > "Speciﬁcally, when considering physician speech, the direct-Spanish arm had more physician speech related to patient history veriﬁcation and partnering activities" (Seible, 2021, p. 858)

@@ -35,6 +35,7 @@ deliveryContext:
 ## Contradicting Evidence
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
+- [[EVD - As clinician and ad hoc interpreter negotiated roles, the patient's voice was lost in interpreter-mediated psychiatric consultations - @Kilian_2021_When_roles]]
 
 ## Other Notes
 

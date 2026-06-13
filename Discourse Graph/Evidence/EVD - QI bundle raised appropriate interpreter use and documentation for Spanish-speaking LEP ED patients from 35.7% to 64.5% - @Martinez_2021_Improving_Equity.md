@@ -19,6 +19,10 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Martinez_2021_Improving_Equity-fig2.png]]
+> ![[Martinez_2021_Improving_Equity-table1.png]]
+>
 A multi-component quality-improvement bundle in a pediatric emergency department (an electronic tracking-board LEP icon, a standardized 3-click LEP documentation form, and icon color changes for situational awareness, implemented over three PDSA cycles) raised the mean rate of appropriate interpreter use and documentation (AIUD) for Spanish-speaking LEP patients from a 35.7% baseline to 64.5% after the final cycle (Fig. 2, Table 1).
 
 > "During the baseline period, 35.7% of ED LEP-SS patients had AIUD. After the implementation of LEP icon color changes and role additions (PDSA3), the percent of patients with AIUD increased to 64.5% (Fig. 2)." (Martinez, 2021, p. 4)

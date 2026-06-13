@@ -22,6 +22,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[J_2025_Pilot_study-table5.png]]
+>
 In LEP cholecystectomy patients, receipt of language-concordant paperwork was not significantly associated with any 30-day postoperative outcome: length of stay (LOS 60.45 vs 50.90 hours, p=0.604), ED revisits (4.3% vs 9.9%, p=0.158), readmission (4.3% vs 4.3%, p=1.000), or surgical follow-up (55.1% vs 49.7%, p=0.454), comparing 69 patients with concordant vs 161 with discordant paperwork (Table 5). These are null/non-significant associations in a study the authors describe as likely underpowered for these infrequent clinical outcomes.
 
 > "Interpreter service utilization and language concordant documentation were not significantly associated with LOS, ED visits, hospital readmissions, or surgeon follow-up." (Rosenthal, 2025, p. 1)

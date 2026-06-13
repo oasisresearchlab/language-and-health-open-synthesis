@@ -20,6 +20,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Greenky_2019_Reversed_Trend-table2.png]]
+>
 For ED readmission within 7 days, the adjusted odds were only 3.0% higher in the interpreter-requested cohort than in the no-interpreter group (adjusted OR 1.03, 95% CI: 0.98–1.09; p=0.182), a small, non-significant effect (ES < 0.2) (Table 2). This contrasts with prior pediatric-ED studies that reported increased unplanned return rates for LEP patients.
 
 > "For ED readmission within 7 days, adjusted odds were 3.0% higher in the interpreter requested cohort (aOR: 1.03, 95% CI: 0.98, 1.09). These ES are considered small and not clinically significant (ES < 0.2)." (Greenky, 2019, p. 4)

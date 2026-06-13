@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[J_2025_Pilot_study-table3.png]]
+>
 Among LEP patients undergoing cholecystectomy at a single academic health system, documented interpreter use during the preoperative informed-consent process was present for only 62% of patients (141 of 228), well below the full compliance required by Section 1557 of the Affordable Care Act. Of those with documented use, most was by a professional interpreter (n=126, 55%) while 7% used an ad-hoc interpreter (Table 3).
 
 > "Of the total cohort, 141 (62 %) patients had some form of documented interpreter use during the informed consent process, and 69 (31 %) patients had language concordant paperwork." (Rosenthal, 2025, p. 2)

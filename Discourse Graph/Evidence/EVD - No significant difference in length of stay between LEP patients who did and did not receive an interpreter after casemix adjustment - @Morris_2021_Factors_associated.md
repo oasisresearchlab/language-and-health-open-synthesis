@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Morris_2021_Factors_associated-table3.png]]
+>
 Among hospitalised patients with limited English proficiency who required an interpreter, those who received one had a longer mean unadjusted length of stay (10.31 vs 6.95 days; an unadjusted regression difference of 3.36 days, P = .15), but after casemix adjustment (difference from the national DRG average) the difference was not statistically significant — an estimated additional 2.51 days in the simple model (P = .26) and 3.40 days in the multivariate model (P = .13) (Table 3). The authors conclude the LOS difference was not significant after casemix adjustment.
 
 > "In unadjusted analysis, those that received an interpreter stayed an additional 3.36 days (P = .15) as compared to those patients who required an interpreter but did not receive one (Table 3). After casemix adjustment, patients who received an interpreter did not stay longer than the corresponding national DRG average (estimated additional LOS = 2.51 days, P = .26)." (Morris, 2021, p. 429)

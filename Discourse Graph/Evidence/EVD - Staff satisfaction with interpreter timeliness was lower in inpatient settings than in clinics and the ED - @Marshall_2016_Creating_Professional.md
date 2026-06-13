@@ -21,6 +21,10 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Marshall_2016_Creating_Professional-table1.png]]
+> ![[Marshall_2016_Creating_Professional-table2.png]]
+>
 A baseline (January 2012) staff language-satisfaction survey (N=351) found that satisfaction with the timeliness of interpreters was lower in the inpatient area than in the clinics and the emergency department, and that clinics scored higher than inpatient for overall satisfaction with interpreters (Tables 1 and 2). This documents an inpatient access gap that motivated the intervention's reallocation of interpreter time toward hospital units.
 
 > "As shown in Table 1 (page 471), staff satisfaction ratings for 'rate your level of satisfaction with the timeliness of interpreters' was lower in the inpatient area than in the clinics and the ED. Clinics scored higher for overall level of satisfaction with interpreters than the inpatient setting (Table 2, page 471)." (Marshall, 2016, p. 470)

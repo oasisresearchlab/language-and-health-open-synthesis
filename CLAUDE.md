@@ -44,9 +44,15 @@ EVD/CLM/EP for `.base` filtering): `languageConcordanceFactor/*`, `healthOutcome
 
 ## Governance — propose, don't commit
 
-AI **extracts** EVD/CLM/CVT and **proposes** EPs, provisional→real upgrades, cluster/subtask merges,
-and evidence-summary cell values. The **human commits** (accept/reject per item). Never auto-fill
-the evidence-summary table or auto-write final EPs/merges. See Skill-synthesis.
+AI **extracts** EVD/CLM/CVT and **proposes** cluster/subtask merges and evidence-summary cell values.
+The **human commits** (accept/reject per item). Never auto-fill the evidence-summary table. See Skill-synthesis.
+
+> **EP retired (2026-06).** The EvidencePattern node type (row above) is no longer authored. A
+> body-of-evidence judgment now lives **on the CLM** as a `certainty` field + `## Evidence appraisal`
+> section (GRADE-style). **That appraisal is an expert/clinician task — AI does NOT draft it** (leave
+> `certainty` blank). Reify a node only if one claim's evidence must be graded as separate sub-bodies.
+> `propose_eps.py` is paused. The one prior EP was re-homed as a CLM. Detail: memory
+> `synthesis-grade-appraisal-on-clm-not-ep`.
 
 ## Pipeline order (after authoring node files)
 

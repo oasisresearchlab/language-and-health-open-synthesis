@@ -22,6 +22,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Daly_2019_effect_limited-table1.png]]
+>
 LEP psychiatric inpatients were reviewed by consultants more often than EP patients (median 4 vs 3 reviews, p=0.036) (Table 1). The difference disappeared once the number of consultant reviews was normalized by length of stay, suggesting the extra reviews tracked longer admissions rather than a per-day increase in consultant effort.
 
 > "Patients in the LEP group were reviewed more often by consultants, but, when the number of consultant reviews was divided by length of stay, no significant difference remained." (Daly, 2019, p. 466)

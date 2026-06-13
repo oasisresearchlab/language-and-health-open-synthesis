@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Aparna_2025_Clinician_Perspectives-fig2.png]]
+>
 In the qualitative interviews (n = 29), most respondents reported that the inability to perform an accurate assessment of hearing loss in LEP patients hindered treatment (93%; n = 27) (Figure 2C). This is a clinician-reported mechanism linking the language barrier to downstream care: when language-specific testing is unavailable, providers cannot accurately characterize the deficit, which in turn obstructs treatment decisions.
 
 > "Most respondents reported that the inability to perform an accurate assessment of HL in LEP patients hindered treatment (93%; n = 27)." (Govindan, 2025, pp. 1234–1235)

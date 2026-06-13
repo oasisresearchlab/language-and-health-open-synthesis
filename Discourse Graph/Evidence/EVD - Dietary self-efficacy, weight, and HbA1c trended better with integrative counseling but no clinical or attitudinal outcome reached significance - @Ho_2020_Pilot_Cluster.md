@@ -23,6 +23,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Ho_2020_Pilot_Cluster-table3.png]]
+>
 Apart from dietary adherence, no attitudinal or clinical outcome differed significantly between the integrative counseling (DSME+INC) and usual DSME arms. Dietary self-efficacy improved more in DSME+INC than DSME, but not significantly; diabetes distress improved nonsignificantly in both groups. Weight and HbA1c improved in the intervention group but were not statistically significant: at 6 months HbA1c changed −0.4 (INC) vs −0.6 (control) and weight changed −0.5 lbs (INC) vs +0.1 lbs (control) (Table 3). The authors attribute the lack of significance largely to the small sample.
 
 > "Pre to post intervention outcomes indicated greater improvements in dietary self-efficacy among DSME+INC than DSME, but these differences were not statistically significant. Nonsignificant improvements in diabetes-related distress were also observed in both groups (Table 3)." (Ho, 2020)

@@ -19,6 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+
+> ![[Morris_2021_Factors_associated-table3.png]]
+>
 Among hospitalised LEP patients who required an interpreter, those who received one had a higher mean unadjusted episode cost (AU$8900 vs AU$5738; unadjusted regression difference AU$3162, P = .08), but after casemix adjustment (difference from the national DRG average) the cost difference was not statistically significant — an estimated additional AU$336 per episode in the simple model (P = .85) and AU$874 in the multivariate model (P = .64) (Table 3). The authors conclude there was no statistically significant cost difference after casemix adjustment.
 
 > "Similarly, unadjusted analysis showed there was no evidence that patients who received an interpreter cost more than those who required an interpreter but did not receive one (estimated additional cost = AU$3162, P = .08). After casemix adjustment to the outcome variable, cost, patients who received an interpreter did not cost significantly more than those who did not receive an interpreter (estimated additional cost = AU$336 per patient episode above the corresponding national DRG average, P = .85)." (Morris, 2021, p. 429)

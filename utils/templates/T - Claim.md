@@ -2,6 +2,7 @@
 NodeFormality: draft
 curationStatus: Initial AI draft
 TruthValue: 0.5
+certainty:        # High | Moderate | Low | Very Low — GRADE-style appraisal of the body of evidence (authored judgment, NOT an edge tally)
 NodeType: Claim
 tags:
 languageConcordanceFactor:
@@ -20,4 +21,8 @@ deliveryContext:
 
 - [[EVD - ...]]
 
-## Other Notes
+## Evidence appraisal
+
+> [!info] GRADE-style certainty for the body of evidence above, taken as a **unit** (not a sum of support/opposes edges). State the `certainty` level and the reasoning across: risk of bias, consistency, directness, precision, and any upgrades (large effect, dose-response). AI proposes; the human commits. Reify a separate node only if the evidence splits into sub-bodies that must be graded apart (e.g. RCT vs observational).
+
+## Narrative synthesis

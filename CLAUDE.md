@@ -51,8 +51,8 @@ The **human commits** (accept/reject per item). Never auto-fill the evidence-sum
 > body-of-evidence judgment now lives **on the CLM** as a `certainty` field + `## Evidence appraisal`
 > section (GRADE-style). **That appraisal is an expert/clinician task — AI does NOT draft it** (leave
 > `certainty` blank). Reify a node only if one claim's evidence must be graded as separate sub-bodies.
-> `propose_eps.py` is paused. The one prior EP was re-homed as a CLM. Detail: memory
-> `synthesis-grade-appraisal-on-clm-not-ep`.
+> `propose_eps.py` is paused. The one prior EP was re-homed as a CLM. **Canonical record of this and
+> all other methodology decisions: `plans/methodology-decisions.md`.**
 
 ## Pipeline order (after authoring node files)
 

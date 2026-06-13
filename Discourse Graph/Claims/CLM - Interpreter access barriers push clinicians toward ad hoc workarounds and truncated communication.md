@@ -30,6 +30,7 @@ deliveryContext:
 - [[EVD - Concentrating Spanish-speaking patient assignments on dual-role nurses added time-consuming interpreting burden and frustration - @L_2023_Dual-role_nurse]]
 - [[EVD - Staff satisfaction with interpreter timeliness was lower in inpatient settings than in clinics and the ED - @Marshall_2016_Creating_Professional]]
 - [[EVD - Only 39% of LEP inpatients received professional interpretation on both admission and discharge while 13.8% received none on either day - @Lindholm_2012_Professional_language]]
+- [[EVD - Barriers to professional interpretation led LEP patients to delay care or proceed without assistance, limiting communication - @Brooks_2016_Patient_Perspectives]]
 
 ## Contradicting Evidence
 

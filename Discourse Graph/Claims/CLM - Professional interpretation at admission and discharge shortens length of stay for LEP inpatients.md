@@ -36,13 +36,12 @@ deliveryContext:
 - [[EVD - No significant difference in length of stay between LEP patients who did and did not receive an interpreter after casemix adjustment - @Morris_2021_Factors_associated]]
 - [[EVD - The interpreter-use QI bundle did not significantly change balancing measures of ED length of stay (186 min) or VRI encounter time (16.5 min) - @Martinez_2021_Improving_Equity]]
 - [[EVD - Documented interpreter use was not significantly associated with LOS, ED revisits, readmission, or surgical follow-up after cholecystectomy - @J_2025_Pilot_study]]
+- [[EVD - Language-concordant documentation was not significantly associated with LOS, ED revisits, readmission, or surgical follow-up after cholecystectomy - @J_2025_Pilot_study]]
 - [[EVD - Process measures, length of stay, and escalation of care showed no special cause variation after the intervention - @Lauren_2024_Quality_Improvement]]
 
 ## Other Notes
 
 Within a single LEP inpatient population, receiving a professional interpreter at admission (and especially at both admission and discharge) is associated with a significantly shorter hospital stay after adjusting for age, gender, illness severity, language, and diagnosis. Interpretation at admission appears to carry the greatest effect, consistent with the patient history accounting for most of the information needed to formulate a correct diagnosis.
-
-> "Our research shows that LEP patients who did not receive professional interpretation on date of admission and discharge experienced a more lengthy hospitalization with an average of 1.5 days longer than LEP patients who received these services. Specifically, a patient's access to professional interpretation at admission seems to have had the greatest effect on LOS." (Lindholm, 2012, p. 1298)
 
 **Cross-evidence triangulation (quant + qual):** the quantitative inpatient effect (Lindholm) is reinforced by qualitative patient-reported mechanism evidence — LEP patients in focus groups attributed lengthened outpatient and emergency visits directly to interpreter unavailability (Brooks). The two ground the same relationship at different settings (inpatient LOS vs visit duration) and evidence types, which is the kind of quant↔qual synthesis this graph is meant to support. (Daly's psychiatric-inpatient cohort is held separately: it compared LEP-vs-English-proficient rather than interpreter-vs-none, so it speaks to a discordance→LOS claim, not this interpretation-helps claim.)
 

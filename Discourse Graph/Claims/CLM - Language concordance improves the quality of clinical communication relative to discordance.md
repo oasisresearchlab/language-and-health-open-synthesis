@@ -25,6 +25,7 @@ deliveryContext:
 
 - [[EVD - Direct-Spanish consultations had more physician history-verification and partnering utterances - @Seible_2021_Influence_Patient-Provider]]
 - [[EVD - LEP patients reported providers overestimate their English comprehension and do not check for understanding - @Brooks_2016_Patient_Perspectives]]
+- [[EVD - LEP patients perceived inferior care and described concrete harms when interpretation was inadequate or absent - @Brooks_2016_Patient_Perspectives]]
 
 ## Contradicting Evidence
 

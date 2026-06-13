@@ -136,6 +136,7 @@ generated_by: utils/build_dgraph.py
     - [[EVD - LEP patients described interpreter unavailability causing delays that lengthen outpatient and emergency visits - @Brooks_2016_Patient_Perspectives]]
     - ✗ (opposes) [[EVD - Bedside interpreter telephone access had no significant effect on length of stay - @Karliner_2017_Convenient_Access]]
     - ✗ (opposes) [[EVD - Documented interpreter use was not significantly associated with LOS, ED revisits, readmission, or surgical follow-up after cholecystectomy - @J_2025_Pilot_study]]
+    - ✗ (opposes) [[EVD - Language-concordant documentation was not significantly associated with LOS, ED revisits, readmission, or surgical follow-up after cholecystectomy - @J_2025_Pilot_study]]
     - ✗ (opposes) [[EVD - No significant difference in length of stay between LEP patients who did and did not receive an interpreter after casemix adjustment - @Morris_2021_Factors_associated]]
     - ✗ (opposes) [[EVD - Process measures, length of stay, and escalation of care showed no special cause variation after the intervention - @Lauren_2024_Quality_Improvement]]
     - ✗ (opposes) [[EVD - The interpreter-use QI bundle did not significantly change balancing measures of ED length of stay (186 min) or VRI encounter time (16.5 min) - @Martinez_2021_Improving_Equity]]
@@ -176,13 +177,3 @@ generated_by: utils/build_dgraph.py
 
 ### [[QUE - What is the distribution of language discordance needs in American healthcare settings?]]
 - _(no claims linked yet)_
-
-## Evidence patterns
-
-### [[EP - Language accessibility and concordance, not LEP status itself, is the operative lever for medication-adherence disparities]]  (6 EVDs · 5 papers)
-- [[EVD - Adults with LEP were more likely to be prescribed ART than EP adults (89.7% vs 83.5%) but ART adherence did not differ - @Padilla_2021_Limited_English]]
-- [[EVD - Among LEP patients who followed medical recommendations after a Spanish-spoken encounter, most were seen by curriculum-trained residents - @Stoneking_2016_Does_Spanish]]
-- [[EVD - Dietary adherence (adapted Mediterranean diet score) significantly improved with culturally integrated nutrition counseling but worsened with usual DSME - @Ho_2020_Pilot_Cluster]]
-- [[EVD - LEP patients had much lower odds of using any remote medication refill system than English-proficient patients - @Moreno_2016_Disparities_Use]]
-- [[EVD - Language-group differences in medication adherence disappeared after controlling for patient-provider language concordance - @Kahler_2022_Understanding_Medication]]
-- [[EVD - The remote-refill disparity was driven by Internet refills while telephone refill use did not differ by LEP status - @Moreno_2016_Disparities_Use]]

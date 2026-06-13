@@ -181,6 +181,70 @@ export default function AboutPage() {
           files in <code>graph/</code>.
         </p>
 
+        <h2 className="font-heading">
+          Why this form — a revisable intermediate representation
+        </h2>
+        <p>
+          Ways of organizing a literature sit on a spectrum. At one end,{" "}
+          <strong>literature graphs</strong> (citation networks, topic maps)
+          cover almost everything but say little about what any of it{" "}
+          <em>means</em>. At the other, <strong>knowledge graphs</strong> and{" "}
+          <strong>meta-analyses</strong> are richly expressive — typed entities
+          and relations, pooled effect sizes — but only over the narrow slice of
+          a literature that has been forced into a fixed schema or a single
+          shared construct. A <strong>discourse graph</strong> sits in the
+          middle: expressive enough to reason over, broad enough to cover a
+          messy literature, and — crucially — carrying granular{" "}
+          <strong>provenance and uncertainty</strong> on every node.
+        </p>
+        <p>
+          That middle position is the point, not a compromise. The graph is an{" "}
+          <strong>intermediate representation</strong> — like a compiler&apos;s
+          IR between source code and machine code. Source papers compile{" "}
+          <em>into</em> the graph once; the graph then compiles <em>out</em> to
+          whatever you need — a narrative, a knowledge graph, a meta-analysis for
+          the sub-question where the evidence is commensurable. The expensive,
+          lossy step — reading the papers — happens once. When the model has to
+          change (a construct splits in two, a schema is revised, a moderator
+          turns out to matter) you <strong>re-wire the graph</strong>; you do not
+          re-read the corpus. Revising a model built on the graph is cheap; going
+          destructively back to the source texts to start over is not.
+        </p>
+        <p>
+          That makes the graph a <strong>resource people build on directly</strong>,
+          not just a finished output. A natural extension is letting a reader
+          pick a claim&apos;s body of evidence and run a{" "}
+          <strong>living meta-analysis of their own choosing</strong> over it —
+          assembling the commensurable Evidence, pooling it under assumptions
+          they can see and contest, and having it <em>re-run as new evidence
+          lands</em> — rather than inheriting one pooled estimate, frozen at
+          publication, that someone else chose for them.
+        </p>
+        <p>
+          This is why <strong>Evidence and Claims are distinct node types</strong>.
+          A Claim is a compressed, generalized assertion — modular and quotable,
+          but <em>lossy</em>: it has abstracted away the particulars. An Evidence
+          node is the balance point between compression and context — modular
+          enough to reuse, yet grounded in a verbatim quote and linked to the
+          specific methods that produced it (its What, How, and Who). That
+          retained context is what lets the graph be synthesized{" "}
+          <em>responsibly</em>: deciding whether two findings measure the same
+          construct, reasoning about whether they are commensurable enough to
+          pool, noticing a hidden moderator that explains why they disagree.
+          Compile straight from text to one pooled number and those judgments are
+          made silently and irreversibly; hold them in the graph and they stay
+          explicit and contestable.
+        </p>
+        <p>
+          The longer-term aim is to make even this cheaper: if research were{" "}
+          <strong>modular by construction</strong> — a finding published as a
+          grounded, addressable unit in the first place — the extraction step
+          that builds this graph would be less necessary, or unnecessary. This
+          synthesis extracts the graph from conventional papers because that is
+          the literature we have; the form points at a world where the graph{" "}
+          <em>is</em> the literature.
+        </p>
+
         <h2 className="font-heading">How to read it</h2>
         <ul>
           <li>

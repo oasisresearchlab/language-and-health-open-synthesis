@@ -35,6 +35,18 @@ export default async function HomePage() {
       .map((o) => ({ from: n.id, to: o.to, edge: o.edge })),
   );
 
+  // Best-supported claims: ranked by distinct supporting papers, excluding contested ones
+  // (≥2 opposing papers). Mechanical evidence-breadth, not a certainty rating (expert-only).
+  const topClaims = Array.from(graph.nodes.values())
+    .filter(
+      (n) =>
+        n.type === "claim" &&
+        (n.supportPapers ?? 0) >= 2 &&
+        (n.opposePapers ?? 0) < 2,
+    )
+    .sort((a, b) => (b.supportPapers ?? 0) - (a.supportPapers ?? 0))
+    .slice(0, 6);
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24">
       {/* Section 1 — Substance */}
@@ -87,6 +99,52 @@ export default async function HomePage() {
           />
         </div>
       </section>
+
+      {topClaims.length > 0 && (
+        <>
+          <Separator className="my-16" />
+
+          {/* Section 1b — Best-supported claims */}
+          <section className="space-y-6">
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
+              Best-supported claims
+            </p>
+            <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+              What the evidence most consistently shows
+            </h2>
+            <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground">
+              Claims backed by the most independent studies with little or no
+              contradicting evidence, ranked by the number of distinct
+              supporting papers. This is a measure of evidential{" "}
+              <em>breadth</em> — not a final certainty rating, which is an
+              expert judgment.
+            </p>
+            <ul className="grid gap-3 sm:grid-cols-2">
+              {topClaims.map((c) => (
+                <li key={c.id}>
+                  <Link
+                    href={`/node/${c.id}`}
+                    className="group flex h-full flex-col gap-2 rounded-md border border-border bg-card p-4 transition-colors hover:border-primary/40 hover:bg-accent/40"
+                  >
+                    <div className="flex items-center justify-between gap-2">
+                      <NodeBadge type="claim" size="sm" />
+                      <span className="font-mono text-xs tabular-nums text-muted-foreground">
+                        {c.supportPapers} papers
+                        {(c.opposePapers ?? 0) > 0
+                          ? ` · ${c.opposePapers} opposing`
+                          : ""}
+                      </span>
+                    </div>
+                    <p className="text-sm leading-snug text-foreground">
+                      {c.title}
+                    </p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </>
+      )}
 
       <Separator className="my-16" />
 

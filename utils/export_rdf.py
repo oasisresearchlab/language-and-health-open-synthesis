@@ -133,6 +133,22 @@ def main():
         else:
             out_edges.setdefault(s, []).append((r, d))
 
+    # per-CLM evidence breadth: distinct source papers among supporting / opposing EVDs.
+    # A mechanical strength proxy for ranking (e.g. the homepage "most-supported claims") —
+    # NOT a GRADE certainty judgment, which is expert-authored only.
+    clm_sup, clm_opp = {}, {}
+    for e in rels:
+        s, d, r = e["source"], e["destination"], REL.get(e["type"])
+        if s not in nodes or d not in nodes or nodes[d]["code"] != "CLM" or nodes[s]["code"] != "EVD":
+            continue
+        paper = nodes[s]["src_citekey"]
+        if not paper:
+            continue
+        if r == "supports":
+            clm_sup.setdefault(d, set()).add(paper)
+        elif r == "opposes":
+            clm_opp.setdefault(d, set()).add(paper)
+
     # 3. which sources are referenced (by EVD Source field) — only export those
     ref_src = set()
     for n in nodes.values():
@@ -207,6 +223,9 @@ def main():
             fm_out["shortLabel"] = short
         if n["code"] != "SRC":
             fm_out["status"] = str(n["fm"].get("curationStatus", "Initial AI draft")).strip()
+        if n["code"] == "CLM":
+            fm_out["supportPapers"] = len(clm_sup.get(n["iid"], set()))
+            fm_out["opposePapers"] = len(clm_opp.get(n["iid"], set()))
         fm_out["created"] = CREATED
         if edges:
             fm_out["edges"] = edges

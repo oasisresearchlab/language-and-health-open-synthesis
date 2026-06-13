@@ -75,6 +75,9 @@ export interface NodeFrontmatter {
   status?: string;
   source_section?: string;
   created?: string;
+  /** Distinct source papers among supporting / opposing EVDs (CLM only; mechanical strength proxy, not GRADE). */
+  supportPapers?: number;
+  opposePapers?: number;
   edges?: Partial<Record<EdgeType, string[]>>;
 }
 
@@ -98,6 +101,9 @@ export interface GraphNode {
   source_section?: string;
   sections: string[];
   created?: string;
+  /** Distinct source papers among supporting / opposing EVDs (CLM only; mechanical strength proxy, not GRADE). */
+  supportPapers?: number;
+  opposePapers?: number;
   body: string;
   filePath: string;
   outgoing: OutgoingEdge[];

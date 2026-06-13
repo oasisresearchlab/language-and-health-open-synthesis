@@ -76,6 +76,8 @@ async function readNodeFile(filePath: string): Promise<GraphNode | null> {
     source_section: sourceSectionStr || undefined,
     sections,
     created: toStringMaybe(fm.created),
+    supportPapers: typeof fm.supportPapers === "number" ? fm.supportPapers : undefined,
+    opposePapers: typeof fm.opposePapers === "number" ? fm.opposePapers : undefined,
     body: parsed.content.trim(),
     filePath,
     outgoing,

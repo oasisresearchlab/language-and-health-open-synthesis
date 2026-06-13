@@ -34,7 +34,7 @@ deliveryContext:
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
 
-## Other Notes
+## Narrative synthesis
 
 Spanish-speaking LEP patients treated by curriculum-trained (South Campus) residents rated their visit satisfaction higher and, in the small adherence subset, were disproportionately represented among those who followed medical recommendations. The association is in the expected direction but rests on a small, underpowered, non-randomized pilot.
 

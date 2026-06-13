@@ -39,7 +39,7 @@ deliveryContext:
 - [[EVD - Language-concordant documentation was not significantly associated with LOS, ED revisits, readmission, or surgical follow-up after cholecystectomy - @J_2025_Pilot_study]]
 - [[EVD - Process measures, length of stay, and escalation of care showed no special cause variation after the intervention - @Lauren_2024_Quality_Improvement]]
 
-## Other Notes
+## Narrative synthesis
 
 Within a single LEP inpatient population, receiving a professional interpreter at admission (and especially at both admission and discharge) is associated with a significantly shorter hospital stay after adjusting for age, gender, illness severity, language, and diagnosis. Interpretation at admission appears to carry the greatest effect, consistent with the patient history accounting for most of the information needed to formulate a correct diagnosis.
 

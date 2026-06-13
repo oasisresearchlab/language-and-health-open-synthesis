@@ -35,7 +35,7 @@ deliveryContext:
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
 
-## Other Notes
+## Narrative synthesis
 
 This is a usability/user-centered-design claim, not an effectiveness claim. The quantitative SUS score (75, "good") and the predominantly positive perceived-impact and strengths themes establish usability and acceptability for a Spanish-speaking Latinx population of PWH; the barriers and suggestions themes (privacy, low literacy, lack of personal connection, repetitiveness; requests for interactivity and personalization) constitute the actionable engagement findings that the user-centered process was designed to surface. The "positive impact on medication adherence" figures are self-reported perceptions elicited by direct prompting, not measured adherence outcomes; the paper explicitly defers actual outcome measurement to future work.
 

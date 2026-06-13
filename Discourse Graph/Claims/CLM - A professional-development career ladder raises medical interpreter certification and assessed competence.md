@@ -29,6 +29,6 @@ deliveryContext:
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM). None identified for this theme.
 
-## Other Notes
+## Narrative synthesis
 
 This is an **intervention-contrast** claim about interpreter workforce quality — the upstream input that downstream concordance/accuracy claims depend on. After a career-ladder restructuring at a single pediatric hospital, all 29 Language and Culture Specialist staff became nationally certified (vs 3 before) and mean Interpreter Skills Assessment scores rose from 80% to 90%. The evidence is a single-site, uncontrolled pre-post design, and the authors note gains partly reflect attrition and onboarding (composition change) rather than upskilling of incumbents alone, so the causal attribution and generalizability are limited. Interpreter competence is the plausible mediator linking interpreter provision to accurate assessment — clinicians in a separate hearing-health survey specifically requested specialty-trained interpreters "to ensure that information from the provider was being accurately conveyed."

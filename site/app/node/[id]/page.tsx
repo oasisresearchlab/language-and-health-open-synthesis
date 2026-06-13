@@ -5,6 +5,7 @@ import { Calendar, FileText, Hash, GitBranch } from "lucide-react";
 import { loadGraph, getAllNodeIds } from "@/lib/graph";
 import { NODE_TYPE_LABEL } from "@/lib/types";
 import { NodeBadge } from "@/components/node-badge";
+import { SourceCitation } from "@/components/source-citation";
 import { MarkdownProse } from "@/components/markdown-prose";
 import { EdgeList } from "@/components/edge-list";
 import { GithubIssueButton } from "@/components/github-issue-button";
@@ -43,6 +44,12 @@ export default async function NodePage({
   const node = graph.nodes.get(id);
   if (!node) notFound();
   const existingIssue = graph.nodeIssues[node.id] ?? null;
+  const sourceNode =
+    node.type === "evidence"
+      ? graph.nodes.get(
+          node.outgoing.find((e) => e.edge === "derivedFrom")?.to ?? "",
+        )
+      : undefined;
 
   return (
     <article
@@ -86,11 +93,17 @@ export default async function NodePage({
         </div>
       </header>
 
+      {sourceNode ? (
+        <div className="mt-6 max-w-3xl">
+          <SourceCitation source={sourceNode} variant="compact" />
+        </div>
+      ) : null}
+
       <div className="mt-10 grid gap-12 lg:grid-cols-[minmax(0,1fr)_320px]">
         {/* Body */}
         <div className="min-w-0 space-y-8">
           {node.type === "source" ? (
-            <SourceCallout node={node} />
+            <SourceCitation source={node} variant="full" />
           ) : null}
 
           <MarkdownProse source={stripDuplicateTitle(node.body, node.id)} />
@@ -128,21 +141,6 @@ export default async function NodePage({
         </aside>
       </div>
     </article>
-  );
-}
-
-function SourceCallout({ node }: { node: { body: string } }) {
-  const citationMatch = /\*\*Citation:\*\*\s*([^\n]+)/.exec(node.body);
-  if (!citationMatch) return null;
-  return (
-    <div className="rounded-lg border border-border bg-accent/40 p-5">
-      <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-        Source citation
-      </p>
-      <p className="mt-2 font-serif text-base leading-relaxed">
-        {citationMatch[1]}
-      </p>
-    </div>
   );
 }
 

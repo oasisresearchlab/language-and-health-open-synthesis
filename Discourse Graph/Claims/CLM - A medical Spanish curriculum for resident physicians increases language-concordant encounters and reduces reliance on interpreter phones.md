@@ -31,7 +31,7 @@ deliveryContext:
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
 
-## Other Notes
+## Narrative synthesis
 
 Training providers as bilingual/dual-role clinicians shifts care toward direct language-concordant communication and away from interpreter-phone use, which the authors describe as slower, lower-quality, and impersonal. This is a single-program, non-randomized comparison, so the claim remains tentative.
 

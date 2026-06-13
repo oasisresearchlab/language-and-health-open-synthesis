@@ -29,7 +29,7 @@ deliveryContext:
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
 
-## Other Notes
+## Narrative synthesis
 
 The medium of professional interpreting moderates the quality of language-discordant communication. Turn-by-turn ED transcript comparison (Benda) shows telephone-based interpreters losing information and local context for lack of visual cues — in one case the trouble was never noticed or repaired — while postpartum clinicians (Jensen) described in-person interpreters as able to engage as care-team members, provide continuity, and even flag inconsistent information across clinicians, with telephone and video relegated to "secondary options" beset by dropped calls, infection-control concerns, and scarce devices. Both are qualitative, provider/observer-grounded mechanisms rather than quantified effects, and neither captured video interpretation rigorously, so the ranking of remote modalities is under-specified.
 

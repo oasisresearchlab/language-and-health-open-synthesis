@@ -37,7 +37,7 @@ deliveryContext:
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
 - [[EVD - As clinician and ad hoc interpreter negotiated roles, the patient's voice was lost in interpreter-mediated psychiatric consultations - @Kilian_2021_When_roles]]
 
-## Other Notes
+## Narrative synthesis
 
 By serving as broker between the health care system and the patient, certified dual-role nurse interpreters were perceived to convert a discordant, error-prone, anxiety-inducing encounter into one where patients felt relief, were put at ease, and became active participants in their own care. The evidence is nurse-perceived and qualitative (four participants, one hospital), so the mechanism is plausible and consistently reported but not quantified or generalizable.
 

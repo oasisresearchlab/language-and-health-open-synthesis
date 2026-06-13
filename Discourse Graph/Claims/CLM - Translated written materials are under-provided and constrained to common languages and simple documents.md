@@ -36,7 +36,7 @@ deliveryContext:
 
 (none identified in the current corpus)
 
-## Other Notes
+## Narrative synthesis
 
 Translated written materials reach fewer patients than the documents that mark legal milestones: in a survey of children's hospitals, all translate patient-rights handouts and 97% translate consent forms, but only 74% translate discharge instructions (Davis), and in a surgical cohort just 31% of LEP patients received any language-concordant paperwork (Rosenthal). Where translation does happen, three structural constraints bound its reach: standardized pretranslated libraries and EHR templates — the dominant strategy — cover only common languages (mainly Spanish) and cannot be personalized; hospitals lean on interpreters (trained for verbal work) to translate, restricting that to short or simple documents; and machine translation is near-uniformly prohibited as standalone, removing a scalable shortcut (all from Davis). Together these document both the size of the coverage gap and the mechanisms that hold it in place. These are descriptive survey, policy-content, and chart-review measures, not evaluated patient outcomes.
 

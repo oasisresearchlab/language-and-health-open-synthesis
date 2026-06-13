@@ -25,4 +25,4 @@ nodeInstanceId: 019e8dd8-256d-7402-9087-8e5f6ca1e438
 - [[EVD - Clinicians improvised on validated speech-perception testing or used non-speech evaluation for CI candidacy in LEP patients (59 and 52 percent) - @Aparna_2025_Clinician_Perspectives]]
 - [[EVD - No LEP psychiatric inpatients received a personality disorder diagnosis versus 19% of English-proficient patients - @Daly_2019_effect_limited]]
 
-## Other Notes
+## Narrative synthesis

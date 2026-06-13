@@ -34,7 +34,7 @@ deliveryContext:
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
 
-## Other Notes
+## Narrative synthesis
 
 A modified rapid response system that paired EHR-dashboard monitoring of early warning scores with systematic interpreter integration was associated with a special-cause decrease in post-RR-activation mortality for LEP inpatients (7.42% → 6.09%). The effect on mortality stands alone: process measures, length of stay, and escalation of care showed no special cause variation (see [[EVD - Process measures, length of stay, and escalation of care showed no special cause variation after the intervention - @Lauren_2024_Quality_Improvement]]), and disease severity at activation actually rose slightly (see [[EVD - Disease severity (DI score) at RR activation rose slightly post-intervention with special cause variation - @Lauren_2024_Quality_Improvement]]). As a single-center pre-post pilot with small death counts, the claim is promising but tentative.
 

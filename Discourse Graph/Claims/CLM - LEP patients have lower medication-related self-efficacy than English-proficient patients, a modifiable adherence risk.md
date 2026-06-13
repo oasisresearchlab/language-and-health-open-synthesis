@@ -31,7 +31,7 @@ deliveryContext:
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
 
-## Other Notes
+## Narrative synthesis
 
 The deficit is specific to *learning about* medications (not the act of taking them) and is compounded by very low access to written medication information in patients' languages.
 

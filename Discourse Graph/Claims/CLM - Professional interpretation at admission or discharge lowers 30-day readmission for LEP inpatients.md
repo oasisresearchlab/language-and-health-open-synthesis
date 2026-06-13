@@ -34,7 +34,7 @@ deliveryContext:
 - [[EVD - Adjusted odds of 7-day ED readmission were only 3% higher and non-significant for interpreter-requested pediatric patients - @Greenky_2019_Reversed_Trend]]
 - [[EVD - Improving interpreter use and documentation did not reduce the 48-hour ED return-visit rate for LEP patients (3.1%) - @Martinez_2021_Improving_Equity]]
 
-## Other Notes
+## Narrative synthesis
 
 LEP inpatients who received professional interpretation at admission and/or discharge were less likely to be readmitted within 30 days than those who received no interpretation, after adjusting for age, gender, severity, language, and length of stay. The unadjusted gradient (24.3% readmitted with no interpreter vs 14.9% with interpreters on both days) supports the same direction.
 

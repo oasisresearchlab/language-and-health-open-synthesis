@@ -78,6 +78,13 @@ export interface NodeFrontmatter {
   /** Distinct source papers among supporting / opposing EVDs (CLM only; mechanical strength proxy, not GRADE). */
   supportPapers?: number;
   opposePapers?: number;
+  /** Bibliographic metadata (SRC only) for citations + follow-the-source links. */
+  author?: string;
+  year?: string;
+  journal?: string;
+  doi?: string;
+  pubmedId?: string;
+  citekey?: string;
   edges?: Partial<Record<EdgeType, string[]>>;
 }
 
@@ -104,6 +111,13 @@ export interface GraphNode {
   /** Distinct source papers among supporting / opposing EVDs (CLM only; mechanical strength proxy, not GRADE). */
   supportPapers?: number;
   opposePapers?: number;
+  /** Bibliographic metadata (SRC only) for citations + follow-the-source links. */
+  author?: string;
+  year?: string;
+  journal?: string;
+  doi?: string;
+  pubmedId?: string;
+  citekey?: string;
   body: string;
   filePath: string;
   outgoing: OutgoingEdge[];

@@ -31,7 +31,7 @@ deliveryContext:
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
 
-## Other Notes
+## Narrative synthesis
 
 Self-efficacy is a modifiable predictor of medication adherence; because verbal medication information specifically raises LEP (not EP) learning self-efficacy, consistently providing it is a candidate intervention to improve LEP adherence.
 

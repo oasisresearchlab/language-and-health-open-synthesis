@@ -35,6 +35,6 @@ deliveryContext:
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
 
-## Other Notes
+## Narrative synthesis
 
 Across a large retrospective cohort of general medicine inpatients, language discordance was associated with a documented disparity in both how pain was assessed and how it was treated: patients with LEP had the lowest adjusted odds of receiving a numeric (Numeric Rating Scale) pain assessment and received the fewest daily opioids within every pain-assessment category. The authors interpret the elevated use of behavioral assessment tools for patients with LEP as probable interpreter underutilization, linking the assessment-tool disparity to a plausible mechanism. The association is robust in magnitude and adjusted for major confounders, but it is single-institution and observational, and interpreter-use data were not directly linked to individual assessments.

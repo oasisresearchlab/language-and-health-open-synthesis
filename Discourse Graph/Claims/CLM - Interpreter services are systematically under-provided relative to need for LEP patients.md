@@ -36,7 +36,7 @@ deliveryContext:
 
 (none identified in the current corpus)
 
-## Other Notes
+## Narrative synthesis
 
 Across distinct settings and countries — US postpartum inpatient (Jensen), US surgical (Rosenthal), Australian general inpatient (Morris), and US pediatric emergency (Greenky) — measured interpreter offer/use for LEP patients who require concordant communication clusters far below universal: roughly 14–24% of routine encounters offered access (Jensen), 62% of surgical-consent encounters documented (Rosenthal), and only ~54% of audited inpatients who needed an interpreter received one (Morris). The pattern is one of chronic under-provision relative to need rather than incidental gaps. Morris additionally finds the only patient characteristic predicting receipt is sex (females favored), indicating provision is not even uniformly distributed within the eligible population — a sign that allocation is driven by factors other than clinical need. Greenky's rise in interpreter requests from ~2% (2002) to 12.1% (2016) shows utilization is increasing over time, but the absolute prevalence still reflects a population whose need is only partially met. Several of these are descriptive measurement studies, so they document the size of the unmet-need gap rather than its downstream effects.
 

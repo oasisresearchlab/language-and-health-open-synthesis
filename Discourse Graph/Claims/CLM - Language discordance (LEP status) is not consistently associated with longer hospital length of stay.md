@@ -40,6 +40,6 @@ deliveryContext:
 
 - [[CLM - Professional interpretation at admission and discharge shortens length of stay for LEP inpatients]]
 
-## Other Notes
+## Narrative synthesis
 
 This is the **exposure-contrast** claim (LEP/discordant patients vs English-proficient patients), distinct from the intervention-contrast claim that *providing* interpreters shortens stay. Across adjusted analyses the exposure signal is weak and mixed: most studies (bariatric, ED, psychiatric, pediatric ED) find no significant LEP-vs-EP difference, while two find longer stays where interpreter need marks clinical complexity (orthopedic TSA; within-LEP interpreter use). Because the no-difference finding sits in tension with the claim that interpretation meaningfully shortens LOS, this claim is wired as opposing that one — the topology surfaces the disagreement for expert adjudication rather than hiding it.

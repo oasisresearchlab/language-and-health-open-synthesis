@@ -31,7 +31,7 @@ deliveryContext:
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
 
-## Other Notes
+## Narrative synthesis
 
 The authors frame this as the study's central finding: differences attributed to preferred language largely reflected whether the encounter was language-concordant (via a concordant provider or interpreter).
 

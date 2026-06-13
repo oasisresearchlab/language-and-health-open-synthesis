@@ -39,7 +39,7 @@ deliveryContext:
 
 - [[CLM - Interpreter services are systematically under-provided relative to need for LEP patients]]
 
-## Other Notes
+## Narrative synthesis
 
 This is an **intervention-contrast** process claim: a structured quality-improvement program can lift the rate of appropriate interpreter use and documentation (AIUD) for LEP patients well above baseline. In a pediatric ED, a multi-component bundle (an electronic tracking-board LEP icon, a standardized 3-click LEP documentation form, and icon color changes for situational awareness, over three PDSA cycles) raised mean AIUD for Spanish-speaking LEP patients from a 35.7% baseline to 64.5% (Martinez 2021). The outcome is a process/documentation measure — it confirms that an appropriate professional interpreter was recorded as used, not that every conversation was interpreted, and the gain followed sequential PDSA cycles with a Hawthorne-effect contribution the authors note. As a single-site QI project, this is directional evidence that the under-provision gap is movable rather than a generalizable effect size; the certainty/GRADE appraisal is left for expert review.
 

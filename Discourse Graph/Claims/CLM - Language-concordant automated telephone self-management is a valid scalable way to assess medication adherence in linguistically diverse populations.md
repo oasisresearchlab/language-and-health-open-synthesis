@@ -31,6 +31,6 @@ deliveryContext:
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
 
-## Other Notes
+## Narrative synthesis
 
 This is a measurement claim: it concerns how validly adherence can be *assessed* via a language-concordant tool ([[ART - Language-concordant automated telephone self-management (ATSM, SMARTSteps)]]), not the effect of concordance on adherence itself. Validity was modest (significant convergent gradients for 2 of 3 medication classes).

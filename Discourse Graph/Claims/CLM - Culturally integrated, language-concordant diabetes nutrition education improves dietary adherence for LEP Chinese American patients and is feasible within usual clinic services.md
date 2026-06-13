@@ -32,7 +32,7 @@ deliveryContext:
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
 
-## Other Notes
+## Narrative synthesis
 
 The adherence benefit was demonstrated for one of two food-frequency measures (adapted Mediterranean diet score), and clinical outcomes (weight, HbA1c) did not reach significance in this small pilot. The feasibility argument rests on low added provider burden (a single Chinese-medicine practitioner coteaching) and high acceptability of the bilingual materials.
 

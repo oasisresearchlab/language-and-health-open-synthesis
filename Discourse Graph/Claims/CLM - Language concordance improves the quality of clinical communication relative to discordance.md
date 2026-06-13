@@ -31,7 +31,7 @@ deliveryContext:
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
 
-## Other Notes
+## Narrative synthesis
 
 This claim spans both contrasts in the same direction: an intervention contrast (direct language-concordant consultations vs interpreter-mediated) and an exposure contrast (LEP discordance vs concordance). Coded oncology consultations (Seible) found direct-Spanish encounters had significantly more physician history-verification (13 vs 9 utterances, P = .01) and partnering speech (16 vs 5, P < .001) than interpreter-based ones, indicating concordance changes the content of the conversation. Complementarily, LEP focus-group participants (Brooks) reported that discordant providers overestimate their English comprehension and fail to check understanding, so miscommunications go unrecognized by both parties — the discordance harm the concordance intervention is meant to remove. Evidence is mechanism-level (one small RCT-derived content analysis plus qualitative focus groups); the relationship is plausible and directionally consistent but not yet quantified at the level of patient-relevant outcomes.
 

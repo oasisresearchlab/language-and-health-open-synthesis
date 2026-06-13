@@ -34,7 +34,7 @@ deliveryContext:
 - [[EVD - Interpreter's unstated assumption created an unrepaired misinterpretation of who served as informal interpreter - @Estrada_2015_conversation_analysis]]
 - [[EVD - Provider's use of a colloquialism (blood thinner) created interpretation confusion rather than aiding comprehension - @Estrada_2015_conversation_analysis]]
 
-## Other Notes
+## Narrative synthesis
 
 Conversation-analytic and discourse-analytic studies of interpreter-mediated encounters consistently show that, although interpreters are trained and nominally described as neutral "conduits" producing word-for-word renderings, in practice they actively manage understanding — clarifying, brokering culture, and co-constructing meaning with provider and patient. This reframes interpreted care as a collaborative communication process whose quality depends on the active facilitation work, not only literal accuracy. The contradicting EVDs are negative cases from the same Estrada corpus: when the conduit ideal or an interpreter's unstated assumption dominates, trouble spots go unrepaired — evidence that the conduit framing itself can degrade communication. All evidence here is qualitative and mechanism-level (small triadic samples), so the pattern is well-triangulated but not quantified.
 

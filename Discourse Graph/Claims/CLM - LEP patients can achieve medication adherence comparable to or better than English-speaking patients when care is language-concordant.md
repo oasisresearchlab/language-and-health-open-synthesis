@@ -32,7 +32,7 @@ deliveryContext:
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
 
-## Other Notes
+## Narrative synthesis
 
 LEP patients (notably Nepali-speaking refugees served by a concordant bilingual physician) matched or exceeded English-preference patients on adherence measures.
 

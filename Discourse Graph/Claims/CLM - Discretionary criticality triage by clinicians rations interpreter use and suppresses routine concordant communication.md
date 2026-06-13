@@ -29,7 +29,7 @@ deliveryContext:
 
 (none identified in the current corpus)
 
-## Other Notes
+## Narrative synthesis
 
 This is the mechanism-level claim explaining the under-provision documented elsewhere in the graph: clinicians informally sort encounters into "critical" (e.g., obtaining consent) versus "noncritical," and reserve interpreters for the former, leaving routine communication — daily rounds, lactation support, ordinary updates — without concordant access. Because the rationing is discretionary and provider-side rather than driven by availability, it suppresses interpreter use even where the service exists, and it concentrates the measured gaps (e.g., the 14% rounds-coverage in the same postpartum cohort) at exactly the encounter types clinicians judge routine. The evidence is a single qualitative interview study, so the mechanism is well-described but not quantified or generalized; it complements the access-side mechanisms (wait times, equipment friction) found elsewhere in the corpus.
 

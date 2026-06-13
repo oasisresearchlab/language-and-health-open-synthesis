@@ -40,7 +40,7 @@ deliveryContext:
 - [[CLM - In-person interpreting supports higher communication quality than telephone or video interpreting]]
 - [[CLM - Language-concordant care improves patient satisfaction compared with interpreter-mediated or discordant care]]
 
-## Other Notes
+## Narrative synthesis
 
 Boylen et al.'s JBI systematic review synthesizes 6 articles (3 RCTs and 1 observational study, all US, Spanish-speaking, mostly ED) on the impact of professional interpreters on outcomes for hospitalized LEP migrant/refugee children. Two synthesized generalizations: (1) using *any* mode of professional interpreter is superior to ad hoc or no interpreter — families reported greater satisfaction with professional than ad hoc interpreting; and (2) although in-person and video interpreting outperformed telephone on some outcomes (e.g., in-person yielded shorter ED throughput; video gave better comprehension than phone), the **mode of delivery appears to matter less than the fact that a professional interpreter is used at all**, so mode should be chosen on accessibility, availability, language, clinical context, and patient preference. The review grades its own evidence as limited (small number of studies, GRADE certainty often low/very-low, generalizability constrained to US Spanish-speaking ED settings) — the certainty/GRADE field is left for expert appraisal.
 

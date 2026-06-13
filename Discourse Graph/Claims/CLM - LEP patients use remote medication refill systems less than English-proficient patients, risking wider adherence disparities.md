@@ -31,7 +31,7 @@ deliveryContext:
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
 
-## Other Notes
+## Narrative synthesis
 
 Because remote refills are an adherence-supporting service, lower uptake among LEP patients — concentrated in the English-only Internet channel — risks widening medication-adherence disparities unless refill systems are made language-accessible.
 

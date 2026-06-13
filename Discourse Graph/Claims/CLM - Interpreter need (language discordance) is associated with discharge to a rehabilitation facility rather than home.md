@@ -33,7 +33,7 @@ deliveryContext:
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM). None identified in the current corpus.
 
-## Other Notes
+## Narrative synthesis
 
 This is an **exposure-contrast** claim: patients who require an interpreter (a marker of language discordance) are more likely to be discharged to a subacute or acute rehabilitation facility rather than home. In a matched single-institution total shoulder arthroplasty (TSA) cohort, interpreter need was the strongest multivariate predictor of discharge disposition — interpreter-requiring patients were 454% more likely (OR 4.54, 95% CI 2.13–8.61, P = .037) to go to a rehabilitation facility, with a consistent bivariate gradient (19.5% vs 4.9%, P = .033) (Kunze/Kyle 2023). The authors speculate the mechanism is communication-barrier-driven: discordant patients may be less able to express readiness for discharge or confidence in postoperative function. As a single-site retrospective cohort it cannot establish causation, and interpreter need may proxy unmeasured clinical or social complexity; the certainty/GRADE appraisal is left for expert review.
 

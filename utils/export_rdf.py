@@ -166,11 +166,19 @@ def main():
 
     # body wikilink [[X]] -> their-ID token (renderer linkifies) or plain text
     def rewrite_links(txt):
+        # Body [[stem]] / [[stem|alias]] -> node reference.
+        #   resolved + alias  -> [alias](/node/<ID>)  (keeps readable citation text, still a link)
+        #   resolved, no alias -> bare <ID> (linkified by the renderer's remark-graph-citations plugin)
+        #   unresolved        -> alias/target text
         def repl(m):
-            tgt = m.group(1).split("|")[0].split("#")[0].strip()
+            parts = m.group(1).split("|")
+            tgt = parts[0].split("#")[0].strip()
+            alias = parts[-1].split("#")[0].strip() if len(parts) > 1 else None
             iid = stem2iid.get(tgt)
-            return their_id.get(iid, m.group(1).split("|")[-1].split("#")[0].strip()) if iid else \
-                m.group(1).split("|")[-1].split("#")[0].strip()
+            tid = their_id.get(iid) if iid else None
+            if tid:
+                return f"[{alias}](/node/{tid})" if alias else tid
+            return alias or tgt
         return re.sub(r"\[\[([^\]]+?)\]\]", repl, txt)
 
     if OUT.exists():
@@ -211,7 +219,7 @@ def main():
                 for cvt in cvt_for[n["iid"]]:
                     cb = nodes[cvt]["body"]
                     lim = re.search(r"##\s*Limitation\s*\n(.*?)(?:\n##|\Z)", cb, re.DOTALL)
-                    cav.append(f'- **{nodes[cvt]["title"]}** {section_body(lim.group(1) if lim else cb, set())[:400]}')
+                    cav.append(f'- **{nodes[cvt]["title"]}** {section_body(lim.group(1) if lim else cb, set()).strip()}')
                 body += "\n\n## Caveats\n\n" + "\n".join(cav)
 
         # curation status — the human-AI curation axis (Initial AI draft → In expert review →
@@ -226,6 +234,18 @@ def main():
         if n["code"] == "CLM":
             fm_out["supportPapers"] = len(clm_sup.get(n["iid"], set()))
             fm_out["opposePapers"] = len(clm_opp.get(n["iid"], set()))
+        if n["code"] == "SRC":
+            # use the real paper title (frontmatter) rather than the citekey-derived stem
+            real_title = str(n["fm"].get("title", "")).strip()
+            if real_title:
+                fm_out["title"] = real_title
+            # citation metadata for the renderer (clickable DOI/PMID, follow-the-source links)
+            for src_key, out_key in (("author", "author"), ("year", "year"),
+                                     ("journal", "journal"), ("doi", "doi"),
+                                     ("pubmed_id", "pubmedId"), ("citekey", "citekey")):
+                v = n["fm"].get(src_key)
+                if v not in (None, ""):
+                    fm_out[out_key] = str(v).replace('"', "").strip()
         fm_out["created"] = CREATED
         if edges:
             fm_out["edges"] = edges

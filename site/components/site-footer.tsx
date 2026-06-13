@@ -63,7 +63,27 @@ export function SiteFooter() {
             <GithubIcon className="h-3.5 w-3.5" />
             Source on GitHub
           </a>
-          <p className="mt-2 text-xs">
+          <p className="mt-2 text-xs leading-relaxed sm:text-right">
+            Renderer{" "}
+            <a
+              href="https://rdf.scios.tech/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors"
+            >
+              SciOS Resilient Data Futures
+            </a>{" "}
+            · Extraction skill Jay Patel · Lead{" "}
+            <a
+              href="https://joelchan.me/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors"
+            >
+              Joel Chan
+            </a>
+          </p>
+          <p className="text-xs">
             Content: CC BY 4.0 · Code: MIT · OASIS Research Lab
           </p>
         </div>

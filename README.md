@@ -65,4 +65,24 @@ cd site && pnpm install && pnpm dev # serve at http://localhost:3000
 - `utils/` — extraction, grounding, audit, and export pipeline (see `Pipeline.md`)
 - `CLAUDE.md`, `Skill*.md` — operating rules, schema, templates, and methodology
 
-Content: CC BY 4.0 · Code: MIT · OASIS Research Lab
+## Acknowledgments
+
+- **Renderer & site code** — `site/` is built on *Resilient Data Futures — Discourse
+  Graph* by the **SciOS Resilient Data Futures Working Group**
+  ([rdf.scios.tech](https://rdf.scios.tech/), [jring-o/rdf](https://github.com/jring-o/rdf)),
+  used under CC BY 4.0 (content) / MIT (code) and adapted for this synthesis.
+- **Extraction methodology** — the initial discourse-graph extraction skill
+  (`Skill*.md`, ported as `living-synthesis` / `jay-living-synthesis-jc-port`) was
+  developed by **Jay Patel**.
+
+## Project lead & contact
+
+[Joel Chan](https://joelchan.me/) — <joelchan@umd.edu>
+
+## License
+
+- **Code** (renderer, `utils/` pipeline, tooling): **MIT** — see [`LICENSE`](LICENSE).
+- **Content** (graph nodes, prose, narratives): **CC BY 4.0**.
+
+© OASIS Research Lab. The `site/` renderer derives from the SciOS Resilient Data Futures
+Working Group (CC BY 4.0 / MIT).

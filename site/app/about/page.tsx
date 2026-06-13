@@ -319,6 +319,47 @@ export default function AboutPage() {
             — the underlying schema repository this work extends.
           </li>
         </ul>
+
+        <h2 className="font-heading">Acknowledgments</h2>
+        <ul>
+          <li>
+            <strong>Renderer &amp; site code</strong> — built on{" "}
+            <em>Resilient Data Futures — Discourse Graph</em> by the{" "}
+            <strong>SciOS Resilient Data Futures Working Group</strong> (
+            <a
+              href="https://rdf.scios.tech/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              rdf.scios.tech
+            </a>
+            ,{" "}
+            <a
+              href="https://github.com/jring-o/rdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              jring-o/rdf
+            </a>
+            ), used under CC BY 4.0 (content) / MIT (code) and adapted for this
+            synthesis.
+          </li>
+          <li>
+            <strong>Extraction methodology</strong> — the initial discourse-graph
+            extraction skill was developed by <strong>Jay Patel</strong>.
+          </li>
+          <li>
+            <strong>Project lead &amp; contact</strong> —{" "}
+            <a
+              href="https://joelchan.me/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Joel Chan
+            </a>{" "}
+            (<a href="mailto:joelchan@umd.edu">joelchan@umd.edu</a>).
+          </li>
+        </ul>
       </div>
 
       <Separator className="my-12" />

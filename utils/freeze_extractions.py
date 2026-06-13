@@ -192,6 +192,10 @@ def main():
         fm = extract_frontmatter(f)
         if not fm or not fm.get("nodeTypeId"):
             continue
+        # Sources are bibliographic, not AI extractions — never freeze/stamp them, even though
+        # inbox-authored stubs may carry curationStatus.
+        if fm.get("nodeTypeId") == "node_Ne237S0BfRPDaeqB_gbuT":
+            continue
         status = fm.get("curationStatus")
         if not args.all and status != AI_DRAFT_STATUS:
             continue

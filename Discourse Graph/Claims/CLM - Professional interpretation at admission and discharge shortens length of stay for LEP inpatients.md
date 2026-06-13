@@ -26,6 +26,7 @@ deliveryContext:
 
 - [[EVD - LEP inpatients without a professional interpreter on both admission and discharge had a 0.75-1.47 day longer length of stay - @Lindholm_2012_Professional_language]]
 - [[EVD - Adjusted mean length of stay was 5.06 days with no interpreter vs 2.57 days with interpreters on both admission and discharge - @Lindholm_2012_Professional_language]]
+- [[EVD - LEP patients described interpreter unavailability causing delays that lengthen outpatient and emergency visits - @Brooks_2016_Patient_Perspectives]]
 
 ## Contradicting Evidence
 
@@ -34,5 +35,9 @@ deliveryContext:
 ## Other Notes
 
 Within a single LEP inpatient population, receiving a professional interpreter at admission (and especially at both admission and discharge) is associated with a significantly shorter hospital stay after adjusting for age, gender, illness severity, language, and diagnosis. Interpretation at admission appears to carry the greatest effect, consistent with the patient history accounting for most of the information needed to formulate a correct diagnosis.
+
+> "Our research shows that LEP patients who did not receive professional interpretation on date of admission and discharge experienced a more lengthy hospitalization with an average of 1.5 days longer than LEP patients who received these services. Specifically, a patient's access to professional interpretation at admission seems to have had the greatest effect on LOS." (Lindholm, 2012, p. 1298)
+
+**Cross-evidence triangulation (quant + qual):** the quantitative inpatient effect (Lindholm) is reinforced by qualitative patient-reported mechanism evidence — LEP patients in focus groups attributed lengthened outpatient and emergency visits directly to interpreter unavailability (Brooks). The two ground the same relationship at different settings (inpatient LOS vs visit duration) and evidence types, which is the kind of quant↔qual synthesis this graph is meant to support. (Daly's psychiatric-inpatient cohort is held separately: it compared LEP-vs-English-proficient rather than interpreter-vs-none, so it speaks to a discordance→LOS claim, not this interpretation-helps claim.)
 
 > "Our research shows that LEP patients who did not receive professional interpretation on date of admission and discharge experienced a more lengthy hospitalization with an average of 1.5 days longer than LEP patients who received these services. Specifically, a patient's access to professional interpretation at admission seems to have had the greatest effect on LOS." (Lindholm, 2012, p. 1298)

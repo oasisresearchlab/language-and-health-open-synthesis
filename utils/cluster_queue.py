@@ -131,11 +131,13 @@ def paper_text(fm: Dict) -> str:
     return " ".join(p for p in parts if p)
 
 
-def load_sources(sources_dir: Path) -> List[Dict]:
+def load_sources(sources_dir: Path, require_pdf: bool = False) -> List[Dict]:
     papers = []
     for f in sorted(sources_dir.glob("@*.md")):
         fm = extract_frontmatter(f)
         if not fm.get("has_empirical_findings", False):
+            continue
+        if require_pdf and fm.get("has_pdf") is not True:
             continue
         citekey = str(fm.get("citekey", f.stem)).replace('"', "").strip()
         labeled = []
@@ -192,12 +194,15 @@ def main():
     ap.add_argument("--max-suggest", type=int, default=8, help="Max embedding-suggested papers per bucket.")
     ap.add_argument("--emergent-k", type=int, default=0, help="KMeans clusters for unmapped papers (0 = skip; opt-in).")
     ap.add_argument("--no-embeddings", action="store_true")
+    ap.add_argument("--require-pdf", action="store_true",
+                    help="Only cluster papers that have an ingested PDF (has_pdf:true) — the extractable set.")
     args = ap.parse_args()
 
     root = Path(__file__).parent.parent
     sources_dir = root / "Discourse Graph" / "Sources"
-    papers = load_sources(sources_dir)
-    print(f"Loaded {len(papers)} empirical papers from {sources_dir}")
+    papers = load_sources(sources_dir, require_pdf=args.require_pdf)
+    print(f"Loaded {len(papers)} empirical papers from {sources_dir}"
+          f"{' (PDF-backed only)' if args.require_pdf else ''}")
     idx = {p["citekey"]: i for i, p in enumerate(papers)}
 
     emb = None if args.no_embeddings else embed([p["text"] for p in papers])

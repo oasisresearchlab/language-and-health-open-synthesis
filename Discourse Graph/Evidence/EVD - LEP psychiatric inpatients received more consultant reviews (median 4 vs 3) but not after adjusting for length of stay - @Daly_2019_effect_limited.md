@@ -1,0 +1,51 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+extraction_prompt_version: v1
+extracted_at: 2026-06-13T00:46:21.537347+00:00
+nodeInstanceId: 019ebe63-8b33-7c2c-b532-7e8c7f22b53e
+Source: "[[@Daly_2019_effect_limited]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/discordance
+  - healthOutcome/providerTimeEffort
+  - epistemic/effect-size
+languageConcordanceFactor:
+  - Limited English Proficiency (LEP)
+healthOutcome:
+  - Physician time/effort
+deliveryContext:
+  - Inpatient
+---
+## Description
+
+LEP psychiatric inpatients were reviewed by consultants more often than EP patients (median 4 vs 3 reviews, p=0.036) (Table 1). The difference disappeared once the number of consultant reviews was normalized by length of stay, suggesting the extra reviews tracked longer admissions rather than a per-day increase in consultant effort.
+
+> "Patients in the LEP group were reviewed more often by consultants, but, when the number of consultant reviews was divided by length of stay, no significant difference remained." (Daly, 2019, p. 466)
+
+## Methods Context
+
+### What?
+
+> [!info] The observable: total number of consultant (specialist psychiatrist) reviews during the admission, recorded per patient.
+>
+> "Data were collected retrospectively from the computerized patient records: age on admission, sex, length of admission, discharge diagnosis, interpreter requirement, total number of consultant reviews and number of consultant reviews with an interpreter." (Daly, 2019, p. 466)
+
+### How?
+
+> [!info] Retrospective matched case-comparison (47 LEP vs 47 EP); count of consultant reviews compared between groups with a Mann–Whitney test, then re-examined as reviews per length-of-stay day.
+>
+> "For parametric data, t-tests were used for continuous outcomes, while the Mann–Whitney test was used for non-parametric data." (Daly, 2019, p. 466)
+
+### Who?
+
+> [!info] Adult inpatients aged 18–65 admitted Jan 2017–Aug 2018 across three adult psychiatric units of Eastern Health, Melbourne; LEP defined by requiring a professional interpreter at any point during the admission.
+>
+> "‘Interpreter’ was defined as those requiring a professional face to face or telephone interpreter at any point during the admission for a patient review – not solely for use by their family." (Daly, 2019, p. 466)
+
+## Other Notes
+
+The authors flag this as the study's clearest service-burden signal: the higher review count was statistically significant where length of stay was not, "indicating the additional resources required" (p. 466).

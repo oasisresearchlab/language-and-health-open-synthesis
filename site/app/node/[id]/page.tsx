@@ -6,6 +6,7 @@ import { loadGraph, getAllNodeIds } from "@/lib/graph";
 import { NODE_TYPE_LABEL } from "@/lib/types";
 import { NodeBadge } from "@/components/node-badge";
 import { SourceCitation } from "@/components/source-citation";
+import { toPreview } from "@/components/node-hover-card";
 import { MarkdownProse } from "@/components/markdown-prose";
 import { EdgeList } from "@/components/edge-list";
 import { GithubIssueButton } from "@/components/github-issue-button";
@@ -50,6 +51,9 @@ export default async function NodePage({
           node.outgoing.find((e) => e.edge === "derivedFrom")?.to ?? "",
         )
       : undefined;
+  const previews = Object.fromEntries(
+    Array.from(graph.nodes.values()).map((n) => [n.id, toPreview(n)]),
+  );
 
   return (
     <article
@@ -106,7 +110,10 @@ export default async function NodePage({
             <SourceCitation source={node} variant="full" />
           ) : null}
 
-          <MarkdownProse source={stripDuplicateTitle(node.body, node.id)} />
+          <MarkdownProse
+            source={stripDuplicateTitle(node.body, node.id)}
+            previews={previews}
+          />
 
           <Separator />
 

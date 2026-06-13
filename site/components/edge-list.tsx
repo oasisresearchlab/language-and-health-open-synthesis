@@ -10,6 +10,7 @@ import {
   type OutgoingEdge,
 } from "@/lib/types";
 import { NodeBadge } from "@/components/node-badge";
+import { NodeHoverCard, toPreview } from "@/components/node-hover-card";
 
 interface Props {
   edges: OutgoingEdge[] | IncomingEdge[];
@@ -82,12 +83,13 @@ export function EdgeList({ edges, nodes, direction, emptyLabel }: Props) {
                     >
                       {node.id}
                     </Link>
-                    <Link
+                    <NodeHoverCard
                       href={`/node/${node.id}`}
+                      preview={toPreview(node)}
                       className="text-foreground/90 hover:text-primary"
                     >
                       {node.title}
-                    </Link>
+                    </NodeHoverCard>
                   </>
                 ) : (
                   <span className="font-mono text-xs text-destructive">

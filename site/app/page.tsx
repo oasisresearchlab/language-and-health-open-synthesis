@@ -81,70 +81,40 @@ export default async function HomePage() {
           </div>
         </div>
 
-        <div className="space-y-6">
-          <Stat
-            value="40%"
-            label="more likely to adhere to treatment when professional interpreting is used"
-            nodeId="C-0011"
-          />
-          <Stat
-            value="2.57 vs 5.06 days"
-            label="adjusted length of stay for LEP inpatients with interpreters at admission and discharge vs. neither"
-            nodeId="E-0038"
-          />
-          <Stat
-            value="55%"
-            label="of malpractice cases stem from patient–caregiver miscommunication"
-            nodeId="C-0001"
-          />
+        <div className="space-y-3">
+          <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
+            Best-supported claims
+          </p>
+          <ul className="space-y-3">
+            {topClaims.map((c) => (
+              <li key={c.id}>
+                <Link
+                  href={`/node/${c.id}`}
+                  className="group flex flex-col gap-1.5 rounded-md border border-border bg-card p-4 transition-colors hover:border-primary/40 hover:bg-accent/40"
+                >
+                  <div className="flex items-center justify-between gap-2">
+                    <NodeBadge type="claim" size="sm" />
+                    <span className="font-mono text-xs tabular-nums text-muted-foreground">
+                      {c.supportPapers} papers
+                      {(c.opposePapers ?? 0) > 0
+                        ? ` · ${c.opposePapers} opposing`
+                        : ""}
+                    </span>
+                  </div>
+                  <p className="text-sm leading-snug text-foreground">
+                    {c.title}
+                  </p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="text-xs leading-relaxed text-muted-foreground">
+            Ranked by independent supporting papers (with little or no
+            contradicting evidence) — a measure of evidential breadth, not a
+            final certainty rating.
+          </p>
         </div>
       </section>
-
-      {topClaims.length > 0 && (
-        <>
-          <Separator className="my-16" />
-
-          {/* Section 1b — Best-supported claims */}
-          <section className="space-y-6">
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-              Best-supported claims
-            </p>
-            <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-              What the evidence most consistently shows
-            </h2>
-            <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground">
-              Claims backed by the most independent studies with little or no
-              contradicting evidence, ranked by the number of distinct
-              supporting papers. This is a measure of evidential{" "}
-              <em>breadth</em> — not a final certainty rating, which is an
-              expert judgment.
-            </p>
-            <ul className="grid gap-3 sm:grid-cols-2">
-              {topClaims.map((c) => (
-                <li key={c.id}>
-                  <Link
-                    href={`/node/${c.id}`}
-                    className="group flex h-full flex-col gap-2 rounded-md border border-border bg-card p-4 transition-colors hover:border-primary/40 hover:bg-accent/40"
-                  >
-                    <div className="flex items-center justify-between gap-2">
-                      <NodeBadge type="claim" size="sm" />
-                      <span className="font-mono text-xs tabular-nums text-muted-foreground">
-                        {c.supportPapers} papers
-                        {(c.opposePapers ?? 0) > 0
-                          ? ` · ${c.opposePapers} opposing`
-                          : ""}
-                      </span>
-                    </div>
-                    <p className="text-sm leading-snug text-foreground">
-                      {c.title}
-                    </p>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </section>
-        </>
-      )}
 
       <Separator className="my-16" />
 
@@ -253,31 +223,6 @@ export default async function HomePage() {
           />
         </div>
       </section>
-    </div>
-  );
-}
-
-function Stat({
-  value,
-  label,
-  nodeId,
-}: {
-  value: string;
-  label: string;
-  nodeId: string;
-}) {
-  return (
-    <div className="space-y-2 border-t border-border pt-3">
-      <p className="font-heading text-2xl font-semibold tabular-nums sm:text-3xl">
-        {value}
-      </p>
-      <p className="text-xs leading-snug text-muted-foreground">{label}</p>
-      <Link
-        href={`/node/${nodeId}`}
-        className="inline-flex font-mono text-[10px] uppercase tracking-[0.15em] text-primary/80 hover:text-primary"
-      >
-        Citation: {nodeId}
-      </Link>
     </div>
   );
 }

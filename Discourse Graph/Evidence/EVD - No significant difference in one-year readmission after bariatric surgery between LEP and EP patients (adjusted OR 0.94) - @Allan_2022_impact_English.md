@@ -1,0 +1,50 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
+nodeInstanceId: 019ebed0-c3ca-7939-be0c-e8cc8e810fab
+Source: "[[@Allan_2022_impact_English]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/discordance
+  - healthOutcome/readmissions
+  - epistemic/effect-size
+languageConcordanceFactor:
+  - Limited English Proficiency (LEP)
+healthOutcome:
+  - Readmissions
+deliveryContext:
+  - Inpatient
+---
+## Description
+
+Despite more frequent ED visits by EP patients, there was no significant difference in hospital readmission within one year of bariatric surgery between LEP and EP patients (adjusted OR = 0.94, 95% CI 0.56–1.55; p = 0.50). At 30 days, readmission was likewise not different (EP 5% vs LEP 4%, p = 0.7; adjusted OR 1.01, 95% CI 0.58–1.71; p > 0.90) (Table 2).
+
+> "However, despite more frequent ED visits by EP patients, there was no significant difference in readmission within one year; adjusted OR = 0.94 (95% CI 0.56–1.55; p = 0.50)." (Stolarski, 2022, p. 7387)
+>
+> "There was no difference in presentation to the ED within 30 days (EP 10% vs. LEP 7%; p = 0.07) or readmission within 30 days (EP 5% vs. LEP 4%, p = 0.7). After multivariable logistic regression, the odds of 30-day readmission were no different for LEP versus EP patients, with an adjusted OR of 1.01 (95% CI 0.58–1.71; p > 0.90)." (Stolarski, 2022, p. 7387)
+
+## Methods Context
+
+### What?
+
+> [!info] The observable: all-cause hospital readmission within 30 days and within one year of the index bariatric operation, abstracted from the EMR and compared between LEP and EP groups.
+>
+> "Outcomes of interest included 30-day and one year all cause visits to the emergency department (ED), 30-day and one year readmission, length of stay (LOS) from index operation" (Stolarski, 2022, p. 7386)
+
+### How?
+
+> [!info] Retrospective chart review; readmission (a dichotomous outcome) compared univariately with chi-square and adjusted with multivariable logistic regression using a priori confounders (age, sex, race, insurance status, ASA class, smoking status, year of operation, sleeve gastrectomy).
+>
+> "Multivariable logistic regression was used to evaluate dichotomous outcomes including revisit to the ED, readmission, and 30-day complications." (Stolarski, 2022, p. 7386)
+
+### Who?
+
+> [!info] 1662 patients aged 18+ undergoing laparoscopic sleeve gastrectomy or gastric bypass at one high-volume, culturally diverse academic bariatric center (Boston Medical Center), Jan 2013–Dec 2017; 671 (40%) LEP.
+>
+> "Over the 5-year study period, 1662 patients underwent SG or LGBP at our bariatric center (Fig. 1). 671 patients were categorized as LEP (40%) (Table 1)." (Stolarski, 2022, p. 7386)
+
+## Other Notes
+
+The authors emphasize that the EP excess in ED visits "does not translate to increased admissions" (p. 7389). This null readmission finding supports a claim of equivalent post-bariatric readmission outcomes by language proficiency in a well-resourced setting.

@@ -1,0 +1,48 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
+nodeInstanceId: 019ebed2-7fc6-7319-b021-7ecc46dcc663
+Source: "[[@Karliner_2017_Convenient_Access]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/concordanceIntervention/interpretingServices
+  - healthOutcome/cost
+  - epistemic/effect-size
+languageConcordanceFactor:
+  - Interpretation services
+healthOutcome:
+  - Hospital expenditures
+deliveryContext:
+  - Inpatient
+---
+## Description
+
+The reduced LEP readmission rate during the intervention translated into substantial estimated hospital expenditure savings. Holding the preintervention LEP readmission rate (17.8%) constant rather than the observed 13.4% implied 119 additional readmissions would have occurred; at a median LEP hospital-stay cost of $11,086, those readmissions projected to $1,319,234. After subtracting the $28,001 cost of interpreted calls (28,284 minutes at $0.99/min, with the phones provided free by the vendor), the estimated net 8-month savings were $1,291,233, or roughly $161,404 in monthly hospital expenditure savings.
+
+> "If the rate of readmissions for the LEP group had stayed steady at the pre-intervention rate (17.8%) rather than falling (to 13.4%) during the high intensity intervention period, we estimate there would have been an additional 119 readmissions during the high intervention period. The projected cost of these additional readmissions would have equaled $1,319,234. Subtracting out the cost of the interpreted calls, the estimated net savings related to the bedside interpreter intervention over this 8-month time period equaled $1,291,233, for an estimated monthly health care expenditure savings of $161,404." (Karliner, 2017, p. 203)
+
+## Methods Context
+
+### What?
+
+> [!info] The observable: estimated hospital expenditure savings, computed from averted readmissions valued at the average LEP admission cost minus intervention (interpreter call) costs.
+>
+> "we found the number of possible averted readmissions. We then multiplied the number of possible adverted readmissions by the average cost of an admission in the LEP group during the intervention period, subtracted the cost of the intervention telephone interpretations and divided by the number of intervention months to obtain an estimate of monthly hospital expenditures savings." (Karliner, 2017, p. 201)
+
+### How?
+
+> [!info] Modeled estimate (not a formal cost study): expected readmissions under the held-constant preintervention rate minus observed, multiplied by average LEP admission cost, net of interpreter-call cost, divided across the 8 intervention months.
+>
+> "we did not conduct a formal cost study, but rather only were able to estimate potential expenditure savings associated with the lower rate of readmission during the intervention period." (Karliner, 2017, p. 206)
+
+### Who?
+
+> [!info] LEP discharges aged 50+ on the academic medical center Medicine floor during the 8-month intervention period; interpreter telephones (66 dual-handset phones) provided free of cost by the vendor.
+>
+> "The dual-handset telephones used in the intervention were provided free of cost by the vendor telephonic interpreting company. During the 8-month intervention, there were 28,284 minutes of interpreted calls billed at a cost of $0.99/min for an intervention cost of $28,001. During the course of the study, the median cost of a hospital stay in the LEP group was $11,086." (Karliner, 2017, p. 203)
+
+## Other Notes
+
+This is an estimate, not a measured cost outcome; the authors explicitly flag that no formal cost study was conducted (see qualifying caveat). The estimate also assumes the observed readmission drop is attributable to the intervention.

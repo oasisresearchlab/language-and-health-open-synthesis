@@ -1,0 +1,48 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
+nodeInstanceId: 019ebed0-cddd-7e29-894e-4cfa38cdf2e7
+Source: "[[@Aparna_2025_Clinician_Perspectives]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/discordance
+  - healthOutcome/diagnosticAccuracy
+  - epistemic/effect-size
+languageConcordanceFactor:
+  - Limited English Proficiency (LEP)
+healthOutcome:
+  - Diagnostic accuracy
+deliveryContext:
+  - Outpatient
+---
+## Description
+
+In the national survey (n = 87), audiologists rated their confidence in the methods used to test speech discrimination abilities and reported significantly lower confidence for non-English, non-Spanish speakers than for Spanish speakers (3.65 vs 2.35 on a 1–5 scale, P < .01) (Table 3). The same pattern held for otologists counseling patients on surgical hearing rehabilitation options (3.8 vs 3.23, P < .01) (Figure 3). Confidence falls as patient language moves further from the languages for which validated test materials and clinician proficiency exist.
+
+> "Audiologists reported signiﬁcantly lower levels of conﬁdence in the methods used to test speech discrimination abilities of of non‐English, non‐Spanish speakers when compared to Spanish speakers (3.65 vs 2.35, P < .01) (Table 3). A similar trend was observed for otologists counseling patients on surgical hearing rehabilitation options (3.8 vs 3.23, P < .01) (Figure 3)." (Govindan, 2025, p. 1236)
+
+## Methods Context
+
+### What?
+
+> [!info] The observable: provider self-rated confidence (Likert 1 = strongly unconfident … 5 = strongly confident) in speech-discrimination testing methods and surgical-rehabilitation counseling, compared across patient language groups.
+>
+> "Scale: 1 = strongly unconﬁdent … 5 = strongly conﬁdent." (Govindan, 2025, p. 1237)
+
+### How?
+
+> [!info] Cross-sectional online (Qualtrics) survey distributed by email to academic otolaryngology programs and the American Cochlear Implant Alliance membership list (August–October 2022), using Likert-scale confidence measures; results analyzed with regression analysis.
+>
+> "An online survey developed by T.P.H. and an institutional focus group of neurotologists and audiologists using the Qualtrics Survey Tool (Qualtrics), was distributed via email to academic otolaryngology programs and posted on the American Cochlear Implant Alliance Membership Email from August to October 2022." (Govindan, 2025, p. 1233)
+
+### Who?
+
+> [!info] 87 US providers (35 audiologists, 36 otologists, 16 general otolaryngologists) practicing in the United States; 72% spoke only English; most in urban academic centers.
+>
+> "Eighty‐seven providers (35 audiologists, 36 otologists, 16 general otolaryngologists) completed the survey." (Govindan, 2025, p. 1235)
+
+## Other Notes
+
+A provider-reported confidence gap (a perceived measurement/diagnostic-accuracy limitation), not a measured accuracy outcome. The gradient (Spanish > non-English/non-Spanish) tracks availability of validated language-specific test batteries and bilingual clinicians.

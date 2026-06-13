@@ -1,0 +1,50 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
+nodeInstanceId: 019ebed1-bd2b-76d9-8b81-ff968ee1faec
+Source: "[[@Jennifer_2023_Evaluation_Patient]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/concordanceIntervention/interpretingServices
+  - healthOutcome/providerTimeEffort
+  - epistemic/effect-size
+languageConcordanceFactor:
+  - Interpretation services
+healthOutcome:
+  - Physician time/effort
+deliveryContext:
+  - Inpatient
+---
+## Description
+
+From EHR interpreter-services logs, the wait time for an in-person interpreter to arrive on the postpartum unit after a clinician request had a median of 17 minutes and ranged widely from 0 to 75 minutes (interquartile range 22) (Table 3). The authors characterize these waits as prolonged and unpredictable.
+
+> "Wait times for interpreters varied widely and ranged from 0 to 75 minutes, with a median wait time of 17 minutes." (Jensen, 2023, p. 434)
+
+> "Prompt interpreter service response to requests is essential in the health care setting (Staggers et al., 2018), but this chart review revealed prolonged and unpredictable wait times for interpreters at the study site." (Jensen, 2023, p. 436)
+
+## Methods Context
+
+### What?
+
+> [!info] The observable: elapsed minutes between a clinician's logged request for an in-person interpreter and the interpreter's documented arrival on the unit, summarized as a median and range across encounters.
+>
+> "The time that interpreters were requested, along with their arrival times, were documented to generate a wait time median and range across encounters in the sample." (Jensen, 2023, p. 434)
+
+### How?
+
+> [!info] Cross-sectional chart review of in-house interpreter request logs (requester role, request date/time, interpreter arrival date/time) supplied by the hospital interpreter-services department; descriptive statistics computed in Excel.
+>
+> "Each request for in-house interpretation (conducted in person and via telephone) and translation services was identiﬁed in logs provided by the hospital's interpreter services department. These included the requester's role, the date and time of the request, and the date and time of the interpreter's arrival on the unit." (Jensen, 2023, p. 433)
+
+### Who?
+
+> [!info] In-person interpreter requests logged for the 50 Spanish-preferring postpartum couplets sampled Sept–Dec 2019 at a tertiary academic medical center in the southeastern United States, where Spanish interpretation is primarily in-person with telephone/video as secondary options.
+>
+> "Spanish-language interpretation services are primarily conducted by in-person interpreters, with in-house interpretation also available by telephone." (Jensen, 2023, p. 432)
+
+## Other Notes
+
+The wide upper bound (75 minutes) and unpredictability are the operative feature for clinicians: interviewees cited these waits as the primary reason they "got by" without interpreters (see the mechanism EVD).

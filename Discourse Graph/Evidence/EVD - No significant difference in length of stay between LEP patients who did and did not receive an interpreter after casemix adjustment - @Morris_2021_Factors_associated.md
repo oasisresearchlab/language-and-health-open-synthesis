@@ -19,9 +19,8 @@ deliveryContext:
 ---
 ## Description
 
+![[Morris_2021_Factors_associated-table3.png]]
 
-> ![[Morris_2021_Factors_associated-table3.png]]
->
 Among hospitalised patients with limited English proficiency who required an interpreter, those who received one had a longer mean unadjusted length of stay (10.31 vs 6.95 days; an unadjusted regression difference of 3.36 days, P = .15), but after casemix adjustment (difference from the national DRG average) the difference was not statistically significant — an estimated additional 2.51 days in the simple model (P = .26) and 3.40 days in the multivariate model (P = .13) (Table 3). The authors conclude the LOS difference was not significant after casemix adjustment.
 
 > "In unadjusted analysis, those that received an interpreter stayed an additional 3.36 days (P = .15) as compared to those patients who required an interpreter but did not receive one (Table 3). After casemix adjustment, patients who received an interpreter did not stay longer than the corresponding national DRG average (estimated additional LOS = 2.51 days, P = .26)." (Morris, 2021, p. 429)
@@ -32,20 +31,20 @@ Among hospitalised patients with limited English proficiency who required an int
 
 ### What?
 
-> [!info] The observable: hospital length of stay in days, both as a raw total and as a casemix-adjusted difference from the national DRG average, compared between patients who did vs did not receive an interpreter.
->
+The observable: hospital length of stay in days, both as a raw total and as a casemix-adjusted difference from the national DRG average, compared between patients who did vs did not receive an interpreter.
+
 > "The outcomes of interest were LOS and hospital cost. The impact of patients receiving an interpreter was measured for these outcomes, adjusting for patient demographics (sex, age, preferred language and hospital) and clinical characteristics (DRG partition and comorbidity score)." (Morris, 2021, p. 427)
 
 ### How?
 
-> [!info] Retrospective cohort analysis of linked audit and admitted-patient data; LOS predicted using simple and multivariate linear regression controlling for sex, age, admission type and CCI group, with outliers removed where Cook's distance for LOS exceeded four.
->
+Retrospective cohort analysis of linked audit and admitted-patient data; LOS predicted using simple and multivariate linear regression controlling for sex, age, admission type and CCI group, with outliers removed where Cook's distance for LOS exceeded four.
+
 > "Predictors of LOS and cost were explored using simple and multivariate regression models controlling for sex, age, admission type and CCI group. Outliers were removed from the dataset if Cook's distance for LOS was greater than four." (Morris, 2021, p. 427)
 
 ### Who?
 
-> [!info] Adult inpatients with a preferred language other than English needing an interpreter, audited across eight hospitals in one regional NSW (Australia) local health district between July 2016 and March 2018; from 210 audited episodes, 120 were excluded leaving 90 episodes / 79 hospital stays / 74 patients (mostly aged 75+).
->
+Adult inpatients with a preferred language other than English needing an interpreter, audited across eight hospitals in one regional NSW (Australia) local health district between July 2016 and March 2018; from 210 audited episodes, 120 were excluded leaving 90 episodes / 79 hospital stays / 74 patients (mostly aged 75+).
+
 > "Following cross-checking, 120 audited episodes were excluded from analysis as they did not meet the study's inclusion criteria, resulting in an audit dataset comprising 90 episodes for 74 individual patients." (Morris, 2021, p. 427)
 
 ## Other Notes

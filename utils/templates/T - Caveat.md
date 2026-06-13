@@ -16,15 +16,15 @@ tags:
 
 ## Supporting Quote
 
-> [!info]
+<!-- only the VERBATIM quote goes in a `>` blockquote; the crop embed is regular text.
+if type: inferred, add a regular line: [Inferred: brief justification] -->
+
 > "<verbatim limitation quote>" (<Author>, <year>, p. <N>)
->
-> ![[<citekey>-cvt-p<N>-1.png]]
->
-> <!-- if type: inferred, add: [Inferred: brief justification] -->
+
+![[<citekey>-cvt-p<N>-1.png]]
 
 ## Qualifies
 
-> [!info] EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
+<!-- EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py) -->
 
 - [[EVD - ...]]

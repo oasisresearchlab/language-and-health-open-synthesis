@@ -22,14 +22,13 @@ Receipt of verbal medication information was self-reported (recall bias) and doe
 
 ## Supporting Quote
 
-> [!info]
 > "The measure of receipt of VMI was based on patients' self-report, thus subject to recall bias, and does not reflect whether providers truly provided medication related information in the visit." (Zhang, 2018)
->
+
 > "Although the MUSE survey questions were validated in an English speaking population, the MUSE has not been evaluated for use in other languages." (Zhang, 2018)
 
 ## Qualifies
 
-> [!info] EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
+EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
 
 - [[EVD - LEP patients had lower medication learning self-efficacy than English-proficient patients but equal taking self-efficacy - @Zhang_2018_Medication_Related]]
 - [[EVD - Verbal medication information narrowed the LEP learning self-efficacy gap but had no effect for English-proficient patients - @Zhang_2018_Medication_Related]]

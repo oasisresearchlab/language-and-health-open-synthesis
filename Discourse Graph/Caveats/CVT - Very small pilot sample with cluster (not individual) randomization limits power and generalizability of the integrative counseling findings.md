@@ -22,14 +22,13 @@ Only 18 patients were enrolled (7 control, 11 intervention) and 15 completed 6-m
 
 ## Supporting Quote
 
-> [!info]
 > "This study is limited by small sample size and future research should recruit more participants. We were also limited by the need to randomize by course rather than individual, which further reduced our power to assess differences between intervention groups." (Ho, 2020)
->
+
 > "Because we recruited patients blinded, it is unknown whether participants would have been more interested in attending DSME if they knew they would learn about Chinese medicine-informed dietary information." (Ho, 2020)
 
 ## Qualifies
 
-> [!info] EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
+EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
 
 - [[EVD - Dietary adherence (adapted Mediterranean diet score) significantly improved with culturally integrated nutrition counseling but worsened with usual DSME - @Ho_2020_Pilot_Cluster]]
 - [[EVD - Dietary self-efficacy, weight, and HbA1c trended better with integrative counseling but no clinical or attitudinal outcome reached significance - @Ho_2020_Pilot_Cluster]]

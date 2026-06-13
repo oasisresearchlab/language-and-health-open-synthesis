@@ -22,14 +22,13 @@ Adherence was measured indirectly from pharmacy refill data (the Adherence Ratio
 
 ## Supporting Quote
 
-> [!info]
 > "the usefulness of the metrics may be limited in that they do not assess how administration of medication occurs once the patient has the medicine in hand, or any other more qualitative factor in the use of the drug." (Kahler, 2022, p. 35)
->
+
 > "it is conceivable that they were using other, unlisted pharmacies without the awareness of the clinical team." (Kahler, 2022, p. 36)
 
 ## Qualifies
 
-> [!info] EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
+EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
 
 - [[EVD - Nepali-speaking LEP diabetes patients had the highest medication Adherence Ratio - @Kahler_2022_Understanding_Medication]]
 - [[EVD - Language-group differences in medication adherence disappeared after controlling for patient-provider language concordance - @Kahler_2022_Understanding_Medication]]

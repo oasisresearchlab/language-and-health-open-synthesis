@@ -31,20 +31,20 @@ Access to language-concordant *written* medication information (WMI) was very lo
 
 ### What?
 
-> [!info] The observable: self-reported receipt of written medication information (WMI) in the respondent's preferred language; asked only of LEP respondents.
->
+The observable: self-reported receipt of written medication information (WMI) in the respondent's preferred language; asked only of LEP respondents.
+
 > "written medication information (WMI) provision in respondents' preferred languages (i.e., the language the individual chose for survey administration) was also measured in our survey instrument but was only asked to the LEP respondents." (Zhang, 2018)
 
 ### How?
 
-> [!info] A survey item asked LEP respondents whether they received written medication information in their preferred language; the proportion answering yes was reported (descriptive, weighted).
->
+A survey item asked LEP respondents whether they received written medication information in their preferred language; the proportion answering yes was reported (descriptive, weighted).
+
 > "In addition, from the survey data... We used non-response weighting to account partially for missing survey data." (Zhang, 2018)
 
 ### Who?
 
-> [!info] The LEP subset (n=328) of the 509 Group Health chronically ill adults across five non-English language groups.
->
+The LEP subset (n=328) of the 509 Group Health chronically ill adults across five non-English language groups.
+
 > "All LEP patients meeting the eligibility criteria were invited to participate in the study." (Zhang, 2018)
 
 ## Other Notes

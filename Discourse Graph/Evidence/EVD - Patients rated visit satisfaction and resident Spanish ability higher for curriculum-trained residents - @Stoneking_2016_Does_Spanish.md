@@ -32,22 +32,22 @@ Among the same 55 Spanish-speaking LEP ED patients, patient satisfaction with th
 
 ### What?
 
-> [!info] The observables: (1) patient-rated satisfaction with the ED visit and (2) patient-rated resident Spanish-speaking ability, each dichotomized at the "very good" rating. Satisfaction was collected on a follow-up phone call ~1 week later; perceived Spanish ability was collected on the real-time visit survey.
->
+The observables: (1) patient-rated satisfaction with the ED visit and (2) patient-rated resident Spanish-speaking ability, each dichotomized at the "very good" rating. Satisfaction was collected on a follow-up phone call ~1 week later; perceived Spanish ability was collected on the real-time visit survey.
+
 > "Follow-up phone calls were performed to assess patient satisfaction and adherence to discharge instructions ~1 week later." (Stoneking, 2016)
->
+
 > "Our survey also collected data on patient perception of resident physician Spanish-speaking ability." (Stoneking, 2016)
 
 ### How?
 
-> [!info] Cross-sectional convenience sample contrasting the curriculum-exposed SC program against the non-exposed UC program via day-of-week scheduling. Real-time Spanish surveys administered after discharge/transfer, plus a follow-up phone call by a Spanish- and English-proficient resident or medical student. Results reported as percentages with 95% CIs (Jeffreys method); no formal statistical testing.
->
+Cross-sectional convenience sample contrasting the curriculum-exposed SC program against the non-exposed UC program via day-of-week scheduling. Real-time Spanish surveys administered after discharge/transfer, plus a follow-up phone call by a Spanish- and English-proficient resident or medical student. Results reported as percentages with 95% CIs (Jeffreys method); no formal statistical testing.
+
 > "For these two after-visit questions, a resident physician or medical student, all proficient in Spanish and English, called the patient at the listed home phone number." (Stoneking, 2016)
 
 ### Who?
 
-> [!info] 55 patients who self-identified as primarily Spanish-speaking at registration in an urban academic ED (~45,000 visits/year) in Tucson, Arizona, treated by emergency medicine residents from the SC (n=35) and UC (n=20) programs.
->
+55 patients who self-identified as primarily Spanish-speaking at registration in an urban academic ED (~45,000 visits/year) in Tucson, Arizona, treated by emergency medicine residents from the SC (n=35) and UC (n=20) programs.
+
 > "patients who self-identified as primarily Spanish-speaking in our electronic health record during registration were asked to complete a real-time survey regarding their visit" (Stoneking, 2016)
 
 ## Other Notes

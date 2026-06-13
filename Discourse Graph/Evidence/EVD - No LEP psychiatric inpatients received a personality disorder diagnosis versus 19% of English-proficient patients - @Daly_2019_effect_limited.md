@@ -22,9 +22,8 @@ deliveryContext:
 ---
 ## Description
 
+![[Daly_2019_effect_limited-table1.png]]
 
-> ![[Daly_2019_effect_limited-table1.png]]
->
 Discharge diagnoses differed significantly between groups (p=0.018): none of the 47 LEP patients received a primary discharge diagnosis of personality disorder, versus 9 of 47 (19%) English-proficient patients, with adjusted standardised residuals (±3.2) flagging the personality-disorder cell as the driver (Table 1). The authors raise a language barrier during assessment as one candidate explanation for the absent diagnoses.
 
 > "The ASRs indicate a greater proportion of EP (9 patients) were diagnosed with personality disorders when compared to LEP, of whom none received such a diagnosis (p<0.05)." (Daly, 2019, p. 466)
@@ -33,20 +32,20 @@ Discharge diagnoses differed significantly between groups (p=0.018): none of the
 
 ### What?
 
-> [!info] The observable: primary discharge diagnosis, clinically determined by psychiatrists and grouped into four categories (psychotic, mood, personality, other).
->
+The observable: primary discharge diagnosis, clinically determined by psychiatrists and grouped into four categories (psychotic, mood, personality, other).
+
 > "Discharge diagnoses were grouped into four categories for analysis: psychotic disorders (including schizoaffective disorder and substance-induced psychosis), mood disorders (depression and bipolar affective disorder), personality disorders (antisocial personality disorder and borderline personality disorder) and other (adjustment disorder, situational crisis, autism, intellectual disability)." (Daly, 2019, p. 466)
 
 ### How?
 
-> [!info] Retrospective matched case-comparison (47 LEP vs 47 EP); categorical discharge-diagnosis distribution compared with Fisher's exact test and adjusted standardised residuals (ASR) to locate driving cells.
->
+Retrospective matched case-comparison (47 LEP vs 47 EP); categorical discharge-diagnosis distribution compared with Fisher's exact test and adjusted standardised residuals (ASR) to locate driving cells.
+
 > "For categorical outcomes, Fisher's exact test and the adjusted standardised residual (ASR) were used." (Daly, 2019, p. 466)
 
 ### Who?
 
-> [!info] Adult psychiatric inpatients aged 18–65 at Eastern Health, Melbourne; diagnoses were clinician-assigned primary discharge diagnoses rather than structured-instrument diagnoses.
->
+Adult psychiatric inpatients aged 18–65 at Eastern Health, Melbourne; diagnoses were clinician-assigned primary discharge diagnoses rather than structured-instrument diagnoses.
+
 > "In our study, the diagnosis recorded was the primary diagnosis on discharge, clinically determined by psychiatrists rather than from validated measures." (Daly, 2019, p. 467)
 
 ## Other Notes

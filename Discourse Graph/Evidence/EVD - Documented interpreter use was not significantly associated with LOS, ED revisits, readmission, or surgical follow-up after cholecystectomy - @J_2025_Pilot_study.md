@@ -22,9 +22,8 @@ deliveryContext:
 ---
 ## Description
 
+![[J_2025_Pilot_study-table5.png]]
 
-> ![[J_2025_Pilot_study-table5.png]]
->
 In LEP cholecystectomy patients, documented interpreter use was not significantly associated with any of the four 30-day postoperative outcomes examined: length of stay (LOS 59.17 vs 44.9 hours, p=0.4114), ED revisits (9.1% vs 6.9%, p=0.558), readmission (4.2% vs 4.6%, p=0.885), or surgical follow-up (51.0% vs 51.7%, p=0.921) (Table 5). These are null/non-significant associations in a study the authors describe as likely underpowered for these infrequent clinical outcomes.
 
 > "Interpreter service utilization and language concordant documentation were not significantly associated with LOS, ED visits, hospital readmissions, or surgeon follow-up." (Rosenthal, 2025, p. 1)
@@ -35,20 +34,20 @@ In LEP cholecystectomy patients, documented interpreter use was not significantl
 
 ### What?
 
-> [!info] The observables: 30-day postoperative hospital length-of-stay (hours), ED re-visits, readmissions, and surgical-team follow-up visits, compared between patients with vs without documented interpreter use.
->
+The observables: 30-day postoperative hospital length-of-stay (hours), ED re-visits, readmissions, and surgical-team follow-up visits, compared between patients with vs without documented interpreter use.
+
 > "Clinical outcomes were captured if they occurred within 30 days of the operative encounter, and these outcomes included hospital length-of-stay, emergency department (ED) re-visits, readmissions, follow-up visits with the surgical team, and 30-day mortality." (Rosenthal, 2025, p. 2)
 
 ### How?
 
-> [!info] Retrospective cohort with univariate analysis; Chi-square for binary outcomes, two-sample t-tests for time-related outcomes, and univariate regression for associations; significance at p<0.05.
->
+Retrospective cohort with univariate analysis; Chi-square for binary outcomes, two-sample t-tests for time-related outcomes, and univariate regression for associations; significance at p<0.05.
+
 > "Univariate analyses were performed using Chi-square analysis for binary outcomes, two-sample t-tests for time-related outcomes, and univariate regression to determine associations. All p values were from 2-sided tests and results were deemed statistically significant at p < 0.05." (Rosenthal, 2025, p. 2)
 
 ### Who?
 
-> [!info] 228 LEP cholecystectomy patients (143 with documented interpreter use vs 87 without) across five University of Pennsylvania Health System hospitals, Jan 2021–Jan 2024; postoperative outcomes were rare (19 ED visits, 10 readmissions, 0 deaths).
->
+228 LEP cholecystectomy patients (143 with documented interpreter use vs 87 without) across five University of Pennsylvania Health System hospitals, Jan 2021–Jan 2024; postoperative outcomes were rare (19 ED visits, 10 readmissions, 0 deaths).
+
 > "Of the entire cohort, 118 (51.30 %) patients completed a follow-up visit with the surgical team. Furthermore, 19 (8.26 %) patients presented to the ED postoperatively and 10 (4.35 %) were readmitted. No patients died within 30 days of their operation." (Rosenthal, 2025, p. 3)
 
 ## Other Notes

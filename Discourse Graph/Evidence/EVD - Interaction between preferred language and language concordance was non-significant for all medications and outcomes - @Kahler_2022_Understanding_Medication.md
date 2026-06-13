@@ -31,20 +31,20 @@ Tests of statistical interaction between a patient's preferred language and pati
 
 ### What?
 
-> [!info] The observable: the statistical interaction term (preferred language × language concordance) in regression models predicting each adherence outcome.
->
+The observable: the statistical interaction term (preferred language × language concordance) in regression models predicting each adherence outcome.
+
 > "Interaction in terms of significance of the Wald test for the multiplicand of the values of those two variables were reported." (Kahler, 2022, p. 32)
 
 ### How?
 
-> [!info] OLS regression models included a multiplicative interaction term between preferred language and the concordance ratio; significance assessed with a Wald test.
->
+OLS regression models included a multiplicative interaction term between preferred language and the concordance ratio; significance assessed with a Wald test.
+
 > "Models were examined for evidence of interaction between language and the concordance ratio." (Kahler, 2022, p. 32)
 
 ### Who?
 
-> [!info] The same 59 type 2 diabetes primary-care patients across the three preferred-language cohorts (English, Spanish, Nepali).
->
+The same 59 type 2 diabetes primary-care patients across the three preferred-language cohorts (English, Spanish, Nepali).
+
 > "The three language groups were compared to each other in terms of these outcomes, as well as their most recent HbA1c value and the number of visits with a language-concordant provider." (Kahler, 2022, p. 32)
 
 ## Other Notes

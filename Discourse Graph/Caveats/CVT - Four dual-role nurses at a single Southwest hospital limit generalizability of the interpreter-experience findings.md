@@ -24,14 +24,13 @@ Owing to multiple attrition factors (changes in hospital administration, time co
 
 ## Supporting Quote
 
-> [!info]
 > "Due to multiple attrition factors, this study was conducted with only four dual‐role nurses from only one hospital in the Southwest regional area of the United States. The findings of the study thus cannot necessarily be generalized to the experiences of all acute care hospital dual‐role nurses." (L, 2023)
->
+
 > "As observer and researcher, the researcher acknowledged that they brought cultural and social assumptions and biases into the interviews and observations." (L, 2023)
 
 ## Qualifies
 
-> [!info] EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
+EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
 
 - [[EVD - Dual-role nurses observed Spanish-speaking patients show visible relief and ease once an interpreter brokered communication - @L_2023_Dual-role_nurse]]
 - [[EVD - Without qualified interpretation Spanish-speaking patients experienced miscommunication confusion and anger during hospital stays - @L_2023_Dual-role_nurse]]

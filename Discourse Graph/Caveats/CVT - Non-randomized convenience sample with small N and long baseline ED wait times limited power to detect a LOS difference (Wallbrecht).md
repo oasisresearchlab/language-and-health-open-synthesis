@@ -20,7 +20,7 @@ Patients were selected by a non-randomized convenience sample (data collectors h
 ## Supporting Quote
 
 > "Another important study limitation includes our method of gathering patients for our prospective cohort study. Although every effort was made to change the time of day, shift, day of the week, and triage level of patients, no actual randomization software or program was used to select patients with LEP and ES patients for comparison in our prospective study. This may provide room for inadvertent selection bias by the data collectors." (Wallbrecht, 2014, p. 4)
->
+
 > "Another potential limitation to our study was the small sample size entered during a relatively short study period... This may have resulted in lack of randomization in choosing subjects and in our inability to ﬁnd a signiﬁcant difference in overall LOS... This baseline average of long wait times could make it difﬁcult to detect signiﬁcant differences given our particularly large conﬁdence intervals." (Wallbrecht, 2014, p. 4)
 
 ## Qualifies

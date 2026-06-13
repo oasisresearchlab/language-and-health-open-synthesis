@@ -19,10 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+![[Davis_2019_Translating_Discharge-table3.png]]
+![[Davis_2019_Translating_Discharge-table4.png]]
 
-> ![[Davis_2019_Translating_Discharge-table3.png]]
-> ![[Davis_2019_Translating_Discharge-table4.png]]
->
 The most commonly cited barrier to providing translated inpatient discharge instructions was "operational complexity" (69%, 20 of 29; Table 3), which respondents described concretely as a timing mismatch: discharge instructions are finalized at the last minute while professional translation takes hours to days, so clinical staff discharge patients before the written translation is ready (Table 4). This is a workflow mechanism by which the time/effort cost of translation causes either delayed discharge or patients leaving without language-concordant written instructions.
 
 > "When asked 'What obstacles does your children's hospital face in providing discharge translation services in the inpatient setting?' the most commonly cited barrier was 'operational complexity' (69%; Table 3)." (Davis, 2019, p. 5)
@@ -33,20 +32,20 @@ The most commonly cited barrier to providing translated inpatient discharge inst
 
 ### What?
 
-> [!info] The observable: respondents' selection of obstacles from a closed-ended list (Table 3) plus open-ended descriptions of their greatest challenge (Table 4), recording perceived barriers to translating discharge instructions.
->
+The observable: respondents' selection of obstacles from a closed-ended list (Table 3) plus open-ended descriptions of their greatest challenge (Table 4), recording perceived barriers to translating discharge instructions.
+
 > "Open- and closed-ended questions were focused on both the institution's overall organization of language services and, more specifically, on the translation of inpatient discharge instructions into languages other than English." (Davis, 2019, p. 3)
 
 ### How?
 
-> [!info] Closed-ended barrier responses summarized with descriptive statistics; open-ended responses about the greatest challenge analyzed by the project team with inductive content analysis (independent theme identification then group discussion).
->
+Closed-ended barrier responses summarized with descriptive statistics; open-ended responses about the greatest challenge analyzed by the project team with inductive content analysis (independent theme identification then group discussion).
+
 > "Open-ended survey responses and translation policies were coded and analyzed by the project team using inductive content analysis. The project team independently examined open-ended responses for themes and then discussed themes together." (Davis, 2019, p. 4)
 
 ### Who?
 
-> [!info] Language-services contacts at 31 (closed barrier items: n = 29) acute-care CHA children's hospitals, large and well resourced (median 248 beds, 71% teaching hospitals); responses are the directors' institutional perspective, not direct patient or bedside-clinician observation.
->
+Language-services contacts at 31 (closed barrier items: n = 29) acute-care CHA children's hospitals, large and well resourced (median 248 beds, 71% teaching hospitals); responses are the directors' institutional perspective, not direct patient or bedside-clinician observation.
+
 > "Respondents (n = 31) completed a deidentified online survey with 25 questions regarding translation services for pediatric inpatients." (Davis, 2019, p. 3)
 
 ## Other Notes

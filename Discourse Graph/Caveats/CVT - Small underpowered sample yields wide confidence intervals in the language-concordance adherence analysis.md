@@ -22,14 +22,13 @@ The study analyzed only 59 patients, split across three language groups and furt
 
 ## Supporting Quote
 
-> [!info]
 > "The study was underpowered, leading to wide confidence intervals in the language concordance analysis." (Kahler, 2022, p. 35)
->
+
 > "This study was limited by the small number of participants." (Kahler, 2022, p. 35)
 
 ## Qualifies
 
-> [!info] EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
+EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
 
 - [[EVD - Language-group differences in medication adherence disappeared after controlling for patient-provider language concordance - @Kahler_2022_Understanding_Medication]]
 - [[EVD - Interaction between preferred language and language concordance was non-significant for all medications and outcomes - @Kahler_2022_Understanding_Medication]]

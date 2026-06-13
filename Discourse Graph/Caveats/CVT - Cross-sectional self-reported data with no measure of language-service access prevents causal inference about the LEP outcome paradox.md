@@ -22,18 +22,17 @@ The data are cross-sectional, so causality cannot be inferred from the associati
 
 ## Supporting Quote
 
-> [!info]
 > "Our data are cross-sectional; thus, causality cannot be inferred." (Padilla, 2021)
->
+
 > "Furthermore, we did not measure access to language services among persons with LEP." (Padilla, 2021)
->
+
 > "The behavioral data were self-reported, thus subject to social desirability and recall bias." (Padilla, 2021)
->
+
 > "Our analysis only includes adults aware of their HIV diagnosis; therefore, our estimates of LEP may be lower than what might be found among all persons with LEP and HIV." (Padilla, 2021)
 
 ## Qualifies
 
-> [!info] EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
+EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
 
 - [[EVD - Adults with LEP and diagnosed HIV were more virally suppressed than EP adults (77.5% vs 69.6%) - @Padilla_2021_Limited_English]]
 - [[EVD - Adults with LEP were more likely to be prescribed ART than EP adults (89.7% vs 83.5%) but ART adherence did not differ - @Padilla_2021_Limited_English]]

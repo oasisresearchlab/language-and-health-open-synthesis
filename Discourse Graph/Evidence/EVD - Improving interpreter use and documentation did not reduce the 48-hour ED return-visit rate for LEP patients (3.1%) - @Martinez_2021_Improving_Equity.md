@@ -19,10 +19,9 @@ deliveryContext:
 ---
 ## Description
 
+![[Martinez_2021_Improving_Equity-fig5.png]]
+![[Martinez_2021_Improving_Equity-table1.png]]
 
-> ![[Martinez_2021_Improving_Equity-fig5.png]]
-> ![[Martinez_2021_Improving_Equity-table1.png]]
->
 Despite the significant improvement in appropriate interpreter use and documentation, the 48-hour ED return-visit (RV) rate for LEP patients showed no special-cause variation from its baseline of 3.1% across the postintervention period, and the LEP-vs-EP RV gap remained significant (P < 0.001) both before and after all interventions (Fig. 5, Table 1). The authors conclude that improving professional interpreter use by itself had no significant effect on the return-visit rate.
 
 > "During the postintervention period (6/1/2018-10/31/2020), no special cause variation was noted from the baseline 48-hour emergency department RV rates for LEP patients (3.1%) or English proficient patients (2.6%)." (Martinez, 2021, p. 1)
@@ -33,20 +32,20 @@ Despite the significant improvement in appropriate interpreter use and documenta
 
 ### What?
 
-> [!info] The observable: the 48-hour ED return-visit (RV) rate — the proportion of patients returning to the ED within 48 hours of an initial visit — tracked separately for the LEP and English-proficient (EP) populations and compared with the 2-proportions test.
->
+The observable: the 48-hour ED return-visit (RV) rate — the proportion of patients returning to the ED within 48 hours of an initial visit — tracked separately for the LEP and English-proficient (EP) populations and compared with the 2-proportions test.
+
 > "Our primary outcome measure was 48-hour RV for LEP and EP populations, process measures included AIUD and LEP icon activation, and the balancing measures were ED LOS and VRI encounter time." (Martinez, 2021, p. 3)
 
 ### How?
 
-> [!info] Pre-post quality-improvement evaluation: return-visit rates were tracked on statistical process control (SPC) charts to detect special-cause variation, with baseline (10/2017–05/2018) compared against the PDSA1–3 postintervention period; LEP-vs-EP differences tested with the 2-proportions test at P < 0.05.
->
+Pre-post quality-improvement evaluation: return-visit rates were tracked on statistical process control (SPC) charts to detect special-cause variation, with baseline (10/2017–05/2018) compared against the PDSA1–3 postintervention period; LEP-vs-EP differences tested with the 2-proportions test at P < 0.05.
+
 > "All data were analyzed using statistical process control (SPC) charts created using Minitab Statistical Software v.19 (Minitab, Inc., State College, Pa.)." (Martinez, 2021, p. 3)
 
 ### Who?
 
-> [!info] All LEP ED patients (4987 total) and the EP comparison group (149,080) at a freestanding, urban, academic pediatric ED (Level-1 Pediatric Trauma Center, ~53,000 annual visits), Norfolk, Virginia, over October 2017–October 2020; 152 (3.1%) of LEP and 3939 (2.6%) of EP patients returned within 48 hours.
->
+All LEP ED patients (4987 total) and the EP comparison group (149,080) at a freestanding, urban, academic pediatric ED (Level-1 Pediatric Trauma Center, ~53,000 annual visits), Norfolk, Virginia, over October 2017–October 2020; 152 (3.1%) of LEP and 3939 (2.6%) of EP patients returned within 48 hours.
+
 > "Of the 4987 total LEP patients, 152 (3.1%) had a second ED visit within 48 hours (Fig. 5a). Of the total 149,080 EP patients in the comparison group, 3,939 (2.6%) returned within 48-hours (Fig. 5b)." (Martinez, 2021, p. 4)
 
 ## Other Notes

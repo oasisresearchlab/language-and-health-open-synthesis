@@ -23,18 +23,17 @@ This was a single-center quality-improvement pilot at one urban academic ED, lim
 
 ## Supporting Quote
 
-> [!info]
 > "This was a single-center study performed at an urban, academic ED that sees ~45,000 patients a year. Therefore, it may not be generalizable to other institutions." (Stoneking, 2016)
->
+
 > "Given that we expected a higher enrollment rate, our sample size was not large enough to detect a significant difference." (Stoneking, 2016)
->
+
 > "Although ten of these 13 encounters were with SC residents compared to three encounters with UC residents, this number was too low from which to draw any statistically significant meaning." (Stoneking, 2016)
->
+
 > "No formal statistical testing or formal power analysis was performed prior to initiating this quality improvement pilot study." (Stoneking, 2016)
 
 ## Qualifies
 
-> [!info] EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
+EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
 
 - [[EVD - Residents trained in a medical Spanish curriculum spoke Spanish with more LEP patients and used translator phones less - @Stoneking_2016_Does_Spanish]]
 - [[EVD - Patients rated visit satisfaction and resident Spanish ability higher for curriculum-trained residents - @Stoneking_2016_Does_Spanish]]

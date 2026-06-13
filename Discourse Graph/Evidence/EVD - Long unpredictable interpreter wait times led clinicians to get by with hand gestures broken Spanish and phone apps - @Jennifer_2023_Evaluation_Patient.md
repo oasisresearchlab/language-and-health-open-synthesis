@@ -31,20 +31,20 @@ In semistructured interviews, postpartum clinicians described long and unpredict
 
 ### What?
 
-> [!info] The observable: clinicians' self-reported reasons and described behaviors (workarounds) when interpreters were not readily available — a qualitative account of how wait times and staffing translate into non-use of concordant communication.
->
+The observable: clinicians' self-reported reasons and described behaviors (workarounds) when interpreters were not readily available — a qualitative account of how wait times and staffing translate into non-use of concordant communication.
+
 > "Time management was the primary barrier to interpretation service use, in a context of clinician-focused practice centered around efﬁciency. In-person interpretation services were particularly challenging because of long and unpredictable wait times for access due to interpreter understafﬁng." (Jensen, 2023, p. 432)
 
 ### How?
 
-> [!info] Semistructured telephone interviews (audio-recorded, professionally transcribed) about facilitators and barriers to interpreter use; transcripts inductively/narratively coded by three authors, with codes synthesized into themes by discussion to axial saturation.
->
+Semistructured telephone interviews (audio-recorded, professionally transcribed) about facilitators and barriers to interpreter use; transcripts inductively/narratively coded by three authors, with codes synthesized into themes by discussion to axial saturation.
+
 > "Responses were then read through in their entirety, with memos and inductive narrative coding conducted by three authors (a nurse and two nonclinicians). Discussion occurred among all authors for synthesis of codes into categories for reﬂection and development into themes." (Jensen, 2023, p. 434)
 
 ### Who?
 
-> [!info] 14 inpatient health care team members who practiced on the postpartum unit and requested interpreter services (5 RNs, 3 certified nurse-midwives, 2 NPs, 1 maternal–fetal medicine physician, 1 pediatrician, 1 IBCLC, 1 health unit coordinator), interviewed June–Dec 2020 at the same tertiary academic medical center.
->
+14 inpatient health care team members who practiced on the postpartum unit and requested interpreter services (5 RNs, 3 certified nurse-midwives, 2 NPs, 1 maternal–fetal medicine physician, 1 pediatrician, 1 IBCLC, 1 health unit coordinator), interviewed June–Dec 2020 at the same tertiary academic medical center.
+
 > "The health care team members interviewed included ﬁve inpatient registered nurses, three certiﬁed nurse-midwives, two nurse practitioners, one maternal-fetal medicine physician, one pediatrician, one international board-certiﬁed lactation consultant, and one health unit coordinator." (Jensen, 2023, p. 434)
 
 ## Other Notes

@@ -24,16 +24,15 @@ This is a single-institution retrospective cohort drawn entirely from EHR data, 
 
 ## Supporting Quote
 
-> [!info]
 > "Second, we did not have access to interpreter usage data. It would have been helpful to characterize the association between interpreter use and pain assessment type. Moreover, we did not have access to the identity of the nurse performing the pain assessment." (Aksharananda, 2023)
->
+
 > "First, the data collection for pain assessment was limited by the EHR. We only utilized complete cases where a Pain Assessment Tool was linked with a specific value. Nurses often switched between different types of pain assessment tools, meaning many patients had more than one different type of assessment." (Aksharananda, 2023)
->
+
 > "Third, there is ongoing debate about the utility and comparability across patient groups of pain scales. There are significant cultural differences in how pain is communicated." (Aksharananda, 2023)
 
 ## Qualifies
 
-> [!info] EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
+EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
 
 - [[EVD - Patients with LEP had the lowest adjusted odds of numeric pain ratings (OR 0.61, 95% CI 0.58-0.65) - @Aksharananda_2023_Pain_Assessment]]
 - [[EVD - English-speaking patients received substantially more daily opioids (MMEs) than patients with LEP across all pain assessments - @Aksharananda_2023_Pain_Assessment]]

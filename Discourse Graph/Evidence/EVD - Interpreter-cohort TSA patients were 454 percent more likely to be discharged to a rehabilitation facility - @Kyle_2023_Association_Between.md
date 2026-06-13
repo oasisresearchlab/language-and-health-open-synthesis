@@ -19,9 +19,8 @@ deliveryContext:
 ---
 ## Description
 
+![[Kyle_2023_Association_Between-table3.png]]
 
-> ![[Kyle_2023_Association_Between-table3.png]]
->
 In the matched TSA cohort, a greater proportion of interpreter-requiring patients were discharged to an acute or subacute rehabilitation facility rather than home, compared with non-interpreter patients (n = 8 [19.5%] vs n = 2 [4.9%], P = .033). On multivariate logistic regression, interpreter use was the strongest predictor of discharge disposition: patients who required an interpreter were 454% more likely (odds ratio 4.54, 95% CI 2.13–8.61, P = .037) to be discharged to a subacute or acute rehabilitation facility (Table 3).
 
 > "Comparison of study cohorts revealed that the need of a language interpreter was associated with discharge disposition; a greater proportion of patients in the interpreter cohort were discharged to an acute or subacute rehabilitation facility compared with patients in the non-interpreter cohort (n = 8 [19.5%] vs n = 2 [4.9%], P = .033)." (Kunze, 2023, p. 88)
@@ -32,20 +31,20 @@ In the matched TSA cohort, a greater proportion of interpreter-requiring patient
 
 ### What?
 
-> [!info] The observable: discharge disposition after TSA, classified as discharge home, to a subacute rehabilitation facility, or to an acute inpatient rehabilitation facility (a secondary outcome).
->
+The observable: discharge disposition after TSA, classified as discharge home, to a subacute rehabilitation facility, or to an acute inpatient rehabilitation facility (a secondary outcome).
+
 > "Discharge disposition was classified as discharge to the patient's home, to a subacute rehabilitation facility, or to an acute inpatient rehabilitation facility." (Kunze, 2023, p. 86)
 
 ### How?
 
-> [!info] Single-institution retrospective cohort; categorical disposition compared between matched cohorts with χ2 / Fisher's exact test, and multivariate logistic regression controlling for confounders to estimate the odds ratio.
->
+Single-institution retrospective cohort; categorical disposition compared between matched cohorts with χ2 / Fisher's exact test, and multivariate logistic regression controlling for confounders to estimate the odds ratio.
+
 > "multivariate logistic regression models were constructed to investigate the potential association between interpreter use, discharge disposition, and short-term complication rates." (Kunze, 2023, p. 87)
 
 ### Who?
 
-> [!info] 41 interpreter-requiring TSA patients matched 1:1 to 41 non-interpreter patients (82 total) at a single urban institution (Hospital for Special Surgery, NY) from a TSA registry of consecutive reverse/anatomic TSA cases, January 2016–March 2020.
->
+41 interpreter-requiring TSA patients matched 1:1 to 41 non-interpreter patients (82 total) at a single urban institution (Hospital for Special Surgery, NY) from a TSA registry of consecutive reverse/anatomic TSA cases, January 2016–March 2020.
+
 > "A total of 72 (87.8%) patients were discharged home following TSA, while the remaining 10 patients were discharged to an acute or subacute rehabilitation facility." (Kunze, 2023, p. 87)
 
 ## Other Notes

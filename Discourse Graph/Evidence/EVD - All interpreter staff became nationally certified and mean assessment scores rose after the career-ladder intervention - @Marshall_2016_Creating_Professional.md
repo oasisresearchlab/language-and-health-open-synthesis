@@ -29,20 +29,20 @@ After the career-ladder intervention, interpreter staff credentialing and measur
 
 ### What?
 
-> [!info] The observable: interpreter staff competence operationalized as (a) national certification status and (b) score on a standardized Interpreter Skills Assessment.
->
+The observable: interpreter staff competence operationalized as (a) national certification status and (b) score on a standardized Interpreter Skills Assessment.
+
 > "A standardized Interpreter Skills Assessment was given to all current staff and as prescreening for any newly hired staff, with ongoing reassessment every two years thereafter." (Marshall, 2016, p. 470)
 
 ### How?
 
-> [!info] Pre-post comparison of certification counts and assessment scores before (January 2010–December 2012) versus after (July 2013–June 2016) restructuring; staff given 12 months to obtain national certification (CMI, CCHI, or ATA) and reassessed every two years.
->
+Pre-post comparison of certification counts and assessment scores before (January 2010–December 2012) versus after (July 2013–June 2016) restructuring; staff given 12 months to obtain national certification (CMI, CCHI, or ATA) and reassessed every two years.
+
 > "Staff were given 12 months to become nationally certified by completing any one of the following: Certified Medical Interpreter (CMI), Certification Commission for Healthcare Interpreters (CCHI), or American Translators Association (ATA)." (Marshall, 2016, p. 470)
 
 ### Who?
 
-> [!info] The 24+ dedicated Diversity Services language staff (29 LCS staff by June 2016) at Children's Hospital Los Angeles, serving a patient population of which more than 60% had limited English proficiency.
->
+The 24+ dedicated Diversity Services language staff (29 LCS staff by June 2016) at Children's Hospital Los Angeles, serving a patient population of which more than 60% had limited English proficiency.
+
 > "There were 24 dedicated department language staff whose primary job was to provide in-person interpretation." (Marshall, 2016, p. 467)
 
 ## Other Notes

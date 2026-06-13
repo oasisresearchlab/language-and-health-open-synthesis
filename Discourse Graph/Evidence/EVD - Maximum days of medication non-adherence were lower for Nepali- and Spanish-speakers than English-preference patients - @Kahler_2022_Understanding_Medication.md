@@ -25,28 +25,28 @@ deliveryContext:
 
 Maximum Days of Non-Adherence (the longest gap a patient went without their medication on hand) was significantly *lower* for Nepali- and Spanish-speakers than English-preference patients for NPH insulin, and for Nepali speakers also for metformin and ACE inhibitors — i.e., the English-preference group had the longest non-adherence gaps (Table 2).
 
-> ![[Kahler_2022_Understanding_Medication-table2-p34.png]]
->
+![[Kahler_2022_Understanding_Medication-table2-p34.png]]
+
 > "Maximum Days of Non-Adherence was significantly less for Nepali- and Spanish-speakers compared to English-preference speakers for NPH insulin. This was true for metformin and ACE-inhibitors for Nepalis compared to English preference speakers, but not for Spanish-speakers." (Kahler, 2022, p. 33)
 
 ## Methods Context
 
 ### What?
 
-> [!info] The observable: Maximum Days Non-Adherent = (total days prescribed medication) − (days supply of medication), per medication, from pharmacy refill gaps.
->
+The observable: Maximum Days Non-Adherent = (total days prescribed medication) − (days supply of medication), per medication, from pharmacy refill gaps.
+
 > "Maximum Days Nonadherence = # of total days prescribed medication − # of days supply of medication" (Kahler, 2022, p. 32)
 
 ### How?
 
-> [!info] Computed from pharmacy refill-gap data and compared across the three language groups via ANOVA / regression with adjustment for confounders (age, sex).
->
+Computed from pharmacy refill-gap data and compared across the three language groups via ANOVA / regression with adjustment for confounders (age, sex).
+
 > "Maximum Number of Days Non-Adherent was calculated for each medication based on gaps in medication refill data collected from pharmacy medication profiles." (Kahler, 2022, p. 32)
 
 ### Who?
 
-> [!info] The same 59 type 2 diabetes primary-care patients; medication-specific subsamples (e.g., NPH insulin n=25, metformin n=32, ACE inhibitors n=21).
->
+The same 59 type 2 diabetes primary-care patients; medication-specific subsamples (e.g., NPH insulin n=25, metformin n=32, ACE inhibitors n=21).
+
 > "Models included data for all participants taking each type of medication." (Kahler, 2022, p. 32)
 
 ## Other Notes

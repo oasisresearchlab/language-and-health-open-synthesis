@@ -29,27 +29,27 @@ deliveryContext:
 Aside from mortality, the intervention produced no detectable special cause variation. Process measures did not shift: average monthly critical response nurse consults went 5.67/month pre- to 5.45/month post-intervention, and average monthly RR system activations went 11.3/month pre- to 15.7/month post-intervention, neither showing special cause variation. For the main secondary outcomes, the average rate of escalation of care after RR activation actually rose (43.75% or 59/135 pre- vs 45.73% or 102/222 post-intervention) and average post-RR length of hospitalization fell (20.45 days/patient pre- vs 19.52 days/patient post-intervention), but the authors "found no special cause variation that linked these changes to intervention implementation."
 
 > "Between the pre- and post-intervention periods, neither the average monthly number of critical response nurse consults for LEP patients (5.67/month pre- to 5.45/month post-intervention) nor the average monthly number of RR system activations (11.3/month pre- to 15.7/month post-intervention) showed special cause variation." (Raff, 2024, p. 1108)
->
+
 > "While LEP patients experienced an average increased rate of escalation of care after RR system activation (43.75% or 59/135 escalated pre- versus 45.73% or 102/222 post-intervention), and decreased length of hospitalization post-RR system activation (an average of 20.45 days per patient pre- versus 19.52 days per patient post-intervention), we found no special cause variation that linked these changes to intervention implementation." (Raff, 2024, p. 1109)
 
 ## Methods Context
 
 ### What?
 
-> [!info] The observables: monthly critical response nurse consult count, monthly RR activation count (process measures), and monthly average post-RR escalation of care and length of hospitalization (outcome measures), each plotted on pre/post X bar and R control charts.
->
+The observables: monthly critical response nurse consult count, monthly RR activation count (process measures), and monthly average post-RR escalation of care and length of hospitalization (outcome measures), each plotted on pre/post X bar and R control charts.
+
 > "Process Measures. Measures to assess intervention activities and fidelity included the monthly number of RR critical response nurse consults; the monthly number of RR system activations; and monthly average DI score at the time of RR system activation." (Raff, 2024, p. 1106)
 
 ### How?
 
-> [!info] Quasi-experimental pre-post QI design using statistical process control (X bar and R control charts, Nelson Rules) on monthly cross-sectional aggregates, comparing the period before vs after the May 2022 intervention go-live.
->
+Quasi-experimental pre-post QI design using statistical process control (X bar and R control charts, Nelson Rules) on monthly cross-sectional aggregates, comparing the period before vs after the May 2022 intervention go-live.
+
 > "We also report pre-versus post-average values across all months for process and outcome variables to provide context for analytic findings." (Raff, 2024, p. 1107)
 
 ### Who?
 
-> [!info] All adult non-ICU hospitalized LEP patients experiencing an RR system activation at a 950-bed quaternary academic medical center (UNCMC), May 2021–March 2023; 222 individual patients across 302 activations (135 activations / 68 critical response consults pre; 167 activations / 60 consults post).
->
+All adult non-ICU hospitalized LEP patients experiencing an RR system activation at a 950-bed quaternary academic medical center (UNCMC), May 2021–March 2023; 222 individual patients across 302 activations (135 activations / 68 critical response consults pre; 167 activations / 60 consults post).
+
 > "In the pre-intervention period (May 1, 2021, to April 30, 2022), there were 135 RR system activations and 68 critical response nurse consultations." (Raff, 2024, p. 1108)
 
 ## Other Notes

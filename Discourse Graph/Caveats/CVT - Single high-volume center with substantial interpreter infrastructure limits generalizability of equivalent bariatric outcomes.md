@@ -21,7 +21,7 @@ The equivalent outcomes were observed at a single, high-volume academic center w
 ## Supporting Quote
 
 > "One limitation of this study is that the findings may not be applicable across the variety of institutions where bariatric surgery is performed." (Stolarski, 2022, p. 7390)
->
+
 > "Outcomes may not be as transportable to institutions with more limited resources for patients who are not proficient in English. These findings may support investments in infrastructure to care for patients with limited English proficiency." (Stolarski, 2022, p. 7390)
 
 ## Qualifies

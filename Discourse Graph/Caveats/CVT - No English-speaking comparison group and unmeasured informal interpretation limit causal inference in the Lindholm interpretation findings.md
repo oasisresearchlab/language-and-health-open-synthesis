@@ -24,16 +24,15 @@ The analysis is a single-institution retrospective study with no English-speakin
 
 ## Supporting Quote
 
-> [!info]
 > "The first is our lack of a calculated LOS for an English-speaking comparison group." (Lindholm, 2012, p. 1298)
->
+
 > "The other unknown information concerns how often family members or untrained staff were providing interpretation or whether bilingual providers were able to speak directly with patients during provision of care. This may explain why some patients received professional interpretation and others did not." (Lindholm, 2012, p. 1298)
->
+
 > "Another limitation includes that the study took place within one institution and may not be entirely applicable to other hospitals. Socioeconomic status of our patients was not collected and may affect a patient's ability to advocate for interpretation." (Lindholm, 2012, p. 1298)
 
 ## Qualifies
 
-> [!info] EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
+EVDs this caveat qualifies (→ CVT—qualifies→EVD edges by sync_relations.py).
 
 - [[EVD - LEP inpatients without a professional interpreter on both admission and discharge had a 0.75-1.47 day longer length of stay - @Lindholm_2012_Professional_language]]
 - [[EVD - Adjusted mean length of stay was 5.06 days with no interpreter vs 2.57 days with interpreters on both admission and discharge - @Lindholm_2012_Professional_language]]

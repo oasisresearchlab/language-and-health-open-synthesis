@@ -21,10 +21,9 @@ deliveryContext:
 ---
 ## Description
 
+![[Marshall_2016_Creating_Professional-table1.png]]
+![[Marshall_2016_Creating_Professional-table2.png]]
 
-> ![[Marshall_2016_Creating_Professional-table1.png]]
-> ![[Marshall_2016_Creating_Professional-table2.png]]
->
 A baseline (January 2012) staff language-satisfaction survey (N=351) found that satisfaction with the timeliness of interpreters was lower in the inpatient area than in the clinics and the emergency department, and that clinics scored higher than inpatient for overall satisfaction with interpreters (Tables 1 and 2). This documents an inpatient access gap that motivated the intervention's reallocation of interpreter time toward hospital units.
 
 > "As shown in Table 1 (page 471), staff satisfaction ratings for 'rate your level of satisfaction with the timeliness of interpreters' was lower in the inpatient area than in the clinics and the ED. Clinics scored higher for overall level of satisfaction with interpreters than the inpatient setting (Table 2, page 471)." (Marshall, 2016, p. 470)
@@ -33,20 +32,20 @@ A baseline (January 2012) staff language-satisfaction survey (N=351) found that 
 
 ### What?
 
-> [!info] The observable: staff/provider satisfaction ratings with the timeliness and overall quality of in-person interpreters, by care area (ED, clinics, inpatient).
->
+The observable: staff/provider satisfaction ratings with the timeliness and overall quality of in-person interpreters, by care area (ED, clinics, inpatient).
+
 > "The survey focused on staff and provider satisfaction with the quality, professionalism, and timeliness of in-person interpreters and had one question for open-ended feedback." (Marshall, 2016, p. 470)
 
 ### How?
 
-> [!info] Cross-sectional e-mail staff-satisfaction survey administered to inpatient, outpatient, and clinic areas in January 2012 (N=351), with responses tabulated by care area.
->
+Cross-sectional e-mail staff-satisfaction survey administered to inpatient, outpatient, and clinic areas in January 2012 (N=351), with responses tabulated by care area.
+
 > "An e-mail language satisfaction survey was administered to inpatient, outpatient, and clinic areas in January 2012." (Marshall, 2016, p. 470)
 
 ### Who?
 
-> [!info] 351 staff and providers responding across the ED, clinics, and inpatient areas at Children's Hospital Los Angeles (timeliness item: ED n=65, clinics n=76, inpatient n=210).
->
+351 staff and providers responding across the ED, clinics, and inpatient areas at Children's Hospital Los Angeles (timeliness item: ED n=65, clinics n=76, inpatient n=210).
+
 > "A staff language satisfaction survey was administered in the ED, clinic, and inpatient areas in January 2012 (N = 351)." (Marshall, 2016, p. 470)
 
 ## Other Notes

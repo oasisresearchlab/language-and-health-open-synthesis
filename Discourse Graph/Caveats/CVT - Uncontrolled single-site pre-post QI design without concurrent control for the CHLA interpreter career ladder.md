@@ -22,7 +22,7 @@ This is an uncontrolled, single-site quality-improvement (pre-post) report from 
 
 > "An important next step will be to assess the cost-effectiveness of this new language services delivery model in relation to care outcomes." (Marshall, 2016, p. 472)
 
-> [Inferred: no concurrent control group, no significance tests, and confounding by simultaneous organizational changes mean the pre-post associations cannot be read as causal effects of the career ladder.]
+[Inferred: no concurrent control group, no significance tests, and confounding by simultaneous organizational changes mean the pre-post associations cannot be read as causal effects of the career ladder.]
 
 ## Qualifies
 

@@ -22,6 +22,7 @@ USAGE
 """
 
 import argparse
+import html
 import json
 import re
 from pathlib import Path
@@ -73,6 +74,49 @@ def split_sentences(text: str):
         if len(p) > 12:
             out.append(p)
     return out
+
+
+# Structured-abstract section headers (IMRaD + journal variants).
+SECTION_HEADER = re.compile(
+    r"\b(Background|Context|Introduction|Objectives?|Aims?|Purpose|Hypothesis|"
+    r"Methods?|Materials and [Mm]ethods|Design|Setting|Participants|Patients|Sample|"
+    r"Interventions?|Exposures?|Measurements?|Main [Oo]utcomes?(?:[\w ]*?[Mm]easures?)?|"
+    r"Data [Ss]ources|Study [Ss]election|Data [Ee]xtraction(?:[\w ]*)?|"
+    r"Results?|Findings?|Conclusions?(?:[\w ]*?[Rr]elevance)?|Implications?|"
+    r"Importance|Significance)\s*:",
+)
+# Only these sections become completeness anchors — the paper's claims, not its setup.
+KEEP_SECTION = re.compile(r"^(Results?|Findings?|Conclusions?|Implications?|Outcomes?)", re.I)
+
+
+def segment_abstract(text: str):
+    """Split a structured abstract into (label, body) segments; None if it isn't structured."""
+    text = re.sub(r"\s+", " ", text).strip()
+    hits = list(SECTION_HEADER.finditer(text))
+    if len(hits) < 2:
+        return None
+    segs = []
+    for i, h in enumerate(hits):
+        end = hits[i + 1].start() if i + 1 < len(hits) else len(text)
+        segs.append((h.group(1), text[h.end():end].strip()))
+    return segs
+
+
+def result_sentences(abstract: str):
+    """The sentences a reviewer should check for completeness.
+
+    Structured abstract → only the Results + Conclusions sections (verbatim, all sentences).
+    Unstructured abstract → fall back to sentences carrying a result cue (numbers/comparisons).
+    """
+    abstract = html.unescape(abstract)
+    segs = segment_abstract(abstract)
+    if segs:
+        out = []
+        for label, body in segs:
+            if KEEP_SECTION.match(label):
+                out.extend(split_sentences(body))
+        return out
+    return [s for s in split_sentences(abstract) if RESULT_CUE.search(s)]
 
 
 WORD = re.compile(r"[a-z0-9]+")
@@ -127,29 +171,85 @@ def candidates_for(path: Path):
     return out
 
 
-def object_anchors(citekey: str):
+# A caption line: "Table 1. <caption>" / "Figure 2 <caption>" at the start of a text line.
+CAPTION = re.compile(r"^(Table|Figure|Fig)\b\.?\s*(\d+)\s*[.:]?\s*(.{0,240})", re.I)
+
+
+def pdf_caption_objects(citekey: str):
+    """Canonical object list = Table/Figure caption lines scanned from the PDF text.
+
+    The image-extraction manifest only sees objects rendered as images, so it misses
+    text-rendered tables entirely (e.g. Allan has 3 tables, manifest caught 0). Scanning
+    the text for caption lines enumerates every object the paper actually presents.
+    """
+    pdf = PDFS / f"{citekey}.pdf"
+    if not pdf.exists():
+        return {}
+    try:
+        import fitz
+
+        doc = fitz.open(pdf)
+    except Exception:
+        return {}
+    found = {}  # (kind, num) -> {"page", "caption"}
+    for pi, pg in enumerate(doc, 1):
+        for raw in pg.get_text().splitlines():
+            m = CAPTION.match(raw.strip())
+            if not m:
+                continue
+            kind = "figure" if m.group(1).lower().startswith("fig") else "table"
+            num = m.group(2)
+            cap = m.group(3).strip()
+            key = (kind, num)
+            prev = found.get(key)
+            if prev is None:
+                found[key] = {"page": pi, "caption": cap}
+            elif len(cap) > len(prev["caption"]):  # upgrade to the caption-bearing occurrence
+                found[key] = {"page": prev["page"], "caption": cap}
+    doc.close()
+    return found
+
+
+def manifest_objects(citekey: str):
+    """page/bbox hints from the image-extraction manifest, keyed by (kind, num)."""
+    out = {}
     mf = FIGB / citekey / "manifest.json"
     if not mf.exists():
-        return []
+        return out
     try:
         m = json.loads(mf.read_text())
     except Exception:
-        return []
-    out = []
+        return out
     for kind in ("tables", "figures"):
-        for i, o in enumerate(m.get(kind, []), 1):
-            label = o.get("label") or f"{kind[:-1].title()} {i}"
-            num = (re.search(r"(\d+)", label) or [None, None])[1] if re.search(r"(\d+)", label) else str(i)
-            crop = f"{citekey}-{'table' if kind == 'tables' else 'fig'}{num}.png"
-            out.append({
-                "kind": "table" if kind == "tables" else "figure",
-                "label": label,
-                "caption": o.get("caption", ""),
-                "page": o.get("page"),
-                "bbox": o.get("bbox"),
-                "num": num,
-                "crop": crop if (ROOT / "attachments" / crop).exists() else None,
-            })
+        for o in m.get(kind, []):
+            mm = re.search(r"(\d+)", o.get("label") or "")
+            if mm:
+                out[("table" if kind == "tables" else "figure", mm.group(1))] = {
+                    "page": o.get("page"), "bbox": o.get("bbox"),
+                }
+    return out
+
+
+def object_anchors(citekey: str):
+    bare = citekey.lstrip("@")
+    captions = pdf_caption_objects(citekey)
+    manifest = manifest_objects(citekey)
+    keys = sorted(set(captions) | set(manifest), key=lambda k: (k[0], int(k[1])))
+    out = []
+    for kind, num in keys:
+        cap = captions.get((kind, num), {})
+        man = manifest.get((kind, num), {})
+        cropname = f"{bare}-{'table' if kind == 'table' else 'fig'}{num}.png"
+        crop = cropname if (ROOT / "attachments" / cropname).exists() else None
+        out.append({
+            "kind": kind,
+            "label": f"{'Table' if kind == 'table' else 'Figure'} {num}",
+            "caption": cap.get("caption", ""),
+            "page": man.get("page") or cap.get("page"),
+            "bbox": man.get("bbox"),
+            "num": num,
+            "crop": crop,
+        })
     return out
 
 
@@ -161,10 +261,10 @@ def build(citekey: str):
     evds = evds_for(citekey)
     cands = candidates_for(sp)
 
-    # abstract result-sentences
+    # abstract result-sentences (Results + Conclusions for structured abstracts)
     abstract = str(fm.get("abstract", "") or "")
     abstract = re.sub(r"\^[\w\-]+", "", abstract)  # strip block-ref anchors
-    sentences = [s for s in split_sentences(abstract) if RESULT_CUE.search(s)]
+    sentences = result_sentences(abstract)
 
     def best_evd(text):
         best, score = None, 0.0

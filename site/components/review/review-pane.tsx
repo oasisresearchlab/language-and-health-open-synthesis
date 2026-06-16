@@ -1,16 +1,33 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { Check, Plus, X, FileText, Download } from "lucide-react";
+import {
+  Check,
+  Plus,
+  X,
+  FileText,
+  Download,
+  ChevronRight,
+  Flag,
+  Ban,
+  FlaskConical,
+} from "lucide-react";
 
 import type { ReviewPaper } from "@/lib/review";
 import { cn } from "@/lib/utils";
 
 type Verdict = "covered" | "promoted" | "not_a_result";
+
 interface AnchorState {
+  // abstract anchors — one sentence ≈ one atomic result
   verdict?: Verdict;
-  evdIndex?: number; // which existing EVD covers it
+  evdIndex?: number;
   promotedText?: string;
+  // object anchors — a table/figure can carry many results
+  evdIndices?: number[]; // existing EVDs this object maps to
+  addedEvds?: string[]; // brand-new EVDs authored against this object
+  gapNote?: string; // "something interesting that's missing"
+  confirmedEmpty?: boolean; // reviewed, nothing to capture
   note?: string;
 }
 type Reviews = Record<string, AnchorState>;
@@ -27,10 +44,22 @@ function initialReviews(paper: ReviewPaper): Reviews {
   }
   for (const o of paper.objectAnchors) {
     if (o.linkedEvds.length > 0) {
-      r[o.id] = { verdict: "covered", evdIndex: o.linkedEvds[0] };
+      r[o.id] = { evdIndices: [...o.linkedEvds] };
     }
   }
   return r;
+}
+
+const filled = (xs?: string[]) => (xs ?? []).filter((s) => s.trim() !== "");
+
+function objectResolved(s?: AnchorState): boolean {
+  if (!s) return false;
+  return (
+    (s.evdIndices?.length ?? 0) > 0 ||
+    filled(s.addedEvds).length > 0 ||
+    (s.gapNote?.trim() ?? "") !== "" ||
+    !!s.confirmedEmpty
+  );
 }
 
 export function ReviewPane({ paper }: { paper: ReviewPaper }) {
@@ -62,17 +91,28 @@ export function ReviewPane({ paper }: { paper: ReviewPaper }) {
     });
 
   const meter = useMemo(() => {
-    const answered = (ids: string[]) =>
-      ids.filter((id) => reviews[id]?.verdict).length;
     const absIds = paper.abstractAnchors.map((a) => a.id);
-    const objIds = paper.objectAnchors.map((o) => o.id);
+    const abs = absIds.filter((id) => reviews[id]?.verdict).length;
+    const obj = paper.objectAnchors.filter((o) => objectResolved(reviews[o.id]))
+      .length;
+    const promoted = Object.values(reviews).filter(
+      (v) => v.verdict === "promoted",
+    ).length;
+    const added = Object.values(reviews).reduce(
+      (n, v) => n + filled(v.addedEvds).length,
+      0,
+    );
+    const gaps = Object.values(reviews).filter(
+      (v) => (v.gapNote?.trim() ?? "") !== "",
+    ).length;
     return {
-      abs: answered(absIds),
+      abs,
       absTotal: absIds.length,
-      obj: answered(objIds),
-      objTotal: objIds.length,
-      promoted: Object.values(reviews).filter((v) => v.verdict === "promoted")
-        .length,
+      obj,
+      objTotal: paper.objectAnchors.length,
+      promoted,
+      added,
+      gaps,
     };
   }, [reviews, paper]);
 
@@ -84,17 +124,28 @@ export function ReviewPane({ paper }: { paper: ReviewPaper }) {
       title: paper.title,
       reviewedAt: new Date().toISOString(),
       meter,
-      anchors: [...paper.abstractAnchors, ...paper.objectAnchors].map((a) => {
+      abstractAnchors: paper.abstractAnchors.map((a) => {
         const st = reviews[a.id] ?? {};
-        const base = { id: a.id, kind: a.kind, ...st } as Record<string, unknown>;
-        if ("text" in a) base.text = a.text;
-        if ("label" in a) base.label = a.label;
-        if (st.evdIndex != null) base.evd = paper.evds[st.evdIndex]?.title;
-        return base;
+        return {
+          id: a.id,
+          text: a.text,
+          verdict: st.verdict ?? null,
+          evd: st.evdIndex != null ? paper.evds[st.evdIndex]?.title : null,
+          promotedText: st.promotedText ?? null,
+        };
       }),
-      promotedCandidates: Object.entries(reviews)
-        .filter(([, v]) => v.verdict === "promoted")
-        .map(([id, v]) => ({ anchorId: id, text: v.promotedText })),
+      objectAnchors: paper.objectAnchors.map((o) => {
+        const st = reviews[o.id] ?? {};
+        return {
+          id: o.id,
+          label: o.label,
+          page: o.page,
+          mappedEvds: (st.evdIndices ?? []).map((i) => paper.evds[i]?.title),
+          addedEvds: filled(st.addedEvds),
+          gapNote: st.gapNote?.trim() || null,
+          confirmedEmpty: !!st.confirmedEmpty,
+        };
+      }),
     };
     const blob = new Blob([JSON.stringify(out, null, 2)], {
       type: "application/json",
@@ -128,12 +179,22 @@ export function ReviewPane({ paper }: { paper: ReviewPaper }) {
       {/* Right — checklist */}
       <div className="flex min-h-0 flex-col">
         {/* meter */}
-        <div className="flex items-center gap-4 border-b border-border bg-muted/30 px-4 py-2 text-xs">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 border-b border-border bg-muted/30 px-4 py-2 text-xs">
           <Meter label="Abstract results" n={meter.abs} d={meter.absTotal} />
           <Meter label="Tables & figures" n={meter.obj} d={meter.objTotal} />
           {meter.promoted > 0 && (
-            <span className="font-mono text-primary">
+            <span className="font-mono text-amber-600 dark:text-amber-400">
               +{meter.promoted} promoted
+            </span>
+          )}
+          {meter.added > 0 && (
+            <span className="font-mono text-emerald-600 dark:text-emerald-400">
+              +{meter.added} new EVD
+            </span>
+          )}
+          {meter.gaps > 0 && (
+            <span className="font-mono text-rose-600 dark:text-rose-400">
+              {meter.gaps} gap{meter.gaps > 1 ? "s" : ""}
             </span>
           )}
           <button
@@ -175,28 +236,17 @@ export function ReviewPane({ paper }: { paper: ReviewPaper }) {
             <>
               <SectionTitle className="mt-6">Tables &amp; figures</SectionTitle>
               <p className="mb-3 text-xs text-muted-foreground">
-                Each object should be touched by ≥1 piece of evidence.
+                Map each object to the evidence it grounds (one object can ground
+                several), add anything missed, or flag a gap.
               </p>
               <ul className="space-y-2">
                 {paper.objectAnchors.map((o) => (
-                  <AnchorCard
+                  <ObjectCard
                     key={o.id}
-                    title={`${o.label}${o.caption ? " — " + o.caption : ""}`}
-                    crop={o.crop}
-                    page={o.page ?? undefined}
-                    onJump={o.page ? () => setPage(o.page!) : undefined}
-                    state={reviews[o.id]}
-                    suggestion={
-                      o.linkedEvds.length
-                        ? {
-                            text: paper.evds[o.linkedEvds[0]]?.finding ?? "",
-                            confidence: 1,
-                            evdIndex: o.linkedEvds[0],
-                          }
-                        : undefined
-                    }
+                    obj={o}
                     evds={paper.evds}
-                    promoteSeed={o.caption || o.label}
+                    state={reviews[o.id]}
+                    onJump={o.page ? () => setPage(o.page!) : undefined}
                     onSet={(p) => set(o.id, p)}
                   />
                 ))}
@@ -244,11 +294,262 @@ function SectionTitle({
   );
 }
 
+/* ── Object (table/figure) card ─────────────────────────────────────────────
+   Multi-map to existing EVDs (checkboxes, previewable), add brand-new EVDs,
+   flag a gap, or confirm nothing to capture. */
+function ObjectCard({
+  obj,
+  evds,
+  state,
+  onJump,
+  onSet,
+}: {
+  obj: ReviewPaper["objectAnchors"][number];
+  evds: ReviewPaper["evds"];
+  state?: AnchorState;
+  onJump?: () => void;
+  onSet: (patch: AnchorState | null) => void;
+}) {
+  const [preview, setPreview] = useState<number | null>(null);
+  const [showGap, setShowGap] = useState(
+    (state?.gapNote?.trim() ?? "") !== "",
+  );
+  const linked = state?.evdIndices ?? [];
+  const added = state?.addedEvds ?? [];
+  const resolved = objectResolved(state);
+
+  const toggleEvd = (i: number) =>
+    onSet({
+      evdIndices: linked.includes(i)
+        ? linked.filter((x) => x !== i)
+        : [...linked, i],
+      confirmedEmpty: false,
+    });
+  const addEvd = () => onSet({ addedEvds: [...added, ""], confirmedEmpty: false });
+  const setAdded = (idx: number, text: string) =>
+    onSet({ addedEvds: added.map((t, k) => (k === idx ? text : t)) });
+  const removeAdded = (idx: number) =>
+    onSet({ addedEvds: added.filter((_, k) => k !== idx) });
+
+  return (
+    <li
+      className={cn(
+        "rounded-lg border p-3 transition-colors",
+        resolved ? "border-primary/40 bg-primary/5" : "border-border",
+        state?.confirmedEmpty && "opacity-70",
+      )}
+    >
+      {/* header */}
+      <div className="flex items-start gap-3">
+        {obj.crop && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={`/attachments/${obj.crop}`}
+            alt=""
+            className="h-14 w-20 shrink-0 rounded border border-border object-cover"
+          />
+        )}
+        <div className="min-w-0 flex-1">
+          <p className="text-sm font-medium leading-snug">
+            {obj.label}
+            {obj.caption ? (
+              <span className="font-normal text-muted-foreground">
+                {" "}
+                — {obj.caption}
+              </span>
+            ) : null}
+          </p>
+          <span className="font-mono text-[11px] text-muted-foreground">
+            {linked.length > 0 && `${linked.length} mapped`}
+            {linked.length > 0 && filled(added).length > 0 && " · "}
+            {filled(added).length > 0 && `+${filled(added).length} new`}
+          </span>
+        </div>
+        {onJump && (
+          <button
+            onClick={onJump}
+            className="inline-flex shrink-0 items-center gap-1 rounded px-2 py-1 font-mono text-[11px] text-muted-foreground hover:text-foreground"
+          >
+            <FileText className="h-3 w-3" /> p{obj.page}
+          </button>
+        )}
+      </div>
+
+      {/* existing EVDs as a checklist */}
+      {evds.length > 0 && (
+        <ul className="mt-2 space-y-0.5">
+          {evds.map((e, i) => {
+            const on = linked.includes(i);
+            const open = preview === i;
+            return (
+              <li key={i} className="rounded">
+                <div
+                  className={cn(
+                    "flex items-start gap-2 rounded px-1.5 py-1 text-xs",
+                    on && "bg-primary/10",
+                  )}
+                >
+                  <button
+                    onClick={() => toggleEvd(i)}
+                    className={cn(
+                      "mt-0.5 flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-sm border",
+                      on
+                        ? "border-primary bg-primary text-primary-foreground"
+                        : "border-muted-foreground/40",
+                    )}
+                    aria-label={on ? "Unmap evidence" : "Map evidence"}
+                  >
+                    {on && <Check className="h-2.5 w-2.5" />}
+                  </button>
+                  <button
+                    onClick={() => setPreview(open ? null : i)}
+                    className="min-w-0 flex-1 text-left leading-snug hover:text-foreground"
+                  >
+                    <ChevronRight
+                      className={cn(
+                        "mr-0.5 inline h-3 w-3 text-muted-foreground transition-transform",
+                        open && "rotate-90",
+                      )}
+                    />
+                    <span className={on ? "" : "text-muted-foreground"}>
+                      {e.title}
+                    </span>
+                  </button>
+                </div>
+                {open && (
+                  <p className="ml-6 mr-1 mb-1 rounded bg-muted/50 px-2 py-1.5 text-xs leading-relaxed text-muted-foreground">
+                    {e.finding}
+                    {(e.tables.length > 0 || e.figures.length > 0) && (
+                      <span className="mt-1 block font-mono text-[10px] text-muted-foreground/70">
+                        cites{" "}
+                        {[
+                          ...e.tables.map((t) => `Table ${t}`),
+                          ...e.figures.map((f) => `Fig ${f}`),
+                        ].join(", ")}
+                      </span>
+                    )}
+                  </p>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      )}
+
+      {/* newly authored EVDs */}
+      {added.length > 0 && (
+        <div className="mt-2 space-y-1.5">
+          {added.map((t, idx) => (
+            <div key={idx} className="flex items-start gap-1.5">
+              <FlaskConical className="mt-1.5 h-3.5 w-3.5 shrink-0 text-emerald-600 dark:text-emerald-400" />
+              <textarea
+                value={t}
+                onChange={(e) => setAdded(idx, e.target.value)}
+                rows={2}
+                autoFocus={t === ""}
+                placeholder="New evidence from this object — state the finding verbatim where possible…"
+                className="w-full resize-y rounded border border-emerald-500/40 bg-background px-2 py-1 text-xs"
+              />
+              <button
+                onClick={() => removeAdded(idx)}
+                className="mt-1 text-muted-foreground hover:text-destructive"
+                aria-label="Remove"
+              >
+                <X className="h-3.5 w-3.5" />
+              </button>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* gap note */}
+      {showGap && (
+        <div className="mt-2 flex items-start gap-1.5">
+          <Flag className="mt-1.5 h-3.5 w-3.5 shrink-0 text-rose-600 dark:text-rose-400" />
+          <textarea
+            value={state?.gapNote ?? ""}
+            onChange={(e) => onSet({ gapNote: e.target.value })}
+            rows={2}
+            autoFocus={(state?.gapNote ?? "") === ""}
+            placeholder="Something interesting in this object that isn't captured…"
+            className="w-full resize-y rounded border border-rose-500/40 bg-background px-2 py-1 text-xs"
+          />
+        </div>
+      )}
+
+      {/* actions */}
+      <div className="mt-2 flex flex-wrap items-center gap-1.5">
+        <MiniBtn
+          icon={<Plus className="h-3.5 w-3.5" />}
+          label="Add evidence"
+          tone="emerald"
+          onClick={addEvd}
+        />
+        <MiniBtn
+          icon={<Flag className="h-3.5 w-3.5" />}
+          label="Flag gap"
+          tone="rose"
+          active={showGap}
+          onClick={() => {
+            if (showGap && (state?.gapNote?.trim() ?? "") === "")
+              onSet({ gapNote: "" });
+            setShowGap((v) => !v);
+          }}
+        />
+        <MiniBtn
+          icon={<Ban className="h-3.5 w-3.5" />}
+          label="Nothing to capture"
+          tone="muted"
+          active={!!state?.confirmedEmpty}
+          onClick={() =>
+            onSet({
+              confirmedEmpty: !state?.confirmedEmpty,
+              ...(!state?.confirmedEmpty ? { evdIndices: [] } : {}),
+            })
+          }
+        />
+      </div>
+    </li>
+  );
+}
+
+function MiniBtn({
+  icon,
+  label,
+  tone,
+  active,
+  onClick,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  tone: "emerald" | "rose" | "muted";
+  active?: boolean;
+  onClick: () => void;
+}) {
+  const tones = {
+    emerald:
+      "border-emerald-500/50 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400",
+    rose: "border-rose-500/50 bg-rose-500/10 text-rose-700 dark:text-rose-400",
+    muted: "border-border bg-muted text-muted-foreground",
+  };
+  return (
+    <button
+      onClick={onClick}
+      className={cn(
+        "inline-flex items-center gap-1 rounded border px-2 py-1 text-xs transition-colors",
+        active
+          ? tones[tone]
+          : "border-border text-muted-foreground hover:bg-accent/50",
+      )}
+    >
+      {icon} {label}
+    </button>
+  );
+}
+
+/* ── Abstract-sentence card (one sentence ≈ one atomic result) ──────────────── */
 function AnchorCard({
   title,
-  crop,
-  page,
-  onJump,
   state,
   suggestion,
   evds,
@@ -256,9 +557,6 @@ function AnchorCard({
   onSet,
 }: {
   title: string;
-  crop?: string | null;
-  page?: number;
-  onJump?: () => void;
   state?: AnchorState;
   suggestion?: { text: string; confidence: number; evdIndex: number };
   evds: ReviewPaper["evds"];
@@ -276,17 +574,7 @@ function AnchorCard({
         !verdict && "border-border",
       )}
     >
-      <div className="flex items-start gap-3">
-        {crop && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={`/attachments/${crop}`}
-            alt=""
-            className="h-14 w-20 shrink-0 rounded border border-border object-cover"
-          />
-        )}
-        <p className="min-w-0 flex-1 text-sm leading-snug">{title}</p>
-      </div>
+      <p className="text-sm leading-snug">{title}</p>
 
       {/* suggestion */}
       {suggestion && verdict !== "not_a_result" && verdict !== "promoted" && (
@@ -349,14 +637,6 @@ function AnchorCard({
             onSet(verdict === "not_a_result" ? null : { verdict: "not_a_result" })
           }
         />
-        {onJump && (
-          <button
-            onClick={onJump}
-            className="ml-auto inline-flex items-center gap-1 rounded px-2 py-1 font-mono text-[11px] text-muted-foreground hover:text-foreground"
-          >
-            <FileText className="h-3 w-3" /> p{page}
-          </button>
-        )}
       </div>
 
       {/* which EVD covers it (when covered & ambiguous) */}
@@ -364,7 +644,9 @@ function AnchorCard({
         <select
           value={state?.evdIndex ?? ""}
           onChange={(e) =>
-            onSet({ evdIndex: e.target.value === "" ? undefined : Number(e.target.value) })
+            onSet({
+              evdIndex: e.target.value === "" ? undefined : Number(e.target.value),
+            })
           }
           className="mt-2 w-full rounded border border-border bg-background px-2 py-1 text-xs"
         >

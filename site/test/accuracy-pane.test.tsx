@@ -69,7 +69,7 @@ describe("AccuracyPane · review flow", () => {
     await screen.findByText(/one-year readmission/);
 
     // click the "Correct" verdict on the Verbatim row (first such button)
-    const okButtons = await screen.findAllByTitle("Correct");
+    const okButtons = await screen.findAllByRole("button", { name: "Correct" });
     await user.click(okButtons[0]);
 
     await waitFor(() => expect(saveReview).toHaveBeenCalled());

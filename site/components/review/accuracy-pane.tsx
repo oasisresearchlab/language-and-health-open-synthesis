@@ -23,7 +23,28 @@ import {
   type ReviewRow,
 } from "@/lib/accuracy-store";
 import { useReviewer, IdentityGate, IdentityBar } from "@/components/review/identity";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
+
+/** Fast (provider delay 150ms) tooltip wrapper — replaces slow native title=. */
+function Tip({
+  content,
+  children,
+}: {
+  content: React.ReactNode;
+  children: React.ReactElement;
+}) {
+  return (
+    <Tooltip>
+      <TooltipTrigger render={children} />
+      <TooltipContent>{content}</TooltipContent>
+    </Tooltip>
+  );
+}
 
 type Verdict = "ok" | "edit" | "wrong" | "missing" | "na";
 
@@ -249,13 +270,15 @@ function EvdCard({
           {evd.title}
         </p>
         {onJump && (
-          <button
-            onClick={onJump}
-            className="inline-flex shrink-0 items-center gap-1 rounded px-1.5 py-1 font-mono text-[11px] text-muted-foreground hover:text-foreground"
-            title="Jump the PDF to this page"
-          >
-            <FileText className="h-3 w-3" /> p{evd.page}
-          </button>
+          <Tip content="Jump the PDF to this page">
+            <button
+              onClick={onJump}
+              aria-label={`Jump to page ${evd.page}`}
+              className="inline-flex shrink-0 items-center gap-1 rounded px-1.5 py-1 font-mono text-[11px] text-muted-foreground hover:text-foreground"
+            >
+              <FileText className="h-3 w-3" /> p{evd.page}
+            </button>
+          </Tip>
         )}
       </div>
 
@@ -467,27 +490,27 @@ function Judge({
   return (
     <div className="w-full">
       <div className="flex items-center justify-end gap-1">
-        <span
-          className="mr-0.5 inline-flex items-center gap-1 text-[11px] font-medium capitalize text-foreground"
-          title={HINTS[dim]}
-        >
-          {dim}
-          <Info className="h-3 w-3 text-muted-foreground" />
-        </span>
+        <Tip content={HINTS[dim]}>
+          <span className="mr-0.5 inline-flex cursor-help items-center gap-1 text-[11px] font-medium capitalize text-foreground">
+            {dim}
+            <Info className="h-3 w-3 text-muted-foreground" />
+          </span>
+        </Tip>
         {VERDICTS.map((b) => (
-          <button
-            key={b.v}
-            title={b.title}
-            onClick={() => onSet({ verdict: verdict === b.v ? null : b.v })}
-            className={cn(
-              "inline-flex h-6 w-6 items-center justify-center rounded border transition-colors",
-              verdict === b.v
-                ? b.tone
-                : "border-border text-muted-foreground hover:bg-accent/50",
-            )}
-          >
-            {b.icon}
-          </button>
+          <Tip key={b.v} content={b.title}>
+            <button
+              aria-label={b.title}
+              onClick={() => onSet({ verdict: verdict === b.v ? null : b.v })}
+              className={cn(
+                "inline-flex h-6 w-6 items-center justify-center rounded border transition-colors",
+                verdict === b.v
+                  ? b.tone
+                  : "border-border text-muted-foreground hover:bg-accent/50",
+              )}
+            >
+              {b.icon}
+            </button>
+          </Tip>
         ))}
       </div>
       {showText && (

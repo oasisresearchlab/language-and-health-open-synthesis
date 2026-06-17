@@ -242,3 +242,14 @@
 .prose-node th {
   @apply bg-muted font-semibold;
 }
+
+/* pdf.js (react-pdf) text-layer search highlight in the review pane */
+.review-pdf .textLayer mark {
+  color: transparent;
+  background: rgba(250, 204, 21, 0.45);
+  border-radius: 2px;
+  padding: 0;
+}
+.review-pdf .react-pdf__Page {
+  background: white;
+}

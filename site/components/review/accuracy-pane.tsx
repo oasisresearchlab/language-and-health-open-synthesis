@@ -22,6 +22,8 @@ import {
   type ReviewMap,
   type ReviewRow,
 } from "@/lib/accuracy-store";
+import dynamic from "next/dynamic";
+
 import { useReviewer, IdentityGate, IdentityBar } from "@/components/review/identity";
 import {
   Tooltip,
@@ -29,6 +31,19 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
+
+// pdf.js touches DOMMatrix at module load → must not render on the server.
+const PdfPane = dynamic(
+  () => import("@/components/review/pdf-pane").then((m) => m.PdfPane),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
+        Loading PDF viewer…
+      </div>
+    ),
+  },
+);
 
 /** Fast (provider delay 150ms) tooltip wrapper — replaces slow native title=. */
 function Tip({
@@ -77,6 +92,12 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
   const [reviews, setReviews] = useState<ReviewMap>({});
   const [loaded, setLoaded] = useState(false);
   const [page, setPage] = useState(paper.evds.find((e) => e.page)?.page ?? 1);
+  const [query, setQuery] = useState("");
+
+  const jumpTo = (evd: AccuracyEvd) => {
+    if (evd.page) setPage(evd.page);
+    setQuery(evd.quotes[0] ?? "");
+  };
 
   useEffect(() => {
     if (!reviewer) return;
@@ -136,19 +157,12 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
   if (!ready) return null;
   if (!reviewer) return <IdentityGate roster={roster} onPick={choose} />;
 
-  const pdfSrc = `/api/pdf/${encodeURIComponent(paper.citekey)}#page=${page}&zoom=page-width`;
-
   return (
     <div className="grid min-h-0 flex-1 grid-cols-1 lg:grid-cols-[1.1fr_1fr]">
-      {/* Left — PDF */}
+      {/* Left — PDF (pdf.js: in-doc search + highlight) */}
       <div className="hidden min-h-0 flex-col border-r border-border lg:flex">
         {paper.hasPdf ? (
-          <embed
-            key={page}
-            src={pdfSrc}
-            type="application/pdf"
-            className="h-full w-full"
-          />
+          <PdfPane citekey={paper.citekey} page={page} query={query} />
         ) : (
           <div className="flex h-full items-center justify-center p-8 text-center text-sm text-muted-foreground">
             PDF not available locally for {paper.citekey}.
@@ -205,7 +219,7 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
                   evd={evd}
                   index={i + 1}
                   reviews={reviews}
-                  onJump={evd.page ? () => setPage(evd.page!) : undefined}
+                  onJump={evd.page ? () => jumpTo(evd) : undefined}
                   onSet={(dim, patch) => setCell(evd.id, dim, patch)}
                 />
               ))}

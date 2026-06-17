@@ -158,9 +158,9 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
   if (!reviewer) return <IdentityGate roster={roster} onPick={choose} />;
 
   return (
-    <div className="grid min-h-0 flex-1 grid-cols-1 lg:grid-cols-[1.1fr_1fr]">
+    <div className="grid min-h-0 flex-1 grid-cols-1 grid-rows-1 overflow-hidden lg:grid-cols-[1.1fr_1fr]">
       {/* Left — PDF (pdf.js: in-doc search + highlight) */}
-      <div className="hidden min-h-0 flex-col border-r border-border lg:flex">
+      <div className="hidden min-h-0 flex-col overflow-hidden border-r border-border lg:flex">
         {paper.hasPdf ? (
           <PdfPane citekey={paper.citekey} page={page} query={query} />
         ) : (
@@ -171,7 +171,7 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
       </div>
 
       {/* Right — per-EVD checklist */}
-      <div className="flex min-h-0 flex-col">
+      <div className="flex min-h-0 flex-col overflow-hidden">
         <div className="flex flex-wrap items-center gap-x-4 gap-y-1 border-b border-border bg-muted/30 px-4 py-2 text-xs">
           <span className="inline-flex items-center gap-1.5">
             <span className="text-muted-foreground">EVDs reviewed</span>

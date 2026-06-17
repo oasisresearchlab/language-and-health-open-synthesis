@@ -14,8 +14,9 @@ function escapeRegExp(s: string) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-/** A pdf.js-rendered PDF with page navigation + in-document text search/highlight.
- *  `page` scrolls the view; `query` pre-fills the find box (e.g. the EVD quote). */
+/** A pdf.js-rendered PDF with page navigation + in-document text search that
+ *  scrolls to each matched highlight. `page` scrolls the view; `query`
+ *  pre-fills the find box (e.g. the active EVD's quote). */
 export function PdfPane({
   citekey,
   page,
@@ -32,12 +33,29 @@ export function PdfPane({
   const [numPages, setNumPages] = useState(0);
   const [width, setWidth] = useState(640);
   const [find, setFind] = useState("");
-  const [matchPages, setMatchPages] = useState<number[]>([]);
-  const [matchIdx, setMatchIdx] = useState(0);
+  const [markIdx, setMarkIdx] = useState(0);
+  const [markCount, setMarkCount] = useState(0);
+  const [renderTick, setRenderTick] = useState(0);
 
   const containerRef = useRef<HTMLDivElement>(null);
   const pageRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const textCache = useRef<Map<number, string>>(new Map());
+  const pendingScroll = useRef(false);
+
+  const getMarks = () =>
+    Array.from(
+      containerRef.current?.querySelectorAll<HTMLElement>(".textLayer mark") ??
+        [],
+    );
+
+  const focusMark = (i: number) => {
+    const marks = getMarks();
+    marks.forEach((m) => m.classList.remove("pdf-hl-active"));
+    const el = marks[i];
+    if (el) {
+      el.classList.add("pdf-hl-active");
+      el.scrollIntoView({ block: "center", behavior: "smooth" });
+    }
+  };
 
   // pre-fill find when the active EVD changes (strip leading quote/citation noise)
   useEffect(() => {
@@ -57,37 +75,32 @@ export function PdfPane({
     return () => ro.disconnect();
   }, []);
 
-  // scroll to the requested page
+  // explicit page jump (EVD has no matching highlight, or no query)
   useEffect(() => {
     if (!page) return;
     pageRefs.current[page - 1]?.scrollIntoView({ block: "start", behavior: "smooth" });
   }, [page, numPages]);
 
-  const scrollToMatch = (pages: number[], idx: number) => {
-    const p = pages[idx];
-    if (p) pageRefs.current[p - 1]?.scrollIntoView({ block: "start", behavior: "smooth" });
-  };
-
-  // recompute which pages contain the query (from cached text layers)
+  // a new query: reset index and request a scroll-to-first once marks render
   useEffect(() => {
-    const q = find.trim().toLowerCase();
-    if (!q || q.length < 2) {
-      setMatchPages([]);
-      return;
+    setMarkIdx(0);
+    pendingScroll.current = find.trim().length >= 2;
+  }, [find]);
+
+  // recount marks whenever the query or a text layer (re)renders; scroll to the
+  // first match the first time it appears for a new query
+  useEffect(() => {
+    const marks = getMarks();
+    setMarkCount(marks.length);
+    if (pendingScroll.current && marks.length) {
+      pendingScroll.current = false;
+      focusMark(0);
     }
-    const hits: number[] = [];
-    for (let i = 1; i <= numPages; i++) {
-      const txt = textCache.current.get(i);
-      if (txt && txt.toLowerCase().includes(q)) hits.push(i);
-    }
-    setMatchPages(hits);
-    setMatchIdx(0);
-    if (hits.length) scrollToMatch(hits, 0);
-  }, [find, numPages]);
+  }, [find, renderTick]);
 
   const textRenderer = useMemo(() => {
     const q = find.trim();
-    if (!q || q.length < 2) return undefined;
+    if (q.length < 2) return undefined;
     let re: RegExp;
     try {
       re = new RegExp(`(${escapeRegExp(q)})`, "gi");
@@ -98,10 +111,10 @@ export function PdfPane({
   }, [find]);
 
   const step = (dir: 1 | -1) => {
-    if (!matchPages.length) return;
-    const next = (matchIdx + dir + matchPages.length) % matchPages.length;
-    setMatchIdx(next);
-    scrollToMatch(matchPages, next);
+    if (!markCount) return;
+    const next = (markIdx + dir + markCount) % markCount;
+    setMarkIdx(next);
+    focusMark(next);
   };
 
   return (
@@ -118,13 +131,11 @@ export function PdfPane({
         {find && (
           <>
             <span className="font-mono text-[11px] text-muted-foreground">
-              {matchPages.length
-                ? `${matchIdx + 1}/${matchPages.length} pages`
-                : "no match"}
+              {markCount ? `${markIdx + 1}/${markCount}` : "no match"}
             </span>
             <button
               onClick={() => step(-1)}
-              disabled={!matchPages.length}
+              disabled={!markCount}
               className="rounded p-0.5 text-muted-foreground hover:text-foreground disabled:opacity-40"
               aria-label="Previous match"
             >
@@ -132,7 +143,7 @@ export function PdfPane({
             </button>
             <button
               onClick={() => step(1)}
-              disabled={!matchPages.length}
+              disabled={!markCount}
               className="rounded p-0.5 text-muted-foreground hover:text-foreground disabled:opacity-40"
               aria-label="Next match"
             >
@@ -180,14 +191,7 @@ export function PdfPane({
                 pageNumber={i + 1}
                 width={width}
                 customTextRenderer={textRenderer}
-                onGetTextSuccess={(textContent) => {
-                  const str = textContent.items
-                    .map((it) => ("str" in it ? it.str : ""))
-                    .join(" ");
-                  textCache.current.set(i + 1, str);
-                  // trigger a recompute if a search is pending
-                  setFind((f) => f);
-                }}
+                onRenderTextLayerSuccess={() => setRenderTick((t) => t + 1)}
                 renderAnnotationLayer={false}
               />
             </div>

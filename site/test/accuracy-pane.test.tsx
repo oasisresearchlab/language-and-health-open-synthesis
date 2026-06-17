@@ -42,9 +42,10 @@ const PAPER: AccuracyPaper = {
       how: "logistic regression",
       who: "1662 patients",
       claims: [{ id: "C-0008", title: "LEP worsens outcomes", polarity: "opposes" }],
+      otherNotes: "",
       caveats: [],
       tags: [],
-      page: 7387,
+      page: 3,
     },
   ],
 };

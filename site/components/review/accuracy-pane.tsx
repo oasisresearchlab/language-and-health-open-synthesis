@@ -1,15 +1,17 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   Check,
   Pencil,
   X,
   Minus,
+  RefreshCw,
+  Info,
   FileText,
   Download,
-  ChevronDown,
   ArrowUpRight,
+  BookOpen,
 } from "lucide-react";
 
 import type { AccuracyPaper, AccuracyEvd } from "@/lib/review-accuracy";
@@ -23,44 +25,31 @@ import {
 import { useReviewer, IdentityGate, IdentityBar } from "@/components/review/identity";
 import { cn } from "@/lib/utils";
 
-type Verdict = "ok" | "edit" | "wrong" | "na";
+type Verdict = "ok" | "edit" | "wrong" | "missing" | "na";
 
-interface Dimension {
-  key: string;
-  label: string;
-  hint: string;
-}
+const HINTS: Record<string, string> = {
+  verbatim:
+    "Is the quote the right sentence and does it match the PDF? (An audit checked the string; you confirm the meaning.)",
+  quant:
+    "Direction, magnitude, significance, and confidence intervals faithful to the source.",
+  grounding: "Correct figure/table embedded — or correctly none.",
+  methods:
+    "What (the observable) / How (design) / Who (sample) accurately describe the study.",
+  polarity:
+    "Does this evidence really support / oppose this specific claim, as stated?",
+};
 
-// Core-4 + methods context, per the locked plan (clinician tier).
-const DIMENSIONS: Dimension[] = [
-  {
-    key: "verbatim",
-    label: "Verbatim",
-    hint: "Quote is the right sentence and matches the PDF — not a coincidental string.",
-  },
-  {
-    key: "grounding",
-    label: "Grounding",
-    hint: "Correct figure/table is embedded — or correctly none.",
-  },
-  {
-    key: "polarity",
-    label: "Claim link & polarity",
-    hint: "This EVD really supports / opposes the linked claim as stated.",
-  },
-  {
-    key: "quant",
-    label: "Quant fidelity",
-    hint: "Direction, magnitude, significance, and CI are faithful to the source.",
-  },
-  {
-    key: "methods",
-    label: "Methods context",
-    hint: "What (observable) / How (design) / Who (sample) are accurate.",
-  },
-];
-
+// dimension keys: verbatim | quant | grounding | methods | polarity:<claimId>
 const k = (nodeId: string, dim: string) => `${nodeId}:${dim}`;
+
+function polarityKeys(evd: AccuracyEvd): string[] {
+  return evd.claims.length
+    ? evd.claims.map((c) => `polarity:${c.id}`)
+    : ["polarity:_none"];
+}
+function requiredDims(evd: AccuracyEvd): string[] {
+  return ["verbatim", "quant", "grounding", "methods", ...polarityKeys(evd)];
+}
 
 export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
   const { reviewer, roster, choose, ready } = useReviewer();
@@ -77,10 +66,6 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
     });
   }, [reviewer, paper.citekey]);
 
-  const persist = (row: ReviewRow, next: ReviewMap) => {
-    if (reviewer) void saveReview(reviewer, paper.citekey, row, next);
-  };
-
   const setCell = (nodeId: string, dim: string, patch: Partial<ReviewRow>) => {
     setReviews((r) => {
       const key = k(nodeId, dim);
@@ -91,7 +76,7 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
         dimension: dim,
       };
       const next = { ...r, [key]: row };
-      persist(row, next);
+      if (reviewer) void saveReview(reviewer, paper.citekey, row, next);
       return next;
     });
   };
@@ -99,11 +84,10 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
   const meter = useMemo(() => {
     let doneEvds = 0;
     for (const e of paper.evds) {
-      const all = DIMENSIONS.every((d) => reviews[k(e.id, d.key)]?.verdict);
-      if (all) doneEvds++;
+      if (requiredDims(e).every((d) => reviews[k(e.id, d)]?.verdict)) doneEvds++;
     }
-    const flags = Object.values(reviews).filter(
-      (r) => r.verdict === "edit" || r.verdict === "wrong",
+    const flags = Object.values(reviews).filter((r) =>
+      ["edit", "wrong", "missing"].includes(r.verdict ?? ""),
     ).length;
     return { doneEvds, total: paper.evds.length, flags };
   }, [reviews, paper.evds]);
@@ -172,6 +156,14 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
               {meter.flags} flagged
             </span>
           )}
+          <a
+            href="/review/guide"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground"
+          >
+            <BookOpen className="h-3.5 w-3.5" /> Review criteria
+          </a>
           <IdentityBar reviewer={reviewer} onSwitch={() => choose(null)} />
           <button
             onClick={exportJson}
@@ -185,7 +177,7 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
           {!loaded ? (
             <p className="text-sm text-muted-foreground">Loading your reviews…</p>
           ) : (
-            <ul className="space-y-4">
+            <ul className="space-y-5">
               {paper.evds.map((evd, i) => (
                 <EvdCard
                   key={evd.id}
@@ -232,8 +224,14 @@ function EvdCard({
   onJump?: () => void;
   onSet: (dim: string, patch: Partial<ReviewRow>) => void;
 }) {
-  const [showMethods, setShowMethods] = useState(false);
-  const allDone = DIMENSIONS.every((d) => reviews[k(evd.id, d.key)]?.verdict);
+  const allDone = requiredDims(evd).every((d) => reviews[k(evd.id, d)]?.verdict);
+  const judge = (dim: string) => (
+    <Judge
+      dim={dim.startsWith("polarity") ? "polarity" : dim}
+      row={reviews[k(evd.id, dim)]}
+      onSet={(patch) => onSet(dim, patch)}
+    />
+  );
 
   return (
     <li
@@ -254,195 +252,250 @@ function EvdCard({
           <button
             onClick={onJump}
             className="inline-flex shrink-0 items-center gap-1 rounded px-1.5 py-1 font-mono text-[11px] text-muted-foreground hover:text-foreground"
+            title="Jump the PDF to this page"
           >
             <FileText className="h-3 w-3" /> p{evd.page}
           </button>
         )}
       </div>
 
-      {/* linked claims + polarity */}
-      {evd.claims.length > 0 && (
-        <div className="mt-2 space-y-1">
-          {evd.claims.map((c) => (
-            <div key={c.id} className="flex items-start gap-1.5 text-xs">
-              {polarityBadge(c.polarity)}
-              <a
-                href={`/node/${c.id}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="min-w-0 flex-1 text-muted-foreground hover:text-foreground hover:underline"
-              >
-                {c.title}{" "}
-                <ArrowUpRight className="inline h-3 w-3 opacity-60" />
-              </a>
-            </div>
-          ))}
-        </div>
-      )}
-
-      {/* grounding image */}
-      {evd.image && (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={evd.image}
-          alt=""
-          className="mt-2 max-h-44 w-full rounded border border-border object-contain"
-        />
-      )}
-
-      {/* verbatim quotes */}
-      {evd.quotes.map((q, qi) => (
-        <blockquote
-          key={qi}
-          className="mt-2 border-l-2 border-border pl-2.5 text-xs italic leading-relaxed text-muted-foreground"
-        >
-          {q}
-        </blockquote>
-      ))}
-
-      {/* methods (collapsible) */}
-      {(evd.what || evd.how || evd.who) && (
-        <div className="mt-2">
-          <button
-            onClick={() => setShowMethods((v) => !v)}
-            className="inline-flex items-center gap-1 font-mono text-[11px] uppercase tracking-wider text-muted-foreground hover:text-foreground"
+      {/* Evidence & quote → verbatim + quant */}
+      <Section
+        title="Evidence & quote"
+        judges={
+          <>
+            {judge("verbatim")}
+            {judge("quant")}
+          </>
+        }
+      >
+        {evd.description && (
+          <p className="text-xs leading-relaxed text-muted-foreground">
+            {evd.description}
+          </p>
+        )}
+        {evd.quotes.map((q, qi) => (
+          <blockquote
+            key={qi}
+            className="mt-1.5 border-l-2 border-border pl-2.5 text-xs italic leading-relaxed text-muted-foreground"
           >
-            <ChevronDown
-              className={cn(
-                "h-3 w-3 transition-transform",
-                showMethods && "rotate-180",
-              )}
-            />
-            Methods context
-          </button>
-          {showMethods && (
-            <dl className="mt-1.5 space-y-1.5 text-xs">
-              {([
+            {q}
+          </blockquote>
+        ))}
+      </Section>
+
+      {/* Grounding */}
+      <Section title="Grounding" judges={judge("grounding")}>
+        {evd.image ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={evd.image}
+            alt=""
+            className="max-h-44 w-full rounded border border-border object-contain"
+          />
+        ) : (
+          <p className="text-xs italic text-muted-foreground">
+            No figure/table embedded.
+          </p>
+        )}
+      </Section>
+
+      {/* Claim links — one judgment per edge */}
+      <Section title="Claim link & polarity">
+        {evd.claims.length ? (
+          <ul className="space-y-2">
+            {evd.claims.map((c) => (
+              <li
+                key={c.id}
+                className="flex flex-wrap items-center gap-x-2 gap-y-1"
+              >
+                {polarityBadge(c.polarity)}
+                <a
+                  href={`/node/${c.id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="min-w-0 flex-1 text-xs text-muted-foreground hover:text-foreground hover:underline"
+                >
+                  {c.title} <ArrowUpRight className="inline h-3 w-3 opacity-60" />
+                </a>
+                <div className="ml-auto">{judge(`polarity:${c.id}`)}</div>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <div className="flex items-center justify-between gap-2">
+            <span className="text-xs italic text-muted-foreground">
+              Not linked to any claim — should it be?
+            </span>
+            {judge("polarity:_none")}
+          </div>
+        )}
+      </Section>
+
+      {/* Methods context */}
+      {(evd.what || evd.how || evd.who) && (
+        <Section title="Methods context" judges={judge("methods")}>
+          <dl className="space-y-1.5 text-xs">
+            {(
+              [
                 ["What", evd.what],
                 ["How", evd.how],
                 ["Who", evd.who],
-              ] as const).map(([h, v]) =>
-                v ? (
-                  <div key={h}>
-                    <dt className="font-mono text-[10px] uppercase tracking-wider text-primary">
-                      {h}
-                    </dt>
-                    <dd className="text-muted-foreground">{v}</dd>
-                  </div>
-                ) : null,
-              )}
-            </dl>
-          )}
-        </div>
+              ] as const
+            ).map(([h, v]) =>
+              v ? (
+                <div key={h}>
+                  <dt className="font-mono text-[10px] uppercase tracking-wider text-primary">
+                    {h}
+                  </dt>
+                  <dd className="text-muted-foreground">{v}</dd>
+                </div>
+              ) : null,
+            )}
+          </dl>
+        </Section>
       )}
 
-      {/* caveats */}
+      {/* Other notes (display only) */}
+      {evd.otherNotes && (
+        <Section title="Synthesis note">
+          <p className="text-xs leading-relaxed text-muted-foreground">
+            {evd.otherNotes}
+          </p>
+        </Section>
+      )}
+
+      {/* Caveats (display only) */}
       {evd.caveats.length > 0 && (
-        <ul className="mt-2 space-y-0.5 text-[11px] text-muted-foreground">
-          {evd.caveats.map((c, ci) => (
-            <li key={ci} className="flex gap-1">
-              <span className="text-amber-600 dark:text-amber-400">⚑</span>
-              <span>{c}</span>
-            </li>
-          ))}
-        </ul>
+        <Section title="Caveats">
+          <ul className="space-y-1 text-[11px] text-muted-foreground">
+            {evd.caveats.map((c, ci) => (
+              <li key={ci} className="flex gap-1">
+                <span className="text-amber-600 dark:text-amber-400">⚑</span>
+                <span>{c}</span>
+              </li>
+            ))}
+          </ul>
+        </Section>
       )}
 
-      {/* the checklist */}
-      <div className="mt-3 space-y-1.5 border-t border-border pt-3">
-        {DIMENSIONS.map((d) => (
-          <DimensionRow
-            key={d.key}
-            dim={d}
-            row={reviews[k(evd.id, d.key)]}
-            onSet={(patch) => onSet(d.key, patch)}
-          />
-        ))}
-        <NoteRow
-          row={reviews[k(evd.id, "_node")]}
-          onSet={(patch) => onSet("_node", patch)}
-        />
-      </div>
+      <NoteRow
+        row={reviews[k(evd.id, "_node")]}
+        onSet={(patch) => onSet("_node", patch)}
+      />
     </li>
   );
 }
 
-const VERDICTS: { v: Verdict; icon: React.ReactNode; tone: string; title: string }[] =
-  [
-    {
-      v: "ok",
-      icon: <Check className="h-3.5 w-3.5" />,
-      tone: "border-primary/50 bg-primary/10 text-primary",
-      title: "Correct",
-    },
-    {
-      v: "edit",
-      icon: <Pencil className="h-3.5 w-3.5" />,
-      tone: "border-amber-500/50 bg-amber-500/10 text-amber-700 dark:text-amber-400",
-      title: "Needs an edit (propose the fix)",
-    },
-    {
-      v: "wrong",
-      icon: <X className="h-3.5 w-3.5" />,
-      tone: "border-rose-500/50 bg-rose-500/10 text-rose-700 dark:text-rose-400",
-      title: "Wrong",
-    },
-    {
-      v: "na",
-      icon: <Minus className="h-3.5 w-3.5" />,
-      tone: "border-border bg-muted text-muted-foreground",
-      title: "Not applicable",
-    },
-  ];
+function Section({
+  title,
+  judges,
+  children,
+}: {
+  title: string;
+  judges?: React.ReactNode;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="mt-3 border-t border-border pt-2.5">
+      <div className="flex items-start justify-between gap-3">
+        <h4 className="font-mono text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+          {title}
+        </h4>
+        {judges && <div className="flex flex-col items-end gap-1">{judges}</div>}
+      </div>
+      <div className="mt-1.5">{children}</div>
+    </div>
+  );
+}
 
-function DimensionRow({
+const VERDICTS: {
+  v: Verdict;
+  icon: React.ReactNode;
+  tone: string;
+  title: string;
+}[] = [
+  {
+    v: "ok",
+    icon: <Check className="h-3.5 w-3.5" />,
+    tone: "border-primary/50 bg-primary/10 text-primary",
+    title: "Correct",
+  },
+  {
+    v: "edit",
+    icon: <Pencil className="h-3.5 w-3.5" />,
+    tone: "border-amber-500/50 bg-amber-500/10 text-amber-700 dark:text-amber-400",
+    title: "Needs an edit — propose the fix",
+  },
+  {
+    v: "wrong",
+    icon: <X className="h-3.5 w-3.5" />,
+    tone: "border-rose-500/50 bg-rose-500/10 text-rose-700 dark:text-rose-400",
+    title: "Wrong",
+  },
+  {
+    v: "missing",
+    icon: <RefreshCw className="h-3.5 w-3.5" />,
+    tone: "border-violet-500/50 bg-violet-500/10 text-violet-700 dark:text-violet-400",
+    title: "Missing — flag for another extraction pass",
+  },
+  {
+    v: "na",
+    icon: <Minus className="h-3.5 w-3.5" />,
+    tone: "border-border bg-muted text-muted-foreground",
+    title: "Not applicable",
+  },
+];
+
+function Judge({
   dim,
   row,
   onSet,
 }: {
-  dim: Dimension;
+  dim: string; // canonical dimension for the hint (verbatim|quant|grounding|methods|polarity)
   row?: ReviewRow;
   onSet: (patch: Partial<ReviewRow>) => void;
 }) {
   const verdict = row?.verdict as Verdict | undefined;
-  const showText = verdict === "edit" || verdict === "wrong";
+  const showText = verdict === "edit" || verdict === "wrong" || verdict === "missing";
+  const placeholder =
+    verdict === "edit"
+      ? "Proposed correction…"
+      : verdict === "missing"
+        ? "What's missing? (queued for re-extraction)"
+        : "What's wrong with it?";
   return (
-    <div className="rounded border border-transparent">
-      <div className="flex items-center gap-2">
+    <div className="w-full">
+      <div className="flex items-center justify-end gap-1">
         <span
-          className="min-w-0 flex-1 truncate text-xs font-medium"
-          title={dim.hint}
+          className="mr-0.5 inline-flex items-center gap-1 text-[11px] font-medium capitalize text-foreground"
+          title={HINTS[dim]}
         >
-          {dim.label}
+          {dim}
+          <Info className="h-3 w-3 text-muted-foreground" />
         </span>
-        <div className="flex shrink-0 items-center gap-1">
-          {VERDICTS.map((b) => (
-            <button
-              key={b.v}
-              title={b.title}
-              onClick={() => onSet({ verdict: verdict === b.v ? null : b.v })}
-              className={cn(
-                "inline-flex h-6 w-6 items-center justify-center rounded border transition-colors",
-                verdict === b.v
-                  ? b.tone
-                  : "border-border text-muted-foreground hover:bg-accent/50",
-              )}
-            >
-              {b.icon}
-            </button>
-          ))}
-        </div>
+        {VERDICTS.map((b) => (
+          <button
+            key={b.v}
+            title={b.title}
+            onClick={() => onSet({ verdict: verdict === b.v ? null : b.v })}
+            className={cn(
+              "inline-flex h-6 w-6 items-center justify-center rounded border transition-colors",
+              verdict === b.v
+                ? b.tone
+                : "border-border text-muted-foreground hover:bg-accent/50",
+            )}
+          >
+            {b.icon}
+          </button>
+        ))}
       </div>
       {showText && (
         <textarea
           defaultValue={row?.proposed ?? ""}
           onBlur={(e) => onSet({ proposed: e.target.value })}
           rows={2}
-          placeholder={
-            verdict === "edit"
-              ? "Proposed correction…"
-              : "What's wrong with it?"
-          }
+          placeholder={placeholder}
           className="mt-1 w-full resize-y rounded border border-border bg-background px-2 py-1 text-xs"
         />
       )}
@@ -458,15 +511,11 @@ function NoteRow({
   onSet: (patch: Partial<ReviewRow>) => void;
 }) {
   const [open, setOpen] = useState(!!row?.note);
-  const ref = useRef<HTMLTextAreaElement>(null);
   if (!open) {
     return (
       <button
-        onClick={() => {
-          setOpen(true);
-          setTimeout(() => ref.current?.focus(), 0);
-        }}
-        className="text-[11px] text-muted-foreground hover:text-foreground"
+        onClick={() => setOpen(true)}
+        className="mt-3 text-[11px] text-muted-foreground hover:text-foreground"
       >
         + note on this EVD
       </button>
@@ -474,12 +523,12 @@ function NoteRow({
   }
   return (
     <textarea
-      ref={ref}
       defaultValue={row?.note ?? ""}
       onBlur={(e) => onSet({ note: e.target.value })}
       rows={2}
+      autoFocus
       placeholder="Anything else about this EVD…"
-      className="mt-1 w-full resize-y rounded border border-border bg-background px-2 py-1 text-xs"
+      className="mt-3 w-full resize-y rounded border border-border bg-background px-2 py-1 text-xs"
     />
   );
 }

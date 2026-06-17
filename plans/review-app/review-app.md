@@ -285,3 +285,44 @@ Reviewer judgments are attributable. For any published benchmark, anonymize/aggr
 - Study-design field: add to source frontmatter so the methods/reporting-guideline checks auto-load?
 - Abstract segmentation quality on real abstracts — does the result-sentence heuristic hold up?
 - 1- vs 2-reviewer bar per checklist item type for `Expert-verified`.
+
+## testing notes
+
+### accuracy pass [[2026-06-17]]
+
+![[CleanShot 2026-06-17 at 17.35.37.png]]
+confirmed pdf displays
+
+tested export, seems to have appropriate data in it: 
+`'/Users/joelchan/Projects/language-and-health-open-synthesis/plans/review-app/accuracy-Allan_2022_impact_English-Joel Chan.json'`
+
+to fix:
+- what to do if an element is missing? send back for another ai extract pass? seems useful to have that as a flag actually, separate from correct, edit, or wrong
+- claim link and polarity should be a per-edge check. 
+- we should include in-line tooltips to remind of the criteria, and a top-line link to open up the review criteria again
+- table and quote anchors did not jump to the approrpiate spot int he pdf
+- we should show the whole contents of the evd node and anchor the judgments to each section
+
+### resolved [[2026-06-17]] (accuracy pass v2)
+
+- **Missing → re-extract flag.** Added a 5th verdict on every judgment: `✓ correct /
+  ✎ edit / ✗ wrong / ⟳ missing / — n/a`. "Missing" (violet) means the element is
+  absent and the node should be re-extracted; its note is the re-extraction prompt.
+  Counts toward the "flagged" tally, distinct from edit/wrong.
+- **Per-edge polarity.** The claim-link/polarity check is now one judgment *per linked
+  claim* (`dimension = polarity:<claimId>`), each next to its claim row + polarity
+  badge. EVDs with no claim get a single "should it be linked?" row.
+- **Inline tooltips + criteria link.** Each judgment label carries an ⓘ tooltip with
+  its criterion; a "Review criteria" link in the header opens `/review/guide`.
+- **PDF jump fixed.** Root cause: quotes cite the *journal* page (p. 7387) but `#page=`
+  needs the *physical* page. `utils/build_accuracy_pages.py` maps journal→physical via
+  PDF page labels (firstpagenum), falling back to quote `search_for`; the loader
+  overrides `evd.page` so the jump lands. (Native `<embed>` honors `#page=` in Chrome;
+  Safari may not — the real fix is the parked pdf.js pane.)
+- **Full node, section-anchored judgments.** The card now renders the whole EVD —
+  Evidence & quote, Grounding, Claim links, Methods (What/How/Who), Synthesis note,
+  Caveats — with each judgment placed beside the section it scores (verbatim + quant on
+  the quote, grounding on the figure, polarity per claim, methods on What/How/Who).
+
+still open: native PDF jump unreliable in Safari (→ pdf.js); region-overlay highlight +
+drag-recrop; maintainer "review the reviews" queue.

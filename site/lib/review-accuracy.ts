@@ -15,6 +15,22 @@ export const ACCURACY_BATCH = [
 ];
 
 const PDFS = path.resolve(process.cwd(), "..", "data", "pdfs");
+// EVD id → physical PDF page, precomputed by utils/build_accuracy_pages.py.
+const PAGES_FILE = path.resolve(
+  process.cwd(),
+  "..",
+  "data",
+  "review",
+  "accuracy_pages.json",
+);
+
+async function physicalPages(): Promise<Record<string, number>> {
+  try {
+    return JSON.parse(await fs.readFile(PAGES_FILE, "utf-8"));
+  } catch {
+    return {};
+  }
+}
 
 export interface LinkedClaim {
   id: string;
@@ -33,9 +49,10 @@ export interface AccuracyEvd {
   how: string;
   who: string;
   claims: LinkedClaim[]; // the CLM(s) this EVD supports/opposes
+  otherNotes: string; // ## Other Notes (synthesis prose)
   caveats: string[];
   tags: string[];
-  page: number | null; // cited page from the first quote, for the PDF jump
+  page: number | null; // PHYSICAL pdf page for the jump (mapped from the journal page)
 }
 
 export interface AccuracyPaper {
@@ -143,6 +160,7 @@ export function buildEvd(
   const desc = secs["description"] ?? "";
   const methods = secs["methods context"] ?? "";
   const cav = secs["caveats"] ?? "";
+  const other = secs["other notes"] ?? "";
 
   const claims: LinkedClaim[] = node.outgoing
     .filter((e) => e.edge === "supports" || e.edge === "opposes")
@@ -168,6 +186,7 @@ export function buildEvd(
     how: subSection(methods, "How\\??"),
     who: subSection(methods, "Who\\??"),
     claims,
+    otherNotes: firstProse(other) ? other.replace(/\n{3,}/g, "\n\n").trim() : "",
     caveats: caveatList(cav),
     tags: [],
     page: qs.map(pageFromQuote).find((p) => p !== null) ?? null,
@@ -217,8 +236,10 @@ export async function accuracyPaper(
   const evdNodes = byCk.get(citekey) ?? [];
   if (!src && evdNodes.length === 0) return null;
 
+  const pages = await physicalPages();
   const evds = evdNodes
     .map((n) => buildEvd(n, g.nodes))
+    .map((e) => ({ ...e, page: pages[e.id] ?? e.page }))
     .sort((a, b) => a.id.localeCompare(b.id));
 
   return {

@@ -14,6 +14,47 @@ approve AI extractions from a paper, with the PDF served as grounding context an
 - **First slice to build — the completeness pass** (riskiest idea; cheapest to falsify). v1 anchors =
   **abstract result-sentences + tables/figures**.
 
+## Build status (2026-06-16)
+
+Both passes are built and running on `review-app-prototype`. Routes:
+`/review` (hub) · `/review/[citekey]` (completeness) · `/review/accuracy` +
+`/review/accuracy/[citekey]` (accuracy) · `/review/guide` (reviewer onboarding).
+
+**Completeness pass (done).** Anchors precomputed by `utils/build_review_anchors.py`
+→ `data/review/` (gitignored). Objects enumerated from **PDF caption text** (not the
+image manifest, which misses text-rendered tables); abstracts restricted to
+**Results + Conclusions** for structured abstracts. Table/figure cards: multi-map to
+≥1 EVD (checkboxes + inline EVD preview), add brand-new EVDs, flag a gap, or mark
+"nothing to capture". Abstract cards keep covered / promote / not-a-result.
+
+**Accuracy pass (done — for tomorrow's pilot).** Reviews existing EVDs against the
+PDF. Data reused from the exported `graph/` via `site/lib/review-accuracy.ts`
+(`buildEvd` parses Description/quotes/grounding/Methods What·How·Who/caveats and
+resolves the linked CLM + polarity from edges). UI: `accuracy-pane.tsx` — PDF left,
+per-EVD checklist right. Checklist = **core-4 + methods** (verbatim · grounding ·
+claim-link/polarity · quant · methods), each `✓ correct / ✎ edit / ✗ wrong / — n/a`
++ per-EVD note. Batch = `ACCURACY_BATCH` (Allan + Karliner pilot).
+
+**Accounts (minimal, real).** Identity = **preset roster, pick-your-name** (no
+passwords) — `reviewers` table; judgments attributed via `reviewer_id`/`reviewer_name`.
+This *supersedes* the original "no auth, identity typed" prototype scope below, because
+tomorrow's test needs per-person attribution and central collection.
+
+**Backend.** Supabase (`supabase/schema.sql` + `supabase/README.md` setup). The
+client (`site/lib/supabase.ts`, `accuracy-store.ts`) **degrades to localStorage** when
+env vars are absent, so the UX is testable before Supabase is wired. Each judgment is
+one upsert row keyed `(reviewer_id, node_id, dimension)`.
+
+**Tests.** `site` Vitest (`pnpm test`): `accuracy-store` (localStorage roundtrip +
+scoping + Supabase upsert payload/conflict-key), `review-accuracy` (`buildEvd` parsing
++ polarity), `accuracy-pane` (identity gate → verdict click persists, attributed).
+Python `pytest utils/test_build_review_anchors.py` (abstract segmentation + caption
+regex). All green (13 JS + 7 py).
+
+**Not yet (next):** pdf.js region-overlay highlighting + drag-to-recrop (still native
+`<embed>`); the maintainer "review the reviews" queue; magic-link auth; the
+instrumentation/benchmark freeze join.
+
 ## Architecture: capture light, credit heavy
 
 Git is the wrong layer for *capture* and the right layer for *credit*. Decouple them:

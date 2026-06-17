@@ -27,6 +27,22 @@ export default async function ReviewIndexPage() {
         Recognition, not recall.
       </p>
 
+      <div className="mt-6 flex flex-wrap gap-3">
+        <Link
+          href="/review/accuracy"
+          className="rounded-lg border border-border px-4 py-2 text-sm hover:bg-accent/50"
+        >
+          → Accuracy pass{" "}
+          <span className="text-muted-foreground">(verify each EVD)</span>
+        </Link>
+        <Link
+          href="/review/guide"
+          className="rounded-lg border border-border px-4 py-2 text-sm hover:bg-accent/50"
+        >
+          Reviewer guide
+        </Link>
+      </div>
+
       {papers.length === 0 ? (
         <p className="mt-10 rounded-lg border border-border bg-muted/40 p-5 text-sm text-muted-foreground">
           No review data found. Generate it locally:{" "}

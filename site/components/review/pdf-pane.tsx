@@ -11,7 +11,8 @@ import "react-pdf/dist/Page/AnnotationLayer.css";
 
 // Self-hosted worker (copied into public/ by scripts/copy-pdf-worker.mjs on
 // dev/build) — no CDN dependency, so it works on locked-down networks + offline.
-pdfjs.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
+// Version-busted so a stale cached worker can't mismatch react-pdf's API version.
+pdfjs.GlobalWorkerOptions.workerSrc = `/pdf.worker.min.mjs?v=${pdfjs.version}`;
 
 function escapeRegExp(s: string) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");

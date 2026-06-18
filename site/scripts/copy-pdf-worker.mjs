@@ -9,8 +9,15 @@ import path from "node:path";
 const require = createRequire(import.meta.url);
 
 async function main() {
-  const pkg = path.dirname(require.resolve("pdfjs-dist/package.json"));
+  // Resolve pdfjs-dist *as react-pdf sees it* — react-pdf pins a specific version
+  // and the worker MUST match its API version, or the PDF fails to load.
+  const reactPdfDir = path.dirname(require.resolve("react-pdf/package.json"));
+  const pkg = path.dirname(
+    require.resolve("pdfjs-dist/package.json", { paths: [reactPdfDir] }),
+  );
+  const { version } = require(path.join(pkg, "package.json"));
   const src = path.join(pkg, "build", "pdf.worker.min.mjs");
+  console.log(`[pdf-worker] pdfjs version ${version}`);
   const destDir = path.resolve(process.cwd(), "public");
   const dest = path.join(destDir, "pdf.worker.min.mjs");
   await mkdir(destDir, { recursive: true });

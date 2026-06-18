@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 
-import { buildEvd } from "@/lib/review-accuracy";
+import { buildEvd, isTemplateStub } from "@/lib/review-accuracy";
 import type { GraphNode } from "@/lib/types";
 
 // A representative EVD body (trimmed from graph/evidence/E-0061.md).
@@ -121,5 +121,18 @@ describe("buildEvd · parses an EVD body for review", () => {
 
   it("does not treat derivedFrom as a claim link", () => {
     expect(evd.claims.find((c) => c.id === "S-0004")).toBeUndefined();
+  });
+});
+
+describe("isTemplateStub · excludes unfilled EVDs", () => {
+  it("flags the template placeholder body", () => {
+    expect(
+      isTemplateStub(
+        "## Description\n[!Screenshots of key figure/table ...]\n## Methods Context",
+      ),
+    ).toBe(true);
+  });
+  it("passes a real filled EVD", () => {
+    expect(isTemplateStub(BODY)).toBe(false);
   });
 });

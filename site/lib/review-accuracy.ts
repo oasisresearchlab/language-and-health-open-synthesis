@@ -263,6 +263,15 @@ export function buildEvd(
   };
 }
 
+// Some early EVD files are unfilled template stubs (e.g. E-0001..E-0007) — exclude
+// them from review so reviewers never see placeholder boilerplate.
+export function isTemplateStub(body: string): boolean {
+  return (
+    body.includes("Screenshots of key figure/table") ||
+    body.includes("observable measures/data** were collected")
+  );
+}
+
 function citekeyOf(node: GraphNode, nodes: Map<string, GraphNode>): string | null {
   const src = node.outgoing.find((e) => e.edge === "derivedFrom");
   if (!src) return null;
@@ -273,6 +282,7 @@ async function evdsByCitekey(): Promise<Map<string, GraphNode[]>> {
   const g = await loadGraph();
   const map = new Map<string, GraphNode[]>();
   for (const node of g.byType.evidence) {
+    if (isTemplateStub(node.body)) continue; // skip unfilled template stubs
     const ck = citekeyOf(node, g.nodes);
     if (!ck) continue;
     (map.get(ck) ?? map.set(ck, []).get(ck)!).push(node);

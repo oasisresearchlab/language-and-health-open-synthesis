@@ -4,11 +4,14 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import { Search, ChevronUp, ChevronDown, X } from "lucide-react";
 
+import type { Rect } from "@/lib/review-accuracy";
+
 import "react-pdf/dist/Page/TextLayer.css";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 
-// Worker must match react-pdf's bundled pdfjs version exactly.
-pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+// Self-hosted worker (copied into public/ by scripts/copy-pdf-worker.mjs on
+// dev/build) — no CDN dependency, so it works on locked-down networks + offline.
+pdfjs.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
 
 function escapeRegExp(s: string) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -20,11 +23,13 @@ function escapeRegExp(s: string) {
 export function PdfPane({
   citekey,
   page,
-  query,
+  search,
+  highlight,
 }: {
   citekey: string;
   page?: number;
-  query?: string;
+  search?: { q: string; n: number }; // manual find box (text layer)
+  highlight?: { page: number; rects: Rect[]; n: number }; // exact bbox overlay
 }) {
   const file = useMemo(
     () => `/api/pdf/${encodeURIComponent(citekey)}`,
@@ -40,6 +45,15 @@ export function PdfPane({
   const containerRef = useRef<HTMLDivElement>(null);
   const pageRefs = useRef<(HTMLDivElement | null)[]>([]);
   const pendingScroll = useRef(false);
+  const hlRef = useRef<HTMLDivElement>(null);
+
+  // exact-region overlay: scroll the first rect into view when an anchor fires
+  useEffect(() => {
+    if (highlight) {
+      hlRef.current?.scrollIntoView({ block: "center", behavior: "smooth" });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [highlight?.n, numPages]);
 
   const getMarks = () =>
     Array.from(
@@ -57,13 +71,11 @@ export function PdfPane({
     }
   };
 
-  // pre-fill find when the active EVD changes (strip leading quote/citation noise)
+  // run a search when an anchor button is clicked (nonce re-fires identical queries)
   useEffect(() => {
-    if (query) {
-      const clean = query.replace(/^[">\s]+/, "").replace(/\s+/g, " ");
-      setFind(clean.slice(0, 50));
-    }
-  }, [query]);
+    if (search?.q) setFind(search.q);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [search?.n]);
 
   // size pages to the container
   useEffect(() => {
@@ -189,7 +201,7 @@ export function PdfPane({
               ref={(el) => {
                 pageRefs.current[i] = el;
               }}
-              className="mx-auto mb-3 w-fit shadow-sm"
+              className="relative mx-auto mb-3 w-fit shadow-sm"
             >
               <Page
                 pageNumber={i + 1}
@@ -198,6 +210,20 @@ export function PdfPane({
                 onRenderTextLayerSuccess={onTextRendered}
                 renderAnnotationLayer={false}
               />
+              {highlight?.page === i + 1 &&
+                highlight.rects.map((r, ri) => (
+                  <div
+                    key={ri}
+                    ref={ri === 0 ? hlRef : undefined}
+                    className="pointer-events-none absolute z-10 rounded-[1px] bg-amber-300/40 ring-1 ring-amber-500/70"
+                    style={{
+                      left: `${r.x * 100}%`,
+                      top: `${r.y * 100}%`,
+                      width: `${r.w * 100}%`,
+                      height: `${r.h * 100}%`,
+                    }}
+                  />
+                ))}
             </div>
           ))}
         </Document>

@@ -32,17 +32,67 @@ async function physicalPages(): Promise<Record<string, number>> {
   }
 }
 
+// EVD id → { finding|what|how|who → (QuoteRegion|null)[] }, from build_quote_regions.py
+type RegionMap = Record<
+  string,
+  Record<string, (QuoteRegion | null)[]>
+>;
+const REGIONS_FILE = path.resolve(
+  process.cwd(),
+  "..",
+  "data",
+  "review",
+  "quote_regions.json",
+);
+
+async function quoteRegions(): Promise<RegionMap> {
+  try {
+    return JSON.parse(await fs.readFile(REGIONS_FILE, "utf-8"));
+  } catch {
+    return {};
+  }
+}
+
+// attach precomputed regions to an EVD's quotes (by role + index)
+function withRegions(evd: AccuracyEvd, roles?: Record<string, (QuoteRegion | null)[]>): AccuracyEvd {
+  if (!roles) return evd;
+  const zip = (qs: Quote[], role: string): Quote[] =>
+    qs.map((q, i) => ({ ...q, region: roles[role]?.[i] ?? null }));
+  return {
+    ...evd,
+    imageRegion: roles["figure"]?.[0] ?? evd.imageRegion,
+    quotes: zip(evd.quotes, "finding"),
+    methods: evd.methods.map((p) => ({ ...p, quotes: zip(p.quotes, p.key) })),
+  };
+}
+
 export interface LinkedClaim {
   id: string;
   title: string;
   polarity: "supports" | "opposes";
 }
 
+// Exact PDF location of a quote, precomputed by utils/build_quote_regions.py.
+export interface Rect {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+} // normalized 0..1
+export interface QuoteRegion {
+  page: number; // physical 1-based
+  rects: Rect[];
+}
+export interface Quote {
+  text: string;
+  region: QuoteRegion | null; // null if PyMuPDF couldn't locate it
+}
+
 export interface MethodsPart {
   key: "what" | "how" | "who";
   label: string;
   summary: string;
-  quotes: string[]; // the verbatim quote(s) grounding this assertion
+  quotes: Quote[]; // the verbatim quote(s) grounding this assertion
 }
 
 export interface AccuracyEvd {
@@ -51,7 +101,8 @@ export interface AccuracyEvd {
   shortLabel?: string;
   description: string; // prose (image + quotes stripped out)
   image: string | null; // grounding figure/table crop, /attachments/...
-  quotes: string[]; // verbatim blockquotes from the Description
+  imageRegion: QuoteRegion | null; // exact PDF location of the figure/table caption
+  quotes: Quote[]; // verbatim blockquotes from the Description
   methods: MethodsPart[]; // What / How / Who, each with its grounding quote(s)
   claims: LinkedClaim[]; // the CLM(s) this EVD supports/opposes
   otherNotes: string; // ## Other Notes (synthesis prose)
@@ -110,7 +161,7 @@ function methodsParts(methods: string): MethodsPart[] {
     if (!m) continue;
     const block = m[1];
     const summary = firstProse(block);
-    const qs = quotes(block);
+    const qs = quotes(block).map((t) => ({ text: t, region: null }));
     if (summary || qs.length) parts.push({ key, label, summary, quotes: qs });
   }
   return parts;
@@ -193,7 +244,7 @@ export function buildEvd(
       };
     });
 
-  const qs = quotes(desc);
+  const qs = quotes(desc).map((t) => ({ text: t, region: null }));
 
   return {
     id: node.id,
@@ -201,13 +252,14 @@ export function buildEvd(
     shortLabel: node.shortLabel,
     description: descriptionProse(desc),
     image: firstImage(desc),
+    imageRegion: null, // attached later, in accuracyPaper
     quotes: qs,
     methods: methodsParts(methods),
     claims,
     otherNotes: firstProse(other) ? other.replace(/\n{3,}/g, "\n\n").trim() : "",
     caveats: caveatList(cav),
     tags: [],
-    page: qs.map(pageFromQuote).find((p) => p !== null) ?? null,
+    page: qs.map((q) => pageFromQuote(q.text)).find((p) => p !== null) ?? null,
   };
 }
 
@@ -254,10 +306,11 @@ export async function accuracyPaper(
   const evdNodes = byCk.get(citekey) ?? [];
   if (!src && evdNodes.length === 0) return null;
 
-  const pages = await physicalPages();
+  const [pages, regions] = await Promise.all([physicalPages(), quoteRegions()]);
   const evds = evdNodes
     .map((n) => buildEvd(n, g.nodes))
     .map((e) => ({ ...e, page: pages[e.id] ?? e.page }))
+    .map((e) => withRegions(e, regions[e.id]))
     .sort((a, b) => a.id.localeCompare(b.id));
 
   return {

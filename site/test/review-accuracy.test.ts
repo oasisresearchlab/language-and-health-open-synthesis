@@ -81,7 +81,8 @@ describe("buildEvd · parses an EVD body for review", () => {
 
   it("pulls the verbatim quote out of the Description (image/prose stripped)", () => {
     expect(evd.quotes.length).toBeGreaterThanOrEqual(1);
-    expect(evd.quotes[0]).toContain("no significant difference in readmission");
+    expect(evd.quotes[0].text).toContain("no significant difference in readmission");
+    expect(evd.quotes[0].region).toBeNull(); // regions attached later, in accuracyPaper
     expect(evd.description).not.toContain("![");
     expect(evd.description).not.toContain(">");
   });
@@ -96,10 +97,10 @@ describe("buildEvd · parses an EVD body for review", () => {
     const what = evd.methods.find((m) => m.key === "what")!;
     expect(what.summary).toContain("all-cause hospital readmission");
     expect(what.quotes.length).toBeGreaterThanOrEqual(1);
-    expect(what.quotes[0]).toContain("Outcomes of interest");
+    expect(what.quotes[0].text).toContain("Outcomes of interest");
     const how = evd.methods.find((m) => m.key === "how")!;
     expect(how.summary).toContain("logistic regression");
-    expect(how.quotes[0]).toContain("logistic regression");
+    expect(how.quotes[0].text).toContain("logistic regression");
     const who = evd.methods.find((m) => m.key === "who")!;
     expect(who.summary).toContain("1662 patients");
   });

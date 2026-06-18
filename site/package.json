@@ -5,12 +5,13 @@
   "scripts": {
     "data:graph": "node scripts/build-graph-data.mjs",
     "data:pagefind": "node scripts/build-pagefind-index.mjs",
-    "dev": "pnpm data:graph && next dev",
-    "build": "pnpm data:graph && pnpm data:pagefind && next build",
+    "dev": "pnpm data:graph && pnpm pdf:worker && next dev",
+    "build": "pnpm data:graph && pnpm data:pagefind && pnpm pdf:worker && next build",
     "preview": "next start",
     "lint": "eslint",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "pdf:worker": "node scripts/copy-pdf-worker.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.4.1",

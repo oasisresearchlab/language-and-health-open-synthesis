@@ -8,13 +8,19 @@ import {
   Minus,
   RefreshCw,
   Info,
-  FileText,
+  Crosshair,
   Download,
   ArrowUpRight,
   BookOpen,
 } from "lucide-react";
 
-import type { AccuracyPaper, AccuracyEvd } from "@/lib/review-accuracy";
+import type {
+  AccuracyPaper,
+  AccuracyEvd,
+  Quote,
+  QuoteRegion,
+  Rect,
+} from "@/lib/review-accuracy";
 import {
   loadReviews,
   saveReview,
@@ -102,17 +108,51 @@ function canonDim(dim: string): string {
   return dim;
 }
 
+// A single, distinctive token to search for — long quotes can't match across the
+// pdf.js text layer's per-span boundaries, but one number/word reliably can.
+export function searchSnippet(raw: string): string {
+  const clean = raw.replace(/^[">\s]+/, "").replace(/\s+/g, " ").trim();
+  const tokens = clean.match(/[A-Za-z0-9][\w.%-]*[A-Za-z0-9]|[A-Za-z0-9]/g) ?? [];
+  const num =
+    tokens.find((t) => /\d\.\d/.test(t)) || // decimals: 2.26, 0.94
+    tokens.find((t) => /^\d{3,}$/.test(t)) || // 1662, 7386
+    tokens.find((t) => /\d/.test(t)); // 30-day, 23%
+  if (num) return num.replace(/[.,;:]+$/, "");
+  const words = tokens.filter((t) => /^[A-Za-z]/.test(t) && t.length > 5);
+  return words.sort((a, b) => b.length - a.length)[0] ?? clean.slice(0, 24);
+}
+
+// "Table 2" / "Figure 1" from a grounding crop filename, to locate its caption.
+export function figureLabel(image: string | null): string | null {
+  const m = image?.match(/-(table|fig)(\d+)\.png$/i);
+  if (!m) return null;
+  return `${m[1].toLowerCase() === "table" ? "Table" : "Fig"} ${m[2]}`;
+}
+
 export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
   const { reviewer, roster, choose, ready } = useReviewer();
   const [reviews, setReviews] = useState<ReviewMap>({});
   const [loaded, setLoaded] = useState(false);
   const [page, setPage] = useState(paper.evds.find((e) => e.page)?.page ?? 1);
-  const [query, setQuery] = useState("");
+  const [search, setSearch] = useState({ q: "", n: 0 });
+  const [highlight, setHighlight] = useState<{
+    page: number;
+    rects: Rect[];
+    n: number;
+  } | null>(null);
 
-  const jumpTo = (evd: AccuracyEvd) => {
-    if (evd.page) setPage(evd.page);
-    setQuery(evd.quotes[0] ?? "");
+  const runSearch = (q: string) => {
+    if (q.trim().length >= 2) setSearch((s) => ({ q: q.trim(), n: s.n + 1 }));
   };
+  const locateRegion = (region: QuoteRegion) => {
+    setPage(region.page);
+    setHighlight((h) => ({ page: region.page, rects: region.rects, n: (h?.n ?? 0) + 1 }));
+  };
+  // a grounded quote/figure: draw its exact precomputed region; else fall back to search
+  const locateQuote = (q: Quote) =>
+    q.region ? locateRegion(q.region) : runSearch(searchSnippet(q.text));
+  const locateFigure = (evd: AccuracyEvd, label: string) =>
+    evd.imageRegion ? locateRegion(evd.imageRegion) : runSearch(label);
 
   useEffect(() => {
     if (!reviewer) return;
@@ -177,7 +217,12 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
       {/* Left — PDF (pdf.js: in-doc search + highlight) */}
       <div className="hidden min-h-0 flex-col overflow-hidden border-r border-border lg:flex">
         {paper.hasPdf ? (
-          <PdfPane citekey={paper.citekey} page={page} query={query} />
+          <PdfPane
+            citekey={paper.citekey}
+            page={page}
+            search={search}
+            highlight={highlight ?? undefined}
+          />
         ) : (
           <div className="flex h-full items-center justify-center p-8 text-center text-sm text-muted-foreground">
             PDF not available locally for {paper.citekey}.
@@ -234,7 +279,8 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
                   evd={evd}
                   index={i + 1}
                   reviews={reviews}
-                  onJump={evd.page ? () => jumpTo(evd) : undefined}
+                  onLocateQuote={locateQuote}
+                  onLocateFigure={(label) => locateFigure(evd, label)}
                   onSet={(dim, patch) => setCell(evd.id, dim, patch)}
                 />
               ))}
@@ -265,13 +311,15 @@ function EvdCard({
   evd,
   index,
   reviews,
-  onJump,
+  onLocateQuote,
+  onLocateFigure,
   onSet,
 }: {
   evd: AccuracyEvd;
   index: number;
   reviews: ReviewMap;
-  onJump?: () => void;
+  onLocateQuote: (q: Quote) => void;
+  onLocateFigure: (label: string) => void;
   onSet: (dim: string, patch: Partial<ReviewRow>) => void;
 }) {
   const allDone = requiredDims(evd).every((d) => reviews[k(evd.id, d)]?.verdict);
@@ -282,6 +330,7 @@ function EvdCard({
       onSet={(patch) => onSet(dim, patch)}
     />
   );
+  const fig = figureLabel(evd.image);
 
   return (
     <li
@@ -298,20 +347,14 @@ function EvdCard({
         <p className="min-w-0 flex-1 text-sm font-medium leading-snug">
           {evd.title}
         </p>
-        {onJump && (
-          <Tip content="Jump the PDF to this page">
-            <button
-              onClick={onJump}
-              aria-label={`Jump to page ${evd.page}`}
-              className="inline-flex shrink-0 items-center gap-1 rounded px-1.5 py-1 font-mono text-[11px] text-muted-foreground hover:text-foreground"
-            >
-              <FileText className="h-3 w-3" /> p{evd.page}
-            </button>
-          </Tip>
+        {evd.page && (
+          <span className="mt-0.5 shrink-0 font-mono text-[11px] text-muted-foreground">
+            p{evd.page}
+          </span>
         )}
       </div>
 
-      {/* Evidence & quote — judged right under the grounding quote */}
+      {/* Evidence & quote — each quote has its own locate button + judged here */}
       <Section title="Evidence & quote">
         {evd.description && (
           <p className="text-xs leading-relaxed text-muted-foreground">
@@ -320,16 +363,12 @@ function EvdCard({
         )}
         {evd.quotes.length ? (
           evd.quotes.map((q, qi) => (
-            <blockquote
-              key={qi}
-              className="mt-1.5 border-l-2 border-border pl-2.5 text-xs italic leading-relaxed text-muted-foreground"
-            >
-              {q}
-            </blockquote>
+            <QuoteRow key={qi} quote={q} onLocate={() => onLocateQuote(q)} />
           ))
         ) : (
           <p className="mt-1 text-[11px] italic text-amber-600 dark:text-amber-400">
-            No grounding quote — flag &ldquo;missing&rdquo;.
+            No grounding quote — search the PDF to suggest one, or flag
+            &ldquo;missing&rdquo;.
           </p>
         )}
         <JudgeBar>
@@ -338,15 +377,23 @@ function EvdCard({
         </JudgeBar>
       </Section>
 
-      {/* Grounding figure/table */}
+      {/* Grounding figure/table — locate its caption in the PDF */}
       <Section title="Grounding">
         {evd.image ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={evd.image}
-            alt=""
-            className="max-h-44 w-full rounded border border-border object-contain"
-          />
+          <div className="flex items-start gap-1.5">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={evd.image}
+              alt=""
+              className="max-h-44 min-w-0 flex-1 rounded border border-border object-contain"
+            />
+            {fig && (
+              <LocateBtn
+                onClick={() => onLocateFigure(fig)}
+                exact={evd.imageRegion !== null}
+              />
+            )}
+          </div>
         ) : (
           <p className="text-xs italic text-muted-foreground">
             No figure/table embedded.
@@ -403,12 +450,7 @@ function EvdCard({
                 )}
                 {p.quotes.length ? (
                   p.quotes.map((q, qi) => (
-                    <blockquote
-                      key={qi}
-                      className="mt-1 border-l-2 border-border pl-2.5 text-xs italic leading-relaxed text-muted-foreground"
-                    >
-                      {q}
-                    </blockquote>
+                    <QuoteRow key={qi} quote={q} onLocate={() => onLocateQuote(q)} />
                   ))
                 ) : (
                   <p className="mt-0.5 text-[11px] italic text-amber-600 dark:text-amber-400">
@@ -466,6 +508,46 @@ function Section({
         {title}
       </h4>
       <div className="mt-1.5">{children}</div>
+    </div>
+  );
+}
+
+/** A small "find this in the PDF" button. `exact` = we have precomputed coords. */
+function LocateBtn({
+  onClick,
+  exact = false,
+}: {
+  onClick: () => void;
+  exact?: boolean;
+}) {
+  return (
+    <Tip
+      content={
+        exact ? "Highlight this exact passage in the PDF" : "Find this in the PDF"
+      }
+    >
+      <button
+        onClick={onClick}
+        aria-label="Find in PDF"
+        className={cn(
+          "mt-0.5 shrink-0 rounded p-0.5 hover:bg-accent/50 hover:text-foreground",
+          exact ? "text-primary" : "text-muted-foreground",
+        )}
+      >
+        <Crosshair className="h-3.5 w-3.5" />
+      </button>
+    </Tip>
+  );
+}
+
+/** A verbatim quote with its own locate-in-PDF button (exact region when available). */
+function QuoteRow({ quote, onLocate }: { quote: Quote; onLocate: () => void }) {
+  return (
+    <div className="mt-1.5 flex items-start gap-1.5">
+      <blockquote className="min-w-0 flex-1 border-l-2 border-border pl-2.5 text-xs italic leading-relaxed text-muted-foreground">
+        {quote.text}
+      </blockquote>
+      <LocateBtn onClick={onLocate} exact={quote.region !== null} />
     </div>
   );
 }

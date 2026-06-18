@@ -37,19 +37,27 @@ const PAPER: AccuracyPaper = {
       title: "No significant difference in one-year readmission (adjusted OR 0.94)",
       description: "No significant difference in readmission.",
       image: null,
-      quotes: ['"no significant difference in readmission" (Stolarski, 2022, p. 7387)'],
+      imageRegion: null,
+      quotes: [
+        {
+          text: '"no significant difference in readmission" (Stolarski, 2022, p. 7387)',
+          region: { page: 3, rects: [{ x: 0.5, y: 0.66, w: 0.4, h: 0.02 }] },
+        },
+      ],
       methods: [
         {
           key: "what",
           label: "What",
           summary: "readmission within one year",
-          quotes: ['"Outcomes of interest…" (p. 7386)'],
+          quotes: [{ text: '"Outcomes of interest…" (p. 7386)', region: null }],
         },
         {
           key: "how",
           label: "How",
           summary: "logistic regression",
-          quotes: ['"Multivariable logistic regression…" (p. 7386)'],
+          quotes: [
+            { text: '"Multivariable logistic regression…" (p. 7386)', region: null },
+          ],
         },
         { key: "who", label: "Who", summary: "1662 patients", quotes: [] },
       ],

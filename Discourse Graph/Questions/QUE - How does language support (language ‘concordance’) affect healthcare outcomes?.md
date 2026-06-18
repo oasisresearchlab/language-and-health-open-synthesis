@@ -41,7 +41,7 @@ nodeInstanceId: 019e8dd8-2579-7386-a2ef-2cdac939646f
 
 There is fairly **consistent** empirical support for this at present.
 
-For example, [[@Karliner_2017_Convenient_Access]] found that [[EVD - odds of 30-day readmission for the LEP compared with EP group was lower during the intervention period when professional interpreter services via telephone were available, but was roughly equivalent during pre-and post-intervention periods]]
+For example, [[@Karliner_2017_Convenient_Access]] found that [[EVD - Bedside interpreter telephone access lowered LEP 30-day readmission during intervention (OR 0.64) - @Karliner_2017_Convenient_Access]]
 
 Similarly, [[@Lindholm_2012_Professional_language]] found that [[EVD - Patients receiving interpretation at admission and or discharge were less likely to be readmitted within 30 days compared to patients receiving no interpretation]]
 ### [[CLM - Patients with limited english proficiency have shorter hospital stays when interpreting services are used]]
@@ -50,7 +50,7 @@ There is **mixed support** for this at present.
 
 On the one hand, [[@Lindholm_2012_Professional_language]] found that [[EVD - LEP patients who did not receive professional interpretation had increased LOS of between 0.75 and 1.47 days, compared to patients who had an interpreter]]
 
-On the other hand, [[@Karliner_2017_Convenient_Access]] found that [[EVD - There was no significant association between access to professional interpreter services via telephone and length of stay for LEP patients]]
+On the other hand, [[@Karliner_2017_Convenient_Access]] found that [[EVD - Bedside interpreter telephone access had no significant effect on length of stay - @Karliner_2017_Convenient_Access]]
 
 ### [[CLM - Interpreting services increase diagnosis accuracy for patients with limited english proficiency]]
 ### [[CLM - When interpreting is used, patients with limited english proficiency are 40% more likely to adhere to their treatment]]

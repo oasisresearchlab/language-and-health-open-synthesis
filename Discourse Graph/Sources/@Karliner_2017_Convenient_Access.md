@@ -41,9 +41,9 @@ nodeInstanceId: 019e8dd8-2c39-76ca-961c-9d2c40c8cf4a
 ## Possible evidence
 
 - Of 8,077 total discharges, 1,963 were for limited English proficiency (LEP) patients, and 6,114 were for English proficient patients. #evd-candidate
-- [[EVD - odds of 30-day readmission for the LEP compared with EP group was lower during the intervention period when professional interpreter services via telephone were available, but was roughly equivalent during pre-and post-intervention periods]]
-- [[EVD - There was no significant association between access to professional interpreter services via telephone and length of stay for LEP patients]]
+- [[EVD - Bedside interpreter telephone access lowered LEP 30-day readmission during intervention (OR 0.64) - @Karliner_2017_Convenient_Access]]
+- [[EVD - Bedside interpreter telephone access had no significant effect on length of stay - @Karliner_2017_Convenient_Access]]
 - 30-day readmission rates for English proficient patients increased from 16.7% to 19.7% during the same intervention period. #evd-candidate
 - The improved readmission outcomes for LEP patients were not maintained during the postintervention period when interpreter telephones became less accessible. #evd-candidate
 - An estimated 119 readmissions were averted during the intervention period. #evd-candidate
-- [[EVD - The 119 estimated averted readmissions for LEP patients was associated with estimated monthly hospital expenditure savings of 161,404.]]
+- [[EVD - Averted LEP readmissions during intervention yielded estimated $161,404 monthly hospital savings - @Karliner_2017_Convenient_Access]]

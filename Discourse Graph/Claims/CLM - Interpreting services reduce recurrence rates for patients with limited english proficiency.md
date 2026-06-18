@@ -15,7 +15,7 @@ nodeInstanceId: 019e8dd8-2572-778f-995d-9cd223a125a9
 > [!info] EVDs that support this claim (→ EVD—supports→CLM). See also the (redundant) grounded claim [[CLM - Professional interpretation at admission or discharge lowers 30-day readmission for LEP inpatients]] — candidate for merge.
 
 - [[EVD - LEP inpatients with no interpreter on admission or discharge had a higher 30-day readmission rate (24.3% vs 14.9%) - @Lindholm_2012_Professional_language]]
-- [[EVD - odds of 30-day readmission for the LEP compared with EP group was lower during the intervention period when professional interpreter services via telephone were available, but was roughly equivalent during pre-and post-intervention periods]]
+- [[EVD - Bedside interpreter telephone access lowered LEP 30-day readmission during intervention (OR 0.64) - @Karliner_2017_Convenient_Access]]
 
 ![[Evidence.base#forClaim]]
 

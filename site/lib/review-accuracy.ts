@@ -38,6 +38,13 @@ export interface LinkedClaim {
   polarity: "supports" | "opposes";
 }
 
+export interface MethodsPart {
+  key: "what" | "how" | "who";
+  label: string;
+  summary: string;
+  quotes: string[]; // the verbatim quote(s) grounding this assertion
+}
+
 export interface AccuracyEvd {
   id: string; // E-0061
   title: string;
@@ -45,9 +52,7 @@ export interface AccuracyEvd {
   description: string; // prose (image + quotes stripped out)
   image: string | null; // grounding figure/table crop, /attachments/...
   quotes: string[]; // verbatim blockquotes from the Description
-  what: string;
-  how: string;
-  who: string;
+  methods: MethodsPart[]; // What / How / Who, each with its grounding quote(s)
   claims: LinkedClaim[]; // the CLM(s) this EVD supports/opposes
   otherNotes: string; // ## Other Notes (synthesis prose)
   caveats: string[];
@@ -88,12 +93,27 @@ function sections(body: string): Record<string, string> {
   return out;
 }
 
-function subSection(text: string, head: string): string {
-  // pull a "### What?" block out of the Methods Context section
-  const re = new RegExp(`###\\s+${head}\\s*\\n([\\s\\S]*?)(?:\\n###\\s+|$)`, "i");
-  const m = text.match(re);
-  if (!m) return "";
-  return firstProse(m[1]);
+const METHODS_HEADS: { key: MethodsPart["key"]; label: string }[] = [
+  { key: "what", label: "What" },
+  { key: "how", label: "How" },
+  { key: "who", label: "Who" },
+];
+
+function methodsParts(methods: string): MethodsPart[] {
+  const parts: MethodsPart[] = [];
+  for (const { key, label } of METHODS_HEADS) {
+    const re = new RegExp(
+      `###\\s+${label}\\??\\s*\\n([\\s\\S]*?)(?=\\n###\\s+|$)`,
+      "i",
+    );
+    const m = methods.match(re);
+    if (!m) continue;
+    const block = m[1];
+    const summary = firstProse(block);
+    const qs = quotes(block);
+    if (summary || qs.length) parts.push({ key, label, summary, quotes: qs });
+  }
+  return parts;
 }
 
 function firstProse(text: string): string {
@@ -182,9 +202,7 @@ export function buildEvd(
     description: descriptionProse(desc),
     image: firstImage(desc),
     quotes: qs,
-    what: subSection(methods, "What\\??"),
-    how: subSection(methods, "How\\??"),
-    who: subSection(methods, "Who\\??"),
+    methods: methodsParts(methods),
     claims,
     otherNotes: firstProse(other) ? other.replace(/\n{3,}/g, "\n\n").trim() : "",
     caveats: caveatList(cav),

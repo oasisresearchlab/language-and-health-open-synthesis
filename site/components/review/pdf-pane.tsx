@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import { Search, ChevronUp, ChevronDown, X } from "lucide-react";
 
@@ -117,6 +117,10 @@ export function PdfPane({
     focusMark(next);
   };
 
+  // STABLE callback — an inline arrow here re-renders the text layer every parent
+  // render, which loops (flicker) and tears down the <mark>s (false "no match").
+  const onTextRendered = useCallback(() => setRenderTick((t) => t + 1), []);
+
   return (
     <div className="flex min-h-0 flex-col">
       {/* find toolbar */}
@@ -191,7 +195,7 @@ export function PdfPane({
                 pageNumber={i + 1}
                 width={width}
                 customTextRenderer={textRenderer}
-                onRenderTextLayerSuccess={() => setRenderTick((t) => t + 1)}
+                onRenderTextLayerSuccess={onTextRendered}
                 renderAnnotationLayer={false}
               />
             </div>

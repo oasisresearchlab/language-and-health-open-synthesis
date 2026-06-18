@@ -83,8 +83,23 @@ function polarityKeys(evd: AccuracyEvd): string[] {
     ? evd.claims.map((c) => `polarity:${c.id}`)
     : ["polarity:_none"];
 }
+function methodKeys(evd: AccuracyEvd): string[] {
+  return evd.methods.map((p) => `methods:${p.key}`);
+}
 function requiredDims(evd: AccuracyEvd): string[] {
-  return ["verbatim", "quant", "grounding", "methods", ...polarityKeys(evd)];
+  return [
+    "verbatim",
+    "quant",
+    "grounding",
+    ...methodKeys(evd),
+    ...polarityKeys(evd),
+  ];
+}
+
+function canonDim(dim: string): string {
+  if (dim.startsWith("polarity")) return "polarity";
+  if (dim.startsWith("methods")) return "methods";
+  return dim;
 }
 
 export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
@@ -262,7 +277,7 @@ function EvdCard({
   const allDone = requiredDims(evd).every((d) => reviews[k(evd.id, d)]?.verdict);
   const judge = (dim: string) => (
     <Judge
-      dim={dim.startsWith("polarity") ? "polarity" : dim}
+      dim={canonDim(dim)}
       row={reviews[k(evd.id, dim)]}
       onSet={(patch) => onSet(dim, patch)}
     />
@@ -296,33 +311,35 @@ function EvdCard({
         )}
       </div>
 
-      {/* Evidence & quote → verbatim + quant */}
-      <Section
-        title="Evidence & quote"
-        judges={
-          <>
-            {judge("verbatim")}
-            {judge("quant")}
-          </>
-        }
-      >
+      {/* Evidence & quote — judged right under the grounding quote */}
+      <Section title="Evidence & quote">
         {evd.description && (
           <p className="text-xs leading-relaxed text-muted-foreground">
             {evd.description}
           </p>
         )}
-        {evd.quotes.map((q, qi) => (
-          <blockquote
-            key={qi}
-            className="mt-1.5 border-l-2 border-border pl-2.5 text-xs italic leading-relaxed text-muted-foreground"
-          >
-            {q}
-          </blockquote>
-        ))}
+        {evd.quotes.length ? (
+          evd.quotes.map((q, qi) => (
+            <blockquote
+              key={qi}
+              className="mt-1.5 border-l-2 border-border pl-2.5 text-xs italic leading-relaxed text-muted-foreground"
+            >
+              {q}
+            </blockquote>
+          ))
+        ) : (
+          <p className="mt-1 text-[11px] italic text-amber-600 dark:text-amber-400">
+            No grounding quote — flag &ldquo;missing&rdquo;.
+          </p>
+        )}
+        <JudgeBar>
+          {judge("verbatim")}
+          {judge("quant")}
+        </JudgeBar>
       </Section>
 
-      {/* Grounding */}
-      <Section title="Grounding" judges={judge("grounding")}>
+      {/* Grounding figure/table */}
+      <Section title="Grounding">
         {evd.image ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
@@ -335,6 +352,7 @@ function EvdCard({
             No figure/table embedded.
           </p>
         )}
+        <JudgeBar>{judge("grounding")}</JudgeBar>
       </Section>
 
       {/* Claim links — one judgment per edge */}
@@ -369,27 +387,38 @@ function EvdCard({
         )}
       </Section>
 
-      {/* Methods context */}
-      {(evd.what || evd.how || evd.who) && (
-        <Section title="Methods context" judges={judge("methods")}>
-          <dl className="space-y-1.5 text-xs">
-            {(
-              [
-                ["What", evd.what],
-                ["How", evd.how],
-                ["Who", evd.who],
-              ] as const
-            ).map(([h, v]) =>
-              v ? (
-                <div key={h}>
-                  <dt className="font-mono text-[10px] uppercase tracking-wider text-primary">
-                    {h}
-                  </dt>
-                  <dd className="text-muted-foreground">{v}</dd>
-                </div>
-              ) : null,
-            )}
-          </dl>
+      {/* Methods context — each assertion grounded in its own quote + judged */}
+      {evd.methods.length > 0 && (
+        <Section title="Methods context">
+          <ul className="space-y-3">
+            {evd.methods.map((p) => (
+              <li key={p.key}>
+                <p className="font-mono text-[10px] uppercase tracking-wider text-primary">
+                  {p.label}
+                </p>
+                {p.summary && (
+                  <p className="mt-0.5 text-xs text-muted-foreground">
+                    {p.summary}
+                  </p>
+                )}
+                {p.quotes.length ? (
+                  p.quotes.map((q, qi) => (
+                    <blockquote
+                      key={qi}
+                      className="mt-1 border-l-2 border-border pl-2.5 text-xs italic leading-relaxed text-muted-foreground"
+                    >
+                      {q}
+                    </blockquote>
+                  ))
+                ) : (
+                  <p className="mt-0.5 text-[11px] italic text-amber-600 dark:text-amber-400">
+                    No grounding quote for this assertion — flag &ldquo;missing&rdquo;.
+                  </p>
+                )}
+                <JudgeBar>{judge(`methods:${p.key}`)}</JudgeBar>
+              </li>
+            ))}
+          </ul>
         </Section>
       )}
 
@@ -426,22 +455,26 @@ function EvdCard({
 
 function Section({
   title,
-  judges,
   children,
 }: {
   title: string;
-  judges?: React.ReactNode;
   children: React.ReactNode;
 }) {
   return (
     <div className="mt-3 border-t border-border pt-2.5">
-      <div className="flex items-start justify-between gap-3">
-        <h4 className="font-mono text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
-          {title}
-        </h4>
-        {judges && <div className="flex flex-col items-end gap-1">{judges}</div>}
-      </div>
+      <h4 className="font-mono text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+        {title}
+      </h4>
       <div className="mt-1.5">{children}</div>
+    </div>
+  );
+}
+
+/** Right-aligned judgment controls anchored beneath the quote/figure they score. */
+function JudgeBar({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="mt-2 flex flex-col items-end gap-1 border-t border-dashed border-border/60 pt-1.5">
+      {children}
     </div>
   );
 }

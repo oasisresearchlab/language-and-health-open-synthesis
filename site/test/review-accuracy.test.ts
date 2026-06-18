@@ -90,10 +90,18 @@ describe("buildEvd · parses an EVD body for review", () => {
     expect(evd.page).toBe(7387);
   });
 
-  it("parses What / How / Who from Methods Context", () => {
-    expect(evd.what).toContain("all-cause hospital readmission");
-    expect(evd.how).toContain("logistic regression");
-    expect(evd.who).toContain("1662 patients");
+  it("parses What / How / Who from Methods Context, each with its quote", () => {
+    const keys = evd.methods.map((m) => m.key);
+    expect(keys).toEqual(["what", "how", "who"]);
+    const what = evd.methods.find((m) => m.key === "what")!;
+    expect(what.summary).toContain("all-cause hospital readmission");
+    expect(what.quotes.length).toBeGreaterThanOrEqual(1);
+    expect(what.quotes[0]).toContain("Outcomes of interest");
+    const how = evd.methods.find((m) => m.key === "how")!;
+    expect(how.summary).toContain("logistic regression");
+    expect(how.quotes[0]).toContain("logistic regression");
+    const who = evd.methods.find((m) => m.key === "who")!;
+    expect(who.summary).toContain("1662 patients");
   });
 
   it("resolves the linked claim with correct polarity", () => {

@@ -250,6 +250,7 @@ export function QueueDashboard({ meta }: { meta: Record<string, NodeMeta> }) {
           <thead className="bg-muted/40 font-mono uppercase tracking-wider text-muted-foreground">
             <tr>
               <th className="px-3 py-2">Evidence</th>
+              <th className="px-3 py-2">Paper</th>
               <th className="px-3 py-2">Dimension</th>
               <th className="px-3 py-2">Reviewer</th>
               <th className="px-3 py-2">Verdict</th>
@@ -259,13 +260,13 @@ export function QueueDashboard({ meta }: { meta: Record<string, NodeMeta> }) {
           <tbody className="divide-y divide-border">
             {loading ? (
               <tr>
-                <td colSpan={5} className="px-3 py-6 text-center text-muted-foreground">
+                <td colSpan={6} className="px-3 py-6 text-center text-muted-foreground">
                   Loading…
                 </td>
               </tr>
             ) : filtered.length === 0 ? (
               <tr>
-                <td colSpan={5} className="px-3 py-6 text-center text-muted-foreground">
+                <td colSpan={6} className="px-3 py-6 text-center text-muted-foreground">
                   {rows.length === 0 ? "No reviews submitted yet." : "No rows match."}
                 </td>
               </tr>
@@ -287,6 +288,12 @@ export function QueueDashboard({ meta }: { meta: Record<string, NodeMeta> }) {
                       <div className="max-w-xs truncate" title={m?.title}>
                         {m?.title ?? <span className="text-muted-foreground">{r.citekey}</span>}
                       </div>
+                    </td>
+                    <td
+                      className="max-w-[12rem] truncate px-3 py-2 font-mono text-muted-foreground"
+                      title={m?.paperTitle ?? r.citekey}
+                    >
+                      {r.citekey}
                     </td>
                     <td className="px-3 py-2">
                       <span className="inline-flex items-center gap-1">

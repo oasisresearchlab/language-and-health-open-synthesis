@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
-import { Search, ChevronUp, ChevronDown, X } from "lucide-react";
+import { Search, ChevronUp, ChevronDown, X, Download } from "lucide-react";
 
 import type { Rect } from "@/lib/review-accuracy";
 
@@ -175,6 +175,15 @@ export function PdfPane({
             </button>
           </>
         )}
+        <a
+          href={file}
+          download={`${citekey.replace(/^@/, "")}.pdf`}
+          title="Download the source PDF"
+          aria-label="Download PDF"
+          className="ml-1 rounded p-0.5 text-muted-foreground hover:text-foreground"
+        >
+          <Download className="h-3.5 w-3.5" />
+        </a>
       </div>
 
       {/* pages */}

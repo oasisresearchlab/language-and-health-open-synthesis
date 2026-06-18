@@ -38,6 +38,35 @@ export async function fetchRoster(): Promise<Reviewer[]> {
   return data as Reviewer[];
 }
 
+// A full review row, for the maintainer queue.
+export interface QueueRow {
+  id: string;
+  reviewer_id: string;
+  reviewer_name: string | null;
+  citekey: string;
+  node_id: string;
+  dimension: string;
+  verdict: string | null;
+  proposed: string | null;
+  note: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+// All reviews across reviewers/papers (maintainer view). Supabase-only — localStorage
+// is per-browser, so the queue is empty without the central store.
+export async function loadAllReviews(): Promise<QueueRow[]> {
+  if (!supabase) return [];
+  const { data, error } = await supabase
+    .from("accuracy_reviews")
+    .select(
+      "id,reviewer_id,reviewer_name,citekey,node_id,dimension,verdict,proposed,note,created_at,updated_at",
+    )
+    .order("created_at", { ascending: false });
+  if (error || !data) return [];
+  return data as QueueRow[];
+}
+
 const lkey = (reviewerId: string, citekey: string) =>
   `acc:${reviewerId}:${citekey}`;
 

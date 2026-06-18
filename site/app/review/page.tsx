@@ -41,6 +41,13 @@ export default async function ReviewIndexPage() {
         >
           Reviewer guide
         </Link>
+        <Link
+          href="/review/queue"
+          className="rounded-lg border border-border px-4 py-2 text-sm hover:bg-accent/50"
+        >
+          → Review queue{" "}
+          <span className="text-muted-foreground">(maintainer)</span>
+        </Link>
       </div>
 
       {papers.length === 0 ? (

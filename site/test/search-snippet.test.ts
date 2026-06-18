@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 
-import { searchSnippet, figureLabel } from "@/components/review/accuracy-pane";
+import { searchSnippet, figureLabel } from "@/lib/review-search";
 
 describe("searchSnippet · a distinctive, single-span-matchable token", () => {
   it("prefers a decimal statistic from a finding quote", () => {

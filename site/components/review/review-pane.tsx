@@ -11,10 +11,26 @@ import {
   Flag,
   Ban,
   FlaskConical,
+  Crosshair,
 } from "lucide-react";
+import dynamic from "next/dynamic";
 
 import type { ReviewPaper } from "@/lib/review";
+import { searchSnippet, figureLabel } from "@/lib/review-search";
 import { cn } from "@/lib/utils";
+
+// pdf.js touches DOMMatrix at module load → must not render on the server.
+const PdfPane = dynamic(
+  () => import("@/components/review/pdf-pane").then((m) => m.PdfPane),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
+        Loading PDF viewer…
+      </div>
+    ),
+  },
+);
 
 type Verdict = "covered" | "promoted" | "not_a_result";
 
@@ -66,6 +82,18 @@ export function ReviewPane({ paper }: { paper: ReviewPaper }) {
   const [reviews, setReviews] = useState<Reviews>({});
   const [loaded, setLoaded] = useState(false);
   const [page, setPage] = useState(1);
+  const [search, setSearch] = useState({ q: "", n: 0 });
+
+  const runSearch = (q: string) => {
+    if (q.trim().length >= 2) setSearch((s) => ({ q: q.trim(), n: s.n + 1 }));
+  };
+  // an abstract result-sentence: search a distinctive token to find it in the body
+  const locateText = (text: string) => runSearch(searchSnippet(text));
+  // a table/figure: jump to its caption page + search its label ("Table 2")
+  const locateObject = (o: ReviewPaper["objectAnchors"][number]) => {
+    if (o.page) setPage(o.page);
+    runSearch(figureLabel(o.crop) ?? o.label ?? searchSnippet(o.caption ?? ""));
+  };
 
   useEffect(() => {
     try {
@@ -116,8 +144,6 @@ export function ReviewPane({ paper }: { paper: ReviewPaper }) {
     };
   }, [reviews, paper]);
 
-  const pdfSrc = `/api/pdf/${encodeURIComponent(paper.citekey)}#page=${page}&zoom=page-width`;
-
   function exportJson() {
     const out = {
       citekey: paper.citekey,
@@ -159,16 +185,11 @@ export function ReviewPane({ paper }: { paper: ReviewPaper }) {
   }
 
   return (
-    <div className="grid min-h-0 flex-1 grid-cols-1 lg:grid-cols-[1.1fr_1fr]">
-      {/* Left — PDF */}
-      <div className="hidden min-h-0 flex-col border-r border-border lg:flex">
+    <div className="grid min-h-0 flex-1 grid-cols-1 grid-rows-1 overflow-hidden lg:grid-cols-[1.1fr_1fr]">
+      {/* Left — PDF (pdf.js: in-doc search + highlight) */}
+      <div className="hidden min-h-0 flex-col overflow-hidden border-r border-border lg:flex">
         {paper.hasPdf ? (
-          <embed
-            key={page}
-            src={pdfSrc}
-            type="application/pdf"
-            className="h-full w-full"
-          />
+          <PdfPane citekey={paper.citekey} page={page} search={search} />
         ) : (
           <div className="flex h-full items-center justify-center p-8 text-center text-sm text-muted-foreground">
             PDF not available locally for {paper.citekey}.
@@ -177,7 +198,7 @@ export function ReviewPane({ paper }: { paper: ReviewPaper }) {
       </div>
 
       {/* Right — checklist */}
-      <div className="flex min-h-0 flex-col">
+      <div className="flex min-h-0 flex-col overflow-hidden">
         {/* meter */}
         <div className="flex flex-wrap items-center gap-x-4 gap-y-1 border-b border-border bg-muted/30 px-4 py-2 text-xs">
           <Meter label="Abstract results" n={meter.abs} d={meter.absTotal} />
@@ -227,6 +248,7 @@ export function ReviewPane({ paper }: { paper: ReviewPaper }) {
                 }
                 evds={paper.evds}
                 promoteSeed={a.text}
+                onLocate={() => locateText(a.text)}
                 onSet={(p) => set(a.id, p)}
               />
             ))}
@@ -246,7 +268,7 @@ export function ReviewPane({ paper }: { paper: ReviewPaper }) {
                     obj={o}
                     evds={paper.evds}
                     state={reviews[o.id]}
-                    onJump={o.page ? () => setPage(o.page!) : undefined}
+                    onJump={() => locateObject(o)}
                     onSet={(p) => set(o.id, p)}
                   />
                 ))}
@@ -554,6 +576,7 @@ function AnchorCard({
   suggestion,
   evds,
   promoteSeed,
+  onLocate,
   onSet,
 }: {
   title: string;
@@ -561,6 +584,7 @@ function AnchorCard({
   suggestion?: { text: string; confidence: number; evdIndex: number };
   evds: ReviewPaper["evds"];
   promoteSeed: string;
+  onLocate?: () => void;
   onSet: (patch: AnchorState | null) => void;
 }) {
   const verdict = state?.verdict;
@@ -574,7 +598,19 @@ function AnchorCard({
         !verdict && "border-border",
       )}
     >
-      <p className="text-sm leading-snug">{title}</p>
+      <div className="flex items-start gap-1.5">
+        <p className="min-w-0 flex-1 text-sm leading-snug">{title}</p>
+        {onLocate && (
+          <button
+            onClick={onLocate}
+            aria-label="Find in PDF"
+            title="Find this result in the PDF"
+            className="mt-0.5 shrink-0 rounded p-0.5 text-muted-foreground hover:bg-accent/50 hover:text-foreground"
+          >
+            <Crosshair className="h-3.5 w-3.5" />
+          </button>
+        )}
+      </div>
 
       {/* suggestion */}
       {suggestion && verdict !== "not_a_result" && verdict !== "promoted" && (

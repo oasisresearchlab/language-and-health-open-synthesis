@@ -19,7 +19,7 @@ if (!url || !key) {
   console.error("Set NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY.");
   process.exit(1);
 }
-const citekeys = process.argv.slice(2);
+const citekeys = process.argv.slice(2).map((s) => s.trim()).filter(Boolean);
 if (citekeys.length === 0) {
   console.error("Pass one or more citekeys, e.g. @Allan_2022_impact_English");
   process.exit(1);

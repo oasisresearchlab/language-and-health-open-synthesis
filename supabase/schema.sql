@@ -47,10 +47,23 @@ drop policy if exists anon_accuracy_all on accuracy_reviews;
 create policy anon_accuracy_all on accuracy_reviews for all using (true) with check (true);
 
 -- ── Seed roster — EDIT THESE NAMES, then re-run just this block ──────────────
-insert into reviewers (name, role) values
-  ('Joel Chan',  'maintainer'),
-  ('Rachel Murphy', 'clinician'),
-  ('Gezzer Ortega', 'clinician'),
-  ('Ibne Faruk', 'RA'),
-  ('Miles Francisque')
-on conflict do nothing;
+-- Idempotent: only inserts names not already present (no unique constraint on name,
+-- so `on conflict` wouldn't dedupe). Safe to re-run as the roster grows.
+insert into reviewers (name, role)
+select v.name, v.role
+from (values
+  ('Joel Chan',        'maintainer'),
+  ('Rachel Murphy',    'clinician'),
+  ('Gezzer Ortega',    'clinician'),
+  ('Ibne Faruk',       'RA'),
+  ('Miles Francisque', 'clinician'),
+  ('Emily Wiit',       'fellow'),
+  ('Chuma Eruchalu',   'fellow'),
+  ('Jeslyn Rodriguez', 'fellow'),
+  ('Carly Amon',       'fellow'),
+  ('Defne Altan',      'fellow'),
+  ('William Rivers',   'researcher'),
+  ('Richard Ortega',   'researcher'),
+  ('Andrew Schwieter', 'clinician')
+) as v(name, role)
+where not exists (select 1 from reviewers r where r.name = v.name);

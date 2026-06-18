@@ -53,10 +53,10 @@ insert into reviewers (name, role)
 select v.name, v.role
 from (values
   ('Joel Chan',        'maintainer'),
-  ('Rachel Murphy',    'clinician'),
+  ('Rachel Murphy',    'project manager'),
   ('Gezzer Ortega',    'clinician'),
   ('Ibne Faruk',       'RA'),
-  ('Miles Francisque', 'clinician'),
+  ('Miles Francisque', 'RA'),
   ('Emily Wiit',       'fellow'),
   ('Chuma Eruchalu',   'fellow'),
   ('Jeslyn Rodriguez', 'fellow'),

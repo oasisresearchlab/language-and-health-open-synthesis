@@ -63,13 +63,15 @@ export function IdentityGate({
   onPick: (r: Reviewer) => void;
 }) {
   return (
-    <div className="mx-auto flex max-w-md flex-col items-center px-4 py-20 text-center">
-      <UserCircle2 className="h-10 w-10 text-muted-foreground" />
-      <h2 className="mt-4 font-heading text-xl font-semibold">Who&apos;s reviewing?</h2>
-      <p className="mt-2 text-sm text-muted-foreground">
+    <div className="mx-auto flex min-h-0 max-w-md flex-1 flex-col items-center px-4 py-10 text-center">
+      <UserCircle2 className="h-10 w-10 shrink-0 text-muted-foreground" />
+      <h2 className="mt-4 shrink-0 font-heading text-xl font-semibold">
+        Who&apos;s reviewing?
+      </h2>
+      <p className="mt-2 shrink-0 text-sm text-muted-foreground">
         Pick your name — every judgment you make is attributed to you.
       </p>
-      <ul className="mt-6 w-full space-y-2">
+      <ul className="mt-6 w-full min-h-0 flex-1 space-y-2 overflow-y-auto pr-1">
         {roster.map((r) => (
           <li key={r.id}>
             <button
@@ -84,7 +86,7 @@ export function IdentityGate({
           </li>
         ))}
       </ul>
-      <StorageBadge className="mt-6" />
+      <StorageBadge className="mt-4 shrink-0" />
     </div>
   );
 }

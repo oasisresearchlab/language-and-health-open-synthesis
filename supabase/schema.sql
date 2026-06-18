@@ -49,6 +49,8 @@ create policy anon_accuracy_all on accuracy_reviews for all using (true) with ch
 -- ── Seed roster — EDIT THESE NAMES, then re-run just this block ──────────────
 insert into reviewers (name, role) values
   ('Joel Chan',  'maintainer'),
-  ('Reviewer 1', 'clinician'),
-  ('Reviewer 2', 'clinician')
+  ('Rachel Murphy', 'clinician'),
+  ('Gezzer Ortega', 'clinician'),
+  ('Ibne Faruk', 'RA'),
+  ('Miles Francisque')
 on conflict do nothing;

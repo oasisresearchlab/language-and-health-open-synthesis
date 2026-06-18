@@ -17,14 +17,28 @@ export function useReviewer() {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    fetchRoster().then(setRoster);
+    let stored: Reviewer | null = null;
     try {
       const s = localStorage.getItem(RKEY);
-      if (s) setReviewer(JSON.parse(s));
+      if (s) stored = JSON.parse(s);
     } catch {
       /* noop */
     }
-    setReady(true);
+    fetchRoster().then((r) => {
+      setRoster(r);
+      // drop a stale identity (e.g. a localStorage-only id from before Supabase was
+      // wired) so the first write doesn't hit a foreign-key error — re-prompt instead.
+      if (stored && !r.some((x) => x.id === stored!.id)) {
+        try {
+          localStorage.removeItem(RKEY);
+        } catch {
+          /* noop */
+        }
+        stored = null;
+      }
+      setReviewer(stored);
+      setReady(true);
+    });
   }, []);
 
   const choose = (r: Reviewer | null) => {

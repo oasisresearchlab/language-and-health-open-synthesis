@@ -70,8 +70,19 @@ python3 utils/build_quote_regions.py   @Allan_2022_impact_English @Karliner_2017
 (Match the citekeys to `ACCURACY_BATCH` in `site/lib/review-accuracy.ts`. PDFs are
 served from the gitignored `data/pdfs/`.)
 
-**Not yet (next):** the maintainer "review the reviews" queue; whole-figure bbox
-(#6); magic-link auth; the instrumentation/benchmark freeze join; drag-to-recrop.
+**Done since:** the maintainer "review the reviews" queue (`/review/queue` — triage,
+disagreement, CSV/JSON export); Vercel-deployable (bundled data + Supabase Storage PDFs).
+
+**Next batch (after deploy):** re-extract the **length-of-stay** and **readmission**
+clusters, this time using the accuracy-pass **rubric as in-line verification steps**
+during extraction (verbatim / grounding / claim-link+polarity / quant / methods-per-
+assertion — i.e. extract so each EVD would pass its own checklist, with a grounding
+quote per What/How/Who). Then pick **~4 EVDs each** (8 total) as the curated review
+set, upload those papers' PDFs (`upload-review-pdfs.mjs`), and point `ACCURACY_BATCH`
+at them.
+
+**Not yet:** whole-figure bbox (#6); access gate (token/login in front of `/review/*`);
+magic-link auth; the instrumentation/benchmark freeze join; drag-to-recrop.
 
 ## Architecture: capture light, credit heavy
 

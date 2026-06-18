@@ -22,7 +22,7 @@ export default async function AccuracyIndexPage() {
       </h1>
       <p className="mt-3 max-w-2xl text-muted-foreground">
         For each paper, walk its evidence nodes against the PDF and judge five
-        things per node — verbatim quote, grounding, claim polarity, quantitative
+        things per node — verbatim quote, grounding, claim polarity, substantive
         fidelity, and methods context. New to the node types?{" "}
         <Link href="/review/guide" className="text-primary hover:underline">
           Read the reviewer guide

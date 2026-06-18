@@ -73,8 +73,8 @@ type Verdict = "ok" | "edit" | "wrong" | "missing" | "na";
 const HINTS: Record<string, string> = {
   verbatim:
     "Is the quote the right sentence and does it match the PDF? (An audit checked the string; you confirm the meaning.)",
-  quant:
-    "Direction, magnitude, significance, and confidence intervals faithful to the source.",
+  substantive:
+    "Faithful to the source — direction/magnitude/significance/CI for quantitative results, and an accurate characterization for qualitative ones.",
   grounding: "Correct figure/table embedded — or correctly none.",
   methods:
     "What (the observable) / How (design) / Who (sample) accurately describe the study.",
@@ -82,7 +82,7 @@ const HINTS: Record<string, string> = {
     "Does this evidence really support / oppose this specific claim, as stated?",
 };
 
-// dimension keys: verbatim | quant | grounding | methods | polarity:<claimId>
+// dimension keys: verbatim | substantive | grounding | methods | polarity:<claimId>
 const k = (nodeId: string, dim: string) => `${nodeId}:${dim}`;
 
 function polarityKeys(evd: AccuracyEvd): string[] {
@@ -96,7 +96,7 @@ function methodKeys(evd: AccuracyEvd): string[] {
 function requiredDims(evd: AccuracyEvd): string[] {
   return [
     "verbatim",
-    "quant",
+    "substantive",
     "grounding",
     ...methodKeys(evd),
     ...polarityKeys(evd),
@@ -353,7 +353,7 @@ function EvdCard({
         )}
         <JudgeBar>
           {judge("verbatim")}
-          {judge("quant")}
+          {judge("substantive")}
         </JudgeBar>
       </Section>
 
@@ -584,7 +584,7 @@ function Judge({
   row,
   onSet,
 }: {
-  dim: string; // canonical dimension for the hint (verbatim|quant|grounding|methods|polarity)
+  dim: string; // canonical dimension for the hint (verbatim|substantive|grounding|methods|polarity)
   row?: ReviewRow;
   onSet: (patch: Partial<ReviewRow>) => void;
 }) {

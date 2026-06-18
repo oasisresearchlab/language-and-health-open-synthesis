@@ -87,8 +87,10 @@ verdict vocabulary for review/self-check: **✓ correct · ✎ needs an edit · 
 1. **Atomic** — exactly one finding. A table with five results → five EVDs.
 2. **Verbatim-grounded** — every substantive statement has an exact span + locator;
    the span actually *states* the finding (not a coincidental keyword match).
-3. **Quantitatively faithful** — direction, magnitude, significance, and intervals
-   match the source. A null result is reported as null, not spun (and vice-versa).
+3. **Substantively faithful** — the finding matches the source: direction,
+   magnitude, significance, and intervals for quantitative results; an accurate
+   characterization for qualitative ones. A null is reported as null, not spun
+   (and vice-versa).
 4. **Grounded in the right object** — the figure/table/output/plot that shows the
    finding is referenced (and embedded/located) — or it's correctly text-only.
 5. **Methods What / How / Who present, each grounded** — every assertion about the

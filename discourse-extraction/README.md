@@ -31,7 +31,7 @@ log, a chat, or a pile of notes. The adaptation will involve refining the **loca
 ## Two-fold quality spec
 
 - **Accuracy (precision):** each node meets its bar — verbatim fidelity, grounding,
-  claim-link polarity, quantitative faithfulness, grounded methods. This is the review
+  claim-link polarity, substantive faithfulness, grounded methods. This is the review
   rubric; verdicts are `✓ correct · ✎ edit · ✗ wrong · ⟳ missing · — n/a`.
 - **Completeness (recall):** every result a source *enumerates* (its tables, output
   cells, logged metrics, asserted claims) is captured or consciously excluded.

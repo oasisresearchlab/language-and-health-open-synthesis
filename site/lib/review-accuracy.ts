@@ -5,7 +5,7 @@ import { loadGeneratedGraph } from "./graph";
 import type { GraphNode } from "./types";
 
 // The accuracy pass reviews *existing* EVD extractions against the PDF, one EVD at a
-// time, across a checklist (verbatim / grounding / polarity / quant / methods).
+// time, across a checklist (verbatim / grounding / polarity / substantive / methods).
 // Data is reused from the exported graph (graph/) — no separate precompute.
 
 // Review batch: the length-of-stay + readmission clusters. Upload these papers'

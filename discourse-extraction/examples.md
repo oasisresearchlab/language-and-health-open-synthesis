@@ -65,7 +65,7 @@ Single-institution; no English-speaking comparison group (contrast is within LEP
   same paper is a *separate* EVD.
 - **Verbatim-grounded** — the finding and each methods facet carry an exact quote +
   page. The quotes *state* the finding, not just share keywords.
-- **Quant-faithful** — the coefficients/SEs/p-values match the source; the
+- **Substantively faithful** — the coefficients/SEs/p-values match the source; the
   non-significant arm (0.25, P=0.33) is reported as non-significant.
 - **Grounded object** — Table 4 (the model output) is embedded first.
 - **What / How / Who each grounded** — three method facets, three spans. None is an
@@ -154,7 +154,7 @@ a verbatim quote, and names exactly which findings it limits.
 - **Ungrounded methods summary** — a *What/How/Who* with no span. Reviewer verdict:
   *missing* → re-extract that grounding.
 - **Spun null** — "interpreters reduced LOS" when the arm was non-significant. Verdict:
-  *wrong* (quant fidelity).
+  *wrong* (substantive fidelity).
 - **Wrong polarity** — a null/contrary EVD filed as *supporting*. Verdict: *wrong*.
 - **Claim-as-evidence** — an EVD whose "finding" is actually a generalization with no
   particular behind it. Promote to / fold into a CLM.

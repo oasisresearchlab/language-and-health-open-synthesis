@@ -99,9 +99,10 @@ export default function ReviewerGuidePage() {
             sentence, not a coincidental keyword match. Page number present.
           </Li>
           <Li>
-            <strong>Quantitatively faithful.</strong> Direction, magnitude,
-            significance, and confidence intervals match the source. A null result
-            is reported as a null result, not spun as an effect (or vice-versa).
+            <strong>Substantively faithful.</strong> The finding is faithful to the
+            source — direction, magnitude, significance, and CIs for quantitative
+            results; an accurate characterization for qualitative ones. A null result
+            is reported as null, not spun (or vice-versa).
           </Li>
           <Li>
             <strong>Grounded in the right object.</strong> If the finding lives in a

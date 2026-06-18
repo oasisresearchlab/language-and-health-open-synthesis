@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Check, Pencil, X, Minus } from "lucide-react";
+import { Check, Pencil, X, Minus, RefreshCw } from "lucide-react";
 
 export const metadata = {
   title: "Reviewer guide",
@@ -166,7 +166,7 @@ export default function ReviewerGuidePage() {
       </Section>
 
       {/* verdicts */}
-      <Section title="The four verdicts">
+      <Section title="The five verdicts">
         <ul className="space-y-2 text-sm">
           <Verdict
             icon={<Check className="h-4 w-4" />}
@@ -190,11 +190,22 @@ export default function ReviewerGuidePage() {
             Not salvageable as written — say what&apos;s wrong.
           </Verdict>
           <Verdict
+            icon={<RefreshCw className="h-4 w-4" />}
+            tone="text-violet-600 dark:text-violet-400"
+            label="Missing"
+          >
+            The element should exist but isn&apos;t there — e.g. a finding with no
+            grounding quote, or a methods assertion the AI never extracted. Flags it
+            for another extraction pass (say what&apos;s missing). Distinct from
+            &ldquo;wrong&rdquo;: nothing was captured to be wrong.
+          </Verdict>
+          <Verdict
             icon={<Minus className="h-4 w-4" />}
             tone="text-muted-foreground"
             label="N/A"
           >
-            The dimension doesn&apos;t apply (e.g. no figure to ground).
+            The dimension genuinely doesn&apos;t apply (e.g. a text-only finding with
+            no figure to ground).
           </Verdict>
         </ul>
         <p className="mt-4 text-sm text-muted-foreground">

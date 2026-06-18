@@ -51,9 +51,27 @@ scoping + Supabase upsert payload/conflict-key), `review-accuracy` (`buildEvd` p
 Python `pytest utils/test_build_review_anchors.py` (abstract segmentation + caption
 regex). All green (13 JS + 7 py).
 
-**Not yet (next):** pdf.js region-overlay highlighting + drag-to-recrop (still native
-`<embed>`); the maintainer "review the reviews" queue; magic-link auth; the
-instrumentation/benchmark freeze join.
+**PDF pane (pdf.js, done).** Replaced the native `<embed>` with a react-pdf pane:
+exact bbox highlight overlays for every quote + figure/table (precomputed by
+`build_quote_regions.py`), an in-document find box (manual search for the
+no-grounding-quote case), reliable scroll-to-page, and a self-hosted worker
+(`scripts/copy-pdf-worker.mjs` → `public/`, no CDN). Whole-figure region (vs
+caption line) tracked in issue #6.
+
+**Regenerating review data (gitignored `data/review/*.json`).** A fresh checkout
+must rebuild the precomputes before the review routes show anything:
+
+```
+python3 utils/build_review_anchors.py --cluster                       # completeness anchors
+python3 utils/build_accuracy_pages.py  @Allan_2022_impact_English @Karliner_2017_Convenient_Access   # journal→physical page map
+python3 utils/build_quote_regions.py   @Allan_2022_impact_English @Karliner_2017_Convenient_Access   # exact quote/figure rects
+```
+
+(Match the citekeys to `ACCURACY_BATCH` in `site/lib/review-accuracy.ts`. PDFs are
+served from the gitignored `data/pdfs/`.)
+
+**Not yet (next):** the maintainer "review the reviews" queue; whole-figure bbox
+(#6); magic-link auth; the instrumentation/benchmark freeze join; drag-to-recrop.
 
 ## Architecture: capture light, credit heavy
 

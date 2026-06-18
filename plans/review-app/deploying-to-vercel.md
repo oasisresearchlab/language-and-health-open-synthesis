@@ -38,12 +38,19 @@ Verified: `next build` exits 0 with all review routes present; 21 JS + 7 py test
 cd site
 NEXT_PUBLIC_SUPABASE_URL=https://rzoiqhfplbxrnoakovsb.supabase.co \
 SUPABASE_SERVICE_ROLE_KEY=<service_role_key> \
-node scripts/upload-review-pdfs.mjs @Allan_2022_impact_English @Karliner_2017_Convenient_Access
+node scripts/upload-review-pdfs.mjs @Allan_2022_impact_English @Karliner_2017_Convenient_Access \
+  @Lindholm_2012_Professional_language @Wallbrecht_2014_difference_emergency @Greenky_2019_Reversed_Trend
 ```
 
 Creates the private `review-pdfs` bucket (no-op if it exists) and uploads the PDFs
-from `../data/pdfs/`. Batch-only — re-run with new citekeys as papers enter review.
+from `../data/pdfs/`. These 5 are the current `ACCURACY_BATCH` (LOS + readmission
+clusters). Batch-only — re-run with new citekeys as papers enter review.
 (Storage cost is negligible; the whole 706-PDF corpus is ~473 MB, within the free tier.)
+
+**Deployed + verified (2026-06-18):** all 5 papers render, PDFs stream from the
+private bucket via signed URLs, judgments write to the central store, and the
+curated set shows 8 EVDs (Allan 2 · Karliner 2 · Lindholm 2 · Wallbrecht 1 ·
+Greenky 1).
 
 ## Step 2 — Push the branch
 

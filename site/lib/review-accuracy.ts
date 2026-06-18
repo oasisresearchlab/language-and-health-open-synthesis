@@ -8,11 +8,34 @@ import type { GraphNode } from "./types";
 // time, across a checklist (verbatim / grounding / polarity / quant / methods).
 // Data is reused from the exported graph (graph/) — no separate precompute.
 
-// Tomorrow's pilot batch. Add/trim citekeys here.
+// Review batch: the length-of-stay + readmission clusters. Upload these papers'
+// PDFs (scripts/upload-review-pdfs.mjs) and rebuild review-data for them.
 export const ACCURACY_BATCH = [
   "@Allan_2022_impact_English",
   "@Karliner_2017_Convenient_Access",
+  "@Lindholm_2012_Professional_language",
+  "@Wallbrecht_2014_difference_emergency",
+  "@Greenky_2019_Reversed_Trend",
 ];
+
+// Curated review set — ~4 LOS + ~4 readmission EVDs (spanning surgical/inpatient/
+// ED/peds and effect/null). Only these are shown in the accuracy pane; leave empty
+// to show every EVD of the batch papers. Keyed by EVD title (stable across re-export).
+export const CURATED_EVD_TITLES = new Set<string>([
+  // length of stay
+  "LEP inpatients without a professional interpreter on both admission and discharge had a 0.75-1.47 day longer length of stay",
+  "Bedside interpreter telephone access had no significant effect on length of stay",
+  "No significant difference in length of stay after bariatric surgery between LEP and EP patients (adjusted IRR 0.94)",
+  "Among LEP ED patients interpreter use was associated with significantly longer length of stay",
+  // readmission
+  "Bedside interpreter telephone access lowered LEP 30-day readmission during intervention (OR 0.64)",
+  "LEP inpatients with no interpreter on admission or discharge had a higher 30-day readmission rate (24.3% vs 14.9%)",
+  "No significant difference in one-year readmission after bariatric surgery between LEP and EP patients (adjusted OR 0.94)",
+  "Adjusted odds of 7-day ED readmission were only 3% higher and non-significant for interpreter-requested pediatric patients",
+]);
+
+const isCurated = (title: string) =>
+  CURATED_EVD_TITLES.size === 0 || CURATED_EVD_TITLES.has(title);
 
 const PDFS = path.resolve(process.cwd(), "..", "data", "pdfs"); // local dev only
 // Committed review data (works at build + runtime on Vercel — no fs outside site/).
@@ -289,7 +312,7 @@ export async function accuracyIndex(): Promise<AccuracyIndexEntry[]> {
       return {
         citekey: ck,
         title: src?.title ?? ck,
-        evds: (byCk.get(ck) ?? []).length,
+        evds: (byCk.get(ck) ?? []).filter((n) => isCurated(n.title)).length,
         hasPdf: await pdfExists(ck),
       };
     }),
@@ -308,6 +331,7 @@ export async function accuracyPaper(
 
   const [pages, regions] = await Promise.all([physicalPages(), quoteRegions()]);
   const evds = evdNodes
+    .filter((n) => isCurated(n.title))
     .map((n) => buildEvd(n, g.nodes))
     .map((e) => ({ ...e, page: pages[e.id] ?? e.page }))
     .map((e) => withRegions(e, regions[e.id]))

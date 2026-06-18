@@ -112,10 +112,6 @@ export default function ReviewerGuidePage() {
             contrary finding should <em>oppose</em> the claim it bears on, not
             support it.
           </Li>
-          <Li>
-            <strong>Tagged.</strong> One epistemic tag (mechanism / effect-size /
-            measurement) plus domain facets (language factor, outcome, setting).
-          </Li>
         </ul>
       </Section>
 

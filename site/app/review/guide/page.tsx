@@ -87,6 +87,13 @@ export default function ReviewerGuidePage() {
             table.
           </Li>
           <Li>
+            <strong>Past tense.</strong> An EVD reports what a specific study{" "}
+            <em>observed</em> (“LOS <em>was</em> 1.5 days longer”) — signalling its
+            situated, contextual nature. The timeless, present-tense version belongs
+            in a claim. Tense mismatch usually means it&apos;s on the wrong side of
+            the evidence/claim line.
+          </Li>
+          <Li>
             <strong>Verbatim-grounded.</strong> The quote is copied exactly from
             the paper and <em>actually states the finding</em> — it&apos;s the right
             sentence, not a coincidental keyword match. Page number present.
@@ -123,9 +130,9 @@ export default function ReviewerGuidePage() {
             assertions should be split.
           </Li>
           <Li>
-            <strong>Stated as a generalization, not a single result.</strong> “LEP
-            is associated with longer stays” is a claim; “LOS was 2.26 vs 2.12 days”
-            is evidence.
+            <strong>Stated as a generalization, in present tense.</strong> “LEP{" "}
+            <em>is</em> associated with longer stays” is a claim (timeless); “LOS{" "}
+            <em>was</em> 2.26 vs 2.12 days” is evidence (past, situated).
           </Li>
           <Li>
             <strong>Backed by evidence on both sides where it exists.</strong>{" "}

@@ -16,6 +16,8 @@ locator).
 
 ```markdown
 ---
+title: LEP inpatients without a professional interpreter on both admission and
+  discharge had a 0.75–1.47 day longer length of stay   # PAST tense (situated)
 NodeType: Evidence
 Source: "[[@Lindholm_2012_Professional_language]]"
 shortLabel: "No interpreter → longer LOS"
@@ -69,6 +71,8 @@ Single-institution; no English-speaking comparison group (contrast is within LEP
 - **What / How / Who each grounded** — three method facets, three spans. None is an
   ungrounded summary.
 - **Polarity** — wired to a claim it bears on with the right sign (see CLM below).
+- **Past tense** — the title and description say what *was observed* ("…*had* a longer
+  length of stay"), marking the finding as situated. Contrast the claim's title below.
 
 *Other-source analogue:* for a notebook, the embedded Table 4 → the output of the
 regression cell; "(p. 1295)" → "(cell 12, out[3])"; the rest is identical.
@@ -81,6 +85,8 @@ regression cell; "(p. 1295)" → "(cell 12, out[3])"; the rest is identical.
 
 ```markdown
 ---
+title: Professional interpretation at admission or discharge lowers 30-day
+  readmission for LEP inpatients               # PRESENT tense (timeless generalization)
 NodeType: Claim
 shortLabel: "Interpretation ↓ readmission"
 tags: [factor/interpreting-services, outcome/readmissions, epistemic/effect-size]
@@ -100,6 +106,8 @@ LEP inpatients who received interpretation … were less likely to be readmitted
 
 **Why it's gold:**
 - **A generalization**, not a single result — the specific numbers live in the EVDs.
+- **Present tense** — the title states a timeless rule ("interpretation *lowers*
+  readmission"), vs. the past-tense, situated EVD titles it aggregates.
 - **Transcends sources** — supported by Lindholm *and* Karliner (two independent studies).
 - **Both sides wired** — contradicting EVDs (Greenky, Martinez) are listed too; a
   reviewer sees the claim is contested. Each link is statement-level.
@@ -113,6 +121,8 @@ LEP inpatients who received interpretation … were less likely to be readmitted
 
 ```markdown
 ---
+title: Findings are single-site patient perceptions from Spanish-speaking focus
+  groups; providers were not interviewed and outcomes were not measured
 NodeType: Caveat
 type: author-stated          # vs "inferred" — label which
 severity: moderate
@@ -150,3 +160,6 @@ a verbatim quote, and names exactly which findings it limits.
   particular behind it. Promote to / fold into a CLM.
 - **Coincidental quote** — a verbatim span that contains the keywords but doesn't state
   the finding. Verdict: *wrong* (verbatim).
+- **Tense mismatch** — an EVD phrased as a timeless rule ("interpreters reduce LOS"),
+  or a claim phrased as a one-off observation. Usually a sign the node is on the wrong
+  side of the EVD/CLM line. Verdict: *edit* (or reclassify).

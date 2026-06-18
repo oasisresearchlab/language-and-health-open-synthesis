@@ -31,6 +31,12 @@ The load-bearing distinction is **EVD ≠ CLM**: a measured/observed particular 
 evidence; a generalization across particulars is a claim. If one sentence states both
 ("interpreters cut readmissions; in our cohort 14.9% vs 24.3%"), make both nodes.
 
+A reliable surface cue is **tense**: **evidence is past tense** — what a specific
+study/run *observed* ("LOS *was* 1.5 days longer") — which signals its situated,
+contextual nature; **claims are present tense** — timeless generalizations
+("interpreters *lower* readmission"). Mismatched tense usually means a node is on the
+wrong side of the EVD/CLM line.
+
 ---
 
 ## Grounding model (the part that generalizes across sources)
@@ -91,10 +97,14 @@ verdict vocabulary for review/self-check: **✓ correct · ✎ needs an edit · 
 6. **Linked to ≥1 claim with correct polarity** — the EVD *supports* or *opposes* a
    claim, as stated. A null/contrary finding must oppose the claim it bears on, not
    support it.
+7. **Past tense** — phrased as what was observed in *this* source ("LOS *was* 1.5 days
+   longer"), which signals its situated, contextual nature. The timeless present-tense
+   version is the claim's job. Title and description both.
 
 ### CLM — a correct & complete claim node
 1. **One generalization** — split a claim that asserts two things.
-2. **Stated as a generalization, not a single result** — the particular is the EVD's job.
+2. **Stated as a generalization, in present tense** ("interpreters *lower* readmission")
+   — timeless. The situated, past-tense particular is the EVD's job.
 3. **Backed by evidence on both sides where it exists** — supporting *and* contradicting
    EVDs wired in; each link is statement-level (the EVD really bears on the claim), not
    mere source-overlap.

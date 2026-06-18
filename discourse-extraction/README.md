@@ -24,13 +24,13 @@ Compress a corpus into small, **atomic**, **verbatim-grounded**, **linked** node
 - **Claim (CLM)** = one generalization across evidence; supported and/or opposed by EVDs.
 - **Caveat (CVT)** qualifies evidence; **Question (QUE)** is the unknown claims answer.
 
-The same shape works whether the source is a paper, a Jupyter notebook, an experiment
-log, a chat, or a pile of notes — only the **locator** changes (page → cell id → run id
-→ message timestamp → line). See the grounding table in `node-spec.md`.
+This spec was developed with papers as the input source. We believe the same shape can be adapted to other input sources, such as a Jupyter notebook, an experiment
+log, a chat, or a pile of notes. The adaptation will involve refining the **locator** changes (page → cell id → run id
+→ message timestamp → line) for grounding. A starting point for this adaptation is described in the grounding table in `node-spec.md`.
 
-## Two specs, not one
+## Two-fold quality spec
 
-- **Quality (precision):** each node meets its bar — verbatim fidelity, grounding,
+- **Accuracy (precision):** each node meets its bar — verbatim fidelity, grounding,
   claim-link polarity, quantitative faithfulness, grounded methods. This is the review
   rubric; verdicts are `✓ correct · ✎ edit · ✗ wrong · ⟳ missing · — n/a`.
 - **Completeness (recall):** every result a source *enumerates* (its tables, output

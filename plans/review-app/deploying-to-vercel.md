@@ -79,6 +79,23 @@ vercel.com → Add New → Project → import `oasisresearchlab/language-and-hea
   highlight, judgments write to Supabase, header badge shows **central**.
 - `/review/queue` → judgments appear; disagreement + export work.
 
+## Sharing the deploy with reviewers (interim access gate)
+
+Preview deployments are protected by **Vercel Deployment Protection** — anyone without
+a Vercel login on the project gets a 401 (confirmed: unauthenticated `curl` of any
+`/review/*` route returns 401, while a logged-in browser works). Clinicians won't have
+Vercel accounts, so before handing out the URL:
+
+- **Recommended — Vercel Shareable Link:** Deployments → the deployment → ⋯ → Share
+  (or Settings → Deployment Protection → Protection Bypass / shareable links). Generates
+  a URL that bypasses login; gated to whoever you send it to, no Vercel account needed.
+  This *is* the interim access gate. PDFs stay private (signed URLs) regardless.
+- Or disable preview protection (openly reachable — only if acceptable).
+- Or merge to `main` for a stable production URL later.
+
+A real per-user access gate (token/login in front of `/review/*`) is still TODO; the
+shareable link covers the pilot.
+
 ## Gotchas / notes
 
 - `SUPABASE_SERVICE_ROLE_KEY` is full-access. It's used only server-side in `/api/pdf`

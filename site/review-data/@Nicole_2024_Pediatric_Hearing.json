@@ -1,0 +1,102 @@
+{
+ "citekey": "@Nicole_2024_Pediatric_Hearing",
+ "title": "Pediatric Hearing Aid Daily Wear Time Is Significantly Impacted by Clinician-Family Language Discordance",
+ "author": "Nicole Brigham",
+ "year": "2024",
+ "doi": "10.1044/2023_aja-23-00043",
+ "pubmedId": "38466937",
+ "hasPdf": true,
+ "evds": [
+  {
+   "title": "LEP children wore hearing aids far less per day than English-proficient peers (1.30 vs 5.19 hr)",
+   "finding": "In a retrospective chart review of young children fit with hearing aids, daily hearing aid wear time (data-logged in hours) was much shorter for children from families with limited English proficiency (LEP) than for children from English-proficient (EP) families: mean 1.30 hr/day (SD = 1.93) for the LEP group versus 5.19 hr/day (SD = 3.98) for the EP group. In a linear mixed-effects model, the main effect of Group was statistically significant, F(1, 90.3) = 26.41, p < .0001, and degree of hearing loss did not explain the difference (Fig. 1).",
+   "tables": [],
+   "figures": [
+    "1"
+   ]
+  },
+  {
+   "title": "Nearly half of LEP children wore hearing aids 15 min or less per day versus 10 percent of English-proficient children",
+   "finding": "Beyond the mean difference, near-zero device use was far more common in the LEP group. Nearly half of the LEP children — 10 of 24 (42%) — wore their hearing aids for 15 minutes or less per day, compared with only about 10% (7 of 69) of children from English-proficient families. No child in the LEP group reached the ~10 hr/day benchmark associated with better language outcomes.",
+   "tables": [],
+   "figures": []
+  }
+ ],
+ "candidates": [
+  "Children from families with limited English proficiency had an average daily hearing aid wear time of 1.3 hours.",
+  "Children from families with English-proficient speakers had an average daily hearing aid wear time of 5.2 hours."
+ ],
+ "abstractAnchors": [
+  {
+   "id": "abs-0",
+   "kind": "abstract",
+   "text": "Children from families with limited English proficiency exhibited significantly shorter daily wear time (M = 1.3 hr) than their peers whose families were English-proficient speakers, thus, having a shared language with their audiologists (M = 5.2 hr).",
+   "linkedEvd": 0,
+   "evdConfidence": 0.2,
+   "linkedCandidate": 0,
+   "candConfidence": 0.33
+  },
+  {
+   "id": "abs-1",
+   "kind": "abstract",
+   "text": "Results of this study suggest that family-clinician language discordance might put children at greater risk of shorter hearing aid wear time than children whose caregivers share a common language with their child's audiologist.",
+   "linkedEvd": null,
+   "evdConfidence": 0.1,
+   "linkedCandidate": null,
+   "candConfidence": 0.17
+  },
+  {
+   "id": "abs-2",
+   "kind": "abstract",
+   "text": "There can be many linguistic, cultural, and educational factors that contribute to hearing aid wear time in children whose families have limited English proficiency as well as different approaches to improving that wear time.",
+   "linkedEvd": null,
+   "evdConfidence": 0.17,
+   "linkedCandidate": 0,
+   "candConfidence": 0.36
+  },
+  {
+   "id": "abs-3",
+   "kind": "abstract",
+   "text": "Efforts should ensure that hearing and hearing aid-related information is accessible to all families, especially those with clinician-family language discordance.",
+   "linkedEvd": null,
+   "evdConfidence": 0.06,
+   "linkedCandidate": null,
+   "candConfidence": 0.12
+  },
+  {
+   "id": "abs-4",
+   "kind": "abstract",
+   "text": "Such efforts can include, among others, training that improves clinicians' cultural and linguistic responsiveness to the diverse families they serve.",
+   "linkedEvd": null,
+   "evdConfidence": 0.02,
+   "linkedCandidate": null,
+   "candConfidence": 0.04
+  }
+ ],
+ "objectAnchors": [
+  {
+   "kind": "figure",
+   "label": "Figure 1",
+   "caption": "Daily hearing aid wear time as a function of age at the time of the follow-up visit for both groups. Each child is represented twice—",
+   "page": 4,
+   "bbox": null,
+   "num": "1",
+   "crop": "Nicole_2024_Pediatric_Hearing-fig1.png",
+   "id": "obj-0",
+   "linkedEvds": [
+    0
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "Table 1",
+   "caption": "Demographics for patients in the native English–proficient or limited-English-proficiency groups.",
+   "page": 3,
+   "bbox": null,
+   "num": "1",
+   "crop": null,
+   "id": "obj-1",
+   "linkedEvds": []
+  }
+ ]
+}

@@ -28,7 +28,7 @@ ROOT = Path(__file__).parent.parent
 EVD = ROOT / "graph" / "evidence"
 SRC = ROOT / "graph" / "sources"
 PDFS = ROOT / "data" / "pdfs"
-OUT = ROOT / "data" / "review" / "accuracy_pages.json"
+OUT = ROOT / "site" / "review-data" / "accuracy_pages.json"
 
 
 def frontmatter(path: Path) -> dict:

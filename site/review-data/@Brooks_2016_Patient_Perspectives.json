@@ -1,0 +1,90 @@
+{
+ "citekey": "@Brooks_2016_Patient_Perspectives",
+ "title": "Patient Perspectives on the Need for and Barriers to Professional Medical Interpretation",
+ "author": "Brooks",
+ "year": "2016",
+ "doi": "",
+ "pubmedId": "26726861",
+ "hasPdf": true,
+ "evds": [
+  {
+   "title": "Barriers to professional interpretation led LEP patients to delay care or proceed without assistance, limiting communication",
+   "finding": "Patients reported that barriers to professional interpretation led them to delay care or proceed through encounters without assistance, after which they were limited in their ability to ask questions, describe symptoms, or understand instructions — a self-reinforcing access barrier in which absent interpretation degrades the encounter the patient does receive.",
+   "tables": [],
+   "figures": []
+  },
+  {
+   "title": "LEP patients described interpreter unavailability causing delays that lengthen outpatient and emergency visits",
+   "finding": "In focus groups, LEP Spanish-speaking patients described limited interpreter availability as a direct cause of delays that lengthen outpatient and emergency-room visits, with interpretation especially absent in operative/procedural areas, ambulances, and specialty visits. This is a patient-reported, qualitative mechanism for the longer stays that quantitative studies of interpreter access measure.",
+   "tables": [],
+   "figures": []
+  },
+  {
+   "title": "LEP patients perceived inferior care and described concrete harms when interpretation was inadequate or absent",
+   "finding": "Patients perceived their care as inferior when interpretation was inadequate, and recounted concrete harms attributed to absent interpretation — a misanswered depression screen, a man fainting after a cardiac stress test because he could not express feeling unwell, and medication/appointment miscommunications. These are patient-reported quality and safety harms linking language access to outcomes.",
+   "tables": [],
+   "figures": []
+  },
+  {
+   "title": "LEP patients reported providers overestimate their English comprehension and do not check for understanding",
+   "finding": "A central theme was that language-discordant providers overestimate LEP patients' understanding of English, while patients sometimes signal comprehension they do not have (e.g. to avoid appearing difficult), and providers do not check for understanding — so miscommunications go unrecognized by both sides.",
+   "tables": [],
+   "figures": []
+  }
+ ],
+ "candidates": [
+  "22 Spanish-speaking adults with limited English proficiency participated in focus group interviews.",
+  "LEP patients reported significant challenges in accessing healthcare services due to interpreter availability issues.",
+  "Participants expressed fear of disclosing their limited English language skills in medical settings.",
+  "Many LEP patients perceived that language-discordant providers overestimated their understanding of English.",
+  "Multiple participants felt they had received poorer quality care due to language barriers."
+ ],
+ "abstractAnchors": [
+  {
+   "id": "abs-0",
+   "kind": "abstract",
+   "text": "LEP patients face significant challenges when accessing health care services due to inadequate or insufficient access to professional interpreters.",
+   "linkedEvd": null,
+   "evdConfidence": 0.1,
+   "linkedCandidate": 1,
+   "candConfidence": 0.33
+  },
+  {
+   "id": "abs-1",
+   "kind": "abstract",
+   "text": "Predominant themes include: lack of interpreter availability, fear of disclosing limited English skills, and language discordant providers overestimating LEP patients' understanding of English.",
+   "linkedEvd": 3,
+   "evdConfidence": 0.21,
+   "linkedCandidate": 3,
+   "candConfidence": 0.33
+  },
+  {
+   "id": "abs-2",
+   "kind": "abstract",
+   "text": "Many participants felt they had received poorer quality care.",
+   "linkedEvd": null,
+   "evdConfidence": 0.05,
+   "linkedCandidate": 4,
+   "candConfidence": 0.58
+  },
+  {
+   "id": "abs-3",
+   "kind": "abstract",
+   "text": "LEP patients face multiple barriers to accessing adequate interpretation leading to a perceived worsening in the quality of care.",
+   "linkedEvd": null,
+   "evdConfidence": 0.11,
+   "linkedCandidate": null,
+   "candConfidence": 0.2
+  },
+  {
+   "id": "abs-4",
+   "kind": "abstract",
+   "text": "In order to improve health outcomes for LEP patients, routine provision of adequate interpretation is essential.",
+   "linkedEvd": null,
+   "evdConfidence": 0.07,
+   "linkedCandidate": null,
+   "candConfidence": 0.11
+  }
+ ],
+ "objectAnchors": []
+}

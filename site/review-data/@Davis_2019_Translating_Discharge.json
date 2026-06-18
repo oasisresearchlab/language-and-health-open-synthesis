@@ -1,0 +1,210 @@
+{
+ "citekey": "@Davis_2019_Translating_Discharge",
+ "title": "Translating Discharge Instructions for Limited English-Proficient Families: Strategies and Barriers",
+ "author": "Davis",
+ "year": "2019",
+ "doi": "10.1542/hpeds.2019-0055",
+ "pubmedId": "31562199",
+ "hasPdf": true,
+ "evds": [
+  {
+   "title": "Every institutional policy mentioning machine translation forbade using it alone, calling it inaccurate and unsafe",
+   "finding": "Across the 22 institutional policies analyzed, every policy that mentioned machine translation or translation software (5 of 22) forbade its use alone, characterizing such tools as inaccurate, unreliable, and unsafe. Consistent with this, only 2 of 31 surveyed hospitals (7%) reported \"sometimes\" or \"frequently\" using medical translation software for discharge instructions (Table 3), and respondents agreed machine translation should not be used alone. This documents a near-uniform policy stance against standalone machine translation of discharge instructions.",
+   "tables": [
+    "3"
+   ],
+   "figures": []
+  },
+  {
+   "title": "Hospitals rely on interpreters to act as translators despite differing training, limited to short or simple documents",
+   "finding": "To produce written discharge instructions, hospitals frequently fall back on interpreters (trained for verbal communication) acting as translators (84% reported using trained staff or contract interpreters \"sometimes\" or \"frequently\"; Table 3), even though interpreters and translators have different training and certification. Both survey responses and written policies restrict this practice to short, simple, or individualized documents and prohibit interpreters from translating complex materials — a staffing/quality mechanism that shapes which discharge content can be made concordant.",
+   "tables": [
+    "3"
+   ],
+   "figures": []
+  },
+  {
+   "title": "Operational complexity from mismatched discharge and translation time frames was the most cited barrier to translating discharge instructions",
+   "finding": "The most commonly cited barrier to providing translated inpatient discharge instructions was \"operational complexity\" (69%, 20 of 29; Table 3), which respondents described concretely as a timing mismatch: discharge instructions are finalized at the last minute while professional translation takes hours to days, so clinical staff discharge patients before the written translation is ready (Table 4). This is a workflow mechanism by which the time/effort cost of translation causes either delayed discharge or patients leaving without language-concordant written instructions.",
+   "tables": [
+    "3",
+    "4"
+   ],
+   "figures": []
+  },
+  {
+   "title": "Standardized translated document libraries and EHR templates are the main strategy but are limited to common languages and cannot be personalized",
+   "finding": "The dominant reported strategy for providing translated discharge instructions was streamlining the translation of standardized documents — building libraries of pretranslated care instructions and incorporating translated standardized templates into the EHR (pretranslated materials were the most-used mechanism, 87%; Table 3). However, both survey respondents and policies noted these standardized assets are typically available only in Spanish or other locally common languages and cannot be personalized to an individual patient, so they leave speakers of less-common languages and patients needing tailored instructions with unequal access — a mechanism limiting how far this strategy extends concordance.",
+   "tables": [
+    "3",
+    "4"
+   ],
+   "figures": []
+  },
+  {
+   "title": "Three-quarters of surveyed children's hospitals (74%) reported translating discharge instructions",
+   "finding": "In a survey of 31 children's hospital language-services contacts, all respondents reported translating a subset of hospital documents (e.g., patient-rights handouts at 100%, consent documents at 97%), but only three-quarters (74%, 23 of 31) reported translating discharge instructions (Table 2). Written discharge instructions thus lag behind legal/consent documents in being made language-concordant, even though they are the materials patients take home.",
+   "tables": [
+    "2"
+   ],
+   "figures": []
+  }
+ ],
+ "candidates": [
+  "81% of survey respondents reported having a written translation policy at their hospital.",
+  "100% of respondents reported translating a subset of hospital documents, such as consent forms.",
+  "74% of respondents reported translating discharge instructions.",
+  "87% of respondents typically provide translated discharge instructions using pretranslated documents.",
+  "81% of respondents typically provide translated discharge instructions using staff interpreters."
+ ],
+ "abstractAnchors": [
+  {
+   "id": "abs-0",
+   "kind": "abstract",
+   "text": "Most survey respondents (81%) reported having a written translation policy at their hospital, and all reported translating a subset of hospital documents, for example, consent forms.",
+   "linkedEvd": 4,
+   "evdConfidence": 0.23,
+   "linkedCandidate": 0,
+   "candConfidence": 0.5
+  },
+  {
+   "id": "abs-1",
+   "kind": "abstract",
+   "text": "Most but not all reported translating discharge instructions (74%).",
+   "linkedEvd": null,
+   "evdConfidence": 0.13,
+   "linkedCandidate": 2,
+   "candConfidence": 0.57
+  },
+  {
+   "id": "abs-2",
+   "kind": "abstract",
+   "text": "When asked how inpatient staff typically provide translated discharge instructions, most reported use of pretranslated documents (87%) or staff interpreters (81%).",
+   "linkedEvd": null,
+   "evdConfidence": 0.14,
+   "linkedCandidate": 3,
+   "candConfidence": 0.39
+  },
+  {
+   "id": "abs-3",
+   "kind": "abstract",
+   "text": "Reported barriers included difficulty translating uncommon languages, mismatched discharge and translation time frames, and inconsistent clinical staff use of translation services.",
+   "linkedEvd": null,
+   "evdConfidence": 0.09,
+   "linkedCandidate": null,
+   "candConfidence": 0.16
+  },
+  {
+   "id": "abs-4",
+   "kind": "abstract",
+   "text": "Strategies to address barriers included document libraries, pretranslated electronic health record templates, staff-edited machine translations, and sight translation.",
+   "linkedEvd": null,
+   "evdConfidence": 0.06,
+   "linkedCandidate": null,
+   "candConfidence": 0.04
+  },
+  {
+   "id": "abs-5",
+   "kind": "abstract",
+   "text": "Institutional policies differed regarding the appropriateness of allowing interpreters to assist with translation.",
+   "linkedEvd": null,
+   "evdConfidence": 0.06,
+   "linkedCandidate": null,
+   "candConfidence": 0.06
+  },
+  {
+   "id": "abs-6",
+   "kind": "abstract",
+   "text": "Respondents agreed that machine translation should not be used alone.",
+   "linkedEvd": null,
+   "evdConfidence": 0.17,
+   "linkedCandidate": null,
+   "candConfidence": 0.15
+  },
+  {
+   "id": "abs-7",
+   "kind": "abstract",
+   "text": "Children's hospitals experience similar operational and organizational barriers in providing language-concordant discharge instructions.",
+   "linkedEvd": null,
+   "evdConfidence": 0.12,
+   "linkedCandidate": null,
+   "candConfidence": 0.13
+  },
+  {
+   "id": "abs-8",
+   "kind": "abstract",
+   "text": "Current strategies focus on translating standardized documents; collaboration and innovation may encourage provision of personalized documents.",
+   "linkedEvd": null,
+   "evdConfidence": 0.04,
+   "linkedCandidate": null,
+   "candConfidence": 0.1
+  }
+ ],
+ "objectAnchors": [
+  {
+   "kind": "figure",
+   "label": "Figure 1",
+   "caption": "",
+   "page": 12,
+   "bbox": null,
+   "num": "1",
+   "crop": null,
+   "id": "obj-0",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 1",
+   "caption": "",
+   "page": 13,
+   "bbox": null,
+   "num": "1",
+   "crop": null,
+   "id": "obj-1",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 2",
+   "caption": "",
+   "page": 16,
+   "bbox": null,
+   "num": "2",
+   "crop": "Davis_2019_Translating_Discharge-table2.png",
+   "id": "obj-2",
+   "linkedEvds": [
+    4
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "Table 3",
+   "caption": "",
+   "page": 17,
+   "bbox": null,
+   "num": "3",
+   "crop": "Davis_2019_Translating_Discharge-table3.png",
+   "id": "obj-3",
+   "linkedEvds": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "Table 4",
+   "caption": "",
+   "page": 19,
+   "bbox": null,
+   "num": "4",
+   "crop": "Davis_2019_Translating_Discharge-table4.png",
+   "id": "obj-4",
+   "linkedEvds": [
+    2,
+    3
+   ]
+  }
+ ]
+}

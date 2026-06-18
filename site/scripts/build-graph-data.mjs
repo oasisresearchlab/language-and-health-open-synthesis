@@ -93,6 +93,13 @@ async function readNodeFile(filePath) {
     source_section: sourceSectionStr || undefined,
     sections,
     created: toStringMaybe(fm.created),
+    // bibliographic fields (SRC) — needed to map EVD → citekey in the review app
+    citekey: toStringMaybe(fm.citekey) || undefined,
+    author: toStringMaybe(fm.author) || undefined,
+    year: toStringMaybe(fm.year) || undefined,
+    journal: toStringMaybe(fm.journal) || undefined,
+    doi: toStringMaybe(fm.doi) || undefined,
+    pubmedId: toStringMaybe(fm.pubmedId ?? fm.pubmed_id) || undefined,
     body: parsed.content.trim(),
     outgoing,
   };

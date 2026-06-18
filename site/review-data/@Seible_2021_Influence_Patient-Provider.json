@@ -1,0 +1,210 @@
+{
+ "citekey": "@Seible_2021_Influence_Patient-Provider",
+ "title": "The Influence of Patient-Provider Language Concordance in Cancer Care: Results of the Hispanic Outcomes by Language Approach (HOLA) Randomized Trial",
+ "author": "Seible",
+ "year": "2021",
+ "doi": "10.1016/j.ijrobp.2021.05.122",
+ "pubmedId": "34058256",
+ "hasPdf": true,
+ "evds": [
+  {
+   "title": "Direct-Spanish care raised primary-endpoint general satisfaction over interpreter services (4.45 vs 4.09) in an RCT",
+   "finding": "In this randomized trial of Spanish-speaking cancer patients with LEP, the prespecified primary endpoint — the composite general-satisfaction score from the PSQ survey immediately after the initial consultation — was significantly higher for patients cared for directly in Spanish than for those cared for via professional interpreter services (mean composite scores 4.45 vs 4.09; P = .007) (Fig. 2A). Patients in the direct-Spanish arm also more frequently gave top ratings (5 of 5) for general satisfaction (63% vs 25%; P = .001) (Fig. 2B).",
+   "tables": [],
+   "figures": [
+    "2"
+   ]
+  },
+  {
+   "title": "Direct-Spanish care raised satisfaction with overall-care domains (technical quality, interpersonal manner, communication, time spent)",
+   "finding": "Beyond the primary endpoint, several secondary overall-care satisfaction domains measured immediately after the initial consultation were significantly higher in the direct-Spanish arm than the interpreter-services arm: technical quality (4.41 vs 4.06; P = .005), interpersonal manner (4.37 vs 3.88; P = .004), communication (4.50 vs 4.25; P = .018), and patient perception of time spent (4.30 vs 3.92; P = .028) (Fig. 2A).",
+   "tables": [],
+   "figures": [
+    "2"
+   ]
+  },
+  {
+   "title": "Direct-Spanish care raised satisfaction with physician communication (disclosure, empathy, confidence, general)",
+   "finding": "On the physician-communication satisfaction survey (ISQ) administered immediately after the initial consultation, the direct-Spanish arm scored significantly higher than the interpreter-services arm in all domains: perceived opportunity to disclose concerns (4.91 vs 4.62; P = .001), physician empathy (4.94 vs 4.59; P < .001), confidence in physician abilities (4.84 vs 4.51; P = .001), and general satisfaction with the physician (4.88 vs 4.59; P < .001) (Fig. 3A).",
+   "tables": [],
+   "figures": [
+    "3"
+   ]
+  },
+  {
+   "title": "Direct-Spanish consultations had more physician history-verification and partnering utterances",
+   "finding": "Coded transcripts of the initial consultation showed that, relative to interpreter-based encounters, direct-Spanish encounters had significantly more physician speech devoted to patient history verification (mean utterances 13 vs 8.9; P = .01) and to partnering activities (16 vs 5; P < .001) (Table 3). Relationship-building speech trended higher but did not reach significance (9 vs 5; P = .07); history solicitation, procedural speech, and patient education did not differ. This identifies a mechanism — language concordance changes the content of the clinical conversation.",
+   "tables": [
+    "3"
+   ],
+   "figures": []
+  },
+  {
+   "title": "Initial consultation length did not differ between direct-Spanish and interpreter-services arms (37 vs 33 min)",
+   "finding": "The duration of the initial consultation did not differ significantly between the two communication modalities: interpreter-services consultations averaged 33 minutes versus 37 minutes for direct-Spanish consultations (P = .33). Thus the satisfaction and communication-content differences arose without a measurable difference in visit length.",
+   "tables": [],
+   "figures": []
+  },
+  {
+   "title": "Patients in direct-Spanish consultations asked more questions and gave more unprompted speech",
+   "finding": "Coded consultation transcripts showed patients in the direct-Spanish arm were more verbally engaged than those in the interpreter-services arm: they asked more questions overall (mean 11 vs 4.4; P = .007/.01), including more open-ended (4.5 vs 1.9; P = .012/.01) and closed-ended questions (5.3 vs 2.5; P = .048), produced more unprompted speech (11 vs 3.1; P < .001), and more history-telling (12 vs 3.6; P < .001) (Table 3). This points to a mechanism by which concordance increases patient participation in the encounter.",
+   "tables": [
+    "3"
+   ],
+   "figures": []
+  },
+  {
+   "title": "Satisfaction benefit of direct-Spanish care attenuated to nonsignificance at later treatment timepoints",
+   "finding": "Although the satisfaction advantage of direct-Spanish care was significant immediately after the initial consultation, it did not persist: when satisfaction was reassessed during the last week of radiation and at the first post-treatment follow-up visit, there were no statistically significant differences between arms in any domain of overall-care or physician-communication satisfaction (Table E1). The authors suggest interpreter-based care may achieve similar results over time.",
+   "tables": [],
+   "figures": []
+  }
+ ],
+ "candidates": [
+  "Patients cared for in direct Spanish reported significantly higher general satisfaction (mean composite score [MCS], 4.41 vs 4.06; P = .005).",
+  "Technical quality of care was rated significantly higher in the direct Spanish group (MCS, 4.41 vs 4.06; P = .005).",
+  "Care team interpersonal manner was significantly better in the direct Spanish group (MCS, 4.37 vs 3.88; P = .004).",
+  "Communication was rated significantly higher in the direct Spanish group (MCS, 4.50 vs 4.25; P = .018).",
+  "Time spent with patient was significantly better in the direct Spanish group (MCS, 4.30 vs 3.92; P = .028).",
+  "Patients in the direct Spanish group rated their opportunity to disclose concerns significantly higher (MCS 4.91 vs 4.62; P = .001).",
+  "Physician empathy was rated significantly higher in the direct Spanish group (MCS, 4.94 vs 4.59; P <.001).",
+  "Confidence in physician abilities was significantly higher in the direct Spanish group (MCS, 4.84 vs 4.51; P = .001).",
+  "General satisfaction with the physician was significantly higher in the direct Spanish group (MCS, 4.88 vs 4.59; P <.001).",
+  "The direct Spanish group had more physician speech related to patient history verification (mean number of utterances, 13 vs 9; P = .01).",
+  "The direct Spanish group had more physician partnering activities (mean utterances, 16 vs 5; P <.001).",
+  "Patients in the direct Spanish group were more likely to initiate unprompted speech (mean utterances, 11 vs 3; P <.001).",
+  "Patients in the direct Spanish group asked their providers more questions (mean utterances, 11 vs 4; P = .007)."
+ ],
+ "abstractAnchors": [
+  {
+   "id": "abs-0",
+   "kind": "abstract",
+   "text": "Compared with patients receiving care through professional interpretive services, patients cared for in direct Spanish reported significantly improved general satisfaction, technical quality of care (mean composite score [MCS], 4.41 vs 4.06; P = .005), care team interpersonal manner (MCS, 4.37 vs 3.88; P = .004), communication (MCS, 4.50 vs 4.25; P = .018), and time spent with patient,(MCS, 4.30 vs 3.92; P = .028).",
+   "linkedEvd": 1,
+   "evdConfidence": 0.37,
+   "linkedCandidate": 0,
+   "candConfidence": 0.38
+  },
+  {
+   "id": "abs-1",
+   "kind": "abstract",
+   "text": "Specific to physician communication, patients rated direct-Spanish care more highly in perceived opportunity to disclose concerns (MCS 4.91 vs 4.62; P = .001), physician empathy (MCS, 4.94 vs 4.59; P <.001), confidence in physician abilities (MCS, 4.84 vs 4.51; P = .001), and general satisfaction with their physician (MCS, 4.88 vs 4.59; P <.001).",
+   "linkedEvd": 2,
+   "evdConfidence": 0.39,
+   "linkedCandidate": 5,
+   "candConfidence": 0.38
+  },
+  {
+   "id": "abs-2",
+   "kind": "abstract",
+   "text": "Analyzing the content of consultation encounters revealed differences between study arms, with the direct-Spanish arm having more physician speech related to patient history verification (mean number of utterances, 13 vs 9; P = .01) and partnering activities (mean utterances, 16 vs 5; P <.001).",
+   "linkedEvd": 3,
+   "evdConfidence": 0.31,
+   "linkedCandidate": 9,
+   "candConfidence": 0.46
+  },
+  {
+   "id": "abs-3",
+   "kind": "abstract",
+   "text": "Additionally, patients in the direct-Spanish arm were more likely to initiate unprompted speech (mean utterances, 11 vs 3; P <.001) and asked their providers more questions (mean utterances, 11 vs 4; P = .007).",
+   "linkedEvd": 5,
+   "evdConfidence": 0.26,
+   "linkedCandidate": 11,
+   "candConfidence": 0.61
+  },
+  {
+   "id": "abs-4",
+   "kind": "abstract",
+   "text": "This study shows improved patient-reported satisfaction among patients with cancer who had LEP and were cared for in direct Spanish compared with interpreter-based communication.",
+   "linkedEvd": null,
+   "evdConfidence": 0.16,
+   "linkedCandidate": 0,
+   "candConfidence": 0.23
+  },
+  {
+   "id": "abs-5",
+   "kind": "abstract",
+   "text": "Further research into interventions to mitigate the patient-provider language barrier is necessary to optimize care for this population.",
+   "linkedEvd": null,
+   "evdConfidence": 0.04,
+   "linkedCandidate": null,
+   "candConfidence": 0.05
+  }
+ ],
+ "objectAnchors": [
+  {
+   "kind": "figure",
+   "label": "Figure 1",
+   "caption": "",
+   "page": 4,
+   "bbox": null,
+   "num": "1",
+   "crop": null,
+   "id": "obj-0",
+   "linkedEvds": []
+  },
+  {
+   "kind": "figure",
+   "label": "Figure 2",
+   "caption": "",
+   "page": 6,
+   "bbox": null,
+   "num": "2",
+   "crop": "Seible_2021_Influence_Patient-Provider-fig2.png",
+   "id": "obj-1",
+   "linkedEvds": [
+    0,
+    1
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "Figure 3",
+   "caption": "",
+   "page": 7,
+   "bbox": null,
+   "num": "3",
+   "crop": "Seible_2021_Influence_Patient-Provider-fig3.png",
+   "id": "obj-2",
+   "linkedEvds": [
+    2
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "Table 1",
+   "caption": "",
+   "page": 5,
+   "bbox": null,
+   "num": "1",
+   "crop": null,
+   "id": "obj-3",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 2",
+   "caption": "",
+   "page": 8,
+   "bbox": null,
+   "num": "2",
+   "crop": null,
+   "id": "obj-4",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 3",
+   "caption": "",
+   "page": 8,
+   "bbox": null,
+   "num": "3",
+   "crop": "Seible_2021_Influence_Patient-Provider-table3.png",
+   "id": "obj-5",
+   "linkedEvds": [
+    3,
+    5
+   ]
+  }
+ ]
+}

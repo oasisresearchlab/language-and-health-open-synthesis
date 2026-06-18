@@ -1,0 +1,159 @@
+{
+ "citekey": "@Kyle_2023_Association_Between",
+ "title": "Association Between Limited English Language Proficiency and Disparities in Length of Stay and Discharge Disposition After Total Shoulder Arthroplasty: A Retrospective Cohort Stud",
+ "author": "Kyle Kunze",
+ "year": "2023",
+ "doi": "10.1177/15563316221104765",
+ "pubmedId": "36776520",
+ "hasPdf": true,
+ "evds": [
+  {
+   "title": "Interpreter use was the strongest predictor of LOS after TSA, adding 0.88 days per patient",
+   "finding": "In a matched retrospective cohort of total shoulder arthroplasty (TSA) patients, mean hospital length of stay (LOS) was longer in the cohort that required a language interpreter than in the non-interpreter cohort (2.8 ± 2.4 vs 1.8 ± 1.0 days, P = .048). On multivariate linear regression controlling for age, BMI, sex, smoking, opioid use, race, insurance, procedure, and diagnosis, interpreter use was the strongest predictor of LOS, with an effect estimate of an additional 0.88 days per patient (β = 0.88, 95% CI 0.28–1.81, P = .008) (Table 2).",
+   "tables": [
+    "2"
+   ],
+   "figures": []
+  },
+  {
+   "title": "Interpreter-cohort TSA patients were 454 percent more likely to be discharged to a rehabilitation facility",
+   "finding": "In the matched TSA cohort, a greater proportion of interpreter-requiring patients were discharged to an acute or subacute rehabilitation facility rather than home, compared with non-interpreter patients (n = 8 [19.5%] vs n = 2 [4.9%], P = .033). On multivariate logistic regression, interpreter use was the strongest predictor of discharge disposition: patients who required an interpreter were 454% more likely (odds ratio 4.54, 95% CI 2.13–8.61, P = .037) to be discharged to a subacute or acute rehabilitation facility (Table 3).",
+   "tables": [
+    "3"
+   ],
+   "figures": []
+  },
+  {
+   "title": "No significant association between interpreter need and 30- or 90-day complication rates after TSA",
+   "finding": "In the matched TSA cohort, short-term complication rates were statistically similar between the interpreter and non-interpreter cohorts. The interpreter cohort had numerically more complications at both 30 days (4 [9.8%] vs 1 [2.4%], P = .36) and 90 days (6 [14.6%] vs 2 [4.9%], P = .26), but neither difference reached statistical significance (Table 4).",
+   "tables": [
+    "4"
+   ],
+   "figures": []
+  }
+ ],
+ "candidates": [
+  "Mean hospital length of stay (LOS) was 2.8 ± 2.4 days in the interpreter cohort, compared to 1.8 ± 1.0 days in the non-interpreter cohort.",
+  "Interpreter use was the strongest predictor of length of stay, with an effect estimate indicating an additional 0.88 days of LOS per patient.",
+  "8 patients (19.5%) from the interpreter cohort were discharged to an acute/subacute rehabilitation facility, compared to 2 patients (4.9%) from the non-interpreter cohort.",
+  "Patients from the interpreter cohort were 454% more likely to be discharged to acute/subacute rehabilitation facilities.",
+  "The study included 41 patients in each cohort (interpreter and non-interpreter)."
+ ],
+ "abstractAnchors": [
+  {
+   "id": "abs-0",
+   "kind": "abstract",
+   "text": "Forty-one patients were included in each cohort, exceeding the minimum number required per an a priori power analysis.",
+   "linkedEvd": null,
+   "evdConfidence": 0.08,
+   "linkedCandidate": 4,
+   "candConfidence": 0.24
+  },
+  {
+   "id": "abs-1",
+   "kind": "abstract",
+   "text": "Mean hospital LOS was longer in the interpreter cohort than in the non-interpreter cohort (2.8 ± 2.4 vs 1.8 ± 1.0 days, respectively).",
+   "linkedEvd": 0,
+   "evdConfidence": 0.18,
+   "linkedCandidate": 0,
+   "candConfidence": 0.58
+  },
+  {
+   "id": "abs-2",
+   "kind": "abstract",
+   "text": "Multivariate linear regression demonstrated interpreter use was the strongest predictor of LOS, with the effect estimate indicating an additional 0.88-day LOS per patient.",
+   "linkedEvd": 0,
+   "evdConfidence": 0.28,
+   "linkedCandidate": 1,
+   "candConfidence": 0.58
+  },
+  {
+   "id": "abs-3",
+   "kind": "abstract",
+   "text": "A greater proportion of patients from the interpreter cohort were discharged to an acute/subacute rehabilitation facility than patients from the non-interpreter cohort (n = 8 [19.5%] vs n = 2 [4.9%], respectively).",
+   "linkedEvd": 1,
+   "evdConfidence": 0.31,
+   "linkedCandidate": 2,
+   "candConfidence": 0.69
+  },
+  {
+   "id": "abs-4",
+   "kind": "abstract",
+   "text": "Patients from the interpreter cohort were 454% more likely to be discharged to acute/subacute rehabilitation facilities.",
+   "linkedEvd": 1,
+   "evdConfidence": 0.28,
+   "linkedCandidate": 3,
+   "candConfidence": 1.0
+  },
+  {
+   "id": "abs-5",
+   "kind": "abstract",
+   "text": "Our retrospective analysis of patients undergoing TSA suggests that the need for interpreter services may be associated with increased LOS and discharge to a facility.",
+   "linkedEvd": null,
+   "evdConfidence": 0.11,
+   "linkedCandidate": null,
+   "candConfidence": 0.13
+  },
+  {
+   "id": "abs-6",
+   "kind": "abstract",
+   "text": "More rigorous study is needed to identify the factors that influence these outcomes and to avoid disparities in hospital stay and discharge.",
+   "linkedEvd": null,
+   "evdConfidence": 0.04,
+   "linkedCandidate": null,
+   "candConfidence": 0.09
+  }
+ ],
+ "objectAnchors": [
+  {
+   "kind": "table",
+   "label": "Table 1",
+   "caption": "Baseline characteristics of study population.",
+   "page": 3,
+   "bbox": null,
+   "num": "1",
+   "crop": null,
+   "id": "obj-0",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 2",
+   "caption": "Multivariate linear regression analysis estimates for predicting hospital length of stay after TSA.",
+   "page": 4,
+   "bbox": null,
+   "num": "2",
+   "crop": "Kyle_2023_Association_Between-table2.png",
+   "id": "obj-1",
+   "linkedEvds": [
+    0
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "Table 3",
+   "caption": "Multivariate logistic regression analysis estimates for predicting discharge disposition after TSA.",
+   "page": 4,
+   "bbox": null,
+   "num": "3",
+   "crop": "Kyle_2023_Association_Between-table3.png",
+   "id": "obj-2",
+   "linkedEvds": [
+    1
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "Table 4",
+   "caption": "Cohort-specific 30- and 90-day complications and",
+   "page": 4,
+   "bbox": null,
+   "num": "4",
+   "crop": "Kyle_2023_Association_Between-table4.png",
+   "id": "obj-3",
+   "linkedEvds": [
+    2
+   ]
+  }
+ ]
+}

@@ -1,0 +1,160 @@
+{
+ "citekey": "@Karliner_2017_Convenient_Access",
+ "title": "Convenient Access to Professional Interpreters in the Hospital Decreases Readmission Rates and Estimated Hospital Expenditures for Patients With Limited English Proficiency",
+ "author": "Karliner",
+ "year": "2017",
+ "doi": "10.1097/mlr.0000000000000643",
+ "pubmedId": "27579909",
+ "hasPdf": true,
+ "evds": [
+  {
+   "title": "Averted LEP readmissions during intervention yielded estimated $161,404 monthly hospital savings",
+   "finding": "The reduced LEP readmission rate during the intervention translated into substantial estimated hospital expenditure savings. Holding the preintervention LEP readmission rate (17.8%) constant rather than the observed 13.4% implied 119 additional readmissions would have occurred; at a median LEP hospital-stay cost of $11,086, those readmissions projected to $1,319,234. After subtracting the $28,001 cost of interpreted calls (28,284 minutes at $0.99/min, with the phones provided free by the vendor), the estimated net 8-month savings were $1,291,233, or roughly $161,404 in monthly hospital expenditure savings.",
+   "tables": [],
+   "figures": []
+  },
+  {
+   "title": "Bedside interpreter telephone access had no significant effect on length of stay",
+   "finding": "The bedside interpreter telephone intervention had no significant impact on length of stay (LOS) for LEP patients. Unadjusted median LOS was essentially unchanged across the three study periods and did not differ between LEP and EP groups (e.g., LEP intervention median 3.86 days vs EP 3.81; Table 3). In adjusted analyses the period-by-language interaction for LOS was not significant (P=0.818), and the LEP-vs-EP factor-change estimate during intervention was 1.01 (95% CI 0.92–1.10) (Table 4).",
+   "tables": [
+    "3",
+    "4"
+   ],
+   "figures": []
+  },
+  {
+   "title": "Bedside interpreter telephone access lowered LEP 30-day readmission during intervention (OR 0.64)",
+   "finding": "Providing a dual-handset interpreter telephone at every LEP bedside was associated with a significant reduction in 30-day readmissions for the LEP group during the 8-month intervention period. Observed LEP readmission fell from 17.8% preintervention to 13.4% during the intervention, while English-proficient (EP) readmission rose from 16.7% to 19.7% over the same window (Table 3). In adjusted analyses the period-by-language interaction was significant (P=0.040), and the LEP-vs-EP adjusted odds ratio for readmission was 0.64 (95% CI 0.43–0.95) during the intervention versus roughly equivalent pre (1.07) and post (1.09) periods (Table 4). The improvement was not maintained postintervention once the telephones became less accessible.",
+   "tables": [
+    "3",
+    "4"
+   ],
+   "figures": []
+  }
+ ],
+ "candidates": [
+  "Of 8,077 total discharges, 1,963 were for limited English proficiency (LEP) patients, and 6,114 were for English proficient patients.",
+  "30-day readmission rates for English proficient patients increased from 16.7% to 19.7% during the same intervention period.",
+  "The improved readmission outcomes for LEP patients were not maintained during the postintervention period when interpreter telephones became less accessible.",
+  "An estimated 119 readmissions were averted during the intervention period."
+ ],
+ "abstractAnchors": [
+  {
+   "id": "abs-0",
+   "kind": "abstract",
+   "text": "Of 8077 discharges, 1963 were for LEP, and 6114 for English proficient patients.",
+   "linkedEvd": null,
+   "evdConfidence": 0.05,
+   "linkedCandidate": 0,
+   "candConfidence": 0.36
+  },
+  {
+   "id": "abs-1",
+   "kind": "abstract",
+   "text": "There was a significant decrease in observed 30-day readmission rates for the LEP group during the 8-month intervention period compared with 18 months preintervention (17.8% vs. 13.4%); at the same time English proficient readmission rates increased (16.7% vs. 19.7%); results remained significant in adjusted analyses.",
+   "linkedEvd": 2,
+   "evdConfidence": 0.27,
+   "linkedCandidate": 1,
+   "candConfidence": 0.38
+  },
+  {
+   "id": "abs-2",
+   "kind": "abstract",
+   "text": "This improved readmission outcome for the LEP group was not maintained during the subsequent postintervention period when the telephones became less accessible.",
+   "linkedEvd": 2,
+   "evdConfidence": 0.2,
+   "linkedCandidate": 2,
+   "candConfidence": 0.67
+  },
+  {
+   "id": "abs-3",
+   "kind": "abstract",
+   "text": "There was no significant intervention impact on length of stay in either unadjusted or adjusted analyses.",
+   "linkedEvd": 1,
+   "evdConfidence": 0.23,
+   "linkedCandidate": null,
+   "candConfidence": 0.06
+  },
+  {
+   "id": "abs-4",
+   "kind": "abstract",
+   "text": "After accounting for interpreter services costs, the estimated 119 readmissions averted during the intervention period were associated with estimated monthly hospital expenditure savings of $161,404.",
+   "linkedEvd": 0,
+   "evdConfidence": 0.19,
+   "linkedCandidate": 3,
+   "candConfidence": 0.39
+  },
+  {
+   "id": "abs-5",
+   "kind": "abstract",
+   "text": "Comprehensive language access represents an important, high value service that all medical centers should provide to achieve equitable, quality healthcare for vulnerable LEP populations.",
+   "linkedEvd": null,
+   "evdConfidence": 0.04,
+   "linkedCandidate": null,
+   "candConfidence": 0.03
+  }
+ ],
+ "objectAnchors": [
+  {
+   "kind": "figure",
+   "label": "Figure 1",
+   "caption": "Average monthly number of interpreted encoun-",
+   "page": 5,
+   "bbox": null,
+   "num": "1",
+   "crop": null,
+   "id": "obj-0",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 1",
+   "caption": "Characteristics of 8077 Discharges for Patients 50 Years Old or Above Discharged From the Medicine Floor of an",
+   "page": 4,
+   "bbox": null,
+   "num": "1",
+   "crop": null,
+   "id": "obj-1",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 2",
+   "caption": "Utilization of Professional Telephone Interpreters by",
+   "page": 6,
+   "bbox": null,
+   "num": "2",
+   "crop": null,
+   "id": "obj-2",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 3",
+   "caption": "Observed Hospital Outcomes for Length of Stay and",
+   "page": 6,
+   "bbox": null,
+   "num": "3",
+   "crop": "Karliner_2017_Convenient_Access-table3.png",
+   "id": "obj-3",
+   "linkedEvds": [
+    1,
+    2
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "Table 4",
+   "caption": "Adjusted Results for Readmission and Length of Stay",
+   "page": 6,
+   "bbox": null,
+   "num": "4",
+   "crop": "Karliner_2017_Convenient_Access-table4.png",
+   "id": "obj-4",
+   "linkedEvds": [
+    1,
+    2
+   ]
+  }
+ ]
+}

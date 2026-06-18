@@ -1,0 +1,138 @@
+{
+ "citekey": "@Wallbrecht_2014_difference_emergency",
+ "title": "No difference in emergency department length of stay for patients with limited proficiency in English",
+ "author": "Wallbrecht",
+ "year": "2014",
+ "doi": "10.1097/smj.0000000000000037",
+ "pubmedId": "24389777",
+ "hasPdf": true,
+ "evds": [
+  {
+   "title": "Among LEP ED patients interpreter use was associated with significantly longer length of stay",
+   "finding": "In a subgroup analysis of the 122 LEP patients with interpreter-use documentation, those for whom an interpreter was called had a significantly longer arrival-to-discharge/admission LOS than those for whom no interpreter was called: 949 ± 636 vs 711 ± 602 minutes, a difference of 237 minutes (95% CI 13–461), the only significant variable (Table 2; Fig.). The interpreter and no-interpreter groups did not differ significantly on age, sex, mode of arrival, acuity, admission rate, or insurance, and the earlier LOS components (arrival-to-provider, provider-to-discharge) were not individually significant.",
+   "tables": [
+    "2"
+   ],
+   "figures": []
+  },
+  {
+   "title": "No difference in ED length of stay between LEP and English-speaking patients",
+   "finding": "In a prospective cohort study of an adult level I trauma academic ED, there were no significant differences in mean emergency-department length of stay (LOS) between patients with limited English proficiency (LEP, n=124) and English-speaking (ES, n=121) patients at any transition point: arrival-to-provider (359 ± 343 vs 363 ± 374 min), provider-to-discharge/admit (558 ± 586 vs 551 ± 509 min), and arrival-to-discharge/admit (837 ± 629 vs 840 ± 605 min), all NS (Table 1). The two groups were comparable on age, sex, mode of arrival, acuity, admission rate, and pediatric proportion.",
+   "tables": [
+    "1"
+   ],
+   "figures": []
+  }
+ ],
+ "candidates": [
+  "A total of 121 English-speaking (ES) patients and 124 patients with limited English proficiency (LEP) were included in the study.",
+  "The LEP group included patients speaking Spanish, Navajo, Vietnamese, Chinese, Arabic, and American Sign Language.",
+  "58% of patients with LEP used an interpreter.",
+  "More patients with LEP were self-pay compared to ES patients (36% vs 20%, difference of 16%).",
+  "There were no differences between ES and LEP patients in age, sex, mode of arrival, chief complaints, acuity, percentage admitted, percentage of pediatric patients, or percentage of Medicaid/Medicare recipients.",
+  "There were no significant differences in length of stay (LOS) from time of arrival to time of being seen by a provider between ES and LEP patients.",
+  "Patients with LEP who used interpreters had a significantly longer LOS from time of arrival to discharge or admission request compared to those who did not use interpreters (958 ± 644 vs 628 ± 595 minutes, difference of 330 minutes)."
+ ],
+ "abstractAnchors": [
+  {
+   "id": "abs-0",
+   "kind": "abstract",
+   "text": "Data were collected from a total of 121 ES patients and 124 patients with LEP.",
+   "linkedEvd": null,
+   "evdConfidence": 0.07,
+   "linkedCandidate": 0,
+   "candConfidence": 0.38
+  },
+  {
+   "id": "abs-1",
+   "kind": "abstract",
+   "text": "In the LEP group were the languages of Spanish, Navajo, Vietnamese, Chinese, Arabic, and American Sign Language.",
+   "linkedEvd": null,
+   "evdConfidence": 0.02,
+   "linkedCandidate": 1,
+   "candConfidence": 0.71
+  },
+  {
+   "id": "abs-2",
+   "kind": "abstract",
+   "text": "Fifty-eight percent of patients with LEP used an interpreter.",
+   "linkedEvd": null,
+   "evdConfidence": 0.07,
+   "linkedCandidate": 2,
+   "candConfidence": 0.57
+  },
+  {
+   "id": "abs-3",
+   "kind": "abstract",
+   "text": "There were no differences between ES patients and patients with LEP in age, sex, mode of arrival, chief complaints, acuity, percentage admitted, percentage pediatric patients, or percentage of Medicaid/Medicare recipients.",
+   "linkedEvd": null,
+   "evdConfidence": 0.16,
+   "linkedCandidate": 4,
+   "candConfidence": 1.0
+  },
+  {
+   "id": "abs-4",
+   "kind": "abstract",
+   "text": "More patients with LEP were self-pay (36% vs 20%, diff 16, 95% confidence interval 2-31).",
+   "linkedEvd": null,
+   "evdConfidence": 0.04,
+   "linkedCandidate": 3,
+   "candConfidence": 0.5
+  },
+  {
+   "id": "abs-5",
+   "kind": "abstract",
+   "text": "There were no differences in mean LOS from time of arrival to time to being seen by a provider when comparing ES patients with patients with LEP or time of arrival to time to discharge or admission request.",
+   "linkedEvd": null,
+   "evdConfidence": 0.16,
+   "linkedCandidate": 5,
+   "candConfidence": 0.53
+  },
+  {
+   "id": "abs-6",
+   "kind": "abstract",
+   "text": "Comparing the patients with LEP who used interpreters with those who did not use interpreters, there was a significantly different LOS from time of arrival to time of discharge or admission request (958 ± 644 vs 628 ± 595 minutes, diff 330, 95% confidence interval 84-576).",
+   "linkedEvd": null,
+   "evdConfidence": 0.17,
+   "linkedCandidate": 6,
+   "candConfidence": 0.67
+  },
+  {
+   "id": "abs-7",
+   "kind": "abstract",
+   "text": "There was no difference in LOS for patients with LEP; however, patients with LEP who used interpreters had a significant increase in LOS compared with those who did not use interpreters.",
+   "linkedEvd": null,
+   "evdConfidence": 0.14,
+   "linkedCandidate": 6,
+   "candConfidence": 0.37
+  }
+ ],
+ "objectAnchors": [
+  {
+   "kind": "table",
+   "label": "Table 1",
+   "caption": "Differences between patients with LEP and ES",
+   "page": 2,
+   "bbox": null,
+   "num": "1",
+   "crop": "Wallbrecht_2014_difference_emergency-table1.png",
+   "id": "obj-0",
+   "linkedEvds": [
+    1
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "Table 2",
+   "caption": "Differences between cases involving interpreters",
+   "page": 3,
+   "bbox": null,
+   "num": "2",
+   "crop": "Wallbrecht_2014_difference_emergency-table2.png",
+   "id": "obj-1",
+   "linkedEvds": [
+    0
+   ]
+  }
+ ]
+}

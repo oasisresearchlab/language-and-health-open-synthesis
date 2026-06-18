@@ -1,7 +1,7 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 
-import { loadGraph } from "./graph";
+import { loadGeneratedGraph } from "./graph";
 import type { GraphNode } from "./types";
 
 // The accuracy pass reviews *existing* EVD extractions against the PDF, one EVD at a
@@ -14,15 +14,11 @@ export const ACCURACY_BATCH = [
   "@Karliner_2017_Convenient_Access",
 ];
 
-const PDFS = path.resolve(process.cwd(), "..", "data", "pdfs");
+const PDFS = path.resolve(process.cwd(), "..", "data", "pdfs"); // local dev only
+// Committed review data (works at build + runtime on Vercel — no fs outside site/).
+const REVIEW_DATA = path.resolve(process.cwd(), "review-data");
 // EVD id → physical PDF page, precomputed by utils/build_accuracy_pages.py.
-const PAGES_FILE = path.resolve(
-  process.cwd(),
-  "..",
-  "data",
-  "review",
-  "accuracy_pages.json",
-);
+const PAGES_FILE = path.join(REVIEW_DATA, "accuracy_pages.json");
 
 async function physicalPages(): Promise<Record<string, number>> {
   try {
@@ -37,13 +33,7 @@ type RegionMap = Record<
   string,
   Record<string, (QuoteRegion | null)[]>
 >;
-const REGIONS_FILE = path.resolve(
-  process.cwd(),
-  "..",
-  "data",
-  "review",
-  "quote_regions.json",
-);
+const REGIONS_FILE = path.join(REVIEW_DATA, "quote_regions.json");
 
 async function quoteRegions(): Promise<RegionMap> {
   try {
@@ -279,7 +269,7 @@ function citekeyOf(node: GraphNode, nodes: Map<string, GraphNode>): string | nul
 }
 
 async function evdsByCitekey(): Promise<Map<string, GraphNode[]>> {
-  const g = await loadGraph();
+  const g = loadGeneratedGraph();
   const map = new Map<string, GraphNode[]>();
   for (const node of g.byType.evidence) {
     if (isTemplateStub(node.body)) continue; // skip unfilled template stubs
@@ -291,7 +281,7 @@ async function evdsByCitekey(): Promise<Map<string, GraphNode[]>> {
 }
 
 export async function accuracyIndex(): Promise<AccuracyIndexEntry[]> {
-  const g = await loadGraph();
+  const g = loadGeneratedGraph();
   const byCk = await evdsByCitekey();
   return Promise.all(
     ACCURACY_BATCH.map(async (ck) => {
@@ -310,7 +300,7 @@ export async function accuracyPaper(
   citekey: string,
 ): Promise<AccuracyPaper | null> {
   if (!ACCURACY_BATCH.includes(citekey)) return null;
-  const g = await loadGraph();
+  const g = loadGeneratedGraph();
   const src = g.byType.source.find((s) => s.citekey === citekey);
   const byCk = await evdsByCitekey();
   const evdNodes = byCk.get(citekey) ?? [];
@@ -335,7 +325,10 @@ export async function accuracyPaper(
   };
 }
 
+// "Available" = local file (dev) OR production (served from Supabase Storage; the
+// PdfPane shows its own graceful error if the route can't find it).
 export async function pdfExists(citekey: string): Promise<boolean> {
+  if (process.env.NODE_ENV === "production") return true;
   try {
     await fs.access(path.join(PDFS, `${citekey}.pdf`));
     return true;

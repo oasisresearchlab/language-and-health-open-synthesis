@@ -34,7 +34,7 @@ SRC = ROOT / "Discourse Graph" / "Sources"
 EVD = ROOT / "Discourse Graph" / "Evidence"
 FIGB = ROOT / "data" / "figures_pdf"
 PDFS = ROOT / "data" / "pdfs"
-OUT = ROOT / "data" / "review"
+OUT = ROOT / "site" / "review-data"
 
 RESULT_CUE = re.compile(
     r"\d|%|p\s*[<=>]|95%|\bCI\b|\bOR\b|\bRR\b|\bHR\b|\bIRR\b|"

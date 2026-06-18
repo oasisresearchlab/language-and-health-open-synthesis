@@ -1,9 +1,9 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 
-// Reads the precomputed review anchors (utils/build_review_anchors.py → data/review/).
-// Local prototype data, gitignored; absent on a plain deploy.
-const DIR = path.resolve(process.cwd(), "..", "data", "review");
+// Reads the precomputed completeness anchors (utils/build_review_anchors.py).
+// Committed under site/review-data so they're present at build + runtime on Vercel.
+const DIR = path.resolve(process.cwd(), "review-data");
 
 export interface ReviewEvd {
   title: string;

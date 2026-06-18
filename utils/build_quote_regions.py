@@ -29,7 +29,7 @@ ROOT = Path(__file__).parent.parent
 EVD = ROOT / "graph" / "evidence"
 SRC = ROOT / "graph" / "sources"
 PDFS = ROOT / "data" / "pdfs"
-OUT = ROOT / "data" / "review" / "quote_regions.json"
+OUT = ROOT / "site" / "review-data" / "quote_regions.json"
 
 METHODS_HEADS = [("what", "What"), ("how", "How"), ("who", "Who")]
 

@@ -24,12 +24,19 @@ parent_skill: extract-discourse-nodes
 1. **Verbatim quotes** ground every substantive statement (Author, year, p. N); audited against the PDF.
 2. **Atomicity** — one question/finding/generalization/limitation per node. Split, don't merge.
 3. **EVD ≠ CLM** — numbers/observations → EVD; generalizations → CLM. If a sentence states both, make both.
-4. **CLMs transcend papers** — multiple papers can support one CLM.
+   Surface cue: **EVD past tense** (what a study *observed*, situated), **CLM present tense** (timeless).
+4. **CLMs transcend papers** — multiple papers can support one CLM; cross-paper convergence is captured
+   on the CLM (which aggregates EVDs from ≥2 papers). Its body-of-evidence/`certainty` is an **expert
+   task** (`certainty` + `## Evidence appraisal`) — AI does not draft it. (EP-as-node retired 2026-06;
+   `plans/methodology-decisions.md`.)
 5. **Caveats qualify EVDs, not CLMs** — `CVT —qualifies→ EVD` only. Mark `type: author-stated|inferred`.
-6. **EPs need ≥2 independent papers**; single-paper regularities stay CLMs.
+6. **Author to the review rubric** — every EVD should pass `discourse-extraction/node-spec.md`
+   (verbatim, grounding, polarity, substantive fidelity, methods What/How/Who each grounded); reviewers
+   check the same bar in the review app.
 7. **One `epistemic/*` tag** per QUE/CLM/EVD: `mechanism` | `effect-size` | `measurement`
    (~~`design-principle` dropped~~).
-8. **Propose, don't commit** — EPs, upgrades, merges, and summary-cell values are AI proposals; human commits.
+8. **Propose, don't commit** — claim merges, summary-cell values, certainty appraisals, and review
+   verdicts' downstream commits are human-owned; AI proposes/extracts.
 9. **NodeFormality** starts `draft`; promote after audits pass. **NodeFormality is fidelity** (does
    the node meet the authoring/audit bar); **`curationStatus` is human-AI review state** — a separate axis.
 10. **`curationStatus`** on every synthesis node (QUE/CLM/EVD/ART/CVT): `Initial AI draft` →

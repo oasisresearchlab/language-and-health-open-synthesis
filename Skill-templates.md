@@ -22,7 +22,7 @@ Frontmatter: `NodeType: Evidence`, `Source: [[@<citekey>]]`, `tags:` (domain fac
 - **## Methods Context** — the inverted **What** (observable) / **How** (design+procedure, link
   `[[ART]]`) / **Who** (equivalence class). Each block: one-line summary + verbatim quote + quote-crop.
 - **## Other Notes** — optional metrics table / commentary.
-- Edges: authored from CLM/EP (Supporting/Contradicting Evidence) and CVT (Qualifies) — not here.
+- Edges: authored from CLM (Supporting/Contradicting Evidence) and CVT (Qualifies) — not here.
 
 ## CLM — Claim (`T - Claim`)
 
@@ -72,6 +72,5 @@ required for promotion.
 ## Audits (gate promotion)
 
 - `verbatim_audit.py` — quote ↔ PDF (NFKD+alnum); fix <50% matches before promoting.
-- `attachment_audit.py` — CVT qualifies EVD only; every EVD→(CLM & QUE); every CLM→QUE; every EP has
-  ≥2 EVD→EP edges from ≥2 distinct papers.
+- `attachment_audit.py` — CVT qualifies EVD only; every EVD→(CLM & QUE); every CLM→QUE.
 - `readability_pass.py` — mechanical formatting (blank lines after headings, blockquote separators).

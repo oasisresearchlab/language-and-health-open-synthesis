@@ -8,14 +8,20 @@ import type { GraphNode } from "./types";
 // time, across a checklist (verbatim / grounding / polarity / substantive / methods).
 // Data is reused from the exported graph (graph/) — no separate precompute.
 
-// Review batch: the length-of-stay + readmission clusters. Upload these papers'
+// Review batch: the length-of-stay + readmission clusters, plus the
+// bilingual-provider / language-concordance modality cluster. Upload these papers'
 // PDFs (scripts/upload-review-pdfs.mjs) and rebuild review-data for them.
 export const ACCURACY_BATCH = [
+  // length-of-stay + readmission
   "@Allan_2022_impact_English",
   "@Karliner_2017_Convenient_Access",
   "@Lindholm_2012_Professional_language",
   "@Wallbrecht_2014_difference_emergency",
   "@Greenky_2019_Reversed_Trend",
+  // bilingual-provider / concordance modality (direct-language care vs interpreter)
+  "@Seible_2021_Influence_Patient-Provider",
+  "@Stoneking_2016_Does_Spanish",
+  "@L_2023_Dual-role_nurse",
 ];
 
 // Curated review set — ~4 LOS + ~4 readmission EVDs (spanning surgical/inpatient/
@@ -32,6 +38,22 @@ export const CURATED_EVD_TITLES = new Set<string>([
   "LEP inpatients with no interpreter on admission or discharge had a higher 30-day readmission rate (24.3% vs 14.9%)",
   "No significant difference in one-year readmission after bariatric surgery between LEP and EP patients (adjusted OR 0.94)",
   "Adjusted odds of 7-day ED readmission were only 3% higher and non-significant for interpreter-requested pediatric patients",
+  // bilingual-provider / concordance modality — @Seible_2021 (RCT, direct-Spanish vs interpreter)
+  "Direct-Spanish care raised primary-endpoint general satisfaction over interpreter services (4.45 vs 4.09) in an RCT",
+  "Direct-Spanish care raised satisfaction with overall-care domains (technical quality, interpersonal manner, communication, time spent)",
+  "Direct-Spanish care raised satisfaction with physician communication (disclosure, empathy, confidence, general)",
+  "Direct-Spanish consultations had more physician history-verification and partnering utterances",
+  "Patients in direct-Spanish consultations asked more questions and gave more unprompted speech",
+  "Satisfaction benefit of direct-Spanish care attenuated to nonsignificance at later treatment timepoints",
+  "Initial consultation length did not differ between direct-Spanish and interpreter-services arms (37 vs 33 min)",
+  // @Stoneking_2016 (medical-Spanish curriculum for residents)
+  "Residents trained in a medical Spanish curriculum spoke Spanish with more LEP patients and used translator phones less",
+  "Patients rated visit satisfaction and resident Spanish ability higher for curriculum-trained residents",
+  "Among LEP patients who followed medical recommendations after a Spanish-spoken encounter, most were seen by curriculum-trained residents",
+  // @L_2023 (dual-role nurse interpreting — qualitative)
+  "Dual-role nurses observed Spanish-speaking patients show visible relief and ease once an interpreter brokered communication",
+  "Without qualified interpretation Spanish-speaking patients experienced miscommunication confusion and anger during hospital stays",
+  "Concentrating Spanish-speaking patient assignments on dual-role nurses added time-consuming interpreting burden and frustration",
 ]);
 
 const isCurated = (title: string) =>

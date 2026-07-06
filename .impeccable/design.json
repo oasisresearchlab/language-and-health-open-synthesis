@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-19T00:00:00Z",
+  "title": "Design System: Language & Health Open Synthesis",
+  "extensions": {
+    "colorMeta": {
+      "forest": {
+        "role": "primary",
+        "displayName": "Library Forest",
+        "canonical": "#14532d",
+        "tonalRamp": ["#0a2417", "#0f3a20", "#14532d", "#1d6b3c", "#2f8a53", "#4ade80", "#86efac", "#c7f5d6"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#faf7f0",
+        "tonalRamp": ["#1a1410", "#3a342c", "#6b6660", "#a8a29e", "#d8d2c6", "#e7e2d6", "#f3eee2", "#faf7f0"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Reading Ink",
+        "canonical": "#1a1410",
+        "tonalRamp": ["#0d0a07", "#1a1410", "#2e271f", "#494139", "#6b6660", "#938d85", "#c2bcb2", "#e7e2d6"]
+      },
+      "verdict-correct": {
+        "role": "tertiary",
+        "displayName": "Verdict Correct (Emerald)",
+        "canonical": "#10b981",
+        "tonalRamp": ["#053a2b", "#075c43", "#0a7f5d", "#10b981", "#34d3a0", "#6ee7be", "#a7f3d6", "#d1faec"]
+      },
+      "verdict-wrong": {
+        "role": "tertiary",
+        "displayName": "Verdict Wrong (Rose)",
+        "canonical": "#f43f5e",
+        "tonalRamp": ["#5f0f20", "#88172f", "#b91c40", "#f43f5e", "#fb7185", "#fda4af", "#fecdd3", "#ffe4e6"]
+      }
+    },
+    "typographyMeta": {
+      "heading": { "displayName": "Heading", "purpose": "Page and section titles. Source Serif 4, signals scholarship." },
+      "body": { "displayName": "Body", "purpose": "All UI text and prose. Inter, signals tool." },
+      "label": { "displayName": "Label", "purpose": "Badges and meta chips. Uppercase Inter, +0.06em." },
+      "mono": { "displayName": "Mono", "purpose": "Machine facts only: citekeys, IDs, counts. JetBrains Mono." }
+    },
+    "motion": [
+      { "name": "ease-out-quart", "value": "cubic-bezier(0.25, 1, 0.5, 1)", "purpose": "Default easing for state transitions; no bounce." },
+      { "name": "duration-state", "value": "180ms", "purpose": "Standard state-change transition; users are in flow." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one high-emphasis action per view. Solid Library Forest.",
+      "html": "<button class=\"ds-btn-primary\">Approve extraction</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; height: 2rem; padding: 0 0.625rem; gap: 0.375rem; font-family: var(--font-inter, Inter, sans-serif); font-size: 0.875rem; font-weight: 500; color: var(--primary-foreground, #faf7f0); background: var(--primary, #14532d); border: 1px solid transparent; border-radius: var(--radius-lg, 0.5rem); transition: background 180ms cubic-bezier(0.25,1,0.5,1), transform 120ms; cursor: pointer; } .ds-btn-primary:hover { background: color-mix(in oklab, #14532d 80%, transparent); } .ds-btn-primary:focus-visible { outline: none; box-shadow: 0 0 0 3px color-mix(in oklab, #14532d 50%, transparent); } .ds-btn-primary:active { transform: translateY(1px); }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Default for navigation and secondary actions. White fill, hairline border.",
+      "html": "<button class=\"ds-btn-outline\">Reviewer guide</button>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; height: 2rem; padding: 0 0.625rem; gap: 0.375rem; font-family: var(--font-inter, Inter, sans-serif); font-size: 0.875rem; font-weight: 500; color: var(--foreground, #1a1410); background: var(--background, #faf7f0); border: 1px solid var(--border, #e7e2d6); border-radius: var(--radius-lg, 0.5rem); transition: background 180ms cubic-bezier(0.25,1,0.5,1); cursor: pointer; } .ds-btn-outline:hover { background: var(--muted, #f3eee2); } .ds-btn-outline:focus-visible { outline: none; box-shadow: 0 0 0 3px color-mix(in oklab, #14532d 50%, transparent); }"
+    },
+    {
+      "name": "Node Badge",
+      "kind": "chip",
+      "refersTo": "node-badge",
+      "description": "Discourse-graph node-type tag. Tinted fill + border, full-strength type color, uppercase label.",
+      "html": "<span class=\"ds-node-badge\">Evidence</span>",
+      "css": ".ds-node-badge { display: inline-flex; align-items: center; padding: 0.125rem 0.5rem; font-family: var(--font-inter, Inter, sans-serif); font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #15803d; background: color-mix(in oklab, #15803d 10%, transparent); border: 1px solid color-mix(in oklab, #15803d 30%, transparent); border-radius: 9999px; }"
+    },
+    {
+      "name": "Verdict Control",
+      "kind": "custom",
+      "refersTo": "verdict-correct",
+      "description": "The signature review control: five mutually-exclusive states, each color + icon + label. Shown here with Correct selected.",
+      "html": "<div class=\"ds-verdict\" role=\"radiogroup\" aria-label=\"Verdict\"><button class=\"ds-verdict-btn is-selected\" data-state=\"correct\" aria-checked=\"true\"><svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/></svg>Correct</button><button class=\"ds-verdict-btn\" data-state=\"edit\">Edit</button><button class=\"ds-verdict-btn\" data-state=\"wrong\">Wrong</button><button class=\"ds-verdict-btn\" data-state=\"missing\">Missing</button><button class=\"ds-verdict-btn\" data-state=\"na\">N/A</button></div>",
+      "css": ".ds-verdict { display: inline-flex; gap: 0.25rem; padding: 0.1875rem; background: var(--muted, #f3eee2); border: 1px solid var(--border, #e7e2d6); border-radius: var(--radius-lg, 0.5rem); } .ds-verdict-btn { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.25rem 0.5rem; font-family: var(--font-inter, Inter, sans-serif); font-size: 0.8rem; font-weight: 600; color: var(--muted-foreground, #6b6660); background: transparent; border: 1px solid transparent; border-radius: var(--radius-md, 0.4rem); cursor: pointer; transition: background 180ms cubic-bezier(0.25,1,0.5,1); } .ds-verdict-btn:hover { background: color-mix(in oklab, #6b6660 8%, transparent); } .ds-verdict-btn[data-state=correct].is-selected { color: #047857; background: color-mix(in oklab, #10b981 14%, transparent); border-color: color-mix(in oklab, #10b981 35%, transparent); } .ds-verdict-btn:focus-visible { outline: none; box-shadow: 0 0 0 3px color-mix(in oklab, #14532d 50%, transparent); }"
+    },
+    {
+      "name": "Review Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Resting content surface: white on cream, hairline border, no shadow.",
+      "html": "<article class=\"ds-card\"><h3 class=\"ds-card-title\">Abstract result-sentence</h3><p class=\"ds-card-body\">Professional interpreter use was associated with a reduced length of stay (p = 0.03).</p></article>",
+      "css": ".ds-card { padding: 1rem; background: var(--card, #ffffff); border: 1px solid var(--border, #e7e2d6); border-radius: var(--radius-lg, 0.5rem); } .ds-card-title { margin: 0 0 0.375rem; font-family: var(--font-source-serif, 'Source Serif 4', Georgia, serif); font-size: 1.125rem; font-weight: 600; letter-spacing: -0.015em; color: var(--foreground, #1a1410); } .ds-card-body { margin: 0; font-family: var(--font-inter, Inter, sans-serif); font-size: 1rem; line-height: 1.65; color: var(--foreground, #1a1410); }"
+    },
+    {
+      "name": "Search / Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Hairline stroke, white fill, forest focus ring.",
+      "html": "<input class=\"ds-input\" type=\"text\" placeholder=\"Find in document\" />",
+      "css": ".ds-input { height: 2rem; width: 16rem; padding: 0 0.625rem; font-family: var(--font-inter, Inter, sans-serif); font-size: 0.875rem; color: var(--foreground, #1a1410); background: var(--card, #ffffff); border: 1px solid var(--border, #e7e2d6); border-radius: var(--radius-lg, 0.5rem); transition: border-color 180ms, box-shadow 180ms; } .ds-input::placeholder { color: var(--muted-foreground, #6b6660); } .ds-input:focus-visible { outline: none; border-color: var(--primary, #14532d); box-shadow: 0 0 0 3px color-mix(in oklab, #14532d 50%, transparent); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Reading-Room Instrument",
+    "overview": "This is a research instrument, not a dashboard. The work it serves — a clinician or research assistant verifying an AI-extracted claim against the exact sentence in a PDF — is slow, exacting, and high-stakes. The interface earns trust by getting out of the way: paper-cream surfaces that read like a well-set journal, a single deep-evergreen accent that means action and nothing else, and dense-but-quiet checklists where the source document and the evidence always outrank the chrome around them. It is built on a Cream + Forest identity, with color rationed so the forest is rare on purpose. It explicitly rejects the sterile gray EHR, the generic SaaS dashboard, consumer/playful UI, and the heavy data-viz tool.",
+    "keyCharacteristics": [
+      "Warm, paper-grounded surfaces; flat by default, depth from tone and 1px borders.",
+      "One rationed evergreen accent for action, selection, and focus — never decoration.",
+      "A five-state semantic verdict vocabulary (correct/edit/wrong/missing/n-a) pairing color with an icon and a label.",
+      "Serif headings (Source Serif 4) over a workhorse sans (Inter); mono (JetBrains Mono) for machine facts.",
+      "Density without clutter: checklists run dense; prose stays at 65ch."
+    ],
+    "rules": [
+      { "name": "The One Voice Rule", "body": "Forest is the only saturated brand color. It appears on ≤10% of any screen — primary action, current selection, focus. If two greens compete for 'the action,' one is wrong.", "section": "colors" },
+      { "name": "The Verdict-Is-Not-Decoration Rule", "body": "Emerald / amber / rose / violet appear only on review verdicts and their tallies. They are forbidden as decorative accents anywhere else; their scarcity is what makes a checklist scannable.", "section": "colors" },
+      { "name": "The Fixed-Scale Rule", "body": "Headings use a fixed rem scale (~1.2 ratio), never clamp(). A title that shrinks inside a two-pane review layout looks broken, not responsive.", "section": "typography" },
+      { "name": "The Mono-Means-Machine Rule", "body": "Monospace is for machine-generated facts only (citekeys, UUIDs, counts). Never use it for an eyebrow or to 'look technical.'", "section": "typography" },
+      { "name": "The Flat-Paper Rule", "body": "Resting surfaces cast no shadow. If a card needs a drop shadow to separate from the page, the tonal step or the border is wrong — fix that instead.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do ration the forest. Primary action, current selection, and focus only — ≤10% of any screen.",
+      "Do pair every verdict and status with an icon and a text label, never color alone — required for AA and color-blind reviewers.",
+      "Do promote the five verdict colors (emerald/amber/rose/violet/muted) to named semantic tokens in globals.css; today they are one-off Tailwind classes scattered across the review panes.",
+      "Do keep headings on a fixed rem scale; serif for headings, Inter for everything interactive, mono only for machine facts.",
+      "Do convey depth with tone + 1px borders; keep resting surfaces flat.",
+      "Do hold muted text (#6b6660) to AA against cream — never lighten it 'for elegance.'",
+      "Do soften the cream toward a truer off-white or a hair more chroma toward the forest hue if it reads as generic warm-neutral — sanctioned by the maintainer."
+    ],
+    "donts": [
+      "Don't ship the generic SaaS dashboard: no gradient cards, no hero-metric templates, no purple-on-white, no identical card grids.",
+      "Don't drift toward the sterile gray EHR — no dense joyless gray enterprise panels.",
+      "Don't go consumer/playful: no bubbly toy radii, emoji, gamification, or bright primaries.",
+      "Don't turn it into a data-viz / BI tool: charts must never crowd out the PDF and the evidence.",
+      "Don't use the tiny uppercase tracked mono eyebrow as section scaffolding; it reads as the AI kicker and as 'prototype.'",
+      "Don't use border-left/border-right > 1px as a colored accent stripe.",
+      "Don't add gradient text or decorative glassmorphism.",
+      "Don't reuse the verdict colors as decoration — they mean a review judgment and nothing else.",
+      "Don't put drop shadows on resting cards."
+    ]
+  }
+}

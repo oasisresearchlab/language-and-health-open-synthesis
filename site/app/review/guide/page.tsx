@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Check, Pencil, X, Minus, RefreshCw } from "lucide-react";
 
+import { ReviewNav } from "@/components/review/review-nav";
+
 export const metadata = {
   title: "Reviewer guide",
   description:
@@ -10,10 +12,9 @@ export const metadata = {
 export default function ReviewerGuidePage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
-      <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-        Reviewer guide
-      </p>
-      <h1 className="mt-3 font-heading text-3xl font-semibold tracking-tight">
+      <ReviewNav />
+
+      <h1 className="mt-8 text-balance font-heading text-[2rem] font-semibold leading-tight tracking-tight">
         How to review an extraction
       </h1>
       <p className="mt-3 text-muted-foreground">

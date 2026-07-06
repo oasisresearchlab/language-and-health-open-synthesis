@@ -5,6 +5,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 import { Search, ChevronUp, ChevronDown, X, Download } from "lucide-react";
 
 import type { Rect } from "@/lib/review-accuracy";
+import { ReviewButton } from "@/components/review/controls";
 
 import "react-pdf/dist/Page/TextLayer.css";
 import "react-pdf/dist/Page/AnnotationLayer.css";
@@ -143,36 +144,36 @@ export function PdfPane({
           value={find}
           onChange={(e) => setFind(e.target.value)}
           placeholder="Find in document…"
-          className="min-w-0 flex-1 bg-transparent text-xs outline-none placeholder:text-muted-foreground"
+          className="min-w-0 flex-1 rounded-sm bg-transparent text-xs outline-none placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-ring/60"
         />
         {find && (
           <>
             <span className="font-mono text-[11px] text-muted-foreground">
               {markCount ? `${markIdx + 1}/${markCount}` : "no match"}
             </span>
-            <button
+            <ReviewButton
               onClick={() => step(-1)}
               disabled={!markCount}
-              className="rounded p-0.5 text-muted-foreground hover:text-foreground disabled:opacity-40"
+              className="p-0.5 text-muted-foreground hover:text-foreground disabled:opacity-40"
               aria-label="Previous match"
             >
               <ChevronUp className="h-3.5 w-3.5" />
-            </button>
-            <button
+            </ReviewButton>
+            <ReviewButton
               onClick={() => step(1)}
               disabled={!markCount}
-              className="rounded p-0.5 text-muted-foreground hover:text-foreground disabled:opacity-40"
+              className="p-0.5 text-muted-foreground hover:text-foreground disabled:opacity-40"
               aria-label="Next match"
             >
               <ChevronDown className="h-3.5 w-3.5" />
-            </button>
-            <button
+            </ReviewButton>
+            <ReviewButton
               onClick={() => setFind("")}
-              className="rounded p-0.5 text-muted-foreground hover:text-foreground"
+              className="p-0.5 text-muted-foreground hover:text-foreground"
               aria-label="Clear search"
             >
               <X className="h-3.5 w-3.5" />
-            </button>
+            </ReviewButton>
           </>
         )}
         <a

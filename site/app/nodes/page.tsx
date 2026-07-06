@@ -30,10 +30,7 @@ export default async function NodesIndexPage() {
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-16">
       <header className="space-y-4">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-          Browse
-        </p>
-        <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+        <h1 className="text-balance font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
           All nodes
         </h1>
         <p className="max-w-2xl text-muted-foreground">

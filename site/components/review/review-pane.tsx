@@ -17,6 +17,7 @@ import dynamic from "next/dynamic";
 
 import type { ReviewPaper } from "@/lib/review";
 import { searchSnippet, figureLabel } from "@/lib/review-search";
+import { ReviewButton, ReviewToggle } from "@/components/review/controls";
 import { cn } from "@/lib/utils";
 
 // pdf.js touches DOMMatrix at module load → must not render on the server.
@@ -83,9 +84,12 @@ export function ReviewPane({ paper }: { paper: ReviewPaper }) {
   const [loaded, setLoaded] = useState(false);
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState({ q: "", n: 0 });
+  // Below lg only one pane fits; locating flips to the document.
+  const [mobileView, setMobileView] = useState<"review" | "pdf">("review");
 
   const runSearch = (q: string) => {
     if (q.trim().length >= 2) setSearch((s) => ({ q: q.trim(), n: s.n + 1 }));
+    setMobileView("pdf");
   };
   // an abstract result-sentence: search a distinctive token to find it in the body
   const locateText = (text: string) => runSearch(searchSnippet(text));
@@ -185,45 +189,79 @@ export function ReviewPane({ paper }: { paper: ReviewPaper }) {
   }
 
   return (
-    <div className="grid min-h-0 flex-1 grid-cols-1 grid-rows-1 overflow-hidden lg:grid-cols-[1.1fr_1fr]">
-      {/* Left — PDF (pdf.js: in-doc search + highlight) */}
-      <div className="hidden min-h-0 flex-col overflow-hidden border-r border-border lg:flex">
-        {paper.hasPdf ? (
-          <PdfPane citekey={paper.citekey} page={page} search={search} />
-        ) : (
-          <div className="flex h-full items-center justify-center p-8 text-center text-sm text-muted-foreground">
-            PDF not available locally for {paper.citekey}.
-          </div>
-        )}
-      </div>
+    <div className="flex min-h-0 flex-1 flex-col">
+      {/* Below lg the panes don't fit side by side — switch between them. */}
+      {paper.hasPdf && (
+        <div className="flex shrink-0 items-center gap-1 border-b border-border bg-muted/30 px-3 py-1.5 lg:hidden">
+          <span className="mr-1 text-[11px] text-muted-foreground">View</span>
+          <ReviewToggle
+            pressed={mobileView === "review"}
+            tone="primary"
+            onClick={() => setMobileView("review")}
+            className="px-3 py-1 text-xs"
+          >
+            Review
+          </ReviewToggle>
+          <ReviewToggle
+            pressed={mobileView === "pdf"}
+            tone="primary"
+            onClick={() => setMobileView("pdf")}
+            className="px-3 py-1 text-xs"
+          >
+            Document
+          </ReviewToggle>
+        </div>
+      )}
 
-      {/* Right — checklist */}
-      <div className="flex min-h-0 flex-col overflow-hidden">
+      <div className="grid min-h-0 flex-1 grid-cols-1 grid-rows-1 overflow-hidden lg:grid-cols-[1.1fr_1fr]">
+        {/* Left — PDF (pdf.js: in-doc search + highlight) */}
+        <div
+          className={cn(
+            "min-h-0 flex-col overflow-hidden border-r border-border lg:flex",
+            mobileView === "pdf" ? "flex" : "hidden",
+          )}
+        >
+          {paper.hasPdf ? (
+            <PdfPane citekey={paper.citekey} page={page} search={search} />
+          ) : (
+            <div className="flex h-full items-center justify-center p-8 text-center text-sm text-muted-foreground">
+              PDF not available locally for {paper.citekey}.
+            </div>
+          )}
+        </div>
+
+        {/* Right — checklist */}
+        <div
+          className={cn(
+            "min-h-0 flex-col overflow-hidden lg:flex",
+            mobileView === "review" ? "flex" : "hidden",
+          )}
+        >
         {/* meter */}
         <div className="flex flex-wrap items-center gap-x-4 gap-y-1 border-b border-border bg-muted/30 px-4 py-2 text-xs">
           <Meter label="Abstract results" n={meter.abs} d={meter.absTotal} />
           <Meter label="Tables & figures" n={meter.obj} d={meter.objTotal} />
           {meter.promoted > 0 && (
-            <span className="font-mono text-amber-600 dark:text-amber-400">
+            <span className="font-mono text-verdict-edit">
               +{meter.promoted} promoted
             </span>
           )}
           {meter.added > 0 && (
-            <span className="font-mono text-emerald-600 dark:text-emerald-400">
+            <span className="font-mono text-verdict-correct">
               +{meter.added} new EVD
             </span>
           )}
           {meter.gaps > 0 && (
-            <span className="font-mono text-rose-600 dark:text-rose-400">
+            <span className="font-mono text-verdict-wrong">
               {meter.gaps} gap{meter.gaps > 1 ? "s" : ""}
             </span>
           )}
-          <button
+          <ReviewButton
             onClick={exportJson}
-            className="ml-auto inline-flex items-center gap-1 rounded border border-border px-2 py-1 font-mono text-[11px] hover:bg-accent/50"
+            className="ml-auto h-7 border border-border px-2 font-mono text-[11px] hover:bg-accent/50"
           >
             <Download className="h-3 w-3" /> Export
-          </button>
+          </ReviewButton>
         </div>
 
         <div className="min-h-0 flex-1 overflow-y-auto px-4 py-4">
@@ -275,6 +313,7 @@ export function ReviewPane({ paper }: { paper: ReviewPaper }) {
               </ul>
             </>
           )}
+        </div>
         </div>
       </div>
     </div>
@@ -388,12 +427,12 @@ function ObjectCard({
           </span>
         </div>
         {onJump && (
-          <button
+          <ReviewButton
             onClick={onJump}
-            className="inline-flex shrink-0 items-center gap-1 rounded px-2 py-1 font-mono text-[11px] text-muted-foreground hover:text-foreground"
+            className="px-2 py-1 font-mono text-[11px] text-muted-foreground hover:text-foreground"
           >
             <FileText className="h-3 w-3" /> p{obj.page}
-          </button>
+          </ReviewButton>
         )}
       </div>
 
@@ -411,21 +450,23 @@ function ObjectCard({
                     on && "bg-primary/10",
                   )}
                 >
-                  <button
+                  <ReviewButton
                     onClick={() => toggleEvd(i)}
+                    aria-pressed={on}
+                    aria-label={on ? "Unmap evidence" : "Map evidence"}
                     className={cn(
-                      "mt-0.5 flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-sm border",
+                      "mt-0.5 h-4 w-4 rounded-sm border",
                       on
                         ? "border-primary bg-primary text-primary-foreground"
                         : "border-muted-foreground/40",
                     )}
-                    aria-label={on ? "Unmap evidence" : "Map evidence"}
                   >
                     {on && <Check className="h-2.5 w-2.5" />}
-                  </button>
-                  <button
+                  </ReviewButton>
+                  <ReviewButton
                     onClick={() => setPreview(open ? null : i)}
-                    className="min-w-0 flex-1 text-left leading-snug hover:text-foreground"
+                    aria-expanded={open}
+                    className="min-w-0 flex-1 justify-start gap-0 text-left leading-snug hover:text-foreground"
                   >
                     <ChevronRight
                       className={cn(
@@ -436,7 +477,7 @@ function ObjectCard({
                     <span className={on ? "" : "text-muted-foreground"}>
                       {e.title}
                     </span>
-                  </button>
+                  </ReviewButton>
                 </div>
                 {open && (
                   <p className="ml-6 mr-1 mb-1 rounded bg-muted/50 px-2 py-1.5 text-xs leading-relaxed text-muted-foreground">
@@ -463,22 +504,22 @@ function ObjectCard({
         <div className="mt-2 space-y-1.5">
           {added.map((t, idx) => (
             <div key={idx} className="flex items-start gap-1.5">
-              <FlaskConical className="mt-1.5 h-3.5 w-3.5 shrink-0 text-emerald-600 dark:text-emerald-400" />
+              <FlaskConical className="mt-1.5 h-3.5 w-3.5 shrink-0 text-verdict-correct" />
               <textarea
                 value={t}
                 onChange={(e) => setAdded(idx, e.target.value)}
                 rows={2}
                 autoFocus={t === ""}
                 placeholder="New evidence from this object — state the finding verbatim where possible…"
-                className="w-full resize-y rounded border border-emerald-500/40 bg-background px-2 py-1 text-xs"
+                className="w-full resize-y rounded border border-verdict-correct/40 bg-background px-2 py-1 text-xs"
               />
-              <button
+              <ReviewButton
                 onClick={() => removeAdded(idx)}
-                className="mt-1 text-muted-foreground hover:text-destructive"
+                className="mt-1 h-5 w-5 text-muted-foreground hover:text-destructive"
                 aria-label="Remove"
               >
                 <X className="h-3.5 w-3.5" />
-              </button>
+              </ReviewButton>
             </div>
           ))}
         </div>
@@ -487,14 +528,14 @@ function ObjectCard({
       {/* gap note */}
       {showGap && (
         <div className="mt-2 flex items-start gap-1.5">
-          <Flag className="mt-1.5 h-3.5 w-3.5 shrink-0 text-rose-600 dark:text-rose-400" />
+          <Flag className="mt-1.5 h-3.5 w-3.5 shrink-0 text-verdict-wrong" />
           <textarea
             value={state?.gapNote ?? ""}
             onChange={(e) => onSet({ gapNote: e.target.value })}
             rows={2}
             autoFocus={(state?.gapNote ?? "") === ""}
             placeholder="Something interesting in this object that isn't captured…"
-            className="w-full resize-y rounded border border-rose-500/40 bg-background px-2 py-1 text-xs"
+            className="w-full resize-y rounded border border-verdict-wrong/40 bg-background px-2 py-1 text-xs"
           />
         </div>
       )}
@@ -535,6 +576,8 @@ function ObjectCard({
   );
 }
 
+const MINI_TONE = { emerald: "correct", rose: "wrong", muted: "neutral" } as const;
+
 function MiniBtn({
   icon,
   label,
@@ -548,24 +591,27 @@ function MiniBtn({
   active?: boolean;
   onClick: () => void;
 }) {
-  const tones = {
-    emerald:
-      "border-emerald-500/50 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400",
-    rose: "border-rose-500/50 bg-rose-500/10 text-rose-700 dark:text-rose-400",
-    muted: "border-border bg-muted text-muted-foreground",
-  };
+  // No `active` → it's a plain action (e.g. "Add evidence"), not a toggle, so
+  // it must not claim a pressed state.
+  if (active === undefined) {
+    return (
+      <ReviewButton
+        onClick={onClick}
+        className="border border-border px-2 py-1.5 text-xs text-muted-foreground hover:bg-accent/50 hover:text-foreground"
+      >
+        {icon} {label}
+      </ReviewButton>
+    );
+  }
   return (
-    <button
+    <ReviewToggle
+      pressed={active}
+      tone={MINI_TONE[tone]}
       onClick={onClick}
-      className={cn(
-        "inline-flex items-center gap-1 rounded border px-2 py-1 text-xs transition-colors",
-        active
-          ? tones[tone]
-          : "border-border text-muted-foreground hover:bg-accent/50",
-      )}
+      className="px-2 py-1.5 text-xs"
     >
       {icon} {label}
-    </button>
+    </ReviewToggle>
   );
 }
 
@@ -593,7 +639,7 @@ function AnchorCard({
       className={cn(
         "rounded-lg border p-3 transition-colors",
         verdict === "covered" && "border-primary/40 bg-primary/5",
-        verdict === "promoted" && "border-amber-500/40 bg-amber-500/5",
+        verdict === "promoted" && "border-verdict-edit/40 bg-verdict-edit/5",
         verdict === "not_a_result" && "border-border bg-muted/30 opacity-60",
         !verdict && "border-border",
       )}
@@ -601,14 +647,14 @@ function AnchorCard({
       <div className="flex items-start gap-1.5">
         <p className="min-w-0 flex-1 text-sm leading-snug">{title}</p>
         {onLocate && (
-          <button
+          <ReviewButton
             onClick={onLocate}
             aria-label="Find in PDF"
             title="Find this result in the PDF"
-            className="mt-0.5 shrink-0 rounded p-0.5 text-muted-foreground hover:bg-accent/50 hover:text-foreground"
+            className="mt-0.5 h-6 w-6 text-muted-foreground hover:bg-accent/50 hover:text-foreground"
           >
             <Crosshair className="h-3.5 w-3.5" />
-          </button>
+          </ReviewButton>
         )}
       </div>
 
@@ -631,7 +677,7 @@ function AnchorCard({
           value={state?.promotedText ?? promoteSeed}
           onChange={(e) => onSet({ promotedText: e.target.value })}
           rows={2}
-          className="mt-2 w-full resize-y rounded border border-amber-500/40 bg-background px-2 py-1 text-xs"
+          className="mt-2 w-full resize-y rounded border border-verdict-edit/40 bg-background px-2 py-1 text-xs"
           placeholder="The result to capture as a new evidence node…"
         />
       )}
@@ -698,6 +744,8 @@ function AnchorCard({
   );
 }
 
+const ACTION_TONE = { green: "primary", amber: "edit", muted: "neutral" } as const;
+
 function ActionBtn({
   active,
   tone,
@@ -711,20 +759,14 @@ function ActionBtn({
   label: string;
   onClick: () => void;
 }) {
-  const tones = {
-    green: "border-primary/50 bg-primary/10 text-primary",
-    amber: "border-amber-500/50 bg-amber-500/10 text-amber-700 dark:text-amber-400",
-    muted: "border-border bg-muted text-muted-foreground",
-  };
   return (
-    <button
+    <ReviewToggle
+      pressed={active}
+      tone={ACTION_TONE[tone]}
       onClick={onClick}
-      className={cn(
-        "inline-flex items-center gap-1 rounded border px-2 py-1 text-xs transition-colors",
-        active ? tones[tone] : "border-border text-muted-foreground hover:bg-accent/50",
-      )}
+      className="px-2 py-1.5 text-xs"
     >
       {icon} {label}
-    </button>
+    </ReviewToggle>
   );
 }

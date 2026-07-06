@@ -1,12 +1,13 @@
 import Link from "next/link";
 
+import { ReviewNav } from "@/components/review/review-nav";
 import { reviewIndex } from "@/lib/review";
 
 export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: "Completeness review",
-  description: "Prototype: check each paper's enumerated results against the extracted evidence.",
+  description: "Check each paper's enumerated results against the extracted evidence.",
 };
 
 export default async function ReviewIndexPage() {
@@ -14,41 +15,17 @@ export default async function ReviewIndexPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-16">
-      <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-        Prototype · completeness pass
-      </p>
-      <h1 className="mt-3 font-heading text-3xl font-semibold tracking-tight">
+      <ReviewNav active="completeness" />
+
+      <h1 className="mt-8 text-balance font-heading text-[2rem] font-semibold leading-tight tracking-tight">
         Did we miss anything?
       </h1>
-      <p className="mt-3 max-w-2xl text-muted-foreground">
+      <p className="mt-3 max-w-[62ch] text-pretty leading-relaxed text-muted-foreground">
         For each paper, the lists it enumerates — abstract result-sentences and
         tables/figures — become a checklist. Confirm what the AI already
         captured, promote anything it missed, dismiss what isn&apos;t a result.
         Recognition, not recall.
       </p>
-
-      <div className="mt-6 flex flex-wrap gap-3">
-        <Link
-          href="/review/accuracy"
-          className="rounded-lg border border-border px-4 py-2 text-sm hover:bg-accent/50"
-        >
-          → Accuracy pass{" "}
-          <span className="text-muted-foreground">(verify each EVD)</span>
-        </Link>
-        <Link
-          href="/review/guide"
-          className="rounded-lg border border-border px-4 py-2 text-sm hover:bg-accent/50"
-        >
-          Reviewer guide
-        </Link>
-        <Link
-          href="/review/queue"
-          className="rounded-lg border border-border px-4 py-2 text-sm hover:bg-accent/50"
-        >
-          → Review queue{" "}
-          <span className="text-muted-foreground">(maintainer)</span>
-        </Link>
-      </div>
 
       {papers.length === 0 ? (
         <p className="mt-10 rounded-lg border border-border bg-muted/40 p-5 text-sm text-muted-foreground">
@@ -70,7 +47,7 @@ export default async function ReviewIndexPage() {
                     {p.citekey}
                   </p>
                 </div>
-                <div className="flex shrink-0 items-center gap-3 font-mono text-xs text-muted-foreground">
+                <div className="flex shrink-0 items-center gap-3 font-mono text-xs tabular-nums text-muted-foreground">
                   <span title="abstract + object anchors">
                     {p.abstractAnchors + p.objectAnchors} anchors
                   </span>

@@ -31,6 +31,7 @@ import {
 import dynamic from "next/dynamic";
 
 import { useReviewer, IdentityGate, IdentityBar } from "@/components/review/identity";
+import { ReviewButton, ReviewToggle, type ReviewTone } from "@/components/review/controls";
 import {
   Tooltip,
   TooltipContent,
@@ -120,13 +121,18 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
     rects: Rect[];
     n: number;
   } | null>(null);
+  // Below lg the two panes don't fit side by side, so only one shows at a time.
+  // Any "locate" action flips to the document so the highlight is actually seen.
+  const [mobileView, setMobileView] = useState<"review" | "pdf">("review");
 
   const runSearch = (q: string) => {
     if (q.trim().length >= 2) setSearch((s) => ({ q: q.trim(), n: s.n + 1 }));
+    setMobileView("pdf");
   };
   const locateRegion = (region: QuoteRegion) => {
     setPage(region.page);
     setHighlight((h) => ({ page: region.page, rects: region.rects, n: (h?.n ?? 0) + 1 }));
+    setMobileView("pdf");
   };
   // a grounded quote/figure: draw its exact precomputed region; else fall back to search
   const locateQuote = (q: Quote) =>
@@ -193,10 +199,39 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
   if (!reviewer) return <IdentityGate roster={roster} onPick={choose} />;
 
   return (
-    <div className="grid min-h-0 flex-1 grid-cols-1 grid-rows-1 overflow-hidden lg:grid-cols-[1.1fr_1fr]">
-      {/* Left — PDF (pdf.js: in-doc search + highlight) */}
-      <div className="hidden min-h-0 flex-col overflow-hidden border-r border-border lg:flex">
-        {paper.hasPdf ? (
+    <div className="flex min-h-0 flex-1 flex-col">
+      {/* Below lg the panes don't fit side by side — switch between them. */}
+      {paper.hasPdf && (
+        <div className="flex shrink-0 items-center gap-1 border-b border-border bg-muted/30 px-3 py-1.5 lg:hidden">
+          <span className="mr-1 text-[11px] text-muted-foreground">View</span>
+          <ReviewToggle
+            pressed={mobileView === "review"}
+            tone="primary"
+            onClick={() => setMobileView("review")}
+            className="px-3 py-1 text-xs"
+          >
+            Review
+          </ReviewToggle>
+          <ReviewToggle
+            pressed={mobileView === "pdf"}
+            tone="primary"
+            onClick={() => setMobileView("pdf")}
+            className="px-3 py-1 text-xs"
+          >
+            Document
+          </ReviewToggle>
+        </div>
+      )}
+
+      <div className="grid min-h-0 flex-1 grid-cols-1 grid-rows-1 overflow-hidden lg:grid-cols-[1.1fr_1fr]">
+        {/* Left — PDF (pdf.js: in-doc search + highlight) */}
+        <div
+          className={cn(
+            "min-h-0 flex-col overflow-hidden border-r border-border lg:flex",
+            mobileView === "pdf" ? "flex" : "hidden",
+          )}
+        >
+          {paper.hasPdf ? (
           <PdfPane
             citekey={paper.citekey}
             page={page}
@@ -210,8 +245,13 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
         )}
       </div>
 
-      {/* Right — per-EVD checklist */}
-      <div className="flex min-h-0 flex-col overflow-hidden">
+        {/* Right — per-EVD checklist */}
+        <div
+          className={cn(
+            "min-h-0 flex-col overflow-hidden lg:flex",
+            mobileView === "review" ? "flex" : "hidden",
+          )}
+        >
         <div className="flex flex-wrap items-center gap-x-4 gap-y-1 border-b border-border bg-muted/30 px-4 py-2 text-xs">
           <span className="inline-flex items-center gap-1.5">
             <span className="text-muted-foreground">EVDs reviewed</span>
@@ -227,7 +267,7 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
             </span>
           </span>
           {meter.flags > 0 && (
-            <span className="font-mono text-amber-600 dark:text-amber-400">
+            <span className="font-mono text-verdict-edit">
               {meter.flags} flagged
             </span>
           )}
@@ -240,12 +280,12 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
             <BookOpen className="h-3.5 w-3.5" /> Review criteria
           </a>
           <IdentityBar reviewer={reviewer} onSwitch={() => choose(null)} />
-          <button
+          <ReviewButton
             onClick={exportJson}
-            className="ml-auto inline-flex items-center gap-1 rounded border border-border px-2 py-1 font-mono text-[11px] hover:bg-accent/50"
+            className="ml-auto h-7 border border-border px-2 font-mono text-[11px] hover:bg-accent/50"
           >
             <Download className="h-3 w-3" /> Export
-          </button>
+          </ReviewButton>
         </div>
 
         <div className="min-h-0 flex-1 overflow-y-auto px-4 py-4">
@@ -267,6 +307,7 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
             </ul>
           )}
         </div>
+        </div>
       </div>
     </div>
   );
@@ -276,10 +317,10 @@ function polarityBadge(p: "supports" | "opposes") {
   return (
     <span
       className={cn(
-        "rounded px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-wider",
+        "rounded px-1.5 py-0.5 font-mono text-[11px] uppercase tracking-wider",
         p === "supports"
           ? "bg-primary/10 text-primary"
-          : "bg-rose-500/10 text-rose-600 dark:text-rose-400",
+          : "bg-verdict-wrong/12 text-verdict-wrong",
       )}
     >
       {p}
@@ -324,9 +365,9 @@ function EvdCard({
         <span className="mt-0.5 shrink-0 font-mono text-[11px] text-muted-foreground">
           {index}. {evd.id}
         </span>
-        <p className="min-w-0 flex-1 text-sm font-medium leading-snug">
+        <h2 className="min-w-0 flex-1 text-sm font-medium leading-snug">
           {evd.title}
-        </p>
+        </h2>
         {evd.page && (
           <span className="mt-0.5 shrink-0 font-mono text-[11px] text-muted-foreground">
             p{evd.page}
@@ -346,7 +387,7 @@ function EvdCard({
             <QuoteRow key={qi} quote={q} onLocate={() => onLocateQuote(q)} />
           ))
         ) : (
-          <p className="mt-1 text-[11px] italic text-amber-600 dark:text-amber-400">
+          <p className="mt-1 text-[11px] italic text-verdict-edit">
             No grounding quote — search the PDF to suggest one, or flag
             &ldquo;missing&rdquo;.
           </p>
@@ -433,7 +474,7 @@ function EvdCard({
                     <QuoteRow key={qi} quote={q} onLocate={() => onLocateQuote(q)} />
                   ))
                 ) : (
-                  <p className="mt-0.5 text-[11px] italic text-amber-600 dark:text-amber-400">
+                  <p className="mt-0.5 text-[11px] italic text-verdict-edit">
                     No grounding quote for this assertion — flag &ldquo;missing&rdquo;.
                   </p>
                 )}
@@ -459,7 +500,7 @@ function EvdCard({
           <ul className="space-y-1 text-[11px] text-muted-foreground">
             {evd.caveats.map((c, ci) => (
               <li key={ci} className="flex gap-1">
-                <span className="text-amber-600 dark:text-amber-400">⚑</span>
+                <span className="text-verdict-edit">⚑</span>
                 <span>{c}</span>
               </li>
             ))}
@@ -484,9 +525,9 @@ function Section({
 }) {
   return (
     <div className="mt-3 border-t border-border pt-2.5">
-      <h4 className="font-mono text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+      <h3 className="font-mono text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
         {title}
-      </h4>
+      </h3>
       <div className="mt-1.5">{children}</div>
     </div>
   );
@@ -506,16 +547,16 @@ function LocateBtn({
         exact ? "Highlight this exact passage in the PDF" : "Find this in the PDF"
       }
     >
-      <button
+      <ReviewButton
         onClick={onClick}
         aria-label="Find in PDF"
         className={cn(
-          "mt-0.5 shrink-0 rounded p-0.5 hover:bg-accent/50 hover:text-foreground",
+          "mt-0.5 h-6 w-6 hover:bg-accent/50 hover:text-foreground",
           exact ? "text-primary" : "text-muted-foreground",
         )}
       >
         <Crosshair className="h-3.5 w-3.5" />
-      </button>
+      </ReviewButton>
     </Tip>
   );
 }
@@ -544,37 +585,37 @@ function JudgeBar({ children }: { children: React.ReactNode }) {
 const VERDICTS: {
   v: Verdict;
   icon: React.ReactNode;
-  tone: string;
+  tone: ReviewTone;
   title: string;
 }[] = [
   {
     v: "ok",
     icon: <Check className="h-3.5 w-3.5" />,
-    tone: "border-primary/50 bg-primary/10 text-primary",
+    tone: "correct",
     title: "Correct",
   },
   {
     v: "edit",
     icon: <Pencil className="h-3.5 w-3.5" />,
-    tone: "border-amber-500/50 bg-amber-500/10 text-amber-700 dark:text-amber-400",
+    tone: "edit",
     title: "Needs an edit — propose the fix",
   },
   {
     v: "wrong",
     icon: <X className="h-3.5 w-3.5" />,
-    tone: "border-rose-500/50 bg-rose-500/10 text-rose-700 dark:text-rose-400",
+    tone: "wrong",
     title: "Wrong",
   },
   {
     v: "missing",
     icon: <RefreshCw className="h-3.5 w-3.5" />,
-    tone: "border-violet-500/50 bg-violet-500/10 text-violet-700 dark:text-violet-400",
+    tone: "missing",
     title: "Missing — flag for another extraction pass",
   },
   {
     v: "na",
     icon: <Minus className="h-3.5 w-3.5" />,
-    tone: "border-border bg-muted text-muted-foreground",
+    tone: "neutral",
     title: "Not applicable",
   },
 ];
@@ -598,7 +639,11 @@ function Judge({
         : "What's wrong with it?";
   return (
     <div className="w-full">
-      <div className="flex items-center justify-end gap-1">
+      <div
+        role="group"
+        aria-label={`${dim} verdict`}
+        className="flex items-center justify-end gap-1"
+      >
         <Tip content={HINTS[dim]}>
           <span className="mr-0.5 inline-flex cursor-help items-center gap-1 text-[11px] font-medium capitalize text-foreground">
             {dim}
@@ -607,18 +652,15 @@ function Judge({
         </Tip>
         {VERDICTS.map((b) => (
           <Tip key={b.v} content={b.title}>
-            <button
+            <ReviewToggle
+              pressed={verdict === b.v}
+              tone={b.tone}
               aria-label={b.title}
               onClick={() => onSet({ verdict: verdict === b.v ? null : b.v })}
-              className={cn(
-                "inline-flex h-6 w-6 items-center justify-center rounded border transition-colors",
-                verdict === b.v
-                  ? b.tone
-                  : "border-border text-muted-foreground hover:bg-accent/50",
-              )}
+              className="h-7 w-7 pointer-coarse:h-10 pointer-coarse:w-10"
             >
               {b.icon}
-            </button>
+            </ReviewToggle>
           </Tip>
         ))}
       </div>
@@ -645,12 +687,12 @@ function NoteRow({
   const [open, setOpen] = useState(!!row?.note);
   if (!open) {
     return (
-      <button
+      <ReviewButton
         onClick={() => setOpen(true)}
-        className="mt-3 text-[11px] text-muted-foreground hover:text-foreground"
+        className="mt-3 px-1 py-0.5 text-[11px] text-muted-foreground hover:text-foreground"
       >
         + note on this EVD
-      </button>
+      </ReviewButton>
     );
   }
   return (

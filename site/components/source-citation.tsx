@@ -26,7 +26,7 @@ export function SourceCitation({
         variant === "compact" ? "p-4" : "p-5"
       }`}
     >
-      <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+      <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
         Source
       </p>
       <p className="mt-2 font-serif text-[15px] leading-relaxed">

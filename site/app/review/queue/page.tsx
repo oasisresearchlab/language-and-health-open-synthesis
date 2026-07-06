@@ -1,5 +1,6 @@
 import { queueNodeMeta } from "@/lib/review-queue";
 import { QueueDashboard } from "@/components/review/queue-dashboard";
+import { ReviewNav } from "@/components/review/review-nav";
 
 export const dynamic = "force-dynamic";
 
@@ -12,13 +13,12 @@ export default async function QueuePage() {
   const meta = await queueNodeMeta();
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-      <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-        Maintainer · review the reviews
-      </p>
-      <h1 className="mt-3 font-heading text-3xl font-semibold tracking-tight">
+      <ReviewNav active="queue" />
+
+      <h1 className="mt-8 text-balance font-heading text-[2rem] font-semibold leading-tight tracking-tight">
         Review queue
       </h1>
-      <p className="mt-3 max-w-2xl text-muted-foreground">
+      <p className="mt-3 max-w-[62ch] text-pretty leading-relaxed text-muted-foreground">
         Every accuracy judgment across reviewers. Filter, spot where reviewers
         disagree or flagged edits, and export for analysis.
       </p>

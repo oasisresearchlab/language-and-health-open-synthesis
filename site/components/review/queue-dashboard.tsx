@@ -9,6 +9,7 @@ import {
   type QueueRow,
 } from "@/lib/accuracy-store";
 import type { NodeMeta } from "@/lib/review-queue";
+import { ReviewButton, ReviewToggle } from "@/components/review/controls";
 import { cn } from "@/lib/utils";
 
 type Tab = "all" | "disagreements" | "flagged";
@@ -32,11 +33,11 @@ function prettyDim(d: string): string {
 const groupKey = (r: QueueRow) => `${r.node_id}::${r.dimension}`;
 
 const VERDICT_TONE: Record<string, string> = {
-  ok: "text-primary",
-  edit: "text-amber-600 dark:text-amber-400",
-  wrong: "text-rose-600 dark:text-rose-400",
-  missing: "text-violet-600 dark:text-violet-400",
-  na: "text-muted-foreground",
+  ok: "text-verdict-correct",
+  edit: "text-verdict-edit",
+  wrong: "text-verdict-wrong",
+  missing: "text-verdict-missing",
+  na: "text-verdict-na",
 };
 
 export function QueueDashboard({ meta }: { meta: Record<string, NodeMeta> }) {
@@ -166,31 +167,31 @@ export function QueueDashboard({ meta }: { meta: Record<string, NodeMeta> }) {
         <Stat
           label="flagged"
           value={rows.filter((r) => FLAGGED.has(r.verdict ?? "")).length}
-          tone="text-amber-600 dark:text-amber-400"
+          tone="text-verdict-edit"
         />
         <Stat
           label="disagreements"
           value={disagreed.size}
-          tone="text-rose-600 dark:text-rose-400"
+          tone="text-verdict-wrong"
         />
-        <button
+        <ReviewButton
           onClick={refresh}
-          className="ml-auto inline-flex items-center gap-1 rounded border border-border px-2 py-1 font-mono text-[11px] hover:bg-accent/50"
+          className="ml-auto h-7 border border-border px-2 font-mono text-[11px] hover:bg-accent/50"
         >
           <RefreshCw className={cn("h-3 w-3", loading && "animate-spin")} /> Refresh
-        </button>
-        <button
+        </ReviewButton>
+        <ReviewButton
           onClick={() => exportData("csv")}
-          className="inline-flex items-center gap-1 rounded border border-border px-2 py-1 font-mono text-[11px] hover:bg-accent/50"
+          className="h-7 border border-border px-2 font-mono text-[11px] hover:bg-accent/50"
         >
           <Download className="h-3 w-3" /> CSV
-        </button>
-        <button
+        </ReviewButton>
+        <ReviewButton
           onClick={() => exportData("json")}
-          className="inline-flex items-center gap-1 rounded border border-border px-2 py-1 font-mono text-[11px] hover:bg-accent/50"
+          className="h-7 border border-border px-2 font-mono text-[11px] hover:bg-accent/50"
         >
           <Download className="h-3 w-3" /> JSON
-        </button>
+        </ReviewButton>
       </div>
 
       {/* per-dimension tally */}
@@ -217,19 +218,16 @@ export function QueueDashboard({ meta }: { meta: Record<string, NodeMeta> }) {
       {/* tabs + filters */}
       <div className="mt-4 flex flex-wrap items-center gap-2">
         {(["all", "disagreements", "flagged"] as Tab[]).map((t) => (
-          <button
+          <ReviewToggle
             key={t}
+            pressed={tab === t}
+            tone="primary"
             onClick={() => setTab(t)}
-            className={cn(
-              "rounded-full border px-3 py-1 text-xs capitalize transition-colors",
-              tab === t
-                ? "border-primary bg-primary/10 text-primary"
-                : "border-border text-muted-foreground hover:bg-accent/50",
-            )}
+            className="rounded-full px-3 py-1 text-xs capitalize"
           >
             {t}
             {t === "disagreements" && disagreed.size > 0 && ` (${disagreed.size})`}
-          </button>
+          </ReviewToggle>
         ))}
         <div className="ml-auto flex flex-wrap gap-2">
           <Select value={fPaper} onChange={setFPaper} placeholder="All papers" options={papers} />
@@ -300,7 +298,7 @@ export function QueueDashboard({ meta }: { meta: Record<string, NodeMeta> }) {
                         {prettyDim(r.dimension)}
                         {dis && (
                           <AlertTriangle
-                            className="h-3 w-3 text-rose-600 dark:text-rose-400"
+                            className="h-3 w-3 text-verdict-wrong"
                             aria-label="reviewers disagree"
                           />
                         )}

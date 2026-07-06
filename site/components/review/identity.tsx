@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import { UserCircle2, Database, HardDrive } from "lucide-react";
 
+import { ReviewButton } from "@/components/review/controls";
+
 import {
   fetchRoster,
   supabaseConfigured,
@@ -74,15 +76,15 @@ export function IdentityGate({
       <ul className="mt-6 w-full min-h-0 flex-1 space-y-2 overflow-y-auto pr-1">
         {roster.map((r) => (
           <li key={r.id}>
-            <button
+            <ReviewButton
               onClick={() => onPick(r)}
-              className="flex w-full items-center justify-between rounded-lg border border-border px-4 py-3 text-left transition-colors hover:bg-accent/50"
+              className="w-full justify-between rounded-lg border border-border px-4 py-3 text-left hover:bg-accent/50"
             >
               <span className="font-medium">{r.name}</span>
               <span className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
                 {r.role}
               </span>
-            </button>
+            </ReviewButton>
           </li>
         ))}
       </ul>
@@ -103,9 +105,12 @@ export function IdentityBar({
     <span className="inline-flex items-center gap-2 text-xs text-muted-foreground">
       <UserCircle2 className="h-3.5 w-3.5" />
       <span className="text-foreground">{reviewer.name}</span>
-      <button onClick={onSwitch} className="underline hover:text-foreground">
+      <ReviewButton
+        onClick={onSwitch}
+        className="rounded-sm px-0.5 underline hover:text-foreground"
+      >
         switch
-      </button>
+      </ReviewButton>
     </span>
   );
 }
@@ -122,7 +127,7 @@ export function StorageBadge({ className }: { className?: string }) {
     >
       {supabaseConfigured ? (
         <>
-          <Database className="h-3 w-3 text-emerald-600 dark:text-emerald-400" />{" "}
+          <Database className="h-3 w-3 text-verdict-correct" />{" "}
           central
         </>
       ) : (

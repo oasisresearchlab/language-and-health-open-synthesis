@@ -51,13 +51,10 @@ export default async function HomePage() {
       {/* Section 1 — Substance */}
       <section className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)] lg:gap-12 lg:items-start">
         <div className="space-y-6">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-            An open evidence synthesis
-          </p>
-          <h1 className="font-heading text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
+          <h1 className="text-balance font-heading text-[clamp(2.5rem,5vw,3.5rem)] font-semibold leading-[1.05] tracking-tight">
             Language Access in Healthcare
           </h1>
-          <p className="text-lg leading-relaxed text-muted-foreground">
+          <p className="max-w-[60ch] text-pretty text-lg leading-relaxed text-muted-foreground">
             <strong className="text-foreground">Language concordance</strong> —
             matching patients with providers or interpreters who share their
             language — is linked to better treatment adherence, shorter
@@ -81,9 +78,9 @@ export default async function HomePage() {
         </div>
 
         <div className="space-y-3">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
+          <h2 className="font-heading text-base font-semibold tracking-tight text-foreground">
             Best-supported claims
-          </p>
+          </h2>
           <ul className="space-y-3">
             {topClaims.map((c) => (
               <li key={c.id}>
@@ -120,13 +117,10 @@ export default async function HomePage() {
       {/* Section 2 — Form */}
       <section className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)] lg:gap-12 lg:items-start">
         <div className="space-y-6">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-            The form
-          </p>
-          <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+          <h2 className="text-balance font-heading text-[clamp(1.75rem,3.2vw,2.25rem)] font-semibold leading-[1.1] tracking-tight">
             We publish the argument as a discourse graph
           </h2>
-          <p className="text-lg leading-relaxed text-muted-foreground">
+          <p className="max-w-[62ch] text-pretty text-lg leading-relaxed text-muted-foreground">
             Every question, claim, evidence item, caveat, and source is its
             own addressable node. You cite a claim by ID, contradict it with
             a counter-claim, qualify a finding with a caveat, or support it
@@ -166,7 +160,7 @@ export default async function HomePage() {
             zoomBoost={1.7}
           />
           <div className="flex items-center justify-between gap-3">
-            <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
+            <p className="font-mono text-[11px] tabular-nums text-muted-foreground">
               {graph.nodes.size} nodes · {previewEdges.length} edges
             </p>
             <Link
@@ -185,13 +179,10 @@ export default async function HomePage() {
       {/* Section 3 — Three ways into the graph */}
       <section className="space-y-8">
         <div className="space-y-4 max-w-3xl">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-            Where to start
-          </p>
-          <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+          <h2 className="text-balance font-heading text-[clamp(1.75rem,3.2vw,2.25rem)] font-semibold leading-[1.1] tracking-tight">
             Engaging with a discourse graph
           </h2>
-          <p className="text-base leading-relaxed text-muted-foreground">
+          <p className="max-w-[68ch] text-pretty text-base leading-relaxed text-muted-foreground">
             A discourse graph isn&apos;t read like a paper. There&apos;s no
             fixed reading order — readers choose where to enter and what to
             follow. See the structure at a glance, follow a question down to

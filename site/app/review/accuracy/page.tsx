@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { ReviewNav } from "@/components/review/review-nav";
 import { accuracyIndex } from "@/lib/review-accuracy";
 
 export const dynamic = "force-dynamic";
@@ -14,13 +15,12 @@ export default async function AccuracyIndexPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-16">
-      <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-        Accuracy pass · clinician tier
-      </p>
-      <h1 className="mt-3 font-heading text-3xl font-semibold tracking-tight">
+      <ReviewNav active="accuracy" />
+
+      <h1 className="mt-8 text-balance font-heading text-[2rem] font-semibold leading-tight tracking-tight">
         Is each extraction correct?
       </h1>
-      <p className="mt-3 max-w-2xl text-muted-foreground">
+      <p className="mt-3 max-w-[62ch] text-pretty leading-relaxed text-muted-foreground">
         For each paper, walk its evidence nodes against the PDF and judge five
         things per node — verbatim quote, grounding, claim polarity, substantive
         fidelity, and methods context. New to the node types?{" "}

@@ -25,10 +25,7 @@ export default function AboutPage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24">
       <div className="space-y-4">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-          About
-        </p>
-        <h1 className="font-heading text-4xl font-semibold leading-[1.1] tracking-tight">
+        <h1 className="text-balance font-heading text-4xl font-semibold leading-[1.1] tracking-tight">
           What is a discourse graph, and why is this synthesis rendered as one?
         </h1>
       </div>

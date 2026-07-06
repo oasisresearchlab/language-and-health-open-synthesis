@@ -1,5 +1,10 @@
 # CLAUDE.md — language-and-health-open-synthesis
 
+> **Design context (for the `site/` web app).** Strategy lives in `PRODUCT.md` (register =
+> product; users = clinicians + RAs + maintainer; "precise, instrument-like" Cream + Forest).
+> Visual system lives in `DESIGN.md` (+ `.impeccable/design.json` sidecar). Read both before any
+> frontend work via the `impeccable` skill. Restyle work tracked on the `review-app-restyle` branch.
+
 Operating rules for extracting a grounded **discourse graph** from the LEP / language-concordance
 corpus. Methodology ported & adapted from `living-synthesis-remix` (per-paper extraction) and
 `jay-living-synthesis-jc-port/Skill-synthesis.md` (cross-paper synthesis). Plan of record:

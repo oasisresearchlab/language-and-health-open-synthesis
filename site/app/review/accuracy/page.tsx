@@ -21,9 +21,11 @@ export default async function AccuracyIndexPage() {
         Is each extraction correct?
       </h1>
       <p className="mt-3 max-w-[62ch] text-pretty leading-relaxed text-muted-foreground">
-        For each paper, walk its evidence nodes against the PDF and judge five
-        things per node — verbatim quote, grounding, claim polarity, substantive
-        fidelity, and methods context. New to the node types?{" "}
+        <span className="font-medium text-foreground">First pass:</span> for each
+        paper, walk its evidence nodes against the PDF and judge three things per
+        node — the verbatim quote, substantive fidelity, and grounding. Claim
+        polarity and methods context are deferred to a later pass. New to the node
+        types?{" "}
         <Link href="/review/guide" className="text-primary hover:underline">
           Read the reviewer guide
         </Link>

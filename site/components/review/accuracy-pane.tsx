@@ -77,38 +77,13 @@ const HINTS: Record<string, string> = {
   substantive:
     "Faithful to the source — direction/magnitude/significance/CI for quantitative results, and an accurate characterization for qualitative ones.",
   grounding: "Correct figure/table embedded — or correctly none.",
-  methods:
-    "What (the observable) / How (design) / Who (sample) accurately describe the study.",
-  polarity:
-    "Does this evidence really support / oppose this specific claim, as stated?",
 };
 
-// dimension keys: verbatim | substantive | grounding | methods | polarity:<claimId>
+// First accuracy pass — judge only EVD faithfulness to the source.
+// Claim polarity and methods context are deferred to a later review pass.
+const REQUIRED_DIMS = ["verbatim", "substantive", "grounding"];
+
 const k = (nodeId: string, dim: string) => `${nodeId}:${dim}`;
-
-function polarityKeys(evd: AccuracyEvd): string[] {
-  return evd.claims.length
-    ? evd.claims.map((c) => `polarity:${c.id}`)
-    : ["polarity:_none"];
-}
-function methodKeys(evd: AccuracyEvd): string[] {
-  return evd.methods.map((p) => `methods:${p.key}`);
-}
-function requiredDims(evd: AccuracyEvd): string[] {
-  return [
-    "verbatim",
-    "substantive",
-    "grounding",
-    ...methodKeys(evd),
-    ...polarityKeys(evd),
-  ];
-}
-
-function canonDim(dim: string): string {
-  if (dim.startsWith("polarity")) return "polarity";
-  if (dim.startsWith("methods")) return "methods";
-  return dim;
-}
 
 export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
   const { reviewer, roster, choose, ready } = useReviewer();
@@ -167,7 +142,7 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
   const meter = useMemo(() => {
     let doneEvds = 0;
     for (const e of paper.evds) {
-      if (requiredDims(e).every((d) => reviews[k(e.id, d)]?.verdict)) doneEvds++;
+      if (REQUIRED_DIMS.every((d) => reviews[k(e.id, d)]?.verdict)) doneEvds++;
     }
     const flags = Object.values(reviews).filter((r) =>
       ["edit", "wrong", "missing"].includes(r.verdict ?? ""),
@@ -313,21 +288,6 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
   );
 }
 
-function polarityBadge(p: "supports" | "opposes") {
-  return (
-    <span
-      className={cn(
-        "rounded px-1.5 py-0.5 font-mono text-[11px] uppercase tracking-wider",
-        p === "supports"
-          ? "bg-primary/10 text-primary"
-          : "bg-verdict-wrong/12 text-verdict-wrong",
-      )}
-    >
-      {p}
-    </span>
-  );
-}
-
 function EvdCard({
   evd,
   index,
@@ -343,10 +303,10 @@ function EvdCard({
   onLocateFigure: (label: string) => void;
   onSet: (dim: string, patch: Partial<ReviewRow>) => void;
 }) {
-  const allDone = requiredDims(evd).every((d) => reviews[k(evd.id, d)]?.verdict);
+  const allDone = REQUIRED_DIMS.every((d) => reviews[k(evd.id, d)]?.verdict);
   const judge = (dim: string) => (
     <Judge
-      dim={canonDim(dim)}
+      dim={dim}
       row={reviews[k(evd.id, dim)]}
       onSet={(patch) => onSet(dim, patch)}
     />
@@ -363,7 +323,18 @@ function EvdCard({
       {/* heading */}
       <div className="flex items-start gap-2">
         <span className="mt-0.5 shrink-0 font-mono text-[11px] text-muted-foreground">
-          {index}. {evd.id}
+          {index}.{" "}
+          <Tip content="Open this evidence node in context">
+            <a
+              href={`/node/${evd.id}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground hover:underline"
+            >
+              {evd.id}
+              <ArrowUpRight className="ml-0.5 inline h-3 w-3 opacity-60" />
+            </a>
+          </Tip>
         </span>
         <h2 className="min-w-0 flex-1 text-sm font-medium leading-snug">
           {evd.title}
@@ -422,68 +393,6 @@ function EvdCard({
         )}
         <JudgeBar>{judge("grounding")}</JudgeBar>
       </Section>
-
-      {/* Claim links — one judgment per edge */}
-      <Section title="Claim link & polarity">
-        {evd.claims.length ? (
-          <ul className="space-y-2">
-            {evd.claims.map((c) => (
-              <li
-                key={c.id}
-                className="flex flex-wrap items-center gap-x-2 gap-y-1"
-              >
-                {polarityBadge(c.polarity)}
-                <a
-                  href={`/node/${c.id}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="min-w-0 flex-1 text-xs text-muted-foreground hover:text-foreground hover:underline"
-                >
-                  {c.title} <ArrowUpRight className="inline h-3 w-3 opacity-60" />
-                </a>
-                <div className="ml-auto">{judge(`polarity:${c.id}`)}</div>
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <div className="flex items-center justify-between gap-2">
-            <span className="text-xs italic text-muted-foreground">
-              Not linked to any claim — should it be?
-            </span>
-            {judge("polarity:_none")}
-          </div>
-        )}
-      </Section>
-
-      {/* Methods context — each assertion grounded in its own quote + judged */}
-      {evd.methods.length > 0 && (
-        <Section title="Methods context">
-          <ul className="space-y-3">
-            {evd.methods.map((p) => (
-              <li key={p.key}>
-                <p className="font-mono text-[10px] uppercase tracking-wider text-primary">
-                  {p.label}
-                </p>
-                {p.summary && (
-                  <p className="mt-0.5 text-xs text-muted-foreground">
-                    {p.summary}
-                  </p>
-                )}
-                {p.quotes.length ? (
-                  p.quotes.map((q, qi) => (
-                    <QuoteRow key={qi} quote={q} onLocate={() => onLocateQuote(q)} />
-                  ))
-                ) : (
-                  <p className="mt-0.5 text-[11px] italic text-verdict-edit">
-                    No grounding quote for this assertion — flag &ldquo;missing&rdquo;.
-                  </p>
-                )}
-                <JudgeBar>{judge(`methods:${p.key}`)}</JudgeBar>
-              </li>
-            ))}
-          </ul>
-        </Section>
-      )}
 
       {/* Other notes (display only) */}
       {evd.otherNotes && (
@@ -625,7 +534,7 @@ function Judge({
   row,
   onSet,
 }: {
-  dim: string; // canonical dimension for the hint (verbatim|substantive|grounding|methods|polarity)
+  dim: string; // dimension for the hint (verbatim|substantive|grounding)
   row?: ReviewRow;
   onSet: (patch: Partial<ReviewRow>) => void;
 }) {

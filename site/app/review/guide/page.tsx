@@ -149,25 +149,30 @@ export default function ReviewerGuidePage() {
       </Section>
 
       {/* the checklist */}
-      <Section title="The accuracy checklist (5 per evidence node)">
+      <Section title="The first-pass checklist (3 per evidence node)">
+        <p className="mb-4 text-sm text-muted-foreground">
+          This pass checks only that each evidence node is{" "}
+          <strong>faithful to its source</strong>. Claim polarity and methods
+          context are deferred to a later pass.
+        </p>
         <dl className="space-y-3 text-sm">
           <Dim name="Verbatim">
             Is the quote the right sentence, and does it match the PDF? (An audit
             already checked the <em>string</em>; you confirm the <em>meaning</em>.)
           </Dim>
+          <Dim name="Substantive fidelity">
+            Direction, magnitude, significance, and CI faithful to the source for
+            quantitative results; an accurate characterization for qualitative ones.
+          </Dim>
           <Dim name="Grounding">
             Correct figure/table embedded — or correctly none.
           </Dim>
-          <Dim name="Claim link &amp; polarity">
-            Does this evidence really support / oppose the claim it&apos;s wired to?
-          </Dim>
-          <Dim name="Quant fidelity">
-            Direction, magnitude, significance, CI faithful to the source.
-          </Dim>
-          <Dim name="Methods context">
-            What / How / Who accurately describe the observable, design, and sample.
-          </Dim>
         </dl>
+        <p className="mt-4 text-sm text-muted-foreground">
+          <strong>Deferred to a later pass:</strong> whether the evidence really{" "}
+          <em>supports / opposes</em> the claim it&apos;s wired to (claim polarity),
+          and whether its <em>What / How / Who</em> methods context is accurate.
+        </p>
       </Section>
 
       {/* verdicts */}
@@ -200,8 +205,9 @@ export default function ReviewerGuidePage() {
             label="Missing"
           >
             The element should exist but isn&apos;t there — e.g. a finding with no
-            grounding quote, or a methods assertion the AI never extracted. Flags it
-            for another extraction pass (say what&apos;s missing). Distinct from
+            grounding quote, or a figure/table that should be embedded but
+            isn&apos;t. Flags it for another extraction pass (say what&apos;s
+            missing). Distinct from
             &ldquo;wrong&rdquo;: nothing was captured to be wrong.
           </Verdict>
           <Verdict

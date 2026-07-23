@@ -269,6 +269,8 @@ def main():
     ap.add_argument("--limit", type=int, default=None)
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--only", type=str, default=None,
+                    help="Comma-separated citekeys (with or without leading @) to restrict to.")
     args = ap.parse_args()
 
     root_dir = Path(__file__).parent.parent
@@ -276,6 +278,9 @@ def main():
     out_root = root_dir / "data" / "figures_pdf"
 
     targets = load_targets(pdf_dir, root_dir / "data" / "figures")
+    if args.only:
+        want = {c.strip().lstrip("@") for c in args.only.split(",") if c.strip()}
+        targets = [t for t in targets if t.lstrip("@") in want]
     if args.limit:
         targets = targets[: args.limit]
     print(f"Target non-PMC PDFs: {len(targets)}")

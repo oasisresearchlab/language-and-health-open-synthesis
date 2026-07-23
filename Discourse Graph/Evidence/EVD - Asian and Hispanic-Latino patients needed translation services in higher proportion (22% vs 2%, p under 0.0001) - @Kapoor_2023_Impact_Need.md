@@ -1,0 +1,52 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
+nodeInstanceId: 019f8c54-fff6-7eec-a019-ada58075c2b4
+Source: "[[@Kapoor_2023_Impact_Need]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/discordance
+  - deliveryContext/surgery
+  - epistemic/measurement
+languageConcordanceFactor:
+  - Need for language assistance
+  - Limited English proficiency
+healthOutcome:
+  - Distribution of interpretation need
+deliveryContext:
+  - Surgical oncology
+  - Abdominal surgery
+---
+## Description
+
+![[Kapoor_2023_Impact_Need-table1.png]]
+
+In the full unmatched cohort (n = 4791; 300 [6.26%] needed translation services), the need for language assistance was strongly associated with patient race/ethnicity. Asian and Hispanic/Latino patients needed translation services in a much higher proportion (n = 220, 22%) than Black/African American or White subjects (n = 77, 2%); this association was statistically significant (p < 0.0001) (Table 1). This characterizes the distribution of interpretation need across the surgical oncology population.
+
+> "The pre-matching analysis demonstrated that the association between the need for translator services and the patients' race was statically significant. Asian and Hispanic/Latino patients (n = 220, 22%) needed translation services in a higher proportion than Black/African American or White subjects (n = 77, 2%, p < 0.0001)." (Kapoor, 2023, p. 4)
+
+## Methods Context
+
+### What?
+
+The observable: the proportion of patients needing translation services (LAS), broken down by self-reported race/ethnicity.
+
+> "LAS need is typically identified at the first encounter with providers at our institution by asking the patient if they wish to have an interpreter for medical communication." (Kapoor, 2023, p. 2)
+
+### How?
+
+Retrospective EMR review; the association between the categorical need-for-LAS variable and race/ethnicity was tested with chi-square / Fisher's exact test on the unmatched cohort.
+
+> "The chi-square test or Fisher's exact test was used to evaluate the association between two categorical variables." (Kapoor, 2023, p. 2)
+
+### Who?
+
+The full unmatched cohort of 4791 adults undergoing open abdominal oncologic surgery at a single academic cancer center, 2016–2021; 300 (6.26%) needed translation services.
+
+> "A total of 4791 patients were included from our database (Table 1)." (Kapoor, 2023, p. 3)
+
+## Other Notes
+
+Race/ethnicity distribution of the cohort (patients with information): 5.4% Asian, 7.7% Black/African American, 13.7% Hispanic/Latino, 1.9% other, 71.3% White. This EVD bears on the "distribution of discordance need" sub-question.

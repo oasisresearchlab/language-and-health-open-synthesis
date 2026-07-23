@@ -1,0 +1,45 @@
+---
+shortLabel: "Bedside interpreter phone"
+NodeFormality: draft
+NodeType: Artifact
+nodeTypeId: node_OULGh2SuqxP1oES9p2k_9
+curationStatus: Initial AI draft
+nodeInstanceId: 019f8c4b-e550-7e60-83e3-f59352cbc0e4
+tags:
+  - languageConcordanceFactor/concordanceIntervention/interpretingServices
+  - deliveryContext/inpatient
+languageConcordanceFactor:
+  - Interpreting services
+deliveryContext:
+  - Inpatient
+  - Cardiovascular
+  - General surgery
+  - Orthopedic surgery
+---
+## Purpose
+
+To remove the time and availability barriers that keep clinicians from using professional interpreters in the hospital, by putting immediate, round-the-clock access to remote professional medical interpreters at every patient's bedside — thereby improving patient-clinician communication and informed consent for hospitalized patients with limited English proficiency (LEP).
+
+> [!info]
+> "We investigated the impact of a bedside interpreter phone system intervention to increase rapid access to professional interpreters on three central patient-reported elements of informed consent for patients with LEP undergoing invasive procedures in the hospital." (Lee, 2017, p. 864)
+
+## Mechanism
+
+A dual-handset telephone is installed at the bedside in every room (32–45 phones per study floor, by bed count). Programmed buttons connect the patient and clinician to remote professional medical interpreters in more than 100 languages, 24 hours a day, in under one minute — eliminating the need to locate and wheel a shared interpreter phone cart from the nursing station. The intervention was rolled out hospital-wide alongside a nurse- and physician-education campaign (nurse-manager briefings, Chiefs-of-Service email, GME newsletter) so staff would adopt the phones.
+
+> [!info]
+> "The bedside interpreter intervention consisted of placement of a dual-handset telephone at the bedside in every room. For the three study floors this ranged from 32 to 45 phones according to the number of beds on each floor. The phone had programmed buttons enabling 24-h access to remote professional medical interpreters for more than 100 languages in less than 1 min (Fig. 1)." (Lee, 2017, p. 864)
+
+> [!info]
+> "Installation of dual-handset interpreter phones at every bedside enabling 24-h immediate access to professional interpreters." (Lee, 2017, p. 863)
+
+## Example(s) of usage
+
+In Lee (2017), a large academic medical center installed the bedside phones hospital-wide in December 2012. In a pre-post natural experiment on the cardiovascular, general surgery, and orthopedic surgery floors, LEP patients undergoing invasive procedures after implementation reported adequately informed consent about twice as often as those before implementation. Before the intervention, professional interpreter access on these floors was limited to weekday-daytime in-person staff interpreters and 1–3 shared dual-handset phones kept on mobile carts or in locked cabinets that had to be brought to the room.
+
+> [!info]
+> "Prior to intervention implementation, availability of professional interpreter services on the study floors included in-person staff interpreters who could be scheduled during weekdays from 8 a.m. to 5 p.m. and 1–3 dual-handset interpreter phones. The phones were usually on mobile carts at the nursing station or in locked cabinets and had to be brought to the patient's room." (Lee, 2017, p. 864)
+
+## Other Notes
+
+The bedside phones are depicted in Fig. 1. The intervention was designed to provide interpreter access throughout hospitalization, not only at the consent-signing encounter, which the authors note may explain why gains in adequately informed consent exceeded the increase in professional interpreter use documented specifically at consent signing. (Note: the plugin's relation grammar does not yet define EVD/CLM→ART edges, so links to this artifact are wikilinks for now.)

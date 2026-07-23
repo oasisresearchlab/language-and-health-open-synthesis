@@ -1,0 +1,46 @@
+---
+shortLabel: "eConsent (auto-translated + interpreter documentation)"
+NodeFormality: draft
+NodeType: Artifact
+nodeTypeId: node_OULGh2SuqxP1oES9p2k_9
+curationStatus: Initial AI draft
+nodeInstanceId: 019f8c53-45ac-73fb-8c7c-9beaf5674cf0
+tags:
+  - languageConcordanceFactor/concordanceIntervention/interpretingServices
+  - languageConcordanceFactor/concordanceIntervention/translatedDocuments
+  - deliveryContext/surgery
+  - deliveryContext/perioperative
+languageConcordanceFactor:
+  - Interpreting services
+  - Translated documents
+deliveryContext:
+  - Surgery
+  - Perioperative
+---
+## Purpose
+
+To improve language-concordant surgical informed consent for patients with limited English proficiency (LEP) by replacing paper consent forms with an EHR-integrated electronic consent (eConsent) that both delivers the written consent form in the patient's preferred language and forces documentation of interpreter-mediated verbal consent discussion.
+
+> [!info]
+> "We launched a major initiative to transition from paper surgical consents to eConsent to improve readability, completeness, and accessibility of consent forms." (Trang, 2024, p. 528)
+
+## Mechanism
+
+The paper surgical consent form was rebuilt into the electronic health record (Epic Systems Corporation, Verona, Wisconsin). A translated version of the form (Spanish, Chinese-Traditional, Chinese-Simplified, Arabic, and Russian, prepared by medical interpreter services) is stored in the EHR and automatically populated in the patient's recorded preferred language when that language is not English. Provider-added free-text procedure-specific risks/benefits/alternatives are not auto-translated. To complete the form and apply a signature, the provider must document interpreter-mediated verbal communication of the consent discussion — selecting the certified interpreter service used (telephone, staff interpreter, certified bilingual, or "NA") and the language used; without this the signature cannot be applied. Language concordance is defined as the documented language used matching the patient's recorded preferred language. Consent can be signed in person on a hospital iPad or remotely (synchronously/asynchronously) via the patient portal.
+
+> [!info]
+> "The form, translated into Spanish, Chinese-Traditional, Chinese-Simplified, Arabic, and Russian by medical interpreter services, was also available in the EHR and automatically populated in the patient's recorded preferred language if their preferred language was not English." (Trang, 2024, p. 529)
+
+> [!info]
+> "Documentation of interpreter-mediated verbal communication of the physician consent discussion with the patient or surrogate decision-maker was required to complete the electronic form. Without completion, the provider could not apply their signature. The interpreter documentation consisted of selecting the certified interpreter services used (telephone, staff interpreter, certified bilingual) or an option of 'NA,' as well as the language used for verbal discussion." (Trang, 2024, p. 529)
+
+## Example(s) of usage
+
+In Trang (2024), the eConsent was implemented at an urban academic medical center on February 8, 2023; during the study period (through June 14, 2023) patients with a preferred language other than English signed 1,016 eConsents. After implementation, documented language-concordant interpreter-mediated consent rose from a 56.9% paper-era baseline to 83.9%, and ~94% of patients whose preferred language was one of the five supported languages received their written consent in the correct language.
+
+> [!info]
+> "eConsent (Epic Systems Corporation, Verona, Wisconsin) was implemented on February 8, 2023." (Trang, 2024, p. 529)
+
+## Other Notes
+
+The institution also contracts with a private video interpreting service supporting more than 240 languages, but only five languages have a translated written consent template. (Note: the plugin's relation grammar does not yet define EVD/CLM→ART edges, so links to this artifact are wikilinks for now.)

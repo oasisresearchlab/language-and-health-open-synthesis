@@ -1,0 +1,54 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
+nodeInstanceId: 019f8c59-cb97-7f5d-b9dc-109efd22e25f
+Source: "[[@Jaramillo_2016_Hispanic_Clinic]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/concordanceIntervention/interpretingServices
+  - healthOutcome/patientPreference
+  - deliveryContext/pediatricSurgery
+  - epistemic/effect-size
+languageConcordanceFactor:
+  - Interpretation services
+healthOutcome:
+  - Patient preference
+deliveryContext:
+  - Pediatric surgery
+  - Outpatient clinic
+---
+## Description
+
+![[Jaramillo_2016_Hispanic_Clinic-table5.png]]
+
+In the OLS survey model, Spanish-speaking families reported significantly less comfort using an interpreter than English-speaking families (patient's-language β = −0.659, p = 0.005); language concordance was also a significant predictor of this item (β = 0.754, p = 0.002) (Table 5). The finding underscores that interpreter-mediated care was less acceptable to the very population it is meant to serve.
+
+> "Spanish speakers reported a lesser degree of comfort using an interpreter." (Jaramillo, 2016, p. 672)
+
+> "Comfortable using interpreter     0.754     0.002     −0.659     0.005" (Jaramillo, 2016, p. 674, Table 5)
+
+## Methods Context
+
+### What?
+
+The observable: the participant's 5-point Likert rating on the "comfortable using interpreter" survey item.
+
+> "Participants indicated their level of agreement with a series of 15 questions using a 5-point Likert scale from 1 (strongly disagree/very negative/never) to 5 (strongly agree/very positive/always)." (Jaramillo, 2016, p. 672)
+
+### How?
+
+A surgery-specific post-visit satisfaction survey analyzed by OLS regression using language concordance and patient's language as explanatory variables. Interpreter-mediated care was the modality experienced by the discordant arm.
+
+> "Regression modeling was used to determine the factors associated with survey results using language concordance and patient's language as explanatory variables." (Jaramillo, 2016, p. 672)
+
+### Who?
+
+The 156-family cohort of pediatric surgery patients at a single academic children's hospital, surveyed after their visit.
+
+> "A total of 156 families were enrolled including 57 concordant-English, 52 LEP concordant-Spanish and 47 LEP discordant families." (Jaramillo, 2016, p. 672)
+
+## Other Notes
+
+Table 5 "Comfortable using interpreter" coefficients: language concordance 0.754 (p = 0.002) and patient's language −0.659 (p = 0.005). The negative patient's-language coefficient indicates Spanish speakers were less comfortable using an interpreter.

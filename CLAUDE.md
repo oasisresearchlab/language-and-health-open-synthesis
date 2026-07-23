@@ -34,6 +34,8 @@ Sub-questions (in `Discourse Graph/Questions/`): effects of concordance on quali
 - `EVD —supports/opposes→ CLM` (`relation_BO5Bt…` / `relation_Qtuz…`)
 - `CVT —qualifies→ EVD` (`rel_o0a9NeAmWnhFBaVLNiJ1g`)
 - `{SRC, CLM, EVD} —informs→ QUE`; `CLM —supports/opposes/informs→ CLM` (`relation_OxKXi9…` for informs)
+- `QUE —informs→ QUE` — a **sub-question informs its parent** (question hierarchy). Authored on the
+  child QUE under `## Broader question` (lists the parent `[[QUE]]`); the lodestar is the root.
 
 Edges are **authored as wikilinks** in node bodies (see Skill-references "Edge authoring") and
 **materialized into `relations.json`** by `utils/sync_relations.py`. A generated nested index

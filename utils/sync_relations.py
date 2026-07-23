@@ -75,6 +75,7 @@ SECTION_RULES = {
     ("EP", "contradicting evidence"): ("opposes", "in", "EVD"),
     ("CVT", "qualifies"): ("qualifies", "out", "EVD"),
     ("QUE", "claims addressing this question"): ("informs", "in", "CLM"),
+    ("QUE", "broader question"): ("informs", "out", "QUE"),  # sub-question —informs→ parent
     ("CLM", "opposing claims"): ("opposes", "out", "CLM"),
     ("CLM", "related claims"): ("informs", "out", "CLM"),
 }

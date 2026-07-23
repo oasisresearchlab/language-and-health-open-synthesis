@@ -45,3 +45,9 @@ nodeInstanceId: 019e8dd8-2591-77af-af52-d91448732a04
   > This cohort study examines patient outcomes following total joint arthroplasty to evaluate their association with limited English proficiency.
 - [[@Manuel_2022_Association_English_1]] (relevance: 0.546)
   > This cohort study examines patient outcomes following total joint arthroplasty to evaluate their association with limited English proficiency.
+
+## Broader question
+
+> [!info] This question is a sub-question of a broader question (→ QUE—informs→QUE edge by sync_relations.py).
+
+- [[QUE - How does language support (language ‘concordance’) affect healthcare outcomes?]]

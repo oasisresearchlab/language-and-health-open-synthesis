@@ -30,7 +30,7 @@ import {
 } from "@/lib/accuracy-store";
 import dynamic from "next/dynamic";
 
-import { useReviewer, IdentityGate, IdentityBar } from "@/components/review/identity";
+import { useReviewer, NotOnRosterGate, IdentityBar } from "@/components/review/identity";
 import { ReviewButton, ReviewToggle, type ReviewTone } from "@/components/review/controls";
 import {
   Tooltip,
@@ -86,7 +86,7 @@ const REQUIRED_DIMS = ["verbatim", "substantive", "grounding"];
 const k = (nodeId: string, dim: string) => `${nodeId}:${dim}`;
 
 export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
-  const { reviewer, roster, choose, ready } = useReviewer();
+  const { reviewer, notOnRoster, ready, signOut } = useReviewer();
   const [reviews, setReviews] = useState<ReviewMap>({});
   const [loaded, setLoaded] = useState(false);
   const [page, setPage] = useState(paper.evds.find((e) => e.page)?.page ?? 1);
@@ -171,7 +171,8 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
   }
 
   if (!ready) return null;
-  if (!reviewer) return <IdentityGate roster={roster} onPick={choose} />;
+  if (notOnRoster) return <NotOnRosterGate onSignOut={signOut} />;
+  if (!reviewer) return null;
 
   return (
     <div className="flex min-h-0 flex-1 flex-col">
@@ -254,7 +255,7 @@ export function AccuracyPane({ paper }: { paper: AccuracyPaper }) {
           >
             <BookOpen className="h-3.5 w-3.5" /> Review criteria
           </a>
-          <IdentityBar reviewer={reviewer} onSwitch={() => choose(null)} />
+          <IdentityBar reviewer={reviewer} onSignOut={signOut} />
           <ReviewButton
             onClick={exportJson}
             className="ml-auto h-7 border border-border px-2 font-mono text-[11px] hover:bg-accent/50"

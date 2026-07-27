@@ -1,6 +1,9 @@
 "use client";
 
 import { supabase, supabaseConfigured } from "./supabase";
+import { type ReviewerRow } from "./reviewer-identity";
+
+export type { ReviewerRow };
 
 export interface Reviewer {
   id: string;
@@ -36,6 +39,21 @@ export async function fetchRoster(): Promise<Reviewer[]> {
     .order("name");
   if (error || !data || data.length === 0) return FALLBACK_ROSTER;
   return data as Reviewer[];
+}
+
+// Full roster rows incl. email + auth_user_id (for session→identity resolution).
+export async function fetchRosterFull(): Promise<ReviewerRow[]> {
+  if (!supabase) {
+    return FALLBACK_ROSTER.map((r) => ({ ...r, email: null, auth_user_id: null }));
+  }
+  const { data, error } = await supabase
+    .from("reviewers")
+    .select("id,name,role,email,auth_user_id")
+    .order("name");
+  if (error || !data || data.length === 0) {
+    return FALLBACK_ROSTER.map((r) => ({ ...r, email: null, auth_user_id: null }));
+  }
+  return data as ReviewerRow[];
 }
 
 // A full review row, for the maintainer queue.

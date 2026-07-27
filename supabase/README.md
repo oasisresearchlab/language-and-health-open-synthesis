@@ -52,6 +52,14 @@ from accuracy_reviews
 group by 1,2,3,4 order by 1,2,3;
 ```
 
+## ⚠️ Migration ordering
+
+`supabase/migrations/2026-07-27-access-gate.sql` tightens RLS to authenticated-only.
+Run it **together with** deploying this branch's code — never against the old
+name-picker deployment, or judgment writes silently fail (anon `saveReview` upsert is
+RLS-rejected but the error isn't checked). See the "⚠️ Ordering" note in
+`plans/review-app/deploying-to-vercel.md` for the full explanation.
+
 ## Security note
 RLS policies are **authenticated-only**: `reviewers` is readable by any signed-in
 user and self-updatable only on the row matching their own email (so a user can

@@ -1,3 +1,12 @@
+-- ============================================================================
+-- ⚠️ BEFORE RUNNING: edit the REPLACE_…@… placeholders below to each
+-- reviewer's REAL invited email address. If you run this with the
+-- placeholders left in place, Defne and William get bogus emails (e.g.
+-- literally "REPLACE_defne@umd.edu") — their real invited address then
+-- matches no roster row, so they land on the "not on the roster" screen at
+-- login and cannot review at all. Also see the migration-ordering warning in
+-- plans/review-app/deploying-to-vercel.md before running this on the live DB.
+-- ============================================================================
 -- Access gate — additive, safe to run once on the live DB. Preserves all
 -- existing accuracy_reviews rows (only adds columns/emails to reviewers).
 

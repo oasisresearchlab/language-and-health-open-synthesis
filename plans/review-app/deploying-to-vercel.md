@@ -113,6 +113,27 @@ Auth (see `supabase/README.md`). Before sharing the URL with reviewers:
    shareable link above is only needed to get past Vercel's *own* deployment
    protection, not the app's.
 
+### ⚠️ Ordering — deploy code and run the migration together
+
+`supabase/migrations/2026-07-27-access-gate.sql` flips `reviewers` and
+`accuracy_reviews` from anon-readable/writable to **authenticated-only**. That
+migration and this branch's code (the Supabase-Auth login + `/login` flow) must land
+as **one coordinated step**, not two:
+
+- **Do NOT** run the migration against the still-live *pre-merge* deployment (the old
+  name-picker UI, which reads/writes with the anon key). If you do, the old UI's
+  `fetchRoster` call starts erroring under the tightened RLS, silently falls back to
+  a local hardcoded roster, and every subsequent `saveReview` upsert is then rejected
+  by RLS too — but `saveReview` does not check the returned error, so the reviewer
+  sees a normal-looking "saved" UI while **the judgment is silently dropped**. Any
+  judgments entered in the migration → deploy window are lost with no error trail.
+- The safe order is: deploy this branch's code (or have it ready to go live within
+  seconds) **and** run the migration in the same sitting — ideally back-to-back, with
+  the migration applied immediately after (or immediately before) the new deployment
+  goes live, not hours/days apart.
+- Ideally **quiesce reviewers** (ask them to pause) for the few minutes it takes to do
+  both steps, so no one is mid-review when RLS tightens under the old UI.
+
 ## Gotchas / notes
 
 - `SUPABASE_SERVICE_ROLE_KEY` is full-access. It's used only server-side in `/api/pdf`

@@ -33,4 +33,7 @@ describe("resolveReviewer", () => {
   it("returns null for an empty email with no id match", () => {
     expect(resolveReviewer(null, "", roster)).toBeNull();
   });
+  it("falls back to email when the auth_user_id does not match any row", () => {
+    expect(resolveReviewer("no-such-auth", "defne@umd.edu", roster)?.id).toBe("r-defne");
+  });
 });

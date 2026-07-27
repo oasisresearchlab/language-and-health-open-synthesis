@@ -90,9 +90,11 @@ becomes a route; today writes go direct to Supabase from the browser client, gat
 
 ### Identity reconciliation
 
-- On authenticated load, map `session.user.email` → a `reviewers` row (matched by `email`).
-  That row supplies `id`, `name`, `role` for attribution and the header. Judgment writes
-  keep using `reviewer_id` / `reviewer_name` exactly as today — the export path is unchanged.
+- On authenticated load, resolve `session.user.email` → a `reviewers` row. **First login:**
+  match by **lowercased email** and **stamp `auth_user_id`** (new column) on that row.
+  **Thereafter:** join on `auth_user_id` (stable, not email-string-fragile). That row supplies
+  `id`, `name`, `role` for attribution and the header. Judgment writes keep using
+  `reviewer_id` / `reviewer_name` exactly as today — the export path is unchanged.
 - **Remove** the `IdentityGate` name-picker and the "switch" affordance in `identity.tsx`.
   Replace `useReviewer()`'s localStorage logic with "derive the reviewer from the session."
 - **Add** a logout control (replaces "switch") in `IdentityBar` → `supabase.auth.signOut()`
@@ -108,15 +110,40 @@ becomes a route; today writes go direct to Supabase from the browser client, gat
 3. For each reviewer: Authentication → **Invite user** (email) — must match the roster email.
 4. Reviewer visits `/review`, redirected to `/login`, enters email → code → in.
 
+### Data migration — existing reviews (real work, must not orphan)
+
+As of 2026-07-27 the central store holds **209 real judgments** across 10 papers from three
+reviewers: **Defne Altan (145), Joel Chan (59), William Rivers (5)**. Each reviewer picked
+their name under the old model, so each maps to exactly **one existing `reviewers` row**, and
+all 209 `accuracy_reviews` rows already FK to those ids.
+
+**Invariant: never mint new reviewer rows for auth users, and never rewrite `reviewer_id`.**
+The migration only *adds* `email` (and later `auth_user_id`) to the **existing** rows:
+
+1. Add columns: `alter table reviewers add column if not exists auth_user_id uuid;`
+   `create unique index if not exists reviewers_email_uniq on reviewers (lower(email));`
+2. Backfill `email` onto the exact existing rows, verified by name — **Defne, Joel, William
+   first**, then everyone else who will review. (These three are the continuity-critical rows.)
+3. Invite exactly those emails. On first login each stamps `auth_user_id` on their own row.
+
+Because identity resolves to the *same* row id, all 209 judgments stay attributed and continuous;
+the maintainer queue, disagreement view, and CSV export (which key on `reviewer_id`/`reviewer_name`)
+are unaffected. The `accuracy_reviews` table is not touched.
+
+**Verification gate (before merge):** after backfill, log in as each of the three and confirm the
+queue still tallies **145 / 59 / 5**. Reference export: `review-queue-all.json` (exported
+2026-07-27T15:28Z).
+
 ### RLS tightening (`supabase/schema.sql`)
 
 Replace the permissive anon policies:
 
 - `reviewers` — `select` allowed to `authenticated` (was `anon` `using (true)`).
 - `accuracy_reviews` — all ops require `authenticated`; keep the app's existing
-  `reviewer_id` attribution. (A per-user `auth.uid()`-scoped write policy is possible but
-  needs an `auth_user_id` link column on `reviewers`; start with "any authenticated user"
-  and tighten to per-row ownership as a follow-up if needed.)
+  `reviewer_id` attribution. Start with "any authenticated user" (only invited users are
+  authenticated). The `auth_user_id` column added for identity (§ Data migration) makes a
+  per-row-ownership policy (`reviewer_id`'s row `auth_user_id = auth.uid()`) a trivial
+  follow-up if write-integrity per person is later wanted.
 - The service-role path (`/api/pdf`, upload script) bypasses RLS as before.
 
 *Verify before relying on it:* after tightening, confirm the browser client's writes carry
@@ -135,7 +162,7 @@ is rejected.
 | `site/app/api/auth/*` (if needed) | callback/signout route(s) per `@supabase/ssr` pattern |
 | `site/components/review/identity.tsx` | drop name-picker/switch; session-derived identity; add logout |
 | `site/app/review/*` | consume session identity instead of the picker gate |
-| `supabase/schema.sql` | backfill emails; tighten RLS policies |
+| `supabase/schema.sql` | add `auth_user_id` col + unique email index; backfill emails onto existing rows; tighten RLS policies |
 | `supabase/README.md`, `plans/review-app/deploying-to-vercel.md` | document invite flow + gate |
 
 ## Testing / verification
@@ -149,6 +176,8 @@ is rejected.
   no write.
 - Logout → session cleared → `/review` bounces to `/login`.
 - Anon-key-only write to `accuracy_reviews` (no session) → rejected by RLS.
+- **Continuity gate:** after email backfill, log in as Defne / Joel / William → the maintainer
+  queue still tallies **145 / 59 / 5** and prior judgments render as theirs.
 - Existing Vitest suites still green (`accuracy-store`, `accuracy-pane`, `review-accuracy`).
 
 ## Merge sequencing

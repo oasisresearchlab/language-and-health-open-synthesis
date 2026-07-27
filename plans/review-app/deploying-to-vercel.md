@@ -86,22 +86,32 @@ vercel.com → Add New → Project → import `oasisresearchlab/language-and-hea
   highlight, judgments write to Supabase, header badge shows **central**.
 - `/review/queue` → judgments appear; disagreement + export work.
 
-## Sharing the deploy with reviewers (interim access gate)
+## Sharing the deploy with reviewers (access gate)
 
-Preview deployments are protected by **Vercel Deployment Protection** — anyone without
-a Vercel login on the project gets a 401 (confirmed: unauthenticated `curl` of any
-`/review/*` route returns 401, while a logged-in browser works). Clinicians won't have
-Vercel accounts, so before handing out the URL:
+Preview deployments are also protected by **Vercel Deployment Protection** — anyone
+without a Vercel login on the project gets a 401 (confirmed: unauthenticated `curl` of
+any `/review/*` route returns 401, while a logged-in browser works). Clinicians won't
+have Vercel accounts, so before handing out the URL:
 
 - **Recommended — Vercel Shareable Link:** Deployments → the deployment → ⋯ → Share
   (or Settings → Deployment Protection → Protection Bypass / shareable links). Generates
-  a URL that bypasses login; gated to whoever you send it to, no Vercel account needed.
-  This *is* the interim access gate. PDFs stay private (signed URLs) regardless.
-- Or disable preview protection (openly reachable — only if acceptable).
+  a URL that bypasses Vercel's own login; gated to whoever you send it to, no Vercel
+  account needed.
+- Or disable preview protection (openly reachable — only if acceptable, since the
+  app-level login below is now the real gate).
 - Or merge to `main` for a stable production URL later.
 
-A real per-user access gate (token/login in front of `/review/*`) is still TODO; the
-shareable link covers the pilot.
+**App-level access gate (invite-only email OTP):** `/review/*` now sits behind Supabase
+Auth (see `supabase/README.md`). Before sharing the URL with reviewers:
+
+1. Disable public signups (Authentication → Providers → Email).
+2. Run the schema migration (`supabase/migrations/2026-07-27-access-gate.sql`) and
+   backfill each reviewer's real email onto their existing roster row.
+3. Invite each backfilled email (Authentication → Users → Invite user).
+4. Reviewers sign in at `/login` with their invited email + the OTP code. RLS rejects
+   any anon (logged-out) read/write, so this is the real per-user gate — the Vercel
+   shareable link above is only needed to get past Vercel's *own* deployment
+   protection, not the app's.
 
 ## Gotchas / notes
 
@@ -111,8 +121,8 @@ shareable link covers the pilot.
   regenerated at build — don't commit them.
 - The build fetches GitHub issues for node annotations but degrades gracefully on 403, so
   no token is required.
-- Access gating (token/login in front of `/review/*`) is still TODO — until then the
-  review UI is reachable by URL, though PDFs stay private (signed URLs only).
+- Access gating in front of `/review/*` is invite-only email OTP via Supabase Auth (RLS
+  rejects anon reads/writes); PDFs stay private (signed URLs only) regardless.
 
 ## Deferred (picked up after deploy)
 
@@ -120,4 +130,4 @@ shareable link covers the pilot.
   filtered out of the review app, but still render as broken EVDs on the main site).
 - Update the **completeness pass** PDF pane + anchors to match the accuracy pass
   (pdf.js pane, exact overlays, viewport-locked layout).
-- Whole-figure bbox highlight (issue #6); access gate; instrumentation/benchmark join.
+- Whole-figure bbox highlight (issue #6); instrumentation/benchmark join.

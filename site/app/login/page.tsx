@@ -3,6 +3,7 @@
 import { Suspense, useState } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase";
+import { safeInternalPath } from "@/lib/gate";
 
 export default function LoginPage() {
   return (
@@ -15,7 +16,7 @@ export default function LoginPage() {
 function LoginForm() {
   const router = useRouter();
   const params = useSearchParams();
-  const next = params.get("next") || "/review/accuracy";
+  const next = safeInternalPath(params.get("next"));
 
   const [email, setEmail] = useState("");
   const [code, setCode] = useState("");

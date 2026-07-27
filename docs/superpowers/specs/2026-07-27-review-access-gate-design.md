@@ -117,8 +117,11 @@ reviewers: **Defne Altan (145), Joel Chan (59), William Rivers (5)**. Each revie
 their name under the old model, so each maps to exactly **one existing `reviewers` row**, and
 all 209 `accuracy_reviews` rows already FK to those ids.
 
-**Invariant: never mint new reviewer rows for auth users, and never rewrite `reviewer_id`.**
-The migration only *adds* `email` (and later `auth_user_id`) to the **existing** rows:
+**Invariant (existing reviewers only): never create a *duplicate* row for someone who already
+has one, and never rewrite the `reviewer_id`s on existing judgment rows.** A duplicate row gets
+a new id that the 209 judgments don't FK to → their work is orphaned. (New reviewers are a
+different case — see below.) For the existing three, the migration only *adds* `email` (and later
+`auth_user_id`) to their **existing** rows:
 
 1. Add columns: `alter table reviewers add column if not exists auth_user_id uuid;`
    `create unique index if not exists reviewers_email_uniq on reviewers (lower(email));`
@@ -129,6 +132,14 @@ The migration only *adds* `email` (and later `auth_user_id`) to the **existing**
 Because identity resolves to the *same* row id, all 209 judgments stay attributed and continuous;
 the maintainer queue, disagreement view, and CSV export (which key on `reviewer_id`/`reviewer_name`)
 are unaffected. The `accuracy_reviews` table is not touched.
+
+**Onboarding a *new* reviewer** (no prior row) is the normal, expected path and *does* create a
+row: provisioning = insert a `reviewers` row (`name`, `email`, `role`) **and** invite that email.
+First login matches by email and stamps `auth_user_id`. No orphaning risk — there's no prior
+work to detach. The only rule is one row per person: don't invite an email whose owner already
+has a roster row under a different address (that would create the duplicate the invariant forbids).
+An authenticated email with **no** matching row means provisioning was incomplete → the
+"not on the roster" screen (see § Identity reconciliation), not an auto-created row.
 
 **Verification gate (before merge):** after backfill, log in as each of the three and confirm the
 queue still tallies **145 / 59 / 5**. Reference export: `review-queue-all.json` (exported

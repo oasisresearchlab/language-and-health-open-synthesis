@@ -90,9 +90,10 @@ one pass), we sampled a coherent **topic cluster** to extract and demonstrate th
 not a fresh database search:
 
 1. **Lexical identification.** All 785 source records (title + filename) were screened against a
-   perioperative lexicon (`surg*`, `periop*`, `pre/postoperat*`, `anesthes*`, `bariatric`,
-   `arthroplasty`, `spine/spinal`, `transplant`, `colorectal`, `laparoscop*`, `consent`,
-   `operating room`, …) → **63 candidate records**.
+   perioperative lexicon (surgical/anaesthesia/procedure/consent term stems — e.g. `surg*`,
+   `periop*`, `pre/postoperat*`, `anesthes*`, `arthroplasty`, `laparoscop*`, `transplant*`,
+   `consent`; the **complete include- and exclude-term set** is documented in
+   [`perioperative-lexicon.md`](./perioperative-lexicon.md)) → **63 candidate records**.
 2. **Set-aside of the already-extracted.** 5 surgical papers already had evidence extracted (the
    seed cluster) and were retained separately.
 3. **De-duplication.** Re-import duplicates and same-paper/different-citekey pairs were collapsed,

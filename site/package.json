@@ -17,7 +17,7 @@
     "@base-ui/react": "^1.4.1",
     "@openrouter/ai-sdk-provider": "^2.9.0",
     "@supabase/ssr": "^0.12.3",
-    "@supabase/supabase-js": "^2.108.2",
+    "@supabase/supabase-js": "^2.110.8",
     "@vercel/analytics": "^2.0.1",
     "ai": "^6.0.175",
     "class-variance-authority": "^0.7.1",

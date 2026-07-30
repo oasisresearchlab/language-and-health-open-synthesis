@@ -141,6 +141,18 @@ def locate_object(doc, label: str) -> dict | None:
                 continue
             r = fitz.Rect(b[0], b[1], b[2], b[3])
             return {"page": pi + 1, "rects": [norm(r, page)]}
+    # Fallback: the caption label isn't at a block start (it's embedded mid-block,
+    # e.g. "…in Figure 3. Figure 3: Boxplot…"). Search for the caption label text
+    # directly, preferring a separator (":"/".") so we hit the caption, not a bare
+    # in-text mention or a longer number ("Table 1" ⊂ "Table 10").
+    kind_words = ["Figure", "Fig.", "Fig"] if want_fig else ["Table"]
+    for suffix in (":", "."):
+        for kw in kind_words:
+            for pi in range(doc.page_count):
+                page = doc[pi]
+                rects = page.search_for(f"{kw} {num}{suffix}")
+                if rects:
+                    return {"page": pi + 1, "rects": [norm(rects[0], page)]}
     return None
 
 

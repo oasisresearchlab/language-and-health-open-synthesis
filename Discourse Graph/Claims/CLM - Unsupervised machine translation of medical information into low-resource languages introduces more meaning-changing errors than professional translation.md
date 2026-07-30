@@ -27,3 +27,4 @@ Unsupervised machine translation of written medical information into low-resourc
 ## Supporting Evidence
 
 - [[EVD - Machine translation of a SACT booklet introduced 11 critical errors vs 1 and failed CIoL assessment (51 vs 73 of 100) - @Hibbs_2026_Translation_Approaches]]
+- [[EVD - Machine translation was least accurate for South and Southeast Asian languages (Bengali Hindi Punjabi Vietnamese) - @Das_2019_Dangers_Machine]]

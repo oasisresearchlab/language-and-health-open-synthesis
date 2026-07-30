@@ -76,6 +76,33 @@ materials, booklet insufficiency. Best-practice basis: e-consent translated temp
 validation, staff-education-plus-assistive-tech, professional-vs-MT. Baseline: Spanish HIV mHealth
 app. (See each question's `## Claims addressing this question`.)
 
+## Extraction results (2026-07-30)
+
+Ran one extraction agent per paper (workflow `wf_7cde51e0-cdd`). **14/14 completed →
+64 EVD · 43 CLM · 31 CVT · 9 ART** (draft). Pipeline run: `ground_figures` (54 EVDs got
+figure/table embeds) → `sync_relations` → `build_dgraph` → `verbatim_audit` (only *minor*
+0.96–0.98 near-matches: table rows / OCR spacing — no hard failures) → `attachment_audit`.
+
+**Wiring:** all AI/MT/app/device cluster CLMs linked into the two questions.
+`Q1` (benefits/risks/limitations) → **51 CLMs, 17 distinct papers** (up from 5).
+`Q2` (best practices) → **21 CLMs** (best-practice subset + originals).
+
+**Flags carried to review (authored into the EVDs):**
+- `@Narang_2019_Use_Mobile` — **wrong / supplemental-only PDF**, no article body → **0 nodes;
+  moved to the fetch queue** (re-fetch the primary, then extract).
+- `@Khanna_2011` — abstract↔Table 1 transpose adequacy/meaning point estimates (both n.s.); noted.
+- `@Turner_2015_Machine_Translation` — abstract 41 CPM vs body/Table 37.8 CPM; grounded in the table.
+- `@Hwang_2022` — Table 1 percentages vs Results-text n=24 denominator mismatch; noted.
+- `@Rishivardhan_2024` — methods/tool paper, evaluated on *scripted* not real patient responses;
+  source note said "no findings" but full text has empirical results. Verify relevance in review.
+- `@Colina_2022` — functionalist-vs-literal *human* translation (not AI/MT); kept as best-practice basis.
+
+**Cleanup for the human (propose, don't commit):**
+- **Duplicate ART nodes** from parallel agents — consolidate the ~4 Google-Translate variants
+  (`ART - Google Translate`, `... text machine translation`, `... online text translation (statistical
+  MT)`, `... conversation mode`) into one canonical (keep "conversation mode" only if the voice
+  feature is genuinely distinct), repointing the EVD `How` links. Left for curation.
+
 ## Governance
 
 AI extracts EVD/CLM/CVT/ART and proposes the nesting; the human commits (accept/reject) and authors

@@ -22,6 +22,9 @@ deliveryContext:
 ---
 ## Description
 
+
+![[Jimenez_2014_Postoperative_pain-table3.png]]
+![[Jimenez_2014_Postoperative_pain-table2.png]]
 The distribution of recorded pain scores at which opioid analgesics were administered differed significantly between language groups: children of LEP parents had significantly higher levels of pain recorded before receiving opioid analgesics than children of EP parents (P = .003). No corresponding difference was detected for the nonopioid analgesic category. In Table 3, a larger share of opioid doses to LEP children was given at severe pain (scores 8–10: 29% vs 20% for EP) and a smaller share at mild pain (scores 0–3: 22% vs 30% for EP), indicating LEP children had to reach higher recorded pain before opioids were given.
 
 > "Analysis of medication administered for pain treatment showed a significant difference in the distribution of pain scores for opioid administration. Patients of LEP families had significantly higher levels of pain recorded before receiving opioid analgesics, compared with those of EP families (Table 2)." (Jimenez, 2014, p. 6)

@@ -18,12 +18,27 @@ tags:
 
 > [!info] CLMs whose empirical findings bear on best practices (→ CLM—informs→QUE edges by sync_relations.py). AI-proposed; the human curates and authors the normative synthesis.
 
-- [[CLM - Professional translation of written patient information yields better LEP comprehension than unsupervised machine translation]]
-- [[CLM - Unsupervised machine translation of medical information into low-resource languages introduces more meaning-changing errors than professional translation]]
-- [[CLM - Electronic consent systems with auto-populated translated templates deliver language-concordant written consent to most LEP patients whose language is supported]]
-- [[CLM - Word-for-word translation of PROMs without cultural and linguistic validation is not sufficient for valid measurement in LEP populations]]
-- [[CLM - Staff education plus language assistive technology increases clinicians' use of professional interpreter services for LEP patients]]
 - [[CLM - A multilingual chatbot engages LEP patients as effectively as English-primary patients]]
+- [[CLM - Concerns about translation accuracy make mobile translation apps unsuitable for complex or high-risk clinical communication]]
+- [[CLM - Electronic consent systems with auto-populated translated templates deliver language-concordant written consent to most LEP patients whose language is supported]]
+- [[CLM - Fixed-phrase translation apps are preferred over real-time voice-to-voice translation apps for healthcare communication]]
+- [[CLM - Human professional translation is preferred over machine translation with postediting for quality of translated public-health materials]]
+- [[CLM - Literal word-for-word translation of research instruments creates more comprehension problems for readers than a functionalist translation]]
+- [[CLM - Machine translation of public-health materials should be followed by human post-editing to reach acceptable quality and be adopted]]
+- [[CLM - Machine translation with human postediting is faster to produce than fully human translation of health materials]]
+- [[CLM - Machine translation with human postediting lowers the cost of translating health materials versus fully human translation]]
+- [[CLM - Older LEP patients and healthcare workers view mobile translation apps as an acceptable adjunct for everyday low-risk healthcare communication]]
+- [[CLM - Point-of-care interpretation applications supplement but cannot replace professional interpreters for complex clinical conversations]]
+- [[CLM - Postediting instructions to make all corrections needed rather than only minimal edits improve machine-translation quality]]
+- [[CLM - Preference for professional over machine translation depends on sentence complexity]]
+- [[CLM - Producing translated public-health materials follows a multi-phase workflow that MT tools must fit into]]
+- [[CLM - Professional translation of written patient information yields better LEP comprehension than unsupervised machine translation]]
+- [[CLM - Public-health agencies lack standardized policies and clear guidelines governing when and what to translate]]
+- [[CLM - Public-health professionals perceive publicly available machine translation as too low-quality to use unsupervised for health materials]]
+- [[CLM - Readers of translated research documents prefer a functionalist reader-oriented translation over a literal word-for-word one]]
+- [[CLM - Staff education plus language assistive technology increases clinicians' use of professional interpreter services for LEP patients]]
+- [[CLM - Unsupervised machine translation of medical information into low-resource languages introduces more meaning-changing errors than professional translation]]
+- [[CLM - Word-for-word translation of PROMs without cultural and linguistic validation is not sufficient for valid measurement in LEP populations]]
 
 ## Broader question
 

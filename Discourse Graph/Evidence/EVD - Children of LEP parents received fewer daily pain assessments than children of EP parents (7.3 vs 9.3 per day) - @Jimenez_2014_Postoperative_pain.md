@@ -21,6 +21,8 @@ deliveryContext:
 ---
 ## Description
 
+
+![[Jimenez_2014_Postoperative_pain-table2.png]]
 In this retrospective matched-cohort study of postsurgical children, the overall daily frequency of pain assessments (preanalgesic plus postanalgesic) was significantly lower for children of LEP parents than for children of English-proficient (EP) parents (7.3 [95% CI: 2.4–12.5] vs 9.3 [95% CI: 3.8–14.5]; P = .01). The two language groups did not differ significantly in preanalgesic mean daily pain scores, so the gap was in how often pain was assessed rather than in baseline pain level.
 
 > "The overall frequency of pain assessments (preanalgesic and postanalgesic administration) per day was lower for patients from LEP families compared with patients from EP families (7.3 [95% confidence interval: 2.4–12.5] vs 9.3 [95% confidence interval: 3.8–14.5], P = .01) (Table 2)." (Jimenez, 2014, p. 5)

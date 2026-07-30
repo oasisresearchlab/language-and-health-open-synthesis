@@ -22,6 +22,8 @@ deliveryContext:
 ---
 ## Description
 
+
+![[Tejas_2025_Spine_Surgery-table3.png]]
 In the matched cohort, hospital length of stay did not differ significantly between groups: mean 67.8 (SD 72.38) hours for ES versus 69.91 (SD 61.01) hours for NES (P = 0.753; Table 3). This null result contrasts with prior arthroplasty literature reporting substantially longer stays for NES patients. The authors also noted that NES status and insurance status were collinear predictors of length of stay, and after accounting for insurance, NES status was no longer a significant predictor.
 
 > "Length of stay was no different between the cohorts (67.8 ± 72.38 h vs 69.91 ± 61.01 h, P = 0.753)." (Tejas, 2025, p. E557)

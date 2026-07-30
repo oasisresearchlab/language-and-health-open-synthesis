@@ -23,6 +23,8 @@ deliveryContext:
 ---
 ## Description
 
+
+![[Tejas_2025_Spine_Surgery-table3.png]]
 In the matched cohort, the mean number of postoperative follow-up visits with the primary surgeon differed significantly between groups, tabulated as 2.19 (SD 1.37) for ES and 1.73 (SD 1.21) for NES (P < 0.001; Table 3). The paper's abstract and conclusion characterize this as NES patients having "significantly more postoperative visits (2.19 vs 1.73)," yet the tabulated column values place the higher mean in the ES group, and the Results text separately reports "no differences in the number of postoperative visits (P = 0.653)." This directional and statistical inconsistency within the paper is unresolved and is flagged here for expert review.
 
 > "NES patients had significantly more postoperative visits (2.19 vs 1.73; P < 0.001) and increased readmission rates (0.96% vs 4.43%; P = 0.033)." (Tejas, 2025, p. E556)

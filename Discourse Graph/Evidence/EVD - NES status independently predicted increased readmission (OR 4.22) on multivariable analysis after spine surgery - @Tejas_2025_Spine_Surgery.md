@@ -22,6 +22,8 @@ deliveryContext:
 ---
 ## Description
 
+
+![[Tejas_2025_Spine_Surgery-table4.png]]
 On multivariable logistic regression with stepwise elimination (readmission as the dependent variable), non-English-speaker status was an independent predictor of increased readmission, with an odds ratio of 4.22 (95% CI 1.63–10.94) — a roughly 4.2-fold increased risk. Other independent predictors of readmission in the model included ASA class III, CCI, medical complications, intraoperative complications, and revision surgery. The abstract reports this association at P = 0.039, whereas Table 4 and the Results text report P < 0.001.
 
 > "On multivariable analysis, NES status was an independent predictor of increased readmission [OR = 4.22 (1.63–10.94), P < 0.001; Table 4]." (Tejas, 2025, p. E557)

@@ -1,0 +1,58 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+nodeInstanceId: 019fb3b3-dbba-74d1-a0cf-2a2981522f7e
+Source: "[[@Khanna_2011_Performance_online]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/concordanceIntervention/machineTranslation
+  - languageConcordanceFactor/concordanceIntervention/translatedDocuments
+  - healthOutcome/translationAccuracy
+  - healthOutcome/patientSafety
+  - deliveryContext/patientEducation
+  - epistemic/measurement
+languageConcordanceFactor:
+  - Machine translation
+  - Professional translation
+healthOutcome:
+  - Translation accuracy
+  - Patient safety
+deliveryContext:
+  - Patient education
+---
+## Description
+
+
+![[Khanna_2011_Performance_online-table1.png]]
+Google Translate (GT) and professional Spanish translations of the AHRQ warfarin brochure did not differ significantly in the frequency of serious, clinically impactful errors (severity 3, 2, or 1): 4% for GT versus 2% for professional (P = 0.61) (Table 1). One GT sentence, however, was rated maximally dangerous — a 25-word complex sentence all three evaluators considered nonsensical.
+
+> "GT-translated sentences contained more errors of any severity as compared to the professional translations (39% vs 22%, P = 0.05), but a similar number of serious, clinically impactful errors (severity scores of 3, 2, or 1; 4% vs 2%, P = 0.61)." (Khanna, 2011, p. 523)
+
+> "However, one GT-translated sentence was considered erroneous with a severity level of 1 ("Error, dangerous to patient"). This particular sentence was 25 words long and complex in structure in the original English document; all three evaluators considered the GT translation nonsensical" (Khanna, 2011, p. 523)
+
+## Methods Context
+
+### What?
+
+The observable: the proportion of translated sentences containing a serious, clinically impactful error, defined as a severity score of 3, 2, or 1.
+
+> "Defined as assigned a score of 3 (delays necessary care), 2 (impairs care in some way), or 1 (dangerous to patient)." (Khanna, 2011, p. 523)
+
+### How?
+
+Blinded severity scoring of [[ART - Google Translate online text translation (statistical MT)]] and professional sentences by evaluators with access to the original English sentence, compared across the two translation methods.
+
+> "for adequacy, meaning, and severity, they had access to both the translated sentence and the original English sentence." (Khanna, 2011, p. 521)
+
+### Who?
+
+Thirty GT-translated sentences (of the 45 total) assessed for severity, drawn from the professionally prepared AHRQ warfarin-use brochure and scored by three bilingual native-Spanish-speaking research assistants.
+
+> "Out of 30 GT sentences assessed, there was one substantially erroneous translation that was considered potentially dangerous." (Khanna, 2011, p. 524)
+
+## Other Notes
+
+This is a null result on error *severity* (distinct from the borderline finding on error *frequency*). It is drawn from a small number of serious-error events in a high-resource language (Spanish); the single "dangerous" GT error arose from a long, complex, fragmented sentence, foreshadowing the complexity-mediation finding. Contrast with the Bengali (low-resource) machine-translation error finding in @Hibbs_2026_Translation_Approaches, where machine translation introduced many more critical errors.

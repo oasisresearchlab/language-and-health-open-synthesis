@@ -21,6 +21,8 @@ deliveryContext:
 ---
 ## Description
 
+
+![[Jimenez_2014_Postoperative_pain-table2.png]]
 Within the LEP group, children whose families received fewer than 2 professional interpretations per day had significantly higher mean postanalgesic (post-medication) pain scores than children whose families received ≥2 interpretations per day (1.6 ± 1.4 vs 0.7 ± 1.2; P = .004). The two interpretation-frequency groups did not differ significantly in the frequency of pain assessment, so the gap appeared in residual pain after treatment rather than in how often pain was measured. More frequent interpretation was thus associated with better-controlled post-medication pain among LEP children.
 
 > "Nonetheless, children of families who received <2 interpreted visits per day had higher mean postanalgesic pain scores (1.6 ± 1.4 vs 0.7 ± 1.2; P = .004) relative to children with more frequent interpretation (Table 2)." (Jimenez, 2014, p. 6)

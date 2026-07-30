@@ -26,3 +26,4 @@ Health systems frequently rely on ad hoc, non-qualified interpreters (patients' 
 ## Supporting Evidence
 
 - [[EVD - Nearly one third of BMT centers relied on family and friends to interpret for LEP patients - @Idossa_2019_Access_Linguistically]]
+- [[EVD - The leading reason staff did not use a translation app was that a family member was available (16 of 24, 66.6%) - @Hwang_2022_Testing_use]]

@@ -1,0 +1,53 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+nodeInstanceId: 019fb3b7-6bd2-7a9f-9163-eeaab36d0f2d
+Source: "[[@Panayiotou_2020_perceptions_translation]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/concordanceIntervention/machineTranslation
+  - healthOutcome/acceptability
+  - deliveryContext/agedCare
+  - epistemic/mechanism
+languageConcordanceFactor:
+  - Machine translation
+healthOutcome:
+  - Acceptability
+deliveryContext:
+  - Aged care
+  - Inpatient
+---
+## Description
+
+For older CALD participants, the leading barrier to adopting mobile translation technology was unfamiliarity with, and limited skills in, using the technology itself. Many had been given smartphones by their children but lacked the time or teaching to learn them; participants felt that learning to use the technology would overcome this barrier.
+
+> "For the older participants from CALD communities, the major barrier to using translation technology for communication was an unfamiliarity with, or lack of skills in using the technology." (Panayiotou, 2020, p. 3522)
+
+> "I have no ideas about technology. I would like to. It would be good, even to pay a bill – it all involves technology. My children are busy so it would be good to do myself." (Panayiotou, 2020, p. 3522, participant from Greek community consultation)
+
+## Methods Context
+
+### What?
+
+The observable: the barriers older CALD participants perceived to using translation technology, elicited as a focus group theme.
+
+> "Can you think of some strategies to address these barriers?" (Panayiotou, 2020, p. 3518)
+
+### How?
+
+Semi-structured focus group discussion analysed by inductive content analysis, with codes refined into categories and themes by two researchers.
+
+> "Two research members (A.P and K.H) who attended the consultations analysed each response to determine meaning and generate codes." (Panayiotou, 2020, p. 3519)
+
+### Who?
+
+Older Greek and Chinese CALD community members aged 65 and over (final n = 12; mean age 76.3 years), living in the community in metropolitan Melbourne, Australia.
+
+> "Eligible participants were aged 65 years and over, living in the community, and without significant self-reported visual or auditory impairment" (Panayiotou, 2020, p. 3518)
+
+## Other Notes
+
+Qualitative barrier finding; no associated figure/table (text-only). Digital-literacy barrier specific to the older LEP population, distinct from the accuracy barrier.

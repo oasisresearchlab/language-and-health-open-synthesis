@@ -22,6 +22,8 @@ deliveryContext:
 ---
 ## Description
 
+
+![[Patel_2016_Preoperative_consent-fig2.png]]
 In this survey of surgeons at a Boston academic medical center, surgeons reported they would use a bilingual minor to interpret surgical informed consent, even though the hospital strictly prohibits the use of minors as interpreters. Twenty-nine percent of nonfluent surgeons versus 10% of fluent surgeons reported they would use a minor for an acute-surgery consent if a professional interpreter was not available within 15 minutes, and a minority reported they would do so even when a professional interpreter was available in under 15 minutes.
 
 > "Twenty-nine percent of nonfluent surgeons reported they would use a minor to interpret the consent for an acute surgery if a professional interpreter was not available within 15 min compared with only 10% of fluent surgeons (Fig. 2D)." (Patel, 2016, p. 518)

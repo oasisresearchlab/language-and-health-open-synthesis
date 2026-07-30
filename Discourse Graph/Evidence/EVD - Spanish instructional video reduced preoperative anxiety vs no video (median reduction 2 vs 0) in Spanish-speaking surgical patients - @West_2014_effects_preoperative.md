@@ -22,6 +22,8 @@ deliveryContext:
 ---
 ## Description
 
+
+![[West_2014_effects_preoperative-table3.png]]
 In this prospective, randomized, nonblinded pilot at Massachusetts General Hospital, Spanish-speaking surgical patients who watched a 4-minute Spanish-language anesthesia video before their preanesthesia interview showed a significantly larger pre-to-post reduction in visual-analog-scale (VAS) anxiety score than patients who did not view the video (median reduction 2 vs 0; P = 0.020). The video-group median anxiety score fell from 5.00 to 1.50, whereas the no-video-group median fell only from 4.50 to 4.00.
 
 > "There was a significant reduction in anxiety score in patients who viewed the video compared with those who did not (median reduction 2 vs 0; P = 0.020) (Table 3)." (West, 2014, p. 328)

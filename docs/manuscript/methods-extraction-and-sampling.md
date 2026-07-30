@@ -5,6 +5,10 @@ synthesis via a grounded discourse graph) demonstrated on language concordance i
 Audience: clinical / health-services. Numbers current as of 2026-07-27; extraction is ongoing
 (a **living** synthesis), so counts are reported as a snapshot.*
 
+> **Worked subsample with full extraction provenance** (model, prompts, skills, scripts, and a
+> compute-cost estimate): the AI-assisted-translation cluster — see
+> `ai-translation-subsample-extraction.md` and `../../plans/review-app/ai-translation-cluster-selection.md`.
+
 > **A note on honesty of scope (delete before submission).** Two things a clinical reviewer will
 > check, stated plainly so we don't overclaim: (1) the surgical cluster was selected by a
 > **lexical scan within an already-assembled corpus**, not a fresh multi-database systematic

@@ -43,7 +43,7 @@ The observable: postediting speed — words per minute (and total minutes) neede
 
 ### How?
 
-Three documents (<1500 words) were machine-translated into Spanish with [[ART - Google Translate online text translation (statistical MT)]], and postditors' correction time was recorded in a timed laboratory session (correcting only grammar/accuracy, not style); HT postediting times were estimated from Phase-2 self-reports of the same documents.
+Three documents (<1500 words) were machine-translated into Spanish with [[ART - Google Translate]], and postditors' correction time was recorded in a timed laboratory session (correcting only grammar/accuracy, not style); HT postediting times were estimated from Phase-2 self-reports of the same documents.
 
 > "We chose 3 of the 11 documents from the time and task analysis, based on the type of document, language, and length (<1500 words) to translate into Spanish using MT. Postditors conducted timed postediting of the translations using the same process as described in Phase 1." (Turner, 2014, p. 526)
 

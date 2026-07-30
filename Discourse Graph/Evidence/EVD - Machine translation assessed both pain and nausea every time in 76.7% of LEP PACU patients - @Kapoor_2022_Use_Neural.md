@@ -39,7 +39,7 @@ The observable: whether the translation application could evaluate postoperative
 
 ### How?
 
-Single-arm feasibility cohort: an iPad running the [[ART - Google Translate conversation mode]] played preformatted Spanish pain/nausea questions at intervals when nurses would normally assess symptoms, with success tallied over the whole PACU stay; feasibility was prespecified as ≥90% of patients answering all 5 questions.
+Single-arm feasibility cohort: an iPad running the [[ART - Google Translate]] played preformatted Spanish pain/nausea questions at intervals when nurses would normally assess symptoms, with success tallied over the whole PACU stay; feasibility was prespecified as ≥90% of patients answering all 5 questions.
 
 > "Preformatted questions were played for patients in the PACU through the application using an iPad tablet (Apple) held by the research coordinator (G.C., M.P.F.) at set intervals when nurses would typically evaluate symptoms." (Kapoor, 2022, p. 4)
 

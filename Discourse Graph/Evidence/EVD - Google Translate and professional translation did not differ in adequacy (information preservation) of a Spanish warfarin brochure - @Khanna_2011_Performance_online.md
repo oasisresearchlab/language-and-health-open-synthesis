@@ -39,7 +39,7 @@ The observable: adequacy, a Likert rating of how much of the source sentence's i
 
 ### How?
 
-Blinded scoring of [[ART - Google Translate online text translation (statistical MT)]] sentences against the professional translation, with evaluators having access to both the translated sentence and the original English sentence, compared via clustered linear regression.
+Blinded scoring of [[ART - Google Translate]] sentences against the professional translation, with evaluators having access to both the translated sentence and the original English sentence, compared via clustered linear regression.
 
 > "for adequacy, meaning, and severity, they had access to both the translated sentence and the original English sentence." (Khanna, 2011, p. 521)
 

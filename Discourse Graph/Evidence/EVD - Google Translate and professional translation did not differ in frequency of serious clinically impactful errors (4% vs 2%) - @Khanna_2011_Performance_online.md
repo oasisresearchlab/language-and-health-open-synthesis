@@ -43,7 +43,7 @@ The observable: the proportion of translated sentences containing a serious, cli
 
 ### How?
 
-Blinded severity scoring of [[ART - Google Translate online text translation (statistical MT)]] and professional sentences by evaluators with access to the original English sentence, compared across the two translation methods.
+Blinded severity scoring of [[ART - Google Translate]] and professional sentences by evaluators with access to the original English sentence, compared across the two translation methods.
 
 > "for adequacy, meaning, and severity, they had access to both the translated sentence and the original English sentence." (Khanna, 2011, p. 521)
 

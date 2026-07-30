@@ -97,11 +97,11 @@ figure/table embeds) → `sync_relations` → `build_dgraph` → `verbatim_audit
   source note said "no findings" but full text has empirical results. Verify relevance in review.
 - `@Colina_2022` — functionalist-vs-literal *human* translation (not AI/MT); kept as best-practice basis.
 
-**Cleanup for the human (propose, don't commit):**
-- **Duplicate ART nodes** from parallel agents — consolidate the ~4 Google-Translate variants
-  (`ART - Google Translate`, `... text machine translation`, `... online text translation (statistical
-  MT)`, `... conversation mode`) into one canonical (keep "conversation mode" only if the voice
-  feature is genuinely distinct), repointing the EVD `How` links. Left for curation.
+**Cleanup done:**
+- **Duplicate ART nodes consolidated (2026-07-30).** The 4 Google-Translate variants were merged into
+  a single canonical `ART - Google Translate`; 12 EVD `How` links repointed, 3 duplicate ART files
+  deleted (ART 23→20). Both modalities (text/statistical-MT vs conversation/voice-neural-MT) are
+  documented on the canonical node and recorded per-EVD in each finding's `How?`.
 
 ## Governance
 

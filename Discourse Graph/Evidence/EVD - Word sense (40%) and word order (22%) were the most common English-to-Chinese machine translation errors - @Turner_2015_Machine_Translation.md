@@ -44,7 +44,7 @@ The raw Google Translate output for each document was annotated by a native Chin
 
 ### Who?
 
-The corpus was 60 health-promotion documents collected in both English and Traditional Chinese from US public-health agency websites (e.g., CDC, several state and county health departments), machine-translated via [[ART - Google Translate text machine translation]].
+The corpus was 60 health-promotion documents collected in both English and Traditional Chinese from US public-health agency websites (e.g., CDC, several state and county health departments), machine-translated via [[ART - Google Translate]].
 
 > "We collected 60 health promotion documents available in English and Chinese (Traditional) from public health websites in the United States." (Turner, 2015, p. 3)
 

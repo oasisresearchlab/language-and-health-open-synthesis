@@ -32,3 +32,8 @@ Trialed on aged-care hospital wards (6 of 21 analyzed observations); its voice-t
 ## Other Notes
 
 Included in the trial specifically because ward staff were already using it and similar apps on an ad-hoc, unofficial basis. Prior studies cited indicate it is only suitable for short or simple healthcare phrases, with accuracy varying across languages.
+
+**Single canonical artifact for Google Translate across the corpus** (merged 2026-07-30 from four duplicate ART nodes created by parallel extraction agents). One real-world product, used in two distinct modalities — the specific modality is recorded in each EVD's **How?**:
+
+- **Text / document translation** (statistical MT at the time of the older studies): translating written patient-education material (`@Khanna_2011_Performance_online`) and public-health documents in an MT-plus-postediting workflow (`@Turner_2014_comparison_human`, `@Turner_2015_Machine_Translation`); text quality of safety statements across 20 languages (`@Das_2019_Dangers_Machine`).
+- **Conversation / voice mode** (neural MT): real-time spoken bedside symptom assessment in the PACU (`@Kapoor_2022_Use_Neural`); ad-hoc voice-to-voice ward use (`@Hwang_2022_Testing_use`, `@Panayiotou_2020_perceptions_translation`).

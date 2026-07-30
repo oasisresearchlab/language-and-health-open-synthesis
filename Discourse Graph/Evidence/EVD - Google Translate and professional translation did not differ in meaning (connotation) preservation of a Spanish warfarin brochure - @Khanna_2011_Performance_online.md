@@ -41,7 +41,7 @@ The observable: meaning, a Likert rating of whether the translation maintained t
 
 ### How?
 
-Blinded sentence-level scoring of [[ART - Google Translate online text translation (statistical MT)]] against the professional translation, with the original English sentence available for reference, compared via clustered linear regression.
+Blinded sentence-level scoring of [[ART - Google Translate]] against the professional translation, with the original English sentence available for reference, compared via clustered linear regression.
 
 > "evaluators compared the GT and professional translations of the same sentence (with the original English sentence available as a reference) and indicated a preference, for any reason, for one translation or the other." (Khanna, 2011, p. 521)
 

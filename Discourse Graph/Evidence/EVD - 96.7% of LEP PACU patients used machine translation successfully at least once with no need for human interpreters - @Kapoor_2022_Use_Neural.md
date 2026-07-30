@@ -41,7 +41,7 @@ The observable: whether a patient could use the application successfully to answ
 
 ### How?
 
-Single-arm feasibility cohort using an iPad running the [[ART - Google Translate conversation mode]] to play preformatted Spanish pain/nausea questions in the PACU; patients answered yes/no and gave numeric ratings.
+Single-arm feasibility cohort using an iPad running the [[ART - Google Translate]] to play preformatted Spanish pain/nausea questions in the PACU; patients answered yes/no and gave numeric ratings.
 
 > "Patients responded with yes or no and gave numbers for pain and nausea ratings." (Kapoor, 2022, p. 4)
 

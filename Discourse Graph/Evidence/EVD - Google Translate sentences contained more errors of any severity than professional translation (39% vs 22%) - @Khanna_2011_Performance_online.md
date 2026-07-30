@@ -39,7 +39,7 @@ The observable: the proportion of translated sentences flagged as containing an 
 
 ### How?
 
-Blinded severity scoring of [[ART - Google Translate online text translation (statistical MT)]] and professional sentences; "any error" was defined as any sentence not assigned to the "N/A, Sentence basically accurate" category.
+Blinded severity scoring of [[ART - Google Translate]] and professional sentences; "any error" was defined as any sentence not assigned to the "N/A, Sentence basically accurate" category.
 
 > "assigned to the "N/A, Sentence basically accurate" category (ie, all sentences with a score between 5 and 1)" (Khanna, 2011, p. 523)
 

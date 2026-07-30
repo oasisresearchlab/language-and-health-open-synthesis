@@ -41,7 +41,7 @@ The observable: the association between source-sentence complexity and evaluator
 
 ### How?
 
-Sentences were classified as simple vs complex by clause count; preference scores of [[ART - Google Translate online text translation (statistical MT)]] versus professional translations were modeled against complexity using clustered linear regression.
+Sentences were classified as simple vs complex by clause count; preference scores of [[ART - Google Translate]] versus professional translations were modeled against complexity using clustered linear regression.
 
 > "Sentences were classified as "simple" if they contained one or fewer clauses and "complex" if they contained more than one clause." (Khanna, 2011, p. 522)
 

@@ -39,7 +39,7 @@ The observable: fluency, a Likert-scale rating of the grammatical correctness an
 
 ### How?
 
-Blinded sentence-level comparison of [[ART - Google Translate online text translation (statistical MT)]] against an independently produced professional Spanish translation, analyzed with clustered linear regression to account for each sentence being scored by all three evaluators.
+Blinded sentence-level comparison of [[ART - Google Translate]] against an independently produced professional Spanish translation, analyzed with clustered linear regression to account for each sentence being scored by all three evaluators.
 
 > "We compared the scores assigned to GT-translated sentences for each of the five manually scored domains as compared to the scores of the professionally translated sentences, as well as the impact of word count and sentence complexity on the scores achieved specifically by the GT-translated sentences, using clustered linear regression to account for the fact that each of the 45 sentences were scored by each of the three evaluators." (Khanna, 2011, p. 522)
 

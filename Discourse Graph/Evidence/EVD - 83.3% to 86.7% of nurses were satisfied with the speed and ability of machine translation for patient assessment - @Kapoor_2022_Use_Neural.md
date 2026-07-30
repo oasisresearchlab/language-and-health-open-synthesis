@@ -41,7 +41,7 @@ The observable: nurse satisfaction (5-point Likert scale) with the speed, and se
 
 ### How?
 
-Self-reported nurse satisfaction ratings collected after PACU symptom assessments conducted with the [[ART - Google Translate conversation mode]], summarized as proportions in Table 2.
+Self-reported nurse satisfaction ratings collected after PACU symptom assessments conducted with the [[ART - Google Translate]], summarized as proportions in Table 2.
 
 > "Preformatted questions were played for patients in the PACU through the application using an iPad tablet (Apple) held by the research coordinator (G.C., M.P.F.) at set intervals when nurses would typically evaluate symptoms." (Kapoor, 2022, p. 4)
 

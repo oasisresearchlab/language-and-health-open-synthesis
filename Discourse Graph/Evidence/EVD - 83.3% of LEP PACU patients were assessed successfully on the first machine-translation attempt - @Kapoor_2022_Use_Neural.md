@@ -39,7 +39,7 @@ The observable: whether a patient could successfully communicate pain and nausea
 
 ### How?
 
-Single-arm feasibility cohort: an iPad running the [[ART - Google Translate conversation mode]] played preformatted Spanish pain/nausea questions at intervals when nurses would normally assess symptoms; first-attempt success was tallied per patient.
+Single-arm feasibility cohort: an iPad running the [[ART - Google Translate]] played preformatted Spanish pain/nausea questions at intervals when nurses would normally assess symptoms; first-attempt success was tallied per patient.
 
 > "Preformatted questions were played for patients in the PACU through the application using an iPad tablet (Apple) held by the research coordinator (G.C., M.P.F.) at set intervals when nurses would typically evaluate symptoms." (Kapoor, 2022, p. 4)
 

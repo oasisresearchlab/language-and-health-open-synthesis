@@ -56,9 +56,16 @@ Ran one extraction agent per paper (workflow `wf_7cde51e0-cdd`). **14/14 complet
 
 **Wiring:** all AI/MT/app/device cluster CLMs linked into the two questions. `Q1` (benefits/risks/limitations) → **51 CLMs, 17 distinct papers** (up from 5). `Q2` (best practices) → **21 CLMs** (best-practice subset + originals).
 
-**Flags carried to review (authored into the EVDs):** - `@Narang_2019_Use_Mobile` — initial PDF was supplemental-only (0 nodes); **correct article body supplied manually and extracted 2026-07-30 → 4 EVD · 1 new CLM · 1 CVT** (one-touch mobile interpreter-access app raised OPI call volume 4.3→12.8/wk, not durable; provider satisfaction EVD became the first in-corpus evidence for the Theresa review CLM). Wired into Q1. **No longer in the fetch queue.** App left unnamed in the paper → no ART reified (flagged for curation). - `@Khanna_2011` — abstract↔Table 1 transpose adequacy/meaning point estimates (both n.s.); noted. - `@Turner_2015_Machine_Translation` — abstract 41 CPM vs body/Table 37.8 CPM; grounded in the table. - `@Hwang_2022` — Table 1 percentages vs Results-text n=24 denominator mismatch; noted. - `@Rishivardhan_2024` — methods/tool paper, evaluated on *scripted* not real patient responses; source note said "no findings" but full text has empirical results. Verify relevance in review. - `@Colina_2022` — functionalist-vs-literal *human* translation (not AI/MT); kept as best-practice basis.
+**Flags carried to review (authored into the EVDs):**
+- `@Narang_2019_Use_Mobile` — initial PDF was supplemental-only (0 nodes); **correct article body supplied manually and extracted 2026-07-30 → 4 EVD · 1 new CLM · 1 CVT** (one-touch mobile interpreter-access app raised OPI call volume 4.3→12.8/wk, not durable; provider satisfaction EVD became the first in-corpus evidence for the Theresa review CLM). Wired into Q1. **No longer in the fetch queue.** App left unnamed in the paper → no ART reified (flagged for curation).
+- `@Khanna_2011` — abstract↔Table 1 transpose adequacy/meaning point estimates (both n.s.); noted.
+- `@Turner_2015_Machine_Translation` — abstract 41 CPM vs body/Table 37.8 CPM; grounded in the table.
+- `@Hwang_2022` — Table 1 percentages vs Results-text n=24 denominator mismatch; noted.
+- `@Rishivardhan_2024` — methods/tool paper, evaluated on *scripted* not real patient responses; source note said "no findings" but full text has empirical results. Verify relevance in review.
+- `@Colina_2022` — functionalist-vs-literal *human* translation (not AI/MT); kept as best-practice basis.
 
-**Cleanup done:** - **Duplicate ART nodes consolidated (2026-07-30).** The 4 Google-Translate variants were merged into a single canonical `ART - Google Translate`; 12 EVD `How` links repointed, 3 duplicate ART files deleted (ART 23→20). Both modalities (text/statistical-MT vs conversation/voice-neural-MT) are documented on the canonical node and recorded per-EVD in each finding's `How?`.
+**Cleanup done:**
+- **Duplicate ART nodes consolidated (2026-07-30).** The 4 Google-Translate variants were merged into a single canonical `ART - Google Translate`; 12 EVD `How` links repointed, 3 duplicate ART files deleted (ART 23→20). Both modalities (text/statistical-MT vs conversation/voice-neural-MT) are documented on the canonical node and recorded per-EVD in each finding's `How?`.
 
 ## Governance
 

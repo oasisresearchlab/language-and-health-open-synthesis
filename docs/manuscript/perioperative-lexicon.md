@@ -8,13 +8,31 @@ Canonical, explicit term set for the within-corpus lexical identification of sur
 
 A source is a candidate if its title or filename matches **any** stem below.
 
-**Core surgical / perioperative** - `surg*` (surgery, surgical, surgeon) - `periop*` (perioperative) - `preoperat*`, `postoperat*`, `intraoperat*` - `operat*` (operating room, operative) — see exclusions for non-surgical "operat…" - `resect*`, `excision`, `incision`
+**Core surgical / perioperative**
+- `surg*` (surgery, surgical, surgeon)
+- `periop*` (perioperative)
+- `preoperat*`, `postoperat*`, `intraoperat*`
+- `operat*` (operating room, operative) — see exclusions for non-surgical "operat…"
+- `resect*`, `excision`, `incision`
 
-**Anaesthesia / analgesia / pain (peri-surgical)** - `anesthes*`, `anaesthes*` - `analges*` - `opioid`, `postoperative pain`, `regional anesthesia`, `nerve block`
+**Anaesthesia / analgesia / pain (peri-surgical)**
+- `anesthes*`, `anaesthes*`
+- `analges*`
+- `opioid`, `postoperative pain`, `regional anesthesia`, `nerve block`
 
-**Procedures / subspecialties** - `arthroplasty`, `joint replacement`, `TJA`, `TKA`, `THA` - `spine`, `spinal` (surgical context) - `bariatric` - `transplant*` - `colorectal` (surgical context — see exclusions for screening) - `laparoscop*` - `cataract`, `mammoplasty`, `diverticulitis` (as surgical procedures/indications) - `craniotomy`, `hysterectomy`, `appendect*`, `cholecystect*`, `mastect*`
+**Procedures / subspecialties**
+- `arthroplasty`, `joint replacement`, `TJA`, `TKA`, `THA`
+- `spine`, `spinal` (surgical context)
+- `bariatric`
+- `transplant*`
+- `colorectal` (surgical context — see exclusions for screening)
+- `laparoscop*`
+- `cataract`, `mammoplasty`, `diverticulitis` (as surgical procedures/indications)
+- `craniotomy`, `hysterectomy`, `appendect*`, `cholecystect*`, `mastect*`
 
-**Surgical process / consent** - `consent` (surgical/procedural) - `operating room`, `OR `, `perioperative unit`, `PACU`, `recovery room`
+**Surgical process / consent**
+- `consent` (surgical/procedural)
+- `operating room`, `OR `, `perioperative unit`, `PACU`, `recovery room`
 
 ## Exclude terms (false-positive filter)
 

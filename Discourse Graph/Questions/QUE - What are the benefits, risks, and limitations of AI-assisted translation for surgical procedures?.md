@@ -21,6 +21,7 @@ tags:
 - [[CLM - A Spanish-language adaptation of an HIV mHealth app achieves good usability and acceptability for Latinx PWH while surfacing engagement barriers for iterative design]]
 - [[CLM - A concept-based domain-tuned speech translation system is more robust to noise and disfluency than general-purpose commercial systems]]
 - [[CLM - A concept-based speech translation device can accurately convey spoken medication-counseling recommendations between clinicians and LEP patients]]
+- [[CLM - A mobile application providing one-touch access to telephone interpreters increases clinician use of interpreter services]]
 - [[CLM - A multilingual chatbot engages LEP patients as effectively as English-primary patients]]
 - [[CLM - A voice-enabled machine translation app matches professional human translators on simple patient-education sentences but makes more errors as sentence complexity increases]]
 - [[CLM - An LLM voice agent can map unconstrained multilingual free-text survey responses to structured SDoH answers with high accuracy]]

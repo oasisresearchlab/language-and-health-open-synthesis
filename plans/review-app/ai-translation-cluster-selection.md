@@ -64,9 +64,10 @@ Dedup note: `_1` re-import duplicates collapsed (`Kapoor_2022_Use_Neural_1`, `Tu
 |---|---|---|
 | `@Theresa_2024_Point-of-care_communication` | Scoping review — point-of-care communication tech for limited-language-proficiency patients | present-tense CLM backbone; supporting EVDs are the corpus primaries |
 
-### Fetch queue (excluded this pass)
+### Fetch queue
 
 - `@Roopwant_2025_Enhancing_Dental` — no PDF; fetch, then extract.
+- ~~`@Narang_2019_Use_Mobile`~~ — resolved 2026-07-30 (extracted from a manually-supplied PDF).
 
 ## Existing CLMs linked to the two questions (already in the graph)
 
@@ -88,8 +89,11 @@ figure/table embeds) → `sync_relations` → `build_dgraph` → `verbatim_audit
 `Q2` (best practices) → **21 CLMs** (best-practice subset + originals).
 
 **Flags carried to review (authored into the EVDs):**
-- `@Narang_2019_Use_Mobile` — **wrong / supplemental-only PDF**, no article body → **0 nodes;
-  moved to the fetch queue** (re-fetch the primary, then extract).
+- `@Narang_2019_Use_Mobile` — initial PDF was supplemental-only (0 nodes); **correct article body
+  supplied manually and extracted 2026-07-30 → 4 EVD · 1 new CLM · 1 CVT** (one-touch mobile
+  interpreter-access app raised OPI call volume 4.3→12.8/wk, not durable; provider satisfaction EVD
+  became the first in-corpus evidence for the Theresa review CLM). Wired into Q1. **No longer in the
+  fetch queue.** App left unnamed in the paper → no ART reified (flagged for curation).
 - `@Khanna_2011` — abstract↔Table 1 transpose adequacy/meaning point estimates (both n.s.); noted.
 - `@Turner_2015_Machine_Translation` — abstract 41 CPM vs body/Table 37.8 CPM; grounded in the table.
 - `@Hwang_2022` — Table 1 percentages vs Results-text n=24 denominator mismatch; noted.

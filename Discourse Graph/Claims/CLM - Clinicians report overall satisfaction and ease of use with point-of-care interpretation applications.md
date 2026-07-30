@@ -28,7 +28,9 @@ Clinicians report overall satisfaction with point-of-care interpretation applica
 
 ## Supporting Evidence
 
-> [!info] EVDs that support this claim (→ EVD—supports→CLM edges by sync_relations.py). Scoping-review synthesized generalization (Kiblinger 2024). Provider-satisfaction findings are distributed across the included primary studies, out of scope for this review's extraction. **No in-corpus EVD is wired yet — flagged for the human to wire the corpus's primary-study EVDs.**
+> [!info] EVDs that support this claim (→ EVD—supports→CLM edges by sync_relations.py). Scoping-review synthesized generalization (Kiblinger 2024). Provider-satisfaction findings are distributed across the included primary studies, out of scope for this review's extraction.
+
+- [[EVD - Most clinicians rated the mobile app easy to use and that it made calling interpreters easier - @Narang_2019_Use_Mobile]]
 
 ## Contradicting Evidence
 

@@ -66,6 +66,10 @@ export const ACCURACY_BATCH = [
   "@Soller_2012_Performance_new",
   "@Colina_2022_Research_Documents",
   "@Rishivardhan_2024_Voice-Enabled_Response",
+  // AI-translation cluster follow-ups (2026-08)
+  "@Davis_2019_Translating_Discharge",
+  "@J_2025_Pilot_study",
+  "@Kristen_2023_Optimizing_usability",
 ];
 
 // Curated review set — ~4 LOS + ~4 readmission EVDs (spanning surgical/inpatient/
@@ -363,6 +367,21 @@ export const CURATED_EVD_TITLES = new Set<string>([
   "Cloud-based VERAA mapped Spanish voice survey responses at 90% median accuracy, below English",
   "Cloud-based VERAA mapped English voice survey responses to structured SDoH answers at 100% median accuracy",
   "VERAA's LLM mapped numerical income-range responses least accurately (B1 income 70-75%)",
+  // AI-translation cluster follow-ups (2026-08)
+  // @Davis_2019_Translating_Discharge
+  "Three-quarters of surveyed children's hospitals (74%) reported translating discharge instructions",
+  "Operational complexity from mismatched discharge and translation time frames was the most cited barrier to translating discharge instructions",
+  "Hospitals rely on interpreters to act as translators despite differing training, limited to short or simple documents",
+  "Every institutional policy mentioning machine translation forbade using it alone, calling it inaccurate and unsafe",
+  "Standardized translated document libraries and EHR templates were the main strategy but were limited to common languages and could not be personalized",
+  // @J_2025_Pilot_study
+  "Interpreter use was documented for only 62% of LEP cholecystectomy patients despite the Section 1557 mandate",
+  "Only 31% of LEP cholecystectomy patients received language-concordant documentation",
+  "Documented interpreter use was not significantly associated with LOS, ED revisits, readmission, or surgical follow-up after cholecystectomy",
+  "Language-concordant documentation was not significantly associated with LOS, ED revisits, readmission, or surgical follow-up after cholecystectomy",
+  // @Kristen_2023_Optimizing_usability
+  "CP users perceived positive impacts of the app on medication-adherence self-monitoring, mood-stress check-ins, and provider communication",
+  "CP users identified engagement barriers (privacy, low literacy, lack of personal connection, repetitiveness) and requested more interactivity and personalization",
 ]);
 
 const isCurated = (title: string) =>

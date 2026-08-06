@@ -31,6 +31,7 @@ nodeInstanceId: 019e8dd8-2d66-7bb3-a3d3-8da17a182a92
 ## Possible evidence
 
 - Among the 20,715 noninstitutionalized beneficiaries studied, 4.8% had limited English speaking proficiency. #evd-candidate
+	- Fig. 1A
 - Among the sample, 7.0% had limited English reading proficiency. #evd-candidate
 - 67.7% of beneficiaries had used at least one CMS resource. #evd-candidate
 - Beneficiaries with limited English reading proficiency were 16.3 percentage points less likely to have used a CMS resource compared to beneficiaries with English reading proficiency (p < .001). #evd-candidate

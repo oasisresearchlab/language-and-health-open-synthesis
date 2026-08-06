@@ -22,7 +22,7 @@ nodeInstanceId: 019e8dd8-257e-7be6-a9ae-7604df6b2ae9
 
 > [!info] EVDs that oppose this claim (→ EVD—opposes→CLM).
 
-- [[EVD - There was no significant association between access to professional interpreter services via telephone and length of stay for LEP patients]]
+- [[EVD - Bedside interpreter telephone access had no significant effect on length of stay - @Karliner_2017_Convenient_Access]]
 
 ## Potentially Relevant Papers
 

@@ -25,4 +25,4 @@ Language-services directors answered as proxies for their whole institution, and
 
 - [[EVD - Operational complexity from mismatched discharge and translation time frames was the most cited barrier to translating discharge instructions - @Davis_2019_Translating_Discharge]]
 - [[EVD - Hospitals rely on interpreters to act as translators despite differing training, limited to short or simple documents - @Davis_2019_Translating_Discharge]]
-- [[EVD - Standardized translated document libraries and EHR templates are the main strategy but are limited to common languages and cannot be personalized - @Davis_2019_Translating_Discharge]]
+- [[EVD - Standardized translated document libraries and EHR templates were the main strategy but were limited to common languages and could not be personalized - @Davis_2019_Translating_Discharge]]

@@ -26,7 +26,7 @@ deliveryContext:
 
 - [[EVD - Three-quarters of surveyed children's hospitals (74%) reported translating discharge instructions - @Davis_2019_Translating_Discharge]]
 - [[EVD - Only 31% of LEP cholecystectomy patients received language-concordant documentation - @J_2025_Pilot_study]]
-- [[EVD - Standardized translated document libraries and EHR templates are the main strategy but are limited to common languages and cannot be personalized - @Davis_2019_Translating_Discharge]]
+- [[EVD - Standardized translated document libraries and EHR templates were the main strategy but were limited to common languages and could not be personalized - @Davis_2019_Translating_Discharge]]
 - [[EVD - Hospitals rely on interpreters to act as translators despite differing training, limited to short or simple documents - @Davis_2019_Translating_Discharge]]
 - [[EVD - Every institutional policy mentioning machine translation forbade using it alone, calling it inaccurate and unsafe - @Davis_2019_Translating_Discharge]]
 

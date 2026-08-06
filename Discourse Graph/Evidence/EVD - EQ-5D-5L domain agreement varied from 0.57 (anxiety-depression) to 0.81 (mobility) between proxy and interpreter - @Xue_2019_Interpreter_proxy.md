@@ -1,0 +1,58 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
+nodeInstanceId: 019f8c55-7608-7dc8-a75b-33d4721959c5
+Source: "[[@Xue_2019_Interpreter_proxy]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/concordanceIntervention/interpretingServices
+  - languageConcordanceFactor/concordanceIntervention/familyInterpreter
+  - healthOutcome/patientReportedOutcomes
+  - deliveryContext/arthroplasty
+  - epistemic/measurement
+languageConcordanceFactor:
+  - Interpreting services
+  - Family/proxy interpreter
+healthOutcome:
+  - Patient-reported outcomes
+deliveryContext:
+  - Arthroplasty
+  - Telephone follow-up
+  - Clinical quality registry
+---
+## Description
+
+![[Xue_2019_Interpreter_proxy-table3.png]]
+![[Xue_2019_Interpreter_proxy-fig2.png]]
+
+Agreement between interpreter-proxy and healthcare-interpreter administration varied considerably across the five EQ-5D-5L domains (Table 3, Fig. 2): mobility highest (kappa/ICC/CCC = 0.81), then pain/discomfort (0.69), usual activities (0.68), personal care (0.66), and anxiety/depression lowest (0.57 — the single measure falling below the "substantial" 0.60 threshold). Anxiety/depression was thus the only EQ-5D domain that did not reach at least substantial agreement.
+
+> "Agreement for different sections of the EQ-5D varied considerably with scores from 0.57 anxiety/depression to 0.81 for mobility." (Xue, 2019, p. 4)
+
+> "Anxiety/Depression 0.57 0.57 (0.41-0.7) 0.57 (0.41-0.69) 0.06 -1.05 to 1.16 0.38" (Xue, 2019, p. 5, Table 3)
+
+## Methods Context
+
+### What?
+
+The observable: agreement between the two administration methods on each of the five EQ-5D-5L health domains (mobility, personal care, usual activities, pain/discomfort, anxiety/depression), each a 5-point Likert item.
+
+> "The EQ-5D-5 L rates the patient's mobility, personal care, usual activities, pain/discomfort and anxiety/depression levels in separate 5-point Likert scales, in which for each category a score of '1' represents the best outcome and a score of '5' the worst." (Xue, 2019, p. 3)
+
+### How?
+
+Each domain's ordinal paired scores were analysed with quadratic-weighted kappa, ICC, and CCC; CCC plots per domain are shown in Fig. 2. See [[ART - Interpreter proxy survey administration (family or carer, 2-way telephone)]].
+
+> "Ordinal data were analysed using quadratic weighted Cohen's kappa coefficients, intraclass coefficients (ICC) measuring absolute agreement and Lin's concordance correlation coefficient (CCC) for each outcome measure" (Xue, 2019, p. 3)
+
+### Who?
+
+85 LEP hip or knee arthroplasty patients at their routine 6-month registry follow-up.
+
+> "Eighty-five patients successfully received both methods of follow-up calls and were included in the data analysis." (Xue, 2019, p. 3)
+
+## Other Notes
+
+The authors attribute the lower EQ-5D agreement (versus Oxford) to the EQ-5D assessing the current daily situation, which is subject to greater day-to-day variability, versus the Oxford's most-recent-4-week window.

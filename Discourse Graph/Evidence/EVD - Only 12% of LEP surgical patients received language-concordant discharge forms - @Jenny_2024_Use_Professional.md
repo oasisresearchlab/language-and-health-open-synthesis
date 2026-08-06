@@ -1,0 +1,52 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
+nodeInstanceId: 019f8c55-9854-7676-b77f-9b424b0dc857
+Source: "[[@Jenny_2024_Use_Professional]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/concordanceIntervention/languageConcordantMaterials
+  - healthOutcome/interpreterAccess
+  - deliveryContext/inpatient
+  - deliveryContext/generalSurgery
+  - epistemic/measurement
+languageConcordanceFactor:
+  - Language-concordant discharge forms
+healthOutcome:
+  - Interpreter access
+deliveryContext:
+  - General surgery
+  - Inpatient
+  - Urban academic center
+---
+## Description
+
+![[Jenny_2024_Use_Professional-table2.png]]
+
+Only 14 of the 117 LEP surgical patients (12.0%) were provided with language-concordant discharge forms (Table 2). The authors argue this is a more reliable metric of deficiency in language-concordant care than interpreter documentation, because such forms exist in the EHR only when actually provided to patients.
+
+> "Only 14 patients with LEP (12.0%) were provided with language-concordant discharge forms (Table 2)." (Cevallos, 2024, p. 1)
+
+> "Language concordant discharge forms / 14 (12.0) / NA" (Cevallos, 2024, p. 2, Table 2)
+
+## Methods Context
+
+### What?
+
+The observable: whether a patient was provided with a language-concordant discharge form (a written discharge document in the patient's preferred language), recorded in the EHR.
+
+> "To establish a more reliable metric for assessing deficiency in language-concordant care, we propose examining the provision of language-concordant forms at discharge, which exist in the EHR only when provided to patients, and we found the rate to be exceptionally low." (Cevallos, 2024, p. 3)
+
+### How?
+
+Retrospective EHR-based cohort study; provision of language-concordant discharge forms was extracted from the medical record as a primary outcome.
+
+> "The primary outcomes included documentation of interpreter usage within the first 24 hours of hospital encounter, interpreter usage at discharge, interpreter usage ever during this admission, and the provision of language-concordant discharge forms." (Cevallos, 2024, p. 1)
+
+### Who?
+
+117 LEP patients aged ≥18 admitted for appendectomy, cholecystectomy, or colectomy at a single urban academic center, 2019–2020.
+
+> "Of the 130 patients with LEP, the analytical cohort included 117 patients (74 female [63.3%]; mean [SD] age, 64 [17.3] years)." (Cevallos, 2024, p. 1)

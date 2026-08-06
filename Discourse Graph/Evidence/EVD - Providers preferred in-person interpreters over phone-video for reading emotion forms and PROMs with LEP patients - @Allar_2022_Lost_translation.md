@@ -1,0 +1,52 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
+nodeInstanceId: 019f8c5b-d6e2-7587-8db3-5024740eb629
+Source: "[[@Allar_2022_Lost_translation]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/concordanceIntervention/interpretingServices
+  - healthOutcome/communication
+  - deliveryContext/surgery
+  - deliveryContext/outpatient
+  - epistemic/mechanism
+languageConcordanceFactor:
+  - Interpreting services
+healthOutcome:
+  - Communication quality
+deliveryContext:
+  - Surgery
+  - Outpatient
+  - Academic medical center
+---
+## Description
+
+![[Allar_2022_Lost_translation-table2.png]]
+
+A consistent theme was the necessity of interpreters, with many providers preferring in-person interpreters over telephonic/video interpreters. Providers valued in-person interpreters' ability to respond to patients' emotions and the mood of the interaction, read forms (including PROMs), and build relationships over time; phone interpreting was seen as working "less well" because the interpreter cannot see facial expressions and body language (Table 2).
+
+> "A consistent theme was the necessity of interpreters during clinical encounters, with many providers noting the benefits of in-person interpreters compared to telephonic interpreters. Many noted the ability of in-person interpreters to respond to patients' emotions and the mood of the interaction, read forms (including PROMs), and form relationships with patients and providers over time." (Allar, 2022, p. 516)
+
+> "Phone translating that works less well because they're not physically there so they can't see the facial expressions the hand gestures the body language and the conversation between patient and me." (Allar, 2022, p. 518)
+
+## Methods Context
+
+### What?
+
+The observable: providers' comparative preference between in-person and phone/video interpreters, coded under the Interpreters theme.
+
+> "Access to certified interpreters, whether via phone or in person." (Allar, 2022, p. 518, Table 2)
+
+### How?
+
+Semi-structured qualitative interviews, thematically analyzed to saturation, independently coded by two researchers.
+
+> "Semi-structured interviews were performed with providers from multiple surgical disciplines across six academic medical centers until thematic saturation was achieved." (Allar, 2022, p. 514)
+
+### Who?
+
+Twenty-four surgical providers across six Boston-area academic medical centers, LEP patient share 5%–70%.
+
+> "Twenty-four participants were interviewed, including 21 surgeons, two otolaryngology nurse practitioners (NP), and one speech-language pathologist (SLP) within the otolaryngology department." (Allar, 2022, p. 515)

@@ -1,0 +1,56 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+nodeInstanceId: 019fb3ba-350a-7738-8464-6e9f4e0cecf3
+Source: "[[@Colina_2022_Research_Documents]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/concordanceIntervention/translatedDocuments
+  - healthOutcome/trust
+  - deliveryContext/humanSubjectsResearch
+  - epistemic/mechanism
+languageConcordanceFactor:
+  - Translated documents
+  - Functionalist translation
+  - Literal translation
+healthOutcome:
+  - Trust
+  - Patient preference
+deliveryContext:
+  - Human subjects research
+  - Primary care
+---
+## Description
+
+Participants tied the choice of translation approach to the perceived respect and professionalism of the institution handing them the document. Under the theme of adequacy and usability for a specific context, one participant said that at a doctor's office they would expect the functionalist form B, associating it with something ethical and professional, and that receiving the literal form A would signal the clinic was cutting corners by not paying a translator.
+
+> "[P]orque cuando llego a los doctores espero ver una forma B no una forma A; esperas algo ético y professional" ("[B]ecause when I go to the doctor I expect to see form B, rather than A; one expects something ethical and professional") (Participant 14)." (Colina, 2022, p. 35)
+
+> "Si llego a un doctor y me dan esta forma, me da la impresión de que se están ahorrando el dinero de un traductor porque, o sea 'Mi empleada habla español'—es lo que me hizo sentir" ("If I am in the doctor's office and I am given this form, I get the feeling that they are trying to save money by not paying a translator. 'My employee speaks Spanish'—this is the feeling I got") (Participant 14)." (Colina, 2022, p. 35)
+
+## Methods Context
+
+### What?
+
+The observable: participants' comments on the adequacy and usability of each translation for a specific real-world context, and the trust/professionalism they read into it.
+
+> "Participants also commented on the adequacy and usability of translations for a specific context rather than for the users." (Colina, 2022, p. 35)
+
+### How?
+
+Semistructured interview comments were coded by preference and thematically organized; adequacy-and-usability remarks surfaced as part of the audience-and-educational-background theme.
+
+> "For the qualitative analysis, all comments in the semistructured interviews were coded according to preference (for survey A or B). After coding was complete, comments were reviewed and thematically organized. The most often repeated themes were identified." (Colina, 2022, p. 33)
+
+### Who?
+
+The 20 English-Spanish bilingual adults (most Spanish-dominant), reviewing the two Mexican-Spanish translations of the Perceived Stress Scale.
+
+> "Being bilingual in English and Spanish was a criterion for inclusion in the study. Participants were between the ages of 19 and 39, with educational backgrounds that ranged from high school to advanced university degrees from institutions in the U.S." (Colina, 2022, p. 32)
+
+## Other Notes
+
+This finding rests on a single participant's articulated reasoning; it illustrates a mechanism (translation approach as a signal of institutional respect) rather than a prevalence estimate.

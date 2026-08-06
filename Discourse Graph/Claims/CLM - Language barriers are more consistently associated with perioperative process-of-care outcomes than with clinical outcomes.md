@@ -1,0 +1,54 @@
+---
+shortLabel: "Process-of-care > clinical assoc"
+NodeFormality: draft
+TruthValue: 0.6
+NodeType: Claim
+nodeTypeId: node_nMxzA_OByPwgPcmb6AN82
+curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+extraction_prompt_version: v2
+nodeInstanceId: 019f8c54-7f92-7703-9500-e8e702496a5f
+certainty:
+tags:
+  - languageConcordanceFactor/discordance
+  - healthOutcome/qualityOfCare
+  - epistemic/effect-size
+languageConcordanceFactor:
+  - Limited English Proficiency (LEP)
+healthOutcome:
+  - Quality of care
+  - Access to surgical care
+  - Mortality
+deliveryContext:
+  - Perioperative
+  - Surgery
+---
+## Supporting Evidence
+
+> [!info] EVDs that support this claim (→ EVD—supports→CLM edges by sync_relations.py). This is the review's headline synthesized generalization (Joo/Hyundeok 2023, 29 studies). The primary-study evidence is distributed across all included studies, out of scope for this paper's extraction. **No in-corpus EVD is wired yet — flagged for the human to wire the corpus's primary-study EVDs.**
+
+## Contradicting Evidence
+
+> [!info] EVDs that oppose this claim (→ EVD—opposes→CLM). None wired yet.
+
+## Related Claims
+
+> [!info] CLMs this review-level generalization subsumes / informs (→ CLM—informs→CLM by sync_relations.py). The per-outcome CLMs extracted from this same review:
+
+- [[CLM - Limited English proficiency is associated with reduced access to surgical care]]
+- [[CLM - Limited English proficiency is associated with delays in receiving surgical care]]
+- [[CLM - Limited English proficiency is associated with longer surgical admission length of stay]]
+- [[CLM - Limited English proficiency is associated with discharge to a skilled facility rather than home after surgery]]
+- [[CLM - Limited English proficiency is not consistently associated with perioperative mortality]]
+- [[CLM - Limited English proficiency is not consistently associated with postoperative complications]]
+- [[CLM - Limited English proficiency is not consistently associated with unplanned hospital readmissions after surgery]]
+
+## Narrative synthesis
+
+The review's central conclusion is that language barriers track most consistently with perioperative *process-of-care* outcomes — accessibility, timely delivery of care, LOS, and discharge disposition — and much less consistently with *clinical* outcomes such as postoperative complications, unplanned readmissions, and mortality. The authors caution this pattern is drawn entirely from observational studies with residual confounding and cannot establish causation or identify mediators. Certainty/GRADE appraisal is left for expert review.
+
+> "Outcomes corresponding to efficiency in the perioperative process of care, such as accessibility, timely delivery of care, LOS, and discharge disposition, demonstrated the most consistent association with LEP status. On the other hand, clinical outcomes, such as postoperative complications, unplanned readmissions, and mortality, were less frequently associated with LEP." (Joo, 2023, p. 9)
+
+> "In this systematic review, most of the included studies found associations between English proficiency and multiple perioperative process-of-care outcomes, but fewer associations were seen between English proficiency and clinical outcomes." (Joo, 2023, p. 1)
+
+**Reviewer note (probable-merge):** relates to the existing corpus review-thesis CLM "LEP status, especially with inconsistent professional interpreter use, is a risk factor for poorer perioperative care and outcomes" (Luan-Erfe 2023). The two systematic reviews are complementary (Joo explicitly says its findings complement Luan-Erfe); human to decide whether to link as related or keep distinct.

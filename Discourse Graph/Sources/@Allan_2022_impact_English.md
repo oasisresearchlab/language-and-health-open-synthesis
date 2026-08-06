@@ -38,6 +38,6 @@ nodeInstanceId: 019e8dd8-262b-7dd0-94ec-488958ca3ae0
 - A total of 671 patients were categorized as LEP (40%) and spoke 6 unique languages. #evd-candidate
 - EP patients presented to the ED more than LEP patients (23% vs. 14%, p < 0.001). #evd-candidate
 - After multivariable regression, the difference in ED visits persisted with an adjusted OR of 0.65 (95% CI 0.43-0.95; p = 0.029). #evd-candidate
-- [[EVD - There was no significant difference in readmission within one year between EP and LEP patients after bariatric surgery (adjusted OR = 0.94, 95% CI 0.56-1.55; p = 0.50).]]
+- [[EVD - No significant difference in one-year readmission after bariatric surgery between LEP and EP patients (adjusted OR 0.94) - @Allan_2022_impact_English]]
 - Both groups demonstrated similar weight loss at 1 year: EP patients lost 31.85% (LGBP) and 28.02% (SG), while LEP patients lost 30.17% (LGBP) and 28.36% (SG). #evd-candidate
 - EP and LEP patients had similar remission of obesity-related comorbidities. #evd-candidate

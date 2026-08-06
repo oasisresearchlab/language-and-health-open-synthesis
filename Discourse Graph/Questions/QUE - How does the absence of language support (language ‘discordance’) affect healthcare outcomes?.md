@@ -47,3 +47,9 @@ nodeInstanceId: 019e8dd8-3560-7dff-9648-0f03643a6222
   > Under Title VI of the 1964 Civil Rights Act, LEP patients are entitled to language assistance, however, multiple studies demonstrate that language assistance is underutilized.
 - [[@Jackson_2011_Alterations_medical]] (relevance: 0.503)
   > Training interpreters and clinicians to address common patterns of alteration will markedly improve the quality of communication between providers and LEP patients
+
+## Broader question
+
+> [!info] This question is a sub-question of a broader question (→ QUE—informs→QUE edge by sync_relations.py).
+
+- [[QUE - How does language support (language ‘concordance’) affect healthcare outcomes?]]

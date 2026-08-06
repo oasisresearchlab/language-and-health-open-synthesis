@@ -60,3 +60,9 @@ tags:
 - [[EP - Language accessibility and concordance, not LEP status itself, is the operative lever for medication-adherence disparities]]
 
 ## Other Notes
+
+## Broader question
+
+> [!info] This question is a sub-question of a broader question (→ QUE—informs→QUE edge by sync_relations.py).
+
+- [[QUE - How does language support (language ‘concordance’) affect healthcare outcomes?]]

@@ -1,0 +1,54 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
+nodeInstanceId: 019f8c54-ff0f-7cd6-beb9-59fd637cd1d7
+Source: "[[@Burkle_2017_Assessment_efficiency]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/concordanceIntervention/interpretingServices
+  - healthOutcome/serviceAccess
+  - deliveryContext/surgery
+  - deliveryContext/perioperative
+  - epistemic/measurement
+languageConcordanceFactor:
+  - Interpreting services
+healthOutcome:
+  - Service access (continuity)
+deliveryContext:
+  - Surgery
+  - Perioperative
+  - Procedural
+---
+## Description
+
+Despite variable in-person interpreter wait times, over the study period no surgical or procedural case was cancelled for lack of available interpretive services, and no LEP patient underwent a procedure without some form of interpretive assistance. When an in-person interpreter was unavailable or wait times threatened delay, telephone or professional video remote interpreting (VRI) services were used instead. Reported in the Results text; no dedicated figure or table.
+
+> "No cases were cancelled due to lack of available interpretive services. Furthermore, in no instance did an LEP patient undergo a procedure without some form of interpretative service assistance being used." (Burkle, 2017, p. 3)
+
+> "Timely access to telephone interpretive services or professional VRI services resulted in no cancelled cases or patients undergoing procedures without having been provided some form of interpretive services." (Burkle, 2017, p. 4)
+
+## Methods Context
+
+### What?
+
+The observable: whether any case was cancelled, or any LEP patient proceeded through a procedure, for want of interpretive assistance (a binary service-continuity outcome).
+
+> "whether extended wait times may have resulted in cases either being cancelled or proceeding without use of interpretive services." (Burkle, 2017, p. 3)
+
+### How?
+
+Prospective observational logging of language-service encounters from OR and procedural locations over ~2.5 months in 2016, with descriptive analysis; the institution offered three interpreting modalities as fallbacks for one another. See [[ART - Mayo Clinic tri-modal professional language services (in-person, telephone, VRI)]].
+
+> "In those cases where an in person interpreter was either initially known to be unavailable or when wait times were such that possible delays in cases might occur, either telephone interpretive services or professional videoconference services were used instead." (Burkle, 2017, p. 3)
+
+### Who?
+
+LEP patients (354 visited; 318 records analyzed) in the surgical and outpatient procedural areas of a single private, not-for-profit, quaternary-care US institution in 2016.
+
+> "Over the study period, 354 LEP patients visited our surgical and outpatient procedural areas. Information for 36 patients was missing leaving 318 records available for analysis." (Burkle, 2017, p. 2)
+
+## Other Notes
+
+This is an availability/continuity outcome, not a measure of interpretation quality or of patient understanding; the authors flag that a quality assessment of the modalities remains for future work.

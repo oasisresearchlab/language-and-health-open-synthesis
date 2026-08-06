@@ -31,6 +31,8 @@ deliveryContext:
 - [[EVD - Staff satisfaction with interpreter timeliness was lower in inpatient settings than in clinics and the ED - @Marshall_2016_Creating_Professional]]
 - [[EVD - Only 39% of LEP inpatients received professional interpretation on both admission and discharge while 13.8% received none on either day - @Lindholm_2012_Professional_language]]
 - [[EVD - Barriers to professional interpretation led LEP patients to delay care or proceed without assistance, limiting communication - @Brooks_2016_Patient_Perspectives]]
+- [[EVD - Nurses reported being generally discouraged from booking interpreters due to time and cost - @Panayiotou_2020_perceptions_translation]]
+- [[EVD - Healthcare staff reported already using translation apps on personal devices to overcome language barriers - @Panayiotou_2020_perceptions_translation]]
 
 ## Contradicting Evidence
 

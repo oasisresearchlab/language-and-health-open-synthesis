@@ -1,0 +1,55 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
+extraction_model: claude-opus-4-8
+nodeInstanceId: 019fb3b7-6b75-7c42-b57e-06ace9423a3e
+Source: "[[@Panayiotou_2020_perceptions_translation]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/concordanceIntervention/machineTranslation
+  - healthOutcome/patientPreference
+  - healthOutcome/translationAccuracy
+  - deliveryContext/agedCare
+  - epistemic/mechanism
+languageConcordanceFactor:
+  - Machine translation
+healthOutcome:
+  - Patient preference
+  - Translation accuracy
+deliveryContext:
+  - Aged care
+  - Inpatient
+---
+## Description
+
+After demonstrating and appraising three apps, both older CALD participants and healthcare staff favoured fixed-phrase translation apps (with supporting audio, text and pictures) over the real-time voice-to-voice translation offered by Google Translate. Preset-phrase apps were seen as easier and more reliable, while the free-translation voice feature was viewed as harder to use and less accurate.
+
+> "The findings from participants' appraisal suggests that despite the flexibility of Google Translate™, fixed-phrase translation apps with audio-visual features were preferred by both older people and nursing and allied health staff." (Panayiotou, 2020, p. 3523)
+
+> "While participants enjoyed the real-time voice-to-voice translation function of Google Translate™, several participants found it difficult or confusing to use, and accuracy of the translation was a problem." (Panayiotou, 2020, p. 3522)
+
+## Methods Context
+
+### What?
+
+The observable: participants' comparative preference between fixed-phrase apps and real-time voice-to-voice translation apps for healthcare communication.
+
+> "There are generally two types of translation apps: fixed-phrase translation apps and open translation apps." (Panayiotou, 2020, p. 3517)
+
+### How?
+
+Preference elicited through hands-on demonstration and appraisal of three iPad-compatible apps ([[ART - CALD Assist translation app]], [[ART - Talk To Me translation app]], and [[ART - Google Translate]]) followed by focus group discussion and a rating survey.
+
+> "Three iPad compatible translation apps were selected for demonstration and appraisal by the participants—CALD Assist, TalkToMe and Google Translate™." (Panayiotou, 2020, p. 3518)
+
+### Who?
+
+Older Greek and Chinese CALD community members (n = 12) and nursing/allied health staff (n = 17) in metropolitan Melbourne, Australia.
+
+> "Both types of study participants participated in the consultations in a group format." (Panayiotou, 2020, p. 3518)
+
+## Other Notes
+
+Qualitative preference finding synthesised across the appraisal and focus group data; no single figure/table (text-only). Related quantitative appraisal ratings are captured separately in the Table 4 EVD.

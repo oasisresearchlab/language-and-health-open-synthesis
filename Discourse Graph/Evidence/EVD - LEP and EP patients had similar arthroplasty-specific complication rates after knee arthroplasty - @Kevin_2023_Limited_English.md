@@ -1,0 +1,57 @@
+---
+NodeFormality: draft
+NodeType: Evidence
+nodeTypeId: node_huDx8FGfNSGQyongW5rk-
+curationStatus: Initial AI draft
+nodeInstanceId: 019f8c4c-3830-7709-acf0-8affaa7311e4
+Source: "[[@Kevin_2023_Limited_English]]"
+EvidenceType:
+tags:
+  - languageConcordanceFactor/discordance
+  - healthOutcome/postoperativeComplications
+  - deliveryContext/inpatient
+  - deliveryContext/arthroplasty
+  - epistemic/effect-size
+languageConcordanceFactor:
+  - Limited English proficiency
+healthOutcome:
+  - Postoperative complications
+  - Arthroplasty-specific complications
+deliveryContext:
+  - Total knee arthroplasty
+  - Orthopedics
+  - Inpatient
+---
+## Description
+
+![[Kevin_2023_Limited_English-fig1.png]]
+
+There were no statistically significant differences between limited-English-proficiency (LEP) and English-proficient (EP) patients in rates of arthroplasty-specific (mechanical/implant) complications — periprosthetic fracture, implant fracture, instability, implant loosening, and stiffness — after elective total knee arthroplasty (all p > 0.05 on Fisher's exact test; Figure 1). The authors interpret this null as evidence that surgical technique was consistent across groups and that the observed disparities arise from postoperative rather than intraoperative management.
+
+> "Our study did not find any significant differences in rates of arthroplasty specific complications including periprosthetic fracture, implant fracture, instability, implant loosening, and stiffness. This suggests that surgical technique was mostly consistent between LEP and EP patients and that the observed disparities in postoperative complications likely arise from differences in postoperative, rather than intraoperative, management and may be related to communication barriers." (Nguyen, 2023, p. 578)
+
+> "There were no significant differences in rates of 90‐day surgical sites infections, 7‐day sepsis, 1‐day encephalopathy or in rates of arthroplasty specific complications (Figure 1)." (Nguyen, 2023, p. 577)
+
+## Methods Context
+
+### What?
+
+The observable: rates of arthroplasty-specific complications (periprosthetic fracture, implant fracture, instability, implant loosening, stiffness).
+
+> "Arthroplasty specific complications included periprosthetic fracture, implant fracture, instability, implant loosening, and stiffness." (Nguyen, 2023, p. 577)
+
+### How?
+
+Unadjusted between-group comparison of categorical complication rates using Fisher's exact test.
+
+> "Comparisons of baseline characteristics, perioperative metrics, and postoperative complication rates between EP and LEP patients were performed using t‐test for continuous variables and Fisher's exact test for categorical variables." (Nguyen, 2023, p. 577)
+
+### Who?
+
+3450 elective TKA cases at a single academic medical centre (2013–2021), 9.2% (316) with LEP.
+
+> "A total of 3450 TKA cases were performed between January 2013 and December 2021. 9.2% (316) of the patients were classified as having LEP." (Nguyen, 2023, p. 577)
+
+## Other Notes
+
+Figure 1 individual rates (LEP vs EP): periprosthetic fracture 0.3% vs 0.5% (p = 1.0); implant fracture 1.3% vs 0.4% (p = 0.05); instability 1.3% vs 1.7% (p = 0.8); implant loosening 0.0% vs 0.9% (p = 0.1); stiffness 1.9% vs 1.7% (p = 0.7). This null is the empirical basis for the paper's mechanism claim (postoperative, not intraoperative, drivers).

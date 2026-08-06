@@ -54,6 +54,8 @@ nodeInstanceId: 019e8dd8-25d3-7b21-8f52-8b6760ef5fb5
 - [[CLM - Untrained bilingual family or friends should not be relied on for medical interpretation because it risks misinterpretation and errors]]
 - [[CLM - Using English-speaking family members as ad hoc interpreters is a double-edged practice for LEP patient care]]
 - [[CLM - When comprehensive professional interpreter services are readily available most LEP patients use them rather than family or ad hoc interpreters]]
+- [[CLM - Language-technology interventions increase interpreter-service utilization and process measures without demonstrated improvement in patient outcomes, and the utilization gains are not shown to persist]]
+- [[CLM - Uptake of translation tools in care settings is governed by time, cost, and institutional policy rather than by translation quality]]
 
 ## Other Notes
 

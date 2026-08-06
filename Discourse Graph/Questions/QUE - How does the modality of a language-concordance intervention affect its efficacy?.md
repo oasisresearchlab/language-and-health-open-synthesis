@@ -59,6 +59,7 @@ tags:
 - [[CLM - Untrained bilingual family or friends should not be relied on for medical interpretation because it risks misinterpretation and errors]]
 - [[CLM - Using English-speaking family members as ad hoc interpreters is a double-edged practice for LEP patient care]]
 - [[CLM - Word-for-word translation of PROMs without cultural and linguistic validation is not sufficient for valid measurement in LEP populations]]
+- [[CLM - In voice-based translation tools the speech-recognition stage, not the translation stage, is the primary source of failure]]
 
 ## Broader question
 

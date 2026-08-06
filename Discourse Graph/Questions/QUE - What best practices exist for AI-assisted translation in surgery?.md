@@ -39,6 +39,8 @@ tags:
 - [[CLM - Staff education plus language assistive technology increases clinicians' use of professional interpreter services for LEP patients]]
 - [[CLM - Unsupervised machine translation of medical information into low-resource languages introduces more meaning-changing errors than professional translation]]
 - [[CLM - Word-for-word translation of PROMs without cultural and linguistic validation is not sufficient for valid measurement in LEP populations]]
+- [[CLM - Improving translation quality does not improve LEP patient comprehension, while changing the delivery format does]]
+- [[CLM - Machine translation with human post-editing is substantially cheaper and faster than full human translation, but reaches quality parity only under some post-editing conditions]]
 
 ## Broader question
 

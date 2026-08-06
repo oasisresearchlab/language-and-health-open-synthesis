@@ -70,6 +70,14 @@ tags:
 - [[CLM - Unsupervised machine translation fails to meet professional-quality standards for medical safety information in most non-English languages]]
 - [[CLM - Unsupervised machine translation of medical information into low-resource languages introduces more meaning-changing errors than professional translation]]
 - [[CLM - Unsupervised machine translation produces less grammatically fluent text than professional human translation]]
+- [[CLM - Improving translation quality does not improve LEP patient comprehension, while changing the delivery format does]]
+- [[CLM - In voice-based translation tools the speech-recognition stage, not the translation stage, is the primary source of failure]]
+- [[CLM - Language-technology interventions increase interpreter-service utilization and process measures without demonstrated improvement in patient outcomes, and the utilization gains are not shown to persist]]
+- [[CLM - Machine translation of health materials approaches professional quality in high-resource languages and degrades sharply in low-resource ones]]
+- [[CLM - Machine translation of health text degrades readability before it degrades meaning, with sentence complexity as the moderator]]
+- [[CLM - Machine translation with human post-editing is substantially cheaper and faster than full human translation, but reaches quality parity only under some post-editing conditions]]
+- [[CLM - Uptake of translation tools in care settings is governed by time, cost, and institutional policy rather than by translation quality]]
+- [[CLM - User satisfaction with translation technology is uniformly high and does not track its measured accuracy or usability]]
 
 ## Broader question
 

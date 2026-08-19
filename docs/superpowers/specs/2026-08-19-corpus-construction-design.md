@@ -61,6 +61,42 @@ patient-outcome or real-clinical-setting evaluation; record how much is already 
 Reported as its own sub-study. A near-zero result is a publishable finding about where this
 literature lives.
 
+### 2.5 Prior art, and a risk it exposes for §2.1
+
+Full sweep: `plans/prior-reviews-sweep.md`.
+
+**Existing reviews should seed the query.** The space is heavily reviewed — Karliner et al. 2007,
+Diamond et al. 2019 (JGIM), a 2019 evidence map, 2020/2021 scoping reviews, plus segment-specific
+reviews for paediatrics, palliative care, psychiatry, stroke and nursing. Several publish their
+search strategies. Harvesting and merging those queries is standard practice and cheaper than
+composing concept blocks from scratch.
+
+**Currency, not just provenance, is now the urgent driver.** No review covers AI/machine
+translation as a language-access intervention — the 2024–2026 review literature sits one level up,
+on LLMs in clinical medicine broadly. Meanwhile our corpus has **zero** translation-technology
+papers dated 2025 or later, while that literature is growing at roughly 3.2 papers/day by *Nature
+Medicine*'s count. The fastest-moving part of the review is the least covered.
+
+**⚠️ This threatens the §2.1 validation design.** 55 corpus papers are dated 2025+, of which only
+4 are in the intervention spine and **none** is translation technology. If that gap is a *search
+artefact* — the original hand-built query never targeted translation technology well — then the
+689 legacy PMIDs systematically under-cover the very area we care most about. A relative-recall
+check against a blind-spotted reference set **will pass while certifying a query that inherits the
+same blind spot.**
+
+Mitigations, to be decided when the gap is explained:
+
+- Stratify relative recall **by intervention family**, not just overall, so a family-specific
+  blind spot is visible rather than averaged away.
+- Supplement the reference set with known-relevant AI-translation papers drawn from outside the
+  legacy corpus (e.g. the 21-paper AI-translation cluster, and citations harvested from the
+  LLM-in-medicine reviews).
+- Treat a high overall recall with low family-B recall as a **failed** validation, not a passed one.
+
+- [ ] **TODO: explain the 2025+ acquisition gap before designing the query** — real publication
+      pattern, search artefact, or screening artefact? The query design and the validity of §2.1
+      both depend on the answer.
+
 ## 3. Screening
 
 Adapted from Jaffer et al. (2025), *AI-assisted Living Evidence Databases for Conservation

@@ -285,6 +285,35 @@ coded at all; and no human validation has yet tested the 65%-recall failure mode
 false-negative sweep exposed in the heuristic stage. Treat 188 as the floor of the review's scope,
 not an estimate of it.
 
+## 3A. Prior art
+
+Full sweep: `plans/prior-reviews-sweep.md`. Summary of what bears on B:
+
+**The closest existing work — must be read before scope is fixed.**
+*Effectiveness of interpreters and other strategies for mitigating language barriers: a
+systematic review* (2025), PROSPERO **469785**. Recent, intervention-framed, registered — the
+nearest thing to B that exists. Also *Hospital and Health System–Level Interventions to Improve
+Care for Limited English Proficiency Patients* (Jt Comm J Qual Patient Saf), which is
+intervention-indexed but scoped to system level only.
+
+**What does not exist.** No living review or living evidence database in this domain — every
+review found is a static snapshot. Nothing is indexed *by intervention* in the Conservation
+Evidence sense. B's differentiator is therefore **form, not question**: living rather than
+static, intervention-indexed rather than question-indexed, node-level with verbatim grounding
+rather than narrative.
+
+**Family B's evidence scarcity is corroborated externally.** A 2026 *Nature Medicine* review
+counted 4,609 LLM-in-medicine studies (Jan 2022–Sep 2025) of which only 1,048 used real-world
+patient data and only **19** were prospective RCTs; a 2025 *Frontiers in Digital Health* review
+found **4** studies meeting real-world-workflow criteria. §3.7 found family B to be 9 papers,
+0 RCTs, 7 primary studies — same conclusion, different corpus and method. Scarcity here is a
+property of the field, not an artefact of our screening. That is a stronger claim than a
+limitation.
+
+**A corpus gap sits exactly on B's most interesting family.** 55 corpus papers are dated 2025 or
+later; only 4 are in the spine and **zero are family B**. B's translation-technology evidence
+ends at 2024. See A1 §2.5.
+
 ## 4. Goals
 
 1. A derived intervention spine covering the ~303-paper pool, replacing the legacy field.

@@ -118,6 +118,28 @@ facet rather than a competing taxonomy.
       onto the real table and record what fails to map; a high unmappable rate would argue for
       Donabedian as primary rather than secondary.
 
+## 2A. Prior art
+
+Full sweep: `plans/prior-reviews-sweep.md`.
+
+**The closest existing work is uncomfortably close.** *Patient-Provider Language Concordance and
+Health Outcomes: A Systematic Review, **Evidence Map**, and Research Agenda* (2019,
+[PMID 31291823](https://pubmed.ncbi.nlm.nih.gov/31291823/)) is an evidence map with a research
+agenda — structurally what A2 proposes to produce. **It must be read in full before A2's scope is
+fixed**, and the specific risk is that its research agenda already names the gaps A2 intends to
+discover. That would make A2 either a strong replication-and-extension or a redundant exercise,
+and which one it is cannot be judged from the abstract.
+
+Also relevant: *Scoping Review: Definitions and Outcomes of Patient-Provider Language Concordance
+in Health* (2020), and *Physician–Patient Language Discordance and Poor Health Outcomes: a
+systematic scoping review* (Frontiers in Public Health, 2021). Both bear on A2's outcome axis and
+may already supply outcome groupings worth adopting rather than deriving.
+
+**What remains unoccupied.** None of these is living; none reports coverage at evidence-node
+granularity; and all predate the AI-translation literature. A2's contribution is the **two-layer**
+map — 819 sources for breadth against 635 nodes for depth, including whether extraction has been
+representative — which none of the above attempts.
+
 ## 3. Method — reuse spec B's pipeline
 
 A2 is spec B's problem one axis over, and B's three-stage pipeline is already validated and

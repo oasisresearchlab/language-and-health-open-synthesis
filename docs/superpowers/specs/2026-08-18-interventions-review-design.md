@@ -239,7 +239,7 @@ you would expect it: service delivery redesign 77%, workforce capability 56%, la
 care 50%, against translation technology 16% and patient materials 11%. Record all component
 mechanisms and report a primary; do not force a single bucket.
 
-#### Scope decision — OPEN
+#### Scope decision — RATIFIED 2026-08-18: exclude
 
 20 papers are clinical or social services delivered to LEP populations rather than interventions
 on the language barrier: `behavioral activation therapy`, `group prenatal visits`,
@@ -247,8 +247,9 @@ on the language barrier: `behavioral activation therapy`, `group prenatal visits
 `recruitment incentive`. The model flagged these via `acts_on_language_barrier`; a prior
 regex estimate independently put the figure at 15, so the two roughly agree.
 
-Recommendation: exclude them from the spine but retain the flag, so the decision is reversible
-and reportable. **Not yet ratified — this changes the denominator and should be a human call.**
+**Decision: excluded from the spine.** The `acts_on_language_barrier` flag is retained on every
+record, so the set is recoverable and the exclusion is reportable in the PRISMA flow. **The
+review's denominator is therefore 224, not 244.**
 
 #### Caveats
 
@@ -257,6 +258,32 @@ and reportable. **Not yet ratified — this changes the denominator and should b
 - Stage 2 grounding fell to **81%** verbatim (from 87% in stage 1) — the harder extraction is a
   harder span task. 45 of 244 spans are paraphrases.
 - Everything here still inherits the §3.6 caveat: no human-validated sample yet exists.
+
+### 3.8 Review effort — lower bound
+
+With the spine ratified at 224 papers:
+
+| | |
+|---:|---|
+| Already extracted into the graph | 36 |
+| **Remaining to review** | **188** |
+| …with a PDF already on hand | 168 |
+| …needing PDF acquisition | 20 |
+
+At the $8–10/paper extraction cost measured in the AI-translation cluster, the remaining
+extraction runs **$1,500–1,900** in model spend. Human verification time, not tokens, is the
+binding constraint — at the 73% correct-grounding rate measured in the accuracy review, roughly
+one node in four needs correction.
+
+Remaining by family: interpreting 87 of 101, translation 29 of 43, workforce 23 of 25, redesign
+17 of 18, concordant care 12 of 14, unassigned 12 of 14, patient materials 8 of 9.
+
+**This is a lower bound, and deliberately so.** It counts only papers already in the corpus that
+survived a single AI screening pass. It will move upward for three reasons: A1's systematic search
+will add papers this convenience corpus never had; the 89 sources with no abstract were never
+coded at all; and no human validation has yet tested the 65%-recall failure mode that the
+false-negative sweep exposed in the heuristic stage. Treat 188 as the floor of the review's scope,
+not an estimate of it.
 
 ## 4. Goals
 

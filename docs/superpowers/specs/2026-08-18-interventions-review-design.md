@@ -24,7 +24,7 @@ Three specs, in dependency order. This is **B**.
 | | Scope | Output |
 |---|---|---|
 | **A1** Corpus construction | Search protocol, systematic search, screening, dedupe, ingest | Documented re-runnable corpus + PRISMA-ScR flow — **spec written**: `2026-08-19-corpus-construction-design.md` |
-| **A2** Corpus characterization | Schema fix, ontology mapping, coding at scale | Coverage map: setting × outcome × design |
+| **A2** Corpus characterization | Schema fix, ontology mapping, coding at scale | Coverage map: setting × outcome × design — **spec written**: `2026-08-19-corpus-characterization-design.md` |
 | **B** Interventions review *(this)* | Intervention spine, evidence per intervention, effectiveness | The Conservation Evidence-style product |
 
 **B is not blocked on A1.** It runs against the current 819-source corpus; A1's output

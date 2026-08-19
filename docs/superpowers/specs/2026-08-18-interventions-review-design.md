@@ -104,12 +104,15 @@ and `Bayesian classifier`. Coding must screen for *language-access relevance*, n
 for the presence of an intervention.
 
 **The evidence base is design-weak, and Conservation Evidence tolerates that.** 37
-QI/pre-post against 9 RCTs among named interventions. A Cochrane-style effectiveness review
+QI/pre-post against 9 RCTs among named interventions. *(Superseded by §3.6: coding finds 44
+QI/pre-post and 21 RCTs among the 244 in-scope papers — still QI-dominated, but the heuristic
+more than halved the RCT count.)* A Cochrane-style effectiveness review
 would founder; a model that reports what evidence exists *including* weak evidence, with
 strength stated, fits the corpus. Effectiveness claims will nevertheless be modest, and the
 spec should not promise otherwise.
 
-**Interest is highest where primary evidence is thinnest.** Machine/AI translation: 9 named
+**Interest is highest where primary evidence is thinnest.** *(Heuristic figures; see §3.6.)*
+Machine/AI translation: 9 named
 papers and **no RCTs** — 2 QI/pre-post, 2 cross-sectional, 2 systematic reviews, 1 prospective
 cohort, 2 undetermined. Two of the nine are themselves reviews, so primary studies number seven.
 
@@ -126,6 +129,55 @@ pipeline's measured 83% substantive fidelity. Known error modes, from the script
   separating "an intervention name" from "a pasted conclusion".
 
 Treat §3 as the *shape* of what is available. It is not evidence about the field.
+
+### 3.6 Post-coding results (2026-08-18, Haiku 4.5)
+
+Regenerate with `python3 utils/code_interventions.py --scope pool|rest`. Free-text coding of
+title+abstract for 724 of 819 sources (89 have no abstract and were not coded). Cost **$1.04**,
+elapsed **116s**, zero errors.
+
+**The heuristic pool in §3.2 was substantially wrong.**
+
+| | |
+|---:|---|
+| True in-scope (language-access relevant **and** evaluates an intervention) | **244** |
+| Heuristic pool said in-scope | 303 — of which only 160 were |
+| True in-scope the heuristic **missed** | **84** |
+| Heuristic recall / precision | **65% / 53%** |
+
+The false-negative sweep therefore paid for itself: without it, a third of the in-scope corpus
+would have been silently dropped.
+
+**The legacy field is worse than §3.4 suggested.** Of its 131 distinct named interventions,
+coding confirms 104 and rejects 27; and it misses **140** in-scope papers outright. It should be
+retired as a selection input, not merely supplemented.
+
+| | |
+|---:|---|
+| In-scope already extracted into the graph | 37 |
+| **In-scope and unmined** | **207** |
+
+**Design mix among the 244 in-scope** (model's own labels, normalized): QI/pre-post 44,
+Qualitative 36, Other 32, Retrospective 29, Cross-sectional/survey 26, **RCT 21**,
+Prospective/cohort 15, Systematic review 13, Narrative review 10, Mixed methods 6,
+Program description 5, Case report 5, Unclear 2.
+
+**Free-text coding worked for discovery and failed for aggregation.** It produced **234 distinct
+category labels across 244 papers** — near one per paper (`interpreter-clinician huddle protocol`,
+`AI-powered multilingual audio instructions`, `dedicated interpreter scheduling model`). That is
+the richness we wanted and it is unusable as a spine. A clustering/normalization pass is now a
+required step, not an optional one.
+
+**Grounding fidelity: 87%.** Each call had to quote the abstract verbatim. 214 of 244 spans
+verified; 3 more recover under whitespace normalization; **27 (11%) are genuine paraphrases**
+despite an explicit instruction. This sits close to the 83% substantive fidelity measured in the
+human accuracy review, and is the number to beat with a better prompt or a stronger model.
+
+**Also surfaced: 819 source files carry only 813 distinct citekeys** — 6 duplicate citekeys,
+independent of the ~94 duplicate rows already known in the origin spreadsheet.
+
+**Not yet done:** the human-validated sample required by §6. Until it exists, the 244 figure is a
+model's opinion, not a measured quantity — everything above inherits that caveat.
 
 ## 4. Goals
 

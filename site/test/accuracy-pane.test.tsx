@@ -6,22 +6,18 @@ import type { AccuracyPaper } from "@/lib/review-accuracy";
 
 // Mock the store so we can assert on persistence without a backend.
 // vi.hoisted so the spies exist before the hoisted vi.mock factory runs.
-const { saveReview, loadReviews, fetchRoster, fetchRosterFull } = vi.hoisted(() => ({
+const { saveReview, loadReviews, fetchRoster } = vi.hoisted(() => ({
   saveReview: vi.fn().mockResolvedValue(undefined),
   loadReviews: vi.fn().mockResolvedValue({}),
   fetchRoster: vi
     .fn()
     .mockResolvedValue([{ id: "r-1", name: "Dr. Test", role: "clinician" }]),
-  fetchRosterFull: vi.fn().mockResolvedValue([
-    { id: "r-1", name: "Dr. Test", role: "clinician", email: null, auth_user_id: null },
-  ]),
 }));
 
 vi.mock("@/lib/accuracy-store", () => ({
   saveReview,
   loadReviews,
   fetchRoster,
-  fetchRosterFull,
   supabaseConfigured: false,
 }));
 
@@ -85,8 +81,11 @@ describe("AccuracyPane · review flow", () => {
     const user = userEvent.setup();
     render(<AccuracyPane paper={PAPER} />);
 
-    // no env → session-derived identity falls back to the first roster reviewer
-    // automatically (no name-picker); EVD + its checklist render once ready.
+    // identity gate first
+    const pick = await screen.findByRole("button", { name: /Dr\. Test/ });
+    await user.click(pick);
+
+    // EVD + its checklist now render
     await screen.findByText(/one-year readmission/);
 
     // click the "Correct" verdict on the Verbatim row (first such button)
@@ -105,7 +104,9 @@ describe("AccuracyPane · review flow", () => {
   });
 
   it("loads existing reviews for the chosen reviewer on mount", async () => {
+    const user = userEvent.setup();
     render(<AccuracyPane paper={PAPER} />);
+    await user.click(await screen.findByRole("button", { name: /Dr\. Test/ }));
     await waitFor(() =>
       expect(loadReviews).toHaveBeenCalledWith("r-1", PAPER.citekey),
     );

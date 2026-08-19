@@ -1,0 +1,194 @@
+{
+ "citekey": "@Allan_2022_impact_English",
+ "title": "The impact of English proficiency on outcomes after bariatric surgery",
+ "author": "Allan E Stolarski",
+ "year": "2022",
+ "doi": "10.1007/s00464-022-09148-3",
+ "pubmedId": "35229210",
+ "hasPdf": true,
+ "evds": [
+  {
+   "title": "LEP patients visited the ED less than EP patients within one year of bariatric surgery (adjusted OR 0.65)",
+   "finding": "Contrary to the authors' hypothesis, within one year of the index bariatric procedure fewer LEP patients presented to the emergency department (ED) than EP patients (14% vs 23%; p < 0.001) (Table 2). After multivariable logistic regression for potential confounders this difference persisted, with an adjusted OR of 0.65 (95% CI 0.43–0.95; p = 0.029) — i.e., LEP patients had lower odds of an ED visit. By contrast, there was no significant difference in ED presentation within 30 days (EP 10% vs LEP 7%; p = 0.07).",
+   "tables": [
+    "1",
+    "2"
+   ],
+   "figures": []
+  },
+  {
+   "title": "No significant difference in length of stay after bariatric surgery between LEP and EP patients (adjusted IRR 0.94)",
+   "finding": "In this retrospective cohort of bariatric surgery patients, there was no significant difference in length of stay (LOS) from the index operation between English-proficient (EP) and limited-English-proficiency (LEP) patients (2.26 days vs 2.12 days; p = 0.60). After multivariable negative binomial regression adjusting for confounders including operation type, the difference remained non-significant, with an adjusted incidence rate ratio (IRR) for LOS of 0.94 (95% CI 0.84–1.04; p = 0.20).",
+   "tables": [
+    "1"
+   ],
+   "figures": [
+    "1"
+   ]
+  },
+  {
+   "title": "No significant difference in one-year readmission after bariatric surgery between LEP and EP patients (adjusted OR 0.94)",
+   "finding": "Despite more frequent ED visits by EP patients, there was no significant difference in hospital readmission within one year of bariatric surgery between LEP and EP patients (adjusted OR = 0.94, 95% CI 0.56–1.55; p = 0.50). At 30 days, readmission was likewise not different (EP 5% vs LEP 4%, p = 0.7; adjusted OR 1.01, 95% CI 0.58–1.71; p > 0.90) (Table 2).",
+   "tables": [
+    "1",
+    "2"
+   ],
+   "figures": [
+    "1"
+   ]
+  }
+ ],
+ "candidates": [
+  "A total of 671 patients were categorized as LEP (40%) and spoke 6 unique languages.",
+  "EP patients presented to the ED more than LEP patients (23% vs. 14%, p < 0.001).",
+  "After multivariable regression, the difference in ED visits persisted with an adjusted OR of 0.65 (95% CI 0.43-0.95; p = 0.029).",
+  "Both groups demonstrated similar weight loss at 1 year: EP patients lost 31.85% (LGBP) and 28.02% (SG), while LEP patients lost 30.17% (LGBP) and 28.36% (SG).",
+  "EP and LEP patients had similar remission of obesity-related comorbidities."
+ ],
+ "abstractAnchors": [
+  {
+   "id": "abs-0",
+   "kind": "abstract",
+   "text": "A total of 671 patients were categorized as LEP (40%) and spoke 6 unique languages.",
+   "linkedEvd": null,
+   "evdConfidence": 0.07,
+   "linkedCandidate": 0,
+   "candConfidence": 1.0
+  },
+  {
+   "id": "abs-1",
+   "kind": "abstract",
+   "text": "Within the 1 year post-operative period, EP patients presented to the ED more than LEP patients (23% vs. 14% p < 0.001).",
+   "linkedEvd": 2,
+   "evdConfidence": 0.19,
+   "linkedCandidate": 1,
+   "candConfidence": 0.5
+  },
+  {
+   "id": "abs-2",
+   "kind": "abstract",
+   "text": "After multivariable regression for potential confounders this difference persisted; adjusted OR = 0.65 (95% CI 0.43-0.95; p = 0.029).",
+   "linkedEvd": 0,
+   "evdConfidence": 0.24,
+   "linkedCandidate": 2,
+   "candConfidence": 0.67
+  },
+  {
+   "id": "abs-3",
+   "kind": "abstract",
+   "text": "However, despite more frequent ED visits by EP patients, there was no significant difference in readmission within one year; adjusted OR = 0.94 (95% CI 0.56-1.55; p = 0.50).",
+   "linkedEvd": 2,
+   "evdConfidence": 0.59,
+   "linkedCandidate": null,
+   "candConfidence": 0.17
+  },
+  {
+   "id": "abs-4",
+   "kind": "abstract",
+   "text": "Both groups demonstrated similar successful weight loss at 1 year: EP-31.85% (LGBP) and - 28.02% (SG) vs. LEP-30.17% (LGBP) and - 28.36% (SG).",
+   "linkedEvd": null,
+   "evdConfidence": 0.07,
+   "linkedCandidate": 3,
+   "candConfidence": 0.69
+  },
+  {
+   "id": "abs-5",
+   "kind": "abstract",
+   "text": "EP and LEP patients also had similar remission of obesity-related comorbidities.",
+   "linkedEvd": null,
+   "evdConfidence": 0.07,
+   "linkedCandidate": 4,
+   "candConfidence": 0.88
+  },
+  {
+   "id": "abs-6",
+   "kind": "abstract",
+   "text": "There were no differences in outcomes following bariatric surgery when comparing patients with limited English proficiency to those who are proficient in English.",
+   "linkedEvd": 1,
+   "evdConfidence": 0.2,
+   "linkedCandidate": null,
+   "candConfidence": 0.05
+  },
+  {
+   "id": "abs-7",
+   "kind": "abstract",
+   "text": "Bariatric surgical care can be delivered in a safe and effective manner with equivalent outcomes between patients who are and are not English-language proficient.",
+   "linkedEvd": null,
+   "evdConfidence": 0.09,
+   "linkedCandidate": null,
+   "candConfidence": 0.05
+  }
+ ],
+ "objectAnchors": [
+  {
+   "kind": "figure",
+   "label": "Figure 1",
+   "caption": "Methods",
+   "page": 3,
+   "bbox": [
+    184.25196838378906,
+    57.75579833984375,
+    544.251953125,
+    486.3957824707031
+   ],
+   "num": "1",
+   "crop": null,
+   "id": "obj-0",
+   "linkedEvds": [
+    1,
+    2
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "Figure 2",
+   "caption": "Change in Body Mass Index at One-Year Post-Op",
+   "page": 5,
+   "bbox": null,
+   "num": "2",
+   "crop": null,
+   "id": "obj-1",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 1",
+   "caption": "Demographics and",
+   "page": 4,
+   "bbox": null,
+   "num": "1",
+   "crop": null,
+   "id": "obj-2",
+   "linkedEvds": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "Table 2",
+   "caption": "Univariate comparisons",
+   "page": 4,
+   "bbox": null,
+   "num": "2",
+   "crop": "Allan_2022_impact_English-table2.png",
+   "id": "obj-3",
+   "linkedEvds": [
+    0,
+    2
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "Table 3",
+   "caption": "Remission of obesity related comorbidities",
+   "page": 5,
+   "bbox": null,
+   "num": "3",
+   "crop": null,
+   "id": "obj-4",
+   "linkedEvds": []
+  }
+ ]
+}

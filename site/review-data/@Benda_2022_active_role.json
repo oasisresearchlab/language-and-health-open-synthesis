@@ -1,0 +1,173 @@
+{
+ "citekey": "@Benda_2022_active_role",
+ "title": "The active role of interpreters in medical discourse - An observational study in emergency medicine",
+ "author": "Benda",
+ "year": "2022",
+ "doi": "10.1016/j.pec.2021.05.029",
+ "pubmedId": "34052053",
+ "hasPdf": true,
+ "evds": [
+  {
+   "title": "For LEP patients medical interpreters actively completed communicative tasks beyond verbatim translation",
+   "finding": "In this in-situ discourse-analytic observation of an emergency department, the four communicative tasks of common ground (establishing, maintaining, updating, repairing) were observed for both English-proficient and LEP patients, but for LEP patients the professional interpreter actively took over and completed tasks that a language-concordant partner would otherwise have done — acting as clarifier, cultural broker, and navigator rather than a passive word-for-word conduit. This is a qualitative mechanism for *how* professional interpreting improves language-discordant communication: the value of the interpreter lies in the active facilitation work, not only the literal translation.",
+   "tables": [],
+   "figures": []
+  },
+  {
+   "title": "Telephone-based interpreters faced challenges completing communicative tasks versus in-person interpreters due to lost information and lack of visual cues",
+   "finding": "Comparing transcripts of in-person versus telephone-based interpreting in the ED, telephone-based interpreters faced distinctive challenges in completing common-ground tasks: difficulty hearing, information lost in interpretation, and inability to use or access visual cues and locally situated context (e.g., a local clinic name lost in interpretation, or not seeing that an answer was being looked up on a phone). In one repair scenario no party noticed the trouble, so the lost information was never recovered. This identifies a mechanism by which the *medium* of professional interpretation moderates the quality of language-discordant communication.",
+   "tables": [
+    "6"
+   ],
+   "figures": []
+  }
+ ],
+ "candidates": [
+  "A total of 6 English proficient and 9 limited English proficient patients were observed.",
+  "Communicative tasks were observed with both English proficient and limited English proficient patients.",
+  "With limited English proficient patients, medical interpreters played an active role in completing communicative tasks.",
+  "Telephone-based interpreters encountered challenges in facilitating communicative tasks compared to in-person interpreters, including difficulties hearing and losing information due to the absence of visual cues."
+ ],
+ "abstractAnchors": [
+  {
+   "id": "abs-0",
+   "kind": "abstract",
+   "text": "6 English proficient and 9 limited English proficient patients were observed.",
+   "linkedEvd": null,
+   "evdConfidence": 0.07,
+   "linkedCandidate": 0,
+   "candConfidence": 0.83
+  },
+  {
+   "id": "abs-1",
+   "kind": "abstract",
+   "text": "Key themes in communicative tasks included: establishing, maintaining, updating, and repairing understanding and rapport.",
+   "linkedEvd": null,
+   "evdConfidence": 0.1,
+   "linkedCandidate": null,
+   "candConfidence": 0.12
+  },
+  {
+   "id": "abs-2",
+   "kind": "abstract",
+   "text": "All tasks were observed with English proficient and limited English proficient patients.",
+   "linkedEvd": null,
+   "evdConfidence": 0.08,
+   "linkedCandidate": 1,
+   "candConfidence": 0.67
+  },
+  {
+   "id": "abs-3",
+   "kind": "abstract",
+   "text": "The difference with limited English proficient patients was that medical interpreters played an active role in completing communicative tasks.",
+   "linkedEvd": null,
+   "evdConfidence": 0.09,
+   "linkedCandidate": 2,
+   "candConfidence": 0.92
+  },
+  {
+   "id": "abs-4",
+   "kind": "abstract",
+   "text": "Telephone-based interpreters faced challenges in facilitating communicative tasks based on thematic comparisons with in-person interpreters, including issues hearing and lost information due to the lack of visual cues.",
+   "linkedEvd": 1,
+   "evdConfidence": 0.19,
+   "linkedCandidate": 3,
+   "candConfidence": 0.56
+  },
+  {
+   "id": "abs-5",
+   "kind": "abstract",
+   "text": "Professional interpreters play an important role in communication between language discordant patients and health professionals that goes beyond verbatim translation.",
+   "linkedEvd": null,
+   "evdConfidence": 0.09,
+   "linkedCandidate": null,
+   "candConfidence": 0.12
+  }
+ ],
+ "objectAnchors": [
+  {
+   "kind": "figure",
+   "label": "Figure 1",
+   "caption": "a Mockup sample of pen-and-paper data collected. 1b Mockup sample of Excel data analysis sheet.",
+   "page": 2,
+   "bbox": [
+    135.66600036621094,
+    588.657470703125,
+    459.666015625,
+    722.721435546875
+   ],
+   "num": "1",
+   "crop": null,
+   "id": "obj-0",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 1",
+   "caption": "",
+   "page": 4,
+   "bbox": null,
+   "num": "1",
+   "crop": null,
+   "id": "obj-1",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 2",
+   "caption": "",
+   "page": 5,
+   "bbox": null,
+   "num": "2",
+   "crop": null,
+   "id": "obj-2",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 3",
+   "caption": "",
+   "page": 6,
+   "bbox": null,
+   "num": "3",
+   "crop": null,
+   "id": "obj-3",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 4",
+   "caption": "also presents a common occurrence where healthcare",
+   "page": 4,
+   "bbox": null,
+   "num": "4",
+   "crop": null,
+   "id": "obj-4",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 5",
+   "caption": "",
+   "page": 8,
+   "bbox": null,
+   "num": "5",
+   "crop": null,
+   "id": "obj-5",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 6",
+   "caption": "). The latter example further highlights how telephone-based",
+   "page": 5,
+   "bbox": null,
+   "num": "6",
+   "crop": "Benda_2022_active_role-table6.png",
+   "id": "obj-6",
+   "linkedEvds": [
+    1
+   ]
+  }
+ ]
+}

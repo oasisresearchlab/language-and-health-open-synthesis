@@ -207,13 +207,13 @@ def inject(body: str, embeds):
             new.append(e)
     if not new:
         return body, []
-    block = "\n".join(f"> ![[{e}]]" for e in new)
+    block = "\n".join(f"![[{e}]]" for e in new)
     m = re.search(r"(##\s*Description\s*\n)", body)
     if not m:
         return body, []
     # skip an immediate callout line so the image sits just under the heading
     insert_at = m.end()
-    body = body[:insert_at] + "\n" + block + "\n>\n" + body[insert_at:]
+    body = body[:insert_at] + "\n" + block + "\n" + body[insert_at:]
     return body, new
 
 

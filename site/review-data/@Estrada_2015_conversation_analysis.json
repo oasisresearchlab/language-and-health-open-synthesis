@@ -1,0 +1,157 @@
+{
+ "citekey": "@Estrada_2015_conversation_analysis",
+ "title": "A conversation analysis of verbal interactions and social processes in interpreter-mediated primary care encounters",
+ "author": "Estrada",
+ "year": "2015",
+ "doi": "10.1002/nur.21660",
+ "pubmedId": "25914219",
+ "hasPdf": true,
+ "evds": [
+  {
+   "title": "Collaborative co-construction among interpreter, provider, and patient achieved mutual understanding (intersubjectivity)",
+   "finding": "The \"Attaining Intersubjectivity\" exemplar (Table 6) presented a positive case in which the interpreter, nurse practitioner, and a Salvadoran patient collaboratively co-constructed mutual understanding of osteopenia/osteoporosis — at one point the patient herself contributed \"vitamina D\" to the definition before the interpreter could relay it, and the NP closed with a summation signaling attainment of intersubjectivity. This demonstrates that language-discordant parties can successfully participate in triadic communication without sacrificing ease or accuracy when all three act as co-contributors.",
+   "tables": [
+    "6"
+   ],
+   "figures": []
+  },
+  {
+   "title": "Interpreter's unstated assumption created an unrepaired misinterpretation of who served as informal interpreter",
+   "finding": "In the \"Making Assumptions\" exemplar (Table 2), the interpreter inferred — without asking the patient to clarify — that the \"they\" the patient referenced included or was the interpreter, when the patient was actually describing his brother acting as an informal interpreter. Because the trouble spot was never directly repaired, both the interpreter and the nurse practitioner missed the patient's point that he was conforming to the expectation that patients be engaged participants in their care. This illustrates how an interpreter's institutional assumption can produce a misinterpretation that goes uncorrected.",
+   "tables": [
+    "2"
+   ],
+   "figures": []
+  },
+  {
+   "title": "Interpreters enacted active collaborator and co-constructor roles rather than neutral conduits",
+   "finding": "Conversation analysis of the five triadic encounters showed that, although interpreters were trained to act (and nominally described their role) as neutral \"conduits\" rendering messages word-for-word, in practice they actively participated as collaborators and co-constructors of meaning — confirming an understanding of an idea with the nurse practitioner and patient before transforming it into the target language. This reframes interpreter-mediated care as a collaborative, co-constructive communication process rather than a mechanical relay.",
+   "tables": [],
+   "figures": []
+  },
+  {
+   "title": "Interpreters experienced role dissonance between conduit training and the collaborative demands of actual encounters",
+   "finding": "On post-encounter surveys, all three interpreters reflected on and challenged the dominant \"conduit\" notion of their role, revealing role dissonance: their training and national standards cast them in the \"impossible\" role of actively managing a conversation while erasing their own presence. One interpreter, asked to complete \"The role of a language interpreter in a health care encounter is…\", answered that it was to make communication as easy and accurate as possible \"as though the interpreter weren't even present\" — illustrating the tension between the trained ideal and the collaborative reality.",
+   "tables": [],
+   "figures": []
+  },
+  {
+   "title": "Provider's use of a colloquialism (blood thinner) created interpretation confusion rather than aiding comprehension",
+   "finding": "In the \"Colloquialisms as Signaling Potential for Trouble\" exemplar (Table 3), the nurse practitioner used the colloquial term \"blood thinner\" instead of the technical term \"anticoagulant.\" Contrary to the plain-language recommendation that colloquialisms aid comprehension, the colloquial term created interpretation trouble: the interpreter struggled to render it in Spanish (hesitations, long silences, \"sorry I'm gonna look up one word\"), whereas the technical term would have had a direct Spanish cognate (anticoagulante). Distracted by accuracy, the interpreter also missed that the patient had already supplied an adequate rendering (\"mas ralo,\" more thin).",
+   "tables": [
+    "3"
+   ],
+   "figures": []
+  }
+ ],
+ "candidates": [
+  "The researchers identified communication trouble spots in five triadic clinical encounters between Spanish-speaking patients, English-speaking nurse practitioners, and clinic-based interpreters.",
+  "The study found that when communication trouble spots were directly addressed by interactants, they facilitated processes of negotiating relationships and mutual understanding.",
+  "Four exemplars of communication interactions were identified: Making Assumptions, Colloquialisms as Signaling Potential for Trouble, Repairing a Mis-Statement, and Turn-Taking, Silences, and Laughter.",
+  "The final exemplar, Attaining Intersubjectivity, represented a successful multi-lingual triadic communication.",
+  "Interpreters were found to not just act as conduits of information, but also to enact roles of communication collaborators and co-constructors."
+ ],
+ "abstractAnchors": [
+  {
+   "id": "abs-0",
+   "kind": "abstract",
+   "text": "Language asymmetry between patients with limited English proficiency and health care providers increases the complexity of patient-provider communication.",
+   "linkedEvd": null,
+   "evdConfidence": 0.07,
+   "linkedCandidate": null,
+   "candConfidence": 0.1
+  },
+  {
+   "id": "abs-1",
+   "kind": "abstract",
+   "text": "Exemplars labeled Making Assumptions; Colloquialisms as Signaling Potential for Trouble; Repairing a Mis-Statement; and Turn-Taking, Silences, and Laughter illustrated how the parties identified and navigated such trouble spots.",
+   "linkedEvd": null,
+   "evdConfidence": 0.07,
+   "linkedCandidate": 2,
+   "candConfidence": 0.6
+  },
+  {
+   "id": "abs-2",
+   "kind": "abstract",
+   "text": "Future interdisciplinary research can include closer examination of occurrences of communication trouble spots and further exploration of how interpretermediated communication is conceptualized and problematized in diverse clinical settings, to promote language interpretation policies and practices that contribute to reducing health disparities among limited-English-proficient populations.",
+   "linkedEvd": null,
+   "evdConfidence": 0.04,
+   "linkedCandidate": null,
+   "candConfidence": 0.11
+  }
+ ],
+ "objectAnchors": [
+  {
+   "kind": "table",
+   "label": "Table 1",
+   "caption": "",
+   "page": 4,
+   "bbox": null,
+   "num": "1",
+   "crop": null,
+   "id": "obj-0",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 2",
+   "caption": "",
+   "page": 5,
+   "bbox": null,
+   "num": "2",
+   "crop": "Estrada_2015_conversation_analysis-table2.png",
+   "id": "obj-1",
+   "linkedEvds": [
+    1
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "Table 3",
+   "caption": "",
+   "page": 6,
+   "bbox": null,
+   "num": "3",
+   "crop": "Estrada_2015_conversation_analysis-table3.png",
+   "id": "obj-2",
+   "linkedEvds": [
+    4
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "Table 4",
+   "caption": "illustrates an example of collaborative manage-",
+   "page": 7,
+   "bbox": null,
+   "num": "4",
+   "crop": null,
+   "id": "obj-3",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 5",
+   "caption": "",
+   "page": 8,
+   "bbox": null,
+   "num": "5",
+   "crop": null,
+   "id": "obj-4",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 6",
+   "caption": "",
+   "page": 10,
+   "bbox": null,
+   "num": "6",
+   "crop": "Estrada_2015_conversation_analysis-table6.png",
+   "id": "obj-5",
+   "linkedEvds": [
+    0
+   ]
+  }
+ ]
+}

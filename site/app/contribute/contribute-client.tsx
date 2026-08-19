@@ -487,7 +487,7 @@ export function ContributeClient({ nodes }: { nodes: NodeOption[] }) {
 
       <article className="min-w-0 space-y-6">
         <div>
-          <p className="mb-2 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+          <p className="mb-2 font-mono text-xs text-muted-foreground">
             Preview · YAML frontmatter
           </p>
           <pre className="overflow-x-auto rounded-md border border-border bg-card px-4 py-3 font-mono text-xs leading-relaxed">
@@ -496,7 +496,7 @@ export function ContributeClient({ nodes }: { nodes: NodeOption[] }) {
         </div>
 
         <div>
-          <p className="mb-2 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+          <p className="mb-2 font-mono text-xs text-muted-foreground">
             Preview · Body
           </p>
           {body.trim().length === 0 ? (
@@ -601,7 +601,7 @@ function BundlePreview({
 
   return (
     <div>
-      <p className="mb-2 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+      <p className="mb-2 font-mono text-xs text-muted-foreground">
         Preview · Bundle
       </p>
       <div className="space-y-3 rounded-md border border-border bg-card px-4 py-3">

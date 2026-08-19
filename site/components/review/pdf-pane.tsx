@@ -1,0 +1,244 @@
+"use client";
+
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { Document, Page, pdfjs } from "react-pdf";
+import { Search, ChevronUp, ChevronDown, X, Download } from "lucide-react";
+
+import type { Rect } from "@/lib/review-accuracy";
+import { ReviewButton } from "@/components/review/controls";
+
+import "react-pdf/dist/Page/TextLayer.css";
+import "react-pdf/dist/Page/AnnotationLayer.css";
+
+// Self-hosted worker (copied into public/ by scripts/copy-pdf-worker.mjs on
+// dev/build) — no CDN dependency, so it works on locked-down networks + offline.
+// Version-busted so a stale cached worker can't mismatch react-pdf's API version.
+pdfjs.GlobalWorkerOptions.workerSrc = `/pdf.worker.min.mjs?v=${pdfjs.version}`;
+
+function escapeRegExp(s: string) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/** A pdf.js-rendered PDF with page navigation + in-document text search that
+ *  scrolls to each matched highlight. `page` scrolls the view; `query`
+ *  pre-fills the find box (e.g. the active EVD's quote). */
+export function PdfPane({
+  citekey,
+  page,
+  search,
+  highlight,
+}: {
+  citekey: string;
+  page?: number;
+  search?: { q: string; n: number }; // manual find box (text layer)
+  highlight?: { page: number; rects: Rect[]; n: number }; // exact bbox overlay
+}) {
+  const file = useMemo(
+    () => `/api/pdf/${encodeURIComponent(citekey)}`,
+    [citekey],
+  );
+  const [numPages, setNumPages] = useState(0);
+  const [width, setWidth] = useState(640);
+  const [find, setFind] = useState("");
+  const [markIdx, setMarkIdx] = useState(0);
+  const [markCount, setMarkCount] = useState(0);
+  const [renderTick, setRenderTick] = useState(0);
+
+  const containerRef = useRef<HTMLDivElement>(null);
+  const pageRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const pendingScroll = useRef(false);
+  const hlRef = useRef<HTMLDivElement>(null);
+
+  // exact-region overlay: scroll the first rect into view when an anchor fires
+  useEffect(() => {
+    if (highlight) {
+      hlRef.current?.scrollIntoView({ block: "center", behavior: "smooth" });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [highlight?.n, numPages]);
+
+  const getMarks = () =>
+    Array.from(
+      containerRef.current?.querySelectorAll<HTMLElement>(".textLayer mark") ??
+        [],
+    );
+
+  const focusMark = (i: number) => {
+    const marks = getMarks();
+    marks.forEach((m) => m.classList.remove("pdf-hl-active"));
+    const el = marks[i];
+    if (el) {
+      el.classList.add("pdf-hl-active");
+      el.scrollIntoView({ block: "center", behavior: "smooth" });
+    }
+  };
+
+  // run a search when an anchor button is clicked (nonce re-fires identical queries)
+  useEffect(() => {
+    if (search?.q) setFind(search.q);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [search?.n]);
+
+  // size pages to the container
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => setWidth(el.clientWidth - 24));
+    ro.observe(el);
+    setWidth(el.clientWidth - 24);
+    return () => ro.disconnect();
+  }, []);
+
+  // explicit page jump (EVD has no matching highlight, or no query)
+  useEffect(() => {
+    if (!page) return;
+    pageRefs.current[page - 1]?.scrollIntoView({ block: "start", behavior: "smooth" });
+  }, [page, numPages]);
+
+  // a new query: reset index and request a scroll-to-first once marks render
+  useEffect(() => {
+    setMarkIdx(0);
+    pendingScroll.current = find.trim().length >= 2;
+  }, [find]);
+
+  // recount marks whenever the query or a text layer (re)renders; scroll to the
+  // first match the first time it appears for a new query
+  useEffect(() => {
+    const marks = getMarks();
+    setMarkCount(marks.length);
+    if (pendingScroll.current && marks.length) {
+      pendingScroll.current = false;
+      focusMark(0);
+    }
+  }, [find, renderTick]);
+
+  const textRenderer = useMemo(() => {
+    const q = find.trim();
+    if (q.length < 2) return undefined;
+    let re: RegExp;
+    try {
+      re = new RegExp(`(${escapeRegExp(q)})`, "gi");
+    } catch {
+      return undefined;
+    }
+    return ({ str }: { str: string }) => str.replace(re, "<mark>$1</mark>");
+  }, [find]);
+
+  const step = (dir: 1 | -1) => {
+    if (!markCount) return;
+    const next = (markIdx + dir + markCount) % markCount;
+    setMarkIdx(next);
+    focusMark(next);
+  };
+
+  // STABLE callback — an inline arrow here re-renders the text layer every parent
+  // render, which loops (flicker) and tears down the <mark>s (false "no match").
+  const onTextRendered = useCallback(() => setRenderTick((t) => t + 1), []);
+
+  return (
+    <div className="flex min-h-0 flex-col">
+      {/* find toolbar */}
+      <div className="flex items-center gap-2 border-b border-border bg-muted/30 px-3 py-1.5">
+        <Search className="h-3.5 w-3.5 text-muted-foreground" />
+        <input
+          value={find}
+          onChange={(e) => setFind(e.target.value)}
+          placeholder="Find in document…"
+          className="min-w-0 flex-1 rounded-sm bg-transparent text-xs outline-none placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-ring/60"
+        />
+        {find && (
+          <>
+            <span className="font-mono text-[11px] text-muted-foreground">
+              {markCount ? `${markIdx + 1}/${markCount}` : "no match"}
+            </span>
+            <ReviewButton
+              onClick={() => step(-1)}
+              disabled={!markCount}
+              className="p-0.5 text-muted-foreground hover:text-foreground disabled:opacity-40"
+              aria-label="Previous match"
+            >
+              <ChevronUp className="h-3.5 w-3.5" />
+            </ReviewButton>
+            <ReviewButton
+              onClick={() => step(1)}
+              disabled={!markCount}
+              className="p-0.5 text-muted-foreground hover:text-foreground disabled:opacity-40"
+              aria-label="Next match"
+            >
+              <ChevronDown className="h-3.5 w-3.5" />
+            </ReviewButton>
+            <ReviewButton
+              onClick={() => setFind("")}
+              className="p-0.5 text-muted-foreground hover:text-foreground"
+              aria-label="Clear search"
+            >
+              <X className="h-3.5 w-3.5" />
+            </ReviewButton>
+          </>
+        )}
+        <a
+          href={file}
+          download={`${citekey.replace(/^@/, "")}.pdf`}
+          title="Download the source PDF"
+          aria-label="Download PDF"
+          className="ml-1 rounded p-0.5 text-muted-foreground hover:text-foreground"
+        >
+          <Download className="h-3.5 w-3.5" />
+        </a>
+      </div>
+
+      {/* pages */}
+      <div
+        ref={containerRef}
+        className="review-pdf min-h-0 flex-1 overflow-y-auto bg-muted/20 px-3 py-3"
+      >
+        <Document
+          file={file}
+          onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+          loading={
+            <p className="p-6 text-center text-sm text-muted-foreground">
+              Loading PDF…
+            </p>
+          }
+          error={
+            <p className="p-6 text-center text-sm text-muted-foreground">
+              PDF not available locally for {citekey}.
+            </p>
+          }
+        >
+          {Array.from({ length: numPages }, (_, i) => (
+            <div
+              key={i}
+              ref={(el) => {
+                pageRefs.current[i] = el;
+              }}
+              className="relative mx-auto mb-3 w-fit shadow-sm"
+            >
+              <Page
+                pageNumber={i + 1}
+                width={width}
+                customTextRenderer={textRenderer}
+                onRenderTextLayerSuccess={onTextRendered}
+                renderAnnotationLayer={false}
+              />
+              {highlight?.page === i + 1 &&
+                highlight.rects.map((r, ri) => (
+                  <div
+                    key={ri}
+                    ref={ri === 0 ? hlRef : undefined}
+                    className="pointer-events-none absolute z-10 rounded-[1px] bg-amber-300/40 ring-1 ring-amber-500/70"
+                    style={{
+                      left: `${r.x * 100}%`,
+                      top: `${r.y * 100}%`,
+                      width: `${r.w * 100}%`,
+                      height: `${r.h * 100}%`,
+                    }}
+                  />
+                ))}
+            </div>
+          ))}
+        </Document>
+      </div>
+    </div>
+  );
+}

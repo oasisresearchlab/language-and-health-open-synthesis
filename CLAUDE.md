@@ -1,5 +1,10 @@
 # CLAUDE.md — language-and-health-open-synthesis
 
+> **Design context (for the `site/` web app).** Strategy lives in `PRODUCT.md` (register =
+> product; users = clinicians + RAs + maintainer; "precise, instrument-like" Cream + Forest).
+> Visual system lives in `DESIGN.md` (+ `.impeccable/design.json` sidecar). Read both before any
+> frontend work via the `impeccable` skill. Restyle work tracked on the `review-app-restyle` branch.
+
 Operating rules for extracting a grounded **discourse graph** from the LEP / language-concordance
 corpus. Methodology ported & adapted from `living-synthesis-remix` (per-paper extraction) and
 `jay-living-synthesis-jc-port/Skill-synthesis.md` (cross-paper synthesis). Plan of record:
@@ -29,6 +34,8 @@ Sub-questions (in `Discourse Graph/Questions/`): effects of concordance on quali
 - `EVD —supports/opposes→ CLM` (`relation_BO5Bt…` / `relation_Qtuz…`)
 - `CVT —qualifies→ EVD` (`rel_o0a9NeAmWnhFBaVLNiJ1g`)
 - `{SRC, CLM, EVD} —informs→ QUE`; `CLM —supports/opposes/informs→ CLM` (`relation_OxKXi9…` for informs)
+- `QUE —informs→ QUE` — a **sub-question informs its parent** (question hierarchy). Authored on the
+  child QUE under `## Broader question` (lists the parent `[[QUE]]`); the lodestar is the root.
 
 Edges are **authored as wikilinks** in node bodies (see Skill-references "Edge authoring") and
 **materialized into `relations.json`** by `utils/sync_relations.py`. A generated nested index

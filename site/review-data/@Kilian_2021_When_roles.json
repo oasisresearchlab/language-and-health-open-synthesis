@@ -1,0 +1,86 @@
+{
+ "citekey": "@Kilian_2021_When_roles",
+ "title": "When roles within interpreter-mediated psychiatric consultations speak louder than words",
+ "author": "Kilian",
+ "year": "2021",
+ "doi": "10.1177/1363461520933768",
+ "pubmedId": "32615915",
+ "hasPdf": true,
+ "evds": [
+  {
+   "title": "Ad hoc interpreters acted as gatekeepers, answering on patients' behalf and controlling what reached the clinician",
+   "finding": "The study found that ad hoc interpreters took on a gatekeeping role, controlling what information passed between patient and clinician by responding to questions on the other party's behalf rather than relaying them. This gatekeeping occurred primarily when the interpreters were themselves health care workers, and the authors interpret it (drawing on Davidson, 2000) as making the interpreter an active participant in diagnosis. This is a qualitative mechanism by which informal interpreting can distort the information base for a psychiatric diagnosis.",
+   "tables": [],
+   "figures": []
+  },
+  {
+   "title": "As clinician and ad hoc interpreter negotiated roles, the patient's voice was lost in interpreter-mediated psychiatric consultations",
+   "finding": "Across the four interpreter roles, the study's overarching finding was that the patient's voice becomes lost as the clinician and interpreter negotiate their respective roles, with the interpreter more likely to take center stage when lay interpreters are used. Because two parties (clinician and interpreter) represented the medical establishment and only one represented the patient, the patient struggled to make their own agenda the priority of the consultation. This is a qualitative mechanism by which informal interpreting can erode patient-centeredness even when all parties have good intentions.",
+   "tables": [],
+   "figures": []
+  },
+  {
+   "title": "In cultural-broker role, ad hoc interpreters' own interpretations took precedence, risking dilution of the patient's explanatory model",
+   "finding": "The study found that ad hoc interpreters frequently acted as cultural brokers, explaining cultural concepts such as ancestral callings to become a sangoma so that they were not misread as illness. The authors note a downside of this role: the interpreter's interpretation of the patient's culturally informed meanings takes precedence, and the patient has no way of verifying it; when interpreters try to make the patient's story more acceptable to a biomedical frame, the patient's information is often lost. This is a qualitative mechanism by which informal interpreting can both aid and distort the cultural content needed for accurate psychiatric assessment.",
+   "tables": [],
+   "figures": []
+  },
+  {
+   "title": "Time constraints led ad hoc interpreters to pressure psychiatric patients into short answers, cutting off their narratives",
+   "finding": "In a public psychiatric hospital where bilingual nurses, social workers, and cleaners served as ad hoc interpreters, the time pressure of a busy hospital setting led both clinicians and interpreters to truncate patients' narratives. A clinician told the interpreter \"We should hurry up,\" after which the interpreter pressed the patient for concise answers; the interpreter herself became frustrated by the patient's long turns and explicitly demanded that the patient only answer the doctor's questions. This is a qualitative mechanism by which interpreter-mediated care under time constraints reduces the patient's ability to give a full account.",
+   "tables": [],
+   "figures": []
+  }
+ ],
+ "candidates": [
+  "The study recorded 13 interpreter-mediated psychiatric consultations.",
+  "18 audio-recorded semi-structured interviews were conducted with interpreters and clinicians.",
+  "Patients were proficient in isiXhosa.",
+  "Clinicians were first language English or Afrikaans speakers.",
+  "Health care workers and cleaners were fluent in both the patients' and clinicians' languages.",
+  "Interpreters took on four distinct roles during consultations: regulating turn-taking, cultural broker, gatekeeper, and advocate.",
+  "Despite good intentions, the patient's voice became lost during interactions between the clinician and interpreter."
+ ],
+ "abstractAnchors": [
+  {
+   "id": "abs-0",
+   "kind": "abstract",
+   "text": "Data were collected during 2010 at a public psychiatric hospital in the Western Cape, South Africa.",
+   "linkedEvd": null,
+   "evdConfidence": 0.05,
+   "linkedCandidate": null,
+   "candConfidence": 0.06
+  },
+  {
+   "id": "abs-1",
+   "kind": "abstract",
+   "text": "Thirteen interpreter-mediated psychiatric consultations were video-recorded, and 18 audio-recorded semi-structured interviews were conducted with the interpreters and clinicians who participated in the interpreter-mediated psychiatric consultations.",
+   "linkedEvd": null,
+   "evdConfidence": 0.08,
+   "linkedCandidate": 1,
+   "candConfidence": 0.5
+  },
+  {
+   "id": "abs-2",
+   "kind": "abstract",
+   "text": "Patients were proficient in isiXhosa (one of the 11 official languages of South Africa), the clinicians (all registrars) were first language English or Afrikaans speakers, while the health care workers (nurses and social workers) and cleaners were fluent in both the patients' and clinician's language.",
+   "linkedEvd": null,
+   "evdConfidence": 0.13,
+   "linkedCandidate": 4,
+   "candConfidence": 0.35
+  }
+ ],
+ "objectAnchors": [
+  {
+   "kind": "table",
+   "label": "Table 1",
+   "caption": "Study participants’ official occupation and sex.",
+   "page": 3,
+   "bbox": null,
+   "num": "1",
+   "crop": null,
+   "id": "obj-0",
+   "linkedEvds": []
+  }
+ ]
+}

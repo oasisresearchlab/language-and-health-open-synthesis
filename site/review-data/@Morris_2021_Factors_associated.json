@@ -1,0 +1,124 @@
+{
+ "citekey": "@Morris_2021_Factors_associated",
+ "title": "Factors associated with utilisation of health care interpreting services and the impact on length of stay and cost: A retrospective cohort analysis of audit dat",
+ "author": "Morris",
+ "year": "2021",
+ "doi": "10.1002/hpja.373",
+ "pubmedId": "32542897",
+ "hasPdf": true,
+ "evds": [
+  {
+   "title": "About half (54.4%) of admitted LEP patients requiring an interpreter received one",
+   "finding": "Across 79 hospital stays by admitted patients who required an interpreter, more than half received one at least once during admission — 54.4% (n = 43) (Table 1). The authors note this utilisation rate exceeds rates reported by other recent Australian studies (e.g. 37.2% and 17.1%), and was observed in a district with a long-running clinical-audit improvement program.",
+   "tables": [
+    "1"
+   ],
+   "figures": []
+  },
+  {
+   "title": "Female LEP patients were more likely than males to receive an interpreter (65.1% vs 41.7%)",
+   "finding": "Among admitted LEP patients who required an interpreter, sex was the only socio-demographic or clinical characteristic associated with receiving one: females were more likely to receive an interpreter than males (65.1%, n = 28, vs 41.7%, n = 15; P = .04) (Table 1). Age group, preferred language, hospital, DRG partition and comorbidity level were not significantly associated with interpreter receipt.",
+   "tables": [
+    "1"
+   ],
+   "figures": []
+  },
+  {
+   "title": "No significant difference in hospital cost between LEP patients who did and did not receive an interpreter after casemix adjustment",
+   "finding": "Among hospitalised LEP patients who required an interpreter, those who received one had a higher mean unadjusted episode cost (AU$8900 vs AU$5738; unadjusted regression difference AU$3162, P = .08), but after casemix adjustment (difference from the national DRG average) the cost difference was not statistically significant — an estimated additional AU$336 per episode in the simple model (P = .85) and AU$874 in the multivariate model (P = .64) (Table 3). The authors conclude there was no statistically significant cost difference after casemix adjustment.",
+   "tables": [
+    "3"
+   ],
+   "figures": []
+  },
+  {
+   "title": "No significant difference in length of stay between LEP patients who did and did not receive an interpreter after casemix adjustment",
+   "finding": "Among hospitalised patients with limited English proficiency who required an interpreter, those who received one had a longer mean unadjusted length of stay (10.31 vs 6.95 days; an unadjusted regression difference of 3.36 days, P = .15), but after casemix adjustment (difference from the national DRG average) the difference was not statistically significant — an estimated additional 2.51 days in the simple model (P = .26) and 3.40 days in the multivariate model (P = .13) (Table 3). The authors conclude the LOS difference was not significant after casemix adjustment.",
+   "tables": [
+    "3"
+   ],
+   "figures": []
+  }
+ ],
+ "candidates": [
+  "Interpreting services were utilized at least once for 54.4% (n = 43) of admissions.",
+  "Females were more likely to receive an interpreter compared to males (65.1% vs 47.1%, P = .04).",
+  "Age, preferred language, hospital, Diagnosis-Related Group partition, and comorbidities were not associated with interpreter service utilization.",
+  "Differences in length of stay and cost associated with use of interpreter services were not statistically significant after casemix adjustment."
+ ],
+ "abstractAnchors": [
+  {
+   "id": "abs-0",
+   "kind": "abstract",
+   "text": "Interpreting services were utilised at least once for 54.4% (n = 43) of admissions.",
+   "linkedEvd": null,
+   "evdConfidence": 0.05,
+   "linkedCandidate": 0,
+   "candConfidence": 0.71
+  },
+  {
+   "id": "abs-1",
+   "kind": "abstract",
+   "text": "Females were more likely to receive an interpreter (65.1% vs 47.1%, P = .04).",
+   "linkedEvd": null,
+   "evdConfidence": 0.15,
+   "linkedCandidate": 1,
+   "candConfidence": 0.71
+  },
+  {
+   "id": "abs-2",
+   "kind": "abstract",
+   "text": "Age, preferred language, hospital, Diagnosis-Related Group partition and comorbidities were not associated with interpreter service utilisation.",
+   "linkedEvd": 1,
+   "evdConfidence": 0.21,
+   "linkedCandidate": 2,
+   "candConfidence": 0.86
+  },
+  {
+   "id": "abs-3",
+   "kind": "abstract",
+   "text": "Differences in length of stay and cost associated with use of interpreter services were not statistically significant after casemix adjustment.",
+   "linkedEvd": null,
+   "evdConfidence": 0.17,
+   "linkedCandidate": 3,
+   "candConfidence": 1.0
+  },
+  {
+   "id": "abs-4",
+   "kind": "abstract",
+   "text": "Approximately half of those who required an interpreter received one during their hospital stay.",
+   "linkedEvd": 0,
+   "evdConfidence": 0.21,
+   "linkedCandidate": null,
+   "candConfidence": 0.1
+  },
+  {
+   "id": "abs-5",
+   "kind": "abstract",
+   "text": "Further investigation is needed to establish whether regular clinical audits contributed to this rate of utilisation, which is higher than reported elsewhere in the literature.",
+   "linkedEvd": null,
+   "evdConfidence": 0.08,
+   "linkedCandidate": null,
+   "candConfidence": 0.0
+  },
+  {
+   "id": "abs-6",
+   "kind": "abstract",
+   "text": "SO WHAT?: A detailed understanding of regional interpreting service use with evidence from the literature provides compelling and contextual evidence for change, at the level at which the service is delivered.",
+   "linkedEvd": null,
+   "evdConfidence": 0.02,
+   "linkedCandidate": null,
+   "candConfidence": 0.05
+  },
+  {
+   "id": "abs-7",
+   "kind": "abstract",
+   "text": "This supports meaningful action to increase utilisation, and improve the quality and safety of health care delivered to patients with limited English proficiency.",
+   "linkedEvd": null,
+   "evdConfidence": 0.09,
+   "linkedCandidate": null,
+   "candConfidence": 0.0
+  }
+ ],
+ "objectAnchors": []
+}

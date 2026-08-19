@@ -1,0 +1,146 @@
+{
+ "citekey": "@Jennifer_2023_Evaluation_Patient",
+ "title": "Evaluation of Patient Access to Spanish-Language-Concordant Care on a Postpartum Unit",
+ "author": "Jennifer L Jensen",
+ "year": "2023",
+ "doi": "10.1016/j.nwh.2022.09.002",
+ "pubmedId": "36252680",
+ "hasPdf": true,
+ "evds": [
+  {
+   "title": "Clinicians strongly preferred in-person interpreters over phone and video for engagement and continuity",
+   "finding": "In interviews, postpartum clinicians strongly preferred in-person interpreters over telephone and video modalities because in-person interpreters could engage as members of the care team, provide continuity for individual families, and even flag inconsistent information given across clinicians; telephone and video were described as \"secondary options\" beset by dropped calls, background noise, infection-control concerns, scarce/hard-to-locate devices, and setup delays. This is a provider-reported mechanism for why interpreter modality shapes communication quality and use.",
+   "tables": [],
+   "figures": []
+  },
+  {
+   "title": "Clinicians triaged encounters as noncritical and withheld interpreters reserving them for consents",
+   "finding": "A recurring interview theme was that clinicians informally triaged encounters into \"critical\" versus \"noncritical,\" reserving interpreter use for events such as obtaining consent and not calling interpreters for encounters they judged routine — a discretionary rationing that the authors identify as a driver of the observed underuse. One maternal–fetal medicine physician reflected that the team had \"triaged what's considered critical and what's not,\" even though the ideal is an interpreter present \"the entire time.\"",
+   "tables": [],
+   "figures": []
+  },
+  {
+   "title": "Interpreter or bilingual-provider access was offered to only 24% of postpartum couplets at admission and 14% for daily rounds",
+   "finding": "In a chart review of 50 Spanish-preferring postpartum birthing parent–newborn couplets, access to a clinician certified in medical Spanish or to an interpreter was offered to both members of the couplet at only 12 of 50 (24%) admissions and at only 7 of 50 (14%) daily maternal/newborn rounds; a substantial share of couplets never had concordant access during rounds across their stay (birthing parent 38%, newborn 36%) (Table 3). The authors read this as systematic underuse of interpretation services relative to national standards.",
+   "tables": [
+    "3"
+   ],
+   "figures": []
+  },
+  {
+   "title": "Long unpredictable interpreter wait times led clinicians to get by with hand gestures broken Spanish and phone apps",
+   "finding": "In semistructured interviews, postpartum clinicians described long and unpredictable interpreter wait times — driven by interpreter understaffing — as the primary barrier to interpreter use, which in a time-pressured, efficiency-centered workflow led them to \"get by\" with their own limited Spanish, hand gestures, ad hoc interpreters, and smartphone translation apps rather than wait. This is a provider-reported mechanism linking interpreter availability to non-use of concordant care.",
+   "tables": [],
+   "figures": []
+  },
+  {
+   "title": "Median wait for an in-person interpreter after clinician request was 17 minutes (range 0-75)",
+   "finding": "From EHR interpreter-services logs, the wait time for an in-person interpreter to arrive on the postpartum unit after a clinician request had a median of 17 minutes and ranged widely from 0 to 75 minutes (interquartile range 22) (Table 3). The authors characterize these waits as prolonged and unpredictable.",
+   "tables": [
+    "3"
+   ],
+   "figures": []
+  }
+ ],
+ "candidates": [
+  "Access to a clinician certified in medical Spanish or an interpreter was offered to 12 of 50 (24%) couplets upon admission to the unit.",
+  "Access to a clinician certified in medical Spanish or an interpreter was offered to 7 of 50 (14%) of couplets for daily maternal and newborn medical rounds.",
+  "Clinicians reported long and unpredictable wait times to access interpreters.",
+  "Clinicians often resorted to using hand gestures, broken Spanish, and smartphone apps to communicate with patients when certified interpretation services were not available.",
+  "Participants noted low usage of interpreters for \"noncritical\" encounters."
+ ],
+ "abstractAnchors": [
+  {
+   "id": "abs-0",
+   "kind": "abstract",
+   "text": "Access to a clinician certified in medical Spanish or an interpreter was offered to 12 of 50 (24%) couplets upon admission to the unit and to 7 of 50 (14%) of couplets for daily maternal and newborn medical rounds.",
+   "linkedEvd": 2,
+   "evdConfidence": 0.28,
+   "linkedCandidate": 1,
+   "candConfidence": 0.8
+  },
+  {
+   "id": "abs-1",
+   "kind": "abstract",
+   "text": "Clinicians reported long and unpredictable wait times to access interpreters, which led them to rely on hand gestures, broken Spanish, and smartphone apps to \"get by\" when communicating with patients without certified interpretation services.",
+   "linkedEvd": 3,
+   "evdConfidence": 0.3,
+   "linkedCandidate": 3,
+   "candConfidence": 0.39
+  },
+  {
+   "id": "abs-2",
+   "kind": "abstract",
+   "text": "Participants described low usage of interpreters for \"noncritical\" encounters.",
+   "linkedEvd": null,
+   "evdConfidence": 0.06,
+   "linkedCandidate": 4,
+   "candConfidence": 0.75
+  },
+  {
+   "id": "abs-3",
+   "kind": "abstract",
+   "text": "Interpreters and other forms of Spanish-language-concordant care were underused on the postpartum unit.",
+   "linkedEvd": null,
+   "evdConfidence": 0.1,
+   "linkedCandidate": null,
+   "candConfidence": 0.11
+  },
+  {
+   "id": "abs-4",
+   "kind": "abstract",
+   "text": "This deviation from national standards may put families at risk for harm.",
+   "linkedEvd": null,
+   "evdConfidence": 0.04,
+   "linkedCandidate": null,
+   "candConfidence": 0.0
+  },
+  {
+   "id": "abs-5",
+   "kind": "abstract",
+   "text": "Recommendations from this study include advancing a culture of respectful care, improving the interpreter request workflow, addressing safe staffing, facilitating direct patient access to interpreters, and providing ongoing evaluation and support.",
+   "linkedEvd": null,
+   "evdConfidence": 0.06,
+   "linkedCandidate": null,
+   "candConfidence": 0.07
+  }
+ ],
+ "objectAnchors": [
+  {
+   "kind": "table",
+   "label": "Table 1",
+   "caption": "",
+   "page": 6,
+   "bbox": null,
+   "num": "1",
+   "crop": null,
+   "id": "obj-0",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 2",
+   "caption": "",
+   "page": 7,
+   "bbox": null,
+   "num": "2",
+   "crop": null,
+   "id": "obj-1",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 3",
+   "caption": "",
+   "page": 8,
+   "bbox": null,
+   "num": "3",
+   "crop": "Jennifer_2023_Evaluation_Patient-table3.png",
+   "id": "obj-2",
+   "linkedEvds": [
+    2,
+    4
+   ]
+  }
+ ]
+}

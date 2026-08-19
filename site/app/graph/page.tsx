@@ -41,10 +41,7 @@ export default async function GraphTopologyPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
       <header className="space-y-4 max-w-3xl">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-          Topology
-        </p>
-        <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+        <h1 className="text-balance font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
           The whole graph
         </h1>
         <p className="text-muted-foreground">

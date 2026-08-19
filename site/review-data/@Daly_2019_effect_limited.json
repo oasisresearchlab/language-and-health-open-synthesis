@@ -1,0 +1,86 @@
+{
+ "citekey": "@Daly_2019_effect_limited",
+ "title": "The effect of limited English proficiency and interpreter service use on clinical outcomes in psychiatric inpatient units",
+ "author": "Daly",
+ "year": "2019",
+ "doi": "10.1177/1039856219859280",
+ "pubmedId": "31282178",
+ "hasPdf": true,
+ "evds": [
+  {
+   "title": "LEP psychiatric inpatients received more consultant reviews (median 4 vs 3) but not after adjusting for length of stay",
+   "finding": "LEP psychiatric inpatients were reviewed by consultants more often than EP patients (median 4 vs 3 reviews, p=0.036) (Table 1). The difference disappeared once the number of consultant reviews was normalized by length of stay, suggesting the extra reviews tracked longer admissions rather than a per-day increase in consultant effort.",
+   "tables": [
+    "1"
+   ],
+   "figures": []
+  },
+  {
+   "title": "Median psychiatric inpatient length of stay was higher for LEP patients (12 vs 8 days) but not statistically significant",
+   "finding": "Across three adult psychiatric inpatient units, the median length of stay was higher for patients with limited English proficiency (LEP) than for English-proficient (EP) patients — 12 vs 8 days — but the difference was not statistically significant (p=0.155) (Table 1).",
+   "tables": [
+    "1"
+   ],
+   "figures": []
+  },
+  {
+   "title": "No LEP psychiatric inpatients received a personality disorder diagnosis versus 19% of English-proficient patients",
+   "finding": "Discharge diagnoses differed significantly between groups (p=0.018): none of the 47 LEP patients received a primary discharge diagnosis of personality disorder, versus 9 of 47 (19%) English-proficient patients, with adjusted standardised residuals (±3.2) flagging the personality-disorder cell as the driver (Table 1). The authors raise a language barrier during assessment as one candidate explanation for the absent diagnoses.",
+   "tables": [
+    "1"
+   ],
+   "figures": []
+  }
+ ],
+ "candidates": [
+  "The length of stay difference between patients with limited English proficiency (LEP) and proficient English patients was not statistically significant (p=0.155).",
+  "Patients with limited English proficiency underwent more consultant reviews compared to English proficient patients (p=0.036).",
+  "Patients with limited English proficiency had different discharge diagnoses, with no primary discharge diagnoses of personality disorder being made for this group (p=0.018)."
+ ],
+ "abstractAnchors": [
+  {
+   "id": "abs-0",
+   "kind": "abstract",
+   "text": "An increased length of stay for those with LEP was not statistically significant (p=0.155).",
+   "linkedEvd": 1,
+   "evdConfidence": 0.25,
+   "linkedCandidate": 0,
+   "candConfidence": 0.43
+  },
+  {
+   "id": "abs-1",
+   "kind": "abstract",
+   "text": "The LEP group did undergo more consultant reviews (p=0.036), however, and attracted different discharge diagnoses, with no primary discharge diagnoses of personality disorder made (p=0.018).",
+   "linkedEvd": null,
+   "evdConfidence": 0.16,
+   "linkedCandidate": 2,
+   "candConfidence": 0.41
+  },
+  {
+   "id": "abs-2",
+   "kind": "abstract",
+   "text": "This study provides evidence of significant effects of limited English on both service burden and outcome.",
+   "linkedEvd": null,
+   "evdConfidence": 0.1,
+   "linkedCandidate": null,
+   "candConfidence": 0.15
+  }
+ ],
+ "objectAnchors": [
+  {
+   "kind": "table",
+   "label": "Table 1",
+   "caption": "Comparison of English-proficient and limited English proficiency",
+   "page": 2,
+   "bbox": null,
+   "num": "1",
+   "crop": "Daly_2019_effect_limited-table1.png",
+   "id": "obj-0",
+   "linkedEvds": [
+    0,
+    1,
+    2
+   ]
+  }
+ ]
+}

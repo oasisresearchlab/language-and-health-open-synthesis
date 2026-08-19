@@ -1,0 +1,158 @@
+{
+ "citekey": "@Martinez_2021_Improving_Equity",
+ "title": "Improving Equity of Care for Patients with Limited English Proficiency Using Quality Improvement Methodology",
+ "author": "Martinez",
+ "year": "2021",
+ "doi": "10.1097/pq9.0000000000000486",
+ "pubmedId": "34934875",
+ "hasPdf": true,
+ "evds": [
+  {
+   "title": "Improving interpreter use and documentation did not reduce the 48-hour ED return-visit rate for LEP patients (3.1%)",
+   "finding": "Despite the significant improvement in appropriate interpreter use and documentation, the 48-hour ED return-visit (RV) rate for LEP patients showed no special-cause variation from its baseline of 3.1% across the postintervention period, and the LEP-vs-EP RV gap remained significant (P < 0.001) both before and after all interventions (Fig. 5, Table 1). The authors conclude that improving professional interpreter use by itself had no significant effect on the return-visit rate.",
+   "tables": [
+    "1"
+   ],
+   "figures": [
+    "5"
+   ]
+  },
+  {
+   "title": "QI bundle raised appropriate interpreter use and documentation for Spanish-speaking LEP ED patients from 35.7% to 64.5%",
+   "finding": "A multi-component quality-improvement bundle in a pediatric emergency department (an electronic tracking-board LEP icon, a standardized 3-click LEP documentation form, and icon color changes for situational awareness, implemented over three PDSA cycles) raised the mean rate of appropriate interpreter use and documentation (AIUD) for Spanish-speaking LEP patients from a 35.7% baseline to 64.5% after the final cycle (Fig. 2, Table 1).",
+   "tables": [
+    "1"
+   ],
+   "figures": [
+    "2"
+   ]
+  },
+  {
+   "title": "The interpreter-use QI bundle did not significantly change balancing measures of ED length of stay (186 min) or VRI encounter time (16.5 min)",
+   "finding": "The QI bundle to increase interpreter use and documentation was tracked against two balancing measures — ED length of stay (LOS) and video-remote-interpreter (VRI) encounter time for the overall LEP ED population — to check that adding interpreter steps did not worsen throughput. Neither balancing measure changed significantly: ED LEP LOS averaged 186.1 minutes and VRI encounter time averaged 16.5 minutes cumulatively (Table 1).",
+   "tables": [
+    "1"
+   ],
+   "figures": []
+  }
+ ],
+ "candidates": [
+  "The mean of Limited English Proficient Spanish-Speaking (LEP-SS) patients with appropriate interpreter use and documentation (AIUD) improved from 35.7% to 64.5%.",
+  "The 48-hour emergency department return visit (RV) rate for LEP patients remained at 3.1% during the postintervention period.",
+  "The 48-hour emergency department return visit (RV) rate for English proficient patients remained at 2.6% during the postintervention period."
+ ],
+ "abstractAnchors": [
+  {
+   "id": "abs-0",
+   "kind": "abstract",
+   "text": "The mean of LEP-SS patients with AIUD improved from 35.7% to 64.5% without significant changes in balancing measures.",
+   "linkedEvd": null,
+   "evdConfidence": 0.11,
+   "linkedCandidate": 0,
+   "candConfidence": 0.26
+  },
+  {
+   "id": "abs-1",
+   "kind": "abstract",
+   "text": "During the postintervention period (6/1/2018-10/31/2020), no special cause variation was noted from the baseline 48-hour emergency department RV rates for LEP patients (3.1%) or English proficient patients (2.6%).",
+   "linkedEvd": 0,
+   "evdConfidence": 0.2,
+   "linkedCandidate": 2,
+   "candConfidence": 0.41
+  },
+  {
+   "id": "abs-2",
+   "kind": "abstract",
+   "text": "While the RV rate was not affected, this project is part of a multi-faceted approach aiming to positively impact this outcome measure.",
+   "linkedEvd": null,
+   "evdConfidence": 0.04,
+   "linkedCandidate": null,
+   "candConfidence": 0.04
+  },
+  {
+   "id": "abs-3",
+   "kind": "abstract",
+   "text": "Significant improvements in AIUD were achieved without affecting balancing measures.",
+   "linkedEvd": null,
+   "evdConfidence": 0.05,
+   "linkedCandidate": null,
+   "candConfidence": 0.05
+  }
+ ],
+ "objectAnchors": [
+  {
+   "kind": "figure",
+   "label": "Figure 1",
+   "caption": "Key driver diagram showing the project aim, and the primary and secondary drivers that contribute toward achieving the aim.",
+   "page": 3,
+   "bbox": null,
+   "num": "1",
+   "crop": null,
+   "id": "obj-0",
+   "linkedEvds": []
+  },
+  {
+   "kind": "figure",
+   "label": "Figure 2",
+   "caption": "Percent of LEP-SS patients who had an interpreter used and documented in the ED. LEP-SS patients who refused or did not",
+   "page": 4,
+   "bbox": null,
+   "num": "2",
+   "crop": "Martinez_2021_Improving_Equity-fig2.png",
+   "id": "obj-1",
+   "linkedEvds": [
+    1
+   ]
+  },
+  {
+   "kind": "figure",
+   "label": "Figure 3",
+   "caption": "ED LEP-SS patients who had the LEP icon activated for identification and awareness along with AIUD. The red squares at",
+   "page": 5,
+   "bbox": null,
+   "num": "3",
+   "crop": null,
+   "id": "obj-2",
+   "linkedEvds": []
+  },
+  {
+   "kind": "figure",
+   "label": "Figure 4",
+   "caption": "Percent of LEP-SS patients who had an interpreter used and documented in the UCC location with the most baseline LEP",
+   "page": 5,
+   "bbox": null,
+   "num": "4",
+   "crop": null,
+   "id": "obj-3",
+   "linkedEvds": []
+  },
+  {
+   "kind": "figure",
+   "label": "Figure 5",
+   "caption": "Percent of LEP ED and EP ED patients who returned to the ED within 48 hour of initial visit. A, B, Percent of LEP ED and EP",
+   "page": 6,
+   "bbox": null,
+   "num": "5",
+   "crop": "Martinez_2021_Improving_Equity-fig5.png",
+   "id": "obj-4",
+   "linkedEvds": [
+    0
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "Table 1",
+   "caption": "Differences in Patient Characteristics in the Baseline, Postintervention, and Cumulative Study Periods",
+   "page": 4,
+   "bbox": null,
+   "num": "1",
+   "crop": "Martinez_2021_Improving_Equity-table1.png",
+   "id": "obj-5",
+   "linkedEvds": [
+    0,
+    1,
+    2
+   ]
+  }
+ ]
+}

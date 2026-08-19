@@ -1,0 +1,175 @@
+{
+ "citekey": "@Greenky_2019_Reversed_Trend",
+ "title": "A Reversed Trend: Care for Limited English Proficiency Patients in the Pediatric Emergency Department",
+ "author": "Greenky",
+ "year": "2019",
+ "doi": "10.1155/2019/4832045",
+ "pubmedId": "30984426",
+ "hasPdf": true,
+ "evds": [
+  {
+   "title": "Adjusted ED length of stay was negligibly different (0.77%, ~1.2 min) between interpreter-requested and English-speaking pediatric patients",
+   "finding": "In this large pediatric ED cohort, the model-adjusted difference in ED length of stay (LOS) between patients who requested an interpreter (treated as LEP) and those who did not was only 0.77% — about 1.2 minutes (2.59 vs 2.61 adjusted hours) — a small effect (ES < 0.2) that the authors deemed not clinically significant (Table 2). Notably the direction was reversed from prior literature: LEP/interpreter-requested patients spent slightly *less* time in the ED than English-speaking patients.",
+   "tables": [
+    "2"
+   ],
+   "figures": []
+  },
+  {
+   "title": "Adjusted odds of 7-day ED readmission were only 3% higher and non-significant for interpreter-requested pediatric patients",
+   "finding": "For ED readmission within 7 days, the adjusted odds were only 3.0% higher in the interpreter-requested cohort than in the no-interpreter group (adjusted OR 1.03, 95% CI: 0.98–1.09; p=0.182), a small, non-significant effect (ES < 0.2) (Table 2). This contrasts with prior pediatric-ED studies that reported increased unplanned return rates for LEP patients.",
+   "tables": [
+    "1",
+    "2"
+   ],
+   "figures": []
+  },
+  {
+   "title": "Adjusted odds of hospital admission or transfer were only 6% higher for interpreter-requested pediatric patients, a reversed trend from prior gaps",
+   "finding": "The adjusted odds of hospital admission or transfer to another facility were 6.0% higher for interpreter-requested (LEP) patients than for no-interpreter patients (adjusted OR 1.06, 95% CI: 1.01–1.11; p=0.014), corresponding to a small effect (ES < 0.2) the authors judged not clinically meaningful (Table 2). This is a reversed trend relative to a 2004 study at the same hospital (CHOA Egleston), where LEP patients had higher admission rates.",
+   "tables": [
+    "2"
+   ],
+   "figures": []
+  },
+  {
+   "title": "Interpreters were requested for 12.1% of pediatric ED patients in 2016, up from ~2% in 2002",
+   "finding": "Across the 2016 CHOA pediatric ED cohort, interpreter services were requested for at least one ED encounter in 18,572 (12.1%) of 152,945 patients, of whom the large majority were Latino/Hispanic (83.9%) and Spanish-speaking (79.5%). The authors note this 12.1% LEP/interpreter-request prevalence rose from approximately 2.0% in 2002, and that 83.3% of patients with a primary language other than English were documented as having requested an interpreter.",
+   "tables": [],
+   "figures": []
+  }
+ ],
+ "candidates": [
+  "Interpreters were requested for 12.1% of ED encounters.",
+  "The model-adjusted difference in ED length of stay was 0.77% between interpreter groups.",
+  "The adjusted odds of change in triage status were 7% higher in the interpreter requested cohort.",
+  "The adjusted odds of ED readmission within 7 days were 3% higher in the interpreter requested cohort.",
+  "The total population included 152,945 patients from 232,787 ED encounters in 2016."
+ ],
+ "abstractAnchors": [
+  {
+   "id": "abs-0",
+   "kind": "abstract",
+   "text": "The population included 152,945 patients from 232,787 ED encounters in 2016.",
+   "linkedEvd": null,
+   "evdConfidence": 0.1,
+   "linkedCandidate": 4,
+   "candConfidence": 0.9
+  },
+  {
+   "id": "abs-1",
+   "kind": "abstract",
+   "text": "Interpreters were requested for 12.1% of encounters.",
+   "linkedEvd": null,
+   "evdConfidence": 0.03,
+   "linkedCandidate": 0,
+   "candConfidence": 1.0
+  },
+  {
+   "id": "abs-2",
+   "kind": "abstract",
+   "text": "For ED LOS, a model-adjusted difference of 0.77% was found between interpreter groups.",
+   "linkedEvd": null,
+   "evdConfidence": 0.12,
+   "linkedCandidate": 1,
+   "candConfidence": 0.56
+  },
+  {
+   "id": "abs-3",
+   "kind": "abstract",
+   "text": "For change in triage status, adjusted odds were 7% higher in the interpreter requested cohort.",
+   "linkedEvd": 1,
+   "evdConfidence": 0.19,
+   "linkedCandidate": 2,
+   "candConfidence": 1.0
+  },
+  {
+   "id": "abs-4",
+   "kind": "abstract",
+   "text": "For ED readmission within 7 days, adjusted odds were 3% higher in the interpreter requested cohort.",
+   "linkedEvd": 1,
+   "evdConfidence": 0.32,
+   "linkedCandidate": 3,
+   "candConfidence": 1.0
+  },
+  {
+   "id": "abs-5",
+   "kind": "abstract",
+   "text": "These effect sizes are small (ES < 0.2).",
+   "linkedEvd": null,
+   "evdConfidence": 0.07,
+   "linkedCandidate": null,
+   "candConfidence": 0.0
+  },
+  {
+   "id": "abs-6",
+   "kind": "abstract",
+   "text": "Our study showed low ES of the differences in ED metrics between LEP and English-speaking patients, suggesting little clinical difference between the two groups.",
+   "linkedEvd": null,
+   "evdConfidence": 0.1,
+   "linkedCandidate": null,
+   "candConfidence": 0.1
+  },
+  {
+   "id": "abs-7",
+   "kind": "abstract",
+   "text": "The impact of this improvement should be further studied.",
+   "linkedEvd": null,
+   "evdConfidence": 0.0,
+   "linkedCandidate": null,
+   "candConfidence": 0.0
+  }
+ ],
+ "objectAnchors": [
+  {
+   "kind": "table",
+   "label": "Table 1",
+   "caption": "Patient and encounter characteristics overall and by interpreter requested.",
+   "page": 2,
+   "bbox": null,
+   "num": "1",
+   "crop": null,
+   "id": "obj-0",
+   "linkedEvds": [
+    1
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "Table 2",
+   "caption": "Adjusted outcome variables by interpreter needed.",
+   "page": 4,
+   "bbox": null,
+   "num": "2",
+   "crop": "Greenky_2019_Reversed_Trend-table2.png",
+   "id": "obj-1",
+   "linkedEvds": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "kind": "table",
+   "label": "Table 3",
+   "caption": "Admission rates by acuity and interpreter status.",
+   "page": 4,
+   "bbox": null,
+   "num": "3",
+   "crop": null,
+   "id": "obj-2",
+   "linkedEvds": []
+  },
+  {
+   "kind": "table",
+   "label": "Table 4",
+   "caption": "shows adjusted results for Spanish interpreter",
+   "page": 5,
+   "bbox": null,
+   "num": "4",
+   "crop": null,
+   "id": "obj-3",
+   "linkedEvds": []
+  }
+ ]
+}

@@ -5,14 +5,19 @@
   "scripts": {
     "data:graph": "node scripts/build-graph-data.mjs",
     "data:pagefind": "node scripts/build-pagefind-index.mjs",
-    "dev": "pnpm data:graph && next dev",
-    "build": "pnpm data:graph && pnpm data:pagefind && next build",
+    "dev": "pnpm data:graph && pnpm pdf:worker && next dev",
+    "build": "pnpm data:graph && pnpm data:pagefind && pnpm pdf:worker && next build",
     "preview": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "pdf:worker": "node scripts/copy-pdf-worker.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.4.1",
     "@openrouter/ai-sdk-provider": "^2.9.0",
+    "@supabase/ssr": "^0.12.3",
+    "@supabase/supabase-js": "^2.110.8",
     "@vercel/analytics": "^2.0.1",
     "ai": "^6.0.175",
     "class-variance-authority": "^0.7.1",
@@ -25,6 +30,7 @@
     "react-dom": "19.2.4",
     "react-force-graph-2d": "^1.29.1",
     "react-markdown": "^10.1.0",
+    "react-pdf": "^10.4.1",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^4.0.1",
@@ -36,15 +42,21 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
     "@types/mdast": "^4.0.4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^6.0.2",
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
+    "jsdom": "^29.1.1",
     "pagefind": "^1.5.2",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "unified": "^11.0.5"
+    "unified": "^11.0.5",
+    "vitest": "^4.1.9"
   }
 }

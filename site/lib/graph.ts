@@ -199,6 +199,44 @@ export async function loadGraph(): Promise<Graph> {
   return cachePromise;
 }
 
+// Build a Graph from the bundled graph-data.generated.json (no fs). Used by the
+// review routes, which are force-dynamic and run on Vercel serverless where
+// ../graph isn't on disk. The generated file is rebuilt by `data:graph` at build.
+let genCache: Graph | null = null;
+export function loadGeneratedGraph(): Graph {
+  if (genCache) return genCache;
+  const raw = ((generated as { nodes?: Record<string, unknown>[] }).nodes ?? []);
+  const nodes = new Map<string, GraphNode>();
+  for (const n of raw) {
+    const node = {
+      ...(n as object),
+      sections: (n as { sections?: string[] }).sections ?? [],
+      body: (n as { body?: string }).body ?? "",
+      filePath: "",
+      outgoing: (n as { outgoing?: OutgoingEdge[] }).outgoing ?? [],
+      incoming: [] as IncomingEdge[],
+    } as GraphNode;
+    nodes.set(node.id, node);
+  }
+  for (const node of nodes.values()) {
+    for (const out of node.outgoing) {
+      nodes.get(out.to)?.incoming.push({ edge: out.edge, from: node.id });
+    }
+  }
+  const byType = Object.fromEntries(
+    NODE_TYPES.map((t) => [t, [] as GraphNode[]]),
+  ) as Record<NodeType, GraphNode[]>;
+  for (const node of nodes.values()) byType[node.type]?.push(node);
+  genCache = {
+    nodes,
+    byType,
+    bySection: new Map(),
+    brokenEdges: [],
+    nodeIssues: generatedNodeIssues,
+  };
+  return genCache;
+}
+
 export async function getNode(id: string): Promise<GraphNode | undefined> {
   const g = await loadGraph();
   return g.nodes.get(id);

@@ -179,6 +179,85 @@ independent of the ~94 duplicate rows already known in the origin spreadsheet.
 **Not yet done:** the human-validated sample required by §6. Until it exists, the 244 figure is a
 model's opinion, not a measured quantity — everything above inherits that caveat.
 
+### 3.7 Proposed intervention spine (2026-08-18)
+
+Built in three stages, each reproducible:
+`code_interventions.py` (stage 1, free-text) → `refine_interventions.py` (stage 2, facets split
+out) → `cluster_interventions.py` (stage 3, deterministic merge). Stage 2 cost $0.44 / 52s.
+
+**Why stage 2 was needed.** Stage 1's labels were near-unique (234 distinct across 244 papers)
+because each label packed modality, population and setting into one phrase. Stage 2 extracts
+those as separate fields and asks for a deliberately general label. Labels converged
+234 → 178, and modality became recoverable: `not_stated` fell from 70-of-98 interpreting
+labels to 37 of 244 overall.
+
+#### The spine: six mechanism families
+
+Of 244 in-scope papers, **224 act on the language barrier** and 20 are clinical services merely
+delivered to LEP patients (see the scope decision below).
+
+| Family | n | Dominant modality | Dominant facing |
+|---|---:|---|---|
+| **A. Interpreting services** | 101 | in-person 42, mixed 23, phone 13 | clinician 89, patient 71, interpreter 25 |
+| **B. Translation of text/speech** | 43 | digital 21, written 18 | patient 41 |
+| **E. Workforce capability** | 25 | in-person 9, not-stated 11 | clinician 21 |
+| **F. Service delivery redesign** | 18 | mixed 6, digital 4 | organization 18 |
+| **C. Language-concordant care** | 14 | in-person 9 | patient 13, clinician 10 |
+| **D. Patient-facing materials** | 9 | written 6 | patient 9 |
+| G. Unassigned | 14 | — | — |
+
+The three facets are doing real work rather than restating each other: interpreting is
+**clinician**-facing more often than patient-facing (89 vs 71) and is the only family with a
+meaningful interpreter-facing signal (25); translation technology is almost purely patient-facing
+and digital/written; redesign is organization-facing. A facet that merely mirrored the family
+would not produce that pattern.
+
+#### Answering open question 2 (granularity)
+
+Modality now resolves the "is interpreting one intervention or three?" question with numbers:
+in-person 42, telephone 13, video-remote 6, mixed 23, not-stated 14. So **family level is
+well-powered; family × modality is viable only for in-person interpreting**, marginal for
+telephone, and too thin for video-remote. Report at family level, with modality as a
+sub-stratification where the cell supports it.
+
+#### Label-level indexing is not viable, and this is the main finding
+
+After deterministic merging, 140 clusters remain and **119 are singletons**. Even with a
+second pass explicitly instructed toward general labels, the corpus does not converge on a
+reusable intervention vocabulary. Conservation Evidence can index by named intervention because
+it has thousands of studies per domain; at 224 papers this corpus cannot. The label is useful as
+descriptive detail *within* a family, not as the index.
+
+Largest merged clusters: professional interpreting 38 (7 surface variants), interpreter training
+9, clinician language training 8, telephone interpreting 7, translated patient materials 5,
+video remote interpreting 4.
+
+#### Multi-component interventions are the norm, not the exception
+
+94 of 244 (38%) bundle distinct mechanisms, and the share rises sharply in the families where
+you would expect it: service delivery redesign 77%, workforce capability 56%, language-concordant
+care 50%, against translation technology 16% and patient materials 11%. Record all component
+mechanisms and report a primary; do not force a single bucket.
+
+#### Scope decision — OPEN
+
+20 papers are clinical or social services delivered to LEP populations rather than interventions
+on the language barrier: `behavioral activation therapy`, `group prenatal visits`,
+`collaborative care management`, `peer support group`, `patient navigation`,
+`recruitment incentive`. The model flagged these via `acts_on_language_barrier`; a prior
+regex estimate independently put the figure at 15, so the two roughly agree.
+
+Recommendation: exclude them from the spine but retain the flag, so the decision is reversible
+and reportable. **Not yet ratified — this changes the denominator and should be a human call.**
+
+#### Caveats
+
+- Family assignment is regex over the canonical label (`cluster_interventions.py`); 14 papers
+  remain unassigned.
+- Stage 2 grounding fell to **81%** verbatim (from 87% in stage 1) — the harder extraction is a
+  harder span task. 45 of 244 spans are paraphrases.
+- Everything here still inherits the §3.6 caveat: no human-validated sample yet exists.
+
 ## 4. Goals
 
 1. A derived intervention spine covering the ~303-paper pool, replacing the legacy field.
@@ -215,9 +294,9 @@ from title + abstract.
 
 1. **Output shape.** A page per intervention (Conservation Evidence's actual form), or a
    single cross-tab with drill-down? Determines how much of the site needs building.
-2. **Intervention granularity.** Is "telephone interpreting" one intervention or three
-   (in-person / telephone / video)? Conservation Evidence splits aggressively; splitting
-   here would leave many cells with a single study.
+2. ~~**Intervention granularity.**~~ **Answered in §3.7:** report at family level; stratify by
+   modality only where the cell supports it (in-person interpreting, n=42). Label-level
+   indexing is not viable — 119 of 140 clusters are singletons.
 3. **Whether ART nodes are the spine.** 20 exist and are intervention-shaped. Growing them to
    ~100 would make the graph the source of truth; the alternative is a separate index that
    references sources directly.

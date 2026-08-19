@@ -79,3 +79,70 @@ The pitch is **not** "nobody has looked at this." It is:
 Web search only. PROSPERO, Epistemonikos, the Campbell Library and the Living Evidence Network
 were **not** searched directly. Grey literature and non-English reviews were not covered. Treat
 this as a first pass establishing that the space is crowded, not as a systematic search.
+
+---
+
+# Follow-up: how well is AI-assisted translation actually covered?
+
+*2026-08-19 · second pass, testing the differentiator claim above.*
+
+The claim "little coverage of AI-assisted translation" was the thinnest-evidenced part of the
+sweep and the one carrying the most weight. Tested two ways.
+
+## Inside our own corpus
+
+Of the 43 family-B (translation of text/speech) papers, exactly **one** is a review — and it is
+*Implications of Language Barriers for Healthcare: A Systematic Review* (Oman Medical Journal,
+2020), a general language-barriers review, not a translation-technology one. So there is no prior
+review of AI-assisted translation *inside* our corpus.
+
+**But the corpus has a hole in exactly this area.** Family B by year runs 2010→2024 and then
+stops:
+
+| | |
+|---|---|
+| Corpus papers dated 2025 or later | **55** |
+| …of those, in the intervention spine | **4** |
+| …of those, in family B (translation tech) | **0** |
+
+The corpus is not stale overall — it carries 37 papers from 2025 and 18 from 2026. But its recent
+acquisitions are almost entirely non-intervention work, and **none** is translation technology.
+Our AI-translation evidence base ends at 2024.
+
+## Outside it
+
+No systematic review addresses **AI/machine translation for patient language access**
+specifically. The 2024–2026 review literature sits one abstraction level up, on LLMs in clinical
+medicine broadly:
+
+- *A systematic review of LLM evaluations in clinical medicine* — BMC Med Inform Decis Mak, 2025
+- *LLM-assisted systematic review of large language models in clinical medicine* — Nature
+  Medicine, 2026
+- *Large language models in real-world clinical workflows* — Frontiers in Digital Health, 2025
+- *Large language models for clinical artificial intelligence in healthcare* — Discover AI, 2026
+
+Translation-specific work surfaces as **method** papers (e.g. MedCOD, English-to-Spanish medical
+translation, arXiv 2509.00934), not reviews.
+
+## Independent corroboration of our scarcity finding
+
+The Nature Medicine review counted **4,609** peer-reviewed LLM-in-medicine studies between
+January 2022 and September 2025 — about 3.2 per day — of which only **1,048** used real-world
+patient data and only **19** were prospective randomized trials. The Frontiers review found
+**4** studies meeting its real-world-workflow criteria.
+
+Spec B found the same shape from a different corpus by a different method: family B is 9 named
+papers, **0 RCTs**, 7 primary studies. Evidence scarcity here is a property of the field, not an
+artefact of our screening.
+
+## What this changes
+
+1. **The differentiator holds, and is narrower than stated.** Not "AI translation is unreviewed" —
+   it is that reviews exist for *LLMs in medicine* while none exists for *translation as a
+   language-access intervention*.
+2. **A1's most urgent value is currency, not provenance.** The publishability argument for a
+   documented search still stands, but the pressing gap is that the fastest-moving area of the
+   review has no corpus coverage after 2024.
+3. **The 2025+ acquisition gap needs explaining before A1 is designed.** 55 recent papers entered
+   the corpus and none is translation technology. Is that a real publication pattern, a search
+   artefact, or a screening artefact? A1's query design depends on which.

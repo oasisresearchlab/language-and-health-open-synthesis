@@ -10,34 +10,21 @@ Specs: [B — interventions](../docs/superpowers/specs/2026-08-18-interventions-
 
 ---
 
-## Blocks everything — scope of B is under revision
+## B2 — review harvest *(spec written: `2026-08-20-review-harvest-design.md`)*
 
-**B is splitting.** A new **B2** is proposed: mine and integrate evidence from prior evidence
-syntheses to *seed* the living synthesis — a review of reviews, in a specific flavour where the
-reviews are **raw material**, not the object of synthesis. See the 2026-08-19 update in
-[`translation-interventions-review.md`](./translation-interventions-review.md) and the
-[realist-synthesis note](./realist-synthesis-and-discourse-graphs.md).
+Decisions settled 2026-08-19/20: thin-harvest then prioritized backfill, with depth and review
+provenance marked; start with three intervention-indexed reviews and track saturation; imported
+synthesis statements become provenance-marked CLMs, aggregated against ours in an explicit later
+phase (merge, or use as priors for aggregating EVDs into new claims).
 
-Until this settles, B's extraction runway (188 papers, $1,500–1,900) is **not a firm number** —
-much of it may already be extracted inside existing reviews' evidence tables.
-
-- [ ] **Spec B2 — review-of-reviews seeding.** Two extraction families: *evidence syntheses*
-      (Kwan 2023, van Lent 2025) yield evidence plus included-study pointers; *framework /
-      integrative reviews* (arXiv 2605.01441) yield programme theory.
-- [ ] **Cross-check included studies of the review set against our 819-source corpus.** How much
-      overlap, how much new? Sizes everything downstream.
-- [ ] **Decide how to represent inherited appraisals.** van Lent 2025 ships RoB and GRADE. Project
-      doctrine holds that certainty is an expert task and AI does not draft it — but an *imported*
-      published GRADE is neither AI-drafted nor our expert's judgment. It needs its own provenance
-      treatment.
-- [ ] **Handle overlap between reviews.** The same primary study appears in several reviews;
-      overviews normally report a corrected covered area or equivalent. Decide the metric before
-      merging.
-- [ ] **Use review tables as pointers, then ground independently** *(decided 2026-08-19)*. Preserves
-      the verbatim-from-source rule while keeping the search/identification saving. **Track
-      discrepancies** between our grounding and their extraction — that is a contribution in its
-      own right.
-- [ ] **Triage what genuinely needs fresh extraction** once the mapping exists.
+- [ ] **Match Gutman 2025 against the corpus** — the third data point that turns B2's effort
+      estimates into numbers, exactly as the coding pass did for B.
+- [ ] **Decide the EVD merge-adjudication trigger** (same study + same outcome?).
+- [ ] **Add a `curationStatus` state for imported claims** — off the AI-draft → expert-review ladder.
+- [ ] **Set the saturation threshold** once three reviews are measured.
+- [ ] **Design the framework-review harvest** (programme theory) — sketched only, and gated on the
+      realist-layer tensions.
+- [ ] **Acquire PDFs + create SRC nodes** for the 36 studies missing from Kwan/van Lent.
 
 ## Blocks A1 — corpus construction
 

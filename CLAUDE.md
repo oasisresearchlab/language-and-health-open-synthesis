@@ -37,8 +37,23 @@ Sub-questions (in `Discourse Graph/Questions/`): effects of concordance on quali
 - `QUE —informs→ QUE` — a **sub-question informs its parent** (question hierarchy). Authored on the
   child QUE under `## Broader question` (lists the parent `[[QUE]]`); the lodestar is the root.
 
-Edges are **authored as wikilinks** in node bodies (see Skill-references "Edge authoring") and
-**materialized into `relations.json`** by `utils/sync_relations.py`. A generated nested index
+`relations.json` is **canonical for edges** — co-equal with the vault markdown, not a build
+artifact (`export_rdf.py`: "the vault + relations.json stay the source of truth; graph/ is
+regenerated"). It has **two writers**, and both are legitimate:
+
+1. **The Obsidian plugin's UI** writes edges straight into `relations.json` (`addRelation` →
+   `saveRelations`). Edges made this way have **no wikilink representation** in any node body.
+   (Edges used to live in frontmatter; `migrateFrontmatterRelationsToRelationsJson` was a
+   one-time move into `relations.json`.)
+2. **`utils/sync_relations.py`** parses wikilinks from body sections (see Skill-references "Edge
+   authoring") and materializes any that are missing. It is **additive and idempotent** — it
+   preserves existing edge records untouched and only appends. This is the AI/scripted authoring
+   path.
+
+So body wikilinks are *one* way to author an edge, not the definition of one; `export_rdf.py`
+drops those body sections on export precisely because the edges are already in `relations.json`.
+Anything that must hold for *every* edge (e.g. an appraisal annotation) therefore belongs on the
+edge record, not in a body section. A generated nested index
 (`build_dgraph.py`) and Bases provide review/navigation.
 
 ## Tags & fields

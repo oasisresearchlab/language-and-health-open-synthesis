@@ -90,9 +90,23 @@ mechanisms act at a different point in the same causal chain.* That is a middle-
 testable: do provision+adoption bundles outperform provision-only, and do the 46 within-family
 bundles behave as substitutes rather than complements?
 
-**Caveat.** This is co-occurrence in what researchers chose to bundle — it reflects their theories
-of the problem, not demonstrated synergy. It establishes what the field believes, which is the
-right starting point for a programme theory and the wrong thing to report as a result.
+**Caveat 1.** This is co-occurrence in what researchers chose to bundle — it reflects their
+theories of the problem, not demonstrated synergy. It establishes what the field believes, which is
+the right starting point for a programme theory and the wrong thing to report as a result.
+
+**Caveat 2 (2026-08-20) — as stated, this is near-tautological.** "Provision plus adoption beats
+provision alone" is not a hypothesis anyone would doubt: of course getting clinicians to use a
+provided service helps it work. Two non-trivial versions survive:
+
+- **Magnitude.** What share of provision's measured failure is *actually* adoption failure? If
+  underutilization dominates, the field's effectiveness estimates for provision are systematically
+  depressed by an implementation problem rather than measuring the intervention.
+- **Within-layer combination.** Whether combining two *provision* mechanisms helps — machine
+  translation plus an informal interpreter, translated materials plus an interpreter — is genuinely
+  open, and is exactly the gap van Lent 2025 names as unstudied. These could be complementary,
+  substitutive, or interfering.
+
+The second is where the real programme-theory work is.
 
 ## Open tensions — resolve before this goes in a spec
 

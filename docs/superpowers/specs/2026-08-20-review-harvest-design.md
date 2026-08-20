@@ -49,14 +49,29 @@ Corollary: B2 is **extension more than harvest**. 65% of the union is not in our
 
 ## 3. Review set and the saturation protocol
 
-**Start with three intervention-indexed reviews**, then measure before extending:
+**Stratify the review set by layer**, and start with the provision layer only.
 
-1. **van Lent et al. 2025**, Patient Educ Couns 136:108767 (PROSPERO 469785) — 26 studies, GRADE
-   applied, first to compare strategies. Search end Jul 2024.
-2. **Gutman et al. 2025**, JAMA Netw Open 8(7):e2521492 — 40 articles / **39 interventions** to
-   increase professional interpreting. Intervention-indexed, so arguably closest to B's spine.
-   Search end Sep 2024.
-3. **Kwan et al. 2023**, IJERPH 20(6):5165 — integrative, hospital outcomes. Search end Dec 2020.
+- **Provision layer** — does a language-access intervention work?
+  1. **van Lent et al. 2025**, Patient Educ Couns 136:108767 (PROSPERO 469785) — 26 studies,
+     GRADE applied, first to compare strategies. Search end Jul 2024. *Evidence Project RoB.*
+  2. **Kwan et al. 2023**, IJERPH 20(6):5165 — integrative, hospital outcomes. Search end Dec 2020.
+  3. **Heath et al. 2023**, J Migr Health 7:100162 (PROSPERO CRD42021247580) — 29 reports,
+     compares interpreter types. Closest question-match to van Lent, so the cleanest saturation
+     test; also uses the *same Evidence Project RoB tool*, making inherited assessments directly
+     comparable. **Candidate fourth: Karliner 2007** — same layer, different era, tests whether
+     older-literature coverage really is better.
+
+- **Adoption layer** — how do you get clinicians to *use* one? **Gutman et al. 2025**,
+  JAMA Netw Open 8(7):e2521492, 40 articles / 39 interventions. **Held separately, out of the
+  provision saturation curve.** Bring it in only if B2's scope expands to adoption.
+
+**Why the stratification.** Combining provision and adoption is a near-tautological hypothesis —
+of course making clinicians use a provided service helps the service work. The non-obvious
+combination question is **within** the provision layer, and it is the one van Lent names as
+unstudied: *"no studies investigated whether combining different strategies (e.g., using digital
+translation tools to translate specific words that an informal interpreter may not know) could
+yield (more) positive results."* Machine translation plus informal interpreter, or translated
+materials plus interpreter, could be complementary, substitutive, or interfering.
 
 **Saturation metric.** After each review is added, record: included studies, studies new to the
 running union, and studies new to our corpus. Stop adding reviews when marginal new studies per

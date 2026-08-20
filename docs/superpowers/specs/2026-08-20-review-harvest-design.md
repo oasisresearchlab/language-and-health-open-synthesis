@@ -62,11 +62,20 @@ Corollary: B2 is **extension more than harvest**. 65% of the union is not in our
 running union, and studies new to our corpus. Stop adding reviews when marginal new studies per
 review added falls below a threshold set once there are three data points — do not fix it now.
 
-Observed so far: reviews 1+2 (van Lent + Kwan) contributed 62 included studies yielding 55 unique
-— a 13% duplication rate. If Gutman holds near that, the union is far from saturated and the
-candidate set (~20 further reviews, catalogued in
-[`plans/benchmark-reviews-and-terminology.md`](../../../plans/benchmark-reviews-and-terminology.md))
-matters a great deal.
+**Measured 2026-08-20 — there is no saturation.** Running union across the three: 36 → 55 → **91
+unique studies** from 102 included-study slots. Gutman contributed **36 new studies, 90% of its
+included set**, overlapping the prior union by only 4. Marginal new studies per review went *up*
+(19 → 36), not down.
+
+So the premise holds far more strongly than assumed, and the stopping rule must change: adding
+reviews will not converge. **Bound B2 by coverage of the intervention spine** (spec B §3.7
+families), not by saturation of the study union. The ~20 further candidate reviews catalogued in
+[`plans/benchmark-reviews-and-terminology.md`](../../../plans/benchmark-reviews-and-terminology.md)
+would plausibly yield several hundred more unique studies.
+
+That three systematic reviews of the same field share ~11% of their evidence is **itself a
+finding** — different inclusion criteria, terminology (see the LEP→NELP/LOE hazard) and framing
+carve out near-disjoint literatures.
 
 **Deliberately deferred:** the Deaf/sign-language strand (distinct interventions and evidence
 base) and the specialty-specific layer. Revisit after saturation is measured.
@@ -166,12 +175,16 @@ worth studying.
 Per review: table extraction is cheap (a PDF and a structured pass; stage-2 coding of 244 records
 cost $0.44). The cost is in §4.2 grounding and §4.4 acquisition, both human-time-dominated.
 
-For the three-review set, assuming Gutman's overlap resembles the others: on the order of **70–90
-unique studies**, of which perhaps a third are already in the corpus. So roughly **50–60 papers to
-acquire and ground thinly**, plus backfill on a prioritized subset.
+**Measured for the three-review set** (2026-08-20): **91 unique studies**, of which **48 are
+already in the corpus** (Kwan 14, van Lent 7, Gutman 22, less overlap) and **~43 are not**. So
+roughly **43 papers to acquire, plus 91 to ground thinly**, with backfill on a prioritized subset.
 
-**These are estimates.** They firm up when Gutman is matched against the corpus (§3) — the same
-way spec B's numbers only became real after the coding pass. Do not put them in a funding ask yet.
+Model cost is negligible (stage-2 coding of 244 records cost $0.44). The cost is human time in
+grounding and acquisition.
+
+**These figures cover three reviews only, and §3 shows the set does not saturate.** Any decision
+to extend beyond three multiplies them — roughly +36 unique studies per review added, on current
+evidence. Do not put a total in a funding ask until the stopping rule (spine coverage) is fixed.
 
 ## 8. Open
 

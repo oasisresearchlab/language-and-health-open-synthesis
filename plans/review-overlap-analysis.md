@@ -65,3 +65,52 @@ Hampers 2002, Abbato 2019, López 2015, Schulz 2015, Cunningham 2008, Jacobs 200
 Bischoff 2008, Lee 2018, Moreno 2010.
 
 Kwan's missing set skews old (1996–2003) and includes foundational interpreting work.
+
+---
+
+## Update 2026-08-20: Gutman 2025 added — no saturation
+
+**Gutman et al. 2025**, JAMA Netw Open 8(7):e2521492 (PMID 40674051), 40 articles / 39
+interventions, searches Jul 2023 + Sep 2024.
+
+| | Included | In our corpus | Missing |
+|---|---:|---:|---:|
+| Gutman 2025 | 40 | **22 (55%)** | 18 |
+
+Corpus overlap is markedly higher than the other two — unsurprising, since Gutman covers
+implementation interventions in US clinical settings, which is the corpus's centre of gravity.
+
+### Saturation: the union is accelerating, not converging
+
+| | Included | Running union | New this review |
+|---|---:|---:|---:|
+| Kwan 2023 | 36 | 36 | — |
+| + van Lent 2025 | 26 | 55 | **19** |
+| + Gutman 2025 | 40 | **91** | **36 (90% of its set)** |
+
+Gutman overlaps the prior union by **4 studies**. Across all three reviews: **102 included-study
+slots yield 91 unique studies — only 11 duplications.**
+
+**Three systematic reviews of language-access interventions share roughly 11% of their evidence
+base.** Marginal new studies per review added went *up* (19 → 36), not down.
+
+### What this means
+
+1. **No saturation is in sight.** The catalogued candidate set (~20 further reviews) would
+   plausibly yield several hundred unique studies. B2's scope cannot be bounded by "add reviews
+   until they stop contributing" — on this evidence they never will.
+2. **It is itself a finding about the field.** Different inclusion criteria, terminology (see the
+   LEP→NELP/LOE hazard) and framing carve out near-disjoint literatures. There is no shared
+   evidence base to appeal to.
+3. **It strengthens the case for harvesting over reviewing.** Any single new review would capture
+   one more slice. Integration across reviews is the contribution.
+4. **B2 needs a different stopping rule** — coverage of the *intervention spine* rather than
+   saturation of the study union.
+
+### Caveat on matching
+
+Several matches came via the `author:` field where the citekey uses a given name — `Douglas 2024`
+→ `@Natalie_2025_Role_Health`, `Buser 2022` → `@Sina_2023_use_intercultural`, `Behairy 2023` →
+`@Mohga_2023_Increasing_Language`, `Trang 2024` → `@Karen_2024_Impact_Using`. A few carry a 1–2
+year offset (online-first vs print, or a genuine mismatch) and need hand-verification. The
+headline is robust to a handful of errors: even ±5 matches leaves the 90%-new figure intact.

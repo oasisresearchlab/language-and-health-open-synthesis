@@ -93,9 +93,14 @@ Mitigations, to be decided when the gap is explained:
   LLM-in-medicine reviews).
 - Treat a high overall recall with low family-B recall as a **failed** validation, not a passed one.
 
-- [ ] **TODO: explain the 2025+ acquisition gap before designing the query** — real publication
-      pattern, search artefact, or screening artefact? The query design and the validity of §2.1
-      both depend on the answer.
+- [x] **RESOLVED 2026-08-19: the 2025+ gap is a terminology artefact.** The field moved from
+      "limited English proficiency" to "non-English language preference" / "languages other than
+      English" around 2020–2021. Of our 819 sources, **722 use LEP only, 41 use both, and exactly
+      ZERO use NELP/LOE without also using LEP** — the signature of an LEP-anchored retrieval.
+      **Consequence: the query MUST search both term families**, plus `communication barriers`,
+      `translating`, `language concordance` and MeSH `Communication Barriers`. And the 689 is
+      confirmed a biased reference set, biased in a now-characterized way. See
+      `plans/benchmark-reviews-and-terminology.md`.
 
 ## 3. Screening
 

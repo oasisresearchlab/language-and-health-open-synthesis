@@ -74,29 +74,42 @@ yield (more) positive results."* Machine translation plus informal interpreter, 
 materials plus interpreter, could be complementary, substitutive, or interfering.
 
 **Saturation metric.** After each review is added, record: included studies, studies new to the
-running union, and studies new to our corpus. Stop adding reviews when marginal new studies per
-review added falls below a threshold set once there are three data points — do not fix it now.
+running union, and studies new to our corpus. Measure **within layer** — a review from an
+unrepresented layer contributes almost everything by construction and tells you nothing about
+convergence.
 
-**Measured 2026-08-20 — there is no saturation.** Running union across the three: 36 → 55 → **91
-unique studies** from 102 included-study slots. Gutman contributed **36 new studies, 90% of its
-included set**, overlapping the prior union by only 4. Marginal new studies per review went *up*
-(19 → 36), not down.
+### Measured, 2026-08-20 — provision layer
 
-**Corrected same day:** this conflated two review *layers*. van Lent and Kwan review the
-**provision** layer (does an intervention work?); Gutman reviews the **adoption** layer (how do you
-get clinicians to use one?). Our own facets separate them perfectly — organization-facing 44% vs
-**0%**, multi-component 55% vs **0%**. Gutman's 90%-new is therefore expected, not evidence of a
-fragmented field, and provision-layer saturation remains **untested** (Kwan ∩ van Lent = 13%, two
-data points). Measure saturation **within layer**, and stratify the review set by layer.
+| Order | Review | Included | Union after | New | % of its set |
+|---|---|---:|---:|---:|---:|
+| 1 | Kwan 2023 | 36 | 36 | 36 | — |
+| 2 | + van Lent 2025 | 26 | 55 | 19 | 73% |
+| 3 | + Heath 2023 | 28 | 66 | **11** | **39%** |
+| 4 | + Karliner 2007 | 27 | 81 | 15 | 55% |
 
-The stopping rule still changes — adding reviews across layers will not converge — **Bound B2 by coverage of the intervention spine** (spec B §3.7
-families), not by saturation of the study union. The ~20 further candidate reviews catalogued in
-[`plans/benchmark-reviews-and-terminology.md`](../../../plans/benchmark-reviews-and-terminology.md)
-would plausibly yield several hundred more unique studies.
+**Within-layer marginal contribution runs 39–73%, against Gutman's cross-layer 90%.** That
+confirms the provision/adoption split quantitatively: same-layer reviews genuinely overlap,
+cross-layer ones essentially do not.
 
-That three systematic reviews of the same field share ~11% of their evidence is **itself a
-finding** — different inclusion criteria, terminology (see the LEP→NELP/LOE hazard) and framing
-carve out near-disjoint literatures.
+**Pairwise overlap is 10–30%, and much of the spread is date windows rather than disagreement.**
+Kwan ∩ Heath is highest at 30% — closest questions, overlapping eras. van Lent ∩ Karliner is
+**0%**, but only because their search windows are disjoint (van Lent 2013+, Karliner to 2005).
+Within layer *and* within era, overlap is a modest but real 22–30%. Earlier drafts of this spec
+claimed the field has "no shared evidence base"; that was overstated.
+
+**Still no saturation after four reviews** — 81 unique studies from 117 included-study slots — but
+the decline is real where questions match. So the stopping rule remains **coverage of the
+intervention spine** (spec B §3.7 families) rather than union saturation, now stratified by
+**provision × adoption**.
+
+### A pre-2008 stratum is required
+
+Our corpus has a **hard date floor at 2008**: of 802 dated sources the earliest is 2008 and none
+precede it. Karliner 2007's 27 included studies are all 1984–2004, hence its **0%** corpus
+overlap. The corpus contains none of the foundational pre-2008 interpreting literature, and no
+amount of harvesting from post-2008-bounded reviews will surface it. Karliner is therefore not
+optional — it is the only route in the current set to that stratum. See
+[`plans/review-overlap-analysis.md`](../../../plans/review-overlap-analysis.md).
 
 **Deliberately deferred:** the Deaf/sign-language strand (distinct interventions and evidence
 base) and the specialty-specific layer. Revisit after saturation is measured.
@@ -191,21 +204,25 @@ support is a finding; evidence no imported claim predicts is also a finding.
 Deferring this is deliberate — doing it at import time would silently resolve exactly the tensions
 worth studying.
 
-## 7. Effort — estimates, not measurements
+## 7. Effort — measured for the provision set
 
-Per review: table extraction is cheap (a PDF and a structured pass; stage-2 coding of 244 records
-cost $0.44). The cost is in §4.2 grounding and §4.4 acquisition, both human-time-dominated.
+Table extraction is cheap (a PDF and a structured pass; stage-2 coding of 244 records cost $0.44).
+Model cost is negligible throughout. The cost is human time in §4.2 grounding and §4.4 acquisition.
 
-**Measured for the three-review set** (2026-08-20): **91 unique studies**, of which **48 are
-already in the corpus** (Kwan 14, van Lent 7, Gutman 22, less overlap) and **~43 are not**. So
-roughly **43 papers to acquire, plus 91 to ground thinly**, with backfill on a prioritized subset.
+| Review set | Union | Already in corpus | **To acquire** |
+|---|---:|---:|---:|
+| Kwan + van Lent + Heath | 66 | 22 | **44** |
+| + Karliner 2007 | 81 | 22 | **59** |
 
-Model cost is negligible (stage-2 coding of 244 records cost $0.44). The cost is human time in
-grounding and acquisition.
+Karliner adds 15 studies and **none** of them are in the corpus — the date floor again.
 
-**These figures cover three reviews only, and §3 shows the set does not saturate.** Any decision
-to extend beyond three multiplies them — roughly +36 unique studies per review added, on current
-evidence. Do not put a total in a funding ask until the stopping rule (spine coverage) is fixed.
+So the provision-layer harvest is roughly **59 papers to acquire and 81 to ground thinly**, with
+backfill on a prioritized subset. Adding the adoption layer (Gutman: 40 included, 22 already in
+corpus) would add ~18 more acquisitions.
+
+**These figures cover four provision reviews.** §3 shows the set does not saturate, so extending
+further multiplies them — on current evidence roughly +11 to +19 unique studies per same-layer
+review added. Do not put a total in a funding ask until the spine-coverage stopping rule is fixed.
 
 ## 8. Open
 

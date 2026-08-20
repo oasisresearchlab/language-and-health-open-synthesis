@@ -165,3 +165,82 @@ than sampling one.
 
 Third independent convergence worth noting: provision/adoption emerged from our co-occurrence
 data, independently sorts the review landscape, and is measurable with facets we already built.
+
+---
+
+## Update 2026-08-20 (b): four provision-layer reviews, and a corpus date floor
+
+Gutman is held out (adoption layer). Four **provision-layer** reviews measured:
+
+| Review | Included | In corpus | |
+|---|---:|---:|---|
+| Kwan 2023 | 36 | 16 | 44% |
+| van Lent 2025 | 26 | 7 | 26% |
+| Heath 2023 (CRD42021247580) | 28 | 6 | 21% |
+| **Karliner 2007** | 27 | **0** | **0%** |
+
+### The corpus has a hard date floor at 2008
+
+Of 802 dated sources, the earliest is **2008**; there are **zero** before it. Not a tail-off — a
+cliff.
+
+| Window | n |
+|---|---:|
+| 1980–1999 | 0 |
+| 2000–2005 | 0 |
+| 2006–2010 | 20 |
+| 2011–2015 | 113 |
+| 2016–2020 | 215 |
+| 2021–2026 | 454 |
+
+That is a **date filter in the original retrieval**. Together with the LEP anchoring
+([terminology note](./benchmark-reviews-and-terminology.md)), two concrete properties of the
+unknown original query are now established:
+
+1. **LEP-anchored terminology** — zero sources use NELP/LOE without also using LEP.
+2. **A ~2008 date floor** — zero sources predate 2008.
+
+It also fully explains Karliner's 0%: all 27 of its studies are 1984–2004, entirely below the
+floor. The corpus contains **none of the foundational pre-2008 interpreting literature.**
+
+### Within-layer saturation — the test Gutman could not provide
+
+| Order | Review | Included | Union after | New | % of its set |
+|---|---|---:|---:|---:|---:|
+| 1 | Kwan 2023 | 36 | 36 | 36 | — |
+| 2 | + van Lent 2025 | 26 | 55 | 19 | 73% |
+| 3 | + Heath 2023 | 28 | 66 | **11** | **39%** |
+| 4 | + Karliner 2007 | 27 | 81 | 15 | 55% |
+
+**Within-layer marginal contribution runs 39–73%, against Gutman's cross-layer 90%.** That
+confirms the provision/adoption distinction quantitatively: same-layer reviews genuinely overlap,
+cross-layer ones essentially do not.
+
+Still no saturation after four reviews — the union reached 81 unique studies from 117
+included-study slots — but the decline is real where questions match.
+
+### Pairwise overlap (shared / union)
+
+| | Kwan | van Lent | Heath | Karliner |
+|---|---:|---:|---:|---:|
+| **Kwan 2023** | — | 12% | **30%** | 12% |
+| **van Lent 2025** | 12% | — | 10% | **0%** |
+| **Heath 2023** | 30% | 10% | — | 22% |
+| **Karliner 2007** | 12% | 0% | 22% | — |
+
+**Much of the apparent fragmentation is date windows, not disagreement.** Kwan ∩ Heath is highest
+(30%) — closest questions, overlapping eras. van Lent ∩ Karliner is **0%** because their windows
+are disjoint: van Lent restricted to 2013+, Karliner searched only to 2005. That is not two
+reviews disagreeing about what counts as evidence; it is two reviews looking at different decades.
+
+So the earlier "the field has no shared evidence base" reading was too strong. Within-layer,
+within-era overlap is a modest-but-real 22–30%.
+
+### Consequences
+
+- **B2's harvest should include a pre-2008 stratum.** Karliner alone contributes 27 studies the
+  corpus cannot contain by construction, and Heath adds more.
+- **A1 must set its date floor deliberately**, and justify it. The current one appears inherited
+  rather than chosen.
+- **The 689 as a relative-recall reference set is further weakened** — it is bounded in both
+  vocabulary *and* time.

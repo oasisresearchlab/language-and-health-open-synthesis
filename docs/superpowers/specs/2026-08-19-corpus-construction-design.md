@@ -33,6 +33,14 @@ convenience-assembled corpora, which is a contribution in its own right.
 The 105 notes without PMIDs cannot participate (nothing to match on). The validation set is
 **689, not 819** — a limitation to state, not to fix.
 
+**⚠️ The reference set is bounded in vocabulary *and* time.** Two properties of the original
+retrieval are now established: it was **LEP-anchored** (zero sources use NELP/LOE without also
+using LEP) and it carries a **hard ~2008 date floor** (of 802 dated sources the earliest is 2008;
+zero precede it). Karliner 2007's 27 included studies — all 1984–2004 — overlap our corpus by
+**0%**. So the 689 cannot certify recall for pre-2008 literature or post-2021 vocabulary, and
+A1 must **set its own date floor deliberately and justify it** rather than inherit one. See
+`plans/review-overlap-analysis.md`.
+
 ### 2.2 PubMed first; a second database is a measured decision
 
 PubMed is free, non-negotiable, and indexes the informatics venues where this literature

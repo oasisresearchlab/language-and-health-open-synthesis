@@ -6,24 +6,37 @@ constraints gate real work and previously lived only in session-scoped state.*
 Specs: [B — interventions](../docs/superpowers/specs/2026-08-18-interventions-review-design.md) ·
 [A1 — corpus construction](../docs/superpowers/specs/2026-08-19-corpus-construction-design.md) ·
 [A2 — characterization](../docs/superpowers/specs/2026-08-19-corpus-characterization-design.md) ·
-[prior-reviews sweep](./prior-reviews-sweep.md)
+[prior-reviews sweep](./prior-reviews-sweep.md) · [realist synthesis note](./realist-synthesis-and-discourse-graphs.md)
 
 ---
 
 ## Blocks everything — scope of B is under revision
 
-**B is being reframed from "conduct a review" to "synthesize across existing systematic
-reviews."** See the 2026-08-19 update in [`translation-interventions-review.md`](./translation-interventions-review.md).
+**B is splitting.** A new **B2** is proposed: mine and integrate evidence from prior evidence
+syntheses to *seed* the living synthesis — a review of reviews, in a specific flavour where the
+reviews are **raw material**, not the object of synthesis. See the 2026-08-19 update in
+[`translation-interventions-review.md`](./translation-interventions-review.md) and the
+[realist-synthesis note](./realist-synthesis-and-discourse-graphs.md).
+
 Until this settles, B's extraction runway (188 papers, $1,500–1,900) is **not a firm number** —
 much of it may already be extracted inside existing reviews' evidence tables.
 
-- [ ] **Cross-check included studies of Kwan 2023 and van Lent 2025 against our 819-source corpus.**
-      How much overlap? How much is new? This sizes everything downstream.
-- [ ] **Decide whether B becomes an overview-of-reviews / review-harvesting design** rather than a
-      primary review. If so, B's §3.8 effort figures need recomputing from scratch.
-- [ ] **Design the schema-mapping component**: normalize extracted findings from review evidence
-      tables (Kwan 2023 Table 3; van Lent 2025 Table 3, which also carries RoB and GRADE) into our
-      EVD/CLM schema, rather than re-extracting the underlying papers.
+- [ ] **Spec B2 — review-of-reviews seeding.** Two extraction families: *evidence syntheses*
+      (Kwan 2023, van Lent 2025) yield evidence plus included-study pointers; *framework /
+      integrative reviews* (arXiv 2605.01441) yield programme theory.
+- [ ] **Cross-check included studies of the review set against our 819-source corpus.** How much
+      overlap, how much new? Sizes everything downstream.
+- [ ] **Decide how to represent inherited appraisals.** van Lent 2025 ships RoB and GRADE. Project
+      doctrine holds that certainty is an expert task and AI does not draft it — but an *imported*
+      published GRADE is neither AI-drafted nor our expert's judgment. It needs its own provenance
+      treatment.
+- [ ] **Handle overlap between reviews.** The same primary study appears in several reviews;
+      overviews normally report a corrected covered area or equivalent. Decide the metric before
+      merging.
+- [ ] **Use review tables as pointers, then ground independently** *(decided 2026-08-19)*. Preserves
+      the verbatim-from-source rule while keeping the search/identification saving. **Track
+      discrepancies** between our grounding and their extraction — that is a contribution in its
+      own right.
 - [ ] **Triage what genuinely needs fresh extraction** once the mapping exists.
 
 ## Blocks A1 — corpus construction

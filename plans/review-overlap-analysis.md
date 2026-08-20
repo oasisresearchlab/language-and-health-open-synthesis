@@ -114,3 +114,54 @@ Several matches came via the `author:` field where the citekey uses a given name
 `@Mohga_2023_Increasing_Language`, `Trang 2024` → `@Karen_2024_Impact_Using`. A few carry a 1–2
 year offset (online-first vs print, or a genuine mismatch) and need hand-verification. The
 headline is robust to a handful of errors: even ±5 matches leaves the 90%-new figure intact.
+
+---
+
+## Correction 2026-08-20: the saturation reading conflated two review layers
+
+**The 2026-08-20 saturation conclusion above is wrong as stated.** It treated three reviews as
+comparable members of one curve. They are not.
+
+- **van Lent 2025, Kwan 2023 — provision layer.** Does a language-access intervention work?
+- **Gutman 2025 — adoption layer.** How do you get clinicians to *use* one?
+
+That is precisely the provision/adoption distinction derived independently from our own
+co-occurrence analysis ([realist note](./realist-synthesis-and-discourse-graphs.md)).
+
+### Our own facets detect the difference
+
+Across matched studies in the spine:
+
+| | Gutman (adoption) | van Lent + Kwan (provision) |
+|---|---:|---:|
+| organization-facing | **44%** | **0%** |
+| multi-component | **55%** | **0%** |
+| clinician-facing | 100% | 76% |
+| patient-facing | 66% | 100% |
+| n | 18 | 13 |
+
+Organization-facing and multi-component separate the layers perfectly. (The mechanism *family*
+facet does not — Gutman is 15/18 "Interpreting services", Kwan 12/12 — because family captures
+what the intervention *is*, not what it *acts on*.)
+
+### What this changes
+
+1. **Gutman's 90%-new is expected, not evidence of fragmentation.** A review from an unrepresented
+   layer contributes almost everything by construction.
+2. **The real fragmentation signal is Kwan ∩ van Lent = 13%** — two same-layer reviews — and it
+   rests on two data points. It has *not* been replicated.
+3. **Saturation must be measured within layer.** A third *provision* review is needed to test
+   provision-layer saturation. The "marginal contribution is rising" claim is an artefact of
+   layer-mixing and should not be relied on.
+4. **The B2 review set should be stratified by layer**, mirroring the spine's own
+   provision/adoption structure. The stopping rule (spine coverage rather than union saturation)
+   still looks right, but the axis should be **provision × adoption coverage**, not families alone.
+
+### What survives
+
+The corpus-overlap numbers are unaffected: Gutman 22/40 (55%), van Lent 7/26 (27%), Kwan 14/36
+(39%). The three-review union of 91 unique studies is still 91 — it simply spans two layers rather
+than sampling one.
+
+Third independent convergence worth noting: provision/adoption emerged from our co-occurrence
+data, independently sorts the review landscape, and is measurable with facets we already built.

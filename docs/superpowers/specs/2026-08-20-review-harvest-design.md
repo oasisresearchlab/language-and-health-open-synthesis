@@ -67,8 +67,14 @@ unique studies** from 102 included-study slots. Gutman contributed **36 new stud
 included set**, overlapping the prior union by only 4. Marginal new studies per review went *up*
 (19 → 36), not down.
 
-So the premise holds far more strongly than assumed, and the stopping rule must change: adding
-reviews will not converge. **Bound B2 by coverage of the intervention spine** (spec B §3.7
+**Corrected same day:** this conflated two review *layers*. van Lent and Kwan review the
+**provision** layer (does an intervention work?); Gutman reviews the **adoption** layer (how do you
+get clinicians to use one?). Our own facets separate them perfectly — organization-facing 44% vs
+**0%**, multi-component 55% vs **0%**. Gutman's 90%-new is therefore expected, not evidence of a
+fragmented field, and provision-layer saturation remains **untested** (Kwan ∩ van Lent = 13%, two
+data points). Measure saturation **within layer**, and stratify the review set by layer.
+
+The stopping rule still changes — adding reviews across layers will not converge — **Bound B2 by coverage of the intervention spine** (spec B §3.7
 families), not by saturation of the study union. The ~20 further candidate reviews catalogued in
 [`plans/benchmark-reviews-and-terminology.md`](../../../plans/benchmark-reviews-and-terminology.md)
 would plausibly yield several hundred more unique studies.
